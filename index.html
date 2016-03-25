@@ -8,8 +8,9 @@
 		<script type="text/javascript" src="js/jQuery.js"></script>
 		<script type="text/javascript">
 			function adjustment() {
-				document.getElementById('backPng').style.width = (screen.availHeight * 0.5625 ) + "px";
-				document.getElementById('backPng').style.marginLeft = -(screen.availHeight * 0.5625 / 2) + "px";
+				var a = $("#backPng").height();
+				document.getElementById('backPng').style.width = (a * 0.5625 ) + "px";
+				document.getElementById('backPng').style.marginLeft = -(a * 0.5625 / 2) + "px";
 			}
 
 			window.onload = adjustment;
