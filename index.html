@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+	<head>
+		<meta charset="UTF-8" /> 
+		<title>entry</title>
+		<link rel="stylesheet" href="style.css" />
+		<script type="text/javascript" src="js/jQuery.js"></script>
+		<script type="text/javascript">
+			function adjustment() {
+				document.getElementById('backPng').style.width = (screen.availHeight * 0.5625 ) + "px";
+				document.getElementById('backPng').style.marginLeft = -(screen.availHeight * 0.5625 / 2) + "px";
+			}
+
+			window.onload = adjustment;
+	    	window.onresize = adjustment;
+		</script>
+	</head>
+	<body>
+		<div id="backPng" class="background" align="center">
+
+		</div>
+	</body>
+</html>
