@@ -69,11 +69,37 @@
 			}
 			else if (n == 7){		/* page2 */
 				$("div.magicBox #content2").append("<div>左圖是將《淡新檔案》中公文封套拆開攤平之後的情況。中間方框部分即為公文封套的正面，註明了字號、發文地點、發文時間、內裝件數與收文衙門。右圖是左圖的兩翼反折成為公文封套的背面，對齊出「福建臺北府正堂封」字樣與兩處吻合的騎縫章。再對照左圖即可得知，這是一份臺北府知府在光緒十一年三月的時後以這個封套裝了五件公文與六道告示給了新竹縣知縣，後來新竹縣衙門的書吏將這個用過的公文封套拆開，利用原本無字空白的內面，翻折出一個長方形的紙面書寫文字，製成了第12514案的案由。</div>");	
-				$("#imgDiv2 div").css("opacity", "0");
+				$("#imgDiv2 #pic4").css("opacity", "0");
+				$("#imgDiv2 #pic567").css("opacity", "0")
 			}
 			else if (n == 8){
 				$("div.magicBox #content2").append("<div>從「一件案奉 本府陳⋯⋯.多張發貼由」可視為案由。</div>");
-				$("#imgDiv2 div").css("opacity", "1");
+				$("#imgDiv2 #pic4").css("opacity", "1");
+				$("#imgDiv2 #pic567").css("opacity", "0")
+			}
+			else if (n == 9){
+				$("div.magicBox #content2").append("<div>說明：圖七的三件淡新檔案的「案由」，可以從中得知各該案的四種資訊。<br>1.	該案最初的主管官員：從「分府陳」可知為淡水廳同知陳星聚，「正堂沈」可知為新竹知縣沈繼曾。<br>2.	該案的事由：通常寫成「一件……由」，有時則以小字另做補充說明。<br>3. 該案立卷時間，通常只寫出年、月而已。<br>4. 該案的承辦單位或人員：「承溫程」表示為一位名叫溫程的書吏，「工」表示為工房，「承刑總」表示為刑房的總書。</div>");
+				$("#imgDiv2 #pic567").css("opacity", "1")
+				$("#imgDiv2 #pic4").css("opacity", "0");
+			}
+			else if (n == 10){
+				$("div.magicBox #content3").append("<div>14105_009件是由史屠寶泰呈送給新竹知縣方祖蔭的詳文。</div>");
+				$("#pic11").css("opacity", "0");
+			}
+			else if (n == 11){
+				$("div.magicBox #content3").append("<div>14105_009件詳文相應的簡文。</div>");	
+				$("#pic11").css("opacity", "1");
+			}
+			else if (n == 12){
+				$("div.magicBox #content6").append("<div>代理新竹縣知縣沈蔭茂分別寫給台北知府雷其達與布政使沈應奎。</div>");	
+				$("#pic12").css("opacity", "1");
+			}
+			else if (n == 13){
+				$("div.magicBox #content6").append("<div>13218案中的「紅稟」。</div>");	
+				$("#pic12").css("opacity", "0");	
+			}
+			else if (n == 20){
+				$("div.magicBox #content7").append("<div>摺面的「申文」標明了文種，並蓋有發文者蕭啟元的「臺北府新竹縣<br>典史鈐記」。</div>");	
 			}
 
 			/* $("div.right div.content div").addClass("animated fadeIn"); /* the word fade in */

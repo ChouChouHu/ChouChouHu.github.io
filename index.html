@@ -15,20 +15,40 @@
 		<link rel="stylesheet" href="css/style.css" />
 		<script type="text/javascript" src="js/jQuery.js"></script>
 		<script type="text/javascript" src="js/Define.js"></script>
+		<script type="text/javascript" src="js/modernizr.custom.js"></script>
 	</head>
 	<body>
 		<div class="page">
 			<div class="bb-custom-wrapper">
 				<div id="bb-bookblock" class="bb-bookblock">
+
+
+
+					<!-- page0 -->
 					<div class="bb-item">
+						<div class="left" style="opacity: 0"></div>
+						<div class="right" style="opacity: 1; background: white;">
+							<img src="img/cover.png">
+						</div>
+					</div>
 
 
 
+
+					<div class="bb-item">
 						<!-- page1 -->
 						<div class="left">
 							<div class="redTag">
 								古籍新說：目錄
 							</div>
+							<!--
+						<nav>
+							<span class="bb-current"></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</nav>
+							-->
 							<div class="topic">
 								<h1>壹、淡新檔案的公文格式</h1>
 								<h2 id="oneOne">一、清代檔案中公文組成概說</h2><h2 id="oneTwo">二、古代公文的內與外</h2>
@@ -77,10 +97,11 @@
 
 
 
+
+
+
 					<!-- page2 -->
 					<div class="bb-item">
-
-
 
 			<div class="left">
 				<div class="redTag">
@@ -95,7 +116,7 @@
 					<div class="content">
   　　《<div class="start">淡</div>新檔案》的公文書封套內容<br>
    　　一份公文往來，為了防止被偷看或預防破損，通常會由官府制式信封來放置公文。今日政府的公文書明文規定放置公文的公文封套分為大、中、小型封套，須採94磅以上的模造紙或再生紙，中小型信封則應採75磅以上同樣紙質來製作。針對口洞位置、大小、書寫位置與郵票黏貼位置都有規範。清代的公文同樣面臨前述的問題而發展出相對應的保護方式，例如以<div class="animated infinite tada wordAnimate" onclick="magicContent(7)">「封套」</div>或在公文封套外加上「火漆」防止被任意開啟。<div class="animated infinite tada wordAnimate" onclick="magicContent(8)">「案件標題」</div>則是後來檔案分類中「案由」的由來。<br>
-   　　公文書既然是人民向官府或官方之間的溝通往來文書，在繁忙的行政事務中，要讓縣官大老爺或官員之間一眼就大概瞭解想要報告或討論的事情便很重要，這就是「案由」的由來。我們現在看到的淡新檔案，每案都會有一個案由。戴炎輝教授整理《淡新檔案》時，將檔案案卷封面稱為<div class="animated infinite tada wordAnimate">「案由」</div>。這個案卷封面上寫著關於本案的若干資訊，沒有這些資訊，負責收發公文的承辦人將無法歸建檔案，縣官也難以知道這份公文由誰所寫，之後由誰負責。 <div class="animated infinite tada wordAnimate">說明</div> ：從三件淡新檔案 的「案由」，可以從中得知各該案的四種資訊：該案最初的主管官員、該案的事由、該案立卷時間、該案的承辦單位或人員。
+   　　公文書既然是人民向官府或官方之間的溝通往來文書，在繁忙的行政事務中，要讓縣官大老爺或官員之間一眼就大概瞭解想要報告或討論的事情便很重要，這就是「案由」的由來。我們現在看到的淡新檔案，每案都會有一個案由。戴炎輝教授整理《淡新檔案》時，將檔案案卷封面稱為<div class="animated infinite tada wordAnimate" onclick="magicContent(9)">「案由」</div>。這個案卷封面上寫著關於本案的若干資訊，沒有這些資訊，負責收發公文的承辦人將無法歸建檔案，縣官也難以知道這份公文由誰所寫，之後由誰負責。
 					</div>
 				</div>
 			</div>
@@ -104,8 +125,13 @@
 				<div class="imgDiv" id="imgDiv2">
 					<img src="img/pic2.jpg" style="left: 0">
 					<img src="img/pic3.jpg">
-					<div style="position: absolute; width: 100%; height: 366px; background: white; z-index: 1; opacity: 0">
+					<div id="pic4" style="position: absolute; width: 100%; height: 366px; background: white; z-index: 1; opacity: 0">
 						<img src="img/pic4.jpg" style="left: 27%;">
+					</div>
+					<div id="pic567" style="position: absolute; width: 100%; height: 366px; background: white; z-index: 1; opacity: 0">
+						<img src="img/pic5.jpg" style="right: 70%;">
+						<img src="img/pic6.jpg" style="right: 38%;">
+						<img src="img/pic7.jpg">
 					</div>
 				</div>
 				<div class="magicBox">
@@ -126,13 +152,15 @@
 				<img src="img/arrow.png">
 			</div>
 
-
-
-
 					</div>
+
+
+
+
+
+
+					<!-- page3 -->
 					<div class="bb-item">
-
-
 
 			<div class="left">
 				<div class="redTag">
@@ -163,14 +191,16 @@
 				<div id="imgFour" class="imgWhite animated infinite flash"></div>
 				<div id="imgFive" class="imgWhite animated infinite flash"></div>
 				<div id="imgSix" class="imgWhite animated infinite flash"></div>
-				<div id="imgDiv">
+				<div class="imgDiv">
 					<img src="img/pic8.jpg">
 				</div>
+				<div id="imgFifteen" class="animated infinite flash" onclick="magicContent(20)"></div>
+				<img id="finger" class="animated infinite flash" src="img/finger.png">
 				<div class="magicBox">
 					<div class="leftTop"></div>
 					<div class="rightBottom"></div>
 					<div class="default">滑鼠點擊上圖指示處</div>
-					<div class="content">
+					<div class="content" id="content7">
 					</div>
 				</div>
 				<!--
@@ -187,14 +217,15 @@
 
 
 
+
 					</div>
 					<div class="bb-item">
 
-
-			<div style="position: absolute; width: 100%; left: 0%; bottom: -5px;">
-				<img src="img/pic9.jpg" style="width:100%">
+			<div style="position: absolute; width: 100%; left: 0%; bottom: -5px; top: 3px; overflow: hidden;">
+				<img src="img/pic9.jpg" style=" width:100%; ">
+				<div style="position: absolute; right: 0; bottom: 3px; background: rgba(0, 0, 0, 0.2); padding: 1px 7px; opacity: 0.7; font-size: 14px">圖九：11703案中在大印的上方寫著「驗文」二字。</div>
 			</div>
-			<div class="left">
+			<div class="left" style="background: rgba(0, 0, 0, 0)">
 				<div class="redTag">
 					古籍新說：目錄
 				</div>
@@ -211,7 +242,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="right">
+			<div class="right" style="background: rgba(0, 0, 0, 0)">
 				<div class="line"></div>
 			</div>
 			<div id="arrow">
@@ -222,7 +253,12 @@
 
 
 					</div>
+
+
+
+
 					<div class="bb-item">
+
 
 
 			<div class="left">
@@ -237,7 +273,7 @@
 						</h2>
 					</div>
 					<div class="content">
-　　「<div class="start">詳</div> 文」是官方規定下級衙門向上級衙門請示政務最正規、最常用的文種。詳可以分為兩部分，【詳文－詳冊】或【長詳－由詳】，在淡新檔案中可以看到【正詳－副詳】、【詳文－簡文】的形式，不管用什麼名稱，原則上都是由下級官僚發出一套詳文，前半詳敘事由，後半簡敘大綱。 <div class="animated infinite tada wordAnimate">14105_009</div> 件是新竹縣典史屠寶泰呈送給新竹知縣方祖蔭的詳文。與此件詳文相應的 <div class="animated infinite tada wordAnimate">簡文</div> ，因為已經發還給新竹縣典史，因此無法得見於《淡新檔案》。
+　　「<div class="start">詳</div> 文」是官方規定下級衙門向上級衙門請示政務最正規、最常用的文種。詳可以分為兩部分，【詳文－詳冊】或【長詳－由詳】，在淡新檔案中可以看到【正詳－副詳】、【詳文－簡文】的形式，不管用什麼名稱，原則上都是由下級官僚發出一套詳文，前半詳敘事由，後半簡敘大綱。 <div class="animated infinite tada wordAnimate" onclick="magicContent(10)">14105_009</div>件是新竹縣典史屠寶泰呈送給新竹知縣方祖蔭的詳文。與此件詳文相應的 <div class="animated infinite tada wordAnimate" onclick="magicContent(11)">簡文</div> ，因為已經發還給新竹縣典史，因此無法得見於《淡新檔案》。
 
 					</div>
 				</div>
@@ -250,14 +286,15 @@
 				<div id="imgFour" class="imgWhite animated infinite flash"></div>
 				<div id="imgFive" class="imgWhite animated infinite flash"></div>
 				<div id="imgSix" class="imgWhite animated infinite flash"></div>
-				<div id="imgDiv">
-					<img src="img/pic8.jpg">
+				<div class="imgDiv">
+					<img src="img/pic10.jpg">
+					<img id="pic11" src="img/pic11.jpg" style="opacity: 0;">
 				</div>
 				<div class="magicBox">
 					<div class="leftTop"></div>
 					<div class="rightBottom"></div>
-					<div class="default">滑鼠點擊左方紅色文字</div>
-					<div class="content">
+					<div class="default">滑鼠點擊左方紅色文字或上方指示處</div>
+					<div class="content" id="content3">
 					</div>
 				</div>
 				<!--
@@ -270,7 +307,6 @@
 			<div id="arrow">
 				<img src="img/arrow.png">
 			</div>
-
 
 
 					</div>
@@ -291,8 +327,8 @@
 						</h2>
 					</div>
 					<div class="content">
-　　「<div class="start">稟</div>字原本就是卑幼向長上陳述事情時所用的敬語動詞，下對上的書信也常稱為「稟」。雖然稟文並非清朝法定的上行文種，原本具有私信的性質，但在官府之間的文書往來中，內容涉及政事的稟文也逐漸演變成為正式公文，而被歸入衙門的案卷存檔。稟文不像申文、驗文、詳文那樣有著嚴格的行文關係與呈轉程序的限制，可以越級上達，而且書寫內容也不必遵循刻板繁複的公文用語規範，敘事能夠簡明順暢、容易明瞭，因為其方便性而被廣泛地使用。此處說明以&nbsp&nbsp<div class="animated infinite tada wordAnimate">13218_005</div>&nbsp&nbsp件為範例。<br>
-　　由於向上級請示政務而需要批回的情況時，稟文也形成了「白稟」—<div class="animated infinite tada wordAnimate">「紅稟」</div>這樣成組的形式。白稟使用的是一般的白色摺式紙，紅稟則是使用特別的紅色摺式紙（下圖十二），白稟寫的是完整的內容，而紅稟只寫著發文者的官銜姓名以及簡要的事由。下級衙門將構成一組的白稟與紅稟呈送給上級衙門，經過批示並加上半印編號之後，白稟留存在上級衙門，紅稟則發還給下級衙門。如果還有不便公開的事情要陳述，另外寫於單張紙片上，夾在稟文中一併呈送，則特別稱為「夾單稟」。《淡新檔案》中還可以見到「正稟」—「副稟」的組合形式，其書寫格式和前述的「正申」—「副申」、「正詳」—「副詳」相同，也是正規的公文形態，只是將文種名稱和行文動詞改用「稟」字而已。
+　　「<div class="start">稟</div>字原本就是卑幼向長上陳述事情時所用的敬語動詞，下對上的書信也常稱為「稟」。雖然稟文並非清朝法定的上行文種，原本具有私信的性質，但在官府之間的文書往來中，內容涉及政事的稟文也逐漸演變成為正式公文，而被歸入衙門的案卷存檔。稟文不像申文、驗文、詳文那樣有著嚴格的行文關係與呈轉程序的限制，可以越級上達，而且書寫內容也不必遵循刻板繁複的公文用語規範，敘事能夠簡明順暢、容易明瞭，因為其方便性而被廣泛地使用。此處說明以&nbsp&nbsp<div class="animated infinite tada wordAnimate" onclick="magicContent(12)">13218_005</div>&nbsp&nbsp件為範例。<br>
+　　由於向上級請示政務而需要批回的情況時，稟文也形成了「白稟」—<div class="animated infinite tada wordAnimate" onclick="magicContent(13)">「紅稟」</div>這樣成組的形式。白稟使用的是一般的白色摺式紙，紅稟則是使用特別的紅色摺式紙（下圖十二），白稟寫的是完整的內容，而紅稟只寫著發文者的官銜姓名以及簡要的事由。下級衙門將構成一組的白稟與紅稟呈送給上級衙門，經過批示並加上半印編號之後，白稟留存在上級衙門，紅稟則發還給下級衙門。如果還有不便公開的事情要陳述，另外寫於單張紙片上，夾在稟文中一併呈送，則特別稱為「夾單稟」。《淡新檔案》中還可以見到「正稟」—「副稟」的組合形式，其書寫格式和前述的「正申」—「副申」、「正詳」—「副詳」相同，也是正規的公文形態，只是將文種名稱和行文動詞改用「稟」字而已。
 					</div>
 				</div>
 			</div>
@@ -304,14 +340,15 @@
 				<div id="imgFour" class="imgWhite animated infinite flash"></div>
 				<div id="imgFive" class="imgWhite animated infinite flash"></div>
 				<div id="imgSix" class="imgWhite animated infinite flash"></div>
-				<div id="imgDiv" style="height: 300px;">
-					<img src="img/pic12.jpg" style="height: 300px;">
+				<div class="imgDiv" style="height: 50%">
+					<img id="pic12" src="img/pic12.jpg" style="height: 50%; z-index: 1">
+					<img src="img/pic13.jpg" style="height: 50%; right: 13%; z-index: 0">
 				</div>
 				<div class="magicBox" style="margin-top: 30px;">
 					<div class="leftTop"></div>
 					<div class="rightBottom"></div>
-					<div class="default">滑鼠點擊左方紅色文字</div>
-					<div class="content">
+					<div class="default">滑鼠點擊左方紅色文字或上方指示處</div>
+					<div class="content" id="content6">
 					</div>
 				</div>
 				<!--
@@ -321,19 +358,12 @@
 				</div>
 				-->
 			</div>
-			<div id="arrow">
-				<img src="img/arrow.png">
-			</div>
-
-
 
 
 					</div>
 
 
 					<div class="bb-item">
-
-
 
 			<div class="left">
 				<div class="redTag">
@@ -351,7 +381,10 @@
 　　在這些上行文外，另外還有「啟文」，用於祝賀、祝壽的四六駢體應酬文字。但在淡新檔案中較少出現。
 					</div>
 				</div>
-				<div style="position: absolute; bottom: 0; height:344px;">
+				<div style="position: absolute; left: 15%; bottom: 55%; padding: 1px 7px; opacity: 0.3; font-size: 12px">
+					21204_006件中蔡安向官府請求傳訊蔡傳二、曾秀真到案，由知縣秉公處理追回養女的呈狀。
+				</div>
+				<div style="position: absolute; bottom: 0; height: 55%;">
 					<img src="img/pic15.jpg" style="height:100%; bottom: 0">
 				</div>
 			</div>
@@ -370,8 +403,8 @@
 					<div class="content">
 					</div>
 				</div>
-				<div id="imgDiv" style="height: 344px;">
-					<img src="img/pic14.jpg" style="height: 344px; bottom: 0">
+				<div class="imgDiv" style="height: 344px;">
+					<img src="img/pic14.jpg" style="height: 55%; bottom: 0">
 				</div>
 				<!--
 				<div class="black" style="width: 80%;">
@@ -380,18 +413,12 @@
 				</div>
 				-->
 			</div>
-			<div id="arrow">
-				<img src="img/arrow.png">
-			</div>
-
-
 
 
 					</div>
 
 
 					<div class="bb-item">
-
 
 			<div class="left">
 				<div class="redTag">
@@ -417,8 +444,8 @@
 				<div id="imgFour" class="imgWhite animated infinite flash"></div>
 				<div id="imgFive" class="imgWhite animated infinite flash"></div>
 				<div id="imgSix" class="imgWhite animated infinite flash"></div>
-				<div id="imgDiv" style="height: 300px;">
-					<img src="img/pic16.jpg" style="height: 300px;">
+				<div class="imgDiv" style="height: 45%;">
+					<img src="img/pic16.jpg" style="height: 45%;">
 				</div>
 				<div class="magicBox" style="margin-top: 30px;">
 					<div class="leftTop"></div>
@@ -434,10 +461,6 @@
 				</div>
 				-->
 			</div>
-			<div id="arrow">
-				<img src="img/arrow.png">
-			</div>
-
 
 
 					</div>
@@ -460,10 +483,10 @@
 　　<div class="start">在</div>無直接隸屬關係的中級、低級各衙門之間相互行文時使用。13901_001件是由臺灣知府仝卜年發給淡水同知曹仕桂的關文。
 					</div>
 				</div>
-				<div style="position: absolute; top: 22%; height:344px; width: 100%;">
-					<img src="img/pic15.jpg" style="position: absolute; width: 88%; right: 0;">
+				<div style="position: absolute; top: 22%; width: 100%;">
+					<img src="img/pic17.jpg" style="position: absolute; width: 88%; right: 0;">
 				</div>
-				<div class="magicBox" style="position: absolute; bottom: 30px; height: 130px; left: 75px; width: 510px;">
+				<div class="magicBox" style="position: absolute; bottom: 5%; height: 130px; left: 12%; width: 80%;">
 					<div class="leftTop"></div>
 					<div class="rightBottom"></div>
 					<div class="default" style="line-height: 140px;">滑鼠點擊上方指示處</div>
@@ -477,17 +500,17 @@
 					<div class="lilTopic">
 						<h2>
 						平行文：
-						（三）、關文
+						（三）、牒文
 						</h2>
 					</div>
 					<div class="content" style="margin-top: 40px">
 　　<div class="start">在</div>無直接隸屬關係的中級、低級各衙門之間相互行文時使用。11707_003件是新竹知縣徐錫祉發給基隆通判徐廷灝的牒文定稿。
 					</div>
 				</div>
-				<div style="position: absolute; top: 22%; height:344px; width: 100%;">
-					<img src="img/pic15.jpg" style="position: absolute; width: 88%; left: 0;">
+				<div style="position: absolute; top: 22%; width: 100%;">
+					<img src="img/pic19.jpg" style="position: absolute; width: 90%; left: -2%;">
 				</div>
-				<div class="magicBox" style="position: absolute; bottom: 30px; height: 130px; left: 40px; width: 510px;">
+				<div class="magicBox" style="position: absolute; bottom: 5%; height: 22%; right: 12%; width: 80%">
 					<div class="leftTop"></div>
 					<div class="rightBottom"></div>
 					<div class="default" style="line-height: 140px;">滑鼠點擊上方指示處</div>
@@ -501,12 +524,10 @@
 
 
 
-
 					</div>
 
 
 					<div class="bb-item">
-
 
 			<div class="left">
 				<div class="redTag">
@@ -525,12 +546,12 @@
 					</div>
 				</div>
 				<div style="position: absolute; top: 27%; height:344px; width: 100%;">
-					<img src="img/pic15.jpg" style="position: absolute; width: 88%; right: 0;">
+					<img src="img/pic20.jpg" style="position: absolute; width: 88%; left: 12%;">
 				</div>
-				<div class="magicBox" style="position: absolute; bottom: 30px; height: 110px; left: 75px; width: 510px;">
+				<div class="magicBox" style="position: absolute; bottom: 4%; height: 10%; left: 12%; width: 83%">
 					<div class="leftTop"></div>
 					<div class="rightBottom"></div>
-					<div class="default" style="line-height: 120px;">滑鼠點擊上方指示處</div>
+					<div class="default" style="line-height: 70px;">滑鼠點擊上方指示處</div>
 					<div class="content">
 					</div>
 				</div>
@@ -549,8 +570,8 @@
 
 					</div>
 				</div>
-				<div style="position: absolute; top: 35%; height:344px; width: 100%;">
-					<img src="img/pic15.jpg" style="position: absolute; width: 100%; left: 0;">
+				<div style="position: absolute; top:37%; width: 100%;">
+					<img src="img/pic21.jpg" style="position: absolute; width: 100%; left: 0;">
 				</div>
 			</div>
 			<div id="arrow">
@@ -559,14 +580,11 @@
 
 
 
-
 					</div>
 
 
 
 					<div class="bb-item">
-
-
 			<div class="left">
 				<div class="redTag">
 					古籍新說：目錄
@@ -593,8 +611,9 @@
 				<div id="imgFour" class="imgWhite animated infinite flash"></div>
 				<div id="imgFive" class="imgWhite animated infinite flash"></div>
 				<div id="imgSix" class="imgWhite animated infinite flash"></div>
-				<div id="imgDiv">
-					<img src="img/pic8.jpg">
+				<div class="imgDiv" style="height: ">
+					<img src="img/pic22.png" style="height: 55%; left: 15%">
+					<!--<img src="img/pic23.jpg" style="height: 40%;">-->
 				</div>
 				<div class="magicBox">
 					<div class="leftTop"></div>
@@ -613,6 +632,7 @@
 			<div id="arrow">
 				<img src="img/arrow.png">
 			</div>
+		
 
 
 
@@ -648,8 +668,8 @@
 				<div id="imgFour" class="imgWhite animated infinite flash"></div>
 				<div id="imgFive" class="imgWhite animated infinite flash"></div>
 				<div id="imgSix" class="imgWhite animated infinite flash"></div>
-				<div id="imgDiv">
-					<img src="img/pic8.jpg">
+				<div class="imgDiv" style="height: 52%;">
+					<img src="img/pic24.jpg" style="height: 52%;">
 				</div>
 				<div class="magicBox">
 					<div class="leftTop"></div>
@@ -669,7 +689,6 @@
 				<img src="img/arrow.png">
 			</div>
 
-
 					</div>
 
 
@@ -679,7 +698,11 @@
 
 
 			<div style="position: absolute; width: 100%; left: 0%; bottom: -5px;">
-				<img src="img/pic9.jpg" style="width:100%">
+				<img src="img/pic25.jpg" style="width:100%">
+			</div>
+			<div class="content" style="position: absolute; width: 40%; background: rgba(255, 255, 255, 0.3); padding : 10px; left: 15%;">
+　　「<div style="display: inline-block; font-size: 38px;">簽</div>」與票的性質類似，用法亦相同，為平日派遣差吏執行公務的下行文書。13507_001件是一件由新竹知縣方祖蔭發給屬下差役張和的簽文定稿，除了將文種名稱、行文動詞改用「簽」字之外，其餘書寫用語和「票」大致相同。
+
 			</div>
 			<div class="left">
 				<div class="redTag">
@@ -692,11 +715,6 @@
 						（五）、簽
 						</h2>
 					</div>
-					<div class="content">
-　　「<div class="start">簽</div>」與票的性質類似，用法亦相同，為平日派遣差吏執行公務的下行文書。13507_001件是一件由新竹知縣方祖蔭發給屬下差役張和的簽文定稿，除了將文種名稱、行文動詞改用「簽」字之外，其餘書寫用語和「票」大致相同。
-
-
-					</div>
 				</div>
 			</div>
 			<div class="right">
@@ -707,14 +725,11 @@
 			</div>
 
 
-
 					</div>
 
 
 
 					<div class="bb-item">
-
-
 			<div class="left">
 				<div class="redTag">
 					古籍新說：目錄
@@ -742,8 +757,8 @@
 				<div id="imgFour" class="imgWhite animated infinite flash"></div>
 				<div id="imgFive" class="imgWhite animated infinite flash"></div>
 				<div id="imgSix" class="imgWhite animated infinite flash"></div>
-				<div id="imgDiv">
-					<img src="img/pic8.jpg">
+				<div class="imgDiv" style="height: 52%;">
+					<img src="img/pic26.jpg" style="height: 52%;">
 				</div>
 				<div class="magicBox">
 					<div class="leftTop"></div>
@@ -984,6 +999,11 @@
 
 
 					<div class="bb-item">
+						<div class="left">
+							<img src="img/coverback.png">
+						</div>
+
+
 					</div>
 
 
@@ -1001,6 +1021,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script src="js/jquerypp.custom.js"></script>
 		<script src="js/jquery.bookblock.js"></script>
+
 		<script>
 			var Page = (function() {
 				
@@ -1015,7 +1036,7 @@
 						config.$bookBlock.bookblock( {
 							speed : 1000,
 							shadowSides : 0.8,
-							shadowFlip : 0.4
+							shadowFlip : 2
 						} );
 						initEvents();
 					},
@@ -1080,9 +1101,15 @@
 					return { init : init };
 
 			})();
+
+
+
 		</script>
+
 		<script>
 				Page.init();
 		</script>
+
+
 	</body>
 </html>
