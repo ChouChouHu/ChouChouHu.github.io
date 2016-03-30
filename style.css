@@ -207,7 +207,7 @@ input {
 .messageContent {
 	position: absolute;
 	color: white;
-	font-size: 2.7vh;
+	font-size: 2.2vh;
 	font-weight: bold;
 	width: 92%;
 	height: 98%;
@@ -221,7 +221,7 @@ input {
 	height: 10%;
 	width: 100%;
 	text-align: center;
-	font-size: 3vh;
+	font-size: 2.7vh;
 	font-weight: bold;
 }
 
