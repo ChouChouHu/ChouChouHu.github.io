@@ -1,0 +1,494 @@
+
+body {
+	/*background: #120312;*/
+	margin: 0px;
+}
+
+.background {
+	position: fixed;
+	background-image: url('img/background.png');
+	background-size: cover;
+	background-position: center;
+	height: 100%;
+	left: 50%;
+}
+
+.popOut {
+	position: absolute;
+	top: 22%;
+	left: 5%;
+	width: 90%;
+}
+
+.popOut #popOutScreen {
+	width: 100%;
+}
+
+.popOut #yesBtn {
+	position: absolute;
+	left: 23%;
+	width: 54%;
+	top: 79%;
+}
+
+/* entry */
+
+.welcomeLogo {
+	position: absolute;
+	top: 22%;
+	width: 72%;
+	left: 14%;
+}
+
+.entryBtn {
+	position: absolute;
+	bottom: 22%;
+	height: 21%;
+	width: 56%;
+	left: 22%;
+}
+
+.entryBtn img {
+	width: 100%;
+	margin: 0;
+	margin-bottom: 13%;
+}
+
+/* */
+/* indexNormal */
+
+.logo {
+	position: absolute;
+	top: 5%;
+	width: 100%;
+	left: 0;
+}
+
+.indexNormalBtn {
+	position: absolute;
+	top: 32%;
+	left: 14%;
+	width: 72%;
+	height: 56%;
+	text-align: left;
+}
+
+.indexNormalBtn img {
+	width: 100%;
+	left: 0;
+	margin: 0;
+	margin-bottom: 4%;
+	display: inline-block;
+}
+
+.messageScroll {
+	position: absolute;
+	bottom: 15%;
+	left: 0%;
+	height: 20%;
+	width: 100%;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	overflow: scroll;
+}
+
+.messageScroll div {
+	margin-top: 3%;
+	margin-left: 7%;
+}
+
+/* */
+/* singin */
+
+.signinZone {
+	position: absolute;
+	top: 29%;
+	left: 5%;
+	width: 90%;
+	height: 56%;
+	text-align: left;
+	overflow: scroll;
+}
+
+.signinZone img {
+	width: 100%;
+	left: 0;
+	margin: 0;
+	margin-bottom: 4%;
+	display: inline-block;
+}
+
+.signinZoneContent {
+	height: 200%;
+	background-color: #2d0906;
+}
+
+.signinData {
+	position: absolute;
+	top: 10%;
+	left: 3%;
+	color: white;
+	font-size: 3vh;
+	font-weight: bold;
+	line-height: 40px;
+}
+
+.typein {
+	position: absolute;
+	height: ;
+}
+
+#signinBtn {
+	position: absolute;
+	width: 48%;
+	left: 26%;
+	bottom: -100%;
+}
+
+#signin24H {
+	position: absolute;
+	left: 14%;
+	width: 72%;
+	bottom: 6%;
+}
+
+
+/*  */
+/* login */
+
+#loginMessage {
+	position: absolute;
+	left: 14%;
+	width: 72%;
+	bottom: 12%;
+}
+
+#login24H {
+	position: absolute;
+	left: 14%;
+	width: 72%;
+	bottom: 3%;
+}
+
+#loginLoginBtn {
+	position: absolute;
+	width: 48%;
+	top: 61%;
+	left: 26%;
+}
+
+/* */
+/* Message */
+
+.messageZone {
+	position: absolute;
+	top: 27%;
+	left: 5%;
+	width: 90%;
+	height: 56%;
+	text-align: left;
+}
+
+.messageZone img {
+	width: 48%;
+	left: 0;
+	margin: 1%;
+	margin-bottom: 4%;
+	display: inline-block;
+	float: left;
+}
+
+.messageContent {
+	position: absolute;
+	color: white;
+	font-weight: bold;
+	width: 92%;
+	height: 98%;
+	top: 21%;
+	left: 4%;
+	overflow: scroll;
+}
+
+.messageTopic {
+	position: absolute;
+	height: 10%;
+	width: 100%;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.messageText {
+	position: absolute;
+	margin-top: 13%;
+}
+
+
+#table {
+	width: 100%;
+}
+
+/*  */
+/* member */
+
+.memberZone {
+	position: absolute;
+	top: 29%;
+	left: 3%;
+	width: 94%;
+	height: 8%;
+	text-align: left;
+	background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5));
+	background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5));
+	background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5));
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5));
+	border: rgba(186, 160, 87, 0.7) 1px solid;
+}
+
+.memberZone2 {
+	position: absolute;
+	left: 3%;
+	width: 94%;
+	height: 41%;
+	bottom: 20%;
+	border: rgba(186, 160, 87, 0.7) 1px solid;
+	overflow: scroll;
+}
+
+.memberZoneContent {
+	height: 220%;
+	background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.9), rgba(70, 70, 70, 0.8));
+	background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.9), rgba(70, 70, 70, 0.8));
+	background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.9), rgba(70, 70, 70, 0.8));
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(70, 70, 70, 0.8));
+}
+
+.memberBtn {
+	position: absolute;
+	height: 32%;
+	width: 24%;
+	border: rgba(186, 160, 87, 0.7) 1px solid;
+	border-radius: 10%;
+	background-color: #2d0906;
+}
+
+#memberBtn1 {
+	top: 26%;
+	left: 8%;
+}
+
+#memberBtn2 {
+	top: 26%;
+	left: 38%;
+}
+
+#memberBtn3 {
+	top: 26%;
+	right: 8%;
+}
+
+#memberBtn4 {
+	top: 64%;
+	left: 8%;
+}
+
+#memberBtn5 {
+	top: 64%;
+	left: 38%;
+}
+
+#memberBtn6 {
+	top: 64%;
+	right: 8%;
+}
+
+#memberBtn7 {
+	top: 102%;
+	left: 8%;
+}
+
+#memberBtn8 {
+	top: 102%;
+	left: 38%;
+}
+
+#memberBtn9 {
+	top: 102%;
+	right: 8%;
+}
+
+#memberBtn10 {
+	top: 140%;
+	left: 8%;
+}
+
+#memberBtn11 {
+	top: 140%;
+	left: 38%;
+}
+
+#memberBtn12 {
+	top: 140%;
+	right: 8%;
+}
+
+#memberBtn13 {
+	top: 178%;
+	left: 8%;
+}
+
+
+#member24H {
+	position: absolute;
+	left: 14%;
+	width: 72%;
+	bottom: 11%;
+}
+
+
+
+/* accountingCenter */
+
+.function {
+	position: absolute;
+	left: 3%;
+	width: 94%;
+	height: 8%;
+	text-align: left;
+	top: 39%;
+	background-color: rgba(125, 102, 94, 1);
+	border: 0px;
+}
+
+.topic {
+	position: absolute;
+	height: 4%;
+	width: 94%;
+	left: 3%;
+	border: rgba(186, 160, 87, 0.7) 1px solid;
+	border-radius: 5px;
+	background-color: #2d0906;
+}
+
+#topic1 {
+	top: 50%;
+}
+
+#topic2 {
+	top: 60%;
+}
+
+#topic3 {
+	top: 70%;
+}
+
+#backMember {
+	position: absolute;
+	left: 41%;
+	bottom: 7%;
+	font-size: 2vh;
+	color: white;
+}
+
+
+/*  */
+/* editAccount */
+
+.editAccount {
+	position: absolute;
+	width: 100%;
+	height: 174%;
+	z-index: -1;
+}
+
+#topic4 {
+	top: 39%;
+}
+
+#editBackMember {
+	position: absolute;
+	left: 41%;
+	bottom: -67%;
+	font-size: 2vh;
+	color: white;
+}
+
+.scroll {
+	position: absolute; 
+	width: 100%; 
+	height: 100%; 
+	overflow: scroll;
+}
+
+.tableTopic {
+	position: absolute;
+	height: 3%;
+	width: 94%;
+	left: 3%;
+	border: rgba(150, 150, 150, 1) 1px solid;
+	background-color: rgba(158, 131, 64, 1);
+}
+
+#tableTopic1 {
+	top: 45%;
+}
+
+#tableTopic2 {
+	top: 67%;
+}
+
+#tableTopic3 {
+	top: 95%;
+	height: 9%;
+}
+
+
+/*  */
+
+/* activeAccount */
+
+#topic5 {
+	top: 69%;
+}
+
+
+/*  */
+
+/* wallet */
+
+ {
+	position: absolute;
+	width: 100%;
+	height: 118%;
+	z-index: -1;
+}
+
+#walletBackMember {
+	position: absolute;
+	left: 41%;
+	bottom: 6%;
+	font-size: 2vh;
+	color: white;
+}
+
+#wallet24H {
+	position: absolute;
+	left: 14%;
+	width: 72%;
+	bottom: 10%;
+}
+
+#topic5 {
+	top: 56%;
+	width: 28%;
+	height: 9%;
+}
+
+#topic6 {
+	top: 68%;
+	width: 28%;
+	height: 9%;
+}
+
+/*  */

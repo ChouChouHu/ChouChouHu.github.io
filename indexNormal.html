@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+	<head>
+		<meta charset="UTF-8" /> 
+		<title>indexNormal</title>
+		<link rel="stylesheet" href="style.css" />
+		<script type="text/javascript" src="js/jQuery.js"></script>
+		<script type="text/javascript">
+			function adjustment() {
+				var a = $("#backPng").height();
+				document.getElementById('backPng').style.width = (a * 0.5625 ) + "px";
+				document.getElementById('backPng').style.marginLeft = -(a * 0.5625 / 2) + "px";
+				/* 0.5625 */
+			}
+
+			window.onload = adjustment;
+	    	window.onresize = adjustment;
+		</script>
+	</head>
+	<body>
+		<div id="backPng" class="background" align="center">
+			<img class="logo" src="img/logoMobile.png">
+			<div class="indexNormalBtn">
+				<img src="img/freeplayBtn.png">
+				<a href="signin.html"><img src="img/signinBtn.png" style="width: 65%;"></a>
+				<a href="login.html"><img src="img/loginBtnSquare.png" style="width: 30%; float: right;"></a>
+				<a href="message.html">
+					<img src="img/messageBoard.png">
+					<div class="messageScroll">
+						<div>
+							<br>
+							<br>
+							<br>
+							<br>
+						</div>
+					</div>
+				</a>
+				<img src="img/24HrserviceBtn.png">
+			</div>
+		</div>
+	</body>
+</html>

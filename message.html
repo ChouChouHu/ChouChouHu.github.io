@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+	<head>
+		<meta charset="UTF-8" /> 
+		<title>message</title>
+		<link rel="stylesheet" href="style.css" />
+		<script type="text/javascript" src="js/jQuery.js"></script>
+		<script type="text/javascript">
+			/* height adjustment to all device */
+			function adjustment() {
+				var a = $("#backPng").height();
+				document.getElementById('backPng').style.width = (a * 0.5625 ) + "px";
+				document.getElementById('backPng').style.marginLeft = -(a * 0.5625 / 2) + "px";
+				/* 0.5625 */
+			}
+
+			window.onload = adjustment;
+	    	window.onresize = adjustment;
+		</script>
+	</head>
+	<body>
+		<div id="backPng" class="background" align="center">
+			<a href="indexNormal.html"><img class="logo" src="img/logo.png"></a>
+			<div class="messageZone">
+				<a href="activities.html"><img src="img/messageBtn1.png"></a>
+				<a href=""><img src="img/messageBtn2.png"></a>
+				<a href="messageContent.html"><img id="table" src="img/messageTable.png"></a>
+			</div>
+		</div>
+	</body>
+</html>

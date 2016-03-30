@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+	<head>
+		<meta charset="UTF-8" /> 
+		<title>entry</title>
+		<link rel="stylesheet" href="style.css" />
+		<script type="text/javascript" src="js/jQuery.js"></script>
+		<script type="text/javascript">
+			function adjustment() {
+				var a = $("#backPng").height();
+				document.getElementById('backPng').style.width = (a * 0.5625 ) + "px";
+				document.getElementById('backPng').style.marginLeft = -(a * 0.5625 / 2) + "px";
+				/* 0.5625 */
+			}
+
+			window.onload = adjustment;
+	    	window.onresize = adjustment;
+		</script>
+	</head>
+	<body>
+		<div id="backPng" class="background" align="center">
+			<img class="welcomeLogo" src="img/welcomeLogo.png">
+			<div class="entryBtn">
+				<a href="indexNormal.html"><img src="img/mobileBtn.png" style="top:0"></a>
+				<img src="img/pCBtn.png" style="bottom:0">
+			</div>
+		</div>
+	</body>
+</html>
