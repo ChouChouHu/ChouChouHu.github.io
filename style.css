@@ -4,6 +4,11 @@ body {
 	margin: 0px;
 }
 
+input {
+	height: 3vh;
+	margin-left: 1vw;
+}
+
 .background {
 	position: fixed;
 	background-image: url('img/background.png');
@@ -202,6 +207,7 @@ body {
 .messageContent {
 	position: absolute;
 	color: white;
+	font-size: 2.7vh;
 	font-weight: bold;
 	width: 92%;
 	height: 98%;
@@ -215,7 +221,7 @@ body {
 	height: 10%;
 	width: 100%;
 	text-align: center;
-	font-size: 20px;
+	font-size: 3vh;
 	font-weight: bold;
 }
 
