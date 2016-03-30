@@ -2,11 +2,11 @@
 body {
 	/*background: #120312;*/
 	margin: 0px;
-	font-size: 2.3vh;
+	font-size: 1.2em;
 }
 
 input {
-	height: 2.5vh;
+	height: 1.4em;
 	margin-left: 1vw;
 }
 
@@ -139,9 +139,10 @@ input {
 	line-height: 40px;
 }
 
-.typein {
-	position: absolute;
-	height: ;
+#sendCode {
+	margin-left: 40%;
+	margin-top: 2%;
+	width: 40%;
 }
 
 #signinBtn {
