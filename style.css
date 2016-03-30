@@ -1,15 +1,4 @@
 
-body {
-	/*background: #120312;*/
-	margin: 0px;
-	font-size: 1.2em;
-}
-
-input {
-	height: 1.4em;
-	margin-left: 1vw;
-}
-
 .background {
 	position: fixed;
 	background-image: url('img/background.png');
@@ -115,6 +104,17 @@ input {
 	height: 56%;
 	text-align: left;
 	overflow: scroll;
+	background-color: red;
+}
+
+.signinScroll {
+	position: absolute;
+	top: 34%;
+	left: 5%;
+	width: 90%;
+	height: 51%;
+	text-align: left;
+	overflow: scroll;
 }
 
 .signinZone img {
@@ -132,24 +132,24 @@ input {
 
 .signinData {
 	position: absolute;
-	top: 10%;
+	top: 3%;
 	left: 3%;
 	color: white;
 	font-weight: bold;
-	line-height: 40px;
+	line-height: 2em;
 }
 
 #sendCode {
-	margin-left: 40%;
-	margin-top: 2%;
+	margin-left: 41%;
+	margin-top: 5%;
+	margin-bottom: 0;
 	width: 40%;
 }
 
 #signinBtn {
-	position: absolute;
 	width: 48%;
-	left: 26%;
-	bottom: -100%;
+	margin-left: 26%;
+	margin-top: 2%;
 }
 
 #signin24H {
@@ -157,6 +157,19 @@ input {
 	left: 14%;
 	width: 72%;
 	bottom: 6%;
+}
+
+#commitment {
+	width: 87%;
+	height: 120px;
+	background-color: rgba(216, 216, 216, 1);
+	border-radius: 3px;
+	margin-top: 5%;
+	padding: 3%;
+	overflow: scroll;
+	line-height: 100%;
+	color: black;
+	font-weight: lighter;
 }
 
 
@@ -499,3 +512,18 @@ input {
 }
 
 /*  */
+
+/* adjustment */
+
+body {
+	/*background: #120312;*/
+	margin: 0px;
+	font-weight: bold;
+}
+
+input {
+	margin-left: 2vw;
+	border-radius: 0.2em;
+	border: 0px;
+}
+
