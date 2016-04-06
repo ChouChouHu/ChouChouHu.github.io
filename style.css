@@ -146,6 +146,7 @@
 	color: white;
 	font-weight: bold;
 	line-height: 2em;
+	width: 100%;
 }
 
 #sendCode {
@@ -234,7 +235,7 @@
 #forgot {
 	position: absolute;
 	color: white;
-	right: 0%;
+	right: 6%;
 	top: 128%;
 	text-decoration: none;
 }
@@ -541,9 +542,11 @@
 	font-weight: bold;
 	line-height: 1.6em;
 	text-align: left;
+	width: 100%;
 }
 
 .typein input {
+	right: 15%;
 	position: absolute;
 }
 
@@ -555,9 +558,6 @@
 	top: 71%;
 }
 
-#type2 input {
-	right: -189%;
-}
 
 #yellow {
 	position: absolute;
@@ -571,9 +571,7 @@
 	top: 105%;
 }
 
-#type3 input {
-	right: -95%;
-}
+
 
 #line1 {
 	position: absolute;
@@ -586,9 +584,6 @@
 	top: 132%;
 }
 
-#type4 input {
-	right: -177%;
-}
 
 #line2 {
 	position: absolute;
@@ -599,10 +594,6 @@
 
 #type5 {
 	top: 149%;
-}
-
-#type5 input {
-	right: -187%;
 }
 
 #topic4 {
@@ -653,7 +644,7 @@
 	top: 154%;
 	width: 20%;
 	background-color: rgba(155, 155, 155, 1);
-	left: 40%;
+	left: 45%;
 }
 
 #check {
@@ -945,7 +936,11 @@
 	position: absolute;
 	top: 83%;
 	width: 48%;
-	left: 23%;
+	left: 26%;
+}
+
+#withdraw img {
+	width: 100%;
 }
 
 #withdrawBackMember {
@@ -1145,4 +1140,33 @@ input {
 .signinData .adjustInput {
 	width: 55%;
 }
+
+#type1 .adjustInput {
+	height: 1.26em;
+	
+}
+
+#type2 .adjustInput {
+	height: 1.26em;
+	
+}
+
+#type3 .adjustInput {
+	height: 1.26em;
+	
+}
+
+#type4 .adjustInput {
+	height: 1.26em;
+	
+}
+
+#type5 .adjustInput {
+	height: 1.26em;
+	
+}
+
+
+
+
 
