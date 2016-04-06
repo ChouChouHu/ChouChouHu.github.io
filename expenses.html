@@ -3,36 +3,44 @@
 <html lang="zh-TW">
 	<head>
 		<meta charset="UTF-8" /> 
-		<title>editAccount</title>
+		<title>expense</title>
 		<link rel="stylesheet" href="style.css" />
 		<script type="text/javascript" src="js/jQuery.js"></script>
-		<script type="text/javascript">
-			/* height adjustment to all device */
-			function adjustment() {
-				var a = $("#backPng").height();
-				document.getElementById('backPng').style.width = (a * 0.5625 ) + "px";
-				document.getElementById('backPng').style.marginLeft = -(a * 0.5625 / 2) + "px";
-				/* 0.5625 */
-			}
-
-			window.onload = adjustment;
-	    	window.onresize = adjustment;
-		</script>
+		<script type="text/javascript" src="js/Define.js"></script>
 	</head>
 	<body>
 		<div id="backPng" class="background" align="center">
-		
-			<a href=""><img class="logo" src="img/logo.png"></a>
-			<div class="memberZone">
+			<div class="scroll">
+				<a href="indexNormal.html"><img class="logo" src="img/logo.png"></a>
+				<div class="memberZone">
+					<div id="left">
+						帳　　號：<br>
+						暱　　稱：
+					</div>
+					<div id="right">
+						電子錢包：<br>
+						紅　　利：
+					</div>
+				</div>
 
+				<div class="topic" id="topic4"><img src="img/expenses_banner.png"></div>
+				<div id="expenseText">從您的現金錢包支出寶物或點數</div>
+
+				<div class="typein" id="type7">
+					當前電子錢包：　0點<br>
+					指定遊戲帳號：<br>
+					轉 入 點 數：&nbsp<input type=text class="adjustInput" style="margin-left: 10%;"><br>
+					檢　驗　碼：<input type=text class="adjustInput" style="margin-left: 10%;">
+					<div style="position: absolute; background: rgba(155, 155, 155, 1); width: 70%; right: -43%; top: 102%; text-align: center">1256</div>
+				</div>
+				<img src="img/expenses_btn.png" id="expenses">
+
+				<div class="topic" id="topic8"><img src="img/expenses records_banner.png"></div>
+				<img id="table5" src="img/table5.png">
+				<a href="member.html"><div id="expenseBackMember">[回會員中心]</div></a>
+
+				<img id="expense24H" src="img/24HrserviceBtn.png">
 			</div>
-
-			<div class="topic" id="topic4"></div>
-
-			<a href="member.html"><div id="backMember">[回會員中心]</div></a>
-
-			<img id="member24H" src="img/24HrserviceBtn.png">
-
 		</div>
 	</body>
 </html>
