@@ -123,6 +123,7 @@
 	height: 51%;
 	text-align: left;
 	overflow: scroll;
+	overflow-x: hidden; 
 }
 
 .signinZone img {
@@ -1135,7 +1136,8 @@ input {
 /* input */
 
 .adjustInput {
-	height: 1em;
+	height: 1.5em;
+	font-size: 0.8em;
 	width: 50%;
 }
 

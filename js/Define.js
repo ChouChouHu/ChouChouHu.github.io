@@ -7,7 +7,7 @@
 				/* font-size */
 				document.getElementById('backPng').style.fontSize = (a / 582) + "em";
 				document.getElementById('backPng').style.lineHeight = 1.4 + "em";
-				$(".adjustInput").css("height", (a / 552) * 1.67 + "em");
+				
 				$(".memberZone").css("font-size", 0.87 + "em");
 				$(".memberZone").css("line-height", 1.3 + "em");
 				$("#commitment").css("font-size", 0.6 + "em");
