@@ -7,7 +7,6 @@
 				/* font-size */
 				document.getElementById('backPng').style.fontSize = (a / 582) + "em";
 				document.getElementById('backPng').style.lineHeight = 1.4 + "em";
-				
 				$(".memberZone").css("font-size", 0.87 + "em");
 				$(".memberZone").css("line-height", 1.3 + "em");
 				$("#commitment").css("font-size", 0.6 + "em");
@@ -20,7 +19,7 @@
 				$("#yellow").css("font-size", 0.6 + "em");
 				$("#walletText").css("font-size", 0.67 + "em");
 				$("#walletText").css("line-height", 1.28 + "em");
-				$("#short1, #short2, #short3, #short4").css("width", ((a / 552) * 1.67) * 3.5 + "em");
+				
 				$("#offline").css("font-size", 0.8 + "em");
 				$("#offline").css("line-height", 1 + "em");
 				$("#expenseText").css("font-size", 0.6 + "em");

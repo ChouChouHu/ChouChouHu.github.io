@@ -829,6 +829,7 @@
 	width: 22%;
 	bottom: 32%;
 	right: 33%;
+	font-size: 0.7em;
 }
 
 #short2 {
@@ -836,6 +837,7 @@
 	width: 22%;
 	bottom: 20%;
 	right: 33%;
+	font-size: 0.7em;
 }
 
 #short3 {
@@ -1136,8 +1138,11 @@ input {
 /* input */
 
 .adjustInput {
-	height: 1.5em;
-	font-size: 0.8em;
-	width: 50%;
+	height: 1.4em;
+	font-size: 0.9em;
+}
+
+.signinData .adjustInput {
+	width: 55%;
 }
 
