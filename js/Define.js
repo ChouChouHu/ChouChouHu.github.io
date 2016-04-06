@@ -1,8 +1,8 @@
 			/* height adjustment to all device */
 			function adjustment() {
 				var a = $("#backPng").height();
-				document.getElementById('backPng').style.width = (a * 0.58 ) + "px";
-				document.getElementById('backPng').style.marginLeft = -(a * 0.58 / 2) + "px";
+				document.getElementById('backPng').style.width = (a * 0.5625 ) + "px";
+				document.getElementById('backPng').style.marginLeft = -(a * 0.5625 / 2) + "px";
 
 				/* font-size */
 				document.getElementById('backPng').style.fontSize = (a / 582) + "em";
