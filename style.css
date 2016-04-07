@@ -97,6 +97,7 @@
 	color: white;
 	font-weight: bold;
 	overflow: scroll;
+	overflow-x: hidden; 
 }
 
 .messageScroll div {
@@ -179,6 +180,7 @@
 	margin-top: 5%;
 	padding: 3%;
 	overflow: scroll;
+	overflow-x: hidden; 
 	line-height: 100%;
 	color: black;
 	font-weight: lighter;
@@ -276,6 +278,7 @@
 	top: 21%;
 	left: 4%;
 	overflow: scroll;
+	overflow-x: hidden; 
 }
 
 .messageTopic {
@@ -337,6 +340,7 @@
 	bottom: 20%;
 	border: rgba(186, 160, 87, 0.7) 1px solid;
 	overflow: scroll;
+	overflow-x: hidden; 
 }
 
 .memberZoneContent {
@@ -617,7 +621,8 @@
 	position: absolute; 
 	width: 100%; 
 	height: 100%;
-	overflow-y: scroll;
+	overflow: scroll;
+	overflow-x: hidden; 
 }
 
 .tableTopic {
@@ -1169,6 +1174,10 @@ input {
 #type5 .adjustInput {
 	height: 1.1em;
 	
+}
+
+#type10 .adjustInput {
+	width: 40%;
 }
 
 @media(min-height: 1200px) {
