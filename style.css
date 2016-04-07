@@ -611,7 +611,7 @@
 	position: absolute; 
 	width: 100%; 
 	height: 100%;
-	overflow: scroll;
+	overflow-y: scroll;
 }
 
 .tableTopic {
@@ -887,7 +887,7 @@
 
 #expenseText {
 	color: rgba(248, 231, 28, 1);
-	margin-top: 73%;
+	margin-top: 77%;
 }
 
 #type7 {
@@ -1132,8 +1132,8 @@ input {
 /* input */
 
 .adjustInput {
-	height: 1.2em;
-	font-size: 1em;
+	height: 1.3em;
+	font-size: 0.9em;
 }
 
 .signinData .adjustInput {
