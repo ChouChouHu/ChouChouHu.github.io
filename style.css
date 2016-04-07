@@ -1,9 +1,12 @@
+
+
+
 .background {
 	position: fixed;
 	background-image: url('img/background.png');
 	background-size: cover;
 	background-position: center;
-	height: 100%;
+	height: 100%; /* special condition. */
 	left: 50%;
 }
 
@@ -493,6 +496,9 @@
 #topic3 {
 	top: 70%;
 }
+
+
+/* just define where table is */
 
 #table1 {
 	position: absolute;
