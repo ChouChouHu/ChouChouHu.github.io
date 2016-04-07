@@ -70,9 +70,9 @@
 
 .indexNormalBtn {
 	position: absolute;
-	top: 32%;
-	left: 14%;
-	width: 72%;
+	top: 29%;
+	left: 11%;
+	width: 78%;
 	height: 56%;
 	text-align: left;
 }
@@ -816,7 +816,7 @@
 
 #short1 {
 	position: absolute;
-	width: 22%;
+	width: 20%;
 	bottom: 32%;
 	right: 33%;
 	font-size: 0.7em;
@@ -824,7 +824,7 @@
 
 #short2 {
 	position: absolute;
-	width: 22%;
+	width: 20%;
 	bottom: 20%;
 	right: 33%;
 	font-size: 0.7em;
@@ -832,14 +832,14 @@
 
 #short3 {
 	position: absolute;
-	width: 22%;
+	width: 20%;
 	bottom: 8%;
 	right: 33%;
 }
 
 #short4 {
 	position: absolute;
-	width: 22%;
+	width: 20%;
 	bottom: -4%;
 	right: 33%;
 }
