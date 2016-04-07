@@ -1,10 +1,10 @@
 			/* height adjustment to all device */
 			function adjustment() {
 				var a = $("#backPng").height();
-				/*
-				document.getElementById('backPng').style.width = (a * 0.59 ) + "px";
-				document.getElementById('backPng').style.marginLeft = -(a * 0.59 / 2) + "px";
-				*/
+				
+				document.getElementById('backPng').style.width = (a * 0.62 ) + "px";
+				document.getElementById('backPng').style.marginLeft = -(a * 0.62 / 2) + "px";
+
 				/* iphone6: width / height = 0.5625 */
 				/* marginLeft -> make it center */
 
