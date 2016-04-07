@@ -1,11 +1,10 @@
-
 .background {
 	position: fixed;
 	background-image: url('img/background.png');
 	background-size: cover;
 	background-position: center;
 	height: 100%;
-	left: 50%;
+	width: 100%;
 }
 
 .background2 {
@@ -1133,8 +1132,8 @@ input {
 /* input */
 
 .adjustInput {
-	height: 1.4em;
-	font-size: 0.9em;
+	height: 1.2em;
+	font-size: 1em;
 }
 
 .signinData .adjustInput {
@@ -1166,14 +1165,14 @@ input {
 	
 }
 
-@media(min-height: 1200px) {
+@media(min-height: 2000px) {
 	/* pad */
 	.background {
 		height: 1300px;
 	}
 }
 
-@media(min-height: 1400px) {
+@media(min-height: 2000px) {
 	/* smart phone */
 	.background {
 		height: 1650px;
