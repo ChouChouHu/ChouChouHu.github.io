@@ -532,7 +532,7 @@ body {
 	position: relative;
 	font-size: 2vh;
 	color: white;
-	margin-bottom: 25%;
+	padding-bottom: 25%;
 }
 
 
@@ -1094,7 +1094,7 @@ input {
 }
 
 #type10 .adjustInput {
-	width: 40%;
+	width: 30%;
 }
 
 /* for table */
