@@ -560,6 +560,7 @@ body {
 .typein input {
 	right: 15%;
 	position: absolute;
+	width: 45%;
 }
 
 
@@ -1063,7 +1064,8 @@ input {
 }
 
 .signinData .adjustInput {
-	width: 55%;
+	width: 45%;
+	margin-left: 7%;
 }
 
 #type1 .adjustInput {
