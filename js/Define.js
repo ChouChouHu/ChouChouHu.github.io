@@ -8,7 +8,7 @@
 				/* marginLeft -> make it center */
 
 				/* font-size */
-				document.getElementById('backPng').style.fontSize = (a / 582) + "em";
+				document.getElementById('backPng').style.fontSize = (a / 327) + "em";
 				document.getElementById('backPng').style.lineHeight = 1.4 + "em";
 				$(".memberZone").css("font-size", 0.87 + "em");
 				$(".memberZone").css("line-height", 1.3 + "em");

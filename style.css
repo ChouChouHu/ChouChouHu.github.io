@@ -9,8 +9,8 @@ body {
 	background-image: url('img/background.png');
 	background-size: cover;
 	background-position: center;
-	width: 86%; /* special condition. */
-	left: 7%;
+	width: 88%; /* special condition. */
+	left: 6%;
 }
 
 .background2 {
