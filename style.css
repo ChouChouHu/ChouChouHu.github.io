@@ -1,8 +1,11 @@
 
-
+body {
+	height: 50vh;
+	width: 100%;
+}
 
 .background {
-	position: fixed;
+	position: absolute;
 	background-image: url('img/background.png');
 	background-size: cover;
 	background-position: center;
