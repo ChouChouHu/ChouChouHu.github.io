@@ -68,10 +68,9 @@ body {
 /* indexNormal */
 
 .logo {
-	position: absolute;
-	top: 3%;
+	position: relative;
 	width: 106%;
-	left: -3%;
+	margin-top: 7%;
 }
 
 .indexNormalBtn {
@@ -160,6 +159,13 @@ body {
 	margin-top: 2%;
 	margin-bottom: 0;
 	width: 40%;
+}
+
+#code {
+	margin-left: 36%;
+	background-color: rgba(155, 155, 155, 1);
+	width: 30%;
+	text-align: center;
 }
 
 #signinBtn {
@@ -306,9 +312,7 @@ body {
 /* member */
 
 .memberZone {
-	position: absolute;
-	top: 29%;
-	left: 3%;
+	position: relative;
 	width: 94%;
 	height: 8%;
 	text-align: left;
@@ -336,11 +340,11 @@ body {
 }
 
 .memberZone2 {
-	position: absolute;
-	left: 3%;
+	position: relative;
 	width: 94%;
 	height: 41%;
-	bottom: 20%;
+	margin-top: 2%;
+	margin-bottom: 5%;
 	border: rgba(186, 160, 87, 0.7) 1px solid;
 	overflow: scroll;
 	overflow-x: hidden; 
@@ -431,10 +435,8 @@ body {
 
 
 #member24H {
-	position: absolute;
-	left: 14%;
+	position: relative;
 	width: 72%;
-	bottom: 11%;
 }
 
 
@@ -442,12 +444,11 @@ body {
 /* accountingCenter */
 
 .function {
-	position: absolute;
-	left: 3%;
+	position: relative;
 	width: 94%;
 	height: 8%;
 	text-align: left;
-	top: 39%;
+	margin-top: 3%;
 	background-color: rgba(125, 102, 94, 1);
 	border: 0px;
 }
@@ -482,10 +483,9 @@ body {
 }
 
 .topic {
-	position: absolute;
+	position: relative;
 	height: 4%;
 	width: 94%;
-	left: 3%;
 }
 
 .topic img {
@@ -493,15 +493,15 @@ body {
 }
 
 #topic1 {
-	top: 50%;
+	margin-top: 7%;
 }
 
 #topic2 {
-	top: 60%;
+	margin-top: 3%;
 }
 
 #topic3 {
-	top: 70%;
+	margin-top: 3%;
 }
 
 
@@ -529,11 +529,10 @@ body {
 }
 
 #backMember {
-	position: absolute;
-	left: 41%;
-	bottom: 7%;
+	position: relative;
 	font-size: 2vh;
 	color: white;
+	margin-bottom: 15%;
 }
 
 
@@ -548,13 +547,14 @@ body {
 }
 
 .typein {
-	position: absolute;
-	left: 5%;
+	position: relative;
 	color: white;
 	font-weight: bold;
 	line-height: 1.6em;
 	text-align: left;
-	width: 100%;
+	width: 90%;
+	margin-top: 3%;
+	margin-bottom: 3%;
 }
 
 .typein input {
@@ -562,54 +562,29 @@ body {
 	position: absolute;
 }
 
-#type1 {
-	top: 49%;
-}
-
-#type2 {
-	top: 71%;
-}
 
 
 #yellow {
-	position: absolute;
-	top: 90%;
+	position: relative;
 	color: rgba(234, 239, 12, 1);
 	width: 100%;
 	text-align: center;
 }
 
-#type3 {
-	top: 105%;
-}
-
-
-
-#line1 {
-	position: absolute;
-	top: 130%;
-	left: 3%;
+.line {
+	position: relative;
 	width: 94%;
 }
 
-#type4 {
-	top: 132%;
-}
 
 
-#line2 {
-	position: absolute;
-	top: 147%;
-	left: 3%;
+.line {
+	position: relative;
 	width: 94%;
-}
-
-#type5 {
-	top: 149%;
 }
 
 #topic4 {
-	top: 39%;
+	margin-top: 3%;
 }
 
 #editBackMember {
@@ -629,42 +604,32 @@ body {
 }
 
 .tableTopic {
-	position: absolute;
+	position: relative;
 	height: 3%;
 	width: 94%;
-	left: 3%;
+	margin-top: 3%;
 }
 
 .tableTopic img {
 	width: 100%;
 }
 
-#tableTopic1 {
-	top: 45%;
-}
-
-#tableTopic2 {
-	top: 67%;
-}
 
 #tableTopic3 {
-	top: 95%;
-	height: 9%;
+	margin-bottom: 12%;
 }
 
 #editSendCode {
-	position: absolute;
-	top: 154%;
+	position: relative;
 	width: 20%;
 	background-color: rgba(155, 155, 155, 1);
-	left: 45%;
+	margin-left: 0%;
+	margin-bottom: 5%;
 }
 
 #check {
-	position: absolute;
-	top: 159%;
+	position: relative;
 	width: 48%;
-	left: 26%;
 }
 
 
@@ -673,16 +638,13 @@ body {
 /* activeAccount */
 
 #topic7 {
-	top: 70%;
+	margin-top: 5%;
 }
 
 #topic7 img {
 	width: 100%;
 }
 
-#type6 {
-	top: 44%;
-}
 
 /*  */
 
@@ -738,17 +700,12 @@ body {
 }
 
 #activeAccount {
-	position: absolute;
+	position: relative;
 	width: 48%;
-	left: 26%;
-	top: 60%;
 }
 
 #table4 {
-	position: absolute;
-	left: 2%;
 	width: 96%;
-	top: 75%;
 }
 
 /*  */
@@ -901,22 +858,15 @@ body {
 
 #expenseText {
 	color: rgba(248, 231, 28, 1);
-	margin-top: 77%;
 }
 
 #type7 {
-	top: 46%;
+	margin-bottom: 3%;
 }
 
 #expenses {
-	position: absolute;
-	top: 71%;
+	position: relative;
 	width: 48%;
-	left: 26%;
-}
-
-#topic8 {
-	top: 80%;
 }
 
 #expenseBackMember {
@@ -928,10 +878,9 @@ body {
 }
 
 #expense24H {
-	position: absolute;
-	left: 14%;
+	position: relative;
 	width: 72%;
-	bottom: -10%;
+	margin-top: 20%;
 }
 
 #table5 {
@@ -941,65 +890,39 @@ body {
 	width: 96%;
 }
 
-#type8 {
-	top: 44%;
-}
 
 #withdraw {
-	position: absolute;
-	top: 83%;
+	position: relative;
 	width: 48%;
-	left: 26%;
+	margin-top: 13%;
 }
 
 #withdraw img {
 	width: 100%;
 }
 
-#withdrawBackMember {
-	position: absolute;
-	left: 41%;
-	bottom: -22%;
-	font-size: 2vh;
-	color: white;
-}
 
 #withdraw24H {
-	position: absolute;
-	left: 14%;
+	position: relative;
 	width: 72%;
-	bottom: -17%;
 }
 
 #table6 {
-	position: absolute;
-	top: 93%;
-	left: 2%;
 	width: 96%;
 }
 
 #explanation {
-	position: absolute;
-	left: 2%;
+	position: relative;
 	width: 96%;
-	top: 39%;
-}
-
-#topic9 {
-	top: 58%;
+	margin-top: 3%;
 }
 
 #consignmentText, #consignmentText2 {
-	position: absolute;
-	top: 63%;
+	position: relative;
 	color: white;
 	text-align: left;
-	left: 3%;
 	width: 94%;
-}
-
-#type9 {
-	top: 74%;
+	margin-top: 3%;
 }
 
 #conBackMember {
@@ -1011,53 +934,42 @@ body {
 }
 
 #con24H {
-	position: absolute;
-	left: 14%;
+	position: relative;
 	width: 72%;
-	bottom: -62%;
 }
 
 #consignment {
-	position: absolute;
-	left: 26%;
+	position: relative;
 	width: 48%;
-	top: 94%;
+	margin-top: 12%;
 }
 
 #topic10 {
-	top: 103%;
+	margin-top: 3%;
 }
 
-#type10 {
-	top: 119%;
-}
 
 #shift {
-	position: absolute;
-	left: 26%;
+	position: relative;
 	width: 48%;
-	top: 144%;
+	margin-top: 10%;
+	margin-bottom: 3%;
 }
 
 #table7 {
-	position: absolute;
-	left: 2%;
 	width: 96%;
-	top: 44%;
 }
 
 #bonus {
-	position: absolute;
-	left: 2%;
+	position: relative;
 	width: 96%;
-	top: 38%;
+	margin-top: 3%;
+	margin-bottom: 3%;
 }
 
 #whiteTable {
-	position: absolute;
-	left: 2%;
+	position: relative;
 	width: 96%;
-	top: 44%;
 }
 
 .game {
@@ -1183,7 +1095,12 @@ input {
 	width: 40%;
 }
 
+/* for table */
 
-
+.table {
+	position: relative;
+	margin-top: 2%;
+	margin-bottom: 8%;
+}
 
 
