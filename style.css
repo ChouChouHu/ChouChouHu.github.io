@@ -6,7 +6,7 @@
 	background-image: url('img/background.png');
 	background-size: cover;
 	background-position: center;
-	height: 100%; /* special condition. */
+	height: 1767px; /* special condition. */
 	left: 50%;
 }
 
@@ -1180,21 +1180,7 @@ input {
 	width: 40%;
 }
 
-/*
 
-@media(min-height: 1200px) {
-	/* pad *//*
-	.background {
-		height: 1100px;
-	}
-}
-
-@media(min-height: 1500px) {
-	/* smart phone *//*
-	.background {
-		height: 1800px;
-	}
-}*/
 
 
 
