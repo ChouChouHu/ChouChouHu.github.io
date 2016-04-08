@@ -1180,19 +1180,21 @@ input {
 	width: 40%;
 }
 
+/*
+
 @media(min-height: 1200px) {
-	/* pad */
+	/* pad *//*
 	.background {
 		height: 1100px;
 	}
 }
 
 @media(min-height: 1500px) {
-	/* smart phone */
+	/* smart phone *//*
 	.background {
 		height: 1800px;
 	}
-}
+}*/
 
 
 
