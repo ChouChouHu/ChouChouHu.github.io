@@ -6,8 +6,8 @@
 	background-image: url('img/background.png');
 	background-size: cover;
 	background-position: center;
-	height: 100%; /* special condition. */
-	left: 50%;
+	width: 100%; /* special condition. */
+	left: 0%;
 }
 
 .background2 {
