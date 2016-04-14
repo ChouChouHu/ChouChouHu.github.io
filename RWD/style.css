@@ -1113,6 +1113,7 @@ input {
 
 .select select {
 	background-size: 0; /* important */
+	background-color: white;
 	font-size: 0.7em;
 }
 
@@ -1126,3 +1127,7 @@ input {
 	width: 100%;
 }
 
+#dateFont {
+	display: inline-block;
+	font-size: 0.8em;
+}
