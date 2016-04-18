@@ -1,3 +1,6 @@
+a {
+	text-decoration: none;
+}
 
 body {
 	height: 50vh;
@@ -111,11 +114,9 @@ body {
 /* singin */
 
 .signinZone {
-	position: absolute;
-	top: 29%;
-	left: 5%;
+	position: relative;
 	width: 90%;
-	height: 56%;
+	height: 100%;
 	text-align: left;
 	overflow: hidden;
 }
@@ -125,7 +126,7 @@ body {
 	top: 34%;
 	left: 5%;
 	width: 90%;
-	height: 51%;
+	height: 100%;
 	text-align: left;
 	overflow: scroll;
 	overflow-x: hidden; 
@@ -175,10 +176,9 @@ body {
 }
 
 #signin24H {
-	position: absolute;
-	left: 14%;
+	margin-top: 5%;
+	padding-bottom: 15%;
 	width: 72%;
-	bottom: 6%;
 }
 
 #commitment {
@@ -342,20 +342,18 @@ body {
 .memberZone2 {
 	position: relative;
 	width: 94%;
-	height: 41%;
+	height: 92%;
 	margin-top: 2%;
 	margin-bottom: 5%;
 	border: rgba(186, 160, 87, 0.7) 1px solid;
-	overflow: scroll;
-	overflow-x: hidden; 
 }
 
 .memberZoneContent {
-	height: 220%;
-	background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.9), rgba(70, 70, 70, 0.8));
-	background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.9), rgba(70, 70, 70, 0.8));
-	background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.9), rgba(70, 70, 70, 0.8));
-	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(70, 70, 70, 0.8));
+	height: 100%;
+	background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.9), rgba(50, 50, 50, 0.7));
+	background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.9), rgba(50, 50, 50, 0.7));
+	background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.9), rgba(50, 50, 50, 0.7));
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(50, 50, 50, 0.7));
 }
 
 .memberBtn {
@@ -369,67 +367,67 @@ body {
 }
 
 #memberBtn1 {
-	top: 26%;
+	top: 12%;
 	left: 8%;
 }
 
 #memberBtn2 {
-	top: 26%;
+	top: 12%;
 	left: 38%;
 }
 
 #memberBtn3 {
-	top: 26%;
+	top: 12%;
 	right: 8%;
 }
 
 #memberBtn4 {
-	top: 64%;
+	top: 29%;
 	left: 8%;
 }
 
 #memberBtn5 {
-	top: 64%;
+	top: 29%;
 	left: 38%;
 }
 
 #memberBtn6 {
-	top: 64%;
+	top: 29%;
 	right: 8%;
 }
 
 #memberBtn7 {
-	top: 102%;
+	top: 46%;
 	left: 8%;
 }
 
 #memberBtn8 {
-	top: 102%;
+	top: 46%;
 	left: 38%;
 }
 
 #memberBtn9 {
-	top: 102%;
+	top: 46%;
 	right: 8%;
 }
 
 #memberBtn10 {
-	top: 140%;
+	top: 63%;
 	left: 8%;
 }
 
 #memberBtn11 {
-	top: 140%;
+	top: 63%;
 	left: 38%;
 }
 
 #memberBtn12 {
-	top: 140%;
+	top: 63%;
 	right: 8%;
 }
 
 #memberBtn13 {
-	top: 178%;
+	top: 80%;
 	left: 8%;
 }
 
@@ -437,6 +435,7 @@ body {
 #member24H {
 	position: relative;
 	width: 72%;
+	padding-bottom: 15%;
 }
 
 
@@ -719,7 +718,7 @@ body {
 	color: white;
 	text-align: left;
 	padding: 4%;
-	top: 42%;
+	top: 43%;
 }
 
 #payment {
@@ -807,6 +806,7 @@ body {
 	width: 20%;
 	bottom: 8%;
 	right: 33%;
+	font-size: 0.7em;
 }
 
 #short4 {
@@ -814,6 +814,7 @@ body {
 	width: 20%;
 	bottom: -4%;
 	right: 33%;
+	font-size: 0.7em;
 }
 
 /*  */
@@ -1034,10 +1035,9 @@ body {
 }
 
 #finishTopic {
-	position: absolute;
-	left: 3%;
+	position: relative;
 	width: 94%;
-	top: 44%;
+	margin-top: 2%;
 }
 
 
@@ -1108,6 +1108,7 @@ input {
 	width: 94%;
 	color: white;
 	font-size: 0.7em;
+	line-height: 1.5em;
 	text-align: center;
 	margin: 0;
 	border-collapse: collapse;
@@ -1224,5 +1225,142 @@ input {
 	font-weight: lighter;
 }
 
+.messageContentText {
+	position: relative;
+	text-align: center;
+	width: 80%;
+	color: white;
+	font-size: 0.8em;
+	font-weight: lighter;
+	line-height: 1.1em;
+	margin-bottom: 10%;
+}
 
+.popOutContentTopic {
+	position: absolute;
+	top: 1%;
+	width: 30%;
+	left: 35%;
+	text-align: center;
+	color: white;
+}
+
+.popOutContent {
+	position: absolute;
+	top: 40%;
+	width: 30%;
+	left: 35%;
+	text-align: center;
+	color: white;
+}
+
+#VIPtext {
+	position: absolute;
+	color: white;
+	top: 63%;
+	width: 50%;
+	font-size: 0.65em;
+	line-height: 1.1em;
+	text-align: left;
+	right: 5%;
+	color: rgb(251, 0, 7);
+}
+
+#ATMbankcode {
+	position: absolute;
+	color: white;
+	top: 53%;
+	left: 42%;
+	font-weight: lighter;
+}
+
+#ATMbankcode2 {
+	position: absolute;
+	color: white;
+	top: 57%;
+	left: 42%;
+	font-weight: lighter;
+}
+
+.leftMargin {
+	display: inline-block;
+	margin-left: 7%;
+}
+
+.bonusText {
+	position: absolute;
+	color: white;
+	top: 53%;
+	left: 12%;
+	z-index: 1;
+}
+
+.bonusText2 {
+	position: absolute;
+	color: white;
+	top: 53%;
+	left: 45%;
+	z-index: 1;
+	text-align: left;
+	color: #f9e559;
+}
+
+.bonusBack {
+	position: absolute;
+	color: white;
+	top: 75%;
+	left: 37%;
+	font-size: 0.8em;
+	z-index: 1;
+	text-align: left;
+	color: rgb(238, 162, 2);
+}
+
+
+/* blackTable */
+
+.blackTable {
+	width: 74%;
+	color: white;
+	font-size: 1em;
+	line-height: 1.5em;
+	text-align: center;
+	margin: 0;
+	border-collapse: collapse;
+	background-color: rgb(13, 13, 13);
+}
+
+.blackTable td {
+	border: rgb(150, 149, 149) 0.1em solid;
+}
+
+.bigTd {
+	line-height: 3em;
+}
+
+/* messageTable */
+
+.messageTable {
+	width: 100%;
+	color: white;
+	font-size: 1em;
+	margin: 0;
+	border-collapse: collapse;
+	background-color: rgb(21, 21, 21);
+}
+
+.messageTable td {
+	border: rgb(37, 37, 37) 0.1em solid;
+	padding-left: 1em;
+	font-size: 0.8em;
+	line-height: 1.5em;
+}
+
+.messageTable .messageTableTopic {
+	padding: 0;
+	font-size: 1em;
+	line-height: 1.7em;
+	text-align: center;
+	background: rgb(37, 37, 37);
+}
 
