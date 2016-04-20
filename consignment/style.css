@@ -101,8 +101,8 @@ body {
 
 .messageScroll {
 	position: absolute;
-	margin-top: 6%;
 	left: 0%;
+	bottom: 0%;
 	height: 24%;
 	width: 100%;
 	color: white;
@@ -122,14 +122,13 @@ body {
 .signinZone {
 	position: relative;
 	width: 90%;
-	height: 100%;
 	text-align: left;
 	overflow: hidden;
 }
 
 .signinScroll {
 	position: absolute;
-	top: 34%;
+	top: 7%;
 	left: 5%;
 	width: 90%;
 	height: 100%;
@@ -228,10 +227,8 @@ body {
 /* login */
 
 #loginMessage {
-	position: absolute;
-	left: 5%;
+	position: relative;
 	width: 90%;
-	bottom: 6%;
 }
 
 #login24H {
@@ -314,6 +311,7 @@ body {
 	position: absolute;
 	margin-top: 13%;
 }
+
 
 
 #table {
