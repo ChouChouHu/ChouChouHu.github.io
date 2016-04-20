@@ -1,5 +1,6 @@
 a {
 	text-decoration: none;
+	color: white;
 }
 
 body {
@@ -143,6 +144,7 @@ body {
 .signinZoneContent {
 	height: 200%;
 	background-color: #2d0906;
+	border-radius: 3%;
 }
 
 .signinData {
@@ -308,6 +310,16 @@ body {
 	width: 100%;
 }
 
+.messageRecordTopic {
+	color: white;
+	font-size: 0.7em;
+	line-height: 1.4em;
+	width: 92%;
+	background: rgb(158, 131, 64);
+	letter-spacing: 0.13em;
+	margin: 3%;
+}
+
 /*  */
 /* member */
 
@@ -435,7 +447,6 @@ body {
 #member24H {
 	position: relative;
 	width: 72%;
-	padding-bottom: 15%;
 }
 
 
@@ -529,7 +540,7 @@ body {
 
 #backMember {
 	position: relative;
-	font-size: 2vh;
+	font-size: 0.8em;
 	color: white;
 	padding-bottom: 25%;
 }
@@ -708,17 +719,19 @@ body {
 	width: 96%;
 }
 
+.walletBtn {
+	width: 100%;
+}
+
 /*  */
 
 
 /* wallet */
 
 #walletText {
-	position: absolute;
 	color: white;
 	text-align: left;
-	padding: 4%;
-	top: 43%;
+	padding: 3%;
 }
 
 #payment {
@@ -728,94 +741,28 @@ body {
 	left: 2%;	
 }
 
-#info1 {
-	position: absolute;
-	width: 19%;
-	bottom: 37%;
-	left: 44%;
-}
-
-#info2 {
-	position: absolute;
-	width: 19%;
-	bottom: 25%;
-	left: 44%;
-}
-
-#info3 {
-	position: absolute;
-	width: 19%;
-	bottom: 13%;
-	left: 44%;
-}
-
-#info4 {
-	position: absolute;
-	width: 19%;
-	bottom: 1%;
-	left: 44%;
-}
-
-#next1 {
-	position: absolute;
-	width: 22%;
-	bottom: 31%;
-	left: 71%;
-}
-
-#next2 {
-	position: absolute;
-	width: 22%;
-	bottom: 19%;
-	left: 71%;
-}
-
-#next3 {
-	position: absolute;
-	width: 22%;
-	bottom: 7%;
-	left: 71%;
-}
-
-#next4 {
-	position: absolute;
-	width: 22%;
-	bottom: -4%;
-	left: 71%;
+.info {
+	width: 50%;
+	float: right;
+	margin-right: 10%;
 }
 
 
-#short1 {
-	position: absolute;
-	width: 20%;
-	bottom: 32%;
-	right: 33%;
-	font-size: 0.7em;
+.next {
+	width: 50%;
+	float: right;
+	margin-right: 5%;
 }
 
-#short2 {
-	position: absolute;
-	width: 20%;
-	bottom: 20%;
-	right: 33%;
-	font-size: 0.7em;
+
+.short {
+	width: 40%;
+	float: left;
+	margin-left: 1%;
+	margin-top: 2%;
 }
 
-#short3 {
-	position: absolute;
-	width: 20%;
-	bottom: 8%;
-	right: 33%;
-	font-size: 0.7em;
-}
 
-#short4 {
-	position: absolute;
-	width: 20%;
-	bottom: -4%;
-	right: 33%;
-	font-size: 0.7em;
-}
 
 /*  */
 
@@ -968,6 +915,17 @@ body {
 	margin-bottom: 3%;
 }
 
+.bonusBtnZone {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	z-index: 1;
+}
+
+.bonusBtnZone img {
+	width: 76%;
+}
+
 #whiteTable {
 	position: relative;
 	width: 96%;
@@ -1107,7 +1065,7 @@ input {
 .tableCode {
 	width: 94%;
 	color: white;
-	font-size: 0.7em;
+	font-size: 0.65em;
 	line-height: 1.5em;
 	text-align: center;
 	margin: 0;
@@ -1117,6 +1075,7 @@ input {
 
 .firstTr {
 	background-color: rgb(158, 131, 64);
+	font-size: 1.1em;
 	line-height: 1.1em;
 	margin: 0;
 }
@@ -1198,7 +1157,11 @@ input {
 
 #dateFont {
 	display: inline-block;
-	font-size: 0.8em;
+	font-size: 0.7em;
+}
+
+#dateFont select {
+	font-size: 1em;
 }
 
 .typeinZone {
@@ -1336,6 +1299,25 @@ input {
 
 .bigTd {
 	line-height: 3em;
+}
+
+/* whiteTable */
+
+.whiteTable {
+	width: 94%;
+	color: white;
+	font-size: 1em;
+	line-height: 1.5em;
+	text-align: center;
+	margin: 0;
+	border-collapse: collapse;
+}
+
+.whiteTable td {
+	border: rgb(255, 255, 255) 0.1em solid;
+	margin: 0;
+	padding: 2%;
+	text-align: left;
 }
 
 /* messageTable */
