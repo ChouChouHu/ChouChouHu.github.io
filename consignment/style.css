@@ -101,8 +101,8 @@ body {
 
 .messageScroll {
 	position: absolute;
-	bottom: 0%;
 	left: 0%;
+	bottom: 0%;
 	height: 24%;
 	width: 100%;
 	color: white;
@@ -112,7 +112,7 @@ body {
 }
 
 .messageScroll div {
-	margin-top: 3%;
+	margin-top: 5%;
 	margin-left: 7%;
 }
 
@@ -122,14 +122,13 @@ body {
 .signinZone {
 	position: relative;
 	width: 90%;
-	height: 100%;
 	text-align: left;
 	overflow: hidden;
 }
 
 .signinScroll {
 	position: absolute;
-	top: 34%;
+	top: 7%;
 	left: 5%;
 	width: 90%;
 	height: 100%;
@@ -228,17 +227,15 @@ body {
 /* login */
 
 #loginMessage {
-	position: absolute;
-	left: 14%;
-	width: 72%;
-	bottom: 12%;
+	position: relative;
+	width: 90%;
 }
 
 #login24H {
 	position: absolute;
 	left: 14%;
 	width: 72%;
-	bottom: 3%;
+	top: 98%;
 }
 
 #loginLoginBtn {
@@ -314,6 +311,7 @@ body {
 	position: absolute;
 	margin-top: 13%;
 }
+
 
 
 #table {
@@ -905,7 +903,11 @@ body {
 }
 
 #consignmentInput {
+<<<<<<< HEAD
 	width: 54%;
+=======
+	width: 50%;
+>>>>>>> 27dd667312bd3c57c01c68b7e97e91d4ee59582f
 }
 
 #conBackMember {
@@ -1162,7 +1164,11 @@ input {
 #consignmentLine {
 	float: right;
 	margin-right: 15%;
+<<<<<<< HEAD
 	width: 54%;
+=======
+	width: 50%;
+>>>>>>> 27dd667312bd3c57c01c68b7e97e91d4ee59582f
 }
 
 #consignmentLine select {
