@@ -1,0 +1,240 @@
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+
+body {
+	font-family: PingFangSC-Regular, sans-serif;
+}
+
+.text {
+	font-family: PingFangSC-Semibold, sans-serif;
+	color: #3a3a3a;
+	font-size: 18px;
+	letter-spacing: 1px;
+	line-height: 26px;
+}
+.visual {
+	//background: grey;
+	width: 100%;
+	height: 600px;
+	.logo {
+		position: absolute;
+		width: 28%;
+		top: 18%;
+		left: 17%;
+	}
+	.quote {
+		position: absolute;
+		//background: blue;
+		height: 42%;
+		width: 36%;
+		left: 47%;
+		top: 25%;
+
+		#theQuote, #underQuote {
+			font-family: PingFangSC-Semibold, sans-serif;
+			position: absolute;
+			color: #3a3a3a;
+			font-size: 40px;
+			left: 2%;
+		}
+		.text {
+			position: relative;
+			width: 70%;
+			top: 19%;
+			left: 16%;
+			//background: red;
+		}
+		#underQuote {
+			left: 91%;
+			top: 91%;
+		}
+	}
+}
+
+.time {
+	background: #2a2a2a;
+	height: 1000px;
+
+	.title {
+		font-family: PingFangSC-Regular, sans-serif;
+		position: relative;
+		display: inline-block;
+		color: white;
+		font-size: 32px;
+	}
+
+	.now {
+		position: relative;
+		font-family: PingFangSC-Regular, sans-serif;
+		letter-spacing: 1px;
+		color: white;
+		font-size: 32px;
+		//background: red;
+		width: 64%;
+		left: 21%;
+		top: 9%;
+
+		.title {
+			margin-top: 12px;
+		}
+
+		#dateText {
+			position: absolute;
+			display: inline-block;
+			//background: blue;
+			line-height: 42px;
+			right: 0;
+			width: 76%;
+		}
+		#timeText {
+			font-family: PingFangSC-Light, sans-serif;
+			position: absolute;
+			display: inline-block;
+			//background: green;
+			top: 110%;
+			left: 52%; 
+		}
+		#lunarText {
+			font-family: PingFangSC-Light, sans-serif;
+			position: absolute;
+			display: inline-block;
+			//background: black;
+			line-height: 42px;
+			top: 15%;
+			left: 72%;
+		}
+	}
+	.timeLine {
+		position: relative;
+		font-family: PingFangSC-Regular, sans-serif;
+		letter-spacing: 1px;
+		//background: red;
+		width: 64%;
+		left: 21%;
+		top: 26%;
+		
+		.circle {
+			position: absolute;
+			background: #2a2a2a;
+			width: 30px;
+			height: 30px;
+			border: 4px white solid;
+			border-radius: 50%;
+			z-index: 1;
+		}
+
+		#one {
+			top: 100px;
+		}
+
+		#two {
+			top: 450px;
+		}
+
+		.line {
+			position: absolute;
+			background: white;
+			width: 4px;
+			height: 1000px;
+			left: 16px;
+			top: 130px;
+		}
+	}
+}
+
+.member {
+	position: relative;
+	//background: blue;
+	width: 100%;
+	height: 1170px;
+	font-size: 0; // for delete inline-block space
+}
+
+.half, .quarter {
+	position: relative;
+	display: inline-block;
+	//background: green;
+	font-family: PingFangSC-Light, sans-serif;
+	color: #222222;
+	height: 390px;
+	border: 1px solid #e5e5e5;
+	width: 50%;
+	margin-left: -2px; // delete border
+	font-size: 36px;
+	
+	.cadre {
+		img {
+			position: absolute;
+		}
+		/* deleted
+		.title {
+			position: absolute;
+			width: 100%;
+			bottom: 7%;
+			text-align: center;
+		}
+		*/
+	}
+}
+
+.quarter {
+	//background: red;
+	width: 25%;
+}
+
+.footer {
+	position: relative;
+	width: 100%;
+	height: 300px;
+	background: #2a2a2a;
+
+	.title {
+		position: absolute;
+		font-family: PingFangSC-Light, sans-serif;
+		color: white;
+		font-size: 24px;
+		top: 14%;
+		left: 10%;
+	}
+	.text {
+		position: absolute;
+		font-family: PingFangSC-Light, sans-serif;
+		color: white;
+		//background: red;
+		font-size: 16px;
+		line-height: 20px;
+		width: 40%;
+		top: 28%;
+		left: 10%;
+	}
+}
+
+
+
+/* font-size */
+
+.small {
+	display: inline-block;
+	font-size: 24px;
+}
+
+.regular {
+	display: inline-block;
+	font-size: 32px;
+}
+
+.big {
+	display: inline-block;
+	font-size: 48px;
+}
+
+.bigger {
+	display: inline-block;
+	font-size: 48px;
+}
+
+.biggest {
+	display: inline-block;
+	font-size: 103px;
+}

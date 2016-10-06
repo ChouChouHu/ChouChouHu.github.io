@@ -858,12 +858,24 @@ body {
 
 #withdraw {
 	position: relative;
-	width: 48%;
-	margin-top: 13%;
+	width: 100%;
+	margin-top: 2%;
+	color: white;
 }
 
 #withdraw img {
-	width: 100%;
+	width: 48%;
+}
+
+#withdraw a {
+	color: #09f;
+	text-decoration: underline;
+}
+
+.verification {
+	position: relative; 
+	width: 30%; 
+	margin-left: 40%;
 }
 
 
@@ -890,6 +902,10 @@ body {
 	margin-top: 3%;
 	font-size: 0.7em;
 	line-height: 1.2em;
+}
+
+#consignmentInput {
+	width: 54%;
 }
 
 #conBackMember {
@@ -1146,7 +1162,7 @@ input {
 #consignmentLine {
 	float: right;
 	margin-right: 15%;
-	width: 55%;
+	width: 54%;
 }
 
 #consignmentLine select {
@@ -1267,6 +1283,11 @@ input {
 .leftMargin {
 	display: inline-block;
 	margin-left: 7%;
+}
+
+.rightMargin {
+	display: inline-block;
+	margin-right: 7%;
 }
 
 .bonusText {
