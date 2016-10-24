@@ -16,7 +16,7 @@ body {
 .visual {
 	//background: grey;
 	width: 100%;
-	height: 600px;
+	height: 650px;
 	.logo {
 		position: absolute;
 		width: 28%;
@@ -48,6 +48,35 @@ body {
 		#underQuote {
 			left: 91%;
 			top: 91%;
+		}
+	}
+}
+
+.fixedBar {
+	position: relative;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+	font-family: PingFangSC-semiBold, sans-serif;
+	background-color: white;
+	height: 80px;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 76px;
+	margin-top: -80px;
+
+	.btnGrp {
+		position: absolute;
+		//background: red;
+		height: 80px;
+		width: 65%;
+		right: 0;
+
+		.btn {
+			display: inline-block;
+			color: #e6051c;
+			width: 24%;
+			text-align: center;
 		}
 	}
 }

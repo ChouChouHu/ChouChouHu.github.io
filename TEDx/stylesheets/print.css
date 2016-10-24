@@ -18,7 +18,7 @@ body {
 /* line 16, ../sass/print.scss */
 .visual {
   width: 100%;
-  height: 600px;
+  height: 650px;
 }
 /* line 20, ../sass/print.scss */
 .visual .logo {
@@ -57,11 +57,40 @@ body {
 }
 
 /* line 55, ../sass/print.scss */
+.fixedBar {
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  font-family: PingFangSC-semiBold, sans-serif;
+  background-color: white;
+  height: 80px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 76px;
+  margin-top: -80px;
+}
+/* line 68, ../sass/print.scss */
+.fixedBar .btnGrp {
+  position: absolute;
+  height: 80px;
+  width: 65%;
+  right: 0;
+}
+/* line 75, ../sass/print.scss */
+.fixedBar .btnGrp .btn {
+  display: inline-block;
+  color: #e6051c;
+  width: 24%;
+  text-align: center;
+}
+
+/* line 84, ../sass/print.scss */
 .time {
   background: #2a2a2a;
   height: 1000px;
 }
-/* line 59, ../sass/print.scss */
+/* line 88, ../sass/print.scss */
 .time .title {
   font-family: PingFangSC-Regular, sans-serif;
   position: relative;
@@ -69,7 +98,7 @@ body {
   color: white;
   font-size: 32px;
 }
-/* line 67, ../sass/print.scss */
+/* line 96, ../sass/print.scss */
 .time .now {
   position: relative;
   font-family: PingFangSC-Regular, sans-serif;
@@ -80,11 +109,11 @@ body {
   left: 21%;
   top: 9%;
 }
-/* line 78, ../sass/print.scss */
+/* line 107, ../sass/print.scss */
 .time .now .title {
   margin-top: 12px;
 }
-/* line 82, ../sass/print.scss */
+/* line 111, ../sass/print.scss */
 .time .now #dateText {
   position: absolute;
   display: inline-block;
@@ -92,7 +121,7 @@ body {
   right: 0;
   width: 76%;
 }
-/* line 90, ../sass/print.scss */
+/* line 119, ../sass/print.scss */
 .time .now #timeText {
   font-family: PingFangSC-Light, sans-serif;
   position: absolute;
@@ -100,7 +129,7 @@ body {
   top: 110%;
   left: 52%;
 }
-/* line 98, ../sass/print.scss */
+/* line 127, ../sass/print.scss */
 .time .now #lunarText {
   font-family: PingFangSC-Light, sans-serif;
   position: absolute;
@@ -109,7 +138,7 @@ body {
   top: 15%;
   left: 72%;
 }
-/* line 108, ../sass/print.scss */
+/* line 137, ../sass/print.scss */
 .time .timeLine {
   position: relative;
   font-family: PingFangSC-Regular, sans-serif;
@@ -118,7 +147,7 @@ body {
   left: 21%;
   top: 26%;
 }
-/* line 117, ../sass/print.scss */
+/* line 146, ../sass/print.scss */
 .time .timeLine .circle {
   position: absolute;
   background: #2a2a2a;
@@ -128,15 +157,15 @@ body {
   border-radius: 50%;
   z-index: 1;
 }
-/* line 127, ../sass/print.scss */
+/* line 156, ../sass/print.scss */
 .time .timeLine #one {
   top: 100px;
 }
-/* line 131, ../sass/print.scss */
+/* line 160, ../sass/print.scss */
 .time .timeLine #two {
   top: 450px;
 }
-/* line 135, ../sass/print.scss */
+/* line 164, ../sass/print.scss */
 .time .timeLine .line {
   position: absolute;
   background: white;
@@ -146,7 +175,7 @@ body {
   top: 130px;
 }
 
-/* line 146, ../sass/print.scss */
+/* line 175, ../sass/print.scss */
 .member {
   position: relative;
   width: 100%;
@@ -154,7 +183,7 @@ body {
   font-size: 0;
 }
 
-/* line 154, ../sass/print.scss */
+/* line 183, ../sass/print.scss */
 .half, .quarter {
   position: relative;
   display: inline-block;
@@ -166,7 +195,7 @@ body {
   margin-left: -2px;
   font-size: 36px;
 }
-/* line 166, ../sass/print.scss */
+/* line 195, ../sass/print.scss */
 .half .cadre, .quarter .cadre {
   /* deleted
   .title {
@@ -177,24 +206,24 @@ body {
   }
   */
 }
-/* line 167, ../sass/print.scss */
+/* line 196, ../sass/print.scss */
 .half .cadre img, .quarter .cadre img {
   position: absolute;
 }
 
-/* line 181, ../sass/print.scss */
+/* line 210, ../sass/print.scss */
 .quarter {
   width: 25%;
 }
 
-/* line 186, ../sass/print.scss */
+/* line 215, ../sass/print.scss */
 .footer {
   position: relative;
   width: 100%;
   height: 300px;
   background: #2a2a2a;
 }
-/* line 192, ../sass/print.scss */
+/* line 221, ../sass/print.scss */
 .footer .title {
   position: absolute;
   font-family: PingFangSC-Light, sans-serif;
@@ -203,7 +232,7 @@ body {
   top: 14%;
   left: 10%;
 }
-/* line 200, ../sass/print.scss */
+/* line 229, ../sass/print.scss */
 .footer .text {
   position: absolute;
   font-family: PingFangSC-Light, sans-serif;
@@ -216,31 +245,31 @@ body {
 }
 
 /* font-size */
-/* line 217, ../sass/print.scss */
+/* line 246, ../sass/print.scss */
 .small {
   display: inline-block;
   font-size: 24px;
 }
 
-/* line 222, ../sass/print.scss */
+/* line 251, ../sass/print.scss */
 .regular {
   display: inline-block;
   font-size: 32px;
 }
 
-/* line 227, ../sass/print.scss */
+/* line 256, ../sass/print.scss */
 .big {
   display: inline-block;
   font-size: 48px;
 }
 
-/* line 232, ../sass/print.scss */
+/* line 261, ../sass/print.scss */
 .bigger {
   display: inline-block;
   font-size: 48px;
 }
 
-/* line 237, ../sass/print.scss */
+/* line 266, ../sass/print.scss */
 .biggest {
   display: inline-block;
   font-size: 103px;

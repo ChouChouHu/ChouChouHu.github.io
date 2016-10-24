@@ -16,6 +16,14 @@ color: #82b4bd;
 <script type="text/javascript">
 
 
+$(window).scroll(function () {
+    if ($(window).scrollTop() > 570) {
+        $(".fixedBar").css({"position": "fixed", "margin-top": "0"});
+    } else {
+        $(".fixedBar").css({"position": "relative", "margin-top": "-80px", "opacity": $(window).scrollTop() / 570});
+    }
+});
+
 </script>
 <head>
     <title>TEDxTaida</title>
@@ -33,6 +41,15 @@ color: #82b4bd;
 			abcdefghijklmnopqrstuvwxyzabc<br>defghijklmnopqrstuvwxz.
 		</div>
 		<div id="underQuote">”</div>
+	</div>
+</div>
+
+<div class="fixedBar">
+	<div class="btnGrp">
+		<div class="btn">活動時間</div>
+		<div class="btn">文章專欄</div>
+		<div class="btn">關於我們</div>
+		<div class="btn">贊助廠商</div>
 	</div>
 </div>
 
