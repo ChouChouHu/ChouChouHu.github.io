@@ -1,0 +1,171 @@
+@charset "UTF-8";
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ */
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ */
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ */
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,300italic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700);
+@font-face {
+  font-family: 'pictureWord';
+  src: url(../fonts/picture-word.ttf);
+}
+/* line 15, ../../sass/_font.scss */
+.pictureWord {
+  font-family: pictureWord;
+}
+
+/* line 10, ../../sass/page/_background.scss */
+body {
+  font-family: PingFangSC-Regular, sans-serif, "微软雅黑", "microsoft yahei";
+  background: #d8ecdf;
+  overflow: scroll;
+}
+
+/* line 16, ../../sass/page/_background.scss */
+.title {
+  position: absolute;
+  width: 270px;
+  top: 47px;
+  left: 5%;
+}
+
+/* line 23, ../../sass/page/_background.scss */
+.container {
+  position: relative;
+  background: white;
+  width: 90%;
+  padding-bottom: 70px;
+  margin-top: 164px;
+  margin-bottom: 70px;
+  left: 5%;
+  border-radius: 15px;
+}
+/* line 33, ../../sass/page/_background.scss */
+.container .decoration {
+  position: relative;
+  width: 92%;
+  left: 4%;
+}
+/* line 39, ../../sass/page/_background.scss */
+.container .gameSet {
+  position: relative;
+  width: 90%;
+  left: 5%;
+  top: 25px;
+}
+/* line 46, ../../sass/page/_background.scss */
+.container .gameSet .game {
+  display: inline-block;
+  margin-right: 18px;
+  width: 170px;
+  text-align: center;
+}
+/* line 52, ../../sass/page/_background.scss */
+.container .gameSet .game img {
+  cursor: pointer;
+  width: 100%;
+}
+/* line 56, ../../sass/page/_background.scss */
+.container .gameSet .game .text {
+  font-family: PingFangSC-semibold, sans-serif, "微软雅黑", "microsoft yahei";
+  margin-top: 20px;
+  font-size: 18px;
+  color: #009e95;
+}
+/* line 65, ../../sass/page/_background.scss */
+.container .dialog {
+  position: relative;
+  width: 90%;
+  left: 5%;
+  background: #eef7f0;
+  border: #5fb7b0 1.5px solid;
+  border-radius: 10px;
+  margin-top: 90px;
+}
+/* line 74, ../../sass/page/_background.scss */
+.container .dialog img.dialogImg {
+  position: absolute;
+  width: 92px;
+  top: -51px;
+  left: 39px;
+  z-index: 2;
+}
+/* line 82, ../../sass/page/_background.scss */
+.container .dialog .dialogContent {
+  padding: 50px;
+}
+/* line 85, ../../sass/page/_background.scss */
+.container .dialog .dialogContent .text {
+  position: relative;
+  display: inline-block;
+  font-family: PingFangSC-semibold, sans-serif, "微软雅黑", "microsoft yahei";
+  color: #595757;
+  width: 68%;
+  z-index: 3;
+  font-size: 16px;
+  line-height: 20px;
+}
+/* line 96, ../../sass/page/_background.scss */
+.container .dialog .dialogContent .text h1 {
+  color: #009e95;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+/* line 102, ../../sass/page/_background.scss */
+.container .dialog .dialogContent .text h2 {
+  color: #009e95;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+/* line 109, ../../sass/page/_background.scss */
+.container .dialog .dialogContent .text li {
+  margin-left: 40px;
+  list-style: none;
+}
+/* line 115, ../../sass/page/_background.scss */
+.container .dialog .dialogContent .picture {
+  position: relative;
+  display: inline-block;
+  width: 28%;
+  margin-left: 2%;
+  vertical-align: top;
+}
+
+/* line 7, ../../sass/page/tableGame.scss */
+.cloud1 {
+  position: absolute;
+  width: 100px;
+  top: 35px;
+  left: 40%;
+}
+
+/* line 14, ../../sass/page/tableGame.scss */
+.cloud2 {
+  position: absolute;
+  width: 70px;
+  top: 90px;
+  left: 65%;
+}
+
+/* line 21, ../../sass/page/tableGame.scss */
+.cloud3 {
+  position: absolute;
+  width: 85px;
+  top: 40px;
+  left: 82%;
+}
+
+/* line 29, ../../sass/page/tableGame.scss */
+.monster {
+  position: absolute;
+  width: 100px;
+  right: 9%;
+  top: 123px;
+}

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="stylesheets/reset.css" media="screen, projection" rel="stylesheet" type="text/css" /> 
 <link href="stylesheets/animate.css" rel="stylesheet" type="text/css" />
-<link href="stylesheets/print.css" rel="stylesheet" type="text/css" /> 
-<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />  
+<link href="stylesheets/index/main.css" rel="stylesheet" type="text/css" /> 
 <script src="js/jQuery.js"></script>
-<script src="js/control.js"></script>
+<script src="js/index.js"></script>
 <script type="text/javascript">
 </script>
 <head>
@@ -13,78 +14,120 @@
 </head>
 
 <body>
-	<img class="fixedBar" src="img/bar.png">
+	<!-- bar / position: fixed -->
+	<div class="fixedBar">
+		<img class="logo" src="img/logo.png">
+		<div class="btnGrp">
+			<div class="btn">
+				加入會員
+			</div>
+			<div class="btn">
+				會員登入
+			</div>
+		</div>
+	</div>
 
+	<!-- cloud & bird animation -->
 	<img class="cloud1" src="img/cloud.png">
 	<img class="cloud2" src="img/cloud.png">
 	<img class="cloud3" src="img/cloud.png">
+	<img class="cloud4" src="img/cloud.png">
+	<img class="cloud5" src="img/cloud.png">
+	<img class="cloud6" src="img/cloud.png">
+	<div class="bird1">
+		<img class="birdFlyOne" src="img/bird_one.png">
+		<img class="birdFlyTwo" src="img/bird_two.png">
+	</div>
+	<div class="bird2">
+		<img class="birdFlyOne" src="img/bird_one.png">
+		<img class="birdFlyTwo" src="img/bird_two.png">
+	</div>
 
+	<!-- tree object / "mask" is for aniamtion -->
 	<div class="tree">
-		<div class="treeBodyAni">
-			<img class="treeBody" src="img/tree.png">
+		<div class="trunk trunkMask">
+			<img class="trunk" src="img/trunk.png">
 		</div>
-		<div class="treetop animated bounceIn">
-			<div class="text">
-			圖像字時代來臨了！
-			</div>
+		<img class="treetop animated bounceIn" src="img/treetop.png">
+
+		<div class="branchOne branchOneMask">
+			<img class="branch" src="img/branchOne.png">
+		</div>
+		<div class="fruitOne animated bounceIn">
+			<img class="cooperation" src="img/cooperation.png">
 		</div>
 
-		<div class="fruitOne branchOneAni">
-			<div class="fruit animated bounceIn">
-				<div class="text">
-					圖像字產業
-				</div>
-			</div>
-			<img class="branch" src="img/branch1.png">
+		<div class="branchTwo branchTwoMask">
+			<img class="branch" src="img/branchTwo.png">
+		</div>
+		<div class="fruitTwo_one animated bounceIn">
+			<img class="retrieval" src="img/retrieval.png">
+			<input class="search">
+			<input class="searchBtn" type="button">
+		</div>
+		<div class="fruitTwo_two animated bounceIn">
+		<img class="explore" src="img/explore.png">
 		</div>
 
-		<div class="fruitTwo branchTwoAni">
-			<div class="fruit animated bounceIn">
-				<div class="text">
-					三層式單字檢索
-					<input>
-				</div>
-			</div>
-			<div class="fruit2 animated bounceIn">
-				<div class="text">
-					地洞探索
-				</div>
-			</div>
-			<img class="branch" src="img/branch2.png">
+		<div class="branchThree branchThreeMask">
+			<img class="branch" src="img/branchThree.png">
+		</div>
+		<div class="fruitThree animated bounceIn">
+			<img class="guess" src="img/guess.png">
 		</div>
 
-		<div class="fruitThree branchThreeAni">
-			<div class="fruit animated bounceIn">
-				<div class="text">
-					猜謎卡系列
-				</div>
-			</div>
-			<img class="branch" src="img/branch1.png">
+		<div class="branchFour branchFourMask">
+			<img class="branch" src="img/branchFour.png">
+		</div>
+		<div class="fruitFour animated bounceIn">
+			<img class="tableGame" src="img/tableGame.png">
 		</div>
 
-		<div class="fruitFour branchFourAni">
-			<div class="fruit animated bounceIn">
-				<div class="text">
-					桌遊系列
-				</div>
-			</div>
-			<img class="branch" src="img/branch4.png">
+		<div class="branchFive branchFiveMask">
+			<img class="branch" src="img/branchFive.png">
 		</div>
-
-		<div class="fruitFive branchFiveAni">
-			<img class="fruit animated bounceIn" src="img/HANZI.png">
-			<img class="branch" src="img/branch5.png">
+		<div class="fruitFive animated bounceIn">
+			<img class="HanZi" src="img/HANZI.png">
 		</div>
 	</div>
 
 	<div class="activity">
-		<div class="title">
-			活動訊息
+		<img class="activityImg" src="img/activity.png">
+		<div class="text">
+			<div> xx.xx / 網站更新 </div>
+			<div> xx.xx / 活動1 </div>
+			<div> xx.xx / 活動2 </div>
+			<div> xx.xx / 活動3 </div>
+			<div> xx.xx / 活動4 </div>
+			<div> xx.xx / 活動5 </div>
+			<div> xx.xx / 活動666666666666666666666666666666666 </div>
+			<div> xx.xx / 活動7 </div>
+			<div> xx.xx / 活動8 </div>
+			<div> xx.xx / 活動9 </div>
 		</div>
 	</div>
 
-	<img class="letterbox" src="img/letterbox.png">
+	<div class="letterbox">
+		<img class="letterboxImg_one" src="img/letterbox_close.png">
+		<img class="letterboxImg_two" src="img/letterbox_open.png">
+		<div class="text">
+			聯絡我們
+			<div class="englishText">Contact Us</div>
+		</div>
+	</div>
 	<img class="grass" src="img/grass.png">
+	<div class="context">
+		中華圖像字 版權所有Copyright&copy2017. All rights reserved.
+	</div>
+
+	<div class="chouWindow">
+		<div class="chouWindowContent">
+			<iframe src=""></iframe>
+			<div class="closeBtn">
+				x
+			</div>
+		</div>
+	</div>
 </body>
 
 </html>

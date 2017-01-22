@@ -1,0 +1,44 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ */
+
+@import "background.scss";
+
+.title {
+	font-family: PingFangSC-semibold, sans-serif, "微软雅黑", "microsoft yahei";
+	font-size: 24px;
+	width: 30%;
+	margin-top: 10px;
+	margin-left: 10px;
+	color: $color;
+}
+
+.cloud1 {
+	position: absolute;
+	width: 100px;
+	top: 70px;
+	left: 32%;
+}
+
+.cloud2 {
+	position: absolute;
+	width: 70px;
+	top: 30px;
+	left: 55%;
+}
+
+.cloud3 {
+	position: absolute;
+	width: 80px;
+	top: 80px;
+	left: 90%;
+}
+
+.container {
+	margin-top: 140px;
+
+	.text {
+		width: 100%;
+		padding: 30px;
+	}
+}

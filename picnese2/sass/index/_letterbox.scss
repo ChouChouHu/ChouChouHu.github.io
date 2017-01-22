@@ -1,0 +1,50 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ */
+
+
+.letterbox {
+	position: absolute;
+	width: 100px;
+	bottom: 40px;
+	right: 90px;
+	z-index: 2;
+	cursor: pointer;
+	font-size: 0; // * delete img space
+
+	.text {
+		font-family: PingFangSC-regular, sans-serif, "微软雅黑", "microsoft yahei";
+		position: absolute;
+		bottom: 46px;
+		left: 59px;
+		font-size: 12px;
+		letter-spacing: 2px;
+		line-height: 12px;
+		color: #655c62;
+		word-break: keep-all;
+
+		.englishText {
+			letter-spacing: 0;
+			font-size: 9px;
+		}
+	}
+
+	img.letterboxImg_one {
+		cursor: pointer;
+		width: 100%;
+	}
+	img.letterboxImg_two {
+		cursor: pointer;
+		width: 100%;
+		display: none;
+	}
+
+	&:hover {
+		img.letterboxImg_one {
+			display: none;
+		}
+		img.letterboxImg_two {
+			display: block;
+		}
+	}
+}

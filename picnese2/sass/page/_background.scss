@@ -1,0 +1,130 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ */
+
+$color: #009e95;
+$color2: #595757;
+
+@import "font";
+
+body {
+	font-family: PingFangSC-Regular, sans-serif, "微软雅黑", "microsoft yahei";
+	background: #d8ecdf;
+	overflow: scroll;
+}
+
+.title {
+	position: absolute;
+	width: 270px;
+	top: 47px;
+	left: 5%;
+}
+
+.container {
+	position: relative;
+	background: white;
+	width: 90%;
+	padding-bottom: 70px;
+	margin-top: 164px;
+	margin-bottom: 70px;
+	left: 5%;
+	border-radius: 15px;
+
+	.decoration {
+		position: relative;
+		width: 92%;
+		left: 4%;
+	}
+
+	.gameSet {
+		position: relative;
+		// background: red;
+		width: 90%;
+		left: 5%;
+		top: 25px;
+
+		.game {
+			display: inline-block;
+			margin-right: 18px;
+			width: 170px;
+			text-align: center;
+
+			img {
+				cursor: pointer;
+				width: 100%;
+			}
+			.text {
+				font-family: PingFangSC-semibold, sans-serif, "微软雅黑", "microsoft yahei";
+				margin-top: 20px;
+				font-size: 18px;
+				color: $color;
+			}
+		}
+	}
+
+	.dialog {
+		position: relative;
+		width: 90%;
+		left: 5%;
+		background: #eef7f0;
+		border: #5fb7b0 1.5px solid;
+		border-radius: 10px;
+		margin-top: 90px;
+		
+		img.dialogImg {
+			position: absolute;
+			width: 92px;
+			top: -51px;
+			left: 39px;
+			z-index: 2;
+		}
+
+		.dialogContent{ 
+			padding: 50px;
+
+			.text {
+				position: relative;
+				display: inline-block;
+				font-family: PingFangSC-semibold, sans-serif, "微软雅黑", "microsoft yahei";
+				color: $color2;
+				width: 68%;
+				z-index: 3;
+				font-size: 16px;
+				line-height: 20px;
+				// background: red;
+
+				h1 {
+					color: $color;
+					font-size: 22px;
+					margin-bottom: 20px;
+				}
+
+				h2 {
+					color: $color;
+					font-size: 18px;
+					margin-top: 20px;
+					margin-bottom: 10px;
+				}
+
+				li {
+					margin-left: 40px;
+					list-style: none;
+				}
+			}
+
+			.picture {
+				position: relative;
+				display: inline-block;
+				width: 28%;
+				margin-left: 2%;
+				vertical-align: top;
+			}
+		}
+	}
+
+}
+
+
+
+
+
