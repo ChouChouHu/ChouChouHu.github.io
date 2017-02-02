@@ -25,7 +25,7 @@
 			height: 100%;
 			z-index: 2;
 
-			animation: trunkGrow 0.5s;
+			animation: trunkGrow 0.5s 1s;
 		}
 
 		@keyframes trunkGrow {
@@ -41,7 +41,7 @@
 
 	.trunkMask {
 		overflow: hidden;
-		animation: trunkMask 0.5s forwards;
+		animation: trunkMask 0.5s 1s backwards;
 		// name, duration, fill-mode
 	}
 
@@ -64,7 +64,7 @@
 		z-index: 3;
 		cursor: pointer;
 
-		animation-delay: 0.5s;
+		animation-delay: 1.5s;
 	}
 
 	.branchOne {
@@ -85,7 +85,7 @@
 
 	.branchOneMask {
 		overflow: hidden;
-		animation: branchOneMask 0.7s 0.3s backwards;
+		animation: branchOneMask 0.7s 1.3s backwards;
 		// name, duration, delay, fill-mode
 	}
 
@@ -105,7 +105,7 @@
 		left: 50%;
 		margin-left: -220px;
 		width: 155px;
-		animation-delay: 1s;
+		animation-delay: 2s;
 		z-index: 3;
 
 		img.cooperation {
@@ -132,7 +132,7 @@
 
 	.branchTwoMask {
 		overflow: hidden;
-		animation: branchTwoMask 0.7s 0.4s backwards;
+		animation: branchTwoMask 0.7s 1.4s backwards;
 		// name, duration, delay, fill-mode
 	}
 
@@ -152,7 +152,7 @@
 		bottom: 55%;
 		margin-left: 10px;
 		width: 200px;
-		animation-delay: 1.2s;
+		animation-delay: 2.2s;
 		z-index: 3;
 
 		img.retrieval {
@@ -191,7 +191,7 @@
 		bottom: 37%;
 		margin-left: 150px;
 		width: 180px;
-		animation-delay: 1.3s;
+		animation-delay: 2.3s;
 
 		img.explore {
 			width: 100%;
@@ -216,7 +216,7 @@
 
 	.branchThreeMask {
 		overflow: hidden;
-		animation: branchThreeMask 0.7s 0.5s backwards;
+		animation: branchThreeMask 0.7s 1.5s backwards;
 		// name, duration, delay, fill-mode
 	}
 
@@ -236,7 +236,7 @@
 		bottom: 45%;
 		margin-left: -230px;
 		width: 180px;
-		animation-delay: 1.5s;
+		animation-delay: 2.5s;
 		z-index: 3;
 
 		img.guess {
@@ -264,7 +264,7 @@
 
 	.branchFourMask {
 		overflow: hidden;
-		animation: branchFourMask 0.7s 0.6s backwards;
+		animation: branchFourMask 0.7s 1.6s backwards;
 		// name, duration, delay, fill-mode
 	}
 
@@ -284,7 +284,7 @@
 		bottom: 26%;
 		margin-left: -390px;
 		width: 190px;
-		animation-delay: 1.8s;
+		animation-delay: 2.8s;
 		z-index: 3;
 		
 		img.tableGame {
@@ -311,7 +311,7 @@
 
 	.branchFiveMask {
 		overflow: hidden;
-		animation: branchFiveMask 0.7s 0.7s backwards;
+		animation: branchFiveMask 0.7s 1.7s backwards;
 		// name, duration, delay, fill-mode
 	}
 
@@ -331,7 +331,7 @@
 		bottom: 20%;
 		margin-left: 230px;
 		width: 140px;
-		animation-delay: 1.7s;
+		animation-delay: 2.7s;
 		z-index: 3;
 
 		.HanZi {

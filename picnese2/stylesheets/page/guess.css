@@ -13,9 +13,9 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700);
 @font-face {
   font-family: 'pictureWord';
-  src: url(../fonts/picture-word.ttf);
+  src: url(../../fonts/picture-word.ttf);
 }
-/* line 15, ../../sass/_font.scss */
+/* line 15, ../../sass/page/_font.scss */
 .pictureWord {
   font-family: pictureWord;
 }

@@ -1,0 +1,590 @@
+@charset "UTF-8";
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ */
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,300italic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700);
+@font-face {
+  font-family: 'pictureWord';
+  src: url(../../fonts/picture-word.ttf);
+}
+/* line 15, ../../sass/page/_font.scss */
+.pictureWord {
+  font-family: pictureWord;
+}
+
+/* line 9, ../../sass/page/explore.scss */
+body {
+  font-family: PingFangSC-Regular, sans-serif, "微软雅黑", "microsoft yahei";
+  background: #afc7ce;
+}
+
+/* line 14, ../../sass/page/explore.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 18, ../../sass/page/explore.scss */
+.pictureWord {
+  font-family: pictureWord;
+}
+
+/* line 22, ../../sass/page/explore.scss */
+.man {
+  position: absolute;
+  width: 15vw;
+  top: 22vw;
+  left: 45vw;
+}
+
+/* line 29, ../../sass/page/explore.scss */
+.container {
+  position: fixed;
+  width: 85vw;
+  height: 68vw;
+  right: 8vw;
+  top: -2vw;
+  overflow: hidden;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+/* line 47, ../../sass/page/explore.scss */
+.fixedBar {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  opacity: 0.9;
+}
+
+/* line 54, ../../sass/page/explore.scss */
+.backgroundImg {
+  position: absolute;
+  width: 98%;
+  left: 1.5%;
+  margin-top: -4%;
+}
+
+/* line 61, ../../sass/page/explore.scss */
+.picShow {
+  position: absolute;
+  width: 9vw;
+  top: 11vw;
+  left: 43vw;
+  opacity: 0.8;
+  animation-iteration-count: infinite;
+}
+
+/* line 71, ../../sass/page/explore.scss */
+.index {
+  position: fixed;
+  top: 5.5vw;
+  right: 2vw;
+  background: rgba(175, 199, 206, 0.7);
+  width: 11vw;
+  height: 5vw;
+  z-index: 1;
+  border: rgba(87, 96, 101, 0.8) 2px solid;
+  font-size: 0;
+}
+/* line 83, ../../sass/page/explore.scss */
+.index .pictureWord {
+  display: inline-block;
+  font-size: 4.11vw;
+  color: #576065;
+  vertical-align: 30%;
+  margin: 0.6vw;
+}
+/* line 91, ../../sass/page/explore.scss */
+.index .line {
+  display: inline-block;
+  background: rgba(87, 96, 101, 0.8);
+  width: 0.15vw;
+  height: 100%;
+}
+
+/* edited by 12/30
+.inputText {
+	position: fixed;
+	left: 87vw;
+	top: 11.5vw;
+	z-index: 1;
+	.inputBar {
+		width: 7vw;
+		border: 0px;
+		height: 20px;
+	}
+
+	.inputBtn {
+		background: white;
+		border: 0px;
+		border-radius: 5px;
+		height: 24px;
+	}
+}
+*/
+/* line 121, ../../sass/page/explore.scss */
+.word .theWord {
+  position: absolute;
+  width: 15%;
+  top: 27%;
+  left: 26%;
+  text-align: center;
+  animation-iteration-count: infinite;
+}
+/* line 131, ../../sass/page/explore.scss */
+.word .theWord img {
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+/* line 137, ../../sass/page/explore.scss */
+.word .theWord .wordEx {
+  position: relative;
+  color: white;
+  font-size: 7.5vw;
+  margin-top: 12%;
+}
+/* line 144, ../../sass/page/explore.scss */
+.word .theWord .mainWord {
+  font-family: PingFangSC-Regular, sans-serif, "微软雅黑", "microsoft yahei";
+  font-weight: normal;
+  position: relative;
+  font-size: 1.7vw;
+  margin-top: 2%;
+  color: white;
+}
+/* line 153, ../../sass/page/explore.scss */
+.word .wordShadow {
+  position: absolute;
+  width: 22%;
+  top: 56%;
+  left: 27%;
+  animation-iteration-count: infinite;
+}
+/* line 162, ../../sass/page/explore.scss */
+.word .originalWord {
+  font-family: PingFangSC-Regular, sans-serif, "微软雅黑", "microsoft yahei";
+  font-weight: normal;
+  position: absolute;
+  font-size: 2vw;
+  color: white;
+  line-height: 100px;
+  /* should be fixed */
+}
+/* line 171, ../../sass/page/explore.scss */
+.word .one .pictureWord, .word .two .pictureWord, .word .three .pictureWord, .word .four .pictureWord {
+  position: absolute;
+  display: inline-block;
+  color: white;
+  font-size: 3.9vw;
+  z-index: 1;
+}
+/* line 179, ../../sass/page/explore.scss */
+.word .one img, .word .two img, .word .three img, .word .four img {
+  position: absolute;
+  width: 100%;
+}
+/* line 184, ../../sass/page/explore.scss */
+.word .one {
+  position: absolute;
+  top: 2%;
+  left: 22%;
+  width: 18%;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+  animation-duration: 1s;
+}
+/* line 195, ../../sass/page/explore.scss */
+.word .one .originalWord {
+  font-size: 1.8vw;
+  left: 37%;
+  line-height: 520%;
+}
+/* line 201, ../../sass/page/explore.scss */
+.word .one .pictureWord {
+  transform: translateX(6vw) translateY(8vw);
+}
+/* line 203, ../../sass/page/explore.scss */
+.word .one .pictureWord:hover {
+  transform: translateX(6vw) translateY(7.5vw);
+}
+/* line 209, ../../sass/page/explore.scss */
+.word .two {
+  position: absolute;
+  top: 10%;
+  left: 14%;
+  width: 23%;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+  animation-duration: 0.8s;
+}
+/* line 219, ../../sass/page/explore.scss */
+.word .two .originalWord {
+  font-size: 1.8vw;
+  left: 23%;
+  line-height: 460%;
+}
+/* line 225, ../../sass/page/explore.scss */
+.word .two .pictureWord {
+  transform: translateX(6.2vw) translateY(5.2vw);
+}
+/* line 227, ../../sass/page/explore.scss */
+.word .two .pictureWord:hover {
+  transform: translateX(6.2vw) translateY(4.7vw);
+}
+/* line 233, ../../sass/page/explore.scss */
+.word .three {
+  position: absolute;
+  top: 17%;
+  left: 6%;
+  width: 33%;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+  animation-duration: 1.2s;
+}
+/* line 243, ../../sass/page/explore.scss */
+.word .three .originalWord {
+  font-size: 1.8vw;
+  left: 14%;
+  line-height: 510%;
+}
+/* line 249, ../../sass/page/explore.scss */
+.word .three .pictureWord {
+  transform: translateX(8.2vw) translateY(5.4vw);
+}
+/* line 251, ../../sass/page/explore.scss */
+.word .three .pictureWord:hover {
+  transform: translateX(6.8vw) translateY(4.5vw);
+}
+/* line 257, ../../sass/page/explore.scss */
+.word .four {
+  position: absolute;
+  width: 33%;
+  top: 27%;
+  left: 4%;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+  animation-duration: 0.7s;
+}
+/* line 267, ../../sass/page/explore.scss */
+.word .four .originalWord {
+  font-size: 1.8vw;
+  left: 9%;
+  line-height: 540%;
+}
+/* line 273, ../../sass/page/explore.scss */
+.word .four .pictureWord {
+  transform: translateX(7.2vw) translateY(4.8vw);
+}
+/* line 275, ../../sass/page/explore.scss */
+.word .four .pictureWord:hover {
+  transform: translateX(7.2vw) translateY(3.1vw);
+}
+
+/* line 283, ../../sass/page/explore.scss */
+.wall .wallImg {
+  position: absolute;
+  cursor: pointer;
+  width: 30%;
+  height: 100%;
+  right: 4%;
+  top: 36%;
+  opacity: 0.7;
+  transform: skewX(-5deg) skewY(35deg);
+  animation-name: prompt;
+  text-align: center;
+}
+/* line 295, ../../sass/page/explore.scss */
+.wall .wallImg .wallAppearWord {
+  position: relative;
+  font-size: 1.8vw;
+  margin-top: 4%;
+  margin-left: -12%;
+  color: #576065;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+/* line 307, ../../sass/page/explore.scss */
+.wall .wallImg img#wallImg {
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+/* line 313, ../../sass/page/explore.scss */
+.wall .wallImg .wallWordGrp {
+  width: 60%;
+  height: 8.9%;
+  margin-top: 20%;
+  margin-left: 18%;
+  overflow: scroll;
+}
+/* line 320, ../../sass/page/explore.scss */
+.wall .wallImg .wallWordGrp .pictureWord {
+  position: relative;
+  display: inline-block;
+  font-size: 3vw;
+  color: #576065;
+}
+
+/* line 334, ../../sass/page/explore.scss */
+.dialog {
+  position: absolute;
+  width: 26vw;
+  top: 40vw;
+  left: 12vw;
+}
+/* line 340, ../../sass/page/explore.scss */
+.dialog img {
+  position: absolute;
+  width: 140%;
+  opacity: 0;
+  /* default */
+}
+/* line 346, ../../sass/page/explore.scss */
+.dialog img.dialogImg {
+  width: 140%;
+  opacity: 1;
+  display: none;
+}
+/* line 352, ../../sass/page/explore.scss */
+.dialog .dialogContent {
+  font-family: "微软雅黑", "microsoft yahei";
+  font-weight: bold;
+  font-size: 1.4vw;
+  position: relative;
+  left: 20%;
+  margin-top: 18%;
+  line-height: 1.8vw;
+  height: 10vw;
+  overflow: scroll;
+  display: none;
+  /* default */
+}
+
+/* line 367, ../../sass/page/explore.scss */
+.dialogControl {
+  cursor: pointer;
+  z-index: 100;
+  /* use to control dialog apeear with jquery */
+}
+/* line 372, ../../sass/page/explore.scss */
+.dialogControl:hover {
+  opacity: 0.6;
+}
+
+/* line 377, ../../sass/page/explore.scss */
+.goBack {
+  font-family: PingFangSC-Regular, sans-serif;
+  position: fixed;
+  height: 68vw;
+  width: 20%;
+  cursor: pointer;
+  color: white;
+  font-size: 2vw;
+  text-align: center;
+  line-height: 110vh;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.45) 0%, transparent 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.45) 0%, transparent 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.45) 0%, transparent 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 );
+  /* IE6-9 */
+  display: none;
+  animation-iteration-count: infinite;
+}
+/* line 398, ../../sass/page/explore.scss */
+.goBack img {
+  width: 7%;
+  vertical-align: 0.35%;
+}
+
+/* animation control */
+/* can delete
+.explore {
+	animation-name: explore;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+
+.antiExplore {
+	animation-name: antiExplore;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}*/
+/* line 421, ../../sass/page/explore.scss */
+.prompt {
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+/* line 428, ../../sass/page/explore.scss */
+.move {
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+/* line 434, ../../sass/page/explore.scss */
+.enlarge {
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+/* line 439, ../../sass/page/explore.scss */
+.watchDialog {
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes explore {
+  from {
+    transform: skewX(0deg) skewY(0deg);
+    width: 85vw;
+    height: 68vw;
+    right: 8vw;
+    top: -2vw;
+  }
+  to {
+    transform: skewX(0deg) skewY(-17deg);
+    width: 150vw;
+    height: 120vw;
+    right: 8vw;
+    top: -5vw;
+  }
+}
+@keyframes antiExplore {
+  from {
+    transform: skewX(0deg) skewY(-17deg);
+    width: 150vw;
+    height: 120vw;
+    right: 8vw;
+    top: -5vw;
+  }
+  to {
+    transform: skewX(0deg) skewY(0deg);
+    width: 85vw;
+    height: 68vw;
+    right: 8vw;
+    top: -2vw;
+  }
+}
+@keyframes prompt {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes move {
+  from {
+    top: 36%;
+    opacity: 0.7;
+    transform: skewX(-5deg) skewY(35deg);
+  }
+  to {
+    top: 27%;
+    opacity: 1;
+    transform: skewX(0deg) skewY(32deg);
+  }
+}
+@keyframes antiMove {
+  from {
+    top: 27%;
+    opacity: 1;
+    transform: skewX(0deg) skewY(32deg);
+  }
+  to {
+    top: 36%;
+    opacity: 1;
+    transform: skewX(-5deg) skewY(35deg);
+  }
+}
+@keyframes enlarge {
+  from {
+    width: 30%;
+  }
+  to {
+    width: 32%;
+  }
+}
+@keyframes watchDialog {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-155px);
+  }
+}
+@keyframes antiWatchDialog {
+  from {
+    transform: translateY(-155px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+@keyframes adjustFontSize {
+  from {
+    font-size: 1.8vw;
+  }
+  to {
+    font-size: 3vw;
+  }
+}
+@keyframes antiAdjustFontSize {
+  from {
+    font-size: 3vw;
+  }
+  to {
+    font-size: 1.8vw;
+  }
+}
+/* more rwd
+@media (max-width: 970px) {
+	.container {
+		position: fixed;
+		width: 970px;
+		height: 660px;
+		overflow: hidden;
+		animation-duration: 1s;
+		animation-fill-mode: forwards;
+
+	}
+}*/

@@ -108,19 +108,19 @@ $(document).ready(function(){
 			upLayerNum++;
 			if (upLayerNum == 1) {
 				$(this).addClass("one");
-				$(this).prepend("<img src=" + "img/one.png" +">");
+				$(this).prepend("<img src=" + "img/page/explore/one.png" +">");
 			}
 			else if (upLayerNum == 2) {
 				$(this).addClass("two");
-				$(this).prepend("<img src=" + "img/two.png" +">");
+				$(this).prepend("<img src=" + "img/page/explore/two.png" +">");
 			}
 			else if (upLayerNum == 3) {
 				$(this).addClass("three");
-				$(this).prepend("<img src=" + "img/three.png" +">");
+				$(this).prepend("<img src=" + "img/page/explore/three.png" +">");
 			}
 			else if (upLayerNum == 4) {
 				$(this).addClass("four");
-				$(this).prepend("<img src=" + "img/four.png" +">");
+				$(this).prepend("<img src=" + "img/page/explore/four.png" +">");
 			}
 		});
 	}
@@ -130,11 +130,11 @@ $(document).ready(function(){
 			upLayerNum++;
 			if (upLayerNum == 1) {
 				$(this).addClass("two");
-				$(this).prepend("<img src=" + "img/two.png" +">");
+				$(this).prepend("<img src=" + "img/page/explore/two.png" +">");
 			}
 			else if (upLayerNum == 2) {
 				$(this).addClass("three");
-				$(this).prepend("<img src=" + "img/three.png" +">");
+				$(this).prepend("<img src=" + "img/page/explore/three.png" +">");
 			}
 		});
 	}

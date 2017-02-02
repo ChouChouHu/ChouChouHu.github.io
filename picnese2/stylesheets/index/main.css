@@ -351,7 +351,7 @@ img.birdFlyTwo {
   margin-left: -60px;
   height: 100%;
   z-index: 2;
-  animation: trunkGrow 0.5s;
+  animation: trunkGrow 0.5s 1s;
 }
 @keyframes trunkGrow {
   from {
@@ -364,7 +364,7 @@ img.birdFlyTwo {
 /* line 42, ../../sass/index/_tree.scss */
 .tree .trunkMask {
   overflow: hidden;
-  animation: trunkMask 0.5s forwards;
+  animation: trunkMask 0.5s 1s backwards;
 }
 @keyframes trunkMask {
   from {
@@ -383,7 +383,7 @@ img.birdFlyTwo {
   margin-left: -61px;
   z-index: 3;
   cursor: pointer;
-  animation-delay: 0.5s;
+  animation-delay: 1.5s;
 }
 /* line 70, ../../sass/index/_tree.scss */
 .tree .branchOne {
@@ -403,7 +403,7 @@ img.birdFlyTwo {
 /* line 86, ../../sass/index/_tree.scss */
 .tree .branchOneMask {
   overflow: hidden;
-  animation: branchOneMask 0.7s 0.3s backwards;
+  animation: branchOneMask 0.7s 1.3s backwards;
 }
 @keyframes branchOneMask {
   from {
@@ -420,7 +420,7 @@ img.birdFlyTwo {
   left: 50%;
   margin-left: -220px;
   width: 155px;
-  animation-delay: 1s;
+  animation-delay: 2s;
   z-index: 3;
 }
 /* line 111, ../../sass/index/_tree.scss */
@@ -446,7 +446,7 @@ img.birdFlyTwo {
 /* line 133, ../../sass/index/_tree.scss */
 .tree .branchTwoMask {
   overflow: hidden;
-  animation: branchTwoMask 0.7s 0.4s backwards;
+  animation: branchTwoMask 0.7s 1.4s backwards;
 }
 @keyframes branchTwoMask {
   from {
@@ -463,7 +463,7 @@ img.birdFlyTwo {
   bottom: 55%;
   margin-left: 10px;
   width: 200px;
-  animation-delay: 1.2s;
+  animation-delay: 2.2s;
   z-index: 3;
 }
 /* line 158, ../../sass/index/_tree.scss */
@@ -500,7 +500,7 @@ img.birdFlyTwo {
   bottom: 37%;
   margin-left: 150px;
   width: 180px;
-  animation-delay: 1.3s;
+  animation-delay: 2.3s;
 }
 /* line 196, ../../sass/index/_tree.scss */
 .tree .fruitTwo_two img.explore {
@@ -524,7 +524,7 @@ img.birdFlyTwo {
 /* line 217, ../../sass/index/_tree.scss */
 .tree .branchThreeMask {
   overflow: hidden;
-  animation: branchThreeMask 0.7s 0.5s backwards;
+  animation: branchThreeMask 0.7s 1.5s backwards;
 }
 @keyframes branchThreeMask {
   from {
@@ -541,7 +541,7 @@ img.birdFlyTwo {
   bottom: 45%;
   margin-left: -230px;
   width: 180px;
-  animation-delay: 1.5s;
+  animation-delay: 2.5s;
   z-index: 3;
 }
 /* line 242, ../../sass/index/_tree.scss */
@@ -566,7 +566,7 @@ img.birdFlyTwo {
 /* line 265, ../../sass/index/_tree.scss */
 .tree .branchFourMask {
   overflow: hidden;
-  animation: branchFourMask 0.7s 0.6s backwards;
+  animation: branchFourMask 0.7s 1.6s backwards;
 }
 @keyframes branchFourMask {
   from {
@@ -583,7 +583,7 @@ img.birdFlyTwo {
   bottom: 26%;
   margin-left: -390px;
   width: 190px;
-  animation-delay: 1.8s;
+  animation-delay: 2.8s;
   z-index: 3;
 }
 /* line 290, ../../sass/index/_tree.scss */
@@ -608,7 +608,7 @@ img.birdFlyTwo {
 /* line 312, ../../sass/index/_tree.scss */
 .tree .branchFiveMask {
   overflow: hidden;
-  animation: branchFiveMask 0.7s 0.7s backwards;
+  animation: branchFiveMask 0.7s 1.7s backwards;
 }
 @keyframes branchFiveMask {
   from {
@@ -625,7 +625,7 @@ img.birdFlyTwo {
   bottom: 20%;
   margin-left: 230px;
   width: 140px;
-  animation-delay: 1.7s;
+  animation-delay: 2.7s;
   z-index: 3;
 }
 /* line 337, ../../sass/index/_tree.scss */
