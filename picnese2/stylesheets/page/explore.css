@@ -259,7 +259,7 @@ a {
 }
 /* line 251, ../../sass/page/explore.scss */
 .word .three .pictureWord:hover {
-  transform: translateX(6.8vw) translateY(4.5vw);
+  transform: translateX(8.2vw) translateY(4.9vw);
 }
 /* line 257, ../../sass/page/explore.scss */
 .word .four {
@@ -283,7 +283,7 @@ a {
 }
 /* line 275, ../../sass/page/explore.scss */
 .word .four .pictureWord:hover {
-  transform: translateX(7.2vw) translateY(3.1vw);
+  transform: translateX(7.2vw) translateY(4.3vw);
 }
 
 /* line 283, ../../sass/page/explore.scss */
@@ -294,12 +294,11 @@ a {
   height: 100%;
   right: 4%;
   top: 36%;
-  opacity: 0.7;
+  opacity: 1;
   transform: skewX(-5deg) skewY(35deg);
-  animation-name: prompt;
   text-align: center;
 }
-/* line 295, ../../sass/page/explore.scss */
+/* line 294, ../../sass/page/explore.scss */
 .wall .wallImg .wallAppearWord {
   position: relative;
   font-size: 1.8vw;
@@ -309,11 +308,12 @@ a {
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
-/* line 307, ../../sass/page/explore.scss */
+/* line 306, ../../sass/page/explore.scss */
 .wall .wallImg img#wallImg {
   position: absolute;
   left: 0;
   width: 100%;
+  opacity: 0.1;
 }
 /* line 313, ../../sass/page/explore.scss */
 .wall .wallImg .wallWordGrp {
@@ -330,28 +330,32 @@ a {
   font-size: 3vw;
   color: #576065;
 }
+/* line 329, ../../sass/page/explore.scss */
+.wall .wallImg:hover img#wallImg {
+  opacity: 0.4;
+}
 
-/* line 334, ../../sass/page/explore.scss */
+/* line 340, ../../sass/page/explore.scss */
 .dialog {
   position: absolute;
   width: 26vw;
   top: 40vw;
   left: 12vw;
 }
-/* line 340, ../../sass/page/explore.scss */
+/* line 346, ../../sass/page/explore.scss */
 .dialog img {
   position: absolute;
   width: 140%;
   opacity: 0;
   /* default */
 }
-/* line 346, ../../sass/page/explore.scss */
+/* line 352, ../../sass/page/explore.scss */
 .dialog img.dialogImg {
   width: 140%;
   opacity: 1;
   display: none;
 }
-/* line 352, ../../sass/page/explore.scss */
+/* line 358, ../../sass/page/explore.scss */
 .dialog .dialogContent {
   font-family: "微软雅黑", "microsoft yahei";
   font-weight: bold;
@@ -366,18 +370,18 @@ a {
   /* default */
 }
 
-/* line 367, ../../sass/page/explore.scss */
+/* line 373, ../../sass/page/explore.scss */
 .dialogControl {
   cursor: pointer;
   z-index: 100;
   /* use to control dialog apeear with jquery */
 }
-/* line 372, ../../sass/page/explore.scss */
+/* line 378, ../../sass/page/explore.scss */
 .dialogControl:hover {
   opacity: 0.6;
 }
 
-/* line 377, ../../sass/page/explore.scss */
+/* line 383, ../../sass/page/explore.scss */
 .goBack {
   font-family: PingFangSC-Regular, sans-serif;
   position: fixed;
@@ -400,7 +404,7 @@ a {
   display: none;
   animation-iteration-count: infinite;
 }
-/* line 398, ../../sass/page/explore.scss */
+/* line 404, ../../sass/page/explore.scss */
 .goBack img {
   width: 7%;
   vertical-align: 0.35%;
@@ -419,26 +423,26 @@ a {
 	animation-duration: 1s;
 	animation-fill-mode: forwards;
 }*/
-/* line 421, ../../sass/page/explore.scss */
+/* line 427, ../../sass/page/explore.scss */
 .prompt {
   animation-duration: 0.8s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
 
-/* line 428, ../../sass/page/explore.scss */
+/* line 434, ../../sass/page/explore.scss */
 .move {
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
 
-/* line 434, ../../sass/page/explore.scss */
+/* line 440, ../../sass/page/explore.scss */
 .enlarge {
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
 }
 
-/* line 439, ../../sass/page/explore.scss */
+/* line 445, ../../sass/page/explore.scss */
 .watchDialog {
   animation-duration: 0.5s;
   animation-fill-mode: forwards;

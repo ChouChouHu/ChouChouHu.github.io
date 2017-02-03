@@ -249,7 +249,7 @@ a {
 		.pictureWord {
 			transform: translateX(8.2vw) translateY(5.4vw);
 			&:hover {
-				transform: translateX(6.8vw) translateY(4.5vw);
+				transform: translateX(8.2vw) translateY(4.9vw);
 			}
 		}
 	}
@@ -273,7 +273,7 @@ a {
 		.pictureWord {
 			transform: translateX(7.2vw) translateY(4.8vw);
 			&:hover {
-				transform: translateX(7.2vw) translateY(3.1vw);
+				transform: translateX(7.2vw) translateY(4.3vw);
 			}
 		}
 	}
@@ -287,9 +287,8 @@ a {
 		height: 100%;
 		right: 4%;
 		top: 36%;
-		opacity: 0.7;
+		opacity: 1;
 		transform:skewX(-5deg) skewY(35deg);
-		animation-name: prompt;
 		text-align: center;
 
 		.wallAppearWord {
@@ -308,6 +307,7 @@ a {
 			position: absolute;
 			left: 0;
 			width: 100%;
+			opacity: 0.1;
 		}
 
 		.wallWordGrp {
@@ -322,6 +322,12 @@ a {
 				display: inline-block;
 				font-size: 3vw;
 				color: #576065;
+			}
+		}
+
+		&:hover {
+			img#wallImg {
+				opacity: 0.4;
 			}
 		}
 	}
