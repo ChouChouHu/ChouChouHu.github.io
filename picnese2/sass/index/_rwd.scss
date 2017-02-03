@@ -12,7 +12,7 @@
 	}
 }
 
-@media screen and (max-height: 400px) {
+@media screen and (max-height: 480px) {
 	body {
 		position: relative;
 		height: 650px;
@@ -22,14 +22,14 @@
 	.trunkMask {
 		overflow: visible;
 		img.trunk {
-			height: 500px !important;
+			height: 526px !important;
 		}
 	}
 }
 
 @media screen and (max-width: 540px) {
 	.tree {
-		display: none;
+		// display: none;
 	}
 }
 
