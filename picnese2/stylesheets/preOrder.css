@@ -313,7 +313,7 @@ body {
 .container .order li .ps {
   font-size: 11px;
   line-height: 15px;
-  margin-left: 88px;
+  margin-left: 18%;
   color: #9fa0a0;
   display: inline-block;
 }
@@ -325,7 +325,7 @@ body {
 /* line 171, ../sass/preOrder.scss */
 .container .order li .gender {
   position: absolute;
-  left: 80px;
+  left: 14%;
   margin-top: -3px;
 }
 /* line 176, ../sass/preOrder.scss */
@@ -361,8 +361,8 @@ body {
 /* line 208, ../sass/preOrder.scss */
 .container .order input {
   position: absolute;
-  left: 170px;
-  margin-top: 4px;
+  left: 27%;
+  margin-top: 5px;
   border: #bce2ed 1.5px solid;
   border-radius: 10px;
   padding-left: 10px;
@@ -371,7 +371,7 @@ body {
 /* line 218, ../sass/preOrder.scss */
 .container .order textarea {
   position: absolute;
-  left: 170px;
+  left: 27%;
   margin-top: 7px;
   border: #bce2ed 1.5px solid;
   border-radius: 10px;
@@ -380,16 +380,17 @@ body {
 /* line 227, ../sass/preOrder.scss */
 .container .order form {
   position: absolute;
-  left: 250px;
+  left: 38%;
   font-size: 13px;
+  margin-top: 1px;
 }
-/* line 234, ../sass/preOrder.scss */
+/* line 235, ../sass/preOrder.scss */
 .container .order .credit {
   margin-left: 90px;
   width: 90px;
   margin-top: 5px;
 }
-/* line 240, ../sass/preOrder.scss */
+/* line 241, ../sass/preOrder.scss */
 .container .order .introduction {
   position: absolute;
   top: 15px;
@@ -401,7 +402,7 @@ body {
   padding: 8px;
   color: #9fa0a0;
 }
-/* line 251, ../sass/preOrder.scss */
+/* line 252, ../sass/preOrder.scss */
 .container .order .introduction .center {
   width: 100%;
   text-align: center;
