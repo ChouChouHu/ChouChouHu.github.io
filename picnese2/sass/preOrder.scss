@@ -147,16 +147,16 @@ body {
 		width: 60%;
 		left: 17%;
 		padding: 3%;
-		font-size: 14px;
+		font-size: 0.9em;
 		line-height: 30px;
 		
 		li {
 			list-style-type: none;
 			margin-left: 8%;
-			font-size: 13px;
+			font-size: 0.86em;
 
 			.ps {
-				font-size: 11px;
+				font-size: 0.84em;
 				line-height: 15px;
 				margin-left: 18%;
 				color: #9fa0a0;
@@ -212,7 +212,7 @@ body {
 			border: #bce2ed 1.5px solid;
 			border-radius: 10px;
 			padding-left: 10px;
-			font-size: 13px;
+			font-size: 0.86em;
 		}
 
 		textarea {
@@ -222,13 +222,14 @@ body {
 			border: #bce2ed 1.5px solid;
 			border-radius: 10px;
 			padding-left: 10px;
+			font-size: 0.86em;
 		}
 
 		form {
 			position: absolute;
 			left: 38%;
 			// margin-top: 1px;
-			font-size: 13px;
+			font-size: 0.86em;
 			margin-top: 1px;
 		}
 
@@ -245,7 +246,7 @@ body {
 			width: 30%;
 			border: #dcdddd 2px dashed;
 			line-height: 18px;
-			font-size: 12px;
+			font-size: 0.8em;
 			padding: 8px;
 			color: #9fa0a0;
 
@@ -253,7 +254,7 @@ body {
 				width: 100%;
 				text-align: center;
 				color: #231815;
-				font-size: 14px;
+				font-size: 1.2em;
 			}
 		}
 	}
