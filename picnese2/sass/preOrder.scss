@@ -206,16 +206,17 @@ body {
 		}
 
 		input {
-			// position: absolute;
-			margin-left: 30px;
-			margin-top: 7px;
+			position: absolute;
+			left: 170px;
+			margin-top: 4px;
 			border: #bce2ed 1.5px solid;
 			border-radius: 10px;
 			padding-left: 10px;
+			font-size: 13px;
 		}
 
 		textarea {
-			// position: absolute;
+			position: absolute;
 			left: 170px;
 			margin-top: 7px;
 			border: #bce2ed 1.5px solid;
@@ -224,10 +225,10 @@ body {
 		}
 
 		form {
-			// position: absolute;
-			margin-left: 20px;
-			vertical-align: top;
-			display: inline-block;
+			position: absolute;
+			left: 250px;
+			// margin-top: 1px;
+			font-size: 13px;
 		}
 
 		.credit {
