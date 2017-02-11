@@ -307,7 +307,7 @@ body {
 .container .order li {
   list-style-type: none;
   margin-left: 8%;
-  font-size: 0.86em;
+  font-size: 0.9em;
 }
 /* line 158, ../sass/preOrder.scss */
 .container .order li .ps {
@@ -366,7 +366,7 @@ body {
   border: #bce2ed 1.5px solid;
   border-radius: 10px;
   padding-left: 10px;
-  font-size: 0.86em;
+  font-size: 1em;
 }
 /* line 218, ../sass/preOrder.scss */
 .container .order textarea {
@@ -376,14 +376,14 @@ body {
   border: #bce2ed 1.5px solid;
   border-radius: 10px;
   padding-left: 10px;
-  font-size: 0.86em;
+  font-size: 1em;
 }
 /* line 228, ../sass/preOrder.scss */
 .container .order form {
   position: absolute;
   left: 38%;
-  font-size: 0.86em;
-  margin-top: 1px;
+  font-size: 1em;
+  margin-top: 0px;
 }
 /* line 236, ../sass/preOrder.scss */
 .container .order .credit {
