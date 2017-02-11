@@ -360,34 +360,33 @@ body {
 }
 /* line 208, ../sass/preOrder.scss */
 .container .order input {
-  position: absolute;
-  left: 170px;
-  margin-top: 5px;
+  margin-left: 30px;
+  margin-top: 7px;
   border: #bce2ed 1.5px solid;
   border-radius: 10px;
   padding-left: 10px;
 }
 /* line 217, ../sass/preOrder.scss */
 .container .order textarea {
-  position: absolute;
   left: 170px;
-  margin-top: 5px;
+  margin-top: 7px;
   border: #bce2ed 1.5px solid;
   border-radius: 10px;
   padding-left: 10px;
 }
 /* line 226, ../sass/preOrder.scss */
 .container .order form {
-  position: absolute;
-  left: 250px;
+  margin-left: 20px;
+  vertical-align: top;
+  display: inline-block;
 }
-/* line 231, ../sass/preOrder.scss */
+/* line 233, ../sass/preOrder.scss */
 .container .order .credit {
   margin-left: 90px;
   width: 90px;
   margin-top: 5px;
 }
-/* line 237, ../sass/preOrder.scss */
+/* line 239, ../sass/preOrder.scss */
 .container .order .introduction {
   position: absolute;
   top: 15px;
@@ -399,7 +398,7 @@ body {
   padding: 8px;
   color: #9fa0a0;
 }
-/* line 248, ../sass/preOrder.scss */
+/* line 250, ../sass/preOrder.scss */
 .container .order .introduction .center {
   width: 100%;
   text-align: center;
