@@ -5,18 +5,23 @@
 $color: #009e95;
 $color2: #595757;
 
-@import "font";
+@import "base/font";
 
 body {
 	font-family: PingFangSC-Regular, sans-serif, "微软雅黑", "microsoft yahei";
 	background: #d8ecdf;
 	overflow: scroll;
+	margin: 0;
+}
+
+.fixedBar {
+	position: absolute;
 }
 
 .title {
 	position: absolute;
 	width: 270px;
-	top: 47px;
+	top: 107px;
 	left: 5%;
 }
 
@@ -25,7 +30,7 @@ body {
 	background: white;
 	width: 90%;
 	padding-bottom: 70px;
-	margin-top: 164px;
+	margin-top: 184px;
 	margin-bottom: 70px;
 	left: 5%;
 	border-radius: 15px;
@@ -39,9 +44,9 @@ body {
 	.gameSet {
 		position: relative;
 		// background: red;
-		width: 90%;
-		left: 5%;
-		top: 25px;
+		width: 80%;
+		left: 10%;
+		top: 40px;
 
 		.game {
 			display: inline-block;
@@ -64,12 +69,12 @@ body {
 
 	.dialog {
 		position: relative;
-		width: 90%;
-		left: 5%;
+		width: 80%;
+		left: 10%;
 		background: #eef7f0;
 		border: #5fb7b0 1.5px solid;
 		border-radius: 10px;
-		margin-top: 90px;
+		margin-top: 115px;
 		
 		img.dialogImg {
 			position: absolute;
@@ -81,36 +86,6 @@ body {
 
 		.dialogContent{ 
 			padding: 50px;
-
-			.text {
-				position: relative;
-				display: inline-block;
-				font-family: PingFangSC-semibold, sans-serif, "微软雅黑", "microsoft yahei";
-				color: $color2;
-				width: 68%;
-				z-index: 3;
-				font-size: 16px;
-				line-height: 20px;
-				// background: red;
-
-				h1 {
-					color: $color;
-					font-size: 22px;
-					margin-bottom: 20px;
-				}
-
-				h2 {
-					color: $color;
-					font-size: 18px;
-					margin-top: 20px;
-					margin-bottom: 10px;
-				}
-
-				li {
-					margin-left: 40px;
-					list-style: none;
-				}
-			}
 
 			.picture {
 				position: relative;

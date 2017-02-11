@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="stylesheets/reset.css" media="screen, projection" rel="stylesheet" type="text/css" /> 
 <link href="stylesheets/animate.css" rel="stylesheet" type="text/css" />
-<link href="stylesheets/page/retrieval.css" rel="stylesheet" type="text/css" />  
+<link href="stylesheets/retrieval.css" rel="stylesheet" type="text/css" />  
 <script src="js/jQuery.js"></script>
 <script type="text/javascript">
 
@@ -54,59 +54,42 @@ function cleartext (id){
 	<div class="firstLayer">
 		<div class="construct">
 			<div class="topic">
-				上層構件1
+				<div>
+					上層構件
+				</div>
 			</div>
-			耳
-			<div class="pictureWord">
+			<a class="each" href="">
 				耳
-			</div>
-		</div>
-		<div class="construct">
-			<div class="topic">
-				上層構件2
-			</div>
-			令
-			<div class="pictureWord">
+				<div class="pictureWord">
+					耳
+				</div>
+			</a>
+			<a class="each" href="">
 				令
-			</div>
-		</div>
-		<div class="construct">
-			<div class="topic">
-				上層構件3
-			</div>
-			令
-			<div class="pictureWord">
-				令
-			</div>
-		</div>
-		<div class="construct">
-			<div class="topic">
-				上層構件4
-			</div>
-			令
-			<div class="pictureWord">
-				令
-			</div>
+				<div class="pictureWord">
+					令
+				</div>
+			</a>
 		</div>
 	</div>
 
 	<div class="secondLayer">
 		<div class="word">
+			<div class="picture pictureWord">
+				聆
+			</div>
 			<div class="traditional">
 				聆
 				<div class="simplified">
 					聆
 				</div>
-			</div>
-			<div class="picture pictureWord">
-				聆
-			</div>
-			<div class="listen">
-				<div class="phonetic">
-					ㄌㄧㄥˊ
-					<br>
-					<div class="pinYin">
-						ling
+				<div class="listen">
+					<div class="phonetic">
+						ㄌㄧㄥˊ
+						<br>
+						<div class="pinYin">
+							ling
+						</div>
 					</div>
 				</div>
 			</div>
@@ -116,7 +99,7 @@ function cleartext (id){
 			<img src="img/page/retrieval/draw.png">
 		</div>
 		<div class="topic">
-			文字解釋
+			<div>文字解釋</div>
 		</div>
 		<div class="explanation">
 			<div class="main">
@@ -131,13 +114,14 @@ function cleartext (id){
 			<br>
 			<br>
 			<br>ㄡ
-
 		</div>
 		<div class="btnGrp">
-			<div class="btn">
-				我要討論
+			<div class="btn" id="btn1">
+				<img src="img/page/retrieval/post.png">
+				<div>我要討論</div>
 			</div>
-			<div class="btn">
+			<div class="btn" id="btn2">
+				<img src="img/page/retrieval/discuss.png">
 				討論串
 			</div>
 		</div>
@@ -242,6 +226,9 @@ function cleartext (id){
 		</div>
 	</div>
 
+	<div class="grass">
+		<img class="grass" src="img/page/retrieval/orangeGrass.png">
+	</div>
 </body>
 
 </html>

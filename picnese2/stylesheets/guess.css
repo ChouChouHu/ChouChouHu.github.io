@@ -1,0 +1,345 @@
+@charset "UTF-8";
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ */
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ */
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,300italic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700);
+/* line 6, ../sass/base/_bar.scss */
+.fixedBar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 99999;
+}
+/* line 14, ../sass/base/_bar.scss */
+.fixedBar .logo {
+  position: relative;
+  left: 2%;
+  top: 15px;
+  width: 130px;
+}
+/* line 21, ../sass/base/_bar.scss */
+.fixedBar .btnGrp {
+  position: absolute;
+  top: 0;
+  right: 2%;
+  height: 100%;
+  width: 420px;
+  font-size: 0;
+}
+/* line 30, ../sass/base/_bar.scss */
+.fixedBar .btnGrp .btn {
+  font-family: PingFangSC-semibold, sans-serif, "微软雅黑", "microsoft yahei";
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  width: 100px;
+  font-size: 14px;
+  line-height: 60px;
+  text-align: center;
+  color: #804f21;
+  text-decoration: none;
+  float: right;
+}
+
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ */
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ */
+@font-face {
+  font-family: 'pictureWord';
+  src: url(../fonts/picture-word.ttf);
+}
+/* line 15, ../sass/base/_font.scss */
+.pictureWord {
+  font-family: pictureWord;
+}
+
+/* line 10, ../sass/page/_background.scss */
+body {
+  font-family: PingFangSC-Regular, sans-serif, "微软雅黑", "microsoft yahei";
+  background: #d8ecdf;
+  overflow: scroll;
+  margin: 0;
+}
+
+/* line 17, ../sass/page/_background.scss */
+.fixedBar {
+  position: absolute;
+}
+
+/* line 21, ../sass/page/_background.scss */
+.title {
+  position: absolute;
+  width: 270px;
+  top: 107px;
+  left: 5%;
+}
+
+/* line 28, ../sass/page/_background.scss */
+.container {
+  position: relative;
+  background: white;
+  width: 90%;
+  padding-bottom: 70px;
+  margin-top: 184px;
+  margin-bottom: 70px;
+  left: 5%;
+  border-radius: 15px;
+}
+/* line 38, ../sass/page/_background.scss */
+.container .decoration {
+  position: relative;
+  width: 92%;
+  left: 4%;
+}
+/* line 44, ../sass/page/_background.scss */
+.container .gameSet {
+  position: relative;
+  width: 80%;
+  left: 10%;
+  top: 40px;
+}
+/* line 51, ../sass/page/_background.scss */
+.container .gameSet .game {
+  display: inline-block;
+  margin-right: 18px;
+  width: 170px;
+  text-align: center;
+}
+/* line 57, ../sass/page/_background.scss */
+.container .gameSet .game img {
+  cursor: pointer;
+  width: 100%;
+}
+/* line 61, ../sass/page/_background.scss */
+.container .gameSet .game .text {
+  font-family: PingFangSC-semibold, sans-serif, "微软雅黑", "microsoft yahei";
+  margin-top: 20px;
+  font-size: 18px;
+  color: #009e95;
+}
+/* line 70, ../sass/page/_background.scss */
+.container .dialog {
+  position: relative;
+  width: 80%;
+  left: 10%;
+  background: #eef7f0;
+  border: #5fb7b0 1.5px solid;
+  border-radius: 10px;
+  margin-top: 115px;
+}
+/* line 79, ../sass/page/_background.scss */
+.container .dialog img.dialogImg {
+  position: absolute;
+  width: 92px;
+  top: -51px;
+  left: 39px;
+  z-index: 2;
+}
+/* line 87, ../sass/page/_background.scss */
+.container .dialog .dialogContent {
+  padding: 50px;
+}
+/* line 90, ../sass/page/_background.scss */
+.container .dialog .dialogContent .picture {
+  position: relative;
+  display: inline-block;
+  width: 28%;
+  margin-left: 2%;
+  vertical-align: top;
+}
+
+/* line 8, ../sass/guess.scss */
+.red {
+  color: #ca485a;
+  display: inline-block;
+}
+
+/* line 13, ../sass/guess.scss */
+.cloud1 {
+  position: absolute;
+  width: 100px;
+  top: 90px;
+  left: 32%;
+}
+
+/* line 20, ../sass/guess.scss */
+.cloud2 {
+  position: absolute;
+  width: 70px;
+  top: 50px;
+  left: 55%;
+}
+
+/* line 27, ../sass/guess.scss */
+.cloud3 {
+  position: absolute;
+  width: 80px;
+  top: 98px;
+  left: 90%;
+}
+
+/* line 35, ../sass/guess.scss */
+.monster {
+  position: absolute;
+  width: 170px;
+  right: 12%;
+  top: 60px;
+  z-index: 1;
+}
+
+/* line 43, ../sass/guess.scss */
+.bottom {
+  position: absolute;
+  width: 100%;
+  margin-top: -230px;
+  z-index: 999;
+}
+
+/* line 55, ../sass/guess.scss */
+.container .dialog .dialogContent .ImgTitle {
+  position: relative;
+  width: 30%;
+  left: 8%;
+  margin-bottom: 20px;
+}
+/* line 62, ../sass/guess.scss */
+.container .dialog .dialogContent .goodsImg {
+  position: relative;
+  width: 35%;
+  left: 8%;
+}
+/* line 68, ../sass/guess.scss */
+.container .dialog .dialogContent .buyBtn {
+  position: relative;
+  display: inline-block;
+  width: 20%;
+  cursor: pointer;
+  vertical-align: top;
+  margin-top: 20px;
+  margin-left: 2%;
+}
+/* line 77, ../sass/guess.scss */
+.container .dialog .dialogContent .buyBtn #two {
+  display: none;
+}
+/* line 81, ../sass/guess.scss */
+.container .dialog .dialogContent .buyBtn img {
+  position: absolute;
+  width: 100%;
+}
+/* line 87, ../sass/guess.scss */
+.container .dialog .dialogContent .buyBtn:hover #two {
+  display: block;
+}
+/* line 93, ../sass/guess.scss */
+.container .dialog .dialogContent .center {
+  width: 50%;
+  left: 36%;
+}
+/* line 98, ../sass/guess.scss */
+.container .dialog .dialogContent .price {
+  font-family: Times;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  display: inline-block;
+  margin-left: 10%;
+  margin-top: 20px;
+}
+/* line 112, ../sass/guess.scss */
+.container .dialog .dialogContent .price .redLine {
+  position: absolute;
+  background: #ca485a;
+  height: 2px;
+  width: 100px;
+  margin-left: -10px;
+  margin-top: 10px;
+}
+/* line 124, ../sass/guess.scss */
+.container .dialog .dialogContent .text {
+  position: relative;
+  display: inline-block;
+  font-family: PingFangSC-semibold, sans-serif, "微软雅黑", "microsoft yahei";
+  color: #595757;
+  width: 50%;
+  z-index: 3;
+  font-size: 12px;
+  line-height: 22px;
+  vertical-align: top;
+  margin-left: 12%;
+}
+/* line 157, ../sass/guess.scss */
+.container .dialog .dialogContent .line {
+  position: relative;
+  width: 80%;
+  left: 10%;
+  height: 0px;
+  border: #dcdddd 1px solid;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+/* line 168, ../sass/guess.scss */
+.container .dialog .dialogContent .containerInside {
+  position: relative;
+  width: 80%;
+  left: 10%;
+  margin-top: 0px;
+  padding-bottom: 100px;
+}
+/* line 175, ../sass/guess.scss */
+.container .dialog .dialogContent .containerInside .introduction {
+  width: 30%;
+  position: relative;
+  display: inline-block;
+  font-size: 13px;
+  color: #595757;
+  line-height: 22px;
+  margin-left: 22px;
+  vertical-align: top;
+}
+/* line 185, ../sass/guess.scss */
+.container .dialog .dialogContent .containerInside .introduction img {
+  width: 100%;
+}
+/* line 190, ../sass/guess.scss */
+.container .dialog .dialogContent .containerInside h1 {
+  font-size: 17px;
+  letter-spacing: 3px;
+  line-height: 50px;
+}
+/* line 196, ../sass/guess.scss */
+.container .dialog .dialogContent .containerInside .para {
+  display: inline-block;
+  width: 80%;
+  margin-left: 12px;
+  font-size: 13px;
+  color: #595757;
+  line-height: 22px;
+}
+/* line 205, ../sass/guess.scss */
+.container .dialog .dialogContent .containerInside .big {
+  display: inline-block;
+  font-size: 15px;
+  line-height: 32px;
+  color: #595757;
+  margin-left: 12px;
+}
+/* line 212, ../sass/guess.scss */
+.container .dialog .dialogContent .containerInside img {
+  width: 45%;
+}
+/* line 216, ../sass/guess.scss */
+.container .dialog .dialogContent .containerInside .slash {
+  color: #9fa0a0;
+  font-size: 14px;
+  margin-top: 10px;
+}

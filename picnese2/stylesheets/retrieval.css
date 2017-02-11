@@ -1,0 +1,450 @@
+@charset "UTF-8";
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ */
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ */
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,300italic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700);
+/* line 6, ../sass/base/_bar.scss */
+.fixedBar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 99999;
+}
+/* line 14, ../sass/base/_bar.scss */
+.fixedBar .logo {
+  position: relative;
+  left: 2%;
+  top: 15px;
+  width: 130px;
+}
+/* line 21, ../sass/base/_bar.scss */
+.fixedBar .btnGrp {
+  position: absolute;
+  top: 0;
+  right: 2%;
+  height: 100%;
+  width: 420px;
+  font-size: 0;
+}
+/* line 30, ../sass/base/_bar.scss */
+.fixedBar .btnGrp .btn {
+  font-family: PingFangSC-semibold, sans-serif, "微软雅黑", "microsoft yahei";
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  width: 100px;
+  font-size: 14px;
+  line-height: 60px;
+  text-align: center;
+  color: #804f21;
+  text-decoration: none;
+  float: right;
+}
+
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ */
+@font-face {
+  font-family: 'pictureWord';
+  src: url(../fonts/picture-word.ttf);
+}
+/* line 15, ../sass/base/_font.scss */
+.pictureWord {
+  font-family: pictureWord;
+}
+
+/* line 8, ../sass/retrieval.scss */
+body {
+  background: #fdfce6;
+  font-size: 0;
+  margin: 0;
+}
+
+/* line 14, ../sass/retrieval.scss */
+.fixedBar {
+  background: white;
+  z-index: 99999;
+}
+/* line 19, ../sass/retrieval.scss */
+.fixedBar p {
+  font-family: PingFangSC-semibold, sans-serif, "微软雅黑", "microsoft yahei";
+  font-size: 12px;
+  margin-left: 18%;
+}
+/* line 23, ../sass/retrieval.scss */
+.fixedBar p a {
+  color: #804f21;
+  text-decoration: none;
+}
+
+/* line 30, ../sass/retrieval.scss */
+.searchBar {
+  position: relative;
+  width: 200px;
+  height: 25px;
+  background: white;
+  border: #e4855c 5px solid;
+  border-radius: 20px;
+  left: 50%;
+  margin-left: -100px;
+  margin-top: 80px;
+}
+/* line 41, ../sass/retrieval.scss */
+.searchBar input.search {
+  margin-left: 12px;
+  margin-top: 3px;
+  width: 150px;
+  border: 0;
+  font-size: 13px;
+  color: #9fa0a0;
+}
+/* line 50, ../sass/retrieval.scss */
+.searchBar input.searchBtn {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  vertical-align: top;
+  border: 0;
+  cursor: pointer;
+  background: transparent;
+}
+/* line 60, ../sass/retrieval.scss */
+.searchBar img {
+  vertical-align: top;
+}
+
+/* line 65, ../sass/retrieval.scss */
+.grass {
+  position: relative;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+/* line 72, ../sass/retrieval.scss */
+.grass img {
+  width: 1280px;
+}
+@media screen and (min-width: 1280px) {
+  /* line 76, ../sass/retrieval.scss */
+  .grass .grass {
+    width: 100%;
+  }
+}
+
+/* line 82, ../sass/retrieval.scss */
+.firstLayer {
+  position: relative;
+  display: inline-block;
+  width: 22%;
+  margin-left: 4%;
+  margin-top: 25px;
+  text-align: center;
+  line-height: 65px;
+  color: #595757;
+  font-size: 34px;
+}
+/* line 96, ../sass/retrieval.scss */
+.firstLayer .construct {
+  position: relative;
+  width: 100%;
+  height: 115px;
+  text-align: center;
+}
+/* line 103, ../sass/retrieval.scss */
+.firstLayer .construct .topic {
+  font-family: PingFangSC-regular, sans-serif, "微软雅黑", "microsoft yahei";
+  width: 100%;
+  height: 40px;
+  background: #f8b62d;
+  color: white;
+  text-align: center;
+  border-radius: 30px;
+}
+/* line 112, ../sass/retrieval.scss */
+.firstLayer .construct .topic div {
+  letter-spacing: 10px;
+  font-size: 16px;
+  line-height: 40px;
+  margin-left: 5px;
+}
+/* line 120, ../sass/retrieval.scss */
+.firstLayer .construct .each {
+  position: relative;
+  display: block;
+  background: white;
+  padding: 0px;
+  width: 80%;
+  left: 10%;
+  margin-top: 20px;
+  cursor: pointer;
+  color: #595757;
+  text-decoration: none;
+}
+/* line 134, ../sass/retrieval.scss */
+.firstLayer .pictureWord {
+  display: inline-block;
+  font-size: 44px;
+}
+
+/* line 140, ../sass/retrieval.scss */
+.secondLayer {
+  position: relative;
+  display: inline-block;
+  width: 44%;
+  margin-top: 20px;
+  margin-left: 1%;
+  vertical-align: top;
+  color: #595757;
+  font-size: 0;
+}
+/* line 153, ../sass/retrieval.scss */
+.secondLayer .word {
+  position: relative;
+  display: inline-block;
+  background: white;
+  width: 250px;
+  height: 130px;
+  margin-top: 30px;
+  margin-left: 5%;
+}
+/* line 162, ../sass/retrieval.scss */
+.secondLayer .word .picture {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 130px;
+  height: 120px;
+  line-height: 120px;
+  font-size: 120px;
+  text-align: center;
+  margin-top: 5px;
+  border-right: #dcdddd 1px solid;
+}
+/* line 176, ../sass/retrieval.scss */
+.secondLayer .word .traditional {
+  font-family: sans-serif;
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 60px;
+  margin-top: 5px;
+  padding-left: 10px;
+  border-bottom: #dcdddd 1px solid;
+  font-size: 50px;
+  line-height: 60px;
+}
+/* line 190, ../sass/retrieval.scss */
+.secondLayer .word .traditional .simplified {
+  font-family: sans-serif;
+  position: relative;
+  display: inline-block;
+  line-height: 26px;
+  border: white 2px solid;
+  font-size: 20px;
+  text-align: center;
+}
+/* line 202, ../sass/retrieval.scss */
+.secondLayer .word .listen {
+  font-family: sans-serif;
+  position: relative;
+  display: inline-block;
+  height: 50px;
+  line-height: 26px;
+  font-size: 20px;
+  margin-top: 8px;
+}
+/* line 212, ../sass/retrieval.scss */
+.secondLayer .word .listen .phonetic {
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+  margin-left: 0px;
+  margin-top: 5px;
+  line-height: 20px;
+}
+/* line 220, ../sass/retrieval.scss */
+.secondLayer .word .listen .pinYin {
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 3px;
+}
+/* line 229, ../sass/retrieval.scss */
+.secondLayer .draw {
+  position: relative;
+  display: inline-block;
+  width: 180px;
+  height: 180px;
+  border: white 2px solid;
+  text-align: center;
+  vertical-align: top;
+  margin-top: 30px;
+  margin-left: 5%;
+  padding: 10px;
+  background: white;
+}
+/* line 242, ../sass/retrieval.scss */
+.secondLayer .draw img {
+  width: 100%;
+}
+/* line 247, ../sass/retrieval.scss */
+.secondLayer .topic {
+  background: #f8b62d;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  font-size: 17px;
+  margin-top: 20px;
+  color: white;
+  text-align: center;
+  border-radius: 20px;
+}
+/* line 257, ../sass/retrieval.scss */
+.secondLayer .topic div {
+  letter-spacing: 10px;
+  margin-left: 5px;
+}
+/* line 263, ../sass/retrieval.scss */
+.secondLayer .explanation {
+  font-family: PingFangSC-regular, sans-serif, "微软雅黑", "microsoft yahei";
+  position: relative;
+  width: 89%;
+  left: 8%;
+  height: 100px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  overflow-y: scroll;
+  color: black;
+}
+/* line 277, ../sass/retrieval.scss */
+.secondLayer .explanation::-webkit-scrollbar {
+  background-color: white;
+  width: 1.2em;
+}
+/* line 286, ../sass/retrieval.scss */
+.secondLayer .explanation::-webkit-scrollbar-thumb {
+  background-color: #f3d091;
+  border: 3px solid white;
+  border-radius: 10px;
+}
+/* line 296, ../sass/retrieval.scss */
+.secondLayer .explanation .main {
+  font-family: PingFangSC-light, sans-serif, "微软雅黑", "microsoft yahei";
+  display: inline-block;
+  font-size: 26px;
+}
+/* line 302, ../sass/retrieval.scss */
+.secondLayer .btnGrp {
+  position: absolute;
+  right: 15px;
+}
+/* line 306, ../sass/retrieval.scss */
+.secondLayer .btnGrp .btn {
+  font-family: PingFangSC-regular, sans-serif, "微软雅黑", "microsoft yahei";
+  position: relative;
+  display: inline-block;
+  width: 120px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 13px;
+  text-align: center;
+  color: #c2722a;
+  border-radius: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+/* line 323, ../sass/retrieval.scss */
+.secondLayer .btnGrp .btn img {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+/* line 331, ../sass/retrieval.scss */
+.secondLayer .btnGrp .btn div {
+  margin-left: -8px;
+}
+/* line 336, ../sass/retrieval.scss */
+.secondLayer .btnGrp #btn1 img {
+  margin-top: -10px;
+}
+/* line 341, ../sass/retrieval.scss */
+.secondLayer .btnGrp #btn2 img {
+  margin-top: 0px;
+}
+
+/* line 348, ../sass/retrieval.scss */
+.thirdLayer {
+  position: relative;
+  display: inline-block;
+  width: 22%;
+  margin-top: 25px;
+  margin-left: 1%;
+  vertical-align: top;
+  color: #595757;
+}
+/* line 359, ../sass/retrieval.scss */
+.thirdLayer .topic {
+  font-family: PingFangSC-regular, sans-serif, "微软雅黑", "microsoft yahei";
+  width: 100%;
+  height: 40px;
+  background: #f8b62d;
+  color: white;
+  font-size: 17px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 20px;
+}
+/* line 371, ../sass/retrieval.scss */
+.thirdLayer .derivative {
+  position: relative;
+  width: 93%;
+  left: 5%;
+  margin-top: 15px;
+  height: 390px;
+  overflow-y: scroll;
+}
+/* line 380, ../sass/retrieval.scss */
+.thirdLayer .derivative::-webkit-scrollbar {
+  background-color: white;
+  width: 1.2em;
+  font-size: 16px;
+}
+/* line 386, ../sass/retrieval.scss */
+.thirdLayer .derivative::-webkit-scrollbar-thumb {
+  background-color: #f3d091;
+  border: 3px solid white;
+  border-radius: 10px;
+}
+/* line 392, ../sass/retrieval.scss */
+.thirdLayer .derivative .word {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  height: 42px;
+  width: 40px;
+  line-height: 42px;
+  background: white;
+  font-size: 34px;
+  text-align: center;
+  margin-bottom: 6px;
+  margin-left: 6px;
+}
+
+@media screen and (max-width: 950px) {
+  /* line 412, ../sass/retrieval.scss */
+  .fixedBar p {
+    display: none;
+  }
+}

@@ -1,0 +1,32 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ */
+
+@import "member/background";
+@import "base/bar";
+
+.container {
+	
+	.type {
+		top: 6vw;
+		// background: red;
+
+		.title {
+			margin-bottom: 3vw;
+		}
+
+		.data {
+			margin-bottom: 1vw;
+		}
+
+		.contract {
+			font-family: PingFangSC-semibold, sans-serif, "微软雅黑", "microsoft yahei";
+			font-size: 14px;
+			margin-bottom: 3vw;
+
+			a {
+				color: #2ea7e0;
+			}
+		}
+	}
+}

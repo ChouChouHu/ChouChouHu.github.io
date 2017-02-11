@@ -1,0 +1,191 @@
+@charset "UTF-8";
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ */
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ */
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ */
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,300italic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700);
+@font-face {
+  font-family: 'pictureWord';
+  src: url(../fonts/picture-word.ttf);
+}
+/* line 15, ../sass/base/_font.scss */
+.pictureWord {
+  font-family: pictureWord;
+}
+
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ */
+/* line 5, ../sass/base/_background.scss */
+body {
+  font-family: PingFangSC-Regular, sans-serif, "微软雅黑", "microsoft yahei";
+  background: #d8ecdf;
+}
+
+/* line 12, ../sass/base/_background.scss */
+.cloud1 {
+  position: absolute;
+  width: 100px;
+  top: 70px;
+  left: 32%;
+}
+
+/* line 19, ../sass/base/_background.scss */
+.cloud2 {
+  position: absolute;
+  width: 70px;
+  top: 30px;
+  left: 55%;
+}
+
+/* line 26, ../sass/base/_background.scss */
+.cloud3 {
+  position: absolute;
+  width: 80px;
+  top: 80px;
+  left: 90%;
+}
+
+/* line 33, ../sass/base/_background.scss */
+.context {
+  color: grey;
+  font-size: 9px;
+  position: absolute;
+  bottom: 3px;
+  right: 5px;
+}
+
+/* line 12, ../sass/member/_background.scss */
+.container {
+  position: relative;
+  width: 40%;
+  height: 40vw;
+  left: 30%;
+  top: 65px;
+}
+/* line 20, ../sass/member/_background.scss */
+.container img {
+  position: absolute;
+  width: 100%;
+}
+/* line 25, ../sass/member/_background.scss */
+.container .type {
+  position: relative;
+  width: 80%;
+  left: 10%;
+  text-align: center;
+}
+/* line 33, ../sass/member/_background.scss */
+.container .type .title {
+  position: relative;
+  font-family: PingFangSC-semibold, sans-serif, "微软雅黑", "microsoft yahei";
+  font-size: 16px;
+  color: #2ea7e0;
+}
+/* line 41, ../sass/member/_background.scss */
+.container .type .data {
+  font-family: PingFangSC-semibold, sans-serif, "微软雅黑", "microsoft yahei";
+  position: relative;
+  width: 80%;
+  left: 10%;
+  text-align: left;
+  font-size: 13px;
+  line-height: 24px;
+}
+/* line 51, ../sass/member/_background.scss */
+.container .type .data input {
+  border: 0px;
+  border-radius: 15px;
+  height: 25px;
+  width: 90%;
+  margin-bottom: 4px;
+  font-size: 16px;
+  padding-left: 10px;
+}
+/* line 62, ../sass/member/_background.scss */
+.container .type .btn {
+  font-family: PingFangSC-semibold, sans-serif, "微软雅黑", "microsoft yahei";
+  position: relative;
+  display: inline-block;
+  width: 90px;
+  height: 34px;
+  background: linear-gradient(#c1e4ef, #93d3e5);
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 34px;
+  color: #186896;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ */
+/* line 6, ../sass/base/_bar.scss */
+.fixedBar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 99999;
+}
+/* line 14, ../sass/base/_bar.scss */
+.fixedBar .logo {
+  position: relative;
+  left: 2%;
+  top: 15px;
+  width: 130px;
+}
+/* line 21, ../sass/base/_bar.scss */
+.fixedBar .btnGrp {
+  position: absolute;
+  top: 0;
+  right: 2%;
+  height: 100%;
+  width: 420px;
+  font-size: 0;
+}
+/* line 30, ../sass/base/_bar.scss */
+.fixedBar .btnGrp .btn {
+  font-family: PingFangSC-semibold, sans-serif, "微软雅黑", "microsoft yahei";
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  width: 100px;
+  font-size: 14px;
+  line-height: 60px;
+  text-align: center;
+  color: #804f21;
+  text-decoration: none;
+  float: right;
+}
+
+/* line 10, ../sass/signIn.scss */
+.container .type {
+  top: 6vw;
+}
+/* line 14, ../sass/signIn.scss */
+.container .type .title {
+  margin-bottom: 3vw;
+}
+/* line 18, ../sass/signIn.scss */
+.container .type .data {
+  margin-bottom: 1vw;
+}
+/* line 22, ../sass/signIn.scss */
+.container .type .contract {
+  font-family: PingFangSC-semibold, sans-serif, "微软雅黑", "microsoft yahei";
+  font-size: 14px;
+  margin-bottom: 3vw;
+}
+/* line 27, ../sass/signIn.scss */
+.container .type .contract a {
+  color: #2ea7e0;
+}
