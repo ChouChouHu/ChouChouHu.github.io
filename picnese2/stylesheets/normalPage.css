@@ -104,7 +104,7 @@ body {
 }
 /* line 87, ../sass/page/_background.scss */
 .container .dialog .dialogContent {
-  padding: 50px;
+  padding: 50px 5%;
 }
 /* line 90, ../sass/page/_background.scss */
 .container .dialog .dialogContent .picture {
@@ -115,6 +115,14 @@ body {
   vertical-align: top;
 }
 
+@media screen and (max-width: 600px) {
+  /* line 103, ../sass/page/_background.scss */
+  .container {
+    width: 100%;
+    left: 0;
+    border-radius: 0;
+  }
+}
 /* Welcome to Compass. Use this file to write IE specific override styles.
  * Import this file using the following HTML or equivalent:
  */
@@ -157,6 +165,16 @@ body {
   float: right;
 }
 
+@media screen and (max-width: 1000px) {
+  /* line 49, ../sass/base/_bar.scss */
+  .fixedBar {
+    position: relative;
+  }
+  /* line 52, ../sass/base/_bar.scss */
+  .fixedBar .btnGrp {
+    display: none !important;
+  }
+}
 /* line 8, ../sass/normalPage.scss */
 .title {
   font-family: PingFangSC-semibold, sans-serif, "微软雅黑", "microsoft yahei";
@@ -191,10 +209,6 @@ body {
   left: 90%;
 }
 
-/* line 38, ../sass/normalPage.scss */
-.container {
-  margin-top: 140px;
-}
 /* line 41, ../sass/normalPage.scss */
 .container .text {
   width: 100%;

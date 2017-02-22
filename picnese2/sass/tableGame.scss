@@ -89,7 +89,7 @@
 				color: $color2;
 				width: 30%;
 				z-index: 3;
-				font-size: 13px;
+				font-size: 14px;
 				line-height: 22px;
 				vertical-align: top;
 				margin-left: 12%;
@@ -167,7 +167,7 @@
 				.introduction {
 					position: relative;
 					display: inline-block;
-					font-size: 13px;
+					font-size: 14px;
 					color: #595757;
 					line-height: 22px;
 					margin-left: 22px;
@@ -183,20 +183,32 @@
 					display: inline-block;
 					width: 80%;
 					margin-left: 12px;
-					font-size: 13px;
+					font-size: 14px;
 					color: #595757;
 					line-height: 22px;
+					margin-top: 10px;
 				}
 
 				.big {
 					display: inline-block;
-					font-size: 15px;
-					line-height: 32px;
+					font-size: 16px;
+					line-height: 22px;
+					margin-top: 15px;
+					margin-bottom: 5px;
 					color: #595757;
 					margin-left: 12px;
 				}
+
 				img {
 					width: 45%;
+				}
+
+				img#a {
+					width: 51%;
+				}
+
+				img#b {
+					width: 39%;
 				}
 
 				.slash {
@@ -209,4 +221,124 @@
 	}
 }
 
+@media screen and (max-width: 860px) {
 
+	.container .dialog .dialogContent {
+
+		.ImgTitle {
+			width: 50%;
+			left: 0;
+		}
+
+		.goodsImg {
+			width: 100%;
+			left: 0;
+		}
+
+		.text {
+			width: 80%;
+
+			.price {
+				position: absolute;
+				right: 5%;
+				margin-top: 18px;
+			}
+		}
+		
+		.dashedLine {
+			margin-top: 100px;
+		}
+
+		.dialogImg {
+			width: 75%;
+		}
+
+		.containerInside {
+
+			width: 100%;
+			left: 0;
+
+			h1 {
+				line-height: 22px;
+				margin-top: 20px;
+				margin-bottom: 20px;
+			}
+
+			.slash {
+				display: none;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+
+	.title {
+		width: 230px;
+		top: 77px;
+	}
+	
+	.container {
+
+		margin-bottom: 0;
+		padding-bottom: 0;
+		
+		.dialog {
+			
+			width: 90%;
+			left: 5%;
+			background: white;
+			border: 0px;
+			border-top: #5fb7b0 2px solid;
+			border-radius: 0;
+
+			img.dialogImg {
+				display: none;
+			}
+
+			.dialogContent {
+
+				.text {
+
+					width: 100%;
+					margin-left: 0;
+
+					.price {
+						position: relative;
+						right: 0;
+					}
+				}
+
+				.dashedLine {
+					width: 100%;
+					left: 0;
+				}
+
+				.containerInside {
+
+					img {
+						width: 100%;
+					}
+
+					img#a, img#b {
+						width: 100%;
+						margin-bottom: 5px;
+					}
+				}
+
+				.buyBtn {
+					left: 25%;
+				}
+			}
+		}
+
+		.gameSet .gameOther {
+			margin-top: 30px;
+			// display: none;
+		}
+	}
+
+	.cloud1, .cloud2, .cloud3 {
+		display: none;
+	}
+}

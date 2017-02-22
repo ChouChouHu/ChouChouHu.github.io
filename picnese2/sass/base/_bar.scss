@@ -43,3 +43,15 @@ $color: #804f21;
 		}
 	}
 }
+
+@media screen and (max-width: 1000px){
+	
+	.fixedBar {
+		position: relative;
+
+		.btnGrp {
+			display: none !important;
+		}
+	}
+}
+

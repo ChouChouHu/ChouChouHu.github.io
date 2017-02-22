@@ -55,8 +55,9 @@ body {
 
 		img {
 			position: absolute;
-			width: 30%;
-			left: 35%;
+			width: 300px;
+			left: 50%;
+			margin-left: -150px;
 		}
 	}
 
@@ -139,6 +140,10 @@ body {
 		position: absolute;
 		right: 0;
 		display: inline-block;
+
+		.titleSecond {
+			margin-left: 3%;
+		}
 	}
 
 	.order {
@@ -147,16 +152,16 @@ body {
 		width: 60%;
 		left: 17%;
 		padding: 3%;
-		font-size: 0.9em;
+		font-size: 15px;
 		line-height: 30px;
 		
 		li {
 			list-style-type: none;
 			margin-left: 8%;
-			font-size: 0.9em;
+			font-size: 14px;
 
 			.ps {
-				font-size: 0.84em;
+				font-size: 12px;
 				line-height: 15px;
 				margin-left: 18%;
 				color: #9fa0a0;
@@ -169,24 +174,21 @@ body {
 			}
 
 			.gender {
-				position: absolute;
-				left: 14%;
+				// position: absolute;
+				display: inline-block;
+				margin-left: 5%;
 				margin-top: -3px;
 
-				form {
+				input {
 					position: relative;
-					left: 230px;
-
-					input {
-						position: relative;
-						left: auto;
-					}
+					left: auto;
 				}
 			}
 
 			.left {
-				position: absolute;
-				left: 170px;
+				// position: absolute;
+				// left: 170px;
+				display: inline-block;
 				letter-spacing: 3px;
 
 				.btn {
@@ -198,7 +200,7 @@ body {
 					border-radius: 10px;
 					margin-top: 5px;
 					display: inline-block;
-					font-size: 12px;
+					font-size: 13px;
 					color: #036eb8;
 					text-decoration: none;
 				}
@@ -206,18 +208,20 @@ body {
 		}
 
 		input {
-			position: absolute;
-			left: 27%;
+			// position: absolute;
+			// left: 27%;
 			margin-top: 5px;
 			border: #bce2ed 1.5px solid;
 			border-radius: 10px;
 			padding-left: 10px;
 			font-size: 1em;
+			vertical-align: center;
 		}
 
 		textarea {
-			position: absolute;
-			left: 27%;
+			// position: absolute;
+			// left: 27%;
+			vertical-align: top;
 			margin-top: 7px;
 			border: #bce2ed 1.5px solid;
 			border-radius: 10px;
@@ -225,13 +229,13 @@ body {
 			font-size: 1em;
 		}
 
-		form {
-			position: absolute;
-			left: 38%;
-			// margin-top: 1px;
-			font-size: 1em;
-			margin-top: 0px;
-		}
+		// form {
+		// 	position: absolute;
+		// 	left: 38%;
+		// 	// margin-top: 1px;
+		// 	font-size: 1em;
+		// 	margin-top: 0px;
+		// }
 
 		.credit {
 			margin-left: 90px;
@@ -246,7 +250,7 @@ body {
 			width: 30%;
 			border: #dcdddd 2px dashed;
 			line-height: 18px;
-			font-size: 0.8em;
+			font-size: 13px;
 			padding: 8px;
 			color: #9fa0a0;
 
@@ -254,7 +258,7 @@ body {
 				width: 100%;
 				text-align: center;
 				color: #231815;
-				font-size: 1.2em;
+				font-size: 14px;
 			}
 		}
 	}
@@ -262,3 +266,83 @@ body {
 
 
 
+
+/* rwd */
+
+
+@media screen and (max-width: 1060px) {
+	.introduction {
+		position: relative !important;
+		width: 88% !important;
+		left: 3% !important;
+		margin-bottom: 50px;
+	}
+
+	.ps {
+		margin-left: 0 !important;
+	}
+
+	.credit {
+		margin-left: 0 !important;
+	}
+
+	.container .order li .left .btn {
+		width: 70px;
+		height: 25px;
+		line-height: 25px;
+	}
+
+	.cloud1, .cloud2, .cloud3 {
+		display: none;
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+
+
+	.container {
+
+		/* attention */
+	    width: 100%;
+	    left: 0%;
+		margin-top: 50px;
+		margin-bottom: 0px;
+		border-radius: 0px;
+
+		.order {
+			width: 85%;
+			left: 4%;
+			border: 0px;
+		}
+
+		.goods {
+			width: 93%;
+
+			.second {
+				left: 11%;
+			}
+		}
+
+		.second {
+			position: relative;
+
+			.titleSecond {
+				margin-left: 11%;
+			}
+		}
+
+		.titleImg {
+			
+			padding-top: 30px;
+
+			img {
+				display: none;
+				// width: 220px;
+				// margin-left: -110px;
+			}
+		}
+	}
+
+
+}

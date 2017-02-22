@@ -59,6 +59,16 @@
   float: right;
 }
 
+@media screen and (max-width: 1000px) {
+  /* line 49, ../sass/base/_bar.scss */
+  .fixedBar {
+    position: relative;
+  }
+  /* line 52, ../sass/base/_bar.scss */
+  .fixedBar .btnGrp {
+    display: none !important;
+  }
+}
 /* Welcome to Compass. Use this file to write IE specific override styles.
  * Import this file using the following HTML or equivalent:
  */
@@ -335,16 +345,28 @@ img.birdFlyTwo {
 /* line 6, ../sass/index/_tree.scss */
 .tree {
   position: absolute;
-  width: 50vw;
+  width: 50%;
+  height: 97vh;
   bottom: 0;
-  left: 25vw;
+  left: 25%;
   z-index: 999;
 }
 /* line 15, ../sass/index/_tree.scss */
+.tree .news {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  margin-left: -160px;
+  width: 115px;
+  z-index: 999;
+  cursor: pointer;
+  animation-delay: 2.4s;
+}
+/* line 26, ../sass/index/_tree.scss */
 .tree .branch {
   position: absolute;
 }
-/* line 17, ../sass/index/_tree.scss */
+/* line 28, ../sass/index/_tree.scss */
 .tree .trunk {
   position: absolute;
   bottom: 0;
@@ -353,7 +375,7 @@ img.birdFlyTwo {
   width: 200px;
   height: 81%;
 }
-/* line 26, ../sass/index/_tree.scss */
+/* line 37, ../sass/index/_tree.scss */
 .tree .trunk img.trunk {
   position: absolute;
   bottom: 0;
@@ -372,7 +394,7 @@ img.birdFlyTwo {
     height: 100%;
   }
 }
-/* line 49, ../sass/index/_tree.scss */
+/* line 60, ../sass/index/_tree.scss */
 .tree .trunkMask {
   overflow: hidden;
   animation: trunkMask 0.5s 0.5s backwards;
@@ -385,7 +407,7 @@ img.birdFlyTwo {
     height: 81%;
   }
 }
-/* line 65, ../sass/index/_tree.scss */
+/* line 76, ../sass/index/_tree.scss */
 .tree .treetop {
   position: absolute;
   bottom: 77%;
@@ -396,7 +418,7 @@ img.birdFlyTwo {
   cursor: pointer;
   animation-delay: 1s;
 }
-/* line 77, ../sass/index/_tree.scss */
+/* line 88, ../sass/index/_tree.scss */
 .tree .branchOne {
   position: absolute;
   right: 50%;
@@ -404,14 +426,14 @@ img.birdFlyTwo {
   height: 26%;
   width: 245px;
 }
-/* line 85, ../sass/index/_tree.scss */
+/* line 96, ../sass/index/_tree.scss */
 .tree .branchOne img.branch {
   position: absolute;
   bottom: 0%;
   right: 0%;
   width: 245px;
 }
-/* line 93, ../sass/index/_tree.scss */
+/* line 104, ../sass/index/_tree.scss */
 .tree .branchOneMask {
   overflow: hidden;
   animation: branchOneMask 0.7s 0.8s backwards;
@@ -424,7 +446,7 @@ img.birdFlyTwo {
     width: 245px;
   }
 }
-/* line 109, ../sass/index/_tree.scss */
+/* line 120, ../sass/index/_tree.scss */
 .tree .fruitOne {
   position: absolute;
   bottom: 61%;
@@ -434,12 +456,12 @@ img.birdFlyTwo {
   animation-delay: 1.5s;
   z-index: 3;
 }
-/* line 118, ../sass/index/_tree.scss */
+/* line 129, ../sass/index/_tree.scss */
 .tree .fruitOne img.cooperation {
   width: 100%;
   cursor: pointer;
 }
-/* line 124, ../sass/index/_tree.scss */
+/* line 135, ../sass/index/_tree.scss */
 .tree .branchTwo {
   position: absolute;
   left: 50%;
@@ -447,14 +469,14 @@ img.birdFlyTwo {
   height: 52%;
   width: 330px;
 }
-/* line 132, ../sass/index/_tree.scss */
+/* line 143, ../sass/index/_tree.scss */
 .tree .branchTwo .branch {
   bottom: 0%;
   left: 0%;
   width: 330px;
   height: 60%;
 }
-/* line 140, ../sass/index/_tree.scss */
+/* line 151, ../sass/index/_tree.scss */
 .tree .branchTwoMask {
   overflow: hidden;
   animation: branchTwoMask 0.7s 0.9s backwards;
@@ -467,7 +489,7 @@ img.birdFlyTwo {
     width: 330px;
   }
 }
-/* line 156, ../sass/index/_tree.scss */
+/* line 167, ../sass/index/_tree.scss */
 .tree .fruitTwo_one {
   position: absolute;
   left: 50%;
@@ -477,12 +499,12 @@ img.birdFlyTwo {
   animation-delay: 1.7s;
   z-index: 3;
 }
-/* line 165, ../sass/index/_tree.scss */
+/* line 176, ../sass/index/_tree.scss */
 .tree .fruitTwo_one img.retrieval {
   width: 100%;
   cursor: pointer;
 }
-/* line 170, ../sass/index/_tree.scss */
+/* line 181, ../sass/index/_tree.scss */
 .tree .fruitTwo_one input.search {
   position: absolute;
   top: 75%;
@@ -493,7 +515,7 @@ img.birdFlyTwo {
   border-radius: 15px;
   background: transparent;
 }
-/* line 182, ../sass/index/_tree.scss */
+/* line 193, ../sass/index/_tree.scss */
 .tree .fruitTwo_one input.searchBtn {
   position: absolute;
   top: 74.5%;
@@ -504,7 +526,7 @@ img.birdFlyTwo {
   border: 0px;
   cursor: pointer;
 }
-/* line 195, ../sass/index/_tree.scss */
+/* line 206, ../sass/index/_tree.scss */
 .tree .fruitTwo_two {
   position: absolute;
   left: 50%;
@@ -513,12 +535,12 @@ img.birdFlyTwo {
   width: 180px;
   animation-delay: 1.8s;
 }
-/* line 203, ../sass/index/_tree.scss */
+/* line 214, ../sass/index/_tree.scss */
 .tree .fruitTwo_two img.explore {
   width: 100%;
   cursor: pointer;
 }
-/* line 209, ../sass/index/_tree.scss */
+/* line 220, ../sass/index/_tree.scss */
 .tree .branchThree {
   position: absolute;
   right: 50%;
@@ -526,13 +548,13 @@ img.birdFlyTwo {
   height: 130px;
   width: 300px;
 }
-/* line 217, ../sass/index/_tree.scss */
+/* line 228, ../sass/index/_tree.scss */
 .tree .branchThree .branch {
   bottom: 0%;
   right: 0%;
   width: 300px;
 }
-/* line 224, ../sass/index/_tree.scss */
+/* line 235, ../sass/index/_tree.scss */
 .tree .branchThreeMask {
   overflow: hidden;
   animation: branchThreeMask 0.7s 1s backwards;
@@ -545,7 +567,7 @@ img.birdFlyTwo {
     width: 300px;
   }
 }
-/* line 240, ../sass/index/_tree.scss */
+/* line 251, ../sass/index/_tree.scss */
 .tree .fruitThree {
   position: absolute;
   left: 50%;
@@ -555,12 +577,12 @@ img.birdFlyTwo {
   animation-delay: 2s;
   z-index: 3;
 }
-/* line 249, ../sass/index/_tree.scss */
+/* line 260, ../sass/index/_tree.scss */
 .tree .fruitThree img.guess {
   width: 100%;
   cursor: pointer;
 }
-/* line 257, ../sass/index/_tree.scss */
+/* line 268, ../sass/index/_tree.scss */
 .tree .branchFour {
   position: absolute;
   right: 50%;
@@ -568,13 +590,13 @@ img.birdFlyTwo {
   width: 400px;
   height: 130px;
 }
-/* line 265, ../sass/index/_tree.scss */
+/* line 276, ../sass/index/_tree.scss */
 .tree .branchFour .branch {
   bottom: 0%;
   right: 0%;
   width: 400px;
 }
-/* line 272, ../sass/index/_tree.scss */
+/* line 283, ../sass/index/_tree.scss */
 .tree .branchFourMask {
   overflow: hidden;
   animation: branchFourMask 0.7s 1.1s backwards;
@@ -587,7 +609,7 @@ img.birdFlyTwo {
     width: 400px;
   }
 }
-/* line 288, ../sass/index/_tree.scss */
+/* line 299, ../sass/index/_tree.scss */
 .tree .fruitFour {
   position: absolute;
   left: 50%;
@@ -597,12 +619,12 @@ img.birdFlyTwo {
   animation-delay: 2.3s;
   z-index: 3;
 }
-/* line 297, ../sass/index/_tree.scss */
+/* line 308, ../sass/index/_tree.scss */
 .tree .fruitFour img.tableGame {
   width: 100%;
   cursor: pointer;
 }
-/* line 304, ../sass/index/_tree.scss */
+/* line 315, ../sass/index/_tree.scss */
 .tree .branchFive {
   position: absolute;
   left: 50%;
@@ -610,13 +632,13 @@ img.birdFlyTwo {
   width: 400px;
   height: 180px;
 }
-/* line 312, ../sass/index/_tree.scss */
+/* line 323, ../sass/index/_tree.scss */
 .tree .branchFive .branch {
   bottom: 0%;
   left: 0%;
   width: 400px;
 }
-/* line 319, ../sass/index/_tree.scss */
+/* line 330, ../sass/index/_tree.scss */
 .tree .branchFiveMask {
   overflow: hidden;
   animation: branchFiveMask 0.7s 1.2s backwards;
@@ -629,7 +651,7 @@ img.birdFlyTwo {
     width: 400px;
   }
 }
-/* line 335, ../sass/index/_tree.scss */
+/* line 346, ../sass/index/_tree.scss */
 .tree .fruitFive {
   position: absolute;
   left: 50%;
@@ -639,7 +661,7 @@ img.birdFlyTwo {
   animation-delay: 2.2s;
   z-index: 3;
 }
-/* line 344, ../sass/index/_tree.scss */
+/* line 355, ../sass/index/_tree.scss */
 .tree .fruitFive .HanZi {
   width: 100%;
   cursor: pointer;
@@ -741,25 +763,8 @@ img.birdFlyTwo {
     width: 100%;
   }
 }
-@media screen and (max-height: 480px) {
-  /* line 16, ../sass/index/_rwd.scss */
-  body {
-    position: relative;
-    height: 650px;
-    overflow: scroll;
-  }
-
-  /* line 22, ../sass/index/_rwd.scss */
-  .trunkMask {
-    overflow: visible;
-  }
-  /* line 24, ../sass/index/_rwd.scss */
-  .trunkMask img.trunk {
-    height: 526px !important;
-  }
-}
 @media screen and (max-width: 1200px) {
-  /* line 37, ../sass/index/_rwd.scss */
+  /* line 49, ../sass/index/_rwd.scss */
   .activity {
     display: none;
   }

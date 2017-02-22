@@ -47,6 +47,16 @@
   float: right;
 }
 
+@media screen and (max-width: 1000px) {
+  /* line 49, ../sass/base/_bar.scss */
+  .fixedBar {
+    position: relative;
+  }
+  /* line 52, ../sass/base/_bar.scss */
+  .fixedBar .btnGrp {
+    display: none !important;
+  }
+}
 /* Welcome to Compass. Use this file to write IE specific override styles.
  * Import this file using the following HTML or equivalent:
  */
@@ -146,7 +156,7 @@ body {
 }
 /* line 87, ../sass/page/_background.scss */
 .container .dialog .dialogContent {
-  padding: 50px;
+  padding: 50px 5%;
 }
 /* line 90, ../sass/page/_background.scss */
 .container .dialog .dialogContent .picture {
@@ -157,6 +167,14 @@ body {
   vertical-align: top;
 }
 
+@media screen and (max-width: 600px) {
+  /* line 103, ../sass/page/_background.scss */
+  .container {
+    width: 100%;
+    left: 0;
+    border-radius: 0;
+  }
+}
 /* line 8, ../sass/tableGame.scss */
 .red {
   color: #ca485a;
@@ -240,7 +258,7 @@ body {
   color: #595757;
   width: 30%;
   z-index: 3;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 22px;
   vertical-align: top;
   margin-left: 12%;
@@ -290,7 +308,7 @@ body {
 .container .dialog .dialogContent .containerInside .introduction {
   position: relative;
   display: inline-block;
-  font-size: 13px;
+  font-size: 14px;
   color: #595757;
   line-height: 22px;
   margin-left: 22px;
@@ -306,25 +324,145 @@ body {
   display: inline-block;
   width: 80%;
   margin-left: 12px;
-  font-size: 13px;
+  font-size: 14px;
   color: #595757;
   line-height: 22px;
+  margin-top: 10px;
 }
-/* line 191, ../sass/tableGame.scss */
+/* line 192, ../sass/tableGame.scss */
 .container .dialog .dialogContent .containerInside .big {
   display: inline-block;
-  font-size: 15px;
-  line-height: 32px;
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 15px;
+  margin-bottom: 5px;
   color: #595757;
   margin-left: 12px;
 }
-/* line 198, ../sass/tableGame.scss */
+/* line 202, ../sass/tableGame.scss */
 .container .dialog .dialogContent .containerInside img {
   width: 45%;
 }
-/* line 202, ../sass/tableGame.scss */
+/* line 206, ../sass/tableGame.scss */
+.container .dialog .dialogContent .containerInside img#a {
+  width: 51%;
+}
+/* line 210, ../sass/tableGame.scss */
+.container .dialog .dialogContent .containerInside img#b {
+  width: 39%;
+}
+/* line 214, ../sass/tableGame.scss */
 .container .dialog .dialogContent .containerInside .slash {
   color: #9fa0a0;
   font-size: 14px;
   margin-top: 10px;
+}
+
+@media screen and (max-width: 860px) {
+  /* line 228, ../sass/tableGame.scss */
+  .container .dialog .dialogContent .ImgTitle {
+    width: 50%;
+    left: 0;
+  }
+  /* line 233, ../sass/tableGame.scss */
+  .container .dialog .dialogContent .goodsImg {
+    width: 100%;
+    left: 0;
+  }
+  /* line 238, ../sass/tableGame.scss */
+  .container .dialog .dialogContent .text {
+    width: 80%;
+  }
+  /* line 241, ../sass/tableGame.scss */
+  .container .dialog .dialogContent .text .price {
+    position: absolute;
+    right: 5%;
+    margin-top: 18px;
+  }
+  /* line 248, ../sass/tableGame.scss */
+  .container .dialog .dialogContent .dashedLine {
+    margin-top: 100px;
+  }
+  /* line 252, ../sass/tableGame.scss */
+  .container .dialog .dialogContent .dialogImg {
+    width: 75%;
+  }
+  /* line 256, ../sass/tableGame.scss */
+  .container .dialog .dialogContent .containerInside {
+    width: 100%;
+    left: 0;
+  }
+  /* line 261, ../sass/tableGame.scss */
+  .container .dialog .dialogContent .containerInside h1 {
+    line-height: 22px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  /* line 267, ../sass/tableGame.scss */
+  .container .dialog .dialogContent .containerInside .slash {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* line 276, ../sass/tableGame.scss */
+  .title {
+    width: 230px;
+    top: 77px;
+  }
+
+  /* line 281, ../sass/tableGame.scss */
+  .container {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  /* line 286, ../sass/tableGame.scss */
+  .container .dialog {
+    width: 90%;
+    left: 5%;
+    background: white;
+    border: 0px;
+    border-top: #5fb7b0 2px solid;
+    border-radius: 0;
+  }
+  /* line 295, ../sass/tableGame.scss */
+  .container .dialog img.dialogImg {
+    display: none;
+  }
+  /* line 301, ../sass/tableGame.scss */
+  .container .dialog .dialogContent .text {
+    width: 100%;
+    margin-left: 0;
+  }
+  /* line 306, ../sass/tableGame.scss */
+  .container .dialog .dialogContent .text .price {
+    position: relative;
+    right: 0;
+  }
+  /* line 312, ../sass/tableGame.scss */
+  .container .dialog .dialogContent .dashedLine {
+    width: 100%;
+    left: 0;
+  }
+  /* line 319, ../sass/tableGame.scss */
+  .container .dialog .dialogContent .containerInside img {
+    width: 100%;
+  }
+  /* line 323, ../sass/tableGame.scss */
+  .container .dialog .dialogContent .containerInside img#a, .container .dialog .dialogContent .containerInside img#b {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  /* line 329, ../sass/tableGame.scss */
+  .container .dialog .dialogContent .buyBtn {
+    left: 25%;
+  }
+  /* line 335, ../sass/tableGame.scss */
+  .container .gameSet .gameOther {
+    margin-top: 30px;
+  }
+
+  /* line 341, ../sass/tableGame.scss */
+  .cloud1, .cloud2, .cloud3 {
+    display: none;
+  }
 }

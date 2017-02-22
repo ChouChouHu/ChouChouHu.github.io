@@ -47,6 +47,16 @@
   float: right;
 }
 
+@media screen and (max-width: 1000px) {
+  /* line 49, ../sass/base/_bar.scss */
+  .fixedBar {
+    position: relative;
+  }
+  /* line 52, ../sass/base/_bar.scss */
+  .fixedBar .btnGrp {
+    display: none !important;
+  }
+}
 /* Welcome to Compass. Use this file to write IE specific override styles.
  * Import this file using the following HTML or equivalent:
  */
@@ -146,7 +156,7 @@ body {
 }
 /* line 87, ../sass/page/_background.scss */
 .container .dialog .dialogContent {
-  padding: 50px;
+  padding: 50px 5%;
 }
 /* line 90, ../sass/page/_background.scss */
 .container .dialog .dialogContent .picture {
@@ -157,6 +167,14 @@ body {
   vertical-align: top;
 }
 
+@media screen and (max-width: 600px) {
+  /* line 103, ../sass/page/_background.scss */
+  .container {
+    width: 100%;
+    left: 0;
+    border-radius: 0;
+  }
+}
 /* line 8, ../sass/guess.scss */
 .red {
   color: #ca485a;
@@ -272,7 +290,7 @@ body {
   color: #595757;
   width: 50%;
   z-index: 3;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 22px;
   vertical-align: top;
   margin-left: 12%;
@@ -300,7 +318,7 @@ body {
   width: 30%;
   position: relative;
   display: inline-block;
-  font-size: 13px;
+  font-size: 14px;
   color: #595757;
   line-height: 22px;
   margin-left: 22px;
@@ -311,35 +329,176 @@ body {
   width: 100%;
 }
 /* line 190, ../sass/guess.scss */
+.container .dialog .dialogContent .containerInside #guessW {
+  width: 45%;
+}
+/* line 194, ../sass/guess.scss */
+.container .dialog .dialogContent .containerInside #foreignW {
+  width: 60%;
+}
+/* line 198, ../sass/guess.scss */
 .container .dialog .dialogContent .containerInside h1 {
   font-size: 17px;
   letter-spacing: 3px;
   line-height: 50px;
 }
-/* line 196, ../sass/guess.scss */
+/* line 204, ../sass/guess.scss */
 .container .dialog .dialogContent .containerInside .para {
   display: inline-block;
   width: 80%;
   margin-left: 12px;
-  font-size: 13px;
+  font-size: 14px;
   color: #595757;
   line-height: 22px;
 }
-/* line 205, ../sass/guess.scss */
+/* line 213, ../sass/guess.scss */
 .container .dialog .dialogContent .containerInside .big {
   display: inline-block;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 32px;
   color: #595757;
   margin-left: 12px;
 }
-/* line 212, ../sass/guess.scss */
+/* line 220, ../sass/guess.scss */
 .container .dialog .dialogContent .containerInside img {
   width: 45%;
 }
-/* line 216, ../sass/guess.scss */
+/* line 224, ../sass/guess.scss */
 .container .dialog .dialogContent .containerInside .slash {
   color: #9fa0a0;
   font-size: 14px;
   margin-top: 10px;
+}
+
+@media screen and (max-width: 860px) {
+  /* line 238, ../sass/guess.scss */
+  .container .dialog .dialogContent .ImgTitle {
+    width: 50%;
+    left: 0;
+  }
+  /* line 243, ../sass/guess.scss */
+  .container .dialog .dialogContent .goodsImg {
+    width: 100%;
+    left: 0;
+  }
+  /* line 248, ../sass/guess.scss */
+  .container .dialog .dialogContent .buyBtn {
+    width: 40%;
+  }
+  /* line 252, ../sass/guess.scss */
+  .container .dialog .dialogContent .text {
+    margin-top: 20px;
+    width: 80%;
+  }
+  /* line 257, ../sass/guess.scss */
+  .container .dialog .dialogContent .dialogImg {
+    width: 75%;
+  }
+  /* line 261, ../sass/guess.scss */
+  .container .dialog .dialogContent .containerInside {
+    width: 100%;
+    left: 0;
+  }
+  /* line 266, ../sass/guess.scss */
+  .container .dialog .dialogContent .containerInside .introduction {
+    width: 80%;
+  }
+  /* line 270, ../sass/guess.scss */
+  .container .dialog .dialogContent .containerInside h1 {
+    line-height: 22px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  /* line 277, ../sass/guess.scss */
+  .container .dialog .dialogContent .center {
+    width: 70%;
+    left: 34%;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* line 286, ../sass/guess.scss */
+  .monster {
+    width: 80px;
+    right: 5%;
+    top: 129px;
+  }
+
+  /* line 292, ../sass/guess.scss */
+  .title {
+    width: 230px;
+    top: 77px;
+  }
+
+  /* line 297, ../sass/guess.scss */
+  .container {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  /* line 302, ../sass/guess.scss */
+  .container .dialog {
+    width: 90%;
+    left: 5%;
+    background: white;
+    border: 0px;
+    border-top: #5fb7b0 2px solid;
+    border-radius: 0;
+  }
+  /* line 311, ../sass/guess.scss */
+  .container .dialog img.dialogImg {
+    display: none;
+  }
+  /* line 317, ../sass/guess.scss */
+  .container .dialog .dialogContent .text {
+    width: 100%;
+    margin-left: 0;
+  }
+  /* line 322, ../sass/guess.scss */
+  .container .dialog .dialogContent .price {
+    position: relative;
+    display: block;
+  }
+  /* line 327, ../sass/guess.scss */
+  .container .dialog .dialogContent .dashedLine {
+    width: 100%;
+    left: 0;
+  }
+  /* line 334, ../sass/guess.scss */
+  .container .dialog .dialogContent .containerInside img {
+    width: 100%;
+  }
+  /* line 338, ../sass/guess.scss */
+  .container .dialog .dialogContent .containerInside #guessW {
+    width: 90%;
+  }
+  /* line 342, ../sass/guess.scss */
+  .container .dialog .dialogContent .containerInside #foreignW {
+    width: 90%;
+  }
+  /* line 347, ../sass/guess.scss */
+  .container .dialog .dialogContent .buyBtn {
+    width: 65%;
+    left: 0%;
+  }
+  /* line 352, ../sass/guess.scss */
+  .container .dialog .dialogContent .center {
+    left: 17%;
+  }
+  /* line 356, ../sass/guess.scss */
+  .container .dialog .dialogContent .line {
+    margin-top: 100px;
+  }
+  /* line 362, ../sass/guess.scss */
+  .container .gameSet .gameOther {
+    margin-top: 30px;
+  }
+
+  /* line 368, ../sass/guess.scss */
+  .cloud1, .cloud2, .cloud3 {
+    display: none;
+  }
+
+  /* line 372, ../sass/guess.scss */
+  .bottom {
+    display: none;
+  }
 }

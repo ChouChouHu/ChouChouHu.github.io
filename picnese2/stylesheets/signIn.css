@@ -167,6 +167,16 @@ body {
   float: right;
 }
 
+@media screen and (max-width: 1000px) {
+  /* line 49, ../sass/base/_bar.scss */
+  .fixedBar {
+    position: relative;
+  }
+  /* line 52, ../sass/base/_bar.scss */
+  .fixedBar .btnGrp {
+    display: none !important;
+  }
+}
 /* line 10, ../sass/signIn.scss */
 .container .type {
   top: 6vw;

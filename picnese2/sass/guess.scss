@@ -128,7 +128,7 @@
 				color: $color2;
 				width: 50%;
 				z-index: 3;
-				font-size: 12px;
+				font-size: 14px;
 				line-height: 22px;
 				vertical-align: top;
 				margin-left: 12%;
@@ -176,7 +176,7 @@
 					width: 30%;
 					position: relative;
 					display: inline-block;
-					font-size: 13px;
+					font-size: 14px;
 					color: #595757;
 					line-height: 22px;
 					margin-left: 22px;
@@ -185,6 +185,14 @@
 					img {
 						width: 100%;
 					}
+				}
+
+				#guessW {
+					width: 45%;
+				}
+
+				#foreignW {
+					width: 60%;
 				}
 
 				h1 {
@@ -197,14 +205,14 @@
 					display: inline-block;
 					width: 80%;
 					margin-left: 12px;
-					font-size: 13px;
+					font-size: 14px;
 					color: #595757;
 					line-height: 22px;
 				}
 
 				.big {
 					display: inline-block;
-					font-size: 15px;
+					font-size: 16px;
 					line-height: 32px;
 					color: #595757;
 					margin-left: 12px;
@@ -223,4 +231,145 @@
 	}
 }
 
+@media screen and (max-width: 860px) {
 
+	.container .dialog .dialogContent {
+
+		.ImgTitle {
+			width: 50%;
+			left: 0;
+		}
+
+		.goodsImg {
+			width: 100%;
+			left: 0;
+		}
+
+		.buyBtn {
+			width: 40%;
+		}
+
+		.text {
+			margin-top: 20px;
+			width: 80%;
+		}
+
+		.dialogImg {
+			width: 75%;
+		}
+
+		.containerInside {
+
+			width: 100%;
+			left: 0;
+
+			.introduction {
+				width: 80%;
+			}
+
+			h1 {
+				line-height: 22px;
+				margin-top: 20px;
+				margin-bottom: 20px;
+			}
+		}
+
+		.center {
+			width: 70%;
+			left: 34%;
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+
+	.monster {
+	    width: 80px;
+	    right: 5%;
+	    top: 129px;
+	}
+
+	.title {
+		width: 230px;
+		top: 77px;
+	}
+	
+	.container {
+
+		margin-bottom: 0;
+		padding-bottom: 0;
+		
+		.dialog {
+			
+			width: 90%;
+			left: 5%;
+			background: white;
+			border: 0px;
+			border-top: #5fb7b0 2px solid;
+			border-radius: 0;
+
+			img.dialogImg {
+				display: none;
+			}
+
+			.dialogContent {
+
+				.text {
+					width: 100%;
+					margin-left: 0;
+				}
+
+				.price {
+					position: relative;
+					display: block;
+				}
+
+				.dashedLine {
+					width: 100%;
+					left: 0;
+				}
+
+				.containerInside {
+
+					img {
+						width: 100%;
+					}
+
+					#guessW {
+						width: 90%;
+					}
+
+					#foreignW {
+						width: 90%;
+					}
+				}
+
+				.buyBtn {
+					width: 65%;
+					left: 0%;
+				}
+
+				.center {
+					left: 17%;
+				}
+
+				.line {
+					margin-top: 100px;
+				}
+			}
+		}
+
+		.gameSet .gameOther {
+			margin-top: 30px;
+			// display: none;
+		}
+	}
+
+	.cloud1, .cloud2, .cloud3 {
+		display: none;
+	}
+
+	.bottom {
+		display: none;
+	}
+}

@@ -104,7 +104,7 @@ body {
 }
 /* line 87, ../sass/page/_background.scss */
 .container .dialog .dialogContent {
-  padding: 50px;
+  padding: 50px 5%;
 }
 /* line 90, ../sass/page/_background.scss */
 .container .dialog .dialogContent .picture {
@@ -115,6 +115,14 @@ body {
   vertical-align: top;
 }
 
+@media screen and (max-width: 600px) {
+  /* line 103, ../sass/page/_background.scss */
+  .container {
+    width: 100%;
+    left: 0;
+    border-radius: 0;
+  }
+}
 /* Welcome to Compass. Use this file to write IE specific override styles.
  * Import this file using the following HTML or equivalent:
  */
@@ -157,6 +165,16 @@ body {
   float: right;
 }
 
+@media screen and (max-width: 1000px) {
+  /* line 49, ../sass/base/_bar.scss */
+  .fixedBar {
+    position: relative;
+  }
+  /* line 52, ../sass/base/_bar.scss */
+  .fixedBar .btnGrp {
+    display: none !important;
+  }
+}
 /* line 8, ../sass/preOrder.scss */
 body {
   position: relative;
@@ -212,10 +230,11 @@ body {
 /* line 56, ../sass/preOrder.scss */
 .container .titleImg img {
   position: absolute;
-  width: 30%;
-  left: 35%;
+  width: 300px;
+  left: 50%;
+  margin-left: -150px;
 }
-/* line 63, ../sass/preOrder.scss */
+/* line 64, ../sass/preOrder.scss */
 .container .goods {
   position: relative;
   width: 50%;
@@ -224,13 +243,13 @@ body {
   display: inline-block;
   font-size: 18px;
 }
-/* line 73, ../sass/preOrder.scss */
+/* line 74, ../sass/preOrder.scss */
 .container .goods .subTitle {
   position: relative;
   margin-left: 10%;
   margin-bottom: 10px;
 }
-/* line 79, ../sass/preOrder.scss */
+/* line 80, ../sass/preOrder.scss */
 .container .goods .imgBorder {
   position: relative;
   border: #dcdddd 2px dashed;
@@ -241,30 +260,30 @@ body {
   font-size: 0;
   text-align: center;
 }
-/* line 90, ../sass/preOrder.scss */
+/* line 91, ../sass/preOrder.scss */
 .container .goods .imgBorder img {
   position: relative;
   width: 80%;
   left: 10%;
   display: block;
 }
-/* line 97, ../sass/preOrder.scss */
+/* line 98, ../sass/preOrder.scss */
 .container .goods .imgBorder #one {
   width: 66%;
   left: 14%;
   margin: 3%;
 }
-/* line 103, ../sass/preOrder.scss */
+/* line 104, ../sass/preOrder.scss */
 .container .goods .imgBorder #three {
   width: 66%;
   left: 17%;
 }
-/* line 108, ../sass/preOrder.scss */
+/* line 109, ../sass/preOrder.scss */
 .container .goods .imgBorder #four {
   width: 32.5%;
   left: 34%;
 }
-/* line 113, ../sass/preOrder.scss */
+/* line 114, ../sass/preOrder.scss */
 .container .goods .imgBorder .price {
   font-family: Times;
   position: absolute;
@@ -274,7 +293,7 @@ body {
   font-size: 18px;
   line-height: 22px;
 }
-/* line 123, ../sass/preOrder.scss */
+/* line 124, ../sass/preOrder.scss */
 .container .goods .imgBorder .price .redLine {
   position: absolute;
   background: #ca485a;
@@ -283,68 +302,66 @@ body {
   left: 38%;
   top: 10px;
 }
-/* line 134, ../sass/preOrder.scss */
+/* line 135, ../sass/preOrder.scss */
 .container .goods .second {
   left: 3%;
 }
-/* line 138, ../sass/preOrder.scss */
+/* line 139, ../sass/preOrder.scss */
 .container .second {
   position: absolute;
   right: 0;
   display: inline-block;
 }
 /* line 144, ../sass/preOrder.scss */
+.container .second .titleSecond {
+  margin-left: 3%;
+}
+/* line 149, ../sass/preOrder.scss */
 .container .order {
   position: relative;
   border: #dcdddd 1px solid;
   width: 60%;
   left: 17%;
   padding: 3%;
-  font-size: 0.9em;
+  font-size: 15px;
   line-height: 30px;
 }
-/* line 153, ../sass/preOrder.scss */
+/* line 158, ../sass/preOrder.scss */
 .container .order li {
   list-style-type: none;
   margin-left: 8%;
-  font-size: 0.9em;
+  font-size: 14px;
 }
-/* line 158, ../sass/preOrder.scss */
+/* line 163, ../sass/preOrder.scss */
 .container .order li .ps {
-  font-size: 0.84em;
+  font-size: 12px;
   line-height: 15px;
   margin-left: 18%;
   color: #9fa0a0;
   display: inline-block;
 }
-/* line 165, ../sass/preOrder.scss */
+/* line 170, ../sass/preOrder.scss */
 .container .order li .ps a {
   color: #9fa0a0;
   text-decoration: none;
 }
-/* line 171, ../sass/preOrder.scss */
+/* line 176, ../sass/preOrder.scss */
 .container .order li .gender {
-  position: absolute;
-  left: 14%;
+  display: inline-block;
+  margin-left: 5%;
   margin-top: -3px;
 }
-/* line 176, ../sass/preOrder.scss */
-.container .order li .gender form {
-  position: relative;
-  left: 230px;
-}
-/* line 180, ../sass/preOrder.scss */
-.container .order li .gender form input {
+/* line 182, ../sass/preOrder.scss */
+.container .order li .gender input {
   position: relative;
   left: auto;
 }
-/* line 187, ../sass/preOrder.scss */
+/* line 188, ../sass/preOrder.scss */
 .container .order li .left {
-  position: absolute;
-  left: 170px;
+  display: inline-block;
   letter-spacing: 3px;
 }
-/* line 192, ../sass/preOrder.scss */
+/* line 194, ../sass/preOrder.scss */
 .container .order li .left .btn {
   width: 90px;
   height: 20px;
@@ -354,44 +371,35 @@ body {
   border-radius: 10px;
   margin-top: 5px;
   display: inline-block;
-  font-size: 12px;
+  font-size: 13px;
   color: #036eb8;
   text-decoration: none;
 }
-/* line 208, ../sass/preOrder.scss */
+/* line 210, ../sass/preOrder.scss */
 .container .order input {
-  position: absolute;
-  left: 27%;
   margin-top: 5px;
   border: #bce2ed 1.5px solid;
   border-radius: 10px;
   padding-left: 10px;
   font-size: 1em;
+  vertical-align: center;
 }
-/* line 218, ../sass/preOrder.scss */
+/* line 221, ../sass/preOrder.scss */
 .container .order textarea {
-  position: absolute;
-  left: 27%;
+  vertical-align: top;
   margin-top: 7px;
   border: #bce2ed 1.5px solid;
   border-radius: 10px;
   padding-left: 10px;
   font-size: 1em;
 }
-/* line 228, ../sass/preOrder.scss */
-.container .order form {
-  position: absolute;
-  left: 38%;
-  font-size: 1em;
-  margin-top: 0px;
-}
-/* line 236, ../sass/preOrder.scss */
+/* line 240, ../sass/preOrder.scss */
 .container .order .credit {
   margin-left: 90px;
   width: 90px;
   margin-top: 5px;
 }
-/* line 242, ../sass/preOrder.scss */
+/* line 246, ../sass/preOrder.scss */
 .container .order .introduction {
   position: absolute;
   top: 15px;
@@ -399,14 +407,88 @@ body {
   width: 30%;
   border: #dcdddd 2px dashed;
   line-height: 18px;
-  font-size: 0.8em;
+  font-size: 13px;
   padding: 8px;
   color: #9fa0a0;
 }
-/* line 253, ../sass/preOrder.scss */
+/* line 257, ../sass/preOrder.scss */
 .container .order .introduction .center {
   width: 100%;
   text-align: center;
   color: #231815;
-  font-size: 1.2em;
+  font-size: 14px;
+}
+
+/* rwd */
+@media screen and (max-width: 1060px) {
+  /* line 274, ../sass/preOrder.scss */
+  .introduction {
+    position: relative !important;
+    width: 88% !important;
+    left: 3% !important;
+    margin-bottom: 50px;
+  }
+
+  /* line 281, ../sass/preOrder.scss */
+  .ps {
+    margin-left: 0 !important;
+  }
+
+  /* line 285, ../sass/preOrder.scss */
+  .credit {
+    margin-left: 0 !important;
+  }
+
+  /* line 289, ../sass/preOrder.scss */
+  .container .order li .left .btn {
+    width: 70px;
+    height: 25px;
+    line-height: 25px;
+  }
+
+  /* line 295, ../sass/preOrder.scss */
+  .cloud1, .cloud2, .cloud3 {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  /* line 304, ../sass/preOrder.scss */
+  .container {
+    /* attention */
+    width: 100%;
+    left: 0%;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    border-radius: 0px;
+  }
+  /* line 313, ../sass/preOrder.scss */
+  .container .order {
+    width: 85%;
+    left: 4%;
+    border: 0px;
+  }
+  /* line 319, ../sass/preOrder.scss */
+  .container .goods {
+    width: 93%;
+  }
+  /* line 322, ../sass/preOrder.scss */
+  .container .goods .second {
+    left: 11%;
+  }
+  /* line 327, ../sass/preOrder.scss */
+  .container .second {
+    position: relative;
+  }
+  /* line 330, ../sass/preOrder.scss */
+  .container .second .titleSecond {
+    margin-left: 11%;
+  }
+  /* line 335, ../sass/preOrder.scss */
+  .container .titleImg {
+    padding-top: 30px;
+  }
+  /* line 339, ../sass/preOrder.scss */
+  .container .titleImg img {
+    display: none;
+  }
 }

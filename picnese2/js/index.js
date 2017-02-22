@@ -5,7 +5,7 @@ $(document).ready(function(){
 	n = $(window).height();
 	if( n > 480 ) {
 		$(".tree").css("transform", "scale(" + ( 1 - ( ( 652 - n ) / 840 ) ) + ")");
-		$(".tree").css("height", ( 100 + ( (652 - n) / 10.7) )+ "vh");
+		// $(".tree").css("height", ( 100 + ( (652 - n) / 10.7) )+ "vh");
 		$(".tree").css("bottom", ( (n - 652) / 20) + "vh");
 		$(".tree").css("position", "absolute");
 	}
@@ -19,7 +19,7 @@ $(document).ready(function(){
         // alert(n);
         if( n > 480 ) {
 	      	$(".tree").css("transform", "scale(" + ( 1 - ( ( 652 - n ) / 840 ) ) + ")");
-	      	$(".tree").css("height", ( 100 + ( (652 - n) / 10.7) )+ "vh");
+	      	// $(".tree").css("height", ( 100 + ( (652 - n) / 10.7) )+ "vh");
 	      	$(".tree").css("bottom", ( (n - 652) / 20) + "vh");
 	      	$(".tree").css("position", "absolute");
 	    }

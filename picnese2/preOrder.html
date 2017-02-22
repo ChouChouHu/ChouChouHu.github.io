@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
-<meta name="viewport" content="width=device-width, initial-scale=0.25, maximum-scale=2.0, user-scalable=1">
+<meta name="viewport" content="width=device-width, user-scalable=1">
 <link href="stylesheets/reset.css" media="screen, projection" rel="stylesheet" type="text/css" /> 
 <link href="stylesheets/animate.css" rel="stylesheet" type="text/css" />
 <link href="stylesheets/preOrder.css" rel="stylesheet" type="text/css" />  
@@ -32,8 +32,8 @@
 
 <div class="container">
 	<div class="titleImg">
-		商 品 預 購 頁 面
 		<img src="img/page/preOrder/titleBorder.png">
+		商 品 預 購 頁 面
 	</div>
 	<div class="goods">
 		<div class="subTitle">
@@ -52,7 +52,7 @@
 		</div>
 	</div>
 	<div class="goods second">
-		<div class="subTitle" style="margin-left: 3%">
+		<div class="subTitle titleSecond">
 			猜謎卡系列
 		</div>
 		<div class="imgBorder second">
@@ -68,123 +68,115 @@
 		</div>
 	</div>
 	<div class="order">
-		◎請選擇欲購買商品
-		<li>
-			<form>
+
+			<div class="introduction">
+				<div class="center">
+					運費說明
+				</div>
+				[宅配到府]<br>
+				購買猜謎卡運費為<div class="red">70元</div><br>
+				購買神秘種子桌遊運費為<div class="red">85元</div><br>
+				<br>
+				[711純取貨]<br>
+				加上包裝費用(10元)運費為<div class="red">70元</div><br>
+				<br>
+				◆購買滿1000元為<div class="red">免運費</div>
+			</div>
+
+		<form>
+			◎請選擇欲購買商品
+			<li>
+				桌遊 - 神秘種子　　　
 				<select name="數量">
 					<option value="N">數 量</option>
 					<option value="1">1</option>
 					<option value="2">2</option>
 				</select>
-			</form>
-			桌遊 - 神秘種子
-		</li>
-		<li>
-			<form>
+			</li>
+			<li>
+				猜謎卡 - 人的衍生字　
 				<select name="數量">
 					<option value="N">數 量</option>
 					<option value="1">1</option>
 					<option value="2">2</option>
 				</select>
-			</form>
-			猜謎卡 - 人的衍生字
-		</li>
-		<br>
-		◎請選擇寄送方式
-		<li>
-			<form style="left: 27%;">
+			</li>
+			<br>
+			◎請選擇寄送方式
+			<li>
+				寄送方式　　　
 				<select name="請選擇">
 					<option value="N">請 選 擇</option>
 					<option value="home">宅配到府</option>
 					<option value="711">711純取貨</option>
 				</select>
-			</form>
-			寄送方式
-			<br>
-			<div class="ps">
-				※選擇「宅配到府」郵件寄送約1-2個工作日，<br>
-				　選擇「711取貨」約2-3個工作日。
-			</div>
-		</li>
-		◎請填寫寄送資料
-		<li>
-			<input style="width: 100px;">
-			<div class="gender">
-				<form>
+				<br>
+				<div class="ps">
+					※選擇「宅配到府」郵件寄送約1-2個工作日，<br>
+					　選擇「711取貨」約2-3個工作日。
+				</div>
+			</li>
+			◎請填寫寄送資料
+			<li>
+				收件人姓名　
+				<input style="width: 100px;">
+				<div class="gender">
 					<input type="radio" name="gender" value="male" checked> 先生
 					<input type="radio" name="gender" value="female"> 女士
-				</form>
-			</div>
-			收件人姓名
-		</li>
-		<li>
-			<input style="width: 180px;">
-			電子郵件
-		</li>
-		<li>
-			<input>
-			聯絡電話
-		</li>
-		<li>
-			<input>
-			手　　機
-		</li>
-		<li>
-			<form style="left: 27%;">
+				</div>
+			</li>
+			<li>
+				電子郵件　　
+				<input style="width: 180px;">
+			</li>
+			<li>
+				聯絡電話　　
+				<input>
+			</li>
+			<li>
+				手　　機　　
+				<input>
+			</li>
+			<li>
+				寄送地址　　
 				<select name="請選擇">
 					<option value="N">請 選 擇</option>
 				</select>
-			</form>
-			<form style="left: 44%;">
 				<select name="請選擇">
 					<option value="N">請 選 擇</option>
 				</select>
-			</form>
-			寄送地址<br>
-			<input style="width: 210px;">
-		</li>
-		<br>
-		<li>
-			<input>
-			711取貨
+				<br>
+				<input style="width: 210px;">
+			</li>
+			<li>
+				711取貨　&nbsp&nbsp　
+				<input>
+				<br>
+				<div class="ps" style="margin-top: -3px;">
+					選擇「711取貨」者請留店名跟店號。<br>
+					店號查詢>> <a href="http://emap.pcsc.com.tw/emap.aspx" target="_blank">http://emap.pcsc.com.tw/emap.aspx</a>
+				</div>
+			</li>
+			<li>
+				備　　註　　
+				<textarea rows="3"></textarea>
+			</li>
 			<br>
-			<div class="ps" style="margin-top: -3px;">
-				選擇「711取貨」者請留店名跟店號。<br>
-				店號查詢>> <a href="http://emap.pcsc.com.tw/emap.aspx" target="_blank">http://emap.pcsc.com.tw/emap.aspx</a>
-			</div>
-		</li>
-		<li>
-			<textarea rows="3"></textarea>
-			備　　註
-		</li>
-		<br>
-		<li>
-			<div class="left red">976元</div>
-			金　　額
-		</li>
-		<li>
-			<div class="left" style="font-size: 11px; letter-spacing: 0px;">
-				<a class="btn" href="">信用卡</a>
-				※目前只提供信用卡付款。
-			</div>
-			付款方式
-			<br>
-			<img class="credit" src="img/page/preOrder/credit.png">
-		</li>
+			<li>
+				金　　額　　
+				<div class="left red">976元</div>
+			</li>
+			<li>
+				付款方式　　
+				<div class="left" style="font-size: 12px; letter-spacing: 0px;">
+					<a class="btn" href="">信用卡</a>
+					※目前只提供信用卡付款。
+				</div>
+				<br>
+				<img class="credit" src="img/page/preOrder/credit.png">
+			</li>
 
-		<div class="introduction">
-			<div class="center">
-				運費說明
-			</div>
-			[宅配到府]<br>
-			購買猜謎卡運費為<div class="red">70元</div><br>
-			購買神秘種子桌遊運費為<div class="red">85元</div><br>
-			<br>
-			[711純取貨]<br>
-			加上包裝費用(10元)運費為<div class="red">70元</div><br>
-			<br>
-			◆購買滿1000元為<div class="red">免運費</div>
-		</div>
+		</form>
 	</div>
 </div>
 
