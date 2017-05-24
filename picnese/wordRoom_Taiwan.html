@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<link href="stylesheets/reset.css" media="screen, projection" rel="stylesheet" type="text/css" /> 
+<link href="stylesheets/animate.css" rel="stylesheet" type="text/css" /> 
+<link href="stylesheets/select2/select2.css" media="screen, projection" rel="stylesheet" type="text/css" />  
+<link href="stylesheets/select2/select2.min.css" media="screen, projection" rel="stylesheet" type="text/css" /> 
+<link href="stylesheets/wordRoom.css" media="screen, projection" rel="stylesheet" type="text/css" />  
+<script src="js/jQuery.js"></script>
+<script src="js/select2/select2.full.js"></script>
+<script src="js/select2/select2.full.min.js"></script>
+<script src="js/select2/select2.js"></script>
+<script src="js/select2/select2.min.js"></script>
+<script type="text/javascript">
+
+	$(document).ready(function() {
+	  $(".js-example-basic-single").select2();
+	});
+
+
+</script>
+
+<head>
+    <title>Picnese demo</title>
+    <meta charset="UTF-8" http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="Shortcut Icon" type="image/x-icon" href="img/icon.png" />
+</head>
+
+<body>
+
+	<div class="fixedBar">
+		<a href="index.html"><img class="logo" src="img/logo.png"></a>
+		<div class="btnGrp">
+			<a class="btn" href="signIn.html">
+				加入會員
+			</a>
+			<a class="btn" href="logIn.html">
+				會員登入
+			</a>
+		</div>
+	</div>
+
+	<div class="chooseVersion">
+		請選擇版本<br>
+		<select class="js-example-basic-single">
+			<option value="KS">康軒</option>
+			<option value="HL">翰林</option>
+			<option value="NY">南一</option>
+		</select>
+		<br><br>
+		請選擇年級<br>
+		<select class="js-example-basic-single">
+			<option value="one">一年級</option>
+			<option value="two">二年級</option>
+			<option value="three">三年級</option>
+			<option value="four">四年級</option>
+			<option value="five">五年級</option>
+			<option value="six">六年級</option>
+		</select>
+		<br><br>
+		請選擇學年度<br>
+		<select class="js-example-basic-single">
+			<option value="">106</option>
+			<option value="">105</option>
+			<option value="">104</option>
+			<option value="">103</option>
+			<option value="">102</option>
+			<option value="">101</option>
+		</select>
+		<br><br><br>
+		<a href="wordRoom.html">返回</a>
+		<a href="wordRoom_reel.html">搜尋</a>
+	</div>
+
+
+</body>
+
+</html>

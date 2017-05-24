@@ -1,0 +1,368 @@
+@charset "UTF-8";
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ */
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,300italic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700);
+@font-face {
+  font-family: 'pictureWord';
+  src: url(../fonts/PICNESE-ONLY_ASCII.ttf);
+}
+/* line 15, ../sass/base/_font.scss */
+.pictureWord {
+  font-family: pictureWord;
+}
+
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ */
+/* line 6, ../sass/base/_bar.scss */
+.fixedBar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 99999;
+}
+/* line 14, ../sass/base/_bar.scss */
+.fixedBar .logo {
+  position: relative;
+  left: 2%;
+  top: 15px;
+  width: 130px;
+}
+/* line 21, ../sass/base/_bar.scss */
+.fixedBar .btnGrp {
+  position: absolute;
+  top: 0;
+  right: 2%;
+  height: 100%;
+  width: 420px;
+  font-size: 0;
+}
+/* line 30, ../sass/base/_bar.scss */
+.fixedBar .btnGrp .btn {
+  font-family: PingFangSC-semibold, sans-serif, "微软雅黑", "microsoft yahei";
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  width: 100px;
+  font-size: 14px;
+  line-height: 60px;
+  text-align: center;
+  color: #804f21;
+  text-decoration: none;
+  float: right;
+}
+
+/* line 10, ../sass/wordRoom.scss */
+body {
+  font-family: PingFangSC-Regular, sans-serif, "微软雅黑", "microsoft yahei";
+  background: #fffdef;
+}
+
+/* line 15, ../sass/wordRoom.scss */
+.pictureWord {
+  font-family: pictureWord;
+}
+
+/* line 19, ../sass/wordRoom.scss */
+.chooseCountry {
+  padding-top: 140px;
+  text-align: center;
+  font-size: 15px;
+  letter-spacing: 5px;
+  text-indent: 5px;
+  color: #898989;
+}
+/* line 27, ../sass/wordRoom.scss */
+.chooseCountry h1 {
+  font-size: 27px;
+  color: #595757;
+  margin-bottom: 14px;
+}
+/* line 33, ../sass/wordRoom.scss */
+.chooseCountry img {
+  display: inline-block;
+  width: 20%;
+  margin-top: 30px;
+}
+/* line 39, ../sass/wordRoom.scss */
+.chooseCountry .Taiwan {
+  margin-right: 40px;
+}
+/* line 43, ../sass/wordRoom.scss */
+.chooseCountry a {
+  text-decoration: none;
+}
+
+/* line 48, ../sass/wordRoom.scss */
+.chooseVersion {
+  text-align: center;
+  padding-top: 120px;
+  color: #595757;
+  font-size: 19px;
+  line-height: 37px;
+  letter-spacing: 4px;
+}
+/* line 56, ../sass/wordRoom.scss */
+.chooseVersion select {
+  width: 50%;
+}
+/* line 64, ../sass/wordRoom.scss */
+.chooseVersion span span span {
+  height: 40px !important;
+  line-height: 40px !important;
+  border: 0 !important;
+}
+/* line 73, ../sass/wordRoom.scss */
+.chooseVersion a {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 16px;
+  height: 32px;
+  line-height: 32px;
+  border-radius: 20px;
+  letter-spacing: 15px;
+  text-indent: 15px;
+  width: 8%;
+  background: #80CBE8;
+  color: white;
+  text-decoration: none;
+  margin-right: 14px;
+  margin-left: 14px;
+}
+
+/* line 93, ../sass/wordRoom.scss */
+span span {
+  border: 0 !important;
+}
+/* line 97, ../sass/wordRoom.scss */
+span span span input {
+  font-size: 20px !important;
+}
+
+/* line 106, ../sass/wordRoom.scss */
+.wordReel {
+  padding-top: 60px;
+  font-size: 18px;
+  letter-spacing: 3px;
+  color: #595757;
+}
+/* line 112, ../sass/wordRoom.scss */
+.wordReel .top {
+  margin-left: 40px;
+}
+/* line 115, ../sass/wordRoom.scss */
+.wordReel .top a {
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+  height: 28px;
+  line-height: 28px;
+  border-radius: 20px;
+  letter-spacing: 15px;
+  text-indent: 15px;
+  width: 100px;
+  background: #80CBE8;
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+}
+/* line 133, ../sass/wordRoom.scss */
+.wordReel .reel {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 390px;
+  margin-left: 18%;
+  margin-top: 20px;
+}
+/* line 142, ../sass/wordRoom.scss */
+.wordReel .reel img {
+  position: absolute;
+  width: 100%;
+}
+/* line 147, ../sass/wordRoom.scss */
+.wordReel .reel .topic {
+  position: relative;
+  width: 100%;
+  color: white;
+  text-align: center;
+  line-height: 34px;
+}
+/* line 155, ../sass/wordRoom.scss */
+.wordReel .reel .content {
+  position: relative;
+  margin-top: 10px;
+  margin-left: 49px;
+  width: 256px;
+  top: 5px;
+  padding: 13px;
+  padding-top: 8px;
+  height: 350px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  overflow-y: scroll;
+}
+/* line 170, ../sass/wordRoom.scss */
+.wordReel .reel .content a {
+  display: inline-block;
+  line-height: 20px;
+  margin-bottom: 7px;
+  color: #595757;
+  text-decoration: none;
+}
+/* line 177, ../sass/wordRoom.scss */
+.wordReel .reel .content a:hover {
+  text-decoration: underline;
+}
+/* line 184, ../sass/wordRoom.scss */
+.wordReel .reel .content::-webkit-scrollbar {
+  width: 1.2em;
+}
+/* line 188, ../sass/wordRoom.scss */
+.wordReel .reel .content::-webkit-scrollbar-thumb {
+  background-color: #BEE2EA;
+  border: 3px solid white;
+  border-radius: 10px;
+}
+/* line 197, ../sass/wordRoom.scss */
+.wordReel .reel + .reel {
+  position: absolute;
+  right: 18%;
+}
+
+/* line 205, ../sass/wordRoom.scss */
+.paperDivision {
+  position: relative;
+  width: 70%;
+  left: 17%;
+  margin-top: 70px;
+  padding-bottom: 100px;
+}
+/* line 209, ../sass/wordRoom.scss */
+.paperDivision .paper {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+/* line 224, ../sass/wordRoom.scss */
+.paperDivision .topic {
+  position: relative;
+  font-family: PingFangSC-regular, sans-serif, "微软雅黑", "microsoft yahei";
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  color: #3E3A39;
+  text-indent: -30px;
+  letter-spacing: 3px;
+  padding-top: 40px;
+}
+/* line 236, ../sass/wordRoom.scss */
+.paperDivision .text {
+  position: relative;
+  width: 90%;
+  padding-left: 6%;
+  padding-top: 35px;
+  font-family: PingFangSC-light, sans-serif, "微软雅黑", "microsoft yahei";
+  font-size: 16px;
+  color: #3E3A39;
+  letter-spacing: 1px;
+}
+/* line 246, ../sass/wordRoom.scss */
+.paperDivision .text .word {
+  width: 80%;
+  height: 75px;
+  border: 0;
+  border-radius: 25px;
+  margin: 10px 10px 20px -10px;
+  font-size: 21px;
+  letter-spacing: 2px;
+  line-height: 30px;
+  padding-top: 15px;
+  padding-left: 3%;
+  background: white;
+}
+/* line 261, ../sass/wordRoom.scss */
+.paperDivision .text .storyWindow {
+  position: relative;
+  width: 80%;
+  height: 17vw;
+  margin-top: 0px;
+  overflow-y: scroll;
+}
+/* line 270, ../sass/wordRoom.scss */
+.paperDivision .text .storyWindow::-webkit-scrollbar {
+  background-color: white;
+  width: 1.2em;
+}
+/* line 275, ../sass/wordRoom.scss */
+.paperDivision .text .storyWindow::-webkit-scrollbar-thumb {
+  background-color: #a7ebca;
+  border: 3px solid white;
+  border-radius: 10px;
+}
+/* line 281, ../sass/wordRoom.scss */
+.paperDivision .text .storyWindow .each {
+  width: 13%;
+  margin: 1%;
+  text-align: center;
+  display: inline-block;
+}
+/* line 287, ../sass/wordRoom.scss */
+.paperDivision .text .storyWindow .each img {
+  width: 100%;
+}
+/* line 294, ../sass/wordRoom.scss */
+.paperDivision .bottomBtn {
+  position: relative;
+  width: 85%;
+  margin-top: 120px;
+  text-align: center;
+}
+/* line 300, ../sass/wordRoom.scss */
+.paperDivision .bottomBtn .btn {
+  display: inline-block;
+  width: 15%;
+  height: 30px;
+  line-height: 30px;
+  color: white;
+  margin: 0 3%;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+/* line 315, ../sass/wordRoom.scss */
+.paperDivision .bottomBtn .red {
+  background: #f27471;
+}
+/* line 319, ../sass/wordRoom.scss */
+.paperDivision .bottomBtn .blue {
+  background: #6ab0d9;
+}
+
+@media screen and (max-width: 1280px) {
+  /* line 328, ../sass/wordRoom.scss */
+  .reel + .reel {
+    position: relative !important;
+    margin-left: 2% !important;
+    right: 0 !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  /* line 338, ../sass/wordRoom.scss */
+  body {
+    width: 1024px;
+  }
+
+  /* line 342, ../sass/wordRoom.scss */
+  .storyWindow {
+    height: 174.08px !important;
+  }
+}
