@@ -347,8 +347,22 @@ span span span input {
   background: #6ab0d9;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (min-width: 1280px) {
   /* line 328, ../sass/wordRoom.scss */
+  .wordReel .reel {
+    width: 30vw;
+  }
+  /* line 331, ../sass/wordRoom.scss */
+  .wordReel .reel .content {
+    margin-top: 2vw;
+    margin-left: 5vw;
+    width: 20vw;
+    height: 28vw;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 1280px) {
+  /* line 345, ../sass/wordRoom.scss */
   .reel + .reel {
     position: relative !important;
     margin-left: 2% !important;
@@ -356,12 +370,12 @@ span span span input {
   }
 }
 @media screen and (max-width: 1024px) {
-  /* line 338, ../sass/wordRoom.scss */
+  /* line 355, ../sass/wordRoom.scss */
   body {
     width: 1024px;
   }
 
-  /* line 342, ../sass/wordRoom.scss */
+  /* line 359, ../sass/wordRoom.scss */
   .storyWindow {
     height: 174.08px !important;
   }
