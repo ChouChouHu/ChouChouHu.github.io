@@ -1,0 +1,83 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ */
+
+
+/* move to _bar */
+
+footer {
+	position: relative;
+	width: 100%;
+	// height: 300px;
+	padding-bottom: 20px;
+	background: #91ceb3;
+	opacity: 0.9;
+	color: white;
+
+	.logo {
+		position: relative;
+		-webkit-filter: brightness(100);
+		margin-top: 20px;
+		margin-left: 60px;
+	}
+
+	.linkArea {
+		position: relative;
+		margin-top: 40px;
+		width: 88%;
+		left: 12%;
+		font-size: 14px;
+		line-height: 26px;
+
+		.grp {
+			display: inline-block;
+			vertical-align: top;
+			padding-right: 3%;
+			height: 132px;
+			padding-left: 10px;
+			border-left: white 1px solid;
+			margin-bottom: 50px;
+
+			b {
+				font-family: PingFangSC-semibold, sans-serif, "微软雅黑", "microsoft yahei";
+			}
+
+			a {
+				font-family: PingFangSC-light, sans-serif, "微软雅黑", "microsoft yahei";
+				color: white;
+				text-decoration: none;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+
+			img {
+				width: 15px;
+			}
+		}
+
+		.final {
+			padding-right: 0;
+		}
+	}
+
+	.context {
+		color: #595757;
+		font-size: 11px;
+		position: absolute;
+		bottom: 8px;
+		right: 8px;
+	}
+}
+
+@media screen and (max-width: 1024px){
+	footer {
+		.linkArea {
+			.grp {
+				padding-right: 8%;
+			}
+		}
+	}
+}
+

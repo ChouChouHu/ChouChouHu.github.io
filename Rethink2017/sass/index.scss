@@ -1,0 +1,169 @@
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+
+body {
+	font-family: PingFangTC-regular, Heiti TC, Meiryo, "微軟正黑體", Microsoft JhengHei, "標楷體", DFKai-sb !important;
+}
+
+.bar {
+	position: fixed;
+	height: 70px;
+	width: 100%;
+	z-index: 1;
+
+	// background: red;
+	border-bottom: 2px black solid;
+
+	.burger {
+		height: 40px;
+		margin-top: 15px;
+		margin-left: 40px;
+		cursor: pointer;
+	}
+
+	.proposal {
+		position: absolute;
+		right: 50px;
+		line-height: 70px;
+		font-size: 16px;
+		letter-spacing: 1px;
+	}
+}
+
+.QandA {
+	position: relative;
+	padding-top: 120px;
+
+	.Q {
+		position: relative;
+		// border: 2px black solid;
+		font-size: 19px;
+		width: 86%;
+		left: 7%;
+		margin-bottom: 20px;
+		cursor: pointer;
+
+		.topic {
+			border: 2px black solid;
+			width: 97%;
+			padding: 15px 0;
+			padding-left: 3%;
+		}
+
+		.arrow {
+			position: absolute;
+			right: 30px;
+		}
+
+		.A {
+			width: 94%;
+			margin-top: 15px;
+			padding: 15px 3%;
+			border: 2px black solid;
+			height: 0;
+			font-size: 17px;
+			line-height: 22px;
+			overflow: hidden;
+			animation-name: QandA;
+			animation-duration: 1s;
+			animation-fill-mode: forwards;
+			display: none;
+
+		}
+	}
+}
+
+.menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 200vw;
+	font-size: 0;
+	z-index: 2;
+	transform: translate(0, -50vw);
+	background: white;
+	display: none;
+
+	.circle {
+		position: absolute;
+		border: 2px black solid;
+		border-radius: 50%;
+		font-size: 16px;
+		// text-indent: 30px;
+		transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0.995);
+		width: 100vw;
+		height: 100vw;
+		margin-top: 50vh;
+		margin-left: -1px;
+
+		.text {
+			position: absolute;
+			// margin-top: 400px;
+		}
+
+			div {
+				position: relative;
+				width: 80%;
+				height: 80%;
+				left: 10%;
+				top: 10%;
+				margin-left: -1px;
+				border-radius: 50%;
+				border: 2px black solid;
+
+				div {
+					width: 76%;
+					height: 76%;
+					left: 12%;
+					top: 12%;
+					div {
+						width: 71%;
+						height: 71%;
+						left: 14.5%;
+						top: 14.5%;
+						div {
+							width: 65%;
+							height: 65%;
+							left: 17.5%;
+							top: 17.5%;
+							div {
+								width: 58%;
+								height: 58%;
+								left: 21%;
+								top: 21%;
+								div {
+									width: 44%;
+									height: 44%;
+									left: 28%;
+									top: 28%;
+
+									line-height: 7.2vw;
+									text-align: center;
+									cursor: pointer;
+									font-size: 22px;
+								}
+							}
+						}
+					}
+				}
+			}
+	}
+}
+
+@keyframes QandA {
+	from {
+		padding: 0 3%;
+	 	height: 0;
+	}
+
+	to {
+		padding: 15px 3%;
+	 	height: 120px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+
+}
