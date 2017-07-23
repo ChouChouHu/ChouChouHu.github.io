@@ -2,7 +2,7 @@
 
 $(document).ready(function(){
 
-	$(".burger").click(function(){
+	$(".burger, .walk").click(function(){
 		$(".menu").fadeIn()
 	});
 
@@ -15,5 +15,18 @@ $(document).ready(function(){
 		$(this).children(".A").css("display", "block");
 		// children for one layer; find for all child
 	})
+
+
+	setInterval(function(){
+	if ($(window).scrollTop() % 100 > 50) {
+		$(".one").css("display", "none");
+		$(".two").css("display", "block");
+	}
+	else {
+		$(".one").css("display", "block");
+		$(".two").css("display", "none");
+	}
+
+	}, 10);
 
 });
