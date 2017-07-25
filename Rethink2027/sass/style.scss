@@ -4,6 +4,8 @@
 
 body {
 	font-family: PingFangTC-regular, Heiti TC, Meiryo, "微軟正黑體", Microsoft JhengHei, "標楷體", DFKai-sb !important;
+	background: #000066;
+	color: white;
 }
 
 .bar {
@@ -12,22 +14,28 @@ body {
 	width: 100%;
 	z-index: 1;
 
-	background: white;
-	border-bottom: 2px black solid;
+	// background: #000066;
+	// border-bottom: 2px black solid;
 
 	.burger {
-		height: 40px;
-		margin-top: 15px;
-		margin-left: 40px;
+		display: inline-block;
+		height: 34px;
+		margin-top: 22px;
+		margin-left: 28px;
 		cursor: pointer;
+		vertical-align: top;
+
+		img {
+			height: 100%;
+		}
 	}
 
 	.logo {
 		position: relative;
 		display: inline-block;
-		height: 40px;
-		margin-top: 15px;
-		margin-left: 20px;
+		height: 64px;
+		margin-top: 14px;
+		margin-left: 25px;
 		cursor: pointer;
 
 		img {
@@ -150,9 +158,12 @@ body {
 .walk {
 	position: fixed;
 	width: 4vw;
-	left: 48vw;
-	top: 200px;
+	left: 23vw;
+	bottom: 12vw;
+	// left: 81vw;
+	// bottom: 11vw;
 	cursor: pointer;
+	display: none;
 
 	img {
 		width: 100%;
@@ -208,7 +219,7 @@ body {
 		.content {
 			position: relative;
 			display: inline-block;
-			border-right: 1px black solid;
+			border-right: 1px white solid;
 			width: 65%;
 			padding-bottom: 50px;
 
@@ -344,7 +355,6 @@ body {
 
 	.Q {
 		position: relative;
-		// border: 2px black solid;
 		font-size: 19px;
 		width: 86%;
 		left: 7%;
@@ -352,7 +362,7 @@ body {
 		cursor: pointer;
 
 		.topic {
-			border: 2px black solid;
+			border: 2px white solid;
 			width: 97%;
 			padding: 15px 0;
 			padding-left: 3%;
@@ -367,7 +377,7 @@ body {
 			width: 94%;
 			margin-top: 15px;
 			padding: 15px 3%;
-			border: 2px black solid;
+			border: 2px white solid;
 			height: 0;
 			font-size: 17px;
 			line-height: 22px;
