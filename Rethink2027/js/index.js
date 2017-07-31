@@ -3,7 +3,7 @@
 $(document).ready(function(){
 
 	var height = 8454; // total height (px)
-	var scroll_ms = 0; // scroll pass (ms)
+	var scroll_ms = 3500; // scroll pass (ms)
 
 	// auto scroll in scroll_ms (var)
     var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
@@ -51,7 +51,7 @@ $(document).ready(function(){
 		// }
 
 		// walk path
-		if (scrollBtm > 1322) {
+		if (scrollBtm > 1322 * adjust) {
 			$(".walk").css("left", 1060 * adjust + ( scrollBtm - 1332 * adjust ) * ( 220 / 200 ) + "px");
 			$(".walk").css("top", 6660 * adjust + "px"); 
 		}
