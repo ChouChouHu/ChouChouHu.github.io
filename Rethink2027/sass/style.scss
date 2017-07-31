@@ -6,6 +6,7 @@ body {
 	font-family: PingFangTC-regular, Heiti TC, Meiryo, "微軟正黑體", Microsoft JhengHei, "標楷體", DFKai-sb !important;
 	background: #000066;
 	color: white;
+
 }
 
 .bar {
@@ -62,6 +63,7 @@ body {
 	z-index: 2;
 	transform: translate(0, -50vw);
 	background: white;
+	color: black;
 	display: none;
 
 	.circle {
@@ -155,13 +157,23 @@ body {
 	}
 }
 
+.background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
 .walk {
-	position: fixed;
+	// position: fixed;
+	position: absolute;
 	width: 4vw;
-	left: 23vw;
-	bottom: 12vw;
-	// left: 81vw;
-	// bottom: 11vw;
+
+	// left: 290px;
+	// top: 8220px;
+
+	left: 1060px;
+	top: 8454px;
 	cursor: pointer;
 	display: none;
 
