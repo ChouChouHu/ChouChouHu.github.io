@@ -1,5 +1,33 @@
 
 
+function rightWalk() {
+	// walk action
+	$(".three").css("display", "none");
+	$(".four").css("display", "none");
+	if ($(window).scrollTop() % 120 > 60) {
+		$(".one").css("display", "none");
+		$(".two").css("display", "block");
+	}
+	else {
+		$(".one").css("display", "block");
+		$(".two").css("display", "none");
+	}
+}
+
+function leftWalk() {
+	// walk action
+	$(".one").css("display", "none");
+	$(".two").css("display", "none");
+	if ($(window).scrollTop() % 120 > 60) {
+		$(".three").css("display", "none");
+		$(".four").css("display", "block");
+	}
+	else {
+		$(".three").css("display", "block");
+		$(".four").css("display", "none");
+	}
+}
+
 $(document).ready(function(){
 
 	var height = 8454; // total height (px)
@@ -13,51 +41,43 @@ $(document).ready(function(){
 
     setTimeout(function(){
     	$(".walk").fadeIn();
+    	// change to walk in screen
     }, scroll_ms);
 
 
-	// window height = 652
-	// 7802 23 13
-	// 6470 81 31
-	// 6236 100 11
-
-	// 把 vh vw 系統改掉！！！！！！！！
-
 	$(window).scroll(function () {
 		var adjust = ($(window).width() / 1280);
-		// var scroll = $(window).scrollTop() + ( $(window).height() * adjust );
 		var scrollBtm = $(document).height() - $(window).height() - $(window).scrollTop()
 
-		// walk action
-		if ($(window).scrollTop() % 120 > 60) {
-			$(".one").css("display", "none");
-			$(".two").css("display", "block");
+		// walk path
+		// num == scroll interval static
+		// num_top, num_left == position
+		var one = 1360;
+		var one_top = 8200;
+		var one_left = 230;
+		var two = 475;
+		var two_top = 6530;
+		var two_left = 1040;
+		var three = 1360;
+		var three_top = 6450;
+		var three_left = 320;
+		// var 
+
+
+		if (scrollBtm > ( one + two ) * adjust) {
+			$(".walk").css("top", three_top * adjust - ( scrollBtm - ( one + two ) * adjust ) * ( 1680 / three ) + "px"); 
+			$(".walk").css("left", three_left * adjust + ( scrollBtm - ( one + two ) * adjust ) * ( 820 / three ) + "px");
+			rightWalk();
+		}
+		else if (scrollBtm > one * adjust) {
+			$(".walk").css("top", two_top * adjust - ( scrollBtm - one * adjust ) * ( (two_top - three_top) / two ) + "px"); 
+			$(".walk").css("left", two_left * adjust - ( scrollBtm - one * adjust ) * ( (two_left - three_left) / two ) + "px");
+			leftWalk();
 		}
 		else {
-			$(".one").css("display", "block");
-			$(".two").css("display", "none");
-		}
-
-		// // walk path
-		// if ($(window).scrollTop() > 6470 * adjust) {
-		// 	// 6470 (second stop)
-		// 	$(".walk").css("left", ( ( 8454 * adjust - scroll ) / 22.3 ) + 23 + "vw");
-		// 	$(".walk").css("bottom", ( ( 8454 * adjust - scroll ) / 74 ) + 12 + "vw");
-		// 	// 8454 = 7802(first stop) + 652 = real height
-		// }
-		// else if ($(window).scrollTop() > 6236 * adjust) {
-		// 	$(".walk").css("left", ( ( 7122 * adjust - scroll ) / 12.3 ) + 82.730941704 + "vw");
-		// 	$(".walk").css("bottom", 30 - ( ( 7122 * adjust - scroll ) / 12.5 ) + "vw");
-		// }
-
-		// walk path
-		if (scrollBtm > 1322 * adjust) {
-			$(".walk").css("left", 1060 * adjust + ( scrollBtm - 1332 * adjust ) * ( 220 / 200 ) + "px");
-			$(".walk").css("top", 6660 * adjust + "px"); 
-		}
-		else if (scrollBtm > 0){
-			$(".walk").css("left", 290 * adjust + scrollBtm * ( 770 / 1332 ) + "px");
-			$(".walk").css("top", 8220 * adjust - scrollBtm * ( 1560 / 1332 ) + "px");
+			$(".walk").css("top", one_top * adjust - scrollBtm * ( (one_top - two_top) / one ) + "px");
+			$(".walk").css("left", one_left * adjust - scrollBtm * ( (one_left - two_left) / one ) + "px");
+			rightWalk();
 		}
 	});
 
@@ -65,15 +85,9 @@ $(document).ready(function(){
 
 
 	$(".background").click(function(){
-		alert($(document).height() - $(window).height() - $(window).scrollTop());
+		// alert($(document).height() - $(window).height() - $(window).scrollTop());
 		// alert((( 7802 - $(window).scrollTop() ) / 23 ) + 23 + "vw");
 		// alert($(window).width());
 	});
-
-
-
-
-
-
 
 });

@@ -3,10 +3,13 @@
  * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
 
 body {
+	position: relative;
 	font-family: PingFangTC-regular, Heiti TC, Meiryo, "微軟正黑體", Microsoft JhengHei, "標楷體", DFKai-sb !important;
 	background: #000066;
 	color: white;
-
+	width: 100vw;
+	height: 6.7vw;
+	overflow-x: hidden;
 }
 
 .bar {
@@ -157,6 +160,13 @@ body {
 	}
 }
 
+.LandingPage {
+	position: relative;
+	width: 100vw;
+	height: 660.5vw;
+	overflow: hidden;
+}
+
 .background {
 	position: absolute;
 	top: 0;
@@ -172,20 +182,29 @@ body {
 	// left: 290px;
 	// top: 8220px;
 
-	left: 1060px;
-	top: 8454px;
+	left: 230px;
+	top: 8200px;
 	cursor: pointer;
 	display: none;
 
 	img {
+		position: absolute;
 		width: 100%;
+		top: 0;
 	}
 
-	.one {
+	.one, .two, .three, .four {
 		display: none;
 	}
 }
 
+.house {
+	position: absolute;
+	width: 65vw;
+	left: 51vw;
+	top: 390vw;
+	z-index: 2;
+}
 
 
 
@@ -254,102 +273,102 @@ body {
 	}
 }
 
-.four {
-	position: relative;
-	font-size: 16px;
-	line-height: 22px;
-	color: rgba(0, 0, 0, 0.3);
-	height: 53vw;
-	margin-bottom: 150px;
+// .four {
+// 	position: relative;
+// 	font-size: 16px;
+// 	line-height: 22px;
+// 	color: rgba(0, 0, 0, 0.3);
+// 	height: 53vw;
+// 	margin-bottom: 150px;
 
-	img {
-		position: absolute;
-		width: 100vw;
-		// height: 100vh;
-		left: 0;
-	}
+// 	img {
+// 		position: absolute;
+// 		width: 100vw;
+// 		// height: 100vh;
+// 		left: 0;
+// 	}
 
-	.topic {
-		position: absolute;
-		width: 10vw;
-		left: 44.5vw;
-		top: 23.2vw;
-		font-size: 2.4vw;
-		line-height: 2.4vw;
-		color: white;
-		// background: white;
+// 	.topic {
+// 		position: absolute;
+// 		width: 10vw;
+// 		left: 44.5vw;
+// 		top: 23.2vw;
+// 		font-size: 2.4vw;
+// 		line-height: 2.4vw;
+// 		color: white;
+// 		// background: white;
 
-		&:hover {
-			color: white;
-		}
-	}
+// 		&:hover {
+// 			color: white;
+// 		}
+// 	}
 
-	div {
-		&::-webkit-scrollbar {
-			background-color: white;
-		    width: 1.1em;
-		}
+// 	div {
+// 		&::-webkit-scrollbar {
+// 			background-color: white;
+// 		    width: 1.1em;
+// 		}
 		 
-		&::-webkit-scrollbar-track {
-		    // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-		}
+// 		&::-webkit-scrollbar-track {
+// 		    // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+// 		}
 		 
-		&::-webkit-scrollbar-thumb {
-		  background-color: silver;
-		  border: 4px solid white;
-		  border-radius: 10px;
-		}
+// 		&::-webkit-scrollbar-thumb {
+// 		  background-color: silver;
+// 		  border: 4px solid white;
+// 		  border-radius: 10px;
+// 		}
 
-		&::-webkit-scrollbar-button {
-			// ;
-		}
+// 		&::-webkit-scrollbar-button {
+// 			// ;
+// 		}
 
-		&:hover {
-			color: black;
-		}
-	}
+// 		&:hover {
+// 			color: black;
+// 		}
+// 	}
 
-	.action {
-		position: absolute;
-		width: 24vw;
-		height: 17.4vw;
-		top: 16vw;
-		left: 4vw;
-		line-height: 20px;
-		overflow-y: scroll;
-	}
+// 	.action {
+// 		position: absolute;
+// 		width: 24vw;
+// 		height: 17.4vw;
+// 		top: 16vw;
+// 		left: 4vw;
+// 		line-height: 20px;
+// 		overflow-y: scroll;
+// 	}
 
-	.reflect {
-		position: absolute;
-		width: 50vw;
-		height: 9vw;
-		top: 2vw;
-		left: 25vw;
-		// overflow: scroll;
+// 	.reflect {
+// 		position: absolute;
+// 		width: 50vw;
+// 		height: 9vw;
+// 		top: 2vw;
+// 		left: 25vw;
+// 		// overflow: scroll;
 
-		font-size: 1.3vw;
-		line-height: 1.6vw;
-	}
+// 		font-size: 1.3vw;
+// 		line-height: 1.6vw;
+// 	}
 
-	.POV {
-		position: absolute;
-		width: 24vw;
-		height: 17.3vw;
-		top: 16vw;
-		right: 4vw;
-		line-height: 20px;
-		overflow-y: scroll;
-	}
+// 	.POV {
+// 		position: absolute;
+// 		width: 24vw;
+// 		height: 17.3vw;
+// 		top: 16vw;
+// 		right: 4vw;
+// 		line-height: 20px;
+// 		overflow-y: scroll;
+// 	}
 
-	.NAP {
-		position: absolute;
-		width: 48vw;
-		height: 8.8vw;
-		top: 40vw;
-		left: 25vw;
-		// overflow-y: scroll;
-	}
-}
+// 	.NAP {
+// 		position: absolute;
+// 		width: 48vw;
+// 		height: 8.8vw;
+// 		top: 40vw;
+// 		left: 25vw;
+// 		// overflow-y: scroll;
+// 	}
+// }
 
 
 .book {
