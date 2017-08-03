@@ -203,7 +203,25 @@ body {
   z-index: 2;
 }
 
-/* line 215, ../sass/style.scss */
+/* line 209, ../sass/style.scss */
+.people {
+  position: absolute;
+  width: 50vw;
+  left: 28vw;
+  top: 248vw;
+  z-index: 2;
+}
+
+/* line 217, ../sass/style.scss */
+.redPerson {
+  position: absolute;
+  width: 5vw;
+  left: 37vw;
+  top: 140vw;
+  z-index: 2;
+}
+
+/* line 231, ../sass/style.scss */
 .spirit {
   position: relative;
   padding: 0 5%;
@@ -212,14 +230,14 @@ body {
   width: 90%;
   text-align: center;
 }
-/* line 223, ../sass/style.scss */
+/* line 239, ../sass/style.scss */
 .spirit .topic {
   position: relative;
   width: 100%;
   font-size: 28px;
   margin-bottom: 70px;
 }
-/* line 230, ../sass/style.scss */
+/* line 246, ../sass/style.scss */
 .spirit .each {
   display: inline-block;
   margin: 0 60px;
@@ -228,18 +246,18 @@ body {
   vertical-align: top;
   margin-bottom: 70px;
 }
-/* line 238, ../sass/style.scss */
+/* line 254, ../sass/style.scss */
 .spirit .each img {
   margin-bottom: 50px;
 }
 
-/* line 244, ../sass/style.scss */
+/* line 260, ../sass/style.scss */
 .step {
   position: relative;
   padding: 0 12%;
   margin-bottom: 150px;
 }
-/* line 250, ../sass/style.scss */
+/* line 266, ../sass/style.scss */
 .step .each .content {
   position: relative;
   display: inline-block;
@@ -247,7 +265,7 @@ body {
   width: 65%;
   padding-bottom: 50px;
 }
-/* line 257, ../sass/style.scss */
+/* line 273, ../sass/style.scss */
 .step .each .content .text {
   position: absolute;
   display: inline-block;
@@ -256,7 +274,7 @@ body {
   right: 12%;
   font-size: 15px;
 }
-/* line 266, ../sass/style.scss */
+/* line 282, ../sass/style.scss */
 .step .each .time {
   display: inline-block;
   vertical-align: top;
@@ -265,12 +283,12 @@ body {
   line-height: 22px;
 }
 
-/* line 383, ../sass/style.scss */
+/* line 399, ../sass/style.scss */
 .QandA {
   position: relative;
   padding-top: 120px;
 }
-/* line 387, ../sass/style.scss */
+/* line 403, ../sass/style.scss */
 .QandA .Q {
   position: relative;
   font-size: 19px;
@@ -279,19 +297,19 @@ body {
   margin-bottom: 20px;
   cursor: pointer;
 }
-/* line 395, ../sass/style.scss */
+/* line 411, ../sass/style.scss */
 .QandA .Q .topic {
   border: 2px white solid;
   width: 97%;
   padding: 15px 0;
   padding-left: 3%;
 }
-/* line 402, ../sass/style.scss */
+/* line 418, ../sass/style.scss */
 .QandA .Q .arrow {
   position: absolute;
   right: 30px;
 }
-/* line 407, ../sass/style.scss */
+/* line 423, ../sass/style.scss */
 .QandA .Q .A {
   width: 94%;
   margin-top: 15px;
@@ -318,7 +336,7 @@ body {
     height: 120px;
   }
 }
-/* line 454, ../sass/style.scss */
+/* line 470, ../sass/style.scss */
 .actionPartner {
   position: relative;
   width: 90%;
@@ -327,7 +345,7 @@ body {
   padding-bottom: 120px;
   text-align: center;
 }
-/* line 462, ../sass/style.scss */
+/* line 478, ../sass/style.scss */
 .actionPartner .individual {
   position: relative;
   display: inline-block;
@@ -342,7 +360,7 @@ body {
   line-height: 190px;
   border: 2px black solid;
 }
-/* line 479, ../sass/style.scss */
+/* line 495, ../sass/style.scss */
 .actionPartner .individual .name {
   position: relative;
   font-size: 16px;
@@ -352,11 +370,11 @@ body {
   background: white;
   border-bottom: 2px black solid;
 }
-/* line 490, ../sass/style.scss */
+/* line 506, ../sass/style.scss */
 .actionPartner .individual img {
   max-width: 100%;
 }
-/* line 495, ../sass/style.scss */
+/* line 511, ../sass/style.scss */
 .actionPartner .individual .readMore {
   position: absolute;
   right: -52px;
