@@ -957,7 +957,7 @@ body {
 .proposalPage .quote {
   position: relative;
   margin-top: 70px;
-  width: 45%;
+  width: 40%;
   left: 7%;
   text-align: center;
 }
@@ -972,4 +972,36 @@ body {
 .proposalPage .quote img + img {
   top: 0;
   left: 95%;
+}
+
+@media screen and (max-width: 1024px) {
+  /* line 1010, ../sass/style.scss */
+  .proposalPage .map {
+    width: 110%;
+    margin-left: -45px;
+  }
+  /* line 1014, ../sass/style.scss */
+  .proposalPage .map .mapImg {
+    display: none;
+  }
+  /* line 1017, ../sass/style.scss */
+  .proposalPage .map .dialogImg {
+    position: relative;
+    width: 100%;
+    left: 0;
+  }
+  /* line 1022, ../sass/style.scss */
+  .proposalPage .map .dialog {
+    position: absolute;
+    width: 65%;
+    left: 24%;
+  }
+  /* line 1028, ../sass/style.scss */
+  .proposalPage .picture {
+    display: none;
+  }
+  /* line 1031, ../sass/style.scss */
+  .proposalPage .quote {
+    width: 86%;
+  }
 }

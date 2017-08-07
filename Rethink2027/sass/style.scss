@@ -987,7 +987,7 @@ body {
 	.quote {
 		position: relative;
 		margin-top: 70px;
-		width: 45%;
+		width: 40%;
 		left: 7%;
 		text-align: center;
 		// background: red;
@@ -1001,6 +1001,35 @@ body {
 		img+img {
 			top: 0;
 			left: 95%;
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.proposalPage {
+		.map {
+			width: 110%;
+			margin-left: -45px;
+
+			.mapImg {
+				display: none;
+			}
+			.dialogImg {
+				position: relative;
+				width: 100%;
+				left: 0;
+			}
+			.dialog {
+				position: absolute;
+				width: 65%;
+				left: 24%;
+			}
+		}
+		.picture {
+			display: none;
+		}
+		.quote {
+			width: 86%;
 		}
 	}
 }
