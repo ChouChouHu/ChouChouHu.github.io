@@ -17,12 +17,14 @@
 
 <body>
 
-<div class="bar">
-	<img class="burger" src="img/hamburger.png">
+<div class="bar" id="topbar">
+	<div class="burger">
+		<img src="img/hamburger.png">
+	</div>
 	<a class="logo" href="index.html">
 		<img src="img/logo.png">
 	</a>
-	<span class="proposal">我要提案</span>
+	<a class="proposal" href="logIn.html">我要提案</a>
 </div>
 
 <div class="menu">
@@ -31,8 +33,9 @@
 		<div>
 			<a class="text" href="activities.html">活動辦法</a>
 			<div>
-				<a class="text" href="actionPartner.html">行動大使</a>
+				<a class="text" href="partner.html">行動大使</a>
 				<div>
+					<a class="text" href="proposal_wall.html">行動提案牆</a>
 					<div>
 						<div>
 							<div class="final">
@@ -45,13 +48,14 @@
 		</div>
 	</div>
 </div>
+
 <div class="actionPartner">
 	<div class="individual">
 		<div class="name">
 			名字<br>
 			title
 		</div>
-		<img src="img/AP/ex1.png">
+		<img src="img/partner/ex1.png">
 		<a class="readMore" href="">Read More</a>
 	</div>
 	<div class="individual">
@@ -59,7 +63,7 @@
 			名字<br>
 			title
 		</div>
-		<img src="img/AP/ex2.png">
+		<img src="img/partner/ex2.png">
 		<a class="readMore" href="">Read More</a>
 	</div>
 	<div class="individual">
@@ -67,7 +71,7 @@
 			名字<br>
 			title
 		</div>
-		<img src="img/AP/ex3.jpg">
+		<img src="img/partner/ex3.jpg">
 		<a class="readMore" href="">Read More</a>
 	</div>
 	<div class="individual">
@@ -75,7 +79,7 @@
 			名字<br>
 			title
 		</div>
-		<img src="img/AP/ex4.jpg">
+		<img src="img/partner/ex4.jpg">
 		<a class="readMore" href="">Read More</a>
 	</div>
 	<div class="individual">
@@ -83,7 +87,7 @@
 			名字<br>
 			title
 		</div>
-		<img src="img/AP/ex5.png">
+		<img src="img/partner/ex5.png">
 		<a class="readMore" href="">Read More</a>
 	</div>
 	<div class="individual">
@@ -91,13 +95,18 @@
 			名字<br>
 			title
 		</div>
-		<img src="img/AP/ex6.png">
+		<img src="img/partner/ex6.png">
 		<a class="readMore" href="">Read More</a>
 	</div>
 </div>
 
 
-
+<script src="js/jQuery.min.js"> </script>
+<script src="js/scroll-up-bar.min.js"></script>
+<script src="js/easing.js"></script>
+<script type="text/javascript">
+    $('#topbar').scrollupbar();
+</script>
 </body>
 
 </html>
