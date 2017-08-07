@@ -31,7 +31,7 @@ function leftWalk() {
 $(document).ready(function(){
 
 	var height = 8454; // total height (px)
-	var scroll_ms = 0; // scroll pass (ms)
+	var scroll_ms = 3000; // scroll pass (ms)
 
 	// auto scroll in scroll_ms (var)
     var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
