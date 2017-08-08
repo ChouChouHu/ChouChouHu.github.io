@@ -30,8 +30,9 @@ function leftWalk() {
 
 $(document).ready(function(){
 
-	var height = 9216; // total height (px)
-	var scroll_ms = 3000; // scroll pass (ms)
+	var adjust = ($(window).width() / 1280);
+	var height = 9216 * adjust; // total height (px)
+	var scroll_ms = 0; // scroll pass (ms)
 
 	// auto scroll in scroll_ms (var)
     var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
@@ -49,7 +50,6 @@ $(document).ready(function(){
 	$(window).scroll(function () {
 
 		// walk path animation
-		var adjust = ($(window).width() / 1280);
 		var scrollBtm = $(document).height() - $(window).height() - $(window).scrollTop();
 		// num == scroll interval static
 		// num_top, num_left == start position
