@@ -28,8 +28,22 @@ function leftWalk() {
 	}
 }
 
-$(document).ready(function(){
+function walkMotion(i, n) {
+	if(i == 1) {
+	    setTimeout(function(){
+			$(".walk .one").css("display", "none");
+			$(".walk .two").css("display", "block");
+	    }, n);
+	}
+	else {
+	    setTimeout(function(){
+			$(".walk .one").css("display", "block");
+			$(".walk .two").css("display", "none");
+	    }, n);
+	}
+}
 
+$(document).ready(function(){
 	var adjust = ($(window).width() / 1280);
 	var height = 9216 * adjust; // total height (px)
 	var scroll_ms = 0; // scroll pass (ms)
@@ -42,9 +56,24 @@ $(document).ready(function(){
 
     // people come in animation
     setTimeout(function(){
-    	$(".walk").fadeIn();
-    	// change to walk in screen
+    	$(".walk").css("display", "block");
+    	$(".walk").addClass("walkAnimation");
+		walkMotion(1, 50);
+		walkMotion(2, 300);
+		walkMotion(1, 600);
+		walkMotion(2, 800);
     }, scroll_ms);
+
+
+  //   setTimeout(function(){
+		// $(".walk .one").css("display", "none");
+		// $(".walk .two").css("display", "block");
+  //   }, 300);
+  //   setTimeout(function(){
+		// $(".walk .one").css("display", "block");
+		// $(".walk .two").css("display", "none");
+  //   }, 1000);
+
 
 
 	$(window).scroll(function () {
@@ -88,9 +117,10 @@ $(document).ready(function(){
 		var end_left = ten_left;
  
 		if (scrollBtm > ( one + two + three + four + five + six + seven + eight + nine ) * adjust) {
-			$(".walk").css("top", ten_top * adjust - ( scrollBtm - ( one + two + three + four + five + six + seven + eight + nine ) * adjust ) * ( (ten_top - end_top) / ten ) + "px"); 
-			$(".walk").css("left", ten_left * adjust - ( scrollBtm - ( one + two + three + four + five + six + seven + eight + nine ) * adjust ) * ( (ten_left - end_left) / ten ) + "px");
-			rightWalk();
+			// $(".walk").css("top", ten_top * adjust - ( scrollBtm - ( one + two + three + four + five + six + seven + eight + nine ) * adjust ) * ( (ten_top - end_top) / ten ) + "px"); 
+			// $(".walk").css("left", ten_left * adjust - ( scrollBtm - ( one + two + three + four + five + six + seven + eight + nine ) * adjust ) * ( (ten_left - end_left) / ten ) + "px");
+			// rightWalk();
+
 		}	
 		else if (scrollBtm > ( one + two + three + four + five + six + seven + eight ) * adjust) {
 			$(".walk").css("top", nine_top * adjust - ( scrollBtm - ( one + two + three + four + five + six + seven + eight ) * adjust ) * ( (nine_top - ten_top) / nine ) + "px"); 
@@ -141,7 +171,7 @@ $(document).ready(function(){
 
 	$(".background").click(function(){
 		// alert($(".bar").css("top"));
-		// alert($(document).height() - $(window).height() - $(window).scrollTop());
+		alert($(document).height() - $(window).height() - $(window).scrollTop());
 		// alert((( 7802 - $(window).scrollTop() ) / 23 ) + 23 + "vw");
 		// alert($(window).width());
 	});
