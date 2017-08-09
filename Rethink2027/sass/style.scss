@@ -940,6 +940,7 @@ body {
 				margin-right: -3px;
 				background: red;
 				opacity: 0;
+				z-index: 2;
 			}
 
 			.btn {
@@ -1038,6 +1039,12 @@ body {
 
 		li {
 			margin-left: 20px;
+		}
+	}
+
+	@media screen and (max-width: 850px) {
+		.intro {
+			width: 80% !important;
 		}
 	}
 
