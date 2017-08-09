@@ -107,6 +107,7 @@ $(document).ready(function(){
 		$(".walk").css("top", 510 * adjust + "px");
 		$(".walk").css("left", 695 * adjust + "px");
 		$(".walk").animate({top: 415 * adjust + "px"}, 150);
+		$(".proposal").css("display", "block");	
 		setTimeout(function(){
 			$(".walk").animate({top: 515 * adjust + "px"}, 150);
 		}, 200);
