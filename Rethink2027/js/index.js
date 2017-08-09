@@ -53,6 +53,7 @@ $(document).ready(function(){
 	var scroll_ms = 0; // scroll pass (ms)
 	var stop_ms = 0;
 	var after = false;
+	var goldCount = 0;
 
 	var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
     $body.animate({
@@ -69,7 +70,7 @@ $(document).ready(function(){
 
 	$(".brickOne").click(function(){
 		$(".walk").css("top", 510 * adjust + "px");
-		$(".walk").css("left", 540 * adjust + "px");
+		$(".walk").css("left", 545 * adjust + "px");
 		$(".walk").animate({top: 415 * adjust + "px"}, 150);
 		setTimeout(function(){
 			$(".walk").animate({top: 515 * adjust + "px"}, 150);
@@ -77,18 +78,21 @@ $(document).ready(function(){
 		setTimeout(function(){
 			$(".brickOne").animate({top: 28 + "vw"}, 100);
 			$(".gold").animate({top: 24 + "vw"}, 90);
-			// $(".gold").animate({width: 1 + "vw"}, 90);
+			goldCount++;
+			$(".goldArea .number").text(goldCount);
 		}, 150);
 		setTimeout(function(){
 			$(".brickOne").animate({top: 29 + "vw"}, 100);
 			$(".gold").animate({top: 29.5 + "vw"}, 100);
-			// $(".gold").animate({width: 3.5 + "vw"}, 90);
 		}, 300);
+
+		$(".goldArea").css("display", "block");
 	})
 	$(".brickTwo").click(function(){
 		$(".walk").css("top", 510 * adjust + "px");
-		$(".walk").css("left", 615 * adjust + "px");
+		$(".walk").css("left", 620 * adjust + "px");
 		$(".walk").animate({top: 415 * adjust + "px"}, 150);
+		$(".sentence").css("display", "block");	
 		setTimeout(function(){
 			$(".walk").animate({top: 515 * adjust + "px"}, 150);
 		}, 200);
@@ -101,7 +105,7 @@ $(document).ready(function(){
 	})
 	$(".brickThree").click(function(){
 		$(".walk").css("top", 510 * adjust + "px");
-		$(".walk").css("left", 690 * adjust + "px");
+		$(".walk").css("left", 695 * adjust + "px");
 		$(".walk").animate({top: 415 * adjust + "px"}, 150);
 		setTimeout(function(){
 			$(".walk").animate({top: 515 * adjust + "px"}, 150);

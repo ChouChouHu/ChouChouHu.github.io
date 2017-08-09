@@ -316,11 +316,12 @@ body {
 		left: 43vw;
 		top: 7.5vw;
 		z-index: 2;
+		display: none;
 	}
 	.brickOne {
 		position: absolute;
 		width: 3.5vw;
-		left: 42.5vw;
+		left: 43vw;
 		top: 29vw;
 		z-index: 2;
 		cursor: pointer;
@@ -329,7 +330,7 @@ body {
 	.brickTwo {
 		position: absolute;
 		width: 3.5vw;
-		left: 48.25vw;
+		left: 48.75vw;
 		top: 29vw;
 		z-index: 2;
 		cursor: pointer;
@@ -338,7 +339,7 @@ body {
 	.brickThree {
 		position: absolute;
 		width: 3.5vw;
-		left: 54vw;
+		left: 54.5vw;
 		top: 29vw;
 		z-index: 2;
 		cursor: pointer;
@@ -347,11 +348,41 @@ body {
 	.gold {
 		position: absolute;
 		width: 1.8vw;
-		left: 43.35vw;
+		left: 43.85vw;
 		top: 29.5vw;
 		z-index: 1;
 	}
 
+	.goldArea {
+		position: absolute;
+		width: 8vw;
+		left: 90.5vw;
+		top: 5vw;
+		font-size: 1.2em;
+		color: $lightGreen;
+		font-weight: bold;
+		letter-spacing: 2px;
+		display: none;
+
+		.goldTwo {
+			width: 1.8vw;
+			vertical-align: -20%;
+		}
+	}
+
+	.sentence {
+		position: absolute;
+		width: 100%;
+		text-align: center;
+		top: 16vw;
+		z-index: 1;
+		font-size: 2.4vw;
+		letter-spacing: 0.15vw;
+		text-indent: 1.45vw; 
+		// animation-iteration-count: infinite;
+		animation-duration: 1s;
+		display: none;
+	}
 
 }
 
