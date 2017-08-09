@@ -2,10 +2,14 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
 
+$green: #006464;
+$grey: #efefef;
+$orange: #ff8b38;
+
 body {
 	position: relative;
 	font-family: PingFangTC-regular, Heiti TC, Meiryo, "微軟正黑體", Microsoft JhengHei, "標楷體", DFKai-sb !important;
-	background: #006464;
+	background: $green;
 	color: white;
 	width: 100vw;
 	height: 7.2vw;
@@ -44,7 +48,7 @@ body {
 		position: relative;
 		display: inline-block;
 		// height: 64px;
-		width: 11em;
+		width: 5em;
 		margin-top: 14px;
 		margin-left: 25px;
 		cursor: pointer;
@@ -76,13 +80,13 @@ body {
 	font-size: 0;
 	z-index: 3;
 	transform: translate(0, -50vw);
-	background: white;
+	background: $green;
 	color: black;
 	display: none;
 
 	.circle {
 		position: absolute;
-		border: 2px black solid;
+		border: 5px #3c9195 solid;
 		border-radius: 50%;
 		font-size: 16px;
 		// text-indent: 30px;
@@ -97,18 +101,20 @@ body {
 			font-size: 1.4vw;
 			// line-height: 102vw;
 			line-height: 1.7vw;
-			margin-top: 42.15vw;
+			margin-top: 46.1vw;
 			margin-left: 0.4vw;
+			right: 0;
 			// text-indent: 1.4vw;
 			cursor: pointer;
 			padding-right: 2vw;
-			color: rgba(0, 0, 0, 0.5);
+			font-weight: bold;
+			color: #ff7167;
 			text-decoration: none;
 			padding: 3vw;
 			// background: red;
 
 			&:hover {
-				color: rgba(0, 0, 0, 1);
+				// color: rgba(0, 0, 0, 1);
 			}
 		}
 
@@ -121,13 +127,14 @@ body {
 				top: 8%;
 				margin-left: -1px;
 				border-radius: 50%;
-				border: 2px black solid;
+				border: 5px #3c9195 solid;
 
 				.text {
 					// line-height: 84.8vw;
-					margin-top: 34vw;
+					margin-top: 37.72vw;
 					// text-indent: 1.3vw;
 					margin-left: 0.5vw;
+					color: #ffa054;
 				}
 
 				div {
@@ -138,9 +145,10 @@ body {
 
 					.text {
 						// line-height: 68.2vw;
-						margin-top: 27vw;
+						margin-top: 29.35vw;
 						// text-indent: 1.1vw;
 						margin-left: 0.6vw;
+						color: #ffcd32;
 					}
 
 					div {
@@ -151,9 +159,10 @@ body {
 
 						.text {
 							// line-height: 52vw;
-							margin-top: 19.6vw;
+							margin-top: 20.8vw;
 							// text-indent: 0.8vw;
 							margin-left: 0.6vw;
+							color: #6bffba;
 						}
 
 						div {
@@ -163,8 +172,9 @@ body {
 							top: 15%;
 
 							.text {
-								margin-top: 11.7vw;
+								margin-top: 12.7vw;
 								margin-left: 0.3vw;
+								color: #96aeff;
 							}
 
 							div {
@@ -174,8 +184,9 @@ body {
 								top: 21%;
 
 								.text {
-									margin-top: 4vw;
+									margin-top: 4.7vw;
 									margin-left: 0vw;
+									color: $grey;
 								}
 
 								div {
@@ -184,10 +195,12 @@ body {
 									left: 32%;
 									top: 32%;
 
-									line-height: 7.4vw;
+									line-height: 7.6vw;
 									text-align: center;
 									cursor: pointer;
 									font-size: 22px;
+									color: #3c9195;
+									font-weight: bold;
 								}
 							}
 						}
@@ -779,24 +792,41 @@ body {
 
 .attention {
 	position: relative;
-	padding: 0 10%;
-	padding-top: 160px;
+	padding: 0 22%;
+	padding-top: 105px;
 	padding-bottom: 120px;
 
 	.title {
 		width: 100%;
 		text-align: center;
-		font-size: 20px;
+		font-size: 26px;
+		letter-spacing: 5px;
+		color: #6cffbd;
+		font-weight: bold;
 	}
 
 	ul {
 		margin-top: 50px;
 		padding-left: 12%;
+		width: 80%;
+		// background: red;
 
+		i {
+			position: absolute;
+			margin-left: -45px;
+			font-size: 35px;
+			font-weight: bold;
+			font-style: italic;
+			color: #6cffbd;
+		}
+	
 		li {
-			list-style-type: upper-roman;
-			font-size: 18px;
+			list-style-type: none;
+			font-size: 16px;
+			font-weight: lighter;
+			letter-spacing: 1px;
 			line-height: 28px;
+			margin-bottom: 40px;
 		}
 	}
 
@@ -804,20 +834,22 @@ body {
 		position: relative;
 		width: 100%;
 		text-align: center;
-		margin-top: 90px;
+		margin-top: 65px;
 
 		.btn {
 			position: relative;
-			padding: 18px 35px;
-			font-size: 18px;
-			border: 1px solid white;
+			padding: 11px 28px;
+			font-size: 16px;
+			letter-spacing: 3px;
+			color: #6cffbd;
+			border: 1.5px solid #6cffbd;
+			border-radius: 30px;
 			cursor: pointer;
-			color: white;
 			text-decoration: none;
 
 			&:hover {
-				background: white;
-				color: #000066;
+				background: #6cffbd;
+				color: $green;
 			}
 		}
 	}
@@ -825,53 +857,176 @@ body {
 
 .form {
 	position: relative;
-	padding: 150px 12%;
-	font-size: 16px;
-	line-height: 24px;
+	padding: 150px 0%;
+	padding-bottom: 0;
+	font-size: 17px;
+	letter-spacing: 0.5px;
+	font-weight: lighter;
+	line-height: 28px;
+	color: $grey;
+
+	.greenBackground {
+		padding: 0 12%;
+	}
+
+	.greyBackground {
+		background: $grey;
+		padding: 0 12%;
+		padding-top: 120px;
+		padding-bottom: 120px;
+		color: $green;
+
+		h1 {
+			color: $green;
+			letter-spacing: 1px;
+		}
+
+		input {
+			border-color: $orange;
+			font-size: 18px;
+			letter-spacing: 0px;
+			color: $orange;
+		}
+
+		::placeholder {
+			color: $orange;
+		}
+
+		textarea {
+			width: 92%;
+			padding-left: 10px;
+			height: 70px;
+			padding-top: 10px;
+			font-size: 16px;
+			margin-top: 12px;
+
+			background: rgba(255, 255, 255, 0);
+			border: 2px solid $orange;
+			color: $orange;
+		}
+
+		.file {
+			position: relative;
+			display: inline-block;
+			padding: 0px;
+			padding-top: 20px;
+			margin-right: 10%;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			width: 280px;
+			height: 240px;
+			border: 2px solid $orange;
+			text-align: center;
+			vertical-align: top;
+
+			.preview {
+				max-width: 250px;
+				max-height: 250px;
+			}
+
+			input[type=file] {
+				position: absolute;
+				left: 0;
+				top: -15px;
+				// display: none;
+				padding: 0px; 
+				font-size: 16px;
+				width: 100%;
+				height: 100%;
+				// text-indent: -100%;
+				border-color: $green;
+				color: $green;
+				// border-radius: 30px;
+				margin-right: -3px;
+				background: red;
+				opacity: 0;
+			}
+
+			.btn {
+				position: absolute;
+				left: 43%;
+				bottom: 20px;
+				width: 100px;
+				margin-left: -50px;
+				padding: 10px 20px;
+				border: 2px solid $green;
+				border-radius: 30px;
+				color: $green;
+			}
+
+			&:hover {
+				.btn {
+					background: $green;
+					color: $grey;
+				}
+			}
+		}
+
+		select {
+			appearance: none;
+			-moz-appearance: none;
+			-webkit-appearance: none;
+			font-size: 16px;
+			width: 200px;
+			margin-top: 10px;
+			// background: transparent;
+			padding: 10px;
+			// padding-right: 20px;
+			border: 2px solid $orange;
+			border-radius: 0;
+			color: $orange;
+			background: url("../img/proposal/orangeTriangle.png") no-repeat scroll right center transparent;
+		}
+	}
 
 	.title {
-		width: 100%;
-		text-align: center;
-		font-size: 20px;
+		position: absolute;
+		// width: 100%;
+		right: 3%;
+		text-align: right;
+		font-size: 24px;
+		letter-spacing: 4px;
+		line-height: 30px;
+
+		b {
+			font-size: 34px;
+			font-weight: bold;
+		}
 	}
 
 	.right {
 		margin-left: 4%;
 	}
 
-	ul {
-		margin-left: 3%;
-		li {
-			list-style-type: upper-roman;
-		}
+	h1 {
+		font-size: 25px;
+		font-weight: bold;
+		letter-spacing: 4px;
+		color: #6cffbd;
+		margin-bottom: 5px;
 	}
 
-	h1 {
-		font-size: 20px;
+	.noColor {
+		color: $grey;
+		text-indent: -8px;
+		margin-bottom: 15px;
 	}
 
 	input {
-		margin: 15px 2%;
+		margin: 15px 8%;
 		margin-left: 0;
-		padding-left: 1%;
-		width: 44%;
-		height: 30px;
-		font-size: 16px;
-	}
-	
-	textarea {
-		width: 92%;
-		padding-left: 1%;
-		height: 70px;
-		padding-top: 10px;
-		font-size: 16px;
-		margin-top: 12px;
+		padding-left: 10px;
+		width: 36%;
+		height: 42px;
+		font-size: 22px;
+		background: rgba(255, 255, 255, 0);
+		border: 2px solid $grey;
+		letter-spacing: 1px;
+		color: $grey;
 	}
 
-	select {
-		font-size: 16px;
-		width: 200px;
-		margin-top: 10px;
+	::placeholder {
+		color: $grey;
 	}
 
 	.intro {
@@ -880,6 +1035,10 @@ body {
 		vertical-align: top;
 		font-size: 14px;
 		line-height: 22px;
+
+		li {
+			margin-left: 20px;
+		}
 	}
 
 	.wide {
@@ -895,18 +1054,37 @@ body {
 		.btn {
 			display: inline-block;
 			width: 150px;
-			height: 40px;
-			font-size: 16px;
+			height: 48px;
+			font-size: 18px;
+			font-weight: bold;
+			letter-spacing: 1px;
 			margin: 0 20px;
 			margin-bottom: 20px;
 			cursor: pointer;
-			background: white;
-			border: 0;
+			background: transparent;
+			border: 2px solid $green;
+			border-radius: 30px;
 			vertical-align: top;
-			color: black;
+			color: $green;
+
+			&:hover {
+				background: $green;
+				color: $grey;
+			}
 		}
+		
+		.btn+.btn {
+			border-color: #fd625c;
+			color: #fd625c;
+
+			&:hover {
+				background: #fd625c;
+				color: $grey;
+			}
+		}
+
 		a {
-			line-height: 40px;
+			line-height: 48px;
 			text-decoration: none;
 		}
 	}
