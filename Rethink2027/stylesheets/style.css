@@ -72,6 +72,7 @@ body {
   transform: translate(0, -50vw);
   background: #006464;
   color: black;
+  display: none;
 }
 /* line 89, ../sass/style.scss */
 .menu .circle {
@@ -1397,8 +1398,12 @@ body {
   transition-duration: 0.5s;
   opacity: 1;
 }
+/* line 1489, ../sass/style.scss */
+.wall .mine {
+  opacity: 0.5;
+}
 
-/* line 1490, ../sass/style.scss */
+/* line 1494, ../sass/style.scss */
 .proposalPage {
   position: relative;
   padding: 0 10%;
@@ -1406,12 +1411,12 @@ body {
   padding-bottom: 150px;
   font-size: 20px;
 }
-/* line 1498, ../sass/style.scss */
+/* line 1502, ../sass/style.scss */
 .proposalPage .title {
   font-size: 24px;
   margin-bottom: 20px;
 }
-/* line 1503, ../sass/style.scss */
+/* line 1507, ../sass/style.scss */
 .proposalPage .map {
   position: relative;
   display: inline-block;
@@ -1419,19 +1424,19 @@ body {
   margin-left: -20px;
   margin-top: 50px;
 }
-/* line 1510, ../sass/style.scss */
+/* line 1514, ../sass/style.scss */
 .proposalPage .map .mapImg {
   position: absolute;
   width: 25%;
   top: 100px;
 }
-/* line 1516, ../sass/style.scss */
+/* line 1520, ../sass/style.scss */
 .proposalPage .map .dialogImg {
   position: absolute;
   width: 80%;
   left: 20%;
 }
-/* line 1522, ../sass/style.scss */
+/* line 1526, ../sass/style.scss */
 .proposalPage .map .dialog {
   position: absolute;
   font-size: 18px;
@@ -1441,18 +1446,18 @@ body {
   top: 50px;
   left: 40%;
 }
-/* line 1533, ../sass/style.scss */
+/* line 1537, ../sass/style.scss */
 .proposalPage .picture {
   display: inline-block;
   margin-left: 2%;
   width: 33%;
 }
-/* line 1538, ../sass/style.scss */
+/* line 1542, ../sass/style.scss */
 .proposalPage .picture img {
   width: 100%;
   vertical-align: top;
 }
-/* line 1544, ../sass/style.scss */
+/* line 1548, ../sass/style.scss */
 .proposalPage .quote {
   position: relative;
   margin-top: 70px;
@@ -1460,46 +1465,46 @@ body {
   left: 7%;
   text-align: center;
 }
-/* line 1552, ../sass/style.scss */
+/* line 1556, ../sass/style.scss */
 .proposalPage .quote img {
   position: absolute;
   left: 0;
   top: -16px;
   width: 30px;
 }
-/* line 1558, ../sass/style.scss */
+/* line 1562, ../sass/style.scss */
 .proposalPage .quote img + img {
   top: 0;
   left: 95%;
 }
 
 @media screen and (max-width: 1024px) {
-  /* line 1567, ../sass/style.scss */
+  /* line 1571, ../sass/style.scss */
   .proposalPage .map {
     width: 110%;
     margin-left: -45px;
   }
-  /* line 1571, ../sass/style.scss */
+  /* line 1575, ../sass/style.scss */
   .proposalPage .map .mapImg {
     display: none;
   }
-  /* line 1574, ../sass/style.scss */
+  /* line 1578, ../sass/style.scss */
   .proposalPage .map .dialogImg {
     position: relative;
     width: 100%;
     left: 0;
   }
-  /* line 1579, ../sass/style.scss */
+  /* line 1583, ../sass/style.scss */
   .proposalPage .map .dialog {
     position: absolute;
     width: 65%;
     left: 24%;
   }
-  /* line 1585, ../sass/style.scss */
+  /* line 1589, ../sass/style.scss */
   .proposalPage .picture {
     display: none;
   }
-  /* line 1588, ../sass/style.scss */
+  /* line 1592, ../sass/style.scss */
   .proposalPage .quote {
     width: 86%;
   }
