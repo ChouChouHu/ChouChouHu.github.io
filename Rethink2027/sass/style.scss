@@ -3,7 +3,7 @@
  * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
 
 $green: #006464;
-$grey: #efefef;
+$grey: #E0E0E0;
 $orange: #ff8b38;
 $lightGreen: #6cffbd;
 $yellow: #ffcd32;
@@ -84,11 +84,12 @@ body {
 	transform: translate(0, -50vw);
 	background: $green;
 	color: black;
-	display: none;
+	// display: none;
 
 	.circle {
 		position: absolute;
-		border: 5px #3c9195 solid;
+		background: $green;
+		border: 5px #50ADC0 solid;
 		border-radius: 50%;
 		font-size: 16px;
 		// text-indent: 30px;
@@ -113,23 +114,33 @@ body {
 			color: #ff7167;
 			text-decoration: none;
 			padding: 3vw;
+			z-index: 1;
 			// background: red;
 
 			&:hover {
-				// color: rgba(0, 0, 0, 1);
+				color: $green;
 			}
 		}
 
+			img {
+				position: absolute;
+				display: none;
+				right: -6px;
+				top: -6px;
+				width: 104%;
+				z-index: 0;
+			}
 
 			div {
 				position: relative;
+				background: $green;
 				width: 84%;
 				height: 84%;
 				left: 8%;
 				top: 8%;
 				margin-left: -1px;
 				border-radius: 50%;
-				border: 5px #3c9195 solid;
+				border: 5px #50ADC0 solid;
 
 				.text {
 					// line-height: 84.8vw;
@@ -137,6 +148,16 @@ body {
 					// text-indent: 1.3vw;
 					margin-left: 0.5vw;
 					color: #ffa054;
+					z-index: 1;
+				}
+
+				img {
+					position: absolute;
+					display: none;
+					right: -6px;
+					top: -6px;
+					width: 104%;
+					z-index: 0;
 				}
 
 				div {
@@ -153,6 +174,10 @@ body {
 						color: #ffcd32;
 					}
 
+					img {
+						width: 113%;
+					}
+
 					div {
 						width: 76%;
 						height: 76%;
@@ -167,6 +192,10 @@ body {
 							color: #6bffba;
 						}
 
+						img {
+							width: 118%;
+						}
+
 						div {
 							width: 70%;
 							height: 70%;
@@ -176,7 +205,11 @@ body {
 							.text {
 								margin-top: 12.7vw;
 								margin-left: 0.3vw;
-								color: #96aeff;
+								color: #0F9BFF;
+							}
+
+							img {
+								width: 104.4%;
 							}
 
 							div {
@@ -191,6 +224,10 @@ body {
 									color: $grey;
 								}
 
+								img {
+									width: 109.7%;
+								}
+
 								div {
 									width: 36%;
 									height: 36%;
@@ -203,6 +240,11 @@ body {
 									font-size: 22px;
 									color: #3c9195;
 									font-weight: bold;
+
+									&:hover {
+										background: #50ADC0;
+										color: $green;
+									}
 								}
 							}
 						}
@@ -1118,7 +1160,7 @@ body {
 			position: relative;
 			display: inline-block;
 			padding: 0px;
-			padding-top: 0px;
+			padding-top: 10px;
 			margin-right: 10%;
 			margin-top: 20px;
 			margin-bottom: 20px;
