@@ -65,6 +65,9 @@ if (script_name == "index.html") {
 	        scrollTop: 0
 	    }, 1);
 
+	    $(".bar .proposal .pulse").css("display", "block");
+	    $(".bar .proposal .pulse").addClass("animated");
+
 		// auto scroll in scroll_ms (var)
 		setTimeout(function(){
 		    var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
@@ -143,6 +146,8 @@ if (script_name == "index.html") {
 			walkMotion(1, 600);
 			walkMotion(2, 800);
 			after = true;
+			$(".bar .proposal .pulse").fadeOut();
+			$(".bar .proposal .pulse").removeClass("animated");
 	    }, scroll_ms + stop_ms);
 
 
