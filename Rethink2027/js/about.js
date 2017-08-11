@@ -1,6 +1,40 @@
 
 
 $(document).ready(function(){
+
+	$(window).scroll(function () {
+		var adjust = ($(window).width() / 1280);
+		if ($(window).scrollTop() > 3300 * adjust) {
+			$(".navZero, .navOne, .navTwo, .navThree").css("color", "#e0e0e0");
+			$(".navThree").css("color", "#6cffbd");
+		}
+		else if ($(window).scrollTop() > 2600 * adjust) {
+			$(".navZero, .navOne, .navTwo, .navThree").css("color", "#e0e0e0");
+			$(".navTwo").css("color", "#6cffbd");
+		}
+		else if ($(window).scrollTop() > 1980 * adjust) {
+			$(".navZero, .navOne, .navTwo, .navThree").css("color", "#e0e0e0");
+			$(".navOne").css("color", "#6cffbd");
+		}
+		else if ($(window).scrollTop() > 870 * adjust) {
+			$(".navZero, .navOne, .navTwo, .navThree").css("color", "#e0e0e0");
+			$(".navZero").css("color", "#6cffbd");
+		}
+		else if ($(window).scrollTop() > 0) {
+			$(".navZero, .navOne, .navTwo, .navThree").css("color", "#e0e0e0");
+		}
+
+	});
+
+	$(".about").click(function(){
+		alert($(window).scrollTop());
+		// 870
+		// 1980
+		// 2660
+		// 3350
+	})
+
+
 	$(".spirit .one").hover(function(){
 		$(".spiritPic .blueOne").css("opacity", "1");
 		$(".spirit .content").css("display", "none");
@@ -84,45 +118,45 @@ $(document).ready(function(){
 		$(this).css("opacity", "1");
 		$(".loop .word").css("display", "none");
 		$(".loop .blue").css("display", "inline-block");
-		$(".step .arrow").css("display", "none");
+		$(".loop .arrow").css("display", "none");
 	}, function(){
 		$(this).css("opacity", "0");
 		$(".loop .blue").css("display", "none");
 		$(".loop .default").css("display", "inline-block");
-		$(".step .arrow").css("display", "block");
+		$(".loop .arrow").css("display", "block");
 	})
 	$(".loop .yellowTwo").hover(function(){
 		$(this).css("opacity", "1");
 		$(".loop .word").css("display", "none");
 		$(".loop .yellow").css("display", "inline-block");
-		$(".step .arrow").css("display", "none");
+		$(".loop .arrow").css("display", "none");
 	}, function(){
 		$(this).css("opacity", "0");
 		$(".loop .yellow").css("display", "none");
 		$(".loop .default").css("display", "inline-block");
-		$(".step .arrow").css("display", "block");
+		$(".loop .arrow").css("display", "block");
 	})
 	$(".loop .redThree").hover(function(){
 		$(this).css("opacity", "1");
 		$(".loop .word").css("display", "none");
 		$(".loop .red").css("display", "inline-block");
-		$(".step .arrow").css("display", "none");
+		$(".loop .arrow").css("display", "none");
 	}, function(){
 		$(this).css("opacity", "0");
 		$(".loop .red").css("display", "none");
 		$(".loop .default").css("display", "inline-block");
-		$(".step .arrow").css("display", "block");
+		$(".loop .arrow").css("display", "block");
 	})
 	$(".loop .greenFour").hover(function(){
 		$(this).css("opacity", "1");
 		$(".loop .word").css("display", "none");
 		$(".loop .green").css("display", "inline-block");
-		$(".step .arrow").css("display", "none");
+		$(".loop .arrow").css("display", "none");
 	}, function(){
 		$(this).css("opacity", "0");
 		$(".loop .green").css("display", "none");
 		$(".loop .default").css("display", "inline-block");
-		$(".step .arrow").css("display", "block");
+		$(".loop .arrow").css("display", "block");
 	})
 
 	$(".triangle .one").hover(function(){
