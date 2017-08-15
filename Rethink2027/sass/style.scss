@@ -935,9 +935,10 @@ body {
 			.word {
 				position: relative;
 				padding-left: 17%;
-				width: 65%;
+				width: 68%;
 				font-weight: bold;
 				font-size: 1.6vw;
+				// background: red;
 			}
 		}
 
@@ -1810,6 +1811,45 @@ body {
 		width: 10vw;
 		top: 6.4vw;
 		left: 2vw;
+	}
+
+	.intro {
+		position: absolute;
+		top: 53.5vw;
+		left: 51vw;
+		width: 34vw;
+		font-size: 1.25vw;
+		letter-spacing: 0.1vw;
+		line-height: 1.8vw;
+		color: $grey;
+
+		h1 {
+			color: $yellow;
+			font-size: 1.65vw;
+			margin-bottom: 1vw;
+		}
+	}
+
+	.track {
+		position: absolute;
+		top: 109vw;
+		left: 52vw;
+		width: 35vw;
+
+		h1 {
+			background: #4EB5FF;
+			padding: 1vw;
+			font-size: 1.6vw;
+			color: #00364B;
+			font-weight: bold;
+		}
+
+		.text {
+			padding: 1vw;
+			font-size: 1.3vw;
+			letter-spacing: 0.05vw;
+			line-height: 2.15vw;
+		}
 	}
 
 	.photo {
