@@ -26,13 +26,9 @@ $(document).ready(function(){
 
 	});
 
-	$(".about").click(function(){
-		alert($(window).scrollTop());
-		// 870
-		// 1980
-		// 2660
-		// 3350
-	})
+	// $(".about").click(function(){
+	// 	alert($(window).scrollTop());
+	// })
 
 
 	$(".spirit .one").hover(function(){

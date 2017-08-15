@@ -81,7 +81,27 @@ body {
 		.pulse {
 			display: none;
 		}
+	}
+}
 
+
+
+@media screen and (max-width: 700px) {
+	.bar {
+		.burger {
+			margin-top: 3vw;
+			width: 4vw;
+		}
+		.logo {
+			margin-top: 2vw;
+			width: 11.5vw;
+		}
+		.proposal {
+			top: 2.1vw;
+			img {
+				width: 21.4vw;
+			}
+		}
 	}
 }
 
@@ -1412,23 +1432,248 @@ body {
 
 // 活動辦法
 
-.QandA {
+.activityBtnGrp {
 	position: relative;
-	padding-top: 120px;
+	padding-top: 100px;
+	width: 100%;
+	text-align: center;
+
+	.btn {
+		position: relative;
+		display: inline-block;
+		padding: 18px 35px;
+		color: $yellow;
+		border: $yellow 1px solid;
+		border-radius: 30px;
+		margin: 0 1%;
+		letter-spacing: 4px;
+		cursor: pointer;
+		font-size: 19px;
+
+		&:hover {
+			color: $green;
+			background: $yellow;
+		}
+	}
+
+	.active {
+		color: $green;
+		background: $yellow;
+	}
+}
+
+@media screen and (max-width: 800px) {
+
+	.activityBtnGrp {
+		.btn {
+			display: block;
+			width: 60%;
+			padding: 12px 0;
+			margin-bottom: 15px;
+			left: 20%;
+			font-size: 17px;
+		}
+	}
+}
+
+.activities {
+	padding: 80px 15%;
+	line-height: 28px;
+	font-weight: lighter;
+	// display: none;
+
+	h2 {
+		color: $yellow;
+		font-size: 20px;
+		letter-spacing: 1px;
+		line-height: 50px;
+		font-weight: bold;
+	}
+
+	h1 {
+		color: $lightGreen;
+		font-size: 23px;
+		letter-spacing: 1px;
+		line-height: 46px;
+		font-weight: bold;
+
+		i {
+			font-style: italic;
+			font-size: 28px;
+		}
+	}
+
+	.right {
+		margin-left: 110px;
+	}
+
+	p {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	li {
+		margin-bottom: 30px;
+	}
+
+	.green {
+		color: $lightGreen;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.activities {
+		.right {
+			margin-left: 10px;
+		}
+	}
+}
+
+.time {
+	padding: 100px 0;
+	padding-left: 17%;
+	width: 77%;
+	line-height: 28px;
+	font-weight: lighter;
+	display: none;
+
+	h2 {
+		color: $yellow;
+		font-size: 20px;
+		letter-spacing: 2px;
+		line-height: 50px;
+		margin-bottom: 15px;
+	}
+
+	.green {
+		color: $lightGreen;
+	}
+
+	.step {
+		display: inline-block;
+		width: 55%;
+		padding-right: 4%;
+		margin-bottom: 150px;
+		border-right: 2px #3C9195 solid;
+
+		.stepImg {
+			width: 330px;
+			margin-top: -35px;
+		}
+	}
+
+	.date {
+		display: inline-block;
+		width: 35%;
+		padding-left: 3%;
+		vertical-align: top;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.time {
+		.step {
+			display: block;
+			width: 90%;
+			border: 0;
+			margin-bottom: 50px;
+		}
+		.date {
+			display: block;
+			width: 90%;
+			margin-bottom: 150px;
+			padding-left: 0;
+		}
+	}
+}
+
+.QAgrp {
+	position: relative;
+	width: 100%;
+	text-align: center;
+	margin-top: 70px;
+
+	display: none;
+
+	img {
+		height: 55px;
+		margin: 0 3%;
+		vertical-align: top;
+		filter: grayscale(1);
+		cursor: pointer;
+
+		&:hover {
+			filter: grayscale(0);
+		}
+	}
+
+	.active {
+			filter: grayscale(0);
+	}
+}
+
+@media screen and (max-width: 800px) {
+
+	.QAgrp {
+		img {
+			position: relative;
+			display: block;
+			margin-bottom: 20px;
+			left: 50%;
+			margin-left: -60px;
+		}
+	}
+
+}
+
+.QAsec {
+	position: relative;
+	display: inline-block;
+	margin-top: 50px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 70%;
+	left: 15%;
+	border: 2px $lightGreen solid;
+
+	display: none;
+
+	h1 {
+		color: $lightGreen;
+		font-size: 30px;
+		letter-spacing: 5px;
+		line-height: 46px;
+		font-weight: bold;
+		text-align: center;
+		margin-bottom: 30px;
+	}
 
 	.Q {
 		position: relative;
 		font-size: 19px;
 		width: 86%;
 		left: 7%;
-		margin-bottom: 20px;
+		margin-bottom: 32px;
 		cursor: pointer;
 
 		.topic {
-			border: 2px white solid;
+			border: 2px #BEBEBE solid;
+			background: #BEBEBE;
+			color: $green;
 			width: 97%;
 			padding: 15px 0;
 			padding-left: 3%;
+			line-height: 24px;
+
+			&:hover {
+				background: $yellow;
+				border: 2px $yellow solid;
+			}
+		}
+
+		.yellowTopic {
+			background: $yellow;
+			border: 2px $yellow solid;
 		}
 
 		.arrow {
@@ -1438,13 +1683,14 @@ body {
 
 		.A {
 			width: 94%;
-			margin-top: 15px;
+			margin-top: 0px;
 			padding: 15px 3%;
-			border: 2px white solid;
+			border: 2px $yellow solid;
 			height: 0;
-			font-size: 17px;
-			line-height: 22px;
-			overflow: hidden;
+			font-size: 15px;
+			color: $yellow;
+			line-height: 24px;
+			overflow: scroll;
 			animation-name: QandA;
 			animation-duration: 1s;
 			animation-fill-mode: forwards;
@@ -1452,6 +1698,25 @@ body {
 			cursor: auto;
 		}
 	}
+}
+
+@media screen and (max-width: 800px) {
+
+	.QAsec {
+		width: 100%;
+		left: 0;
+		border: 0;
+	}
+
+}
+
+.elevator {
+	position: fixed;
+	vertical-align: bottom;
+	width: 120px;
+	right: 20px;
+	bottom: 20px;
+	display: none;
 }
 
 @keyframes QandA {
@@ -1462,73 +1727,12 @@ body {
 
 	to {
 		padding: 15px 3%;
-	 	height: 120px;
+	 	height: 150px;
 	}
 }
 
 
 
-
-// 行動大使
-
-// .actionPartner {
-// 	position: relative;
-// 	width: 90%;
-// 	padding: 0 5%;
-// 	padding-top: 120px;
-// 	padding-bottom: 120px;
-// 	text-align: center;
-
-// 	.individual {
-// 		position: relative;
-// 		display: inline-block;
-// 		width: 235px;
-// 		height: 220px;
-// 		margin: 20px;
-// 		vertical-align: top;
-// 		text-decoration: none;
-// 		color: black;
-// 		overflow: hidden;
-
-// 		// for img
-// 		font-size: 190px;
-// 		line-height: 190px;
-
-// 		border: 2px black solid;
-
-// 		.name {
-// 			position: relative;
-// 			font-size: 16px;
-// 			line-height: 18px;
-// 			padding: 7px 0;
-// 			top: 0;
-
-// 			background: white;
-// 			border-bottom: 2px black solid;
-// 		}
-
-// 		img {
-// 			max-width: 100%;
-// 			// max-height: 100%; 
-// 		}
-
-// 		.readMore {
-// 			position: absolute;
-// 			right: -52px;
-// 			bottom: -52px;
-// 			width: 100px;
-// 			height: 100px;
-// 			font-size: 13px;
-// 			line-height: 18px;
-// 			transform: rotate(-45deg);
-
-// 			color: black;
-// 			text-decoration: none;
-// 			background: white;
-// 			border: 2px black solid;
-// 		}
-// 	}	
-// }
 
 
 // 提案
