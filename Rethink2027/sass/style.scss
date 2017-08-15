@@ -1733,6 +1733,106 @@ body {
 
 
 
+// partner
+
+.partnerWall {
+	position: relative;
+
+	.title {
+		position: relative;
+		width: 100%;
+		text-align: center;
+		padding-top: 10.8vw;
+		z-index: 1;
+		color: $grey;
+		font-size: 2.2vw;
+		letter-spacing: 0.3vw;
+		line-height: 3.3vw;
+		margin-left: -0.5vw;
+
+		b {
+			font-weight: bold;
+		}
+		.big {
+			font-size: 2.6vw;
+			line-height: 3.2vw;
+		}
+	}
+	.wallImg {
+		position: absolute;
+		width: 100%;
+		top: 0;
+		left: 0;
+	}
+	.partnerOne {
+		position: absolute;
+		width: 31vw;
+		top: 48vw;
+		left: 14vw;
+	}
+	.partnerTwo {
+		position: absolute;
+		width: 35.5vw;
+		top: 58.7vw;
+		left: 52vw;
+	}
+	.partnerThree {
+		position: absolute;
+		width: 41vw;
+		top: 96vw;
+		left: 11vw;
+	}
+	.partnerFour {
+		position: absolute;
+		width: 45vw;
+		top: 111vw;
+		left: 56vw;
+	}
+	.partnerFive {
+		position: absolute;
+		width: 62vw;
+		top: 151vw;
+		left: 18vw;
+	}
+}
+
+
+.partner {
+	position: relative;
+
+	.backgroundImg {
+		position: absolute;
+		width: 100%;
+	}
+
+	.back {
+		position: absolute;
+		width: 10vw;
+		top: 6.4vw;
+		left: 2vw;
+	}
+
+	.photo {
+		position: absolute;
+		width: 35vw;
+		top: 21vw;
+		left: 9.8vw;
+	}
+
+	.watchMore {
+		position: absolute;
+		width: 30vw;
+		top: 321vw;
+		left: 6vw;
+	}
+
+	.goProposal {
+		position: absolute;
+		width: 23.5vw;
+		top: 320.5vw;
+		left: 72.5vw;
+	}
+}
 
 
 // 提案
@@ -2290,7 +2390,3 @@ body {
 	}
 }
 
-
-@media screen and (max-width: 1024px) {
-
-}
