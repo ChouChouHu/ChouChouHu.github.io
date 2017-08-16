@@ -140,6 +140,7 @@ if (script_name == "index.html") {
 	    setTimeout(function(){
 	    	$(".walk").css("display", "block");
 	    	$(".walk").css("top", 8900 * adjust +"px");
+	    	$(".walk").css("left", 250 * adjust +"px");
 	    	$(".walk").addClass("walkAnimation");
 			walkMotion(2, 50);
 			walkMotion(2, 300);
@@ -196,6 +197,7 @@ if (script_name == "index.html") {
 					// $(".walk").css("top", ten_top * adjust - ( scrollBtm - ( one + two + three + four + five + six + seven + eight + nine ) * adjust ) * ( (ten_top - end_top) / ten ) + "px"); 
 					// $(".walk").css("left", ten_left * adjust - ( scrollBtm - ( one + two + three + four + five + six + seven + eight + nine ) * adjust ) * ( (ten_left - end_left) / ten ) + "px");
 					// rightWalk();
+					$(".walk").css("left", 630 * adjust + "px");
 					$(".walk").animate({top: 510 * adjust +"px"}, 3000, "linear");
 					for (var i = 1; i <= 20; i++) {
 						walkMotion(i % 2, i * 150);

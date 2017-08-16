@@ -168,8 +168,8 @@ body {
 				background: $green;
 				width: 84vw;
 				height: 84vw;
-				left: 8vw;
-				top: 8vw;
+				left: 8%;
+				top: 8%;
 				margin-left: -1px;
 				border-radius: 50%;
 				border: 5px #50ADC0 solid;
@@ -319,26 +319,42 @@ body {
 				margin-right: 16px;
 			}
 			div {
+				width: 168vw;
+				height: 168vw;
+
 				.text {
 					margin-top: 78.5vw;
 				}
 				div {
+					width: 136vw;
+					height: 136vw;
+
 					.text {
 						margin-top: 61.8vw;
 					}
 					div {
+						width: 103.36vw;
+						height: 103.36vw;
+
 						.text {
 							margin-top: 45vw;
 						}
 						div {
+							width: 72.352vw;
+							height: 72.352vw;
+
 							.text {
 								margin-top: 28.8vw;
 							}
 							div {
+								width: 42vw;
+								height: 42vw;
 								.text {
 									margin-top: 12.9vw;
 								}
 								.final {
+									width: 15.12vw;
+									height: 15.12vw;
 									line-height: 15vw;
 								}
 							}
@@ -365,8 +381,8 @@ body {
 
 	.walk {
 		position: absolute;
-		top: 8900px;
-		left: 250px;
+		// top: 8900px;
+		// left: 250px;
 		width: 4vw;
 		// margin-left: -250px;
 		cursor: pointer;
@@ -391,7 +407,7 @@ body {
 
 	@keyframes walkLeft {
 		0% {
-			margin-left: -250px;
+			margin-left: -30vw;
 		}
 
 		100% {
