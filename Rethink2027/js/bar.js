@@ -17,6 +17,40 @@ $(document).ready(function(){
 		$(".bar .proposal .pulse").fadeOut();
 	})
 
+	// menu
+
+	$("#btnNews").hover(function(){
+		$("#picNews").css("display", "block");
+	}, function(){
+		$("#picNews").css("display", "none");
+	})
+	$("#btnAbout").hover(function(){
+		$("#picAbout").css("display", "block");
+	}, function(){
+		$("#picAbout").css("display", "none");
+	})
+	$("#btnActivity").hover(function(){
+		$("#picActivity").css("display", "block");
+	}, function(){
+		$("#picActivity").css("display", "none");
+	})
+	$("#btnWall").hover(function(){
+		$("#picWall").css("display", "block");
+	}, function(){
+		$("#picWall").css("display", "none");
+	})
+	$("#btnPartner").hover(function(){
+		$("#picPartner").css("display", "block");
+	}, function(){
+		$("#picPartner").css("display", "none");
+	})
+	$("#btnDaily").hover(function(){
+		$("#picDaily").css("display", "block");
+	}, function(){
+		$("#picDaily").css("display", "none");
+	})
+
+
 
 	// activities
 
@@ -69,37 +103,92 @@ $(document).ready(function(){
 		// children for one layer; find for all child
 	})
 
-	$("#btnNews").hover(function(){
-		$("#picNews").css("display", "block");
-	}, function(){
-		$("#picNews").css("display", "none");
+	// partner
+
+	$(".trackOneBtn").click(function(){
+		$(".track").css("display", "none");
+		$(".trackOne").css("display", "block");
+		// $(".trackOne").fadeIn();
 	})
-	$("#btnAbout").hover(function(){
-		$("#picAbout").css("display", "block");
-	}, function(){
-		$("#picAbout").css("display", "none");
+	$(".trackTwoBtn").click(function(){
+		$(".track").css("display", "none");
+		$(".trackTwo").css("display", "block");
 	})
-	$("#btnActivity").hover(function(){
-		$("#picActivity").css("display", "block");
-	}, function(){
-		$("#picActivity").css("display", "none");
-	})
-	$("#btnWall").hover(function(){
-		$("#picWall").css("display", "block");
-	}, function(){
-		$("#picWall").css("display", "none");
-	})
-	$("#btnPartner").hover(function(){
-		$("#picPartner").css("display", "block");
-	}, function(){
-		$("#picPartner").css("display", "none");
-	})
-	$("#btnDaily").hover(function(){
-		$("#picDaily").css("display", "block");
-	}, function(){
-		$("#picDaily").css("display", "none");
+	$(".trackThreeBtn").click(function(){
+		$(".track").css("display", "none");
+		$(".trackThree").css("display", "block");
 	})
 
+	$(".Xone").click(function(){
+		$(".Xprofile").css("display", "none");
+		$(".XPone").css("display", "block");
 
+		$(".X").removeClass("active");
+		$(this).addClass("active");
+	})
+	$(".Xtwo").click(function(){
+		$(".Xprofile").css("display", "none");
+		$(".XPtwo").css("display", "block");
+
+		$(".X").removeClass("active");
+		$(this).addClass("active");
+	})
+	$(".Xthree").click(function(){
+		$(".Xprofile").css("display", "none");
+		$(".XPthree").css("display", "block");
+
+		$(".X").removeClass("active");
+		$(this).addClass("active");
+	})
+	$(".Xfour").click(function(){
+		$(".Xprofile").css("display", "none");
+		$(".XPfour").css("display", "block");
+
+		$(".X").removeClass("active");
+		$(this).addClass("active");
+	})
+	$(".Xfive").click(function(){
+		$(".Xprofile").css("display", "none");
+		$(".XPfive").css("display", "block");
+
+		$(".X").removeClass("active");
+		$(this).addClass("active");
+	})
+
+	$(".objectOne").hover(function(){
+		$(".ansOne").css("display", "block");
+	}, function(){
+		$(".ansOne").css("display", "none");
+	})
+	$(".objectTwo").hover(function(){
+		$(".ansTwo").css("display", "block");
+	}, function(){
+		$(".ansTwo").css("display", "none");
+	})
+	$(".objectThree").hover(function(){
+		$(".ansThree").css("display", "block");
+	}, function(){
+		$(".ansThree").css("display", "none");
+	})
+	$(".objectFour").hover(function(){
+		$(".ansFour").css("display", "block");
+	}, function(){
+		$(".ansFour").css("display", "none");
+	})
+	$(".objectFive").hover(function(){
+		$(".ansFive").css("display", "block");
+	}, function(){
+		$(".ansFive").css("display", "none");
+	})
+	$(".objectSix").hover(function(){
+		$(".ansSix").css("display", "block");
+	}, function(){
+		$(".ansSix").css("display", "none");
+	})
 
 });
+
+
+
+
+

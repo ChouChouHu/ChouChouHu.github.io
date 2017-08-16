@@ -1800,6 +1800,9 @@ body {
 
 .partner {
 	position: relative;
+	width: 100%;
+	height: 333vw;
+	overflow: hidden;
 
 	.backgroundImg {
 		position: absolute;
@@ -1811,6 +1814,13 @@ body {
 		width: 10vw;
 		top: 6.4vw;
 		left: 2vw;
+	}
+
+	.photo {
+		position: absolute;
+		width: 35vw;
+		top: 21vw;
+		left: 9.8vw;
 	}
 
 	.intro {
@@ -1830,11 +1840,37 @@ body {
 		}
 	}
 
+	.trackOneBtn {
+		position: absolute;
+		top: 121.5vw;
+		left: 15.2vw;
+		width: 5.5vw;
+		animation-iteration-count: infinite;
+		cursor: pointer;
+	}
+	.trackTwoBtn {
+		position: absolute;
+		top: 87.8vw;
+		left: 42.8vw;
+		width: 8.5vw;
+		animation-iteration-count: infinite;
+		cursor: pointer;
+	}
+	.trackThreeBtn {
+		position: absolute;
+		top: 90.5vw;
+		left: 79.7vw;
+		width: 8.5vw;
+		animation-iteration-count: infinite;
+		cursor: pointer;
+	}
+
 	.track {
 		position: absolute;
 		top: 109vw;
 		left: 52vw;
 		width: 35vw;
+		display: none;
 
 		h1 {
 			background: #4EB5FF;
@@ -1852,11 +1888,233 @@ body {
 		}
 	}
 
-	.photo {
+	.trackOne {
+		h1 {
+			background: #4EB5FF;
+		}
+	}
+
+	.trackTwo {
+		h1 {
+			background: $yellow;
+		}
+	}
+
+	.trackThree {
+		h1 {
+			background: #FF7167;
+		}
+	}
+
+	.default {
+		display: block;
+	}
+
+	.Xprofile {
 		position: absolute;
-		width: 35vw;
-		top: 21vw;
-		left: 9.8vw;
+		top: 165.5vw;
+		left: 11.5vw;
+		width: 40vw;
+		height: 25vw;
+		padding: 3vw;
+		font-size: 1.3vw;
+		letter-spacing: 0.05vw;
+		line-height: 2.15vw;
+		background: #00364B;
+		overflow-y: scroll;
+		display: none;
+
+		&::-webkit-scrollbar {
+			background-color: $grey;
+		    width: 1.2em;
+		}
+		 
+		&::-webkit-scrollbar-track {
+		    // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+		}
+		 
+		&::-webkit-scrollbar-thumb {
+		  background-color: #3C9195;
+		  border: 3px solid #3C9195;
+		  border-radius: 10px;
+		}
+
+		&::-webkit-scrollbar-button {
+			// ;
+		}
+	}
+
+	.XPone {
+		display: block;
+	}
+
+	.X {
+		position: absolute;
+		width: 24vw;
+		cursor: pointer;
+
+		img {
+			width: 100%;
+			filter: grayscale(1);
+		}
+
+		.text {
+			position: absolute;
+			top: 0;
+			width: 100%;
+			text-align: center;
+			line-height: 3.55vw;
+			font-size: 1.1vw;
+			letter-spacing: 0.05vw;
+			color: #00364B;
+			font-weight: bold;
+		}
+
+		&:hover {
+			img {
+				filter: grayscale(1) brightness(200%);;
+			}
+		}
+	}
+
+	.Xone {
+		top: 177.8vw;
+		left: 69.2vw;
+	}
+
+	.Xtwo {
+		top: 182.6vw;
+		left: 67vw;
+	}
+
+	.Xthree {
+		top: 188.7vw;
+		left: 69.5vw;
+	}
+
+	.Xfour {
+		top: 193.4vw;
+		left: 67.5vw;
+	}
+
+	.Xfive {
+		top: 198.2vw;
+		left: 64.6vw;
+	}
+
+	.active {
+		img {
+			filter: grayscale(0);
+		}
+	}
+
+	.none {
+		&:hover {
+			img {
+				filter: grayscale(1);
+			}
+		}
+	}
+
+	.object {
+		position: absolute;
+		cursor: pointer;
+
+		img {
+			width: 100%;
+		}
+
+		.dialog {
+			position: relative;
+			top: -11vw;
+			left: -3.5vw;
+			width: auto;
+			height: 5.8vw;
+			display: none;
+			z-index: 2;
+		}
+
+		.dialogTwo {
+			top: -13vw;
+		}
+
+		.dialogThree {
+			top: -8.5vw;
+			height: 4.8vw;
+		}
+
+		.dialogFive {
+			top: -18vw;
+			left: 7vw;
+			height: 6.1vw;
+		}
+
+		.dialogSix {
+			height: 4.8vw;
+		}
+
+		&:hover {
+			.dialog {
+				display: block;
+			}
+		}
+	}
+
+	.objectOne {
+		top: 226vw;
+		left: 31vw;
+		width: 7vw;
+	}
+	.objectTwo {
+		top: 224vw;
+		left: 38vw;
+		width: 8vw;
+	}
+	.objectThree {
+		top: 232vw;
+		left: 36vw;
+		width: 3vw;
+	}
+	.objectFour {
+		top: 228vw;
+		left: 45vw;
+		width: 7vw;
+	}
+	.objectFive {
+		top: 220vw;
+		left: 55vw;
+		width: 60vw;
+	}
+	.objectSix {
+		top: 227vw;
+		left: 59vw;
+		width: 17vw;
+	}
+
+	.objectAns {
+		position: absolute;
+		top: 237.5vw;
+		left: 35.5vw;
+		color: $grey;
+		line-height: 3.55vw;
+		font-size: 1.6vw;
+		letter-spacing: 0.2vw;
+		font-weight: bold;
+		display: none;
+	}
+
+	.photo_2 {
+		position: absolute;
+		top: 258vw;
+		left: 23.2vw;
+		width: 21vw;
+		height: 21vw;
+		overflow: hidden;
+
+		img {
+			position: absolute;
+			height: 100%;
+		}
 	}
 
 	.watchMore {
