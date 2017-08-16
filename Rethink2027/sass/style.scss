@@ -116,7 +116,7 @@ body {
 	transform: translate(0, -50vw);
 	background: $green;
 	color: black;
-	display: none;
+	// display: none;
 
 	.circle {
 		position: absolute;
@@ -166,10 +166,10 @@ body {
 			div {
 				position: relative;
 				background: $green;
-				width: 84%;
-				height: 84%;
-				left: 8%;
-				top: 8%;
+				width: 84vw;
+				height: 84vw;
+				left: 8vw;
+				top: 8vw;
 				margin-left: -1px;
 				border-radius: 50%;
 				border: 5px #50ADC0 solid;
@@ -194,10 +194,14 @@ body {
 				}
 
 				div {
-					width: 81%;
-					height: 81%;
+					// width: 81%;
+					// height: 81%;
 					left: 9.5%;
 					top: 9.5%;
+					width: 68vw;
+					height: 68vw;
+					// left: 7.6vw;
+					// top: 7.6vw;
 
 					.text {
 						// line-height: 68.2vw;
@@ -212,10 +216,13 @@ body {
 					}
 
 					div {
-						width: 76%;
-						height: 76%;
+						// width: 76%;
+						// height: 76%;
 						left: 12%;
 						top: 12%;
+						width: 51.68vw;
+						height: 51.68vw;
+
 
 						.text {
 							// line-height: 52vw;
@@ -230,8 +237,10 @@ body {
 						}
 
 						div {
-							width: 70%;
-							height: 70%;
+							// width: 70%;
+							// height: 70%;
+							width: 36.176vw;
+							height: 36.176vw;
 							left: 15%;
 							top: 15%;
 
@@ -246,8 +255,10 @@ body {
 							}
 
 							div {
-								width: 58%;
-								height: 58%;
+								// width: 58%;
+								// height: 58%;
+								width: 21vw;
+								height: 21vw;
 								left: 21%;
 								top: 21%;
 
@@ -263,8 +274,10 @@ body {
 								}
 
 								div {
-									width: 36%;
-									height: 36%;
+									// width: 36%;
+									// height: 36%;
+									width: 7.56vw;
+									height: 7.56vw;
 									left: 32%;
 									top: 32%;
 
@@ -577,62 +590,92 @@ body {
 	line-height: 24px;
 
 	.title {
-		font-size: 24px;
+		font-size: 25px;
+		font-weight: bold;
+		letter-spacing: 4px;
+		color: $lightGreen;
+		margin-bottom: 5px;
 	}
 
 	form {
 		text-align: center;
+		letter-spacing: 1px;
 
 		input {
+			margin: 15px 0;
 			width: 98%;
 			padding-left: 2%;
-			height: 35px;
-			font-size: 16px;
-			margin-bottom: 30px;
+			height: 42px;
+			font-size: 22px;
+			background: rgba(255, 255, 255, 0);
+			border: 2px solid $grey;
+			letter-spacing: 1px;
+			color: $grey;
+		}
+
+		::placeholder {
+			color: $grey;
 		}
 
 		.btn {
+			position: relative;
 			display: inline-block;
 			width: 100%;
-			padding-left: 3%;
-			height: 35px;
-			font-size: 16px;
-			background: white;
-			text-align: left;
+			// padding: 5px 0%;
+			height: 45px;
+			text-align: center;
 			cursor: pointer;
-			border: 0;
+			margin-top: 30px;
+			font-size: 22px;
+			border: 2px solid $lightGreen;
+			border-radius: 30px;
+			color: $lightGreen;
+			margin-bottom: 40px;
+			background: transparent;
+
+			&:hover {
+				background: $lightGreen;
+				color: $green;
+			}
 		}
 
 		a.btn {
-			color: black;
-			width: 97%;
-			line-height: 35px;
+			// color: black;
+			// width: 97%;
+			line-height: 45px;
 			text-decoration: none;
-			margin-bottom: 20px;
+			
 		}
 
 		.facebook, .google {
 			display: inline-block;
 			text-align: left;
-			width: 97%;
+			width: 95%;
 			height: 30px;
 			padding: 7px 0;
-			padding-left: 3%;
+			padding-left: 5%;
 			line-height: 20px;
 			border-radius: 8px;
 			font-size: 18px;
 			letter-spacing: 0.5px;
 			margin-bottom: 30px;
+			text-decoration: none;
+			color: white;
+			cursor: pointer;
 
 			img {
 				height: 100%;
 				vertical-align: -40%;
 			}
+
+			.small {
+				font-size: 0;
+			}
 		}
 
 		.facebook {
 			background: #3b5998;
-			text-indent: 8px;
+			text-indent: 3px;
 
 			img {
 				margin-right: 8px;
@@ -642,6 +685,10 @@ body {
 
 		.google {
 			background: #dc4e41;
+
+			img {
+				// height: 90%;
+			}
 		}
 
 		a {
@@ -650,6 +697,22 @@ body {
 	}
 }
 
+@media screen and (max-width: 800px) {
+	.logIn {
+		padding-left: 15%;
+		padding-right: 15%;
+
+		form {
+			.facebook, .google {
+				font-size: 0;
+
+				.small {
+					font-size: 18px;
+				}
+			}
+		}
+	}
+}
 
 // 關於迴響
 
@@ -1964,8 +2027,8 @@ body {
 			width: 100%;
 			text-align: center;
 			line-height: 3.55vw;
-			font-size: 1.1vw;
-			letter-spacing: 0.05vw;
+			font-size: 1.3vw;
+			letter-spacing: 0.1vw;
 			color: #00364B;
 			font-weight: bold;
 		}
@@ -2005,6 +2068,12 @@ body {
 	.active {
 		img {
 			filter: grayscale(0);
+		}
+
+		&:hover {
+			img {
+				filter: grayscale(0);
+			}
 		}
 	}
 
@@ -2093,10 +2162,11 @@ body {
 
 	.objectAns {
 		position: absolute;
-		top: 237.5vw;
+		top: 238vw;
 		left: 35.5vw;
+		width: 50vw;
 		color: $grey;
-		line-height: 3.55vw;
+		line-height: 2.55vw;
 		font-size: 1.6vw;
 		letter-spacing: 0.2vw;
 		font-weight: bold;
@@ -2310,7 +2380,7 @@ body {
 			appearance: none;
 			-moz-appearance: none;
 			-webkit-appearance: none;
-			font-size: 16px;
+			font-size: 18px;
 			width: 200px;
 			margin-top: 10px;
 			// background: transparent;
@@ -2373,12 +2443,17 @@ body {
 		color: $grey;
 	}
 
+	.br {
+		font-size: 1.53vw;
+		display: inline-block;
+	}
+
 	select {
 		appearance: none;
 		-moz-appearance: none;
 		-webkit-appearance: none;
-		font-size: 16px;
-		width: 91px;
+		font-size: 20px;
+		width: 9.5%;
 		margin-top: 10px;
 		// background: transparent;
 		padding: 10px;
@@ -2454,6 +2529,36 @@ body {
 			text-decoration: none;
 		}
 	}
+}
+
+@media screen and (max-width: 1000px) {
+
+	.form {
+		input {
+			width: 92%;
+		}
+
+		.br {
+			display: block;
+			font-size: 22px;
+			text-indent: 12px;
+			margin-top: 5px;
+		}
+
+		select {
+			width: 31%;
+			margin-top: 10px;
+			padding: 10px 3%;
+			margin-bottom: 10px;
+		}
+
+		.greyBackground {
+			.file {
+				width: 100%;
+			}
+		}
+	}
+
 }
 
 .wall {
