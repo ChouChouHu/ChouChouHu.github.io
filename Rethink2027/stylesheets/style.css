@@ -103,6 +103,7 @@ body {
   transform: translate(0, -50vw);
   background: #006464;
   color: black;
+  display: none;
 }
 /* line 121, ../sass/style.scss */
 .menu .circle {
