@@ -103,6 +103,42 @@ $(document).ready(function(){
 		// children for one layer; find for all child
 	})
 
+	$(".QAoneBtn").click(function(){
+		$(".QAsec").css("display", "none");
+		$(".QAone").css("display", "block");
+
+		$(".QAgrp img").removeClass("active");
+		$(this).addClass("active");
+	})
+	$(".QAtwoBtn").click(function(){
+		$(".QAsec").css("display", "none");
+		$(".QAtwo").css("display", "block");
+
+		$(".QAgrp img").removeClass("active");
+		$(this).addClass("active");
+	})
+	$(".QAthreeBtn").click(function(){
+		$(".QAsec").css("display", "none");
+		$(".QAthree").css("display", "block");
+
+		$(".QAgrp img").removeClass("active");
+		$(this).addClass("active");
+	})
+	$(".QAfourBtn").click(function(){
+		$(".QAsec").css("display", "none");
+		$(".QAfour").css("display", "block");
+
+		$(".QAgrp img").removeClass("active");
+		$(this).addClass("active");
+	})
+	$(".QAfiveBtn").click(function(){
+		$(".QAsec").css("display", "none");
+		$(".QAfive").css("display", "block");
+
+		$(".QAgrp img").removeClass("active");
+		$(this).addClass("active");
+	})
+
 	// partner
 
 	$(".trackOneBtn").click(function(){
@@ -117,6 +153,30 @@ $(document).ready(function(){
 	$(".trackThreeBtn").click(function(){
 		$(".track").css("display", "none");
 		$(".trackThree").css("display", "block");
+	})
+	$(".pointOneBtn").click(function(){
+		$(".track").css("display", "none");
+		$(".pointOne").css("display", "block");
+	})
+	$(".pointTwoBtn").click(function(){
+		$(".track").css("display", "none");
+		$(".pointTwo").css("display", "block");
+	})
+	$(".pointThreeBtn").click(function(){
+		$(".track").css("display", "none");
+		$(".pointThree").css("display", "block");
+	})
+	$(".pointFourBtn").click(function(){
+		$(".track").css("display", "none");
+		$(".pointFour").css("display", "block");
+	})
+	$(".pointFiveBtn").click(function(){
+		$(".track").css("display", "none");
+		$(".pointFive").css("display", "block");
+	})
+	$(".pointSixBtn").click(function(){
+		$(".track").css("display", "none");
+		$(".pointSix").css("display", "block");
 	})
 
 	$(".Xone").click(function(){

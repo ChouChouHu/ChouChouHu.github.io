@@ -1833,9 +1833,27 @@ body {
 			animation-fill-mode: forwards;
 			display: none;
 			cursor: auto;
+
+			a {
+				color: $yellow;
+			}
+
+			li {
+				list-style: circle;
+			}
+
+			ul {
+				margin-left: 18px;
+			}
+		}
+
+		.big {
+			animation-name: QandAbig;
 		}
 	}
 }
+
+
 
 @media screen and (max-width: 800px) {
 
@@ -1864,10 +1882,23 @@ body {
 
 	to {
 		padding: 15px 3%;
-	 	height: 150px;
+	 	height: 100px;
+	 	// height: 340px;
 	}
 }
 
+@keyframes QandAbig {
+	from {
+		padding: 0 3%;
+	 	height: 0;
+	}
+
+	to {
+		padding: 15px 3%;
+	 	// height: 100px;
+	 	height: 340px;
+	}
+}
 
 
 // partner
@@ -1952,6 +1983,29 @@ body {
 		left: 2vw;
 	}
 
+	.partnerGrp {
+		position: absolute;
+		left: 11.2vw;
+		top: 9vw;
+
+		a {
+			position: relative;
+			display: inline-block;
+			width: 5vw;
+
+			img {
+				position: absolute;
+				width: 100%;
+			}
+
+			img+img {
+				width: 120%;
+				margin-top: -4vw;
+				margin-left: 2vw;
+			}
+		}
+	}
+
 	.photo {
 		position: absolute;
 		width: 35vw;
@@ -1983,6 +2037,25 @@ body {
 		width: 5.5vw;
 		animation-iteration-count: infinite;
 		cursor: pointer;
+
+		img {
+			position: absolute;
+			width: 100%;
+			top: 0;
+		}
+
+		img+img {
+			display: none;
+		}
+
+		&:hover {
+			img {
+				display: none;
+			}
+			img+img {
+				display: block;
+			}
+		}
 	}
 	.trackTwoBtn {
 		position: absolute;
@@ -1991,6 +2064,25 @@ body {
 		width: 8.5vw;
 		animation-iteration-count: infinite;
 		cursor: pointer;
+
+		img {
+			position: absolute;
+			width: 100%;
+			top: 0;
+		}
+
+		img+img {
+			display: none;
+		}
+
+		&:hover {
+			img {
+				display: none;
+			}
+			img+img {
+				display: block;
+			}
+		}
 	}
 	.trackThreeBtn {
 		position: absolute;
@@ -1999,7 +2091,193 @@ body {
 		width: 8.5vw;
 		animation-iteration-count: infinite;
 		cursor: pointer;
+
+		img {
+			position: absolute;
+			width: 100%;
+			top: 0;
+		}
+
+		img+img {
+			display: none;
+		}
+
+		&:hover {
+			img {
+				display: none;
+			}
+			img+img {
+				display: block;
+			}
+		}
 	}
+
+	.pointOneBtn {
+		position: absolute;
+		top: 111vw;
+		left: 22.5vw;
+		width: 6.2vw;
+		animation-iteration-count: infinite;
+		cursor: pointer;
+
+		img {
+			position: absolute;
+			width: 100%;
+			top: 0;
+		}
+
+		img+img {
+			display: none;
+		}
+
+		&:hover {
+			img {
+				display: none;
+			}
+			img+img {
+				display: block;
+			}
+		}
+	}
+
+	.pointTwoBtn {
+		position: absolute;
+		top: 106.2vw;
+		left: 33.2vw;
+		width: 6.2vw;
+		animation-iteration-count: infinite;
+		cursor: pointer;
+
+		img {
+			position: absolute;
+			width: 100%;
+			top: 0;
+		}
+
+		img+img {
+			display: none;
+		}
+
+		&:hover {
+			img {
+				display: none;
+			}
+			img+img {
+				display: block;
+			}
+		}
+	}
+
+	.pointThreeBtn {
+		position: absolute;
+		top: 98.5vw;
+		left: 38vw;
+		width: 6.2vw;
+		animation-iteration-count: infinite;
+		cursor: pointer;
+
+		img {
+			position: absolute;
+			width: 100%;
+			top: 0;
+		}
+
+		img+img {
+			display: none;
+		}
+
+		&:hover {
+			img {
+				display: none;
+			}
+			img+img {
+				display: block;
+			}
+		}
+	}
+
+	.pointFourBtn {
+		position: absolute;
+		top: 95vw;
+		left: 53.7vw;
+		width: 6.2vw;
+		animation-iteration-count: infinite;
+		cursor: pointer;
+
+		img {
+			position: absolute;
+			width: 100%;
+			top: 0;
+		}
+
+		img+img {
+			display: none;
+		}
+
+		&:hover {
+			img {
+				display: none;
+			}
+			img+img {
+				display: block;
+			}
+		}
+	}
+	.pointFiveBtn {
+		position: absolute;
+		top: 89.8vw;
+		left: 61.5vw;
+		width: 6.2vw;
+		animation-iteration-count: infinite;
+		cursor: pointer;
+
+		img {
+			position: absolute;
+			width: 100%;
+			top: 0;
+		}
+
+		img+img {
+			display: none;
+		}
+
+		&:hover {
+			img {
+				display: none;
+			}
+			img+img {
+				display: block;
+			}
+		}
+	}
+	.pointSixBtn {
+		position: absolute;
+		top: 94.5vw;
+		left: 70.5vw;
+		width: 6.2vw;
+		animation-iteration-count: infinite;
+		cursor: pointer;
+
+		img {
+			position: absolute;
+			width: 100%;
+			top: 0;
+		}
+
+		img+img {
+			display: none;
+		}
+
+		&:hover {
+			img {
+				display: none;
+			}
+			img+img {
+				display: block;
+			}
+		}
+	}
+
 
 	.track {
 		position: absolute;
@@ -2039,6 +2317,12 @@ body {
 	.trackThree {
 		h1 {
 			background: #FF7167;
+		}
+	}
+
+	.pointOne, .pointTwo, .pointThree, .pointFour, .pointFive, .pointSix {
+		h1 {
+			background: white;
 		}
 	}
 
@@ -2163,25 +2447,38 @@ body {
 		cursor: pointer;
 
 		img {
+			position: absolute;
 			width: 100%;
+			top: 0;
+		}
+
+		img+img {
+			display: none;
+		}
+
+		&:hover {
+			img+img {
+				display: block;
+			}
 		}
 
 		.dialog {
 			position: relative;
-			top: -11vw;
-			left: -3.5vw;
+			top: -6vw;
+			left: -4vw;
 			width: auto;
 			height: 5.8vw;
 			display: none;
 			z-index: 2;
-		}
+		}	
 
 		.dialogTwo {
-			top: -13vw;
+			top: -6vw;
+			height: 6vw;
 		}
 
 		.dialogThree {
-			top: -8.5vw;
+			top: -6vw;
 			height: 4.8vw;
 		}
 
@@ -2210,27 +2507,57 @@ body {
 	.objectTwo {
 		top: 224vw;
 		left: 38vw;
-		width: 8vw;
+		width: 10.8vw;
+
+		&:hover {
+			.hover {
+				width: 8vw;
+			}
+		}
 	}
 	.objectThree {
 		top: 232vw;
 		left: 36vw;
-		width: 3vw;
+		width: 5vw;
+
+		&:hover {
+			.hover {
+				width: 3vw;
+			}
+		}
 	}
 	.objectFour {
 		top: 228vw;
 		left: 45vw;
-		width: 7vw;
+		width: 8.8vw;
+
+		&:hover {
+			.hover {
+				width: 7vw;
+			}
+		}
 	}
 	.objectFive {
 		top: 220vw;
 		left: 55vw;
 		width: 60vw;
+
+		&:hover {
+			.hover {
+				width: 60vw;
+			}
+		}
 	}
 	.objectSix {
 		top: 227vw;
 		left: 59vw;
-		width: 17vw;
+		width: 17.5vw;
+
+		&:hover {
+			.hover {
+				width: 17vw;
+			}
+		}
 	}
 
 	.objectAns {
