@@ -216,35 +216,90 @@ $(document).ready(function(){
 	})
 
 	$(".objectOne").hover(function(){
+		$(".objDefault").css("display", "none");
 		$(".ansOne").css("display", "block");
 	}, function(){
+		$(".objDefault").css("display", "block");
 		$(".ansOne").css("display", "none");
 	})
 	$(".objectTwo").hover(function(){
+		$(".objDefault").css("display", "none");
 		$(".ansTwo").css("display", "block");
 	}, function(){
+		$(".objDefault").css("display", "block");
 		$(".ansTwo").css("display", "none");
 	})
 	$(".objectThree").hover(function(){
+		$(".objDefault").css("display", "none");
 		$(".ansThree").css("display", "block");
 	}, function(){
+		$(".objDefault").css("display", "block");
 		$(".ansThree").css("display", "none");
 	})
 	$(".objectFour").hover(function(){
+		$(".objDefault").css("display", "none");
 		$(".ansFour").css("display", "block");
 	}, function(){
+		$(".objDefault").css("display", "block");
 		$(".ansFour").css("display", "none");
 	})
 	$(".objectFive").hover(function(){
+		$(".objDefault").css("display", "none");
 		$(".ansFive").css("display", "block");
 	}, function(){
+		$(".objDefault").css("display", "block");
 		$(".ansFive").css("display", "none");
 	})
 	$(".objectSix").hover(function(){
+		$(".objDefault").css("display", "none");
 		$(".ansSix").css("display", "block");
 	}, function(){
+		$(".objDefault").css("display", "block");
 		$(".ansSix").css("display", "none");
 	})
+	$(".objectSeven").hover(function(){
+		$(".objDefault").css("display", "none");
+		$(".ansSeven").css("display", "block");
+	}, function(){
+		$(".objDefault").css("display", "block");
+		$(".ansSeven").css("display", "none");
+	})
+	$(".objectEight").hover(function(){
+		$(".objDefault").css("display", "none");
+		$(".ansEight").css("display", "block");
+	}, function(){
+		$(".objDefault").css("display", "block");
+		$(".ansEight").css("display", "none");
+	})
+	$(".objectNine").hover(function(){
+		$(".objDefault").css("display", "none");
+		$(".ansNine").css("display", "block");
+	}, function(){
+		$(".objDefault").css("display", "block");
+		$(".ansNine").css("display", "none");
+	})
+	$(".objectTen").hover(function(){
+		$(".objDefault").css("display", "none");
+		$(".ansTen").css("display", "block");
+	}, function(){
+		$(".objDefault").css("display", "block");
+		$(".ansTen").css("display", "none");
+	})
+	$(".objectEleven").hover(function(){
+		$(".objDefault").css("display", "none");
+		$(".ansEleven").css("display", "block");
+	}, function(){
+		$(".objDefault").css("display", "block");
+		$(".ansEleven").css("display", "none");
+	})
+	$(".objectTwelve").hover(function(){
+		$(".objDefault").css("display", "none");
+		$(".ansTwelve").css("display", "block");
+	}, function(){
+		$(".objDefault").css("display", "block");
+		$(".ansTwelve").css("display", "none");
+	})
+
 
 });
 

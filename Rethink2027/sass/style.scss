@@ -1985,13 +1985,15 @@ body {
 
 	.partnerGrp {
 		position: absolute;
-		left: 11.2vw;
-		top: 9vw;
+		left: 11.5vw;
+		top: 10.5vw;
 
 		a {
 			position: relative;
 			display: inline-block;
 			width: 5vw;
+			margin-right: 0.7vw;
+			vertical-align: top;
 
 			img {
 				position: absolute;
@@ -1999,9 +2001,44 @@ body {
 			}
 
 			img+img {
-				width: 120%;
+				width: 110%;
+				top: 0;
+				left: 0;
 				margin-top: -4vw;
-				margin-left: 2vw;
+				margin-left: 1.2vw;
+				display: none;
+			}
+
+			.active {
+				display: block;
+			}
+
+			.threeDia {
+				margin-left: 1vw;
+			}
+
+			.fourImg {
+				width: 60%;
+				margin-top: -0.5vw;
+			}
+
+			.fourDia {
+				margin-left: 1vw;
+			}
+
+			.fiveImg {
+				width: 120%;
+				margin-left: -1vw;
+			}
+
+			.fiveDia {
+				margin-left: 0.8vw;
+			}
+
+			&:hover {
+				img+img {
+					display: block;
+				}
 			}
 		}
 	}
@@ -2483,13 +2520,18 @@ body {
 		}
 
 		.dialogFive {
-			top: -18vw;
+			top: -7vw;
 			left: 7vw;
 			height: 6.1vw;
 		}
 
 		.dialogSix {
 			height: 4.8vw;
+		}
+
+		.dialogSeven {
+			top: -7vw;
+			height: 6vw;
 		}
 
 		&:hover {
@@ -2551,11 +2593,80 @@ body {
 	.objectSix {
 		top: 227vw;
 		left: 59vw;
-		width: 17.5vw;
+		width: 15vw;
 
 		&:hover {
 			.hover {
-				width: 17vw;
+				width: 14.5vw;
+			}
+		}
+	}
+
+	.objectSeven {
+		top: 229vw;
+		left: 53vw;
+		width: 7.5vw;
+
+		&:hover {
+			.hover {
+				width: 3.7vw;
+			}
+		}
+	}
+
+	.objectEight {
+		top: 221.5vw;
+		left: 64vw;
+		width: 19vw;
+
+		&:hover {
+			.hover {
+				width: 19vw;
+			}
+		}
+	}
+
+	.objectNine {
+		top: 231vw;
+		left: 36vw;
+		width: 8.5vw;
+
+		&:hover {
+			.hover {
+				width: 6.7vw;
+			}
+		}
+	}
+	.objectTen {
+		top: 225vw;
+		left: 32vw;
+		width: 12vw;
+
+		&:hover {
+			.hover {
+				width: 11vw;
+			}
+		}
+	}
+	.objectEleven {
+		top: 231vw;
+		left: 50vw;
+		width: 8vw;
+
+		&:hover {
+			.hover {
+				width: 6.5vw;
+			}
+		}
+	}
+	.objectTwelve {
+		top: 226vw;
+		left: 54vw;
+		width: 8vw;
+
+		&:hover {
+			.hover {
+				width: 8vw;
 			}
 		}
 	}
@@ -2571,6 +2682,10 @@ body {
 		letter-spacing: 0.2vw;
 		font-weight: bold;
 		display: none;
+	}
+
+	.objDefault {
+		display: block;
 	}
 
 	.photo_2 {
