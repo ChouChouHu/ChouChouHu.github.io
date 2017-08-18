@@ -205,7 +205,7 @@ body {
 				display: none;
 				right: -6px;
 				top: -6px;
-				width: 104%;
+				width: 103.7%;
 				z-index: 0;
 			}
 
@@ -235,7 +235,7 @@ body {
 					display: none;
 					right: -6px;
 					top: -6px;
-					width: 104%;
+					width: 111.3%;
 					z-index: 0;
 				}
 
@@ -258,7 +258,7 @@ body {
 					}
 
 					img {
-						width: 113%;
+						width: 125%;
 					}
 
 					div {
@@ -2692,6 +2692,21 @@ body {
 
 
 
+@keyframes QandA {
+	from {
+		padding: 0 3%;
+	 	height: 0;
+	}
+
+	to {
+		padding: 15px 3%;
+	 	// height: 100px;
+	 	height: 100px;
+	}
+}
+
+
+
 @keyframes QandAbig {
 	from {
 		padding: 0 3%;
@@ -2773,7 +2788,7 @@ body {
 .partner {
 	position: relative;
 	width: 100%;
-	height: 333vw;
+	height: 345vw;
 	overflow: hidden;
 
 	.backgroundImg {
@@ -2850,9 +2865,15 @@ body {
 
 	.photo {
 		position: absolute;
-		width: 35vw;
-		top: 21vw;
-		left: 9.8vw;
+		width: 30vw;
+		top: 23.5vw;
+		left: 12vw;
+	}
+
+	.photoSvg {
+		width: 23.5vw;
+		top: 23vw;
+		left: 14vw;
 	}
 
 	.intro {
@@ -3204,6 +3225,10 @@ body {
 		&::-webkit-scrollbar-button {
 			// ;
 		}
+
+		img {
+			width: 100%;
+		}
 	}
 
 	.XPone {
@@ -3493,6 +3518,31 @@ body {
 		display: block;
 	}
 
+	.bagWindow {
+		position: fixed;
+		top: 0;
+		left: 0;
+		background: rgba(0, 0, 0, 0.8);
+		width: 100vw;
+		height: 100vh;
+		display: none;
+		z-index: 2;
+	}
+
+	.postit {
+		position: absolute;
+		top: 260.5vw;
+		left: 58.5vw;
+		width: 20vw;
+		height: 20vw;
+		overflow: hidden;
+
+		img {
+			position: absolute;
+			height: 100%;
+		}
+	}
+
 	.photo_2 {
 		position: absolute;
 		top: 258vw;
@@ -3510,14 +3560,14 @@ body {
 	.watchMore {
 		position: absolute;
 		width: 30vw;
-		top: 321vw;
+		top: 332vw;
 		left: 6vw;
 	}
 
 	.goProposal {
 		position: absolute;
 		width: 23.5vw;
-		top: 320.5vw;
+		top: 332.5vw;
 		left: 72.5vw;
 	}
 }
@@ -3529,6 +3579,14 @@ body {
 	padding: 0 22%;
 	padding-top: 105px;
 	padding-bottom: 120px;
+
+	.wallpaper {
+		position: fixed;
+		width: 100%;
+		left: 0;
+		bottom: 0;
+		z-index: -1;
+	}
 
 	.title {
 		width: 100%;
@@ -3887,6 +3945,14 @@ body {
 	padding-bottom: 100px;
 	text-align: center;
 
+	.wallpaper {
+		position: fixed;
+		width: 100%;
+		left: 0;
+		top: 0;
+		z-index: -1;
+	}
+
 	.title {
 		font-size: 24px;
 		line-height: 38px;
@@ -4135,6 +4201,7 @@ body {
 		z-index: 1;
 		width: 22vw;
 		height: 33vw;
+		opacity: 0.5;
 
 		.HMW {
 			// line-height: 1.5vw;

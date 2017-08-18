@@ -20,14 +20,35 @@
 		<img src="img/hamburger.svg">
 	</div>
 	<a class="logo" href="index.html">
-		<img src="img/logo.svg">
+		<img src="img/logo.png">
 	</a>
+
+	<!-- 未登入或已登入無提案：我要提案 -->
+	
 	<a class="proposal" href="logIn.html">
+
 		<img class="pulse" src="img/goProposalWord.svg">
 		<img src="img/goProposal.svg">
 	</a>
-</div>
+	<!-- 已提案未通過：提案審核中 -->
+<!-- 	
+	<a class="proposal" href="proposal_waiting.html">
+		<img class="pulse" src="img/waitProposalWord.svg">
+		<img src="img/waitProposal.svg">
+	</a> -->
+	<!-- 已提案已通過：我的提案 -->
+<!-- 	
+	<a class="proposal" href="proposal_wall.html">
+		<img class="myProposalBtn" class="pulse" src="img/myProposalWord.svg">
+		<img src="img/myProposal.svg">
+	</a> -->
 
+	<!-- p.s. 登入登出都用同一個，無文字 -->
+	<a class="logInBtn" href="logIn.html">
+		<img src="img/LDPG_login_close.png">
+		<img src="img/LDPG_login_open.png">
+	</a>
+</div>
 
 <div class="menu">
 	<div class="circle zoomIn animated">
@@ -71,14 +92,14 @@
 	</div>
 </div>
 
-
 <div class="wall">
+	<img class="wallpaper" src="img/proposal/action wall_bg.svg">
 	<div class="title">
 		這裡是<br>
 		<b>行動提案牆</b>
 	</div>
 	<div class="subTitle">動動滑鼠探索各種有趣的行動提案！</div>
-	<a class="proposal mine" href="proposal.html">
+	<a class="proposal mine">
 		<div class="HWM">
 			我們如何我們如何我們如何我們如何我們如何我們如何？
 		</div>
@@ -99,7 +120,7 @@
 			台北
 		</div>
 	</a>
-	<a class="proposal" href="proposal.html">
+	<a class="proposal">
 		<div class="HWM">
 			我們如何我們如何我們如何我們如何我們如何我們如何？
 		</div>
@@ -120,7 +141,7 @@
 			台北
 		</div>
 	</a>
-	<a class="proposal" href="proposal.html">
+	<a class="proposal">
 		<div class="HWM">
 			我們如何我們如何我們如何我們如何我們如何我們如何？
 		</div>
@@ -141,7 +162,7 @@
 			台北
 		</div>
 	</a>
-	<a class="proposal" href="proposal.html">
+	<a class="proposal">
 		<div class="HWM">
 			我們如何我們如何我們如何我們如何我們如何我們如何？
 		</div>
@@ -162,7 +183,7 @@
 			台北
 		</div>
 	</a>
-	<a class="proposal" href="proposal.html">
+	<a class="proposal">
 		<div class="HWM">
 			我們如何我們如何我們如何我們如何我們如何我們如何？
 		</div>
@@ -183,7 +204,7 @@
 			台北
 		</div>
 	</a>
-	<a class="proposal" href="proposal.html">
+	<a class="proposal">
 		<div class="HWM">
 			我們如何我們如何我們如何我們如何我們如何我們如何？
 		</div>
@@ -207,11 +228,6 @@
 </div>
 
 <script src="js/jQuery.min.js"> </script>
-<script src="js/scroll-up-bar.min.js"></script>
-<script src="js/easing.js"></script>
-<script type="text/javascript">
-    $('#topbar').scrollupbar();
-</script>
-</body>
+<script src="js/easing.js"></script></body>
 
 </html>

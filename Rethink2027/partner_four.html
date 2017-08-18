@@ -17,19 +17,40 @@
 
 <body>
 
-<div class="bar">
+<div class="bar" id="topbar">
 	<div class="burger">
 		<img src="img/hamburger.svg">
 	</div>
 	<a class="logo" href="index.html">
-		<img src="img/logo.svg">
+		<img src="img/logo.png">
 	</a>
+
+	<!-- 未登入或已登入無提案：我要提案 -->
+	
 	<a class="proposal" href="logIn.html">
+
 		<img class="pulse" src="img/goProposalWord.svg">
 		<img src="img/goProposal.svg">
 	</a>
-</div>
+	<!-- 已提案未通過：提案審核中 -->
+<!-- 	
+	<a class="proposal" href="proposal_waiting.html">
+		<img class="pulse" src="img/waitProposalWord.svg">
+		<img src="img/waitProposal.svg">
+	</a> -->
+	<!-- 已提案已通過：我的提案 -->
+<!-- 	
+	<a class="proposal" href="proposal_wall.html">
+		<img class="myProposalBtn" class="pulse" src="img/myProposalWord.svg">
+		<img src="img/myProposal.svg">
+	</a> -->
 
+	<!-- p.s. 登入登出都用同一個，無文字 -->
+	<a class="logInBtn" href="logIn.html">
+		<img src="img/LDPG_login_close.png">
+		<img src="img/LDPG_login_open.png">
+	</a>
+</div>
 
 <div class="menu">
 	<div class="circle zoomIn animated">
@@ -74,7 +95,7 @@
 </div>
 
 <div class="partner">
-	<img class="backgroundImg" src="img/partner/backgroundOne.svg">
+	<img class="backgroundImg" src="img/partner/backgroundFour.svg">
 	<a href="partner.html"><img class="back" src="img/partner/partnerBack.svg"></a>
 
 	<div class="partnerGrp">
@@ -100,10 +121,10 @@
 		</a>
 	</div>
 
-	<!-- <img class="photo" src="img/partner/photoOne.png"> -->
+	<img class="photo photoSvg" src="img/partner/photoFour.svg">
 
 	<div class="intro">
-		<h1>為職業教育發聲——職人</h1>
+		<h1>讓台灣看見職業發展的各種可能——職人</h1>
 		<br>
 		《職人》是臺灣第一本原創社會企業雜誌。以「所有人參與」、「書寫臺灣職人故事」以及「為全臺灣孩子出版」三個方向，讓家長、孩子認識臺灣各專業領域與技職科系的發展。期盼藉由探討教育問題和書寫職場、教育現場故事，改善社會對於學位文憑的迷思；藉由豐富的人物歷程，提供孩子們認識多元專業領域的機會。《職人》希望解開更多人心中的刻板印象，帶領孩子們認識是什麼樣的人用他們的工作及專業，撐起我們所生活的社會。
 	</div>
@@ -134,8 +155,8 @@
 		<h1>行動軌跡 - Action 1</h1>
 		<br>
 		<div class="text">
-			最一開始，展丞和另外三位都不是傳播相關科系出身的年輕人，創辦了「三峽客」這個媒體。在採訪的過程中和籌辦公司活動時，接觸到一些小朋友。他們發現這些小朋友上了國中後便得放棄自己的興趣來面對考試。於是展丞也開始檢視自己的生命歷程，要怎麼樣把自己念的書、拿到的文憑當作是輔助自己的一門專業，然後把自己的興趣當成職涯發展的主軸？<br>
-			從開始採訪到做職業認識這件事情之後，他們發現臺灣統計下來有超過兩萬一千多種職業。要求任何一位老師、家長和學生一一去瞭解這些職業，再從中挑一個是不可能的。然而，就因為這件事不可能我們就不去做嗎？於是這幾個年輕人展開了行動，力圖化不可能為可能。
+			最一開始，展丞和另外三位非傳播科系出身的夥伴，創辦了「Shock三峽客地方媒體」這個新媒體。在接採訪案和籌辦公司活動的過程中，陸續會接觸到一些小朋友，他們發現這些小朋友上了國中後便得放棄自己的興趣來面對考試，令展丞不禁思考，如果我們最終想要成為的人沒有在課本上面，那該怎麼辦？要怎麼樣把自己念的書、拿到的文憑當作是輔助自己的一門專業，然後回頭把自己的興趣當成職涯發展的主軸？<br>
+			從開始辦雜誌到做職業認識這件事情之後，他們發現臺灣統計下來有超過兩萬一千多種職業，看來要求任何一位老師、家長和學生一一去瞭解這些職業，再從中挑一個是不可能的。然而面對這看似不可解的問題，這幾個年輕人仍舊試圖展開了第一步，力圖化不可能為可能。
 		</div>
 	</div>
 
@@ -151,7 +172,7 @@
 		<h1>行動軌跡 - Action 3</h1>
 		<br>
 		<div class="text">
-			現在常常會有人主動找上門來，詢問職人有沒有適合的人才可以媒合。另外，正在嘗試摸索、轉換跑道的人也會找他們聊天。展丞說，透過聊天、給些建議，可以讓這些人知道自己在前往的路是有軌跡可循的，讓他們知道自己是有價值的。「技術性領域的人們心情可能會很孤單。因為社會看不到他們，他們自己也看不到未來，會產生非常多的質疑。這時如果我們去採訪他身邊同樣在努力的人，他也會認識到自己的價值。」讓不同需求的人們找到合適的出口，正是現階段「職人」能持續不斷影響他人的方式。
+			現在常常會有人主動找上門來，詢問職人有沒有適合的人才可以媒合。另外，正在嘗試摸索、轉換跑道的人也會找他們聊一聊關於職涯規劃的問題。展丞說，透過聊天、給些建議，可以讓這些人知道自己在前往的路是有軌跡可循的，讓他們知道自己是有價值的。「技術性領域的人們心情可能會很孤單。因為社會看不到他們，他們自己也看不到未來，會產生非常多的質疑。這時如果我們去採訪他身邊同樣在努力的人，他也會認識到自己的價值。」讓不同需求的人們找到合適的出口，正是現階段「職人」能持續不斷影響他人的方式。
 		</div>
 	</div>
 
@@ -159,7 +180,7 @@
 		Q：創辦「職人」的過程中，有遇過令人沮喪的時刻嗎？<br>
 		<br>
 		A：<br>
-		沒錢啊！職人前前後後花了超過 150 萬，這筆錢對一個 29 歲的男生應該是很好用，但為什麼要為了這件事情背貸款？這個過程中心情是很糾結的。會因為工作排序的問題得罪一些人，也因為財務支配不周，讓自己很累。這些都是很細膩、很複雜的東西，開始想的時候會亂七八糟、天花亂墜。簡單來說一路以來都是挫折，不論怎麼努力的去講，還是有很多人反著方向走。仍然有很多職業歧視、很多看不順眼的討論。但也許人生就是這樣子吧，如果有一件你想做的事情，全世界都會聯合起來反對你 (笑)。但如果我確信我喜歡這件事，全世界都反對我還是會去做，因為這件事情讓你太不爽了。
+		沒錢啊！職人前前後後花了超過 150 萬，這筆錢對一個 29 歲的男生應該是很好用，但為什麼要為了這件事情背貸款？這個過程中心情是很糾結的。會因為工作排序的問題得罪一些人，也因為財務支配不周，讓自己很累。這些都是很細膩、很複雜的東西，開始想的時候會亂七八糟、天花亂墜。簡單來說一路以來都是挫折，不論怎麼努力的去講，還是有很多人反著方向走。仍然有很多職業歧視、很多看不順眼的討論。但也許人生就是這樣子吧，不是有一句話說麼？當你想做一件事情，全宇宙都會來幫你，但我的經驗是，如果有一件你想做的事情，全世界都會聯合起來反對你 (笑)。但如果我確信我喜歡這件事，全世界都反對我還是會去做，因為這件事情讓你太不爽了。
 	</div>
 	<div class="Xprofile XPtwo">
 		Q：實地進行了那麼多次採訪，有沒有什麼特別的感想？<br>
@@ -199,25 +220,25 @@
 	<div class="X Xone active">
 		<img src="img/partner/Xone.svg">
 		<div class="text">
-			令人沮喪的時刻
+			當你想做一件事，全宇宙都會來...
 		</div>
 	</div>
 	<div class="X Xtwo">
 		<img src="img/partner/Xtwo.svg">
 		<div class="text">
-			為雜誌做採訪的感想
+			謙虛，源自於不斷擴大的視野
 		</div>
 	</div>
 	<div class="X Xthree">
 		<img src="img/partner/Xthree.svg">
 		<div class="text">
-			職人對自己的意義
+			新創公司裡的職人精神
 		</div>
 	</div>
 	<div class="X Xfour">
 		<img src="img/partner/Xfour.svg">
 		<div class="text">
-			一句重要的話
+			小步快跑，而且要一直跑下去
 		</div>
 	</div>
 <!-- 	<div class="X Xfive none">
@@ -276,7 +297,7 @@
 		A：讓自己保持清醒，用任何方式
 	</div>
 	<div class="objectAns ansFive">
-		點擊包包！
+		猜猜看，行動夥伴隨身的包包裡有些什麼法寶？點擊揭曉
 	</div>
 	<div class="objectAns ansSeven">
 		A：清道夫
@@ -285,8 +306,16 @@
 		A：你的善良必須有點鋒芒
 	</div>
 
+	<div class="bagWindow">
+		<img src="img/partner/04_bag_shouzu.svg">
+	</div>
+
+	<div class="postit">
+		<img src="img/partner/04_postit_shouzu.png" style="">
+	</div>
+
 	<div class="photo_2">
-		<!-- <img src="img/partner/photoOne_2.jpeg" style="left: -10vw;"> -->
+		<img src="img/partner/photoFour_2.jpg" style="left: -12vw;">
 	</div>
 
 	<a href="partner.html"><img class="watchMore" src="img/partner/watchMore.svg"></a>

@@ -15,16 +15,38 @@
 
 <body>
 
-<div class="bar">
+<div class="bar" id="topbar">
 	<div class="burger">
 		<img src="img/hamburger.svg">
 	</div>
 	<a class="logo" href="index.html">
-		<img src="img/logo.svg">
+		<img src="img/logo.png">
 	</a>
+
+	<!-- 未登入或已登入無提案：我要提案 -->
+	
 	<a class="proposal" href="logIn.html">
+
 		<img class="pulse" src="img/goProposalWord.svg">
 		<img src="img/goProposal.svg">
+	</a>
+	<!-- 已提案未通過：提案審核中 -->
+<!-- 	
+	<a class="proposal" href="proposal_waiting.html">
+		<img class="pulse" src="img/waitProposalWord.svg">
+		<img src="img/waitProposal.svg">
+	</a> -->
+	<!-- 已提案已通過：我的提案 -->
+<!-- 	
+	<a class="proposal" href="proposal_wall.html">
+		<img class="myProposalBtn" class="pulse" src="img/myProposalWord.svg">
+		<img src="img/myProposal.svg">
+	</a> -->
+
+	<!-- p.s. 登入登出都用同一個，無文字 -->
+	<a class="logInBtn" href="logIn.html">
+		<img src="img/LDPG_login_close.png">
+		<img src="img/LDPG_login_open.png">
 	</a>
 </div>
 
@@ -71,6 +93,7 @@
 </div>
 
 <div class="attention">
+	<img class="wallpaper" src="img/Registration_bg.svg">
 	<div class="title">
 		<img src="img/proposal/triangle.png">
 		提案注意事項
@@ -92,11 +115,7 @@
 </div>
 
 <script src="js/jQuery.min.js"> </script>
-<script src="js/scroll-up-bar.min.js"></script>
 <script src="js/easing.js"></script>
-<script type="text/javascript">
-    $('#topbar').scrollupbar();
-</script>
 </body>
 
 </html>

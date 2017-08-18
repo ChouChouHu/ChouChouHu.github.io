@@ -54,8 +54,8 @@ if (script_name == "index.html") {
 	$(document).ready(function(){
 		var adjust = ($(window).width() / 1280);
 		var height = 9216 * adjust; // total height (px)
-		var scroll_ms = 2000; // 2000 scroll pass (ms)
-		var stop_ms = 1200; // 1200
+		var scroll_ms = 3000; // 2000 scroll pass (ms)
+		var stop_ms = 2400; // 1200
 		var after = false;
 		var goldCount = 0;
 

@@ -300,6 +300,13 @@ $(document).ready(function(){
 		$(".ansTwelve").css("display", "none");
 	})
 
+	$(".objectFive").click(function(){
+		$(".bagWindow").css("display", "block")
+	})
+
+	$(".bagWindow").click(function(){
+		$(this).css("display", "none");
+	})
 
 });
 

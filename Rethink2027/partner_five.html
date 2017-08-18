@@ -17,19 +17,40 @@
 
 <body>
 
-<div class="bar">
+<div class="bar" id="topbar">
 	<div class="burger">
 		<img src="img/hamburger.svg">
 	</div>
 	<a class="logo" href="index.html">
-		<img src="img/logo.svg">
+		<img src="img/logo.png">
 	</a>
+
+	<!-- 未登入或已登入無提案：我要提案 -->
+	
 	<a class="proposal" href="logIn.html">
+
 		<img class="pulse" src="img/goProposalWord.svg">
 		<img src="img/goProposal.svg">
 	</a>
-</div>
+	<!-- 已提案未通過：提案審核中 -->
+<!-- 	
+	<a class="proposal" href="proposal_waiting.html">
+		<img class="pulse" src="img/waitProposalWord.svg">
+		<img src="img/waitProposal.svg">
+	</a> -->
+	<!-- 已提案已通過：我的提案 -->
+<!-- 	
+	<a class="proposal" href="proposal_wall.html">
+		<img class="myProposalBtn" class="pulse" src="img/myProposalWord.svg">
+		<img src="img/myProposal.svg">
+	</a> -->
 
+	<!-- p.s. 登入登出都用同一個，無文字 -->
+	<a class="logInBtn" href="logIn.html">
+		<img src="img/LDPG_login_close.png">
+		<img src="img/LDPG_login_open.png">
+	</a>
+</div>
 
 <div class="menu">
 	<div class="circle zoomIn animated">
@@ -74,7 +95,7 @@
 </div>
 
 <div class="partner">
-	<img class="backgroundImg" src="img/partner/backgroundOne.svg">
+	<img class="backgroundImg" src="img/partner/backgroundFive.svg">
 	<a href="partner.html"><img class="back" src="img/partner/partnerBack.svg"></a>
 
 
@@ -101,10 +122,10 @@
 		</a>
 	</div>
 
-	<!-- <img class="photo" src="img/partner/photoOne.png"> -->
+	<img class="photo photoSvg" src="img/partner/photoFive.svg">
 
 	<div class="intro">
-		<h1>讓文化變成一種生活方式——文化銀行</h1>
+		<h1>用活的方式保存我們的文化——文化銀行</h1>
 		<br>
 		文化銀行由一群關注到傳統文化正在流逝的青年所發起。以各種方式採集、保留臺灣傳統技藝及生活樣態，文化銀行不僅留存記憶的圖像及形體，更要發揮人文思考的價值，使文化不再只是名詞，而能以生動面貌重新活在你我的生活中。在文化銀行裡，你可以存入文化，讓記憶中的美好時光再次鮮活；你也能提取文化，在生活中發揮創意，重現傳統文化的價值。從 2014 年推出台北 1949 青年旅館開始，「文化銀行」團隊攜手展開了一段從文化體驗、文化保存，到文化再行銷的創業旅程。
 	</div>
@@ -260,16 +281,18 @@
 	</div>
 
 	<div class="Xprofile XPfive">
-		用 6000 元把想法變行動<br>
+		Q：用 6000 元採取的第一步行動<br>
 		<br>
+		A：<br>
 		文化銀行在一開始時要做的事情就非常清楚了。我們的目標是採訪 100 位台北在地的藝師，所需要的就是事前調查、擬定訪綱、執行訪談的心力和一台相機。以上這些如果不計入人力，其實都可以用零成本來取得。不管是徒步找藝師或借相機腳架，出外靠朋友應該都沒有什麼大問題。預算上我會分配來做支援性的東西。<br>
 		<br>
 		<br>
-		預算分配 <br>
-		4000 網站介面設計諮詢費<br>
-		2000 行銷課程 (線上或線下都行！)<br>
+		<img src="img/partner/05_budget.svg"><br>
 		<br>
-		為什麼會這樣分配 <br>
+		<br>
+		Q：為什麼會這樣分配 <br>
+		<br>
+		A：<br>
 		當時在設計文化銀行的網站時，是用我們自己做的來的方式，拉了一個介面。現在回頭看，其實 UI/UX 設計都不太符合讀者需求，功能也不夠完善。如果讓我重來一次，我會先請一位有經驗的設計師做諮詢！<br>
 		另外，因為我們幾個夥伴都不是行銷背景，一開始在 FB 上做文章的推播，根本不會操作社群！走了很多冤枉路。
 	</div>
@@ -278,25 +301,25 @@
 	<div class="X Xone active">
 		<img src="img/partner/Xone.svg">
 		<div class="text">
-			文化保存是政府的責任？
+			這個世界沒有大魔王
 		</div>
 	</div>
 	<div class="X Xtwo">
 		<img src="img/partner/Xtwo.svg">
 		<div class="text">
-			支持團隊往下做的動力
+			一生找到一件我願意...
 		</div>
 	</div>
 	<div class="X Xthree">
 		<img src="img/partner/Xthree.svg">
 		<div class="text">
-			克服低潮的作法
+			走過低潮的秘密武器
 		</div>
 	</div>
 	<div class="X Xfour">
 		<img src="img/partner/Xfour.svg">
 		<div class="text">
-			那些很值得的失敗故事
+			我們拿失敗當下酒菜
 		</div>
 	</div>
 	<div class="X Xfive none">
@@ -348,7 +371,7 @@
 		A：吃飽睡好
 	</div>
 	<div class="objectAns ansFive">
-		點擊包包！
+		猜猜看，行動夥伴隨身的包包裡有些什麼法寶？點擊揭曉
 	</div>
 	<div class="objectAns ansNine">
 		A：辦公室、公館的健身房
@@ -363,8 +386,16 @@
 		A：摩托車
 	</div>
 
+	<div class="bagWindow">
+		<img src="img/partner/05_bag_bank.svg">
+	</div>
+
+	<div class="postit">
+		<img src="img/partner/05_postit_bank.png" style="">
+	</div>
+
 	<div class="photo_2">
-		<!-- <img src="img/partner/photoOne_2.jpeg" style="left: -10vw;"> -->
+		<img src="img/partner/photoFive_2.jpg" style="left: -10vw;">
 	</div>
 
 	<a href="partner.html"><img class="watchMore" src="img/partner/watchMore.svg"></a>
