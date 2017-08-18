@@ -13,9 +13,12 @@ body {
 	font-family: PingFangTC-regular, Heiti TC, Meiryo, "微軟正黑體", Microsoft JhengHei, "標楷體", DFKai-sb !important;
 	background: $green;
 	color: white;
-	width: 100vw;
-	height: 7.2vw;
-	overflow-x: hidden;
+}
+
+.bgsound {
+	position: absolute;
+	display: none;
+	z-index: -1;
 }
 
 .bar {
@@ -25,7 +28,7 @@ body {
 	left: 0;
 	height: 5.46875vw;
 	width: 100%;
-	z-index: 3;
+	z-index: 4;
 
 	// background: #000066;
 	// border-bottom: 2px black solid;
@@ -68,7 +71,7 @@ body {
 	.proposal {
 		position: absolute;
 		// right: 24px;
-		right: 2vw;
+		right: 6vw;
 		// top: 16px;
 		top: 1.3vw;
 		// font-size: 16px;
@@ -82,12 +85,48 @@ body {
 			position: absolute;
 			right: 0;
 			// width: 10em;
-			width: 13vw;
+			width: 17vw;
 			animation-iteration-count: 3;
+
+			right: 1vw;
+		}
+
+		img+img {
+			right: 0;
+		}
+
+		.myProposalBtn {
+			right: 0;
 		}
 
 		.pulse {
 			display: none;
+		}
+	}
+
+	.logInBtn {
+		position: absolute;
+		right: 2vw;
+		top: 1.3vw;
+
+		img {
+			position: absolute;
+			width: 3.5vw;
+			right: 0;
+		}
+
+		img+img {
+			display: none;
+		}
+
+		&:hover {
+			img {
+				display: none;
+			}
+
+			img+img {
+				display: block;
+			}
 		}
 	}
 }
@@ -119,7 +158,7 @@ body {
 	width: 100vw;
 	height: 200vw;
 	font-size: 0;
-	z-index: 3;
+	z-index: 5;
 	transform: translate(0, -50vw);
 	background: $green;
 	color: black;
@@ -384,8 +423,34 @@ body {
 .LandingPage {
 	position: relative;
 	width: 100vw;
-	// height: 680vw;
-	// overflow: hidden;
+	height: 721vw;
+	overflow: hidden;
+
+	.black {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100vw;
+
+		.blackBackground {
+			position: absolute;
+			width: 100%;
+			top: 0;
+			z-index: 3;
+		}	
+		.blackStage {
+			position: absolute;
+			width: 100%;
+			top: 6.9vw;
+			z-index: 3;
+		}	
+
+		.ani24 {
+			z-index: 3;
+			opacity: 0.2;
+		}
+	}
+
 	.background {
 		position: absolute;
 		top: 0;
@@ -408,8 +473,29 @@ body {
 			top: 0;
 		}
 
-		.one, .two, .three, .four {
+		.one, .two, .three, .four, .talk {
 			display: none;
+		}
+
+		.talk {
+			display: none;
+			width: 18vw;
+			margin-top: -9vw;
+			margin-left: -2vw;
+
+			img {
+				width: 100%;
+			}
+
+			.talking {
+				position: absolute;
+				font-size: 1.3vw;
+				letter-spacing: 0.1vw;
+				font-weight: bold;
+				color: #084863;
+				margin-top: 2.1vw;
+				margin-left: 2.7vw;
+			}
 		}
 	}
 
@@ -431,11 +517,11 @@ body {
 
 	.largeLogo {
 		position: absolute;
-		width: 15vw;
-		left: 43vw;
-		top: 7.5vw;
-		z-index: 2;
-		display: none;
+		width: 13vw;
+		left: 44vw;
+		top: 8.5vw;
+		z-index: 4;
+		// display: none;
 	}
 	.brickOne {
 		position: absolute;
@@ -466,46 +552,58 @@ body {
 	}
 	.gold {
 		position: absolute;
-		width: 1.8vw;
+		width: 1.6vw;
 		left: 43.85vw;
 		top: 29.5vw;
 		z-index: 1;
 	}
 
 	.goldArea {
-		position: absolute;
-		width: 8vw;
+		position: fixed;
+		// width: 8vw;
 		left: 7vw;
-		top: 6vw;
-		font-size: 1.2em;
+		top: 5.5vw;
+		z-index: 4;
+		font-size: 1.4vw;
 		color: $lightGreen;
 		font-weight: bold;
-		letter-spacing: 2px;
+		// letter-spacing: 2px;
+		letter-spacing: 0.1vw;
 		display: none;
 
 		.goldTwo {
-			width: 1.8vw;
-			vertical-align: -20%;
+			width: 1.4vw;
+			vertical-align: -53%;
 		}
 	}
 
 	.sentence {
+		// bump word
 		position: absolute;
-		width: 100%;
-		text-align: center;
-		color: $yellow;
-		top: 16vw;
-		z-index: 1;
-		font-size: 2.4vw;
+		background: #084863;
+		width: 36%;
+		height: 9vw;
+		left: 30%;
+		top: 9vw;
+		padding: 2vw;
+		text-align: left;
+		color: #ffcd32;
+		font-size: 1.45vw;
+		line-height: 2.3vw;
+		font-weight: bold;
 		letter-spacing: 0.15vw;
-		text-indent: 1.45vw; 
-		// animation-iteration-count: infinite;
+		text-indent: 1.45vw;
 		animation-duration: 1s;
 		display: none;
+
+		border: 6px solid #6cffbd;
+		z-index: 5;
+		margin-left: -3px;
 	}
 
 
 	.proposal {
+		// proposal card
 		position: absolute;
 		left: 65vw;
 		top: 7vw;
@@ -526,11 +624,17 @@ body {
 
 		.HWM {
 			position: relative;
-			padding: 20px;
+			// padding: 20px;
 			text-align: left;
 			color: $yellow;
 			font-weight: bold;
-			letter-spacing: 1px;
+			// letter-spacing: 1px;
+
+			line-height: 1.5vw;
+			padding: 1.6vw;
+			letter-spacing: 0.1vw;
+			font-size: 1.3vw;
+			height: 3.3vw;
 		}
 
 		.picture {
@@ -606,6 +710,718 @@ body {
 		}
 	}
 
+	.indexProposal {
+		z-index: 1;
+		width: 22vw;
+		height: 33vw;
+
+		.HMW {
+			// line-height: 1.5vw;
+			// padding: 1.6vw;
+			// letter-spacing: 0.1vw;
+			// font-size: 1.4vw;
+		}
+
+		.picture {
+			height: 22vw;
+			margin-bottom: 1.6vw;
+
+			.content {
+				font-size: 1.1vw;
+				line-height: 1.5vw;
+				padding: 2vw;
+
+				.name {
+					font-size: 1.3vw;
+					margin-top: 2.2vw;
+					margin-bottom: 4.2vw;
+				}
+			}
+		}
+
+		.hashtag {
+			font-size: 1.1vw;
+		}
+
+		.location {
+			font-size: 1.1vw;
+
+			img {
+				width: 1.8vw;
+			}
+		}
+	}
+
+}
+
+.footer {
+	position: relative;
+	background: #084863;
+	width: 100%;
+	height: 10vw;
+
+	img {
+		position: absolute;
+		width: 100%;
+	}
+
+	.superLink {
+		position: absolute;
+		// background: red;
+		width: 3vw;
+		height: 3vw;
+		left: 78.65vw;
+		top: 4vw;
+	}
+}
+
+.partnerWindow {
+	position: fixed;
+	width: 83vw;
+	top: -1.5vw;
+	left: 1vw;
+	display: none;
+
+	img {
+		width: 100%;
+	}
+
+	.close {
+		position: absolute;
+		width: 3vw;
+		top: 6.1vw;
+		right: 1.3vw;
+		cursor: pointer;
+
+		img {
+			position: absolute;
+			display: block;
+			width: 100%;
+		}
+
+		img+img {
+			display: none;
+		}
+
+		&:hover {
+			img+img {
+				display: block;
+			}
+		}
+	}
+
+	.windowText {
+		position: absolute;
+		width: 30vw;
+		top: 25vw;
+		left: 45vw;
+		font-size: 1.2vw;
+		line-height: 1.7vw;
+	}
+	.superLink {
+		position: absolute;
+		display: inline-block;
+		width: 20vw;
+		height: 5vw;
+		top: 44vw;
+		left: 60vw;
+		background: transparent;
+		cursor: pointer;
+	}
+}
+
+.ani {
+	position: absolute;
+	display: block;
+	// width: 49vw;
+
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		display: none;
+	}
+	.sub1 {
+		display: block;
+	}
+
+	.subDialog {
+		display: block;
+		height: 8vw;
+	}
+	
+	&:hover {
+		.subHover, .subDialog {
+			opacity: 1;
+			display: block;
+		}
+	}
+}
+
+.obj {
+	position: absolute;
+	// width: 49vw;
+
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+	}
+}
+
+.hover {
+	position: absolute;
+	cursor: pointer;
+	// width: 49vw;
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+	}
+	.light {
+		display: none;
+	}
+	&:hover {
+		.dark {
+			display: none;
+		}
+		.light {
+			display: block;
+		}
+	}
+
+	.subHover {
+		position: absolute;
+		width: 100%;
+		height: 130%;
+		display: none;
+		margin-top: 12vw;
+
+		.hoverImg {
+			height: 100%;
+		}
+	}
+
+	.close {
+		position: absolute;
+		display: none;
+		height: 3vw;
+		left: 40.2vw;
+		top: 13.35vw;
+
+		img {
+			position: absolute;
+			display: block;
+			height: 100%;
+		}
+
+		img+img {
+			display: none;
+		}
+
+		&:hover {
+			img+img {
+				display: block;
+			}
+		}
+	}
+}
+
+.obj0 {
+	top: 648vw;
+	left: 39vw;
+	height: 40vw;
+}
+
+.obj1 {
+	// forest
+	top: 635vw;
+	left: -13vw;
+	height: 105vw;
+}
+
+.obj2 {
+	// nine floor
+	top: 534vw;
+	left: -28vw;
+	height: 130vw;
+}
+
+.obj3 {
+	// motor
+	top: 555vw;
+	left: 41vw;
+	height: 12vw;
+}
+
+.obj3 {
+	// motor
+	top: 555vw;
+	left: 41vw;
+	height: 12vw;
+}
+
+.obj4 {
+	// partner
+	top: 458vw;
+	left: -33.2vw;
+	height: 80vw;
+}
+
+.obj5 {
+	top: 382vw;
+	left: -26vw;
+	height: 52vw;
+}
+
+.obj6 {
+	top: 362vw;
+	left: 80vw;
+	height: 45vw;
+}
+
+.obj7 {
+	top: 214vw;
+	left: -22vw;
+	height: 95vw;
+}
+
+.obj8 {
+	top: 218vw;
+	left: 55vw;
+	height: 69vw;
+}
+
+.obj9 {
+	top: 141vw;
+	left: -17.5vw;
+	height: 54vw;
+}
+
+.obj10 {
+	top: 115vw;
+	left: 0vw;
+	height: 86vw;
+}
+
+.obj11 {
+	top: 157vw;
+	left: 59vw;
+	height: 22vw;
+}
+
+.obj12 {
+	top: 47.5vw;
+	left: 0vw;
+	height: 47.5vw;
+}
+
+.obj13 {
+	top: 6.8vw;
+	left: 0vw;
+	height: 46.38vw;
+}
+
+.obj14 {
+	// joker
+	top: 680vw;
+	left: 45vw;
+	height: 15.5vw;
+	display: none;
+
+	.jokerSaying {
+		position: absolute;
+		width: 21vw;
+		// background: red;
+		margin-left: 4.5vw;
+		margin-top: 1.9vw;
+		color: #084863;
+		font-size: 1.2vw;
+		letter-spacing: 0.1vw;
+		line-height: 1.5vw;
+
+		b {
+			font-weight: bold;
+		}
+	}
+}
+
+
+.hover1 {
+	top: 543vw;
+	left: 45.5vw;
+	height: 22vw;
+}
+
+.hover2 {
+	top: 420vw;
+	left: 44.5vw;
+	height: 22vw;
+}
+
+.hover3 {
+	top: 294vw;
+	left: 47.5vw;
+	height: 22vw;
+}
+
+.hover4 {
+	top: 185vw;
+	left: 45vw;
+	height: 22vw;
+}
+
+.hover5 {
+	top: 35.5vw;
+	left: 6.2vw;
+	height: 11vw;
+}
+
+.hover6 {
+	top: 35.5vw;
+	left: 12.4vw;
+	height: 11vw;
+}
+
+.hover7 {
+	top: 35.5vw;
+	left: 18.6vw;
+	height: 11vw;
+}
+
+.hover8 {
+	top: 35.5vw;
+	left: 24.8vw;
+	height: 11vw;
+}
+
+.hover9 {
+	top: 35.5vw;
+	left: 30.8vw;
+	height: 11vw;
+}
+
+.hover10 {
+	top: 35.5vw;
+	left: 63.5vw;
+	height: 11vw;
+}
+
+.hover11 {
+	top: 35.5vw;
+	left: 69.7vw;
+	height: 11vw;
+}
+
+.hover12 {
+	top: 35.5vw;
+	left: 75.9vw;
+	height: 11vw;
+}
+
+.hover13 {
+	top: 35.5vw;
+	left: 82.1vw;
+	height: 11vw;
+}
+
+.hover14 {
+	top: 35.5vw;
+	left: 88.3vw;
+	height: 11vw;
+}
+
+.hover15 {
+	top: 24.5vw;
+	left: 3vw;
+	height: 11vw;
+}
+
+.hover16 {
+	top: 24.5vw;
+	left: 9vw;
+	height: 11vw;
+}
+
+.hover17 {
+	top: 24.5vw;
+	left: 15vw;
+	height: 11vw;
+}
+
+.hover18 {
+	top: 24.5vw;
+	left: 21vw;
+	height: 11vw;
+}
+
+.hover19 {
+	top: 24.5vw;
+	left: 27vw;
+	height: 11vw;
+}
+
+.hover20 {
+	top: 24.5vw;
+	left: 67vw;
+	height: 11vw;
+}
+
+.hover21 {
+	top: 24.5vw;
+	left: 73vw;
+	height: 11vw;
+}
+
+.hover22 {
+	top: 24.5vw;
+	left: 79vw;
+	height: 11vw;
+}
+
+.hover23 {
+	top: 24.5vw;
+	left: 85vw;
+	height: 11vw;
+}
+
+.hover24 {
+	top: 24.5vw;
+	left: 91vw;
+	height: 11vw;
+}
+
+
+
+.ani1 {
+	top: 572vw;
+	left: 55vw;
+	height: 89.163vw;
+}
+
+.ani2 {
+	top: 629vw;
+	left: 77vw;
+	height: 20vw;
+	cursor: pointer;
+
+	.subDialog {
+		margin-left: -8vw;
+		margin-top: 4vw;
+	}
+
+	&:hover {
+		img {
+			opacity: 0;
+		}
+	}
+}
+
+.ani3 {
+	top: 543vw;
+	left: 73vw;
+	height: 24vw;
+}
+
+.ani4 {
+	top: 459vw;
+	left: 50vw;
+	height: 84vw;
+}
+
+.ani5 {
+	top: 476vw;
+	left: 78vw;
+	height: 19vw;
+
+	.subDialog {
+		margin-left: -8vw;
+		margin-top: 0vw;
+	}
+
+	&:hover {
+		img {
+			opacity: 0;
+		}
+	}
+}
+
+.ani6 {
+	top: 447.5vw;
+	left: 7vw;
+	height: 25vw;
+
+	.subDialog {
+		margin-left: 6vw;
+		margin-top: -7vw;
+		display: none;
+	}
+
+	&:hover {
+		.subDialog {
+			display: block;
+		}
+	}
+}
+
+.ani7 {
+	top: 438vw;
+	left: 42vw;
+	height: 8.5vw;
+}
+
+.ani8 {
+	top: 396vw;
+	left: 49vw;
+	height: 30vw;
+
+	.subDialog {
+		margin-left: 21vw;
+		margin-top: -9vw;
+		display: none;
+	}
+
+	&:hover {
+		.subDialog {
+			display: block;
+		}
+	}
+}
+
+.ani9 {
+	top: 327.6vw;
+	left: 34.6vw;
+	height: 78vw;
+}
+
+.ani10 {
+	top: 341vw;
+	left: -4.5vw;
+	height: 48vw;
+}
+
+.ani11 {
+	top: 338vw;
+	left: 13vw;
+	height: 18vw;
+	.subDialog {
+		margin-left: 17vw;
+		margin-top: -3vw;
+	}
+
+	&:hover {
+		img {
+			opacity: 0;
+		}
+	}
+}
+
+.ani12 {
+	top: 308vw;
+	left: 30vw;
+	height: 15.5vw;
+}
+
+.ani13 {
+	top: 249vw;
+	left: 5.7vw;
+	height: 42vw;
+}
+
+.ani14 {
+	top: 239vw;
+	left: 28.5vw;
+	height: 13vw;
+	.subDialog {
+		margin-left: -11vw;
+		margin-top: -4vw;
+	}
+
+	&:hover {
+		img {
+			opacity: 0;
+		}
+	}
+}
+
+.ani15 {
+	top: 278vw;
+	left: 74vw;
+	height: 12vw;
+}
+
+.ani16 {
+	top: 265vw;
+	left: 58vw;
+	height: 23vw;
+	.subDialog {
+		margin-left: 6vw;
+		margin-top: -7vw;
+	}
+
+	&:hover {
+		img {
+			opacity: 0;
+		}
+	}
+}
+
+.ani17 {
+	top: 200.5vw;
+	left: -3vw;
+	height: 20.4vw;
+}
+
+.ani18 {
+	top: 105vw;
+	left: -12vw;
+	height: 22.5vw;
+}
+
+.ani19 {
+	top: 105vw;
+	left: 58.5vw;
+	height: 22.5vw;
+}
+
+.ani20 {
+	top: 39.7vw;
+	left: 2vw;
+	height: 6.5vw;
+}
+
+.ani21 {
+	top: 39.7vw;
+	left: 37vw;
+	height: 6.5vw;
+}
+
+.ani22 {
+	top: 39.7vw;
+	left: 59.2vw;
+	height: 6.5vw;
+}
+
+.ani23 {
+	top: 39.7vw;
+	left: 94vw;
+	height: 6.5vw;
+}
+
+.ani24 {
+	top: -5vw;
+	left: 0vw;
+	height: 47vw;
+	opacity: 1;
+}
+
+.ani25 {
+	top: 695vw;
+	left: 43vw;
+	height: 12vw;
 }
 
 
@@ -1874,18 +2690,7 @@ body {
 	display: none;
 }
 
-@keyframes QandA {
-	from {
-		padding: 0 3%;
-	 	height: 0;
-	}
 
-	to {
-		padding: 15px 3%;
-	 	height: 100px;
-	 	// height: 340px;
-	}
-}
 
 @keyframes QandAbig {
 	from {
@@ -3102,6 +3907,7 @@ body {
 	}
 
 	.proposal {
+		// proposal card
 		position: relative;
 		display: inline-block;
 		vertical-align: top;
@@ -3124,6 +3930,7 @@ body {
 			color: $yellow;
 			font-weight: bold;
 			letter-spacing: 1px;
+			height: 38px;
 		}
 
 		.picture {
@@ -3204,107 +4011,297 @@ body {
 	}
 }
 
-.proposalPage {
+
+
+// proposal vertifying...
+.vertify {
 	position: relative;
-	padding: 0 10%;
-	padding-top: 180px;
-	padding-bottom: 150px;
-	font-size: 20px;
+	width: 100vw;
 
-
-	.title {
-		font-size: 24px;
-		margin-bottom: 20px;
+	.vertifyPage {
+		position: absolute;
+		width: 100%;
 	}
 
-	.map {
-		position: relative;
+
+	.proposal {
+		// proposal card
+		position: absolute;
+		left: 63vw;
+		top: 7vw;
 		display: inline-block;
-		width: 63%;
-		margin-left: -20px;
-		margin-top: 50px;
+		vertical-align: top;
+		width: 280px;
+		// height: 400px;
+		margin: 0px 2.5%;
+		margin-bottom: 100px;
+		line-height: 20px;
+		cursor: pointer;
+		color: white;
+		text-decoration: none;
+		background: $green;
+		border: 4px solid white;
+		border-radius: 4px;
 
-		.mapImg {
-			position: absolute;
-			width: 25%;
-			top: 100px;
+		.HWM {
+			position: relative;
+			// padding: 20px;
+			text-align: left;
+			color: $yellow;
+			font-weight: bold;
+			// letter-spacing: 1px;
+
+			line-height: 1.5vw;
+			padding: 1.6vw;
+			letter-spacing: 0.1vw;
+			font-size: 1.3vw;
+			height: 3.3vw;
 		}
 
-		.dialogImg {
-			position: absolute;
-			width: 80%;
-			left: 20%;
-		}
-
-		.dialog {
-			position: absolute;
-			font-size: 18px;
-			letter-spacing: 1px;
-			line-height: 26px;
-			width: 50%;
-			top: 50px;
-			left: 40%;
-		}
-	}
-
-	.picture {
-		display: inline-block;
-		margin-left: 2%;
-		width: 33%;
-
-		img {
+		.picture {
+			position: relative;
 			width: 100%;
-			vertical-align: top;
+			height: 280px;
+			// border-radius: 50%;
+			overflow: hidden;
+			// background: blue;
+			margin-bottom: 20px;
+
+			.content {
+				position: absolute;
+				top: 0;
+				font-size: 14px;
+				line-height: 18px;
+				padding: 25px;
+				text-align: left;
+				z-index: 2;
+				opacity: 0;
+
+				.name {
+					width: 100%;
+					text-align: center;
+					margin-top: 30px;
+					margin-bottom: 60px;
+					font-size: 16px;
+				}
+			}
+
+			img {
+				height: 100%;
+			}
+		}
+
+		.hashtag {
+			position: relative;
+			font-size: 14px;
+			font-weight: bold;
+			width: 76%;
+			left: 0%;
+			bottom: 0;
+			text-align: center;
+			// font-size: 18px;
+			padding-bottom: 16px;
+			color: $lightGreen;
+		}
+		
+		.location {
+			position: absolute;
+			font-size: 14px;
+			font-weight: bold;
+			right: 20px;
+			margin-top: -40px;
+			color: $lightGreen;
+
+			img {
+				vertical-align: middle;
+			}
+		}
+
+		&:hover {
+			.picture {
+				img {
+					transition-duration: 0.5s;
+					filter: grayscale(100%) blur(8px) brightness(50%);
+				}
+				.content {
+					transition-duration: 0.5s;
+					opacity: 1;
+				}
+			}
 		}
 	}
 
-	.quote {
-		position: relative;
-		margin-top: 70px;
-		width: 40%;
-		left: 7%;
-		text-align: center;
-		// background: red;
+	.vertifyProposal {
+		z-index: 1;
+		width: 22vw;
+		height: 33vw;
 
-		img {
-			position: absolute;
-			left: 0;
-			top: -16px;
-			width: 30px;
+		.HMW {
+			// line-height: 1.5vw;
+			// padding: 1.6vw;
+			// letter-spacing: 0.1vw;
+			// font-size: 1.4vw;
 		}
-		img+img {
-			top: 0;
-			left: 95%;
+
+		.picture {
+			height: 22vw;
+			margin-bottom: 1.6vw;
+
+			.content {
+				font-size: 1.1vw;
+				line-height: 1.5vw;
+				padding: 2vw;
+
+				.name {
+					font-size: 1.3vw;
+					margin-top: 2.2vw;
+					margin-bottom: 4.2vw;
+				}
+			}
+		}
+
+		.hashtag {
+			font-size: 1.1vw;
+		}
+
+		.location {
+			font-size: 1.1vw;
+
+			img {
+				width: 1.8vw;
+			}
+		}
+	}
+
+	.vertifyBtn {
+		position: absolute;
+		display: inline-block;
+		padding: 1vw 2vw;
+		font-size: 1.4vw;
+		letter-spacing: 0.2vw;
+		border: 2px solid $lightGreen;
+		color: $lightGreen;
+		border-radius: 30px;
+		left: 43vw;
+		top: 43vw;
+		cursor: pointer;
+		text-decoration: none;
+
+		&:hover {
+			background: $lightGreen;
+			color: #004661;
 		}
 	}
 }
 
-@media screen and (max-width: 1024px) {
-	.proposalPage {
-		.map {
-			width: 110%;
-			margin-left: -45px;
-
-			.mapImg {
-				display: none;
-			}
-			.dialogImg {
-				position: relative;
-				width: 100%;
-				left: 0;
-			}
-			.dialog {
-				position: absolute;
-				width: 65%;
-				left: 24%;
-			}
-		}
-		.picture {
+@media screen and (max-width: 700px) {
+	.indexProposal {
+		.location {
 			display: none;
 		}
-		.quote {
-			width: 86%;
-		}
 	}
 }
 
+// .proposalPage {
+// 	position: relative;
+// 	padding: 0 10%;
+// 	padding-top: 180px;
+// 	padding-bottom: 150px;
+// 	font-size: 20px;
+
+
+// 	.title {
+// 		font-size: 24px;
+// 		margin-bottom: 20px;
+// 	}
+
+// 	.map {
+// 		position: relative;
+// 		display: inline-block;
+// 		width: 63%;
+// 		margin-left: -20px;
+// 		margin-top: 50px;
+
+// 		.mapImg {
+// 			position: absolute;
+// 			width: 25%;
+// 			top: 100px;
+// 		}
+
+// 		.dialogImg {
+// 			position: absolute;
+// 			width: 80%;
+// 			left: 20%;
+// 		}
+
+// 		.dialog {
+// 			position: absolute;
+// 			font-size: 18px;
+// 			letter-spacing: 1px;
+// 			line-height: 26px;
+// 			width: 50%;
+// 			top: 50px;
+// 			left: 40%;
+// 		}
+// 	}
+
+// 	.picture {
+// 		display: inline-block;
+// 		margin-left: 2%;
+// 		width: 33%;
+
+// 		img {
+// 			width: 100%;
+// 			vertical-align: top;
+// 		}
+// 	}
+
+// 	.quote {
+// 		position: relative;
+// 		margin-top: 70px;
+// 		width: 40%;
+// 		left: 7%;
+// 		text-align: center;
+// 		// background: red;
+
+// 		img {
+// 			position: absolute;
+// 			left: 0;
+// 			top: -16px;
+// 			width: 30px;
+// 		}
+// 		img+img {
+// 			top: 0;
+// 			left: 95%;
+// 		}
+// 	}
+// }
+
+// @media screen and (max-width: 1024px) {
+// 	.proposalPage {
+// 		.map {
+// 			width: 110%;
+// 			margin-left: -45px;
+
+// 			.mapImg {
+// 				display: none;
+// 			}
+// 			.dialogImg {
+// 				position: relative;
+// 				width: 100%;
+// 				left: 0;
+// 			}
+// 			.dialog {
+// 				position: absolute;
+// 				width: 65%;
+// 				left: 24%;
+// 			}
+// 		}
+// 		.picture {
+// 			display: none;
+// 		}
+// 		.quote {
+// 			width: 86%;
+// 		}
+// 	}
+// }

@@ -54,8 +54,8 @@ if (script_name == "index.html") {
 	$(document).ready(function(){
 		var adjust = ($(window).width() / 1280);
 		var height = 9216 * adjust; // total height (px)
-		var scroll_ms = 2000; // scroll pass (ms)
-		var stop_ms = 1200;
+		var scroll_ms = 2000; // 2000 scroll pass (ms)
+		var stop_ms = 1200; // 1200
 		var after = false;
 		var goldCount = 0;
 
@@ -149,13 +149,96 @@ if (script_name == "index.html") {
 			after = true;
 			$(".bar .proposal .pulse").fadeOut();
 			$(".bar .proposal .pulse").removeClass("animated");
+
+			$(".black").fadeOut();
+			// $(".bgsound").css("display", "block");
+
+			var talkTime = 1300;
+
+			setTimeout(function(){
+				$(".talk").css("display", "block");
+			}, talkTime)
+
+			// $(".obj14").fadeIn();
+			setTimeout(function(){
+				$(".obj14").css("display", "block");
+			}, talkTime + 1500)
+
+			setTimeout(function(){
+				$(".talk").css("display", "none");
+				var say = "登登登等 ~ Yo！歡迎來到行動者大道，這個世界還多的事你不知道。";
+				var count = 0;     
+				  
+				function fir(){   
+				    if(count <= say.length){   
+				        $(".saying").html(say.substring(0, count));   
+				        count++;   
+				    } else{   
+				        window.clearInterval(say);      
+				    }   
+				}  
+
+				var typewriter = window.setInterval(fir, 50);
+			}, talkTime + 2000); 
+
+			setTimeout(function(){
+				say = "就 ~ 順著感覺往上探索啦，旅程的開始不能太平凡吧。";
+				count = 0;     
+				  
+				function sec(){   
+				    if(count <= say.length){   
+				        $(".saying").html(say.substring(0, count));   
+				        count++; 
+				    } else{
+				        window.clearInterval(say);      
+				    }   
+				}  
+
+				var typewriter = window.setInterval(sec, 50);
+			}, talkTime + 5500);
+
+			setTimeout(function(){
+				say = "罐頭的故事閃一邊，想法到行動他他他才是亮點，那驚喜只是附加、有細節不怕找碴，手癢的朋友就滑鼠點一下，看！迴響ㄟ麻吉隆底家！";
+				count = 0;     
+				  
+				function thi(){   
+				    if(count <= say.length){   
+				        $(".saying").html(say.substring(0, count));   
+				        count++;
+				    } else{
+				        window.clearInterval(say);  
+				    }   
+				}  
+
+				var typewriter = window.setInterval(thi, 150);
+			}, talkTime + 9500);
+
+			setTimeout(function(){
+				say = "怎麼樣？你也有Freestyle麼！？";
+				count = 0;     
+				  
+				function fou(){   
+				    if(count <= say.length){   
+				        $(".saying").html(say.substring(0, count));   
+				        count++;
+				    } else{
+				        window.clearInterval(say);  
+				    }   
+				}  
+
+				var typewriter = window.setInterval(fou, 50);
+			}, talkTime + 15000);
+
+
+			// 上面是在滑完之後執行的動畫，諸如小人走出來，小丑對話
 	    }, scroll_ms + stop_ms);
 
 
 		$(window).scroll(function () {
 
 			// walk path animation
-			var scrollBtm = $(document).height() - $(window).height() - $(window).scrollTop();
+			var scrollBtm = $(document).height() - $(window).height() - $(window).scrollTop() - 150 * adjust;
+			// 150 = footer hieght
 			// num == scroll interval static
 			// num_top, num_left == start position
 			var add = 630; // adjust
@@ -163,29 +246,29 @@ if (script_name == "index.html") {
 			var one_top = 8270 + add;
 			var one_left = 250;
 			var two = 475;
-			var two_top = 6600 + add;
-			var two_left = 1060;
+			var two_top = 6750 + add;
+			var two_left = 960;
 			var three = 1200;
 			var three_top = 6520 + add;
 			var three_left = 320;
 			var four = 400;
-			var four_top = 5070 + add;
-			var four_left = 880;
+			var four_top = 5130 + add;
+			var four_left = 910;
 			var five = 1200;
-			var five_top = 4920 + add;
+			var five_top = 4980 + add;
 			var five_left = 280;
 			var six = 390;
 			var six_top = 3470 + add;
 			var six_left = 980;
 			var seven = 1100;
-			var seven_top = 3220 + add;
-			var seven_left = 280;
+			var seven_top = 3470 + add;
+			var seven_left = 320;
 			var eight = 350;
-			var eight_top = 1970 + add;
-			var eight_left = 900;
+			var eight_top = 2050 + add;
+			var eight_left = 970;
 			var nine = 400;
-			var nine_top = 1720 + add;
-			var nine_left = 300;
+			var nine_top = 1900 + add;
+			var nine_left = 330;
 			var ten = 105;
 			var ten_top = 1100 + add;
 			var ten_left = 632;
@@ -258,7 +341,6 @@ if (script_name == "index.html") {
 			// alert((( 7802 - $(window).scrollTop() ) / 23 ) + 23 + "vw");
 			// alert($(window).width());
 		});
-
 	});
 		
 };
