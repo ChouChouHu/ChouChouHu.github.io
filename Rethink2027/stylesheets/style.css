@@ -3885,8 +3885,9 @@ body {
   height: 22.5vw;
   overflow: hidden;
   margin-bottom: 1.5vw;
+  text-align: center;
 }
-/* line 4290, ../sass/style.scss */
+/* line 4291, ../sass/style.scss */
 .proposalSize .picture .content {
   position: absolute;
   top: 0;
@@ -3898,7 +3899,7 @@ body {
   z-index: 2;
   opacity: 0;
 }
-/* line 4304, ../sass/style.scss */
+/* line 4305, ../sass/style.scss */
 .proposalSize .picture .content .name {
   width: 100%;
   text-align: center;
@@ -3908,13 +3909,13 @@ body {
   text-align: left;
   font-weight: bold;
 }
-/* line 4318, ../sass/style.scss */
+/* line 4319, ../sass/style.scss */
 .proposalSize .picture img {
   position: relative;
   height: 100%;
   z-index: 1;
 }
-/* line 4325, ../sass/style.scss */
+/* line 4326, ../sass/style.scss */
 .proposalSize .picture img + img {
   position: absolute;
   filter: grayscale(40%) blur(8px);
@@ -3924,7 +3925,7 @@ body {
   height: 120%;
   z-index: 0;
 }
-/* line 4336, ../sass/style.scss */
+/* line 4337, ../sass/style.scss */
 .proposalSize .hashtag {
   position: relative;
   font-size: 1.2vw;
@@ -3937,7 +3938,7 @@ body {
   padding-bottom: 16px;
   color: #50ADC0;
 }
-/* line 4351, ../sass/style.scss */
+/* line 4352, ../sass/style.scss */
 .proposalSize .location {
   position: absolute;
   font-size: 14px;
@@ -3946,34 +3947,34 @@ body {
   margin-top: -3.5vw;
   color: #50ADC0;
 }
-/* line 4360, ../sass/style.scss */
+/* line 4361, ../sass/style.scss */
 .proposalSize .location img {
   vertical-align: bottom;
   width: 1.3vw;
 }
-/* line 4369, ../sass/style.scss */
+/* line 4370, ../sass/style.scss */
 .proposalSize:hover .HWM {
   transition-duration: 0.7s;
   color: #ffcd32;
 }
-/* line 4374, ../sass/style.scss */
+/* line 4375, ../sass/style.scss */
 .proposalSize:hover .HWM .icon img + img {
   transition-duration: 0.7s;
   opacity: 1;
 }
-/* line 4382, ../sass/style.scss */
+/* line 4383, ../sass/style.scss */
 .proposalSize:hover .picture img {
   transition-duration: 0.4s;
   filter: grayscale(40%) blur(8px);
   opacity: 0;
 }
-/* line 4388, ../sass/style.scss */
+/* line 4389, ../sass/style.scss */
 .proposalSize:hover .picture img + img {
   transition-duration: 0.7s;
   filter: grayscale(100%) blur(8px) brightness(50%);
   opacity: 0.5;
 }
-/* line 4394, ../sass/style.scss */
+/* line 4395, ../sass/style.scss */
 .proposalSize:hover .picture .content {
   transition-duration: 0.7s;
   opacity: 1;
