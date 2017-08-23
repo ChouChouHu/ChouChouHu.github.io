@@ -53,7 +53,7 @@ if (script_name == "index.html") {
 
 	$(document).ready(function(){
 		var adjust = ($(window).width() / 1280);
-		var height = 9216 * adjust; // total height (px)
+		var height = 9326 * adjust; // total height (px)
 		var scroll_ms = 3000; // 2000 scroll pass (ms)
 		var stop_ms = 2400; // 1200
 		var after = false;
@@ -119,7 +119,7 @@ if (script_name == "index.html") {
 			$(".walk").css("top", 510 * adjust + "px");
 			$(".walk").css("left", 695 * adjust + "px");
 			$(".walk").animate({top: 415 * adjust + "px"}, 150);
-			$(".LandingPage .indexProposal").css("display", "none");	
+			// $(".LandingPage .indexProposal").css("display", "none");	
 			$(".sentence").fadeOut();	
 			setTimeout(function(){
 				$(".LandingPage .indexProposal").css("display", "block");	
@@ -139,7 +139,7 @@ if (script_name == "index.html") {
 	    // people come in animation
 	    setTimeout(function(){
 	    	$(".walk").css("display", "block");
-	    	$(".walk").css("top", 8900 * adjust +"px");
+	    	$(".walk").css("top", 9000 * adjust +"px");
 	    	$(".walk").css("left", 250 * adjust +"px");
 	    	$(".walk").addClass("walkAnimation");
 			walkMotion(2, 50);
@@ -237,11 +237,11 @@ if (script_name == "index.html") {
 		$(window).scroll(function () {
 
 			// walk path animation
-			var scrollBtm = $(document).height() - $(window).height() - $(window).scrollTop() - 150 * adjust;
-			// 150 = footer hieght
+			var scrollBtm = $(document).height() - $(window).height() - $(window).scrollTop() - 140 * adjust;
+			// 140 = footer hieght
 			// num == scroll interval static
 			// num_top, num_left == start position
-			var add = 630; // adjust
+			var add = 730; // adjust
 			var one = 1360;
 			var one_top = 8270 + add;
 			var one_left = 250;
