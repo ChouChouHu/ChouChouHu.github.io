@@ -101,7 +101,7 @@ if (script_name == "index.html") {
 			$(".walk").css("left", 620 * adjust + "px");
 			$(".walk").animate({top: 415 * adjust + "px"}, 150);
 			$(".sentence").css("display", "none");
-			$(".LandingPage .proposal").fadeOut();
+			$(".LandingPage .indexProposal").fadeOut();
 			setTimeout(function(){	
 				$(".sentence").css("display", "block");
 			}, 100);
@@ -119,10 +119,10 @@ if (script_name == "index.html") {
 			$(".walk").css("top", 510 * adjust + "px");
 			$(".walk").css("left", 695 * adjust + "px");
 			$(".walk").animate({top: 415 * adjust + "px"}, 150);
-			$(".LandingPage .proposal").css("display", "none");	
+			$(".LandingPage .indexProposal").css("display", "none");	
 			$(".sentence").fadeOut();	
 			setTimeout(function(){
-				$(".LandingPage .proposal").css("display", "block");	
+				$(".LandingPage .indexProposal").css("display", "block");	
 			}, 100);
 			setTimeout(function(){
 				$(".walk").animate({top: 515 * adjust + "px"}, 150);
