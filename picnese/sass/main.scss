@@ -1,0 +1,559 @@
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+
+$color: #804f21;
+
+@import "base/font";
+@import "base/bar";
+@import "indexOld/animation";
+@import "indexOld/letterbox";
+
+.fixedBar {
+	.introBtn {
+		position: absolute;
+		left: 170px;
+		margin-left: 2%;
+		top: 12px;
+		cursor: pointer;
+
+		img {
+			width: 33px;
+			vertical-align: -78%;
+			margin-right: -2px;
+		}
+
+		color: #804f21;
+		font-weight: bold;
+		font-size: 14px;
+	}
+}
+
+.main {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	bottom: 0;
+	// background: red;
+	overflow: hidden;
+
+	.intro {
+		display: none;
+		position: absolute;
+		z-index: 999;
+		width: 100%;
+		height: 100vh;
+		bottom: 0;
+		background: rgba(0, 0, 0, 0.3);
+		cursor: pointer;
+
+		img {
+			position: absolute;
+			width: 100%;
+			bottom: 0;
+		}
+	}
+
+	.backgroundSvg {
+		position: absolute;
+		width: 90%;
+		left: 5%;
+		bottom: 16vw;
+	}
+
+	.ground {
+		position: absolute;
+		width: 100%;
+		bottom: 0;
+		left: 0;
+	}
+
+	.wood {
+		position: absolute;
+		width: 5.5%;
+		bottom: 16vw;
+		left: 7.2%;
+	}
+
+	.discuss {
+		position: absolute;
+		width: 7%;
+		bottom: 16vw;
+		left: 32%;
+
+		img {
+			width: 100%;
+		}
+
+		&:hover {
+			bottom: 16.3vw;
+		}
+	}
+
+	.treee {
+		position: absolute;
+		bottom: 8vw;
+		width: 26%;
+		left: 37.5%;
+		// background: red;
+
+		.treeSvg {
+			width: 100%;
+		}
+
+		.HANZI {
+			position: absolute;
+			width: 40%;
+			left: 32%;
+			bottom: 19.5vw;
+
+			animation-iteration-count: infinite;
+			cursor: pointer;
+		}
+
+		input.search {
+			position: absolute;
+			bottom: 1.3vw;
+			left: 27%;
+			padding-left: 10px;
+			width: 30%;
+			height: 18px;
+			border: 0px;
+			border-radius: 15px;
+			background: rgba(0, 0, 0, 0);
+			// background: red;
+		}
+
+		input.searchBtn {
+			position: absolute;
+			bottom: 1.3vw;
+			left: 64.5%;
+			width: 21px;
+			height: 21px;
+			background: rgba(0, 0, 0, 0);
+			// background: red;
+			border: 0px;
+			cursor: pointer;
+		}
+	}
+
+	.cave {
+		position: absolute;
+		width: 24%;
+		left: 12.1%;
+		bottom: 1.53vw;
+		// background: red;
+
+		.caveSvg {
+			width: 100%;
+		}
+		
+		.mouse {
+			position: absolute;
+			width: 50%;
+			left: 22%;
+			bottom: 2.3vw;
+
+			animation-iteration-count: infinite;
+			cursor: pointer;
+		}
+
+	}
+
+	.tableGame {
+		position: absolute;
+		display: inline-block;
+		width: 13%;
+		left: 59%;
+		bottom: 15vw;
+		cursor: pointer;
+
+		img {
+			width: 100%;
+		}
+
+		.two {
+			display: none;
+		}
+
+		&:hover {
+
+			.one {
+				display: none;
+			}
+
+			.two {
+				display: block;
+			}
+		}
+	}
+
+	.guess {
+		position: absolute;
+		display: inline-block;
+		width: 7%;
+		left: 71%;
+		bottom: 16.6vw;
+		cursor: pointer;
+
+		img {
+			width: 100%;
+		}
+
+		.two {
+			display: none;
+		}
+
+		&:hover {
+
+			.one {
+				display: none;
+			}
+
+			.two {
+				display: block;
+			}
+		}
+	}
+
+	.era {
+		position: absolute;
+		display: inline-block;
+		width: 19%;
+		left: 22%;
+		bottom: 36vw;
+		cursor: pointer;
+
+		img {
+			width: 100%;
+		}
+
+		&:hover {
+			bottom: 36.3vw;
+		}
+
+	}
+
+	.wordRoom {
+		position: absolute;
+		display: inline-block;
+		width: 14%;
+		left: 11%;
+		bottom: 21vw;
+		cursor: pointer;
+
+		img {
+			width: 100%;
+		}
+
+		&:hover {
+			bottom: 21.3vw;
+		}
+
+	}
+
+	.news {
+		position: absolute;
+		display: inline-block;
+		width: 16%;
+		left: 69%;
+		bottom: 27vw;
+		cursor: pointer;
+
+		img {
+			width: 100%;
+		}
+
+		&:hover {
+			// bottom: 31.3vw;
+		}
+	}
+
+	.facebook {
+		// width: 100%;
+		left: 74.4%;
+		bottom: 29.5vw;
+		position: absolute;
+		display: inline-block;
+		color: white;
+		font-size: 0.88vw;
+		text-decoration: none;
+		z-index: 999;
+
+		img {
+			width: 1.3vw;
+			vertical-align: bottom;
+			margin-left: 1px;
+		}
+
+		&:hover {
+			// background: red;
+			// just for test
+		}
+	}
+
+	.letterbox {
+		// other code in index_old
+
+		width: 6%;
+		bottom: 16vw;
+		left: 81%;
+
+		.text {
+			bottom: 2.2vw;
+			left: 50px;
+		}
+	}
+
+	.cooperation {
+		position: absolute;
+		width: 26%;
+		left: 64%;
+		bottom: 5vw;
+		cursor: pointer;
+	}
+}
+
+.context {
+	color: grey;
+	font-size: 9px;
+	position: absolute;
+	bottom: 3px;
+	right: 5px;
+	text-align: right;
+}
+
+
+// contact us
+.chouWindow {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 999999;
+	background: rgba(255, 255, 255, 0.3);
+	display: none;
+  
+	.chouWindowContent {
+		position: absolute;
+		width: 36%;
+		left: 32%;
+		top: 10%;
+		height: 80%;
+		padding: 12px;
+		margin-left: -12px;
+		background: rgba(255, 255, 255, 0.85);
+		border-radius: 15px;
+		text-align: center;
+
+			.inside {
+				position: relative;
+				width: 90%;
+				padding-left: 5%;
+				padding-right: 5%;
+				height: 100%;
+				// background: rgba();
+				border-radius: 15px;
+				border: 2px white dashed;
+				color: #595757;
+
+				.title {
+					position: relative;
+					// margin-bottom: 5vw;
+					font-size: 16px;
+					color: #2ea7e0;
+					margin-top: 30px;
+					margin-bottom: 27px;
+				}
+
+				.introText {
+					position: relative;
+					font-weight: bold;
+					font-size: 13px;
+					margin-bottom: 20px;
+				}
+
+				.data {
+					font-weight: bold;
+					position: relative;
+					width: 80%;
+					left: 10%;
+					// background: red;
+					text-align: left;
+					font-size: 13px;
+					line-height: 24px;
+					// margin-bottom: 4vw;
+
+					input {
+						border: 0px;
+						border-radius: 15px;
+						height: 25px;
+						width: 90%;
+						margin-bottom: 4px;
+						font-size: 16px;
+						padding-left: 10px;
+					}
+
+					textarea {
+						border: 0px;
+						border-radius: 15px;
+						width: 90%;
+						margin-bottom: 12px;
+						font-size: 16px;
+						padding-left: 10px;
+					}
+
+					.btn {
+						font-weight: bold;
+						position: relative;
+						display: inline-block;
+						left: 50%;
+						width: 90px;
+						margin-left: -45px;
+						height: 34px;
+						background: linear-gradient(#c1e4ef, #93d3e5);
+						border-radius: 10px;
+						font-size: 14px;
+						line-height: 34px;
+						color: #186896;
+						cursor: pointer;
+						text-decoration: none;
+						text-align: center;
+						padding-left: 0;
+
+						letter-spacing: 0.1vw;
+					}
+				}
+			}
+
+			.closeBtn {
+				display: none;
+				position: absolute;
+				width: 50px;
+				height: 46px;
+				top: 0;
+				right: 10px;
+				background: rgba(255, 255, 255, 0);
+				color: #dadada;
+				font-size: 30px;
+				line-height: 36px;
+				border-bottom-left-radius: 10px;
+				border-bottom-right-radius: 10px;
+				cursor: pointer;
+			}
+	}
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+
+	body {
+		width: 1000px;
+		overflow-x: scroll;
+	}
+
+	.main {
+		width: 1000px;
+		// overflow-x: scroll;
+
+		.backgroundSvg {
+			// width: 700px;
+			// left: 150px;
+			bottom: 150px;
+		}
+
+		.treee {
+			bottom: 80px;
+
+			.HANZI {
+				bottom: 195px;
+			}
+
+			// .introBtn {
+			// 	bottom: 72px;
+			// }
+
+			input.search, input.searchBtn {
+				bottom: 13px;
+			}
+		}
+
+		.wood {
+			bottom: 160px;
+		}
+
+		.discuss {
+			bottom: 160px;
+
+			&:hover {
+				bottom: 163px;
+			}
+		}
+
+		.cave {
+			bottom: 14.5px;
+
+			.mouse {
+				bottom: 23px;
+			}
+		}
+
+		.tableGame {
+			bottom: 150px;
+		}
+
+		.guess {
+			bottom: 166px;
+		}
+
+		.era {
+			bottom: 360px;
+
+			&:hover {
+				bottom: 363px;
+			}
+		}
+
+		.wordRoom {
+			bottom: 210px;
+
+			&:hover {
+				bottom: 213px;
+			}
+		}
+
+		.cooperation {
+			bottom: 50px;
+		}
+
+		.news {
+			bottom: 270px;
+		}
+
+		.facebook {
+			font-size: 9.216px;
+			bottom: 295px;
+
+			img {
+				width: 15.36px;
+			}
+		}
+
+		.letterbox {
+			bottom: 160px;
+		}
+
+	}
+
+	.ground {
+		width: 1000px;
+	}
+
+	.chouWindow {
+		width: 1000px;
+	}
+}
+

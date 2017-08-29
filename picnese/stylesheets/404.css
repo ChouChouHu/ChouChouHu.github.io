@@ -1,0 +1,23 @@
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+/* line 5, ../sass/404.scss */
+.notFound {
+  position: relative;
+  width: 320px;
+  left: 50%;
+  margin-left: -160px;
+}
+
+/* line 12, ../sass/404.scss */
+.backhome {
+  position: relative;
+  display: inline-block;
+  width: 180px;
+  left: 50%;
+  margin-left: -90px;
+}
+/* line 19, ../sass/404.scss */
+.backhome img {
+  width: 100%;
+}

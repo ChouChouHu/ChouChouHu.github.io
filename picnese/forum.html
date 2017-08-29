@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<meta name="viewport" content="width=device-width, initial-scale=0.3, maximum-scale=2.0, user-scalable=1">
+<link href="stylesheets/reset.css" media="screen, projection" rel="stylesheet" type="text/css" /> 
+<link href="stylesheets/animate.css" rel="stylesheet" type="text/css" />
+<link href="stylesheets/forum.css" rel="stylesheet" type="text/css" />  
+<script src="js/jQuery.js"></script>
+<script type="text/javascript">
+
+</script>
+<head>
+    <title>Picnese demo</title>
+    <meta charset="UTF-8" http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="Shortcut Icon" type="image/x-icon" href="img/icon.png" />
+</head>
+
+<body>
+	<div class="fixedBar" id="topbar">
+		<a href="index.html"><img class="logo" src="img/logo.png"></a>
+		<div class="btnGrp">
+			<a class="btn" href="logIn.html">
+				<img src="img/logIn.svg">
+				會員登入
+			</a>
+			<a class="btn" href="signIn.html">
+				<img src="img/signIn.svg">
+				加入會員
+			</a>
+		</div>
+	</div>
+
+
+	<div class="banner">
+		<div class="logo">
+			<img src="img/page/forum/logo-forum.png">
+		</div>
+		<div class="topic">
+			文名而來。
+		</div>
+	</div>
+
+	<div class="content">
+		<div class="searchArea">
+			<input class="search" placeholder="搜 尋">
+			<img src="img/page/forum/search.png">
+			<input class="searchBtn" type="submit" value="">
+		</div>
+		<!-- image -->
+		<a href="forum_post.html">
+			<img class="sendBtn" src="img/page/forum/btn-essay.png">
+		</a>
+
+		<div class="btnGrp">
+			<a class="btn active">全部</a>
+			<a class="btn">綜合討論</a>
+			<a class="btn">我的發文</a>
+			<a class="btn">我的收藏</a>
+		</div>
+		<div class="btnGrp">
+			<a class="btn active">全部類型</a>
+			<a class="btn">文字破解</a>
+			<a class="btn">趣味解字</a>
+			<a class="btn">教學經驗分享</a>
+			<a class="btn">學習經驗分享</a>
+			<a class="btn">漢字文創作品</a>
+		</div>
+		<div class="btnGrp">
+			<a class="btn active">排序</a>
+			<a class="btn">人氣數</a>
+			<a class="btn">留言數</a>
+			<a class="btn">日期</a>
+		</div>
+
+		<ul>
+			<a class="goBack" href="">
+				<img src="img/page/forum/btn-goBack.png">
+			</a>
+			<a class="nav" href="">
+				<img src="img/page/forum/btn-last.png">
+			</a>
+			<li class="active">1</li>
+			<li><a href="">2</a></li>
+			<li><a href="">3</a></li>
+			<!-- ... -->
+			<li><a href="">4</a></li>
+			<li><a href="">5</a></li>
+			<li><a href="">6</a></li>
+			<li><a href="">7</a></li>
+			<a class="nav" href="">
+				<img src="img/page/forum/btn-next.png">
+			</a>
+		</ul>
+
+		<table>
+			<tr class="header">
+				<td width=100>
+					
+				</td>
+				<td width=400>主題</td>
+				<td width=100>發文者</td>
+				<td width=100>留言數</td>
+				<td width=100>點閱次數</td>
+			</tr>
+			<tr class="odd">
+				<td class="pictureWord">
+					女
+				</td>
+				<td class="left">
+					<a href="forum_each.html">[文字破解] 關於「女」</a>
+				</td>
+				<td>
+						Patrick<br>
+						2017.03.01
+				</td>
+				<td>
+					102
+				</td>
+				<td>
+					501
+				</td>
+			</tr>
+			<tr>
+				<td class="pictureWord">
+					鬼
+				</td>
+				<td class="left">
+					<a href="">[趣味解字] 關於鬼1223</a>
+				</td>
+				<td>
+						Patrick<br>
+						2017.03.01
+				</td>
+				<td>
+					102
+				</td>
+				<td>
+					501
+				</td>
+			</tr>				
+			<tr class="odd">
+				<td class="pictureWord">
+					子
+				</td>
+				<td class="left">
+					<a href="">[文字破解] 關於「子」</a>
+				</td>
+				<td>
+						Patrick<br>
+						2017.03.01
+				</td>
+				<td>
+					102
+				</td>
+				<td>
+					501
+				</td>
+			</tr>
+			<tr>
+				<td class="pictureWord">
+					鬼
+				</td>
+				<td class="left">
+					<a href="">[趣味解字] 關於鬼1223</a>
+				</td>
+				<td>
+						Patrick<br>
+						2017.03.01
+				</td>
+				<td>
+					102
+				</td>
+				<td>
+					501
+				</td>
+			</tr>				
+			<tr class="odd">
+				<td class="pictureWord">
+					子
+				</td>
+				<td class="left">
+					<a href="">[文字破解] 關於「子」</a>
+				</td>
+				<td>
+						Patrick<br>
+						2017.03.01
+				</td>
+				<td>
+					102
+				</td>
+				<td>
+					501
+				</td>
+			</tr>
+			<tr>
+				<td class="pictureWord">
+					鬼
+				</td>
+				<td class="left">
+					<a href="">[趣味解字] 關於鬼1223</a>
+				</td>
+				<td>
+						Patrick<br>
+						2017.03.01
+				</td>
+				<td>
+					102
+				</td>
+				<td>
+					501
+				</td>
+			</tr>				
+			<tr class="odd">
+				<td class="pictureWord">
+					子
+				</td>
+				<td class="left">
+					<a href="">[文字破解] 關於「子」</a>
+				</td>
+				<td>
+						Patrick<br>
+						2017.03.01
+				</td>
+				<td>
+					102
+				</td>
+				<td>
+					501
+				</td>
+			</tr>
+			<tr>
+				<td class="pictureWord">
+					鬼
+				</td>
+				<td class="left">
+					<a href="">[趣味解字] 關於鬼1223</a>
+				</td>
+				<td>
+						Patrick<br>
+						2017.03.01
+				</td>
+				<td>
+					102
+				</td>
+				<td>
+					501
+				</td>
+			</tr>				
+			<tr class="odd">
+				<td class="pictureWord">
+					子
+				</td>
+				<td class="left">
+					<a href="">[文字破解] 關於「子」</a>
+				</td>
+				<td>
+						Patrick<br>
+						2017.03.01
+				</td>
+				<td>
+					102
+				</td>
+				<td>
+					501
+				</td>
+			</tr>
+			<tr>
+				<td class="pictureWord">
+					<img src="img/page/forum/type-CI.png">
+				</td>
+				<td class="left">
+					<a href="">[趣味解字] 關於鬼1223</a>
+				</td>
+				<td>
+						Patrick<br>
+						2017.03.01
+				</td>
+				<td>
+					102
+				</td>
+				<td>
+					501
+				</td>
+			</tr>				
+			<tr class="odd">
+				<td class="pictureWord">
+					<img src="img/page/forum/type-Exp.png">
+				</td>
+				<td class="left">
+					<a href="">[文字破解] 關於「子」</a>
+				</td>
+				<td>
+						Patrick<br>
+						2017.03.01
+				</td>
+				<td>
+					102
+				</td>
+				<td>
+					501
+				</td>
+			</tr>
+		</table>
+
+
+		<ul>
+			<a class="goBack" href="">
+				<img src="img/page/forum/btn-goBack.png">
+			</a>
+			<a class="nav" href="">
+				<img src="img/page/forum/btn-last.png">
+			</a>
+			<li class="active">1</li>
+			<li><a href="">2</a></li>
+			<li><a href="">3</a></li>
+			<!-- ... -->
+			<li><a href="">4</a></li>
+			<li><a href="">5</a></li>
+			<li><a href="">6</a></li>
+			<li><a href="">7</a></li>
+			<a class="nav" href="">
+				<img src="img/page/forum/btn-next.png">
+			</a>
+		</ul>
+	</div>
+
+
+	<footer>
+		<a href="index.html"><img class="logo" src="img/logo.png"></a>
+		<div class="linkArea">
+			<span class="grp">
+				<b>最新消息</b><br>
+				<a href="">華語文招募說明會</a><br>
+				<a href="">台北國際書展圓滿結束</a><br>
+				<a href="">網站上線測試</a><br>
+				<a href="">金石堂城中分店演講...</a><br>
+			</span>
+			<span class="grp">
+				<b>圖象字探索</b><br>
+				<a href="story.html">用圖象編故事</a><br>
+				<a href="teaching.html">圖象字轉換機</a><br>
+				<a href="music.html">兒歌唱片機</a>
+			</span>
+			<span class="grp">
+				<b>檢索系統</b><br>
+				<a href="tree.html">漢字樹</a><br>
+				<a href="retrieval.html">中文單字檢索</a><br>
+				<a href="mouse.html">洞穴式檢索</a>
+			</span>
+			<span class="grp">
+				<b>商品資訊</b><br>
+				<a href="tableGame.html">桌遊系列</a><br>
+				<a href="guess.html">猜謎卡系列</a>
+			</span>
+			<span class="grp">
+				<b>圖象字時代來臨了</b><br>
+				<a href="PicneseEra.html">觀看介紹影片</a><br>
+				<div class="line"></div>
+				<a href="forum.html"><b>討論區<b></a><br>
+				<a href="wordRoom.html"><b>國小生字堂<b></a><br>
+				<a href=""><b>合作夥伴招募<b></a>
+			</span>
+			<span class="grp final">
+				<b>關於我們</b><br>
+				中華圖象字教育有限公司<br>
+				<img src="img/footer/position.svg">
+				100 台北市中正區濟南路1段321號 承曦樓 2F<br>
+				<img src="img/footer/phone.svg">
+				(02) 2391-6210<br>
+				<img src="img/footer/mail.svg">
+				picneseword@gmail.com
+			</span>
+		</div>
+		<br><br><br>
+		<div class="context">
+			中華圖像字 版權所有Copyright&copy2017. All rights reserved.
+		</div>
+	</footer>
+<script src="js/jQuery.min.js"> </script>
+<script src="js/scroll-up-bar.min.js"></script>
+<script type="text/javascript">
+    $("#topbar").scrollupbar();
+</script>
+</body>
+
+</html>

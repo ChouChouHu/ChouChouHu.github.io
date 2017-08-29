@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="stylesheets/reset.css" media="screen, projection" rel="stylesheet" type="text/css" /> 
+<link href="stylesheets/animate.css" rel="stylesheet" type="text/css" />
+<link href="stylesheets/logIn.css" rel="stylesheet" type="text/css" />  
+<script src="js/jQuery.js"></script>
+<script type="text/javascript">
+
+var black = false;
+var send = false;
+
+$(document).ready(function(){
+
+
+	$(".forgot").click(function(){
+		$(".forgotFrame").fadeIn();
+	});
+
+	$(".forgotWindow").click(function(){
+		if(!send){
+			$(".forgotFrame").css("display", "block");
+		}
+		black = false;
+	});
+
+	$(".forgotFrame").click(function(){
+		if(black){
+			$(this).css("display", "none");
+		}
+		black = true;
+	});
+
+	$(".send").click(function(){
+		$(".forgotWindow").css("display", "none");
+		$(".okayWindow").css("display", "block");
+		send = true;
+	})
+
+	$(".close").click(function(){
+		$(".forgotFrame").css("display", "none");
+	})
+
+});
+
+
+</script>
+<head>
+    <title>Picnese demo</title>
+    <meta charset="UTF-8" http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="Shortcut Icon" type="image/x-icon" href="img/icon.png" />
+</head>
+
+<body>
+	<div class="fixedBar">
+		<a href="index.html"><img class="logo" src="img/logo.png"></a>
+		<div class="btnGrp">
+			<a class="btn" href="logIn.html">
+				<img src="img/logIn.svg">
+				會員登入
+			</a>
+			<a class="btn" href="signIn.html">
+				<img src="img/signIn.svg">
+				加入會員
+			</a>
+		</div>
+	</div>
+
+
+	<img class="backgroundImg" src="img/page/member/background.jpg">
+
+	<div class="container">
+		<img class="circleImg" src="img/page/member/circle.png">
+		<div class="type">
+			<div class="title">
+				會&nbsp&nbsp員&nbsp&nbsp登&nbsp&nbsp入&nbsp&nbsp/Login
+			</div>
+			<br><br><br>
+			<div class="data">
+				&nbsp會 員 帳 號 /Your ID<br>
+				<input><br>
+				&nbsp會 員 密 碼 /Your Password<br>
+				<input><br>
+			</div>
+			<br><br><br>
+			<button class="btn" href="">登入</button>
+			<a class="btn" href="">會員註冊</a><br><br>
+			<a class="fb"><img src="img/page/member/fb.png"></a>
+			<br><br>
+			<div class="forgot">忘記密碼？</div>
+		</div>
+	</div>
+
+	<div class="forgotFrame">
+		<div class="forgotWindow">
+			<div class="topic">忘記密碼</div>
+			<br><br><br><br><br>
+			請輸入註冊之電子郵件<span class="alarm">輸入有誤！</span><br>
+			<input>
+			<br><br><br><br><br>
+			<div class="btn send">送出</div>
+		</div>
+
+		<div class="forgotWindow okayWindow">
+			<div class="topic">送出成功！</div>	
+			<br><br><br><br><br><br><br>
+			我們已將重設密碼信件寄至您的電子信箱，請盡快前往信箱查看。
+			<br><br><br><br><br><br><br><br>
+			<div class="btn close">關閉</div>
+		</div>
+	</div>
+
+	<div class="context">
+		中華圖像字 版權所有Copyright&copy2017. All rights reserved.
+	</div>
+
+</body>
+
+</html>

@@ -1,0 +1,348 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ */
+
+@import "page/background";
+@import "base/bar";
+
+body {
+	position: relative;
+	// width: 1024px;
+}
+
+.cloud1 {
+	position: absolute;
+	width: 100px;
+	top: 70px;
+	left: 32%;
+}
+
+.cloud2 {
+	position: absolute;
+	width: 70px;
+	top: 30px;
+	left: 55%;
+}
+
+.cloud3 {
+	position: absolute;
+	width: 80px;
+	top: 80px;
+	left: 90%;
+}
+
+.red {
+	color: #ca485a;
+	display: inline-block;
+}
+
+.container {
+	width: 80%;
+	left: 10%;
+	margin-top: 140px;
+	color: #595757;
+
+	.titleImg {
+		position: relative;
+		// background: red;
+		width: 100%;
+		padding-top: 50px;
+		margin-bottom: 20px;
+		// height: 100px;
+		text-align: center;
+		font-size: 24px;
+		line-height: 54px;
+
+		img {
+			position: absolute;
+			width: 300px;
+			left: 50%;
+			margin-left: -150px;
+		}
+	}
+
+	.goods {
+		position: relative;
+		// background: red;
+		width: 50%;
+		// height: 400px;
+		padding-bottom: 100px;
+		margin-top: 20px;
+		display: inline-block;
+		font-size: 18px;
+
+		.subTitle {
+			position: relative;
+			margin-left: 10%;
+			margin-bottom: 10px;
+		}
+
+		.imgBorder {
+			position: relative;
+			border: #dcdddd 2px dashed;
+			border-radius: 10px;
+			width: 86%;
+			left: 11%;
+			padding-bottom: 10px;
+			font-size: 0;
+			text-align: center;
+			// height: 300px;
+
+			img {
+				position: relative;
+				width: 80%;
+				left: 10%;
+				display: block;
+			}
+
+			#one {
+				width: 66%;
+				left: 14%;
+				margin: 3%;
+			}
+
+			#three {
+				width: 66%;
+				left: 17%;
+			}
+
+			#four {
+				width: 32.5%;
+				left: 34%;
+			}
+
+			.price {
+				font-family: Times;
+				position: absolute;
+				width: 100%;
+				height: 100px;
+				bottom: -120px;
+				// background: red;
+				font-size: 18px;
+				line-height: 22px;
+
+				.redLine {
+					position: absolute;
+					background: #ca485a;
+					height: 2px;
+					width: 24%;
+					left: 38%;
+					top: 10px;
+				}
+			}
+		}
+
+		.second {
+			left: 3%;
+		}
+	}
+	.second {
+		position: absolute;
+		right: 0;
+		display: inline-block;
+
+		.titleSecond {
+			margin-left: 3%;
+		}
+	}
+
+	.order {
+		position: relative;
+		border: #dcdddd 1px solid;
+		width: 60%;
+		left: 17%;
+		padding: 3%;
+		font-size: 15px;
+		line-height: 30px;
+		
+		li {
+			list-style-type: none;
+			margin-left: 8%;
+			font-size: 14px;
+
+			.ps {
+				font-size: 12px;
+				line-height: 15px;
+				margin-left: 18%;
+				color: #9fa0a0;
+				display: inline-block;
+
+				a {
+					color: #9fa0a0;
+					text-decoration: none;
+				}
+			}
+
+			.gender {
+				// position: absolute;
+				display: inline-block;
+				margin-left: 5%;
+				margin-top: -3px;
+
+				input {
+					position: relative;
+					left: auto;
+				}
+			}
+
+			.left {
+				// position: absolute;
+				// left: 170px;
+				display: inline-block;
+				letter-spacing: 3px;
+
+				.btn {
+					width: 90px;
+					height: 20px;
+					background: #bce2ed;
+					line-height: 20px;
+					text-align: center;
+					border-radius: 10px;
+					margin-top: 5px;
+					display: inline-block;
+					font-size: 13px;
+					color: #036eb8;
+					text-decoration: none;
+				}
+			}
+		}
+
+		input {
+			// position: absolute;
+			// left: 27%;
+			margin-top: 5px;
+			border: #bce2ed 1.5px solid;
+			border-radius: 10px;
+			padding-left: 10px;
+			font-size: 1em;
+			vertical-align: center;
+		}
+
+		textarea {
+			// position: absolute;
+			// left: 27%;
+			vertical-align: top;
+			margin-top: 7px;
+			border: #bce2ed 1.5px solid;
+			border-radius: 10px;
+			padding-left: 10px;
+			font-size: 1em;
+		}
+
+		// form {
+		// 	position: absolute;
+		// 	left: 38%;
+		// 	// margin-top: 1px;
+		// 	font-size: 1em;
+		// 	margin-top: 0px;
+		// }
+
+		.credit {
+			margin-left: 90px;
+			width: 90px;
+			margin-top: 5px;
+		}
+
+		.introduction {
+			position: absolute;
+			top: 15px;
+			right: 15px;
+			width: 30%;
+			border: #dcdddd 2px dashed;
+			line-height: 18px;
+			font-size: 13px;
+			padding: 8px;
+			color: #9fa0a0;
+
+			.center {
+				width: 100%;
+				text-align: center;
+				color: #231815;
+				font-size: 14px;
+			}
+		}
+	}
+}
+
+
+
+
+/* rwd */
+
+
+@media screen and (max-width: 1060px) {
+	.introduction {
+		position: relative !important;
+		width: 88% !important;
+		left: 3% !important;
+		margin-bottom: 50px;
+	}
+
+	.ps {
+		margin-left: 0 !important;
+	}
+
+	.credit {
+		margin-left: 0 !important;
+	}
+
+	.container .order li .left .btn {
+		width: 70px;
+		height: 25px;
+		line-height: 25px;
+	}
+
+	.cloud1, .cloud2, .cloud3 {
+		display: none;
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+
+
+	.container {
+
+		/* attention */
+	    width: 100%;
+	    left: 0%;
+		margin-top: 50px;
+		margin-bottom: 0px;
+		border-radius: 0px;
+
+		.order {
+			width: 85%;
+			left: 4%;
+			border: 0px;
+		}
+
+		.goods {
+			width: 93%;
+
+			.second {
+				left: 11%;
+			}
+		}
+
+		.second {
+			position: relative;
+
+			.titleSecond {
+				margin-left: 11%;
+			}
+		}
+
+		.titleImg {
+			
+			padding-top: 30px;
+
+			img {
+				display: none;
+				// width: 220px;
+				// margin-left: -110px;
+			}
+		}
+	}
+
+
+}

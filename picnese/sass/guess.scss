@@ -1,0 +1,396 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ */
+
+@import "base/bar";
+@import "base/barRWD";
+@import "page/background";
+
+.red {
+	color: #ca485a;
+	display: inline-block;
+}
+
+.cloud1 {
+	position: absolute;
+	width: 120px;
+	top: 86px;
+	left: 32%;
+}
+
+.cloud2 {
+	position: absolute;
+	width: 90px;
+	top: 50px;
+	left: 55%;
+}
+
+.cloud3 {
+	position: absolute;
+	width: 100px;
+	top: 98px;
+	left: 90%;
+}
+
+
+.monster {
+	position: absolute;
+	width: 170px;
+	right: 12%;
+	top: 60px;
+	z-index: 1;
+}
+
+.bottom {
+	position: absolute;
+	width: 100%;
+	margin-top: -230px;
+	z-index: 999;
+}
+
+
+.container {
+	.dialog {
+		.dialogContent {
+
+			.ImgTitle {
+				position: relative;
+				width: 30%;
+				left: 8%;
+				margin-bottom: 20px;
+			}
+			
+			.goodsImg {
+				position: relative;
+				width: 35%;
+				left: 8%;
+			}
+
+			.buyBtn {
+				position: relative;
+				display: inline-block;
+				width: 20%;
+				cursor: pointer;
+				vertical-align: top;
+				margin-top: 20px;
+				margin-left: 2%;
+
+				#two {
+					display: none;
+				}
+
+				img {
+					position: absolute;
+					width: 100%;
+				}
+
+				&:hover {
+					#two {
+						display: block;
+					}
+				}
+			}
+
+			.center {
+				width: 50%;
+				left: 36%;
+			}
+
+			.price {
+				font-family: Times;
+				font-weight: bold;
+				// position: absolute;
+				// width: 100%;
+				// height: 100px;
+				// bottom: -120px;
+				// background: red;
+				font-size: 16px;
+				line-height: 22px;
+				display: inline-block;
+				margin-left: 10%;
+				margin-top: 20px;
+
+				.redLine {
+					position: absolute;
+					background: #ca485a;
+					height: 2px;
+					width: 100px;
+					margin-left: -10px;
+					margin-top: 10px;
+					// left: 38%;
+					// top: 10px;
+				}
+			}
+
+			.text {
+				position: relative;
+				display: inline-block;
+				color: $color2;
+				width: 50%;
+				z-index: 3;
+				font-size: 14px;
+				line-height: 22px;
+				vertical-align: top;
+				margin-left: 12%;
+
+				// background: red;
+
+				// h1 {
+				// 	color: $color;
+				// 	font-size: 22px;
+				// 	margin-bottom: 20px;
+				// }
+
+				// h2 {
+				// 	color: $color;
+				// 	font-size: 18px;
+				// 	margin-top: 20px;
+				// 	margin-bottom: 10px;
+				// }
+
+				// li {
+				// 	margin-left: 40px;
+				// 	list-style: none;
+				// }
+			}
+
+			.line {
+				position: relative;
+				width: 80%;
+				left: 10%;
+				height: 0px;
+				border: #dcdddd 1px solid;
+				margin-top: 30px;
+				margin-bottom: 20px;
+			}
+
+
+			.containerInside {
+				position: relative;
+				width: 80%;
+				left: 10%;
+				margin-top: 0px;
+				padding-bottom: 100px;
+
+				.introduction {
+					width: 30%;
+					position: relative;
+					display: inline-block;
+					font-size: 14px;
+					color: #595757;
+					line-height: 22px;
+					margin-left: 22px;
+					vertical-align: top;
+
+					img {
+						width: 100%;
+					}
+				}
+
+				#guessW {
+					width: 45%;
+				}
+
+				#foreignW {
+					width: 60%;
+				}
+
+				h1 {
+					font-size: 17px;
+					letter-spacing: 3px;
+					line-height: 50px;
+				}
+
+				.para {
+					display: inline-block;
+					width: 80%;
+					margin-left: 12px;
+					font-size: 14px;
+					color: #595757;
+					line-height: 22px;
+				}
+
+				.big {
+					display: inline-block;
+					font-size: 16px;
+					line-height: 32px;
+					color: #595757;
+					margin-left: 12px;
+				}
+				img {
+					width: 45%;
+				}
+
+				.slash {
+					color: #9fa0a0;
+					font-size: 14px;
+					margin-top: 10px;
+				}
+			}
+		}
+	}
+}
+
+footer {
+	background: #5DBAA8;
+}
+
+
+@media screen and (max-width: 860px) {
+
+	.container .dialog .dialogContent {
+
+		.ImgTitle {
+			width: 50%;
+			left: 0;
+		}
+
+		.goodsImg {
+			width: 100%;
+			left: 0;
+		}
+
+		.buyBtn {
+			width: 40%;
+		}
+
+		.text {
+			margin-top: 20px;
+			width: 80%;
+		}
+
+		.dialogImg {
+			width: 75%;
+		}
+
+		.containerInside {
+
+			width: 100%;
+			left: 0;
+
+			.introduction {
+				width: 80%;
+			}
+
+			h1 {
+				line-height: 22px;
+				margin-top: 20px;
+				margin-bottom: 20px;
+			}
+		}
+
+		.center {
+			width: 70%;
+			left: 34%;
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+
+	.monster {
+	    width: 80px;
+	    right: 5%;
+	    top: 129px;
+	}
+
+	.title {
+		width: 230px;
+		top: 77px;
+	}
+	
+	.container {
+
+		margin-bottom: 0;
+		padding-bottom: 0;
+		
+		.dialog {
+			
+			width: 90%;
+			left: 5%;
+			background: white;
+			border: 0px;
+			border-top: #5fb7b0 2px solid;
+			border-radius: 0;
+
+			img.dialogImg {
+				display: none;
+			}
+
+			.dialogContent {
+
+				.text {
+					width: 100%;
+					margin-left: 0;
+				}
+
+				.price {
+					position: relative;
+					display: block;
+				}
+
+				.dashedLine {
+					width: 100%;
+					left: 0;
+				}
+
+				.containerInside {
+
+					img {
+						width: 100%;
+					}
+
+					#guessW {
+						width: 90%;
+					}
+
+					#foreignW {
+						width: 90%;
+					}
+				}
+
+				.buyBtn {
+					width: 65%;
+					left: 0%;
+				}
+
+				.center {
+					left: 17%;
+				}
+
+				.line {
+					margin-top: 100px;
+				}
+			}
+		}
+
+		.gameSet .gameOther {
+			margin-top: 30px;
+			// display: none;
+		}
+	}
+
+	.cloud1, .cloud2, .cloud3 {
+		display: none;
+	}
+
+	.bottom {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1000px){
+	.fixedBar {
+		background: #5DBAA8 !important;
+	}
+
+	.moreClick {
+		background: #5DBAA8 !important;
+
+		.btn {
+			&:hover {
+				color: #5DBAA8 !important;
+			}
+		}
+	}
+}

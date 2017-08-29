@@ -1,0 +1,608 @@
+@charset "UTF-8";
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ */
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ */
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ */
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,300italic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700);
+@font-face {
+  font-family: 'pictureWord';
+  src: url(../fonts/PICNESE-ONLY_ASCII.ttf);
+}
+@font-face {
+  font-family: 'ZUYIN';
+  src: url(../fonts/ZUYIN.ttf);
+}
+/* line 20, ../sass/base/_font.scss */
+.pictureWord {
+  font-family: pictureWord;
+}
+
+/* line 10, ../sass/page/_background.scss */
+body {
+  font-family: PingFangSC-Regular, sans-serif, "微软雅黑", "microsoft yahei";
+  background: #d8ecdf;
+  overflow: scroll;
+  margin: 0;
+}
+
+/* line 21, ../sass/page/_background.scss */
+.title {
+  position: absolute;
+  width: 270px;
+  top: 107px;
+  left: 5%;
+}
+
+/* line 28, ../sass/page/_background.scss */
+.container {
+  position: relative;
+  background: white;
+  width: 90%;
+  padding-bottom: 70px;
+  margin-top: 184px;
+  margin-bottom: 70px;
+  left: 5%;
+  border-radius: 15px;
+}
+/* line 38, ../sass/page/_background.scss */
+.container .decoration {
+  position: relative;
+  width: 92%;
+  left: 4%;
+}
+/* line 44, ../sass/page/_background.scss */
+.container .gameSet {
+  position: relative;
+  width: 80%;
+  left: 10%;
+  top: 40px;
+}
+/* line 51, ../sass/page/_background.scss */
+.container .gameSet .game {
+  display: inline-block;
+  margin-right: 18px;
+  width: 170px;
+  text-align: center;
+}
+/* line 57, ../sass/page/_background.scss */
+.container .gameSet .game img {
+  cursor: pointer;
+  width: 100%;
+}
+/* line 61, ../sass/page/_background.scss */
+.container .gameSet .game .text {
+  font-family: PingFangSC-semibold, sans-serif, "微软雅黑", "microsoft yahei";
+  margin-top: 20px;
+  font-size: 18px;
+  color: #009e95;
+}
+/* line 70, ../sass/page/_background.scss */
+.container .dialog {
+  position: relative;
+  width: 80%;
+  left: 10%;
+  background: #eef7f0;
+  border: #5fb7b0 1.5px solid;
+  border-radius: 10px;
+  margin-top: 115px;
+}
+/* line 79, ../sass/page/_background.scss */
+.container .dialog img.dialogImg {
+  position: absolute;
+  width: 92px;
+  top: -51px;
+  left: 39px;
+  z-index: 2;
+}
+/* line 87, ../sass/page/_background.scss */
+.container .dialog .dialogContent {
+  padding: 50px 5%;
+}
+/* line 90, ../sass/page/_background.scss */
+.container .dialog .dialogContent .picture {
+  position: relative;
+  display: inline-block;
+  width: 28%;
+  margin-left: 2%;
+  vertical-align: top;
+}
+
+@media screen and (max-width: 600px) {
+  /* line 103, ../sass/page/_background.scss */
+  .container {
+    width: 100%;
+    left: 0;
+    border-radius: 0;
+  }
+}
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ */
+/* line 6, ../sass/base/_bar.scss */
+body {
+  font-family: PingFangTC-regular, Heiti TC, Meiryo, "微軟正黑體", Microsoft JhengHei, "標楷體", DFKai-sb !important;
+}
+
+/* line 15, ../sass/base/_bar.scss */
+.fixedBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 3;
+  background: rgba(255, 255, 255, 0.5);
+}
+/* line 24, ../sass/base/_bar.scss */
+.fixedBar .logo {
+  position: relative;
+  left: 2%;
+  top: 15px;
+  width: 130px;
+}
+/* line 31, ../sass/base/_bar.scss */
+.fixedBar .btnGrp {
+  position: absolute;
+  top: 0;
+  right: 2%;
+  height: 100%;
+  font-size: 0;
+}
+/* line 40, ../sass/base/_bar.scss */
+.fixedBar .btnGrp .btn {
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  padding: 0 20px;
+  font-size: 14px;
+  line-height: 60px;
+  text-align: center;
+  color: #804f21;
+  text-decoration: none;
+}
+/* line 55, ../sass/base/_bar.scss */
+.fixedBar .btnGrp .btn img {
+  width: 20px;
+  vertical-align: middle;
+}
+/* line 60, ../sass/base/_bar.scss */
+.fixedBar .btnGrp .btn .circle {
+  display: inline-block;
+  font-size: 40px;
+  line-height: 40px;
+  width: 36px;
+  height: 36px;
+  margin-right: 8px;
+  border-radius: 50%;
+  overflow: hidden;
+  vertical-align: middle;
+  background: red;
+}
+/* line 73, ../sass/base/_bar.scss */
+.fixedBar .btnGrp .btn .circle img {
+  width: 100%;
+  vertical-align: top;
+}
+
+/* line 83, ../sass/base/_bar.scss */
+footer {
+  position: relative;
+  width: 100%;
+  padding-bottom: 20px;
+  background: #91ceb3;
+  opacity: 0.9;
+  color: white;
+}
+/* line 92, ../sass/base/_bar.scss */
+footer .logo {
+  position: relative;
+  -webkit-filter: brightness(100);
+  margin-top: 20px;
+  margin-left: 60px;
+}
+/* line 99, ../sass/base/_bar.scss */
+footer .linkArea {
+  position: relative;
+  margin-top: 40px;
+  width: 88%;
+  left: 12%;
+  font-size: 14px;
+  line-height: 26px;
+}
+/* line 107, ../sass/base/_bar.scss */
+footer .linkArea .grp {
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 3%;
+  height: 132px;
+  padding-left: 10px;
+  border-left: white 1px solid;
+  margin-bottom: 50px;
+}
+/* line 117, ../sass/base/_bar.scss */
+footer .linkArea .grp b {
+  font-family: PingFangSC-semibold, sans-serif, "微软雅黑", "microsoft yahei";
+}
+/* line 121, ../sass/base/_bar.scss */
+footer .linkArea .grp a {
+  font-family: PingFangSC-light, sans-serif, "微软雅黑", "microsoft yahei";
+  color: white;
+  text-decoration: none;
+}
+/* line 126, ../sass/base/_bar.scss */
+footer .linkArea .grp a:hover {
+  text-decoration: underline;
+}
+/* line 131, ../sass/base/_bar.scss */
+footer .linkArea .grp img {
+  width: 15px;
+}
+/* line 135, ../sass/base/_bar.scss */
+footer .linkArea .grp .line {
+  width: 100%;
+  height: 1px;
+  margin: 12px 0;
+  background: white;
+}
+/* line 147, ../sass/base/_bar.scss */
+footer .linkArea .final {
+  padding-right: 0;
+}
+/* line 152, ../sass/base/_bar.scss */
+footer .context {
+  color: #595757;
+  font-size: 11px;
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+}
+
+@media screen and (max-width: 1000px) {
+  /* line 162, ../sass/base/_bar.scss */
+  .fixedBar {
+    width: 1000px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  /* line 171, ../sass/base/_bar.scss */
+  footer .linkArea .grp {
+    padding-right: 7%;
+  }
+}
+@media screen and (min-width: 1281px) {
+  /* line 181, ../sass/base/_bar.scss */
+  footer .linkArea .grp {
+    padding-right: 4%;
+  }
+}
+@media screen and (max-width: 400px) {
+  /* line 191, ../sass/base/_bar.scss */
+  footer .linkArea .grp {
+    padding-right: 2%;
+  }
+}
+/* line 8, ../sass/preOrder.scss */
+body {
+  position: relative;
+}
+
+/* line 13, ../sass/preOrder.scss */
+.cloud1 {
+  position: absolute;
+  width: 100px;
+  top: 70px;
+  left: 32%;
+}
+
+/* line 20, ../sass/preOrder.scss */
+.cloud2 {
+  position: absolute;
+  width: 70px;
+  top: 30px;
+  left: 55%;
+}
+
+/* line 27, ../sass/preOrder.scss */
+.cloud3 {
+  position: absolute;
+  width: 80px;
+  top: 80px;
+  left: 90%;
+}
+
+/* line 34, ../sass/preOrder.scss */
+.red {
+  color: #ca485a;
+  display: inline-block;
+}
+
+/* line 39, ../sass/preOrder.scss */
+.container {
+  width: 80%;
+  left: 10%;
+  margin-top: 140px;
+  color: #595757;
+}
+/* line 45, ../sass/preOrder.scss */
+.container .titleImg {
+  position: relative;
+  width: 100%;
+  padding-top: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 54px;
+}
+/* line 56, ../sass/preOrder.scss */
+.container .titleImg img {
+  position: absolute;
+  width: 300px;
+  left: 50%;
+  margin-left: -150px;
+}
+/* line 64, ../sass/preOrder.scss */
+.container .goods {
+  position: relative;
+  width: 50%;
+  padding-bottom: 100px;
+  margin-top: 20px;
+  display: inline-block;
+  font-size: 18px;
+}
+/* line 74, ../sass/preOrder.scss */
+.container .goods .subTitle {
+  position: relative;
+  margin-left: 10%;
+  margin-bottom: 10px;
+}
+/* line 80, ../sass/preOrder.scss */
+.container .goods .imgBorder {
+  position: relative;
+  border: #dcdddd 2px dashed;
+  border-radius: 10px;
+  width: 86%;
+  left: 11%;
+  padding-bottom: 10px;
+  font-size: 0;
+  text-align: center;
+}
+/* line 91, ../sass/preOrder.scss */
+.container .goods .imgBorder img {
+  position: relative;
+  width: 80%;
+  left: 10%;
+  display: block;
+}
+/* line 98, ../sass/preOrder.scss */
+.container .goods .imgBorder #one {
+  width: 66%;
+  left: 14%;
+  margin: 3%;
+}
+/* line 104, ../sass/preOrder.scss */
+.container .goods .imgBorder #three {
+  width: 66%;
+  left: 17%;
+}
+/* line 109, ../sass/preOrder.scss */
+.container .goods .imgBorder #four {
+  width: 32.5%;
+  left: 34%;
+}
+/* line 114, ../sass/preOrder.scss */
+.container .goods .imgBorder .price {
+  font-family: Times;
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  bottom: -120px;
+  font-size: 18px;
+  line-height: 22px;
+}
+/* line 124, ../sass/preOrder.scss */
+.container .goods .imgBorder .price .redLine {
+  position: absolute;
+  background: #ca485a;
+  height: 2px;
+  width: 24%;
+  left: 38%;
+  top: 10px;
+}
+/* line 135, ../sass/preOrder.scss */
+.container .goods .second {
+  left: 3%;
+}
+/* line 139, ../sass/preOrder.scss */
+.container .second {
+  position: absolute;
+  right: 0;
+  display: inline-block;
+}
+/* line 144, ../sass/preOrder.scss */
+.container .second .titleSecond {
+  margin-left: 3%;
+}
+/* line 149, ../sass/preOrder.scss */
+.container .order {
+  position: relative;
+  border: #dcdddd 1px solid;
+  width: 60%;
+  left: 17%;
+  padding: 3%;
+  font-size: 15px;
+  line-height: 30px;
+}
+/* line 158, ../sass/preOrder.scss */
+.container .order li {
+  list-style-type: none;
+  margin-left: 8%;
+  font-size: 14px;
+}
+/* line 163, ../sass/preOrder.scss */
+.container .order li .ps {
+  font-size: 12px;
+  line-height: 15px;
+  margin-left: 18%;
+  color: #9fa0a0;
+  display: inline-block;
+}
+/* line 170, ../sass/preOrder.scss */
+.container .order li .ps a {
+  color: #9fa0a0;
+  text-decoration: none;
+}
+/* line 176, ../sass/preOrder.scss */
+.container .order li .gender {
+  display: inline-block;
+  margin-left: 5%;
+  margin-top: -3px;
+}
+/* line 182, ../sass/preOrder.scss */
+.container .order li .gender input {
+  position: relative;
+  left: auto;
+}
+/* line 188, ../sass/preOrder.scss */
+.container .order li .left {
+  display: inline-block;
+  letter-spacing: 3px;
+}
+/* line 194, ../sass/preOrder.scss */
+.container .order li .left .btn {
+  width: 90px;
+  height: 20px;
+  background: #bce2ed;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 5px;
+  display: inline-block;
+  font-size: 13px;
+  color: #036eb8;
+  text-decoration: none;
+}
+/* line 210, ../sass/preOrder.scss */
+.container .order input {
+  margin-top: 5px;
+  border: #bce2ed 1.5px solid;
+  border-radius: 10px;
+  padding-left: 10px;
+  font-size: 1em;
+  vertical-align: center;
+}
+/* line 221, ../sass/preOrder.scss */
+.container .order textarea {
+  vertical-align: top;
+  margin-top: 7px;
+  border: #bce2ed 1.5px solid;
+  border-radius: 10px;
+  padding-left: 10px;
+  font-size: 1em;
+}
+/* line 240, ../sass/preOrder.scss */
+.container .order .credit {
+  margin-left: 90px;
+  width: 90px;
+  margin-top: 5px;
+}
+/* line 246, ../sass/preOrder.scss */
+.container .order .introduction {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 30%;
+  border: #dcdddd 2px dashed;
+  line-height: 18px;
+  font-size: 13px;
+  padding: 8px;
+  color: #9fa0a0;
+}
+/* line 257, ../sass/preOrder.scss */
+.container .order .introduction .center {
+  width: 100%;
+  text-align: center;
+  color: #231815;
+  font-size: 14px;
+}
+
+/* rwd */
+@media screen and (max-width: 1060px) {
+  /* line 274, ../sass/preOrder.scss */
+  .introduction {
+    position: relative !important;
+    width: 88% !important;
+    left: 3% !important;
+    margin-bottom: 50px;
+  }
+
+  /* line 281, ../sass/preOrder.scss */
+  .ps {
+    margin-left: 0 !important;
+  }
+
+  /* line 285, ../sass/preOrder.scss */
+  .credit {
+    margin-left: 0 !important;
+  }
+
+  /* line 289, ../sass/preOrder.scss */
+  .container .order li .left .btn {
+    width: 70px;
+    height: 25px;
+    line-height: 25px;
+  }
+
+  /* line 295, ../sass/preOrder.scss */
+  .cloud1, .cloud2, .cloud3 {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  /* line 304, ../sass/preOrder.scss */
+  .container {
+    /* attention */
+    width: 100%;
+    left: 0%;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    border-radius: 0px;
+  }
+  /* line 313, ../sass/preOrder.scss */
+  .container .order {
+    width: 85%;
+    left: 4%;
+    border: 0px;
+  }
+  /* line 319, ../sass/preOrder.scss */
+  .container .goods {
+    width: 93%;
+  }
+  /* line 322, ../sass/preOrder.scss */
+  .container .goods .second {
+    left: 11%;
+  }
+  /* line 327, ../sass/preOrder.scss */
+  .container .second {
+    position: relative;
+  }
+  /* line 330, ../sass/preOrder.scss */
+  .container .second .titleSecond {
+    margin-left: 11%;
+  }
+  /* line 335, ../sass/preOrder.scss */
+  .container .titleImg {
+    padding-top: 30px;
+  }
+  /* line 339, ../sass/preOrder.scss */
+  .container .titleImg img {
+    display: none;
+  }
+}

@@ -1,0 +1,112 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ */
+
+$color: #009e95;
+$color2: #595757;
+
+@import "base/font";
+@import "base/background";
+
+.backgroundImg {
+	position: fixed;
+	width: 1024px;
+}
+
+.container {
+	position: relative;
+	// width: 46%;
+	width: 590px;
+	left: 50%;
+	margin-left: -295px;
+	top: 45px;
+	text-align: center;
+
+	.circleImg {
+		position: absolute;
+		// width: 588px;
+		width: 100%;
+		left: 0;
+	}
+	
+	.type {
+		position: relative;
+		width: 80%;
+		left: 10%;
+		// top: 9vw;
+		// background: red;
+		text-align: center;
+		color: #595758;
+
+		.title {
+			position: relative;
+			// margin-bottom: 5vw;
+			font-size: 18px;
+			color: #2ea7e0;
+		}
+
+		.data {
+			position: relative;
+			width: 80%;
+			left: 10%;
+			text-align: left;
+			font-size: 13px;
+			line-height: 24px;
+			// margin-bottom: 4vw;
+
+			input {
+				border: 0px;
+				border-radius: 15px;
+				height: 25px;
+				width: 90%;
+				margin-bottom: 4px;
+				font-size: 16px;
+				padding-left: 10px;
+			}
+		}
+
+		.btn {
+			position: relative;
+			display: inline-block;
+			width: 90px;
+			height: 34px;
+			background: linear-gradient(#c1e4ef, #93d3e5);
+			border-radius: 10px;
+			font-size: 14px;
+			line-height: 34px;
+			color: #186896;
+			cursor: pointer;
+			text-decoration: none;
+
+			margin: 0 0.5vw;
+			letter-spacing: 0.1vw;
+			border: 0;
+			padding: 0;
+		}
+	}
+}
+
+
+@media screen and (max-width: 600px) {
+
+	.container {
+		width: 100%;
+		left: 0%;
+		margin-left: 0;
+	}
+
+	.circleImg {
+		display: none;
+	}
+}
+
+
+@media screen and (min-width: 1024px) {
+
+	.backgroundImg {
+		width: 100%;
+	}
+}
+
+
+

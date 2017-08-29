@@ -1,0 +1,176 @@
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+
+$color: #804f21;
+
+
+@import "base/font";
+@import "base/bar";
+@import "base/barRWD";
+@import "indexOld/animation";
+// @import "indexOld/rwd";
+
+
+.news {
+	position: relative;
+	top: 14vh;
+	height: 75vh; // padding
+	width: 42%; // padding -4
+	left: 27%;
+	padding-top: 5vh;
+	// padding-bottom: 2vh;
+	padding-left: 4%;
+	padding-right: 4%;
+	background: rgba(255, 255 ,255, 0.6);
+	border-radius: 20px;
+	margin-bottom: 130px;
+
+	.content {
+		color: grey;
+		// background: red;	
+		// padding-left: 10%;
+		
+		.bread {
+			font-size: 0px;
+			// height: 22px;
+			margin-bottom: 24px;
+
+			img {
+				height: 22px;
+			}
+
+			.unactive {
+				display: inline-block;
+				vertical-align: top;
+				height: 100%;
+				background: white;
+				color: #2ea7e0;
+				height: 22px;
+				font-size: 14px;
+
+				cursor: pointer;
+				// padding-left: 15px;
+				// padding-right: 15px;
+			}
+
+			a .unactive {
+				color: #2ea7e0;
+			}
+
+			.active {
+				display: inline-block;
+				vertical-align: top;
+				background: #afdbcd;
+				color: white;
+				height: 22px;
+				font-size: 14px;
+
+				cursor: pointer;
+				// padding-left: 15px;
+				// padding-right: 15px;
+			}
+
+			a .active {
+				color: white;
+			}
+
+
+			img.left {
+				height: 22px;
+				vertical-align: top;
+				margin-left: -16px;
+			}
+			img.right {
+				// position: absolute;
+				// right: 0;
+				height: 22px;
+				vertical-align: top;
+				margin-right: -17px;
+			}
+
+			.text {
+				padding-left: 18px;
+				padding-right: 30px;
+				display: inline-block;
+			}
+		}
+
+		.topic {
+			font-weight: bold;
+			color: #00a49b;
+			font-size: 18px;
+			letter-spacing: 7px;
+			margin-bottom: 15px;
+		}
+
+		table {
+			width: 100%;
+		}
+
+		tr {
+			font-size: 14px;
+			line-height: 18px;
+			// height: 28px;
+
+			td {
+				padding-top: 6px;
+				padding-bottom: 6px;
+				padding-left: 10px;
+
+				a {
+					color: grey;
+					text-decoration: none;
+
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+		tr:nth-child(odd) {
+			background: white;
+		}
+
+		.title {
+			font-weight: bold;
+			font-size: 17px;
+			margin-bottom: 20px;
+		}
+
+		.text {
+			font-size: 14px;
+			line-height: 24px;
+		}
+	}
+}
+
+footer {
+	background: #9CC838;
+}
+
+
+@media screen and (max-width: 1000px){
+
+	.news {
+		width: 70%;
+		left: 13%;
+		padding-left: 4%;
+		padding-right: 4%;
+	}
+
+
+	.fixedBar {
+		background: #9CC838 !important;
+	}
+
+	.moreClick {
+		background: #9CC838 !important;
+
+		.btn {
+			&:hover {
+				color: #9CC838 !important;
+			}
+		}
+	}
+}

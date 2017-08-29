@@ -1,0 +1,93 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ */
+
+@import "base/bar";
+@import "member/center";
+
+.container {
+	.btnGrp {
+		// background: red;
+		position: relative;
+		display: inline-block;
+		width: 150px;
+		margin-top: 20px;
+		left: 7%;
+
+		a {
+			cursor: pointer;
+			img {
+				width: 100%;
+				margin-bottom: 10px; 
+				cursor: pointer;
+			}
+		}
+
+		.arrow {
+			position: absolute;
+			top: 179px;
+		}
+	}
+
+}
+
+
+.content {
+
+	a {
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	.title {
+		letter-spacing: 5px;
+		width: 75%;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+	.upgradeImg {
+		width: 100%;
+		font-size: 0;
+
+		img {
+			width: 31%;
+			margin-right: 3%;
+		}
+
+		.final {
+			margin-right: 0;
+		}
+	}
+
+	.small {
+		position: relative;
+		width: 70%;
+		left: 19%;
+	}
+
+	.upgradeBtn {
+		width: 100%;
+		text-align: center;
+
+		a {
+			display: inline-block;
+			background: #dc5d59;
+			width: 38%;
+			height: 50px;
+			line-height: 50px;
+			font-size: 19px;
+			letter-spacing: 1px;
+			text-indent: 1px;
+			border-radius: 10px;
+			color: white;
+			margin-top: 50px;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+
+}

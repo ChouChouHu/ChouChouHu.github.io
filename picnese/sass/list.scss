@@ -1,0 +1,119 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ */
+
+@import "base/bar";
+@import "member/center";
+
+.container {
+	.btnGrp {
+		// background: red;
+		position: relative;
+		display: inline-block;
+		width: 150px;
+		margin-top: 20px;
+		left: 7%;
+
+		a {
+			cursor: pointer;
+			img {
+				width: 100%;
+				margin-bottom: 10px; 
+				cursor: pointer;
+			}
+		}
+
+		.arrow {
+			position: absolute;
+			top: 116px;
+		}
+	}
+
+}
+
+
+.content {
+	table {
+		font-size: 12px;
+		line-height: 16px;
+		// word-break: break-all;
+
+		tr {
+
+			td {
+				text-align: center;
+				height: 60px;
+				padding-right: 8px;
+				padding-left: 10px;
+				border: rgba(0, 0, 0, 0.1) 1px solid;
+			}
+			.left {
+				text-align: left;
+			}
+		}
+
+		.firstTr {
+			border: 0px;
+			border-bottom: rgba(0, 0, 0, 0.1) 1px solid;
+
+			td {
+				border: 0;
+				height: 40px;
+			}
+		}
+
+		.line {
+			width: 100%;
+			height: 10px;
+			background: black;
+		}
+	}
+	
+	.line {
+		width: 100%;
+		height: 1px;
+		margin-top: 20px;
+		margin-bottom: 10px;
+		background: rgba(0, 0, 0, 0.1);
+	}
+
+	.page {
+		position: absolute;
+		right: 8%;
+		width: 70%;
+		text-align: right;
+		font-size: 12px;
+
+		.btn {
+			display: inline-block;
+			height: 20px;
+			line-height: 20px;
+			text-align: center;
+			width: 20%;
+			border-radius: 10px;
+			background: #eabcb2;
+			color: rgba(0, 0, 0, 0.7);
+		}
+
+		li {
+			display: inline-block;
+
+			a {
+				color: black;
+				text-decoration: underline;
+			}
+		}
+
+	}
+}
+
+
+@media screen and (max-width: 1000px) {
+	
+	.content {
+		table {
+			word-break: break-all;
+		}
+	}
+
+}

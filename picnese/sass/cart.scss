@@ -1,0 +1,139 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ */
+
+@import "base/bar";
+@import "member/center";
+
+.container {
+	.btnGrp {
+		// background: red;
+		position: relative;
+		display: inline-block;
+		width: 150px;
+		margin-top: 20px;
+		left: 7%;
+
+		a {
+			cursor: pointer;
+			img {
+				width: 100%;
+				margin-bottom: 10px; 
+				cursor: pointer;
+			}
+		}
+
+		.arrow {
+			position: absolute;
+			top: 55px;
+		}
+	}
+
+}
+
+
+.content {
+	table {
+		font-size: 13px;
+
+		tr {
+			border-bottom: rgba(0, 0, 0, 0.1) 1px solid;
+			height: 60px;
+
+			td {
+				text-align: center;
+				// line-height: 55px;
+			}
+			.left {
+				text-align: left;
+			}
+		}
+
+		img {
+			width: 35px;
+			margin-right: 8px;
+			vertical-align: top;
+		}
+	}
+
+	.delete {
+		position: relative;
+		display: inline-block;
+		top: 20px;
+		
+		width: 100px;
+		height: 22px;
+		background: #d4e694;
+		margin-top: 10px;
+		border-radius: 15px;
+		text-align: center;
+		font-size: 13px;
+		line-height: 22px;
+		cursor: pointer;
+		color: rgba(0, 0, 0, 0.7);
+	}
+
+	.total {
+		position: absolute;
+		right: 12%;
+
+		b {
+			font-weight: bolder;
+		}
+	}
+
+	.cartBtnGrp {
+		position: absolute;
+		width: 46%;
+		right: 8%;
+		line-height: 20px;
+		height: 20px;
+		// background: red;
+
+		.btn {
+			position: relative;
+			display: inline-block;
+			cursor: pointer;
+			width: 47%;
+			margin-left: 1%;
+			height: 20px;
+			text-align: center;
+			vertical-align: top;
+			background: #d4e694;
+			border-radius: 10px;
+			font-size: 13px;
+			color: rgba(0, 0, 0, 0.7);
+
+			img {
+				position: absolute;
+				height: 21px;
+				z-index: 0;
+			}
+
+			.z-index {
+				position: absolute;
+				display: inline-block;
+				z-index: 2;
+				width: 100%;
+				text-align: center;
+			}
+		}
+
+		.cartBtn {
+			text-align: left;
+			background: rgba(0, 0, 0, 0);
+			margin-top: -0.9px;
+		}
+	}
+}
+
+@media screen and (max-width: 1000px) {
+
+	.content {
+		.cartBtnGrp {
+			right: 28%;
+		}
+	}
+
+}
+

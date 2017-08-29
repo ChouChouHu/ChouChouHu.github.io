@@ -19,4 +19,12 @@ $(document).ready(function(){
 		black = true;
 	});
 
+	$(".introBtn").click(function(){
+		$(".intro").css("display", "block");
+	})
+
+	$(".intro").click(function(){
+		$(this).css("display", "none");
+	})
+
 });

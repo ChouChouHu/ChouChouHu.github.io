@@ -1,0 +1,600 @@
+@charset "UTF-8";
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ */
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,300italic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700);
+@font-face {
+  font-family: 'pictureWord';
+  src: url(../fonts/PICNESE-ONLY_ASCII.ttf);
+}
+@font-face {
+  font-family: 'ZUYIN';
+  src: url(../fonts/ZUYIN.ttf);
+}
+/* line 20, ../sass/base/_font.scss */
+.pictureWord {
+  font-family: pictureWord;
+}
+
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ */
+/* line 6, ../sass/base/_bar.scss */
+body {
+  font-family: PingFangTC-regular, Heiti TC, Meiryo, "微軟正黑體", Microsoft JhengHei, "標楷體", DFKai-sb !important;
+}
+
+/* line 15, ../sass/base/_bar.scss */
+.fixedBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 3;
+  background: rgba(255, 255, 255, 0.5);
+}
+/* line 24, ../sass/base/_bar.scss */
+.fixedBar .logo {
+  position: relative;
+  left: 2%;
+  top: 15px;
+  width: 130px;
+}
+/* line 31, ../sass/base/_bar.scss */
+.fixedBar .btnGrp {
+  position: absolute;
+  top: 0;
+  right: 2%;
+  height: 100%;
+  font-size: 0;
+}
+/* line 40, ../sass/base/_bar.scss */
+.fixedBar .btnGrp .btn {
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  padding: 0 20px;
+  font-size: 14px;
+  line-height: 60px;
+  text-align: center;
+  color: #804f21;
+  text-decoration: none;
+}
+/* line 55, ../sass/base/_bar.scss */
+.fixedBar .btnGrp .btn img {
+  width: 20px;
+  vertical-align: middle;
+}
+/* line 60, ../sass/base/_bar.scss */
+.fixedBar .btnGrp .btn .circle {
+  display: inline-block;
+  font-size: 40px;
+  line-height: 40px;
+  width: 36px;
+  height: 36px;
+  margin-right: 8px;
+  border-radius: 50%;
+  overflow: hidden;
+  vertical-align: middle;
+  background: red;
+}
+/* line 73, ../sass/base/_bar.scss */
+.fixedBar .btnGrp .btn .circle img {
+  width: 100%;
+  vertical-align: top;
+}
+
+/* line 83, ../sass/base/_bar.scss */
+footer {
+  position: relative;
+  width: 100%;
+  padding-bottom: 20px;
+  background: #91ceb3;
+  opacity: 0.9;
+  color: white;
+}
+/* line 92, ../sass/base/_bar.scss */
+footer .logo {
+  position: relative;
+  -webkit-filter: brightness(100);
+  margin-top: 20px;
+  margin-left: 60px;
+}
+/* line 99, ../sass/base/_bar.scss */
+footer .linkArea {
+  position: relative;
+  margin-top: 40px;
+  width: 88%;
+  left: 12%;
+  font-size: 14px;
+  line-height: 26px;
+}
+/* line 107, ../sass/base/_bar.scss */
+footer .linkArea .grp {
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 3%;
+  height: 132px;
+  padding-left: 10px;
+  border-left: white 1px solid;
+  margin-bottom: 50px;
+}
+/* line 117, ../sass/base/_bar.scss */
+footer .linkArea .grp b {
+  font-family: PingFangSC-semibold, sans-serif, "微软雅黑", "microsoft yahei";
+}
+/* line 121, ../sass/base/_bar.scss */
+footer .linkArea .grp a {
+  font-family: PingFangSC-light, sans-serif, "微软雅黑", "microsoft yahei";
+  color: white;
+  text-decoration: none;
+}
+/* line 126, ../sass/base/_bar.scss */
+footer .linkArea .grp a:hover {
+  text-decoration: underline;
+}
+/* line 131, ../sass/base/_bar.scss */
+footer .linkArea .grp img {
+  width: 15px;
+}
+/* line 135, ../sass/base/_bar.scss */
+footer .linkArea .grp .line {
+  width: 100%;
+  height: 1px;
+  margin: 12px 0;
+  background: white;
+}
+/* line 147, ../sass/base/_bar.scss */
+footer .linkArea .final {
+  padding-right: 0;
+}
+/* line 152, ../sass/base/_bar.scss */
+footer .context {
+  color: #595757;
+  font-size: 11px;
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+}
+
+@media screen and (max-width: 1000px) {
+  /* line 162, ../sass/base/_bar.scss */
+  .fixedBar {
+    width: 1000px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  /* line 171, ../sass/base/_bar.scss */
+  footer .linkArea .grp {
+    padding-right: 7%;
+  }
+}
+@media screen and (min-width: 1281px) {
+  /* line 181, ../sass/base/_bar.scss */
+  footer .linkArea .grp {
+    padding-right: 4%;
+  }
+}
+@media screen and (max-width: 400px) {
+  /* line 191, ../sass/base/_bar.scss */
+  footer .linkArea .grp {
+    padding-right: 2%;
+  }
+}
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ */
+/* line 5, ../sass/indexOld/_animation.scss */
+body {
+  font-family: PingFangSC-Regular, sans-serif, "微软雅黑", "microsoft yahei";
+  background: #d8ecdf;
+  height: 100vh;
+}
+
+/* line 12, ../sass/indexOld/_animation.scss */
+.grass {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 52px;
+  width: 1280px;
+}
+
+/* line 20, ../sass/indexOld/_animation.scss */
+.cloud1 {
+  position: absolute;
+  width: 120px;
+  top: 50px;
+  left: 20%;
+  opacity: 0;
+  animation-name: cloud1;
+  animation-duration: 70s;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud1 {
+  from {
+    left: -10%;
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  to {
+    left: 100%;
+    opacity: 0;
+  }
+}
+/* line 46, ../sass/indexOld/_animation.scss */
+.cloud2 {
+  position: absolute;
+  width: 90px;
+  top: 320px;
+  left: 5%;
+  opacity: 0;
+  animation-name: cloud2;
+  animation-duration: 100s;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud2 {
+  from {
+    left: -10%;
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  to {
+    left: 110%;
+    opacity: 0;
+  }
+}
+/* line 73, ../sass/indexOld/_animation.scss */
+.cloud3 {
+  position: absolute;
+  width: 80px;
+  top: 520px;
+  left: 30%;
+  opacity: 0;
+  animation-name: cloud3;
+  animation-duration: 75s;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud3 {
+  from {
+    left: -30%;
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  to {
+    left: 110%;
+    opacity: 0;
+  }
+}
+/* line 99, ../sass/indexOld/_animation.scss */
+.cloud4 {
+  position: absolute;
+  width: 90px;
+  top: 50px;
+  left: 60%;
+  opacity: 0;
+  animation-name: cloud4;
+  animation-duration: 40s;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud4 {
+  from {
+    left: 60%;
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  to {
+    left: 110%;
+    opacity: 0;
+  }
+}
+/* line 125, ../sass/indexOld/_animation.scss */
+.cloud5 {
+  position: absolute;
+  width: 100px;
+  top: 450px;
+  left: 55%;
+  opacity: 0;
+  animation-name: cloud5;
+  animation-duration: 40s;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud5 {
+  from {
+    left: 55%;
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  to {
+    left: 110%;
+    opacity: 0;
+  }
+}
+/* line 151, ../sass/indexOld/_animation.scss */
+.cloud6 {
+  position: absolute;
+  width: 120px;
+  top: 300px;
+  left: 70%;
+  opacity: 0;
+  animation-name: cloud6;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud6 {
+  from {
+    left: 70%;
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  to {
+    left: 110%;
+    opacity: 0;
+  }
+}
+/* line 178, ../sass/indexOld/_animation.scss */
+.bird1 {
+  position: absolute;
+  top: 200px;
+  left: 20%;
+  opacity: 0;
+  animation-name: bird1;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards;
+}
+
+@keyframes bird1 {
+  from {
+    left: 20%;
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  to {
+    left: 110%;
+    opacity: 0;
+  }
+}
+/* line 204, ../sass/indexOld/_animation.scss */
+.bird2 {
+  position: absolute;
+  top: 100px;
+  right: 10%;
+  opacity: 0;
+  animation-name: bird2;
+  animation-duration: 40s;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards;
+  transform: scaleX(-1);
+}
+
+@keyframes bird2 {
+  from {
+    right: 5%;
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  to {
+    right: 110%;
+    opacity: 0;
+  }
+}
+/* line 233, ../sass/indexOld/_animation.scss */
+img.birdFlyOne {
+  position: absolute;
+  animation-name: birdFly1;
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+/* line 240, ../sass/indexOld/_animation.scss */
+img.birdFlyTwo {
+  position: absolute;
+  animation-name: birdFly2;
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes birdFly1 {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes birdFly2 {
+  from {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+/* line 12, ../sass/tree.scss */
+body {
+  width: 100vw;
+  overflow-x: scroll;
+}
+
+/* line 17, ../sass/tree.scss */
+.mountain {
+  position: absolute;
+  width: 70%;
+  left: 15%;
+  bottom: 0;
+}
+
+/* line 24, ../sass/tree.scss */
+.all {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+/* line 34, ../sass/tree.scss */
+.all .guide {
+  position: absolute;
+  width: 13%;
+  height: 30%;
+  left: 5%;
+  bottom: 0px;
+}
+/* line 44, ../sass/tree.scss */
+.all .guide .guideImg {
+  position: absolute;
+  width: 30%;
+  bottom: 0;
+  left: 35%;
+}
+/* line 51, ../sass/tree.scss */
+.all .guide .goRadical {
+  position: absolute;
+  bottom: 94%;
+  width: 75%;
+}
+/* line 57, ../sass/tree.scss */
+.all .guide .goTree {
+  position: absolute;
+  bottom: 35%;
+  width: 75%;
+  left: 25%;
+}
+/* line 65, ../sass/tree.scss */
+.all .topic {
+  font-weight: lighter;
+  position: absolute;
+  font-size: 20px;
+  letter-spacing: 3px;
+  top: 70px;
+  left: 26%;
+  color: #69360c;
+  z-index: 999;
+}
+/* line 77, ../sass/tree.scss */
+.all .HANZI {
+  position: absolute;
+  width: 70%;
+  top: 130px;
+  left: 25%;
+}
+/* line 86, ../sass/tree.scss */
+.all .topic2 {
+  font-weight: lighter;
+  position: absolute;
+  font-size: 20px;
+  letter-spacing: 3px;
+  top: 70px;
+  left: 26%;
+  color: #69360c;
+}
+/* line 96, ../sass/tree.scss */
+.all .radical {
+  position: absolute;
+  top: 130px;
+  left: 24%;
+  width: 70%;
+  height: 460px;
+  padding-top: 15px;
+  background: rgba(255, 255, 255, 0.7);
+  color: #595856;
+}
+/* line 106, ../sass/tree.scss */
+.all .radical .scroll {
+  position: relative;
+  overflow-y: scroll;
+  width: 98%;
+  height: 95%;
+}
+/* line 112, ../sass/tree.scss */
+.all .radical .scroll::-webkit-scrollbar {
+  background-color: rgba(255, 255, 255, 0);
+  width: 1.2em;
+}
+/* line 117, ../sass/tree.scss */
+.all .radical .scroll::-webkit-scrollbar-thumb {
+  background-color: #ddeaab;
+  border: 3px solid white;
+  border-radius: 10px;
+}
+/* line 123, ../sass/tree.scss */
+.all .radical .scroll .line {
+  margin-top: 8px;
+  margin-left: 25px;
+  letter-spacing: 6px;
+}
+/* line 128, ../sass/tree.scss */
+.all .radical .scroll .line .num {
+  display: inline-block;
+  background: #d7e12e;
+  padding: 5px 14px;
+  border-radius: 12px;
+  font-size: 13px;
+  letter-spacing: 0;
+}
+/* line 137, ../sass/tree.scss */
+.all .radical .scroll .line .odd {
+  background: #fdeca0;
+}
+/* line 141, ../sass/tree.scss */
+.all .radical .scroll .line a {
+  text-decoration: none;
+  color: #595856;
+}
+
+/* line 151, ../sass/tree.scss */
+footer {
+  background: #9CC838;
+}
+
+@media screen and (max-width: 1024px) {
+  /* line 157, ../sass/tree.scss */
+  body {
+    width: 1024px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  /* line 166, ../sass/tree.scss */
+  .news {
+    width: 70%;
+    left: 13%;
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+}

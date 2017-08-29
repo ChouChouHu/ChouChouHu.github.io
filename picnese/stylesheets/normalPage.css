@@ -1,0 +1,330 @@
+@charset "UTF-8";
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ */
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ */
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ */
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,300italic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700);
+@font-face {
+  font-family: 'pictureWord';
+  src: url(../fonts/PICNESE-ONLY_ASCII.ttf);
+}
+@font-face {
+  font-family: 'ZUYIN';
+  src: url(../fonts/ZUYIN.ttf);
+}
+/* line 20, ../sass/base/_font.scss */
+.pictureWord {
+  font-family: pictureWord;
+}
+
+/* line 10, ../sass/page/_background.scss */
+body {
+  font-family: PingFangSC-Regular, sans-serif, "微软雅黑", "microsoft yahei";
+  background: #d8ecdf;
+  overflow: scroll;
+  margin: 0;
+}
+
+/* line 21, ../sass/page/_background.scss */
+.title {
+  position: absolute;
+  width: 270px;
+  top: 107px;
+  left: 5%;
+}
+
+/* line 28, ../sass/page/_background.scss */
+.container {
+  position: relative;
+  background: white;
+  width: 90%;
+  padding-bottom: 70px;
+  margin-top: 184px;
+  margin-bottom: 70px;
+  left: 5%;
+  border-radius: 15px;
+}
+/* line 38, ../sass/page/_background.scss */
+.container .decoration {
+  position: relative;
+  width: 92%;
+  left: 4%;
+}
+/* line 44, ../sass/page/_background.scss */
+.container .gameSet {
+  position: relative;
+  width: 80%;
+  left: 10%;
+  top: 40px;
+}
+/* line 51, ../sass/page/_background.scss */
+.container .gameSet .game {
+  display: inline-block;
+  margin-right: 18px;
+  width: 170px;
+  text-align: center;
+}
+/* line 57, ../sass/page/_background.scss */
+.container .gameSet .game img {
+  cursor: pointer;
+  width: 100%;
+}
+/* line 61, ../sass/page/_background.scss */
+.container .gameSet .game .text {
+  font-family: PingFangSC-semibold, sans-serif, "微软雅黑", "microsoft yahei";
+  margin-top: 20px;
+  font-size: 18px;
+  color: #009e95;
+}
+/* line 70, ../sass/page/_background.scss */
+.container .dialog {
+  position: relative;
+  width: 80%;
+  left: 10%;
+  background: #eef7f0;
+  border: #5fb7b0 1.5px solid;
+  border-radius: 10px;
+  margin-top: 115px;
+}
+/* line 79, ../sass/page/_background.scss */
+.container .dialog img.dialogImg {
+  position: absolute;
+  width: 92px;
+  top: -51px;
+  left: 39px;
+  z-index: 2;
+}
+/* line 87, ../sass/page/_background.scss */
+.container .dialog .dialogContent {
+  padding: 50px 5%;
+}
+/* line 90, ../sass/page/_background.scss */
+.container .dialog .dialogContent .picture {
+  position: relative;
+  display: inline-block;
+  width: 28%;
+  margin-left: 2%;
+  vertical-align: top;
+}
+
+@media screen and (max-width: 600px) {
+  /* line 103, ../sass/page/_background.scss */
+  .container {
+    width: 100%;
+    left: 0;
+    border-radius: 0;
+  }
+}
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ */
+/* line 6, ../sass/base/_bar.scss */
+body {
+  font-family: PingFangTC-regular, Heiti TC, Meiryo, "微軟正黑體", Microsoft JhengHei, "標楷體", DFKai-sb !important;
+}
+
+/* line 15, ../sass/base/_bar.scss */
+.fixedBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 3;
+  background: rgba(255, 255, 255, 0.5);
+}
+/* line 24, ../sass/base/_bar.scss */
+.fixedBar .logo {
+  position: relative;
+  left: 2%;
+  top: 15px;
+  width: 130px;
+}
+/* line 31, ../sass/base/_bar.scss */
+.fixedBar .btnGrp {
+  position: absolute;
+  top: 0;
+  right: 2%;
+  height: 100%;
+  font-size: 0;
+}
+/* line 40, ../sass/base/_bar.scss */
+.fixedBar .btnGrp .btn {
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  padding: 0 20px;
+  font-size: 14px;
+  line-height: 60px;
+  text-align: center;
+  color: #804f21;
+  text-decoration: none;
+}
+/* line 55, ../sass/base/_bar.scss */
+.fixedBar .btnGrp .btn img {
+  width: 20px;
+  vertical-align: middle;
+}
+/* line 60, ../sass/base/_bar.scss */
+.fixedBar .btnGrp .btn .circle {
+  display: inline-block;
+  font-size: 40px;
+  line-height: 40px;
+  width: 36px;
+  height: 36px;
+  margin-right: 8px;
+  border-radius: 50%;
+  overflow: hidden;
+  vertical-align: middle;
+  background: red;
+}
+/* line 73, ../sass/base/_bar.scss */
+.fixedBar .btnGrp .btn .circle img {
+  width: 100%;
+  vertical-align: top;
+}
+
+/* line 83, ../sass/base/_bar.scss */
+footer {
+  position: relative;
+  width: 100%;
+  padding-bottom: 20px;
+  background: #91ceb3;
+  opacity: 0.9;
+  color: white;
+}
+/* line 92, ../sass/base/_bar.scss */
+footer .logo {
+  position: relative;
+  -webkit-filter: brightness(100);
+  margin-top: 20px;
+  margin-left: 60px;
+}
+/* line 99, ../sass/base/_bar.scss */
+footer .linkArea {
+  position: relative;
+  margin-top: 40px;
+  width: 88%;
+  left: 12%;
+  font-size: 14px;
+  line-height: 26px;
+}
+/* line 107, ../sass/base/_bar.scss */
+footer .linkArea .grp {
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 3%;
+  height: 132px;
+  padding-left: 10px;
+  border-left: white 1px solid;
+  margin-bottom: 50px;
+}
+/* line 117, ../sass/base/_bar.scss */
+footer .linkArea .grp b {
+  font-family: PingFangSC-semibold, sans-serif, "微软雅黑", "microsoft yahei";
+}
+/* line 121, ../sass/base/_bar.scss */
+footer .linkArea .grp a {
+  font-family: PingFangSC-light, sans-serif, "微软雅黑", "microsoft yahei";
+  color: white;
+  text-decoration: none;
+}
+/* line 126, ../sass/base/_bar.scss */
+footer .linkArea .grp a:hover {
+  text-decoration: underline;
+}
+/* line 131, ../sass/base/_bar.scss */
+footer .linkArea .grp img {
+  width: 15px;
+}
+/* line 135, ../sass/base/_bar.scss */
+footer .linkArea .grp .line {
+  width: 100%;
+  height: 1px;
+  margin: 12px 0;
+  background: white;
+}
+/* line 147, ../sass/base/_bar.scss */
+footer .linkArea .final {
+  padding-right: 0;
+}
+/* line 152, ../sass/base/_bar.scss */
+footer .context {
+  color: #595757;
+  font-size: 11px;
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+}
+
+@media screen and (max-width: 1000px) {
+  /* line 162, ../sass/base/_bar.scss */
+  .fixedBar {
+    width: 1000px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  /* line 171, ../sass/base/_bar.scss */
+  footer .linkArea .grp {
+    padding-right: 7%;
+  }
+}
+@media screen and (min-width: 1281px) {
+  /* line 181, ../sass/base/_bar.scss */
+  footer .linkArea .grp {
+    padding-right: 4%;
+  }
+}
+@media screen and (max-width: 400px) {
+  /* line 191, ../sass/base/_bar.scss */
+  footer .linkArea .grp {
+    padding-right: 2%;
+  }
+}
+/* line 8, ../sass/normalPage.scss */
+.title {
+  font-weight: bold;
+  font-size: 24px;
+  width: 30%;
+  margin-top: 10px;
+  margin-left: 10px;
+  color: #804f21;
+}
+
+/* line 17, ../sass/normalPage.scss */
+.cloud1 {
+  position: absolute;
+  width: 100px;
+  top: 70px;
+  left: 32%;
+}
+
+/* line 24, ../sass/normalPage.scss */
+.cloud2 {
+  position: absolute;
+  width: 70px;
+  top: 30px;
+  left: 55%;
+}
+
+/* line 31, ../sass/normalPage.scss */
+.cloud3 {
+  position: absolute;
+  width: 80px;
+  top: 80px;
+  left: 90%;
+}
+
+/* line 41, ../sass/normalPage.scss */
+.container .text {
+  width: 100%;
+  padding: 30px;
+}

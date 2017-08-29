@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<meta name="viewport" content="width=device-width, user-scalable=1">
+<link href="stylesheets/reset.css" media="screen, projection" rel="stylesheet" type="text/css" /> 
+<link href="stylesheets/animate.css" rel="stylesheet" type="text/css" />
+<link href="stylesheets/preOrder.css" rel="stylesheet" type="text/css" />  
+<script src="js/jQuery.js"></script>
+<script type="text/javascript">
+</script>
+<head>
+    <title>Picnese demo</title>
+    <meta charset="UTF-8" http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="Shortcut Icon" type="image/x-icon" href="img/icon.png" />
+</head>
+
+<body>
+	<div class="fixedBar">
+		<a href="index.html"><img class="logo" src="img/logo.png"></a>
+		<div class="btnGrp">
+			<a class="btn" href="logIn.html">
+				<img src="img/logIn.svg">
+				會員登入
+			</a>
+			<a class="btn" href="signIn.html">
+				<img src="img/signIn.svg">
+				加入會員
+			</a>
+		</div>
+	</div>
+
+
+<img class="cloud1" src="img/cloud.png">
+<img class="cloud2" src="img/cloud.png">
+<img class="cloud3" src="img/cloud.png">
+
+<div class="container">
+	<div class="titleImg">
+		<img src="img/page/preOrder/titleBorder.png">
+		商 品 預 購 頁 面
+	</div>
+	<div class="goods">
+		<div class="subTitle">
+			桌遊系列
+		</div>
+		<div class="imgBorder">
+			<img id="one" src="img/page/preOrder/seedTitle.png">
+			<a href="tableGame.html">
+				<img id="two" src="img/page/preOrder/seedGoods.png">
+			</a>
+			<div class="price">
+				<div class="redLine"></div>
+				原價999元<br>
+				<div class="red">9折優惠：891元</div>
+			</div>
+		</div>
+	</div>
+	<div class="goods second">
+		<div class="subTitle titleSecond">
+			猜謎卡系列
+		</div>
+		<div class="imgBorder second">
+			<img id="three" src="img/page/preOrder/guessTitle.png">
+			<a href="guess.html">
+				<img id="four" src="img/page/preOrder/guessGoods.png">
+			</a>
+			<div class="price">
+				<div class="redLine"></div>
+				原價450元<br>
+				<div class="red">9折優惠：405元</div>
+			</div>
+		</div>
+	</div>
+	<div class="order">
+
+			<div class="introduction">
+				<div class="center">
+					運費說明
+				</div>
+				[宅配到府]<br>
+				購買猜謎卡運費為<div class="red">70元</div><br>
+				購買神秘種子桌遊運費為<div class="red">85元</div><br>
+				<br>
+				[711純取貨]<br>
+				加上包裝費用(10元)運費為<div class="red">70元</div><br>
+				<br>
+				◆購買滿1000元為<div class="red">免運費</div>
+			</div>
+
+		<form>
+			◎請選擇欲購買商品
+			<li>
+				桌遊 - 神秘種子　　　
+				<select name="數量">
+					<option value="N">數 量</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+				</select>
+			</li>
+			<li>
+				猜謎卡 - 人的衍生字　
+				<select name="數量">
+					<option value="N">數 量</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+				</select>
+			</li>
+			<br>
+			◎請選擇寄送方式
+			<li>
+				寄送方式　　　
+				<select name="請選擇">
+					<option value="N">請 選 擇</option>
+					<option value="home">宅配到府</option>
+					<option value="711">711純取貨</option>
+				</select>
+				<br>
+				<div class="ps">
+					※選擇「宅配到府」郵件寄送約1-2個工作日，<br>
+					　選擇「711取貨」約2-3個工作日。
+				</div>
+			</li>
+			◎請填寫寄送資料
+			<li>
+				收件人姓名　
+				<input style="width: 100px;">
+				<div class="gender">
+					<input type="radio" name="gender" value="male" checked> 先生
+					<input type="radio" name="gender" value="female"> 女士
+				</div>
+			</li>
+			<li>
+				電子郵件　　
+				<input style="width: 180px;">
+			</li>
+			<li>
+				聯絡電話　　
+				<input>
+			</li>
+			<li>
+				手　　機　　
+				<input>
+			</li>
+			<li>
+				寄送地址　　
+				<select name="請選擇">
+					<option value="N">請 選 擇</option>
+				</select>
+				<select name="請選擇">
+					<option value="N">請 選 擇</option>
+				</select>
+				<br>
+				<input style="width: 210px;">
+			</li>
+			<li>
+				711取貨　&nbsp&nbsp　
+				<input>
+				<br>
+				<div class="ps" style="margin-top: -3px;">
+					選擇「711取貨」者請留店名跟店號。<br>
+					店號查詢>> <a href="http://emap.pcsc.com.tw/emap.aspx" target="_blank">http://emap.pcsc.com.tw/emap.aspx</a>
+				</div>
+			</li>
+			<li>
+				備　　註　　
+				<textarea rows="3"></textarea>
+			</li>
+			<br>
+			<li>
+				金　　額　　
+				<div class="left red">976元</div>
+			</li>
+			<li>
+				付款方式　　
+				<div class="left" style="font-size: 12px; letter-spacing: 0px;">
+					<a class="btn" href="">信用卡</a>
+					※目前只提供信用卡付款。
+				</div>
+				<br>
+				<img class="credit" src="img/page/preOrder/credit.png">
+			</li>
+
+		</form>
+	</div>
+</div>
+	<footer>
+		<a href="index.html"><img class="logo" src="img/logo.png"></a>
+		<div class="linkArea">
+			<span class="grp">
+				<b>最新消息</b><br>
+				<a href="">華語文招募說明會</a><br>
+				<a href="">台北國際書展圓滿結束</a><br>
+				<a href="">網站上線測試</a><br>
+				<a href="">金石堂城中分店演講...</a><br>
+			</span>
+			<span class="grp">
+				<b>圖象字探索</b><br>
+				<a href="story.html">用圖象編故事</a><br>
+				<a href="teaching.html">圖象字轉換機</a><br>
+				<a href="music.html">兒歌唱片機</a>
+			</span>
+			<span class="grp">
+				<b>檢索系統</b><br>
+				<a href="tree.html">漢字樹</a><br>
+				<a href="retrieval.html">中文單字檢索</a><br>
+				<a href="mouse.html">洞穴式檢索</a>
+			</span>
+			<span class="grp">
+				<b>商品資訊</b><br>
+				<a href="tableGame.html">桌遊系列</a><br>
+				<a href="guess.html">猜謎卡系列</a>
+			</span>
+			<span class="grp">
+				<b>圖象字時代來臨了</b><br>
+				<a href="PicneseEra.html">觀看介紹影片</a><br>
+				<div class="line"></div>
+				<a href="forum.html"><b>討論區<b></a><br>
+				<a href="wordRoom.html"><b>國小生字堂<b></a><br>
+				<a href=""><b>合作夥伴招募<b></a>
+			</span>
+			<span class="grp final">
+				<b>關於我們</b><br>
+				中華圖象字教育有限公司<br>
+				<img src="img/footer/position.svg">
+				100 台北市中正區濟南路1段321號 承曦樓 2F<br>
+				<img src="img/footer/phone.svg">
+				(02) 2391-6210<br>
+				<img src="img/footer/mail.svg">
+				picneseword@gmail.com
+			</span>
+		</div>
+		<br><br><br>
+		<div class="context">
+			中華圖像字 版權所有Copyright&copy2017. All rights reserved.
+		</div>
+	</footer>
+</body>
+
+</html>

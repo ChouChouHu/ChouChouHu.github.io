@@ -1,0 +1,236 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ */
+
+.menu {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 4;
+	top: 0;
+	box-shadow: 4px 4px 3px rgba(20%, 20%, 40%, 0.2);
+
+	.menuContent {
+		background: rgba(255, 255, 255, 0.9);
+		width: 48%;
+		height: 100vh;
+
+		.threeLine {
+			position: absolute;
+			right: 53%;
+			width: 27px;
+			height: 25px;
+			margin-top: 12px;
+			font-size: 22px;
+			color: #8d452d;
+			cursor: pointer;
+			// background: red;
+
+			// .line {
+			// 	width: 100%;
+			// 	margin-bottom: 3px;
+			// 	height: 5px;
+			// 	background: #8d452d;
+			// 	border-radius: 2px;
+			// 	cursor: pointer;
+			// 	opacity: 0.9;
+			// }
+		}
+
+		.itemSet {
+			padding-top: 30px;
+			letter-spacing: 3px;
+
+			a {
+				text-decoration: none;
+			}
+
+			.item {
+				height: 36px;
+				font-size: 16px;
+				line-height: 36px;
+				padding-left: 10%;
+				margin-left: 3%;
+				color: #8d452d;
+				display: block;
+				font-weight: bold;
+				cursor: pointer;
+				border-bottom: 1.5px solid rgba(50, 50, 50, 0.1);
+
+				img.arrow {
+					position: absolute;
+					width: 26px;
+					right: 55%;
+					margin-top: 4px;
+				}
+
+				&:hover {
+					color: rgba(141, 69, 45, 0.7);
+				}
+
+				.subItemSet {
+					position: absolute;
+					display: none;
+					background: rgba(255, 255, 255, 0.9);
+					left: 48%;
+					padding-top: 2px 0;
+					width: 40%;
+					margin-top: -37px;
+					z-index: 4;
+					border-left: 1px solid rgba(141, 69, 45, 0.1);
+
+					.subItem {
+						height: 36px;
+						font-size: 16px;
+						line-height: 36px;
+						padding-left: 15%;
+						margin: 0 3%;
+						color: #8d452d;
+						display: block;
+						font-weight: bold;
+						cursor: pointer;
+						border-bottom: 1.5px solid rgba(50, 50, 50, 0.1);
+						&:hover {
+							color: rgba(141, 69, 45, 0.7);
+						}
+					}
+				}
+
+				.circle {
+					position: relative;
+					display: inline-block;
+					font-size: 40px;
+					line-height: 40px;
+					width: 36px;
+					height: 36px;
+					border-radius: 50%;
+					overflow: hidden;
+					vertical-align: middle;
+					margin-right: 5px;
+					margin-bottom: 3px;
+
+					img {
+						width: 100%;
+					}
+				}
+			}
+
+			div.item {
+				&:hover {
+					.subItemSet {
+						display: block;
+					}
+				}
+			}
+		}
+
+		.fb {
+			position: absolute;
+			bottom: 18px;
+			left: 15px;
+			width: 45px;
+			opacity: 0.9;
+
+			img {
+				width: 100%;
+			}
+		}
+	}
+}
+
+.moreClick {
+	display: none;
+}
+
+.phone {
+	display: none !important;
+}
+
+
+
+@media screen and (max-width: 1000px){
+
+
+	.desktop {
+		display: none !important;
+	}
+
+	.phone {
+		display: block !important;
+	}
+
+	
+	.fixedBar {
+		width: 100%;
+		background: #ffb833 !important;
+
+		.logo {
+			left: 50%;
+			margin-left: -65px;
+			-webkit-filter: brightness(100);
+		}
+
+		.btnGrp {
+			width: 100px;
+			left: 0;
+
+			.more {
+				position: absolute;
+				left: 18px;
+				width: 25px;
+				height: 25px;
+				margin-top: 19px;
+				// background: red;
+
+				.line {
+					width: 100%;
+					margin-bottom: 4px;
+					height: 4px;
+					background: white;
+					border-radius: 2px;
+					cursor: pointer;
+					opacity: 0.9;
+				}
+			}
+
+			.btn {
+				// color: white;
+				display: none;
+			}
+		}
+	}
+
+
+	.moreClick {
+		display: none;
+		background: #ffb833;
+		position: relative;
+		width: 100%;
+		height: 90px;
+		margin-top: 31px;
+		opacity: 0.9;
+
+		.btn {
+			position: relative;
+			display: block;
+			width: 100%;
+			height: 45px;
+			line-height: 45px;
+			// background: white;
+			text-align: center;
+			text-decoration: none;
+			color: white;
+			font-size: 16px;
+			font-weight: bold;
+
+			&:hover {
+				background: white;
+				color: #ffb833;
+			}
+		}
+	}
+}
+
+

@@ -1,0 +1,22 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ */
+
+
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,300italic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700);
+
+@font-face {
+	font-family: 'pictureWord';
+	src: url(../fonts/PICNESE-ONLY_ASCII.ttf);
+}
+
+@font-face {
+	font-family: 'ZUYIN';
+	src: url(../fonts/ZUYIN.ttf);
+}
+
+.pictureWord {
+    font-family: pictureWord;
+}

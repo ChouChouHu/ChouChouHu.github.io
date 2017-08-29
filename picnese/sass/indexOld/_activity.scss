@@ -1,0 +1,38 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ */
+
+
+.activity {
+	position: absolute;
+	top: 65px;
+	right: 30px;
+	width: 210px;
+
+	img.activityImg {
+		width: 100%;
+	}
+
+	.text {
+		font-family: PingFangSC-regular, sans-serif, "微软雅黑", "microsoft yahei";
+		position: absolute;
+		top: 42px;
+		left: 40px;
+		width: 140px;
+		height: 180px;
+		color: #b9b9ba;
+		font-size: 13px;
+		line-height: 20px;
+		overflow: scroll;
+		// background: red;
+
+		div {
+			cursor: pointer;
+			word-break: break-all;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}

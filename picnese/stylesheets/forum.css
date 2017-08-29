@@ -1,0 +1,972 @@
+@charset "UTF-8";
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ */
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ */
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,300italic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700);
+/* line 6, ../sass/base/_bar.scss */
+body {
+  font-family: PingFangTC-regular, Heiti TC, Meiryo, "微軟正黑體", Microsoft JhengHei, "標楷體", DFKai-sb !important;
+}
+
+/* line 15, ../sass/base/_bar.scss */
+.fixedBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 3;
+  background: rgba(255, 255, 255, 0.5);
+}
+/* line 24, ../sass/base/_bar.scss */
+.fixedBar .logo {
+  position: relative;
+  left: 2%;
+  top: 15px;
+  width: 130px;
+}
+/* line 31, ../sass/base/_bar.scss */
+.fixedBar .btnGrp {
+  position: absolute;
+  top: 0;
+  right: 2%;
+  height: 100%;
+  font-size: 0;
+}
+/* line 40, ../sass/base/_bar.scss */
+.fixedBar .btnGrp .btn {
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  padding: 0 20px;
+  font-size: 14px;
+  line-height: 60px;
+  text-align: center;
+  color: #804f21;
+  text-decoration: none;
+}
+/* line 55, ../sass/base/_bar.scss */
+.fixedBar .btnGrp .btn img {
+  width: 20px;
+  vertical-align: middle;
+}
+/* line 60, ../sass/base/_bar.scss */
+.fixedBar .btnGrp .btn .circle {
+  display: inline-block;
+  font-size: 40px;
+  line-height: 40px;
+  width: 36px;
+  height: 36px;
+  margin-right: 8px;
+  border-radius: 50%;
+  overflow: hidden;
+  vertical-align: middle;
+  background: red;
+}
+/* line 73, ../sass/base/_bar.scss */
+.fixedBar .btnGrp .btn .circle img {
+  width: 100%;
+  vertical-align: top;
+}
+
+/* line 83, ../sass/base/_bar.scss */
+footer {
+  position: relative;
+  width: 100%;
+  padding-bottom: 20px;
+  background: #91ceb3;
+  opacity: 0.9;
+  color: white;
+}
+/* line 92, ../sass/base/_bar.scss */
+footer .logo {
+  position: relative;
+  -webkit-filter: brightness(100);
+  margin-top: 20px;
+  margin-left: 60px;
+}
+/* line 99, ../sass/base/_bar.scss */
+footer .linkArea {
+  position: relative;
+  margin-top: 40px;
+  width: 88%;
+  left: 12%;
+  font-size: 14px;
+  line-height: 26px;
+}
+/* line 107, ../sass/base/_bar.scss */
+footer .linkArea .grp {
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 3%;
+  height: 132px;
+  padding-left: 10px;
+  border-left: white 1px solid;
+  margin-bottom: 50px;
+}
+/* line 117, ../sass/base/_bar.scss */
+footer .linkArea .grp b {
+  font-family: PingFangSC-semibold, sans-serif, "微软雅黑", "microsoft yahei";
+}
+/* line 121, ../sass/base/_bar.scss */
+footer .linkArea .grp a {
+  font-family: PingFangSC-light, sans-serif, "微软雅黑", "microsoft yahei";
+  color: white;
+  text-decoration: none;
+}
+/* line 126, ../sass/base/_bar.scss */
+footer .linkArea .grp a:hover {
+  text-decoration: underline;
+}
+/* line 131, ../sass/base/_bar.scss */
+footer .linkArea .grp img {
+  width: 15px;
+}
+/* line 135, ../sass/base/_bar.scss */
+footer .linkArea .grp .line {
+  width: 100%;
+  height: 1px;
+  margin: 12px 0;
+  background: white;
+}
+/* line 147, ../sass/base/_bar.scss */
+footer .linkArea .final {
+  padding-right: 0;
+}
+/* line 152, ../sass/base/_bar.scss */
+footer .context {
+  color: #595757;
+  font-size: 11px;
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+}
+
+@media screen and (max-width: 1000px) {
+  /* line 162, ../sass/base/_bar.scss */
+  .fixedBar {
+    width: 1000px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  /* line 171, ../sass/base/_bar.scss */
+  footer .linkArea .grp {
+    padding-right: 7%;
+  }
+}
+@media screen and (min-width: 1281px) {
+  /* line 181, ../sass/base/_bar.scss */
+  footer .linkArea .grp {
+    padding-right: 4%;
+  }
+}
+@media screen and (max-width: 400px) {
+  /* line 191, ../sass/base/_bar.scss */
+  footer .linkArea .grp {
+    padding-right: 2%;
+  }
+}
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ */
+@font-face {
+  font-family: 'pictureWord';
+  src: url(../fonts/PICNESE-ONLY_ASCII.ttf);
+}
+@font-face {
+  font-family: 'ZUYIN';
+  src: url(../fonts/ZUYIN.ttf);
+}
+/* line 20, ../sass/base/_font.scss */
+.pictureWord {
+  font-family: pictureWord;
+}
+
+/* line 8, ../sass/forum.scss */
+body {
+  background: #fafbe5;
+  font-size: 0;
+  margin: 0;
+}
+
+/* line 14, ../sass/forum.scss */
+.fixedBar {
+  background: white;
+  z-index: 99999;
+}
+/* line 19, ../sass/forum.scss */
+.fixedBar p {
+  font-size: 12px;
+  margin-left: 18%;
+}
+/* line 22, ../sass/forum.scss */
+.fixedBar p a {
+  color: #804f21;
+  text-decoration: none;
+}
+
+/* line 29, ../sass/forum.scss */
+.banner {
+  position: relative;
+  width: 56%;
+  left: 22%;
+  margin-top: 74px;
+  margin-bottom: 14px;
+  background: white;
+  height: 120px;
+}
+/* line 38, ../sass/forum.scss */
+.banner .logo {
+  position: absolute;
+  right: 5%;
+  height: 120px;
+  line-height: 120px;
+  font-family: Arial;
+  font-size: 70px;
+}
+/* line 46, ../sass/forum.scss */
+.banner .logo img {
+  height: 50px;
+}
+/* line 51, ../sass/forum.scss */
+.banner .topic {
+  position: absolute;
+  left: 2px;
+  bottom: 2px;
+  font-size: 36px;
+  letter-spacing: 5px;
+  color: #933314;
+  margin-left: 0;
+}
+
+/* line 63, ../sass/forum.scss */
+.content {
+  position: relative;
+  width: 52%;
+  /* minus padding */
+  left: 22%;
+  background: white;
+  padding: 20px 2% 50px 2%;
+  margin-bottom: 50px;
+  font-size: 15px;
+}
+/* line 72, ../sass/forum.scss */
+.content .searchArea {
+  position: relative;
+  width: 100%;
+}
+/* line 76, ../sass/forum.scss */
+.content .searchArea .search {
+  width: 52%;
+  border-width: 2px;
+  height: 22px;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+/* line 84, ../sass/forum.scss */
+.content .searchArea img {
+  width: 20px;
+  margin-left: -35px;
+  margin-top: -4px;
+  vertical-align: middle;
+}
+/* line 91, ../sass/forum.scss */
+.content .searchArea .searchBtn {
+  background: red;
+  width: 24px;
+  height: 24px;
+  margin-left: -26px;
+  opacity: 0;
+  cursor: pointer;
+}
+/* line 102, ../sass/forum.scss */
+.content .sendBtn {
+  position: absolute;
+  right: 5%;
+  width: 16%;
+  top: 22px;
+}
+/* line 109, ../sass/forum.scss */
+.content .btnGrp {
+  position: relative;
+  margin-bottom: 10px;
+}
+/* line 115, ../sass/forum.scss */
+.content .btnGrp .btn {
+  position: relative;
+  display: inline-block;
+  border: 1px #F39800 solid;
+  border-radius: 5px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  background: white;
+  padding: 5px;
+  width: 84px;
+  text-align: center;
+  cursor: pointer;
+  color: #7F4F21;
+  margin-right: 5px;
+}
+/* line 130, ../sass/forum.scss */
+.content .btnGrp .btn:hover {
+  background: #F39800;
+  color: white;
+}
+/* line 136, ../sass/forum.scss */
+.content .btnGrp .active {
+  background: #F39800;
+  color: white;
+}
+/* line 144, ../sass/forum.scss */
+.content .crack input {
+  width: 60px;
+}
+/* line 149, ../sass/forum.scss */
+.content ul {
+  position: relative;
+  font-size: 14px;
+  margin-top: 40px;
+}
+/* line 155, ../sass/forum.scss */
+.content ul li {
+  display: inline-block;
+  list-style-type: none;
+  color: #7F4F21;
+  margin: 0px 2px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+}
+/* line 166, ../sass/forum.scss */
+.content ul li:hover {
+  background: #fbdb8a;
+  border-radius: 50%;
+  text-align: center;
+}
+/* line 173, ../sass/forum.scss */
+.content ul li a {
+  color: #7F4F21;
+}
+/* line 182, ../sass/forum.scss */
+.content ul .active {
+  vertical-align: middle;
+  background: #fbdb8a;
+  border-radius: 50%;
+  text-align: center;
+}
+/* line 189, ../sass/forum.scss */
+.content ul a {
+  text-decoration: none;
+  vertical-align: middle;
+}
+/* line 194, ../sass/forum.scss */
+.content ul .goBack {
+  position: relative;
+  display: inline-block;
+  height: 30px;
+}
+/* line 199, ../sass/forum.scss */
+.content ul .goBack img {
+  height: 100%;
+}
+/* line 204, ../sass/forum.scss */
+.content ul .nav {
+  position: relative;
+  display: inline-block;
+  background: #f9db88;
+  height: 30px;
+  margin: 0px 3px;
+}
+/* line 211, ../sass/forum.scss */
+.content ul .nav img {
+  height: 100%;
+}
+/* line 217, ../sass/forum.scss */
+.content table {
+  font-size: 13px;
+  position: relative;
+  letter-spacing: 1px;
+  width: 100%;
+  margin: 40px 0px;
+}
+/* line 225, ../sass/forum.scss */
+.content table tr {
+  height: 70px;
+  line-height: 20px;
+  background: #fbfbe5;
+}
+/* line 230, ../sass/forum.scss */
+.content table tr td {
+  text-align: center;
+  border-bottom: 4px white solid;
+}
+/* line 234, ../sass/forum.scss */
+.content table tr td a {
+  color: black;
+  text-decoration: none;
+}
+/* line 238, ../sass/forum.scss */
+.content table tr td a:hover {
+  text-decoration: underline;
+}
+/* line 243, ../sass/forum.scss */
+.content table tr td img {
+  height: 50px;
+  vertical-align: middle;
+}
+/* line 249, ../sass/forum.scss */
+.content table tr .left {
+  text-align: left;
+}
+/* line 253, ../sass/forum.scss */
+.content table tr .pictureWord {
+  font-size: 50px;
+}
+/* line 259, ../sass/forum.scss */
+.content table .odd {
+  background: #ffebc1;
+}
+/* line 263, ../sass/forum.scss */
+.content table .header {
+  background: white;
+  height: 30px;
+  letter-spacing: 5px;
+}
+/* line 270, ../sass/forum.scss */
+.content textarea {
+  position: relative;
+  width: 95%;
+  left: 2%;
+  height: 300px;
+  margin-top: 50px;
+  border-color: grey;
+}
+/* line 279, ../sass/forum.scss */
+.content .postBtn {
+  position: relative;
+  left: 2%;
+  margin-top: 15px;
+}
+/* line 284, ../sass/forum.scss */
+.content .postBtn .btn {
+  display: inline-block;
+  background: #ffb732;
+  color: white;
+  padding: 5px 15px;
+  text-decoration: none;
+}
+
+/* line 299, ../sass/forum.scss */
+.backForum {
+  position: relative;
+  display: inline-block;
+  margin-top: 15px;
+  margin-bottom: 8px;
+  width: 100px;
+  left: 22%;
+  cursor: pointer;
+  font-size: 14px;
+}
+/* line 311, ../sass/forum.scss */
+.backForum img {
+  width: 100%;
+}
+
+/* line 316, ../sass/forum.scss */
+.topic {
+  font-size: 26px;
+  width: 78%;
+  margin-left: 22%;
+  letter-spacing: 5px;
+  color: #7F4F21;
+}
+
+/* line 329, ../sass/forum.scss */
+.bread {
+  font-size: 16px;
+  color: grey;
+  margin-left: 22%;
+  line-height: 30px;
+}
+/* line 335, ../sass/forum.scss */
+.bread .backForum {
+  left: 10%;
+  width: 80px;
+  vertical-align: middle;
+}
+
+/* line 342, ../sass/forum.scss */
+.word {
+  display: inline-block;
+  background: white;
+  width: 255px;
+  height: 130px;
+  margin-left: 23%;
+  color: #595758;
+}
+/* line 356, ../sass/forum.scss */
+.word .picture {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 130px;
+  height: 120px;
+  line-height: 120px;
+  font-size: 120px;
+  text-align: center;
+  margin-top: 5px;
+  border-right: #dcdddd 1px solid;
+}
+/* line 375, ../sass/forum.scss */
+.word .traditional {
+  font-family: sans-serif;
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 60px;
+  margin-top: 5px;
+  padding-left: 10px;
+  border-bottom: #dcdddd 1px solid;
+  font-size: 50px;
+  line-height: 60px;
+}
+/* line 395, ../sass/forum.scss */
+.word .traditional .simplified {
+  font-family: sans-serif;
+  position: relative;
+  display: inline-block;
+  line-height: 26px;
+  border: white 0.2vw solid;
+  font-size: 20px;
+  text-align: center;
+}
+/* line 409, ../sass/forum.scss */
+.word .listen {
+  font-family: sans-serif;
+  position: relative;
+  display: inline-block;
+  height: 50px;
+  line-height: 26px;
+  font-size: 20px;
+  margin-top: 8px;
+}
+/* line 422, ../sass/forum.scss */
+.word .listen .phonetic {
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+  margin-left: 0px;
+  margin-top: 5px;
+  line-height: 20px;
+}
+/* line 433, ../sass/forum.scss */
+.word .listen .pinYin {
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 3px;
+}
+
+/* line 444, ../sass/forum.scss */
+.explanation {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+  padding: 0px 5% 0px 5%;
+  height: 130px;
+  font-size: 16px;
+  line-height: 22px;
+  overflow-y: scroll;
+  color: black;
+  vertical-align: top;
+}
+/* line 462, ../sass/forum.scss */
+.explanation::-webkit-scrollbar {
+  background-color: white;
+  width: 1.2em;
+}
+/* line 471, ../sass/forum.scss */
+.explanation::-webkit-scrollbar-thumb {
+  background-color: #f3d091;
+  border: 3px solid white;
+  border-radius: 10px;
+}
+/* line 481, ../sass/forum.scss */
+.explanation .main {
+  font-size: 26px;
+  line-height: 32px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+/* line 489, ../sass/forum.scss */
+.explanation p {
+  font-size: 18px;
+  margin-top: 6px;
+}
+
+/* line 495, ../sass/forum.scss */
+.forum_each {
+  position: relative;
+  margin-left: 23%;
+  width: 60%;
+  background: white;
+  margin-top: 50px;
+  margin-bottom: 150px;
+  padding-bottom: 50px;
+}
+/* line 504, ../sass/forum.scss */
+.forum_each .essayTopic {
+  position: relative;
+  font-size: 20px;
+  letter-spacing: 1px;
+  border-bottom: 2px #ffe0a7 solid;
+  width: 94%;
+  left: 2%;
+  height: 30px;
+  padding-top: 25px;
+  padding-left: 2%;
+  margin-bottom: 5px;
+}
+/* line 517, ../sass/forum.scss */
+.forum_each .collect {
+  position: absolute;
+  font-size: 13px;
+  letter-spacing: 2px;
+  margin-top: 5px;
+  right: 35px;
+  cursor: pointer;
+}
+/* line 525, ../sass/forum.scss */
+.forum_each .collect img {
+  width: 16px;
+  vertical-align: middle;
+}
+/* line 531, ../sass/forum.scss */
+.forum_each .user {
+  margin-top: 30px;
+  margin-left: 4%;
+  line-height: 19px;
+  border-bottom: 2px #efefef solid;
+  padding-bottom: 25px;
+}
+/* line 538, ../sass/forum.scss */
+.forum_each .user .photo {
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  background: grey;
+  border-radius: 50%;
+}
+/* line 547, ../sass/forum.scss */
+.forum_each .user .profile {
+  position: relative;
+  display: inline-block;
+  padding-top: 13px;
+  padding-left: 12px;
+  height: 55px;
+  vertical-align: top;
+}
+/* line 555, ../sass/forum.scss */
+.forum_each .user .profile .name {
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+/* line 562, ../sass/forum.scss */
+.forum_each .user .profile .time {
+  position: relative;
+  display: inline-block;
+  font-size: 12.5px;
+  letter-spacing: 1px;
+  color: grey;
+}
+/* line 572, ../sass/forum.scss */
+.forum_each .essay {
+  width: 92%;
+  margin-left: 4%;
+  margin-top: 30px;
+  padding-bottom: 50px;
+  border-bottom: 2px #efefef solid;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 2px;
+}
+/* line 584, ../sass/forum.scss */
+.forum_each .leaveMessage {
+  width: 92%;
+  margin-left: 4%;
+  margin-top: 5px;
+  padding-bottom: 50px;
+  border-top: 2px #efefef solid;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 2px;
+}
+/* line 595, ../sass/forum.scss */
+.forum_each .leaveMessage .messageTopic {
+  font-size: 16px;
+  letter-spacing: 10px;
+  position: relative;
+  border-bottom: 2px #efefef solid;
+  width: 100%;
+  height: 30px;
+  padding-top: 12px;
+  padding-left: 2%;
+  margin-bottom: 5px;
+}
+/* line 607, ../sass/forum.scss */
+.forum_each .leaveMessage .love {
+  position: absolute;
+  font-size: 14px;
+  right: 40px;
+  border: 1.5px #dbdbdb solid;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-top: -40px;
+  cursor: pointer;
+}
+/* line 617, ../sass/forum.scss */
+.forum_each .leaveMessage .love img {
+  vertical-align: middle;
+  width: 17px;
+}
+/* line 624, ../sass/forum.scss */
+.forum_each .leaveMessage .black img {
+  -webkit-filter: grayscale(1);
+}
+/* line 629, ../sass/forum.scss */
+.forum_each .leaveMessage .message {
+  margin-top: 25px;
+}
+/* line 633, ../sass/forum.scss */
+.forum_each .leaveMessage .leave {
+  position: relative;
+  margin-top: 28px;
+  width: 100%;
+}
+/* line 638, ../sass/forum.scss */
+.forum_each .leaveMessage .leave .img {
+  cursor: pointer;
+  width: 100px;
+}
+/* line 642, ../sass/forum.scss */
+.forum_each .leaveMessage .leave .img img {
+  width: 100%;
+}
+/* line 646, ../sass/forum.scss */
+.forum_each .leaveMessage .leave .img .leaveLittleMessage {
+  position: relative;
+  width: 52.1vw;
+  margin-top: 18px;
+  font-size: 13px;
+  color: grey;
+}
+/* line 655, ../sass/forum.scss */
+.forum_each .leaveMessage .leave .img .leaveLittleMessage .name {
+  display: inline-block;
+  font-size: 15px;
+  margin-right: 5px;
+  color: black;
+}
+/* line 662, ../sass/forum.scss */
+.forum_each .leaveMessage .leave .img .leaveLittleMessage textarea {
+  width: 59.7%;
+  margin-top: 6px;
+  height: 100px;
+  vertical-align: bottom;
+  font-size: 15px;
+}
+/* line 670, ../sass/forum.scss */
+.forum_each .leaveMessage .leave .img .leaveLittleMessage .leaveBtn {
+  display: inline-block;
+  vertical-align: bottom;
+  width: 60px;
+  height: 23px;
+  line-height: 23px;
+  background: #ffb834;
+  text-align: center;
+  letter-spacing: 10px;
+  text-indent: 10px;
+  color: white;
+  cursor: pointer;
+  margin-left: 5px;
+}
+/* line 688, ../sass/forum.scss */
+.forum_each .leaveMessage .leave .after {
+  display: none;
+}
+/* line 692, ../sass/forum.scss */
+.forum_each .leaveMessage .leave .littleMessage {
+  background: #f7f8f8;
+  width: 70%;
+  margin-top: 20px;
+  padding-bottom: 8px;
+}
+/* line 699, ../sass/forum.scss */
+.forum_each .leaveMessage .leave .littleMessage .littlePhoto {
+  width: 35px;
+  height: 35px;
+  margin-top: 13px;
+  margin-left: 15px;
+}
+/* line 706, ../sass/forum.scss */
+.forum_each .leaveMessage .leave .littleMessage .profile {
+  vertical-align: top;
+  padding-top: 20px;
+  margin-bottom: 0;
+  height: 32px;
+}
+/* line 713, ../sass/forum.scss */
+.forum_each .leaveMessage .leave .littleMessage .littleLove {
+  font-size: 12px;
+  right: 34%;
+  border: 1px #dbdbdb solid;
+  padding: 2px 11px;
+  border-radius: 20px;
+  margin-top: -38px;
+  cursor: pointer;
+}
+/* line 723, ../sass/forum.scss */
+.forum_each .leaveMessage .leave .littleMessage .littleMessage {
+  position: relative;
+  margin-top: 0;
+  font-size: 13px;
+  line-height: 16px;
+  width: 76%;
+  left: 17%;
+}
+/* line 733, ../sass/forum.scss */
+.forum_each .leaveMessage .leave .more {
+  text-decoration: none;
+  margin-top: 20px;
+  line-height: 15px;
+  margin-left: 10%;
+  cursor: pointer;
+}
+/* line 740, ../sass/forum.scss */
+.forum_each .leaveMessage .leave .more:hover {
+  text-decoration: underline;
+}
+/* line 747, ../sass/forum.scss */
+.forum_each ul {
+  position: relative;
+  font-size: 14px;
+  margin-top: -20px;
+  margin-left: 8%;
+}
+/* line 755, ../sass/forum.scss */
+.forum_each ul li {
+  display: inline-block;
+  list-style-type: none;
+  color: #7F4F21;
+  margin: 0px 2px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+}
+/* line 766, ../sass/forum.scss */
+.forum_each ul li:hover {
+  background: #fbdb8a;
+  border-radius: 50%;
+  text-align: center;
+}
+/* line 773, ../sass/forum.scss */
+.forum_each ul li a {
+  color: #7F4F21;
+}
+/* line 782, ../sass/forum.scss */
+.forum_each ul .active {
+  vertical-align: middle;
+  background: #fbdb8a;
+  border-radius: 50%;
+  text-align: center;
+}
+/* line 789, ../sass/forum.scss */
+.forum_each ul a {
+  text-decoration: none;
+  vertical-align: middle;
+}
+/* line 794, ../sass/forum.scss */
+.forum_each ul .goBack {
+  position: relative;
+  display: inline-block;
+  height: 30px;
+}
+/* line 799, ../sass/forum.scss */
+.forum_each ul .goBack img {
+  height: 100%;
+}
+/* line 804, ../sass/forum.scss */
+.forum_each ul .nav {
+  position: relative;
+  display: inline-block;
+  background: #f9db88;
+  height: 30px;
+  margin: 0px 3px;
+}
+/* line 811, ../sass/forum.scss */
+.forum_each ul .nav img {
+  height: 100%;
+}
+/* line 817, ../sass/forum.scss */
+.forum_each .addMessage {
+  position: relative;
+  width: 84%;
+  left: 8%;
+  font-size: 15px;
+  letter-spacing: 10px;
+  line-height: 30px;
+}
+/* line 825, ../sass/forum.scss */
+.forum_each .addMessage textarea {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  font-size: 16px;
+}
+/* line 832, ../sass/forum.scss */
+.forum_each .addMessage .btn {
+  display: inline-block;
+  vertical-align: bottom;
+  border: 0;
+  width: 80px;
+  height: 26px;
+  line-height: 21px;
+  font-size: 14px;
+  background: #ffb834;
+  text-align: center;
+  letter-spacing: 10px;
+  text-indent: 10px;
+  color: white;
+  cursor: pointer;
+  border-bottom: 1px #ff9500 solid;
+  border-right: 1px #ff9500 solid;
+}
+
+/* line 853, ../sass/forum.scss */
+footer {
+  background: #f7b52c;
+}
+
+/* line 858, ../sass/forum.scss */
+.inlineblock {
+  display: inline-block;
+}
+
+@media screen and (max-width: 1024px) {
+  /* line 865, ../sass/forum.scss */
+  body {
+    width: 1024px;
+  }
+}

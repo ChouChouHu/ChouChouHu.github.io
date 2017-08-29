@@ -1,0 +1,157 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ */
+
+$color: #009e95;
+$color2: #595757;
+
+@import "base/font";
+@import "base/background";
+@import "base/barRWD";
+
+
+.container {
+	position: relative;
+	width: 80%;
+	padding-bottom: 100px;
+	margin-bottom: 200px;
+	left: 10%;
+	top: 100px;
+	background: rgba(255, 255, 255 ,0.7);
+	border-radius: 20px;
+	color: rgba(0, 0, 0, 0.7);
+
+	.title {
+		position: relative;
+		padding-top: 3vw;
+		margin-left: 6vw;
+		font-size: 17px;
+		line-height: 42px;
+	}
+}
+
+.content {
+	position: relative;
+	background: white;
+	border-radius: 20px;
+	width: 55%;
+	padding: 5%;
+	padding-top: 2%;
+	padding-bottom: 15%;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 13%;
+
+	font-size: 14px;
+	line-height: 40px;
+
+	.titleImg {
+		position: relative;
+		width: 100%;
+		margin-bottom: 0px;
+	}
+
+	.intro {
+		line-height: 18px;
+	}
+
+	a {
+		color: #bde2ec;
+		text-decoration: none;
+	}
+}
+
+
+@media screen and (max-width: 1024px) {
+	
+	body {
+		// width: 1024px;
+	}
+
+	.container {
+		// left: 100px;
+		// width: 800px;
+
+		.title {
+			// padding-top: 30px;
+			// margin-left: 60px;
+		}
+	}
+}
+
+@media screen and (max-width: 1000px) {
+
+	.fixedBar {
+		background: #5DBAA8 !important;
+	}
+
+
+	.moreClick {
+		background: #5DBAA8 !important;
+
+		.btn {
+			&:hover {
+				color: #5DBAA8 !important;
+			}
+		}
+	}
+
+	.container {
+		text-align: center;
+		border-radius: 0;
+		width: 100%;
+		left: 0;
+		top: 80px;
+
+		.topBtnGrp {
+			position: relative;
+			width: 100%;
+			// left: 5%;
+			text-align: center;
+			padding-top: 0px;
+			padding-bottom: 30px;
+
+			.title {
+				position: relative;
+				padding-top: 10px;
+				padding-bottom: 5px;
+				padding-left: 0;
+				margin-left: 0;
+				font-size: 19px;
+				letter-spacing: 5px;
+				width: 93%;
+				left: 7%;
+				text-align: left;
+			}
+
+			.btn {
+				width: 18%;
+				margin-right: 3%;
+			}
+		}
+
+		.content {
+			width: 76%;
+			margin-left: 0;
+			padding-top: 20px;
+			text-align: left;
+		}
+
+	}
+}
+
+// @media screen and (max-width: 1000px){
+// 	.fixedBar {
+// 		background: #91ceb3 !important;
+// 	}
+
+// 	.moreClick {
+// 		background: #91ceb3 !important;
+
+// 		.btn {
+// 			&:hover {
+// 				color: #91ceb3 !important;
+// 			}
+// 		}
+// 	}
+// }

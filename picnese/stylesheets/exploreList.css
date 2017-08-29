@@ -1,0 +1,530 @@
+@charset "UTF-8";
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ */
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,300italic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700);
+@font-face {
+  font-family: 'pictureWord';
+  src: url(../fonts/PICNESE-ONLY_ASCII.ttf);
+}
+@font-face {
+  font-family: 'ZUYIN';
+  src: url(../fonts/ZUYIN.ttf);
+}
+/* line 20, ../sass/base/_font.scss */
+.pictureWord {
+  font-family: pictureWord;
+}
+
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ */
+/* line 6, ../sass/base/_bar.scss */
+body {
+  font-family: PingFangTC-regular, Heiti TC, Meiryo, "微軟正黑體", Microsoft JhengHei, "標楷體", DFKai-sb !important;
+}
+
+/* line 15, ../sass/base/_bar.scss */
+.fixedBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 3;
+  background: rgba(255, 255, 255, 0.5);
+}
+/* line 24, ../sass/base/_bar.scss */
+.fixedBar .logo {
+  position: relative;
+  left: 2%;
+  top: 15px;
+  width: 130px;
+}
+/* line 31, ../sass/base/_bar.scss */
+.fixedBar .btnGrp {
+  position: absolute;
+  top: 0;
+  right: 2%;
+  height: 100%;
+  font-size: 0;
+}
+/* line 40, ../sass/base/_bar.scss */
+.fixedBar .btnGrp .btn {
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  padding: 0 20px;
+  font-size: 14px;
+  line-height: 60px;
+  text-align: center;
+  color: #804f21;
+  text-decoration: none;
+}
+/* line 55, ../sass/base/_bar.scss */
+.fixedBar .btnGrp .btn img {
+  width: 20px;
+  vertical-align: middle;
+}
+/* line 60, ../sass/base/_bar.scss */
+.fixedBar .btnGrp .btn .circle {
+  display: inline-block;
+  font-size: 40px;
+  line-height: 40px;
+  width: 36px;
+  height: 36px;
+  margin-right: 8px;
+  border-radius: 50%;
+  overflow: hidden;
+  vertical-align: middle;
+  background: red;
+}
+/* line 73, ../sass/base/_bar.scss */
+.fixedBar .btnGrp .btn .circle img {
+  width: 100%;
+  vertical-align: top;
+}
+
+/* line 83, ../sass/base/_bar.scss */
+footer {
+  position: relative;
+  width: 100%;
+  padding-bottom: 20px;
+  background: #91ceb3;
+  opacity: 0.9;
+  color: white;
+}
+/* line 92, ../sass/base/_bar.scss */
+footer .logo {
+  position: relative;
+  -webkit-filter: brightness(100);
+  margin-top: 20px;
+  margin-left: 60px;
+}
+/* line 99, ../sass/base/_bar.scss */
+footer .linkArea {
+  position: relative;
+  margin-top: 40px;
+  width: 88%;
+  left: 12%;
+  font-size: 14px;
+  line-height: 26px;
+}
+/* line 107, ../sass/base/_bar.scss */
+footer .linkArea .grp {
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 3%;
+  height: 132px;
+  padding-left: 10px;
+  border-left: white 1px solid;
+  margin-bottom: 50px;
+}
+/* line 117, ../sass/base/_bar.scss */
+footer .linkArea .grp b {
+  font-family: PingFangSC-semibold, sans-serif, "微软雅黑", "microsoft yahei";
+}
+/* line 121, ../sass/base/_bar.scss */
+footer .linkArea .grp a {
+  font-family: PingFangSC-light, sans-serif, "微软雅黑", "microsoft yahei";
+  color: white;
+  text-decoration: none;
+}
+/* line 126, ../sass/base/_bar.scss */
+footer .linkArea .grp a:hover {
+  text-decoration: underline;
+}
+/* line 131, ../sass/base/_bar.scss */
+footer .linkArea .grp img {
+  width: 15px;
+}
+/* line 135, ../sass/base/_bar.scss */
+footer .linkArea .grp .line {
+  width: 100%;
+  height: 1px;
+  margin: 12px 0;
+  background: white;
+}
+/* line 147, ../sass/base/_bar.scss */
+footer .linkArea .final {
+  padding-right: 0;
+}
+/* line 152, ../sass/base/_bar.scss */
+footer .context {
+  color: #595757;
+  font-size: 11px;
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+}
+
+@media screen and (max-width: 1000px) {
+  /* line 162, ../sass/base/_bar.scss */
+  .fixedBar {
+    width: 1000px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  /* line 171, ../sass/base/_bar.scss */
+  footer .linkArea .grp {
+    padding-right: 7%;
+  }
+}
+@media screen and (min-width: 1281px) {
+  /* line 181, ../sass/base/_bar.scss */
+  footer .linkArea .grp {
+    padding-right: 4%;
+  }
+}
+@media screen and (max-width: 400px) {
+  /* line 191, ../sass/base/_bar.scss */
+  footer .linkArea .grp {
+    padding-right: 2%;
+  }
+}
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ */
+/* line 5, ../sass/base/_barRWD.scss */
+.menu {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 4;
+  top: 0;
+  box-shadow: 4px 4px 3px rgba(51, 51, 102, 0.2);
+}
+/* line 15, ../sass/base/_barRWD.scss */
+.menu .menuContent {
+  background: rgba(255, 255, 255, 0.9);
+  width: 48%;
+  height: 100vh;
+}
+/* line 20, ../sass/base/_barRWD.scss */
+.menu .menuContent .threeLine {
+  position: absolute;
+  right: 53%;
+  width: 27px;
+  height: 25px;
+  margin-top: 12px;
+  font-size: 22px;
+  color: #8d452d;
+  cursor: pointer;
+}
+/* line 42, ../sass/base/_barRWD.scss */
+.menu .menuContent .itemSet {
+  padding-top: 30px;
+  letter-spacing: 3px;
+}
+/* line 46, ../sass/base/_barRWD.scss */
+.menu .menuContent .itemSet a {
+  text-decoration: none;
+}
+/* line 50, ../sass/base/_barRWD.scss */
+.menu .menuContent .itemSet .item {
+  height: 36px;
+  font-size: 16px;
+  line-height: 36px;
+  padding-left: 10%;
+  margin-left: 3%;
+  color: #8d452d;
+  display: block;
+  font-weight: bold;
+  cursor: pointer;
+  border-bottom: 1.5px solid rgba(50, 50, 50, 0.1);
+}
+/* line 62, ../sass/base/_barRWD.scss */
+.menu .menuContent .itemSet .item img.arrow {
+  position: absolute;
+  width: 26px;
+  right: 55%;
+  margin-top: 4px;
+}
+/* line 69, ../sass/base/_barRWD.scss */
+.menu .menuContent .itemSet .item:hover {
+  color: rgba(141, 69, 45, 0.7);
+}
+/* line 73, ../sass/base/_barRWD.scss */
+.menu .menuContent .itemSet .item .subItemSet {
+  position: absolute;
+  display: none;
+  background: rgba(255, 255, 255, 0.9);
+  left: 48%;
+  padding-top: 2px 0;
+  width: 40%;
+  margin-top: -37px;
+  z-index: 4;
+  border-left: 1px solid rgba(141, 69, 45, 0.1);
+}
+/* line 84, ../sass/base/_barRWD.scss */
+.menu .menuContent .itemSet .item .subItemSet .subItem {
+  height: 36px;
+  font-size: 16px;
+  line-height: 36px;
+  padding-left: 15%;
+  margin: 0 3%;
+  color: #8d452d;
+  display: block;
+  font-weight: bold;
+  cursor: pointer;
+  border-bottom: 1.5px solid rgba(50, 50, 50, 0.1);
+}
+/* line 95, ../sass/base/_barRWD.scss */
+.menu .menuContent .itemSet .item .subItemSet .subItem:hover {
+  color: rgba(141, 69, 45, 0.7);
+}
+/* line 101, ../sass/base/_barRWD.scss */
+.menu .menuContent .itemSet .item .circle {
+  position: relative;
+  display: inline-block;
+  font-size: 40px;
+  line-height: 40px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  overflow: hidden;
+  vertical-align: middle;
+  margin-right: 5px;
+  margin-bottom: 3px;
+}
+/* line 114, ../sass/base/_barRWD.scss */
+.menu .menuContent .itemSet .item .circle img {
+  width: 100%;
+}
+/* line 122, ../sass/base/_barRWD.scss */
+.menu .menuContent .itemSet div.item:hover .subItemSet {
+  display: block;
+}
+/* line 129, ../sass/base/_barRWD.scss */
+.menu .menuContent .fb {
+  position: absolute;
+  bottom: 18px;
+  left: 15px;
+  width: 45px;
+  opacity: 0.9;
+}
+/* line 136, ../sass/base/_barRWD.scss */
+.menu .menuContent .fb img {
+  width: 100%;
+}
+
+/* line 143, ../sass/base/_barRWD.scss */
+.moreClick {
+  display: none;
+}
+
+/* line 147, ../sass/base/_barRWD.scss */
+.phone {
+  display: none !important;
+}
+
+@media screen and (max-width: 1000px) {
+  /* line 156, ../sass/base/_barRWD.scss */
+  .desktop {
+    display: none !important;
+  }
+
+  /* line 160, ../sass/base/_barRWD.scss */
+  .phone {
+    display: block !important;
+  }
+
+  /* line 165, ../sass/base/_barRWD.scss */
+  .fixedBar {
+    width: 100%;
+    background: #ffb833 !important;
+  }
+  /* line 169, ../sass/base/_barRWD.scss */
+  .fixedBar .logo {
+    left: 50%;
+    margin-left: -65px;
+    -webkit-filter: brightness(100);
+  }
+  /* line 175, ../sass/base/_barRWD.scss */
+  .fixedBar .btnGrp {
+    width: 100px;
+    left: 0;
+  }
+  /* line 179, ../sass/base/_barRWD.scss */
+  .fixedBar .btnGrp .more {
+    position: absolute;
+    left: 18px;
+    width: 25px;
+    height: 25px;
+    margin-top: 19px;
+  }
+  /* line 187, ../sass/base/_barRWD.scss */
+  .fixedBar .btnGrp .more .line {
+    width: 100%;
+    margin-bottom: 4px;
+    height: 4px;
+    background: white;
+    border-radius: 2px;
+    cursor: pointer;
+    opacity: 0.9;
+  }
+  /* line 198, ../sass/base/_barRWD.scss */
+  .fixedBar .btnGrp .btn {
+    display: none;
+  }
+
+  /* line 206, ../sass/base/_barRWD.scss */
+  .moreClick {
+    display: none;
+    background: #ffb833;
+    position: relative;
+    width: 100%;
+    height: 90px;
+    margin-top: 31px;
+    opacity: 0.9;
+  }
+  /* line 215, ../sass/base/_barRWD.scss */
+  .moreClick .btn {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  /* line 228, ../sass/base/_barRWD.scss */
+  .moreClick .btn:hover {
+    background: white;
+    color: #ffb833;
+  }
+}
+/* line 11, ../sass/exploreList.scss */
+body {
+  background: #e4d9d9;
+}
+
+/* line 15, ../sass/exploreList.scss */
+.pictureWord {
+  font-family: pictureWord;
+}
+
+/* line 19, ../sass/exploreList.scss */
+.upLayer {
+  position: relative;
+  background: #cbbdbd;
+  padding-top: 65px;
+}
+/* line 24, ../sass/exploreList.scss */
+.upLayer .light {
+  position: absolute;
+  width: 10.9%;
+  left: 45%;
+  bottom: 0.2vw;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
+/* line 33, ../sass/exploreList.scss */
+.upLayer .opacity {
+  opacity: 0.5;
+}
+/* line 37, ../sass/exploreList.scss */
+.upLayer .exploreEnter {
+  position: relative;
+  width: 55%;
+  left: 27%;
+  margin-bottom: -4.2vw;
+}
+
+/* line 45, ../sass/exploreList.scss */
+.downLayer {
+  padding-top: 6.5vw;
+}
+/* line 49, ../sass/exploreList.scss */
+.downLayer input {
+  position: relative;
+  left: 50%;
+  margin-left: -140px;
+  width: 280px;
+  height: 45px;
+  border: 0px;
+  border-radius: 30px;
+  font-size: 20px;
+  padding-left: 15px;
+}
+/* line 61, ../sass/exploreList.scss */
+.downLayer .big {
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  margin-left: -50px;
+  vertical-align: -50%;
+  width: 23px;
+  cursor: pointer;
+}
+/* line 70, ../sass/exploreList.scss */
+.downLayer .big img {
+  width: 100%;
+  cursor: pointer;
+}
+/* line 76, ../sass/exploreList.scss */
+.downLayer .list {
+  position: relative;
+  margin-top: 70px;
+  width: 82%;
+  left: 9%;
+  padding-bottom: 150px;
+}
+/* line 83, ../sass/exploreList.scss */
+.downLayer .list a {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #595757;
+  text-decoration: none;
+}
+/* line 97, ../sass/exploreList.scss */
+.downLayer .list a:hover {
+  color: black;
+}
+
+@media screen and (max-width: 1000px) {
+  /* line 106, ../sass/exploreList.scss */
+  .fixedBar {
+    background: #B29393 !important;
+  }
+
+  /* line 110, ../sass/exploreList.scss */
+  .moreClick {
+    background: #B29393 !important;
+  }
+  /* line 114, ../sass/exploreList.scss */
+  .moreClick .btn:hover {
+    color: #B29393 !important;
+  }
+}
+/* more rwd
+@media (max-width: 970px) {
+	.container {
+		position: fixed;
+		width: 970px;
+		height: 660px;
+		overflow: hidden;
+		animation-duration: 1s;
+		animation-fill-mode: forwards;
+
+	}
+}*/
