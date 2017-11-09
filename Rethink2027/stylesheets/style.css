@@ -4143,3 +4143,18 @@ body {
   transition-duration: 0.7s;
   opacity: 1;
 }
+
+/* line 4583, ../sass/style.scss */
+.closeSoundBtn {
+  position: fixed;
+  z-index: 10;
+  width: 3vw;
+  left: 2.5vw;
+  bottom: 2vw;
+  cursor: pointer;
+}
+
+/* line 4592, ../sass/style.scss */
+#blue {
+  background: #05364a;
+}

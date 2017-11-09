@@ -98,6 +98,7 @@ $(document).ready(function(){
 	setTimeout("animation(107)", 200);
 	animation(108);
 
+
 	$(".hover").click(function(){
 		if (!open) {
 			$(this).find(".subHover").css("display", "block");
@@ -176,6 +177,14 @@ $(document).ready(function(){
 		$("#partnerWnine").css("display", "none");
 	})
 
+
+
+	// ver3
+
+	$(".closeSoundBtn").click(function(){
+		var boolie = $(".bgsound").prop("muted");
+    	$(".bgsound").prop("muted",!boolie);
+	})
 
 
 });
