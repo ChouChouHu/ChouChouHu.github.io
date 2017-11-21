@@ -1,0 +1,352 @@
+@charset "UTF-8";
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ */
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ */
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,300italic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700);
+@font-face {
+  font-family: 'pictureWord';
+  src: url(../fonts/PICNESE-ONLY_ASCII.ttf);
+}
+@font-face {
+  font-family: 'ZUYIN';
+  src: url(../fonts/ZUYIN.ttf);
+}
+/* line 20, ../sass/base/_font.scss */
+.pictureWord {
+  font-family: pictureWord;
+}
+
+/* line 7, ../sass/app.scss */
+body {
+  background: #fdfce6;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* line 34, ../sass/app.scss */
+.background {
+  width: 100%;
+  display: none;
+}
+
+/* line 39, ../sass/app.scss */
+.default {
+  display: block;
+}
+
+/* line 43, ../sass/app.scss */
+.bao {
+  position: absolute;
+  width: 16vw;
+  height: 16vw;
+  left: 55vw;
+  top: 94vw;
+  background: transparent;
+  z-index: 999;
+  cursor: pointer;
+}
+
+/* line 55, ../sass/app.scss */
+.baoTwo {
+  position: absolute;
+  width: 16vw;
+  height: 16vw;
+  left: 40vw;
+  top: 48vw;
+  background: transparent;
+  z-index: 999;
+  cursor: pointer;
+}
+
+/* line 67, ../sass/app.scss */
+.listenBtn {
+  position: absolute;
+  width: 23vw;
+  height: 14vw;
+  left: 40vw;
+  top: 153vw;
+  background: transparent;
+  z-index: 999;
+  cursor: pointer;
+}
+
+/* line 79, ../sass/app.scss */
+.guessBtn {
+  position: absolute;
+  width: 23vw;
+  height: 14vw;
+  left: 10vw;
+  top: 153vw;
+  background: transparent;
+  z-index: 999;
+  cursor: pointer;
+}
+
+/* line 91, ../sass/app.scss */
+.writingBtn {
+  position: absolute;
+  width: 23vw;
+  height: 14vw;
+  left: 65vw;
+  top: 153vw;
+  background: transparent;
+  z-index: 999;
+  cursor: pointer;
+}
+
+/* line 103, ../sass/app.scss */
+.back {
+  position: absolute;
+  width: 10vw;
+  height: 10vw;
+  top: 7vw;
+  left: 8vw;
+  background: transparent;
+  z-index: 999;
+  cursor: pointer;
+}
+
+/* line 117, ../sass/app.scss */
+.switch {
+  position: absolute;
+  height: 8vh;
+  left: 77vw;
+  top: 6vh;
+}
+
+/* line 124, ../sass/app.scss */
+.wordBackground {
+  position: relative;
+  height: 200vh;
+  margin-top: -100vh;
+  width: 100vw;
+}
+/* line 130, ../sass/app.scss */
+.wordBackground img {
+  position: absolute;
+  width: 100%;
+}
+/* line 135, ../sass/app.scss */
+.wordBackground .wordOne {
+  margin-top: 100vh;
+}
+
+/* line 140, ../sass/app.scss */
+.up {
+  position: absolute;
+  width: 23vw;
+  height: 10vw;
+  left: 40vw;
+  top: 162vw;
+  margin-top: 100vh;
+  background: transparent;
+  z-index: 999;
+  cursor: pointer;
+}
+
+/* line 153, ../sass/app.scss */
+.down {
+  position: absolute;
+  width: 23vw;
+  height: 10vw;
+  left: 40vw;
+  top: 162vw;
+  background: transparent;
+  z-index: 999;
+  cursor: pointer;
+}
+
+/* line 169, ../sass/app.scss */
+#treeUp {
+  top: 70vw;
+  height: 15vw;
+  left: 30vw;
+  width: 15vw;
+}
+
+/* line 180, ../sass/app.scss */
+.gameBackground {
+  position: absolute;
+  width: 100%;
+}
+
+/* line 185, ../sass/app.scss */
+.number {
+  position: absolute;
+  width: 100%;
+  font-size: 26vw;
+  text-align: center;
+  top: 68vw;
+  font-weight: bold;
+  color: #2F2159;
+}
+
+/* line 195, ../sass/app.scss */
+.game {
+  position: relative;
+  padding-top: 10vw;
+  padding-bottom: 0px;
+  color: #2F2159;
+  display: none;
+}
+/* line 202, ../sass/app.scss */
+.game .question {
+  position: relative;
+  text-align: center;
+  padding-top: 0px;
+}
+/* line 207, ../sass/app.scss */
+.game .question span {
+  vertical-align: 40%;
+  margin-left: 0vw;
+}
+/* line 212, ../sass/app.scss */
+.game .question .Q {
+  display: none;
+}
+/* line 215, ../sass/app.scss */
+.game .question .Q .draw {
+  display: inline-block;
+  border: #2F2159 solid 1px;
+  width: 36vw;
+  padding: 2vw;
+  padding: 2vw;
+  margin-right: 4vw;
+}
+/* line 223, ../sass/app.scss */
+.game .question .Q .draw .white {
+  width: 100%;
+  background: white;
+}
+/* line 227, ../sass/app.scss */
+.game .question .Q .draw .white img {
+  width: 100%;
+}
+/* line 234, ../sass/app.scss */
+.game .question .default {
+  display: inline-block;
+}
+/* line 238, ../sass/app.scss */
+.game .question .intro {
+  font-family: 標楷體;
+  text-align: center;
+  font-size: 6vw;
+  letter-spacing: 1vw;
+  margin-top: 7vw;
+}
+/* line 247, ../sass/app.scss */
+.game .question .time {
+  font-family: arial;
+  position: absolute;
+  right: 50vw;
+  font-size: 6vw;
+  line-height: 14vw;
+  margin-left: 0;
+}
+/* line 257, ../sass/app.scss */
+.game .question #s {
+  right: 51.5vw;
+}
+/* line 262, ../sass/app.scss */
+.game .question #ms {
+  right: 42.5vw;
+}
+/* line 272, ../sass/app.scss */
+.game .question span span {
+  font-size: 22vw;
+}
+/* line 280, ../sass/app.scss */
+.game .default {
+  display: block;
+}
+/* line 284, ../sass/app.scss */
+.game .answer {
+  position: relative;
+  padding-top: 5vw;
+  width: 100%;
+  padding-left: 0%;
+  padding-right: 0%;
+  text-align: center;
+}
+/* line 292, ../sass/app.scss */
+.game .answer img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+/* line 299, ../sass/app.scss */
+.game .answer .word {
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  height: 80%;
+  top: 10%;
+  z-index: 1;
+  border: #2F2159 solid 1px;
+  border-radius: 10%;
+  line-height: 19vw;
+}
+/* line 311, ../sass/app.scss */
+.game .answer .eachAns {
+  position: relative;
+  display: inline-block;
+  width: 23vw;
+  height: 23vw;
+  margin: 3vw;
+  border-radius: 10px;
+  text-align: center;
+  vertical-align: top;
+  cursor: pointer;
+  font-size: 13vw;
+}
+/* line 326, ../sass/app.scss */
+.game .answer .eachAns:hover {
+  background: #e4d9d9;
+}
+
+/* line 342, ../sass/app.scss */
+.baoDiv {
+  position: absolute;
+  height: 10vh;
+  width: 10vh;
+  left: 54vw;
+  top: 52vh;
+  background: transparent;
+}
+
+/* line 357, ../sass/app.scss */
+.home {
+  position: absolute;
+  width: 29vh;
+  height: 45vh;
+  left: 25vw;
+  top: 28vh;
+  background: transparent;
+}
+
+/* line 366, ../sass/app.scss */
+.treeFirst {
+  position: absolute;
+  height: 10vh;
+  width: 10vh;
+  left: 10vw;
+  top: 165vh;
+  background: transparent;
+}
+
+/* line 376, ../sass/app.scss */
+.baoBtn {
+  position: absolute;
+  height: 7vh;
+  width: 7vh;
+  left: 64vw;
+  top: 82vh;
+  background: transparent;
+}
