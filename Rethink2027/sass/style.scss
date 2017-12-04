@@ -485,12 +485,28 @@ body {
 	}
 }
 
+body {
+	font-size: 0;
+}
+
 
 .LandingPage {
 	position: relative;
 	width: 100vw;
-	height: 721vw;
+	height: 1200vw;
 	overflow: hidden;
+	z-index: 0;
+	// margin-top: -81.5vw;
+
+	div, a {
+		margin-top: 480vw;
+
+		// attention: this is for new version adjusting
+	}
+
+	.topPos {
+		margin-top: 0;
+	}
 
 	.black {
 		position: absolute;
@@ -517,8 +533,16 @@ body {
 		}
 	}
 
+	.testing {
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 81vw;
+	}
+
 	.background {
-		position: absolute;
+		position: relative;
 		top: 0;
 		left: 0;
 		width: 100vw;
@@ -1079,7 +1103,29 @@ body {
 		b {
 			font-weight: bold;
 		}
+
+		.saying {
+			margin-top: 0;
+		}
 	}
+}
+
+.obj15 {
+	top: 0vw;
+	left: -1vw;
+	height: 50vw;
+}
+
+.obj16 {
+	top: 9.5vw;
+	left: 40.7vw;
+	height: 17.5vw;
+}
+
+.obj17 {
+	top: 48.5vw;
+	left: 24vw;
+	height: 9.2vw;
 }
 
 
@@ -2925,6 +2971,42 @@ body {
 		top: 151vw;
 		left: 18vw;
 	}
+	.partnerTen {
+		position: absolute;
+		width: 62vw;
+		top: 354vw;
+		left: 20vw;
+	}
+	.partnerEleven {
+		position: absolute;
+		width: 46vw;
+		top: 404vw;
+		left: 21vw;
+	}
+	.partnerTwelve {
+		position: absolute;
+		width: 58vw;
+		top: 452vw;
+		left: 21vw;
+	}
+	.partnerThirteen {
+		position: absolute;
+		width: 62vw;
+		top: 500vw;
+		left: 21vw;
+	}
+	.partnerFourteen {
+		position: absolute;
+		width: 61vw;
+		top: 530vw;
+		left: 17vw;
+	}
+	.partnerFifteen {
+		position: absolute;
+		width: 57vw;
+		top: 582vw;
+		left: 20vw;
+	}
 }
 
 
@@ -3640,6 +3722,28 @@ body {
 		&:hover {
 			.hover {
 				width: 8vw;
+			}
+		}
+	}
+	.objectThirteen {
+		top: 230vw;
+		left: 44vw;
+		width: 12vw;
+
+		&:hover {
+			.hover {
+				width: 12vw;
+			}
+		}
+	}
+	.objectFourteen {
+		top: 230vw;
+		left: 44vw;
+		width: 5.5vw;
+
+		&:hover {
+			.hover {
+				width: 4.1vw;
 			}
 		}
 	}
@@ -4592,6 +4696,898 @@ body {
 #blue {
 	background: #05364a;
 }
+
+
+
+
+
+// youth
+// all this code cooperate with .partner. for example, in youth_xx.html, division class tag with partner & youth simultaneously.
+// so some code here cooperate by .partner, but .youth's priority is higher
+
+.youth {
+	height: 377vw;
+
+	.avatar {
+		position: absolute;
+		width: 37vw;
+		left: 11vw;
+		top: 7vw;
+	}
+
+	.title {
+		position: absolute;
+		top: 9vw;
+		left: 59.8vw;
+		font-size: 4.5vw;
+		font-weight: bold;
+		line-height: 4.5vw;
+		color: #0F9BFF;
+
+		.subtitle {
+			font-size: 2.5vw;
+		}
+	}
+
+	.intro {
+		top: 24vw;
+		width: 28vw;
+		left: 60vw;
+	}
+
+	.issue {
+
+		h1 {
+			font-size: 2.6vw;
+			font-weight: bold;
+		}
+
+		position: absolute;
+		top: 60vw;
+		width: 26vw;
+		left: 15vw;
+		font-size: 1.25vw;
+		letter-spacing: 0.1vw;
+		line-height: 1.8vw;
+	}
+
+	.topicTreeText {
+		position: absolute;
+		width: 15vw;
+		top: 65.6vw;
+		left: 49vw;
+		font-size: 1.25vw;
+		letter-spacing: 0.1vw;
+		line-height: 1.8vw;
+		color: #6afdba;
+
+		h1 {
+			font-size: 2vw;
+			font-weight: bold;
+		}
+
+		b {
+			font-weight: bold;
+		}
+	}
+
+	.topicTree {
+		position: absolute;
+		width: 30vw;
+		top: 62vw;
+		left: 60vw;
+		cursor: pointer;
+	}
+
+	.treeWhite {
+		display: none;
+		position: fixed;
+		width: 100vw;
+		height: 100vh;
+		background: rgba(230, 230, 230, 0.95);
+
+		.topicTreeHover {
+			position: absolute;
+			width: 100vw;
+			top: 0vw;
+			left: 0;
+		}
+	}
+
+
+
+	.timeline {
+		position: absolute;
+		width: 100%;
+		top: 102vw;
+		// height: 40vw;
+		// background: red;
+
+		.billboard {
+			position: absolute;
+			width: 23vw;
+			top: 2vw;
+			left: 6vw;
+
+			img {
+				position: absolute;
+				width: 100%;
+			}
+
+			.text {
+				position: absolute;
+				font-size: 1.9vw;
+				font-weight: bold;
+				letter-spacing: 0.4vw;
+				top: 2.1vw;
+				left: 8.4vw;
+				color: #d7e043;
+			}
+		}
+
+		.campfireText {
+			position: absolute;
+			width: 25vw;
+			top: 9vw;
+			left: 22vw;
+			text-align: center;
+			font-size: 2.2vw;
+			font-weight: bold;
+			letter-spacing: 0.2vw;
+			line-height: 2.7vw;
+			color: #ff9947;
+
+			.dialogBox {
+				display: inline-block;
+				margin-top: 1.2vw;
+				padding: 1.1vw 2.5vw;
+				background: #ff9947;
+				border-radius: 20vw;
+				font-size: 2.2vw;
+				letter-spacing: 0.3vw;
+				text-decoration: none;
+				color: #004763;
+			}
+
+			img {
+				width: 2vw;
+				margin-top: 1.2vw;
+			}
+		}
+
+		.campfire {
+			position: absolute;
+			width: 34vw;
+			top: 17vw;
+			left: 11vw;
+		}
+
+		.windmill {
+			position: absolute;
+
+			img {
+				width: 7vw;
+				margin-top: 3.5vw;
+			}
+		}
+
+		// #windmillOne {
+		// 	left: 58vw;
+		// 	top: 0;
+		// }
+
+		// #windmillTwo {
+		// 	left: 57.5vw;
+		// 	top: 10vw;
+		// }
+
+		// #windmillThree {
+		// 	left: 55vw;
+		// 	top: 20vw;
+		// }
+
+		// #windmillFour {
+		// 	left: 52vw;
+		// 	top: 30vw;
+		// }
+
+		// #windmillFive {
+		// 	left: 46vw;
+		// 	top: 40vw;
+		// }
+
+		#windmillOne {
+			left: 58vw;
+			top: 0;
+		}
+
+		#windmillTwo {
+			left: 57.5vw;
+			top: 8vw;
+		}
+
+		#windmillThree {
+			left: 55.5vw;
+			top: 16vw;
+		}
+
+		#windmillFour {
+			left: 53vw;
+			top: 24vw;
+		}
+
+		#windmillFive {
+			left: 49vw;
+			top: 32vw;
+		}
+
+		#windmillSix {
+			left: 45vw;
+			top: 40vw;
+		}
+
+		.windmillText {
+			position: absolute;
+			display: none;
+			top: 0;
+
+			.topic {
+				margin-left: 12vw;
+				width: 25vw;
+				font-size: 1.3vw;
+				letter-spacing: 0.1vw;
+				color: #d7e043;
+
+				b {
+					font-size: 2vw;
+					font-weight: bold;
+				}
+			}
+
+			.dialogBox {
+				position: absolute;
+				top: 3vw;
+				margin-left: 8vw;
+				width: 22vw;
+				// height: 3.5vw;
+				padding: 2vw 3vw;
+				background: #d7e043;
+				border-radius: 20vw;
+
+				font-size: 1.3vw;
+				letter-spacing: 0.1vw;
+				line-height: 1.8vw;
+				color: #006260;
+			}
+		}
+	}
+
+	.moment {
+		position: absolute;
+		width: 100%;
+		top: 157.8vw;
+
+		.billboard {
+			position: absolute;
+			width: 23vw;
+			top: 2vw;
+			left: 6vw;
+
+			img {
+				position: absolute;
+				width: 100%;
+			}
+
+			.text {
+				position: absolute;
+				font-size: 1.9vw;
+				font-weight: bold;
+				letter-spacing: 0.4vw;
+				top: 2.1vw;
+				left: 8.4vw;
+				color: #ffdc57;
+			}
+		}
+
+		.riverrock {
+			position: absolute;
+			cursor: pointer;
+
+			.block {
+				position: absolute;
+				width: 3vw;
+			}
+
+			.block + .block {
+				display: none;
+			}
+
+			.riverrockImg {
+				position: absolute;
+				width: 100%;
+				margin-top: 5vw;
+			}
+
+			&:hover {
+
+				.block {
+					display: none;
+				}
+
+				.block + .block {
+					display: block;
+				}
+			}
+		}
+
+		.default {
+
+			.block {
+				display: none;
+			}
+
+			.block + .block {
+				display: block;
+			}
+		}
+
+		#riverrockOne {
+			width: 8vw;
+			top: 2.5vw;
+			left: 34vw;
+
+			.block {
+				left: 1.5vw;
+			}
+		}
+
+		#riverrockTwo {
+			width: 10vw;
+			top: 2vw;
+			left: 47vw;
+
+			.block {
+				left: 2.7vw;
+			}
+		}
+
+		#riverrockThree {
+			width: 16vw;
+			top: 6vw;
+			left: 59vw;
+
+			.block {
+				left: 3.5vw;
+			}
+		}
+
+		#riverrockFour {
+			width: 22vw;
+			top: 4.4vw;
+			left: 73vw;
+
+			.block {
+				left: 4.5vw;
+			}
+		}
+
+		#riverrockFive {
+			width: 20vw;
+			top: 16vw;
+			left: 80vw;
+
+			.block {
+				left: 4.5vw;
+			}
+		}
+		
+		.momentText {
+			position: absolute;
+			display: none;
+			width: 44vw;
+			top: 18vw;
+			left: 14vw;
+			font-size: 1.3vw;
+			letter-spacing: 0.1vw;
+			line-height: 2.2vw;
+
+			h1 {
+				font-size: 2.5vw;
+				font-weight: bold;
+				letter-spacing: 0.2vw;
+				color: #ffdc57;
+
+				i {
+					font-style: italic;
+				}
+			}
+		}
+
+		.default {
+			display: block;
+		}
+	}
+
+	.story {
+		position: absolute;
+		width: 100%;
+		top: 224.5vw;
+		// height: 40vw;
+		// background: red;
+
+		.billboard {
+			position: absolute;
+			width: 25vw;
+			left: 6vw;
+
+			img {
+				position: absolute;
+				width: 100%;
+			}
+
+			.text {
+				position: absolute;
+				font-size: 1.9vw;
+				font-weight: bold;
+				letter-spacing: 0.4vw;
+				top: 2.1vw;
+				left: 9.2vw;
+				color: #ff9847;
+			}
+		}
+		
+		.boat {
+			position: absolute;
+			text-align: center;
+			width: 18vw;
+			cursor: pointer;
+
+			.dialogBox {
+				width: 100%;
+				padding: 1.2vw 0;
+				background: #ff9847;
+				border-radius: 10vw;
+				font-size: 1.5vw;
+				font-weight: bold;
+				letter-spacing: 0.2vw;
+				color: #004864;
+				opacity: 0;
+			}
+
+			.point {
+				width: 1.2vw;
+				margin-top: 0.4vw;
+				opacity: 0;
+			}
+
+			.boatImg {
+				position: relative;
+				width: 10vw;
+				margin-top: 1vw;
+
+				img {
+					position: absolute;
+					width: 100%;
+					left: 41%;
+				}
+
+				img + img {
+					display: none;
+					width: 110%;
+					margin-left: -5%;
+					margin-top: -5%;
+				}
+			}
+
+			&:hover {
+
+				.dialogBox {
+					opacity: 1;
+				}
+				.point {
+					opacity: 1;
+				}
+				.boatImg {
+					img + img {
+						display: block;
+					}
+				}
+			}
+		}
+
+		.default {
+			.dialogBox, .point {
+				opacity: 1;
+			}
+
+			.boatImg {
+
+				img + img {
+					display: block;
+				}
+			}
+		}
+
+		#boatOne {
+			top: 5vw;
+			left: 35vw;
+		}
+
+		#boatTwo {
+			top: -3vw;
+			left: 57vw;
+		}
+
+		#boatThree {
+			top: 11vw;
+			left: 53vw;
+		}
+
+		#boatFour {
+			top: 0vw;
+			left: 78vw;
+		}
+
+		#boatFive {
+			top: 18vw;
+			left: 73vw;
+		}
+
+
+		.storyText {
+			position: absolute;
+			width: 44vw;
+			top: 27vw;
+			left: 14vw;
+			font-size: 1.3vw;
+			letter-spacing: 0.1vw;
+			line-height: 2.2vw;
+			display: none;
+
+			h1 {
+				font-size: 2.5vw;
+				font-weight: bold;
+				letter-spacing: 0.2vw;
+				color: #ffac69;
+
+				i {
+					font-style: italic;
+				}
+			}
+
+			i {
+				font-size: 1.5vw;
+				font-weight: bold;
+				color: #ffac69;
+				line-height: 3vw;
+			}
+		}
+
+		.default {
+			display: block;
+		}
+	}
+
+	.member {
+		position: absolute;
+		width: 100%;
+		top: 278vw;
+		// height: 40vw;
+		// background: red;
+
+		.billboard {
+			position: absolute;
+			width: 23vw;
+			top: 0vw;
+			left: 6vw;
+
+			img {
+				position: absolute;
+				width: 100%;
+			}
+
+			.text {
+				position: absolute;
+				font-size: 1.9vw;
+				font-weight: bold;
+				letter-spacing: 0.4vw;
+				top: 2.3vw;
+				left: 9.2vw;
+				color: #ff9847;
+			}
+		}
+
+		.boatImg {
+			position: absolute;
+			top: 52vw;
+			left: 15vw;
+			width: 85vw;
+		}
+
+		.memberPerson {
+			position: absolute;
+			cursor: pointer;
+
+			img {
+				position: absolute;
+			}
+
+			img + img {
+				display: none;
+			}
+
+			// &:hover {
+				
+			// 	img + img {
+			// 		display: block;
+			// 	}
+			// }
+		}
+
+		.default {
+
+			img + img {
+				display: block;
+			}
+		}
+
+		#memberPersonOne {
+			width: 8vw;
+			left: 20vw;
+			top: 43.6vw;
+
+			img + img {
+				width: 8.4vw;
+			}
+		}
+
+		#memberPersonTwo {
+			width: 9.5vw;
+			left: 30vw;
+			top: 46.3vw;
+		}
+
+		#memberPersonThree {
+			width: 5.8vw;
+			left: 41.5vw;
+			top: 46.3vw;
+
+			img + img {
+				width: 6vw;
+			}
+		}
+
+		#memberPersonFour {
+			width: 9.7vw;
+			left: 50vw;
+			top: 46.2vw;
+		}
+
+		#memberPersonFive {
+			width: 5vw;
+			left: 62vw;
+			top: 45.6vw;
+
+			img + img {
+				width: 5.4vw;
+			}
+		}
+
+		#memberPersonSix {
+			width: 9.3vw;
+			left: 70.5vw;
+			top: 46vw;
+		}
+
+		.secretWhite {
+			position: fixed;
+			width: 100vw;
+			height: 100vh;
+			left: 0;
+			top: 0;
+			background: rgba(230, 230, 230, 0.95);
+
+			.topicTreeHover {
+				position: absolute;
+				width: 100vw;
+				top: 0vw;
+				left: 0;
+			}
+		}
+
+		.case {
+			position: absolute;
+			cursor: pointer;
+			width: 13vw;
+			left: 81.5vw;
+			top: 48.4vw;
+
+			.dialogBox {
+				position: absolute;
+				font-size: 1.5vw;
+				font-weight: bold;
+				letter-spacing: 0.2vw;
+				background: #ff9847;
+				color: #004864;
+				padding: 1vw 2vw;
+				border-radius: 5vw;
+				top: -5.7vw;
+				left: -1.5vw;
+			}
+
+			.top {
+				position: absolute;
+				width: 9vw;
+				z-index: 1;
+			}
+
+			.bottom {
+				position: absolute;
+				width: 9vw;
+				top: 1.5vw;
+				z-index: 0;
+			}
+
+			&:hover {
+				.top {
+					top: -2.3vw;
+				}
+				.dialogBox {
+					top: -8vw;
+				}
+			}
+		}
+
+		.memberPhoto {
+			position: absolute;
+			text-align: center;
+			cursor: pointer;
+			top: 24vw;
+			left: 16vw;
+			width: 10vw;
+			height: 20vw;
+			color: #004864;
+			font-size: 2.3vw;
+			font-weight: bold;
+			letter-spacing: 0.3vw;
+			
+			.point {
+				width: 2vw;
+				opacity: 0;
+			}
+
+			.photo {
+				position: relative;
+				display: inline-block;
+				border-radius: 50%;
+				// background: red;
+				width: 9vw;
+				height: 9vw;
+				left: 0;
+				top: 0;
+				margin-top: 1vw;
+				margin-bottom: 1.5vw;
+				overflow: hidden;
+
+				img {
+					width: 100%;
+				}
+			}
+		}
+
+		.default {
+			
+			.point {
+				opacity: 1;
+			}
+		}
+
+		#memberPhotoTwo {
+			left: 28vw;
+		}
+
+		#memberPhotoThree {
+			left: 40vw;
+		}
+
+		#memberPhotoFour {
+			left: 52vw;
+		}
+
+		#memberPhotoFive {
+			left: 64vw;
+		}
+
+		#memberPhotoSix {
+			left: 76vw;
+		}
+
+
+
+		.memberText {
+			position: absolute;
+			display: none;
+			top: 13vw;
+			left: 15vw;
+			width: 70vw;
+
+			.dialogBox {
+				width: 100%;
+				padding: 4vw;
+				font-size: 1.7vw;
+				font-weight: bold;
+				letter-spacing: 0.3vw;
+				background: #ffad6c;
+				color: #004864;
+				border-radius: 20vw;
+				text-align: center;
+			}
+		}
+
+		.default {
+			display: block;
+		}
+	}
+
+
+}
+
+.opening {
+	position: fixed;
+	width: 100vw;
+	left: 0;
+	top: 0;
+	z-index: 1;
+
+	.fullScreen {
+		width: 100%;
+	}
+
+	.HMW {
+		position: absolute;
+		width: 15%;
+		top: 13vw;
+		left: 50vw;
+	}
+
+	.HMWtext {
+		position: absolute;
+		top: 19.5vw;
+		width: 24vw;
+		left: 50vw;
+		font-size: 1.6vw;
+		font-weight: bold;
+		letter-spacing: 0.1vw;
+		line-height: 2.4vw;
+		color: #E0E0E0;
+	}
+
+	.HMWbtn {
+		position: absolute;
+		background: #0F9BFF;
+		color: #004865;
+		top: 29vw;
+		width: 13vw;
+		height: 4.4vw;
+		line-height: 4.4vw;
+		left: 55vw;
+		font-size: 1.8vw;
+		font-weight: bold;
+		letter-spacing: 0.3vw;
+		text-align: center;
+		border-radius: 10vw;
+		cursor: pointer;
+
+		&:hover {
+			background: #ff9b42;
+		}
+	}
+}
+
+
+
+
+
 
 // .proposalPage {
 // 	position: relative;

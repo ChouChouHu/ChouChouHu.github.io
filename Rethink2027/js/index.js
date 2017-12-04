@@ -47,14 +47,14 @@ function walkMotion(i, n) {
 	}
 }
 
-// 陳劭恩廢物
+
 var script_name= document.location.pathname.match(/[^\/]+$/)[0];
 if (script_name == "index.html") {
 
 	$(document).ready(function(){
 		var adjust = ($(window).width() / 1280);
 		var height = 9226 * adjust; // total height (px)
-		var scroll_ms = 3000; // 3000 scroll pass (ms)
+		var scroll_ms = 0; // 3000 scroll pass (ms)
 		var stop_ms = 2400; // 2400
 		var after = false;
 		var goldCount = 0;
@@ -72,7 +72,7 @@ if (script_name == "index.html") {
 		setTimeout(function(){
 		    var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
 		    $body.animate({
-		        scrollTop: height - $(window).height()
+		        // scrollTop: height - $(window).height()
 		    }, scroll_ms, 'easeInOutQuad');
 		}, stop_ms);
 
@@ -163,7 +163,7 @@ if (script_name == "index.html") {
 
 			// $(".obj14").fadeIn();
 			setTimeout(function(){
-				$(".obj14").css("display", "block");
+			$(".obj14").css("display", "block");
 			}, talkTime + 1500)
 
 
@@ -235,8 +235,8 @@ if (script_name == "index.html") {
 
 
 			// 上面是在滑完之後執行的動畫，諸如小人走出來，小丑對話
-	    }, scroll_ms + stop_ms);
-
+	    // }, scroll_ms + stop_ms);
+		}, 0);
 
 		$(window).scroll(function () {
 
@@ -273,23 +273,138 @@ if (script_name == "index.html") {
 			var nine = 400;
 			var nine_top = 1900 + add;
 			var nine_left = 330;
-			var ten = 105;
-			var ten_top = 1100 + add;
+			var ten = 1100;
+			var ten_top = 1300 + add;
 			var ten_left = 632;
-			var end_top = 1026 + add;
-			var end_left = ten_left;
-	 
+
+			var partner_interval = one + two + three + four + five + six + seven + eight + nine + ten;
+
+			var eleven = 100; // 8070 - 7970
+			var eleven_top = add - 100;
+			var eleven_left = ten_left;
+			var twelve = 800; // 8870 - 8070
+			var twelve_top = eleven_top;
+			var twelve_left = 780;
+			var thirteen = 100; // 8970 - 8870
+			var thirteen_top = add - 740;
+			var thirteen_left = twelve_left;
+			var fourteen = 360;
+			var fourteen_top = thirteen_top;
+			var fourteen_left = 940;
+			var fifteen = 400;
+			var fifteen_top = add - 1140;
+			var fifteen_left = 940;
+			var sixteen = 300;
+			var sixteen_top = add - 1540;
+			var sixteen_left = 240;
+			var seventeen = 350;
+			var seventeen_top = add - 1900;
+			var seventeen_left = sixteen_left;
+			var eighteen = 500;
+			var eighteen_top = add - 2250;
+			var eighteen_left = 940;
+			var nineteen = 500;
+			var nineteen_top = add - 2750;
+			var nineteen_left = eight_left;
+			var twenty = 1200;
+			var twenty_top = add - 3300;
+			var twenty_left = 260;
+			var twentyOne = 600;
+			var twentyOne_top = add - 4400;
+			var twentyOne_left = 800;
+			var twentyTwo = 500;
+			var twentyTwo_top = add - 5000;
+			var twentyTwo_left = 300;
+			var twentyThree = 300
+			var twentyThree_top = add - 5400;
+			var twentyThree_left = 620;
+			var twentyFour_top = add - 5700;
+			var twentyFour_left = twentyThree_left;
+
+			if ($(window).scrollTop() < 200) {
+				$(".walk").css("opacity", $(window).scrollTop() / 200);
+			}
+			else {
+				$(".walk").css("opacity", "1");
+			};
+
 			if (after) {
-				if (scrollBtm > ( one + two + three + four + five + six + seven + eight + nine ) * adjust) {
-					// $(".walk").css("top", ten_top * adjust - ( scrollBtm - ( one + two + three + four + five + six + seven + eight + nine ) * adjust ) * ( (ten_top - end_top) / ten ) + "px"); 
-					// $(".walk").css("left", ten_left * adjust - ( scrollBtm - ( one + two + three + four + five + six + seven + eight + nine ) * adjust ) * ( (ten_left - end_left) / ten ) + "px");
-					// rightWalk();
-					$(".walk").css("left", 630 * adjust + "px");
-					$(".walk").animate({top: 510 * adjust +"px"}, 3000, "linear");
-					for (var i = 1; i <= 20; i++) {
-						walkMotion(i % 2, i * 150);
-					};
-					after = false;
+				if (scrollBtm > ( partner_interval + eleven + twelve + thirteen + fourteen + fifteen + sixteen + seventeen + eighteen + nineteen + twenty + twentyOne + twentyTwo ) * adjust) {
+					$(".walk").css("top", twentyThree_top * adjust - ( scrollBtm - ( partner_interval + eleven + twelve + thirteen + fourteen + fifteen + sixteen + seventeen + eighteen + nineteen + twenty + twentyOne + twentyTwo ) * adjust ) * ( (twentyThree_top - twentyFour_top) / twentyThree ) + "px");
+					$(".walk").css("left", twentyThree_left * adjust - ( scrollBtm - ( partner_interval + eleven + twelve + thirteen + fourteen + fifteen + sixteen + seventeen + eighteen + nineteen + twenty + twentyOne + twentyTwo ) * adjust ) * ( (twentyThree_left - twentyFour_left) / twentyThree ) + "px"); 
+					rightWalk();
+				}
+				else if (scrollBtm > ( partner_interval + eleven + twelve + thirteen + fourteen + fifteen + sixteen + seventeen + eighteen + nineteen + twenty + twentyOne ) * adjust) {
+					$(".walk").css("top", twentyTwo_top * adjust - ( scrollBtm - ( partner_interval + eleven + twelve + thirteen + fourteen + fifteen + sixteen + seventeen + eighteen + nineteen + twenty + twentyOne ) * adjust ) * ( (twentyTwo_top - twentyThree_top) / twentyTwo ) + "px");
+					$(".walk").css("left", twentyTwo_left * adjust - ( scrollBtm - ( partner_interval + eleven + twelve + thirteen + fourteen + fifteen + sixteen + seventeen + eighteen + nineteen + twenty + twentyOne ) * adjust ) * ( (twentyTwo_left - twentyThree_left) / twentyTwo ) + "px"); 
+					rightWalk();
+				}
+				else if (scrollBtm > ( partner_interval + eleven + twelve + thirteen + fourteen + fifteen + sixteen + seventeen + eighteen + nineteen + twenty ) * adjust) {
+					$(".walk").css("top", twentyOne_top * adjust - ( scrollBtm - ( partner_interval + eleven + twelve + thirteen + fourteen + fifteen + sixteen + seventeen + eighteen + nineteen + twenty ) * adjust ) * ( (twentyOne_top - twentyTwo_top) / twentyOne ) + "px");
+					$(".walk").css("left", twentyOne_left * adjust - ( scrollBtm - ( partner_interval + eleven + twelve + thirteen + fourteen + fifteen + sixteen + seventeen + eighteen + nineteen + twenty ) * adjust ) * ( (twentyOne_left - twentyTwo_left) / twentyOne ) + "px"); 
+					leftWalk();
+				}
+				else if (scrollBtm > ( partner_interval + eleven + twelve + thirteen + fourteen + fifteen + sixteen + seventeen + eighteen + nineteen ) * adjust) {
+					$(".walk").css("top", twenty_top * adjust - ( scrollBtm - ( partner_interval + eleven + twelve + thirteen + fourteen + fifteen + sixteen + seventeen + eighteen + nineteen ) * adjust ) * ( (twenty_top - twentyOne_top) / twenty ) + "px");
+					$(".walk").css("left", twenty_left * adjust - ( scrollBtm - ( partner_interval + eleven + twelve + thirteen + fourteen + fifteen + sixteen + seventeen + eighteen + nineteen ) * adjust ) * ( (twenty_left - twentyOne_left) / twenty ) + "px"); 
+					rightWalk();
+				}
+				else if (scrollBtm > ( partner_interval + eleven + twelve + thirteen + fourteen + fifteen + sixteen + seventeen + eighteen ) * adjust) {
+					$(".walk").css("top", nineteen_top * adjust - ( scrollBtm - ( partner_interval + eleven + twelve + thirteen + fourteen + fifteen + sixteen + seventeen + eighteen ) * adjust ) * ( (nineteen_top - twenty_top) / nineteen ) + "px");
+					$(".walk").css("left", nineteen_left * adjust - ( scrollBtm - ( partner_interval + eleven + twelve + thirteen + fourteen + fifteen + sixteen + seventeen + eighteen ) * adjust ) * ( (nineteen_left - twenty_left) / nineteen ) + "px"); 
+					leftWalk();
+				}
+				else if (scrollBtm > ( partner_interval + eleven + twelve + thirteen + fourteen + fifteen + sixteen + seventeen ) * adjust) {
+					$(".walk").css("top", eighteen_top * adjust - ( scrollBtm - ( partner_interval + eleven + twelve + thirteen + fourteen + fifteen + sixteen + seventeen ) * adjust ) * ( (eighteen_top - nineteen_top) / eighteen ) + "px");
+					$(".walk").css("left", eighteen_left * adjust - ( scrollBtm - ( partner_interval + eleven + twelve + thirteen + fourteen + fifteen + sixteen + seventeen ) * adjust ) * ( (eighteen_left - nineteen_left) / eighteen ) + "px"); 
+					rightWalk();
+				}
+				else if (scrollBtm > ( partner_interval + eleven + twelve + thirteen + fourteen + fifteen + sixteen ) * adjust) {
+					$(".walk").css("top", seventeen_top * adjust - ( scrollBtm - ( partner_interval + eleven + twelve + thirteen + fourteen + fifteen + sixteen ) * adjust ) * ( (seventeen_top - eighteen_top) / seventeen ) + "px");
+					$(".walk").css("left", seventeen_left * adjust - ( scrollBtm - ( partner_interval + eleven + twelve + thirteen + fourteen + fifteen + sixteen ) * adjust ) * ( (seventeen_left - eighteen_left) / seventeen ) + "px"); 
+					rightWalk();
+				}
+				else if (scrollBtm > ( partner_interval + eleven + twelve + thirteen + fourteen + fifteen ) * adjust) {
+					$(".walk").css("top", sixteen_top * adjust - ( scrollBtm - ( partner_interval + eleven + twelve + thirteen + fourteen + fifteen ) * adjust ) * ( (sixteen_top - seventeen_top) / sixteen ) + "px");
+					$(".walk").css("left", sixteen_left * adjust - ( scrollBtm - ( partner_interval + eleven + twelve + thirteen + fourteen + fifteen ) * adjust ) * ( (sixteen_left - seventeen_left) / sixteen ) + "px"); 
+					leftWalk();
+				}
+				else if (scrollBtm > ( partner_interval + eleven + twelve + thirteen + fourteen ) * adjust) {
+					$(".walk").css("top", fifteen_top * adjust - ( scrollBtm - ( partner_interval + eleven + twelve + thirteen + fourteen ) * adjust ) * ( (fifteen_top - sixteen_top) / fifteen ) + "px");
+					$(".walk").css("left", fifteen_left * adjust - ( scrollBtm - ( partner_interval + eleven + twelve + thirteen + fourteen ) * adjust ) * ( (fifteen_left - sixteen_left) / fifteen ) + "px"); 
+					leftWalk();
+				}
+				else if (scrollBtm > ( partner_interval + eleven + twelve + thirteen ) * adjust) {
+					$(".walk").css("top", fourteen_top * adjust - ( scrollBtm - ( partner_interval + eleven + twelve + thirteen ) * adjust ) * ( (fourteen_top - fifteen_top) / fourteen ) + "px");
+					$(".walk").css("left", fourteen_left * adjust - ( scrollBtm - ( partner_interval + eleven + twelve + thirteen ) * adjust ) * ( (fourteen_left - fifteen_left) / fourteen ) + "px"); 
+					rightWalk();
+				}
+				else if (scrollBtm > ( partner_interval + eleven + twelve ) * adjust) {
+					$(".walk").css("top", thirteen_top * adjust - ( scrollBtm - ( partner_interval + eleven + twelve ) * adjust ) * ( (thirteen_top - fourteen_top) / thirteen ) + "px");
+					$(".walk").css("left", thirteen_left * adjust - ( scrollBtm - ( partner_interval + eleven + twelve ) * adjust ) * ( (thirteen_left - fourteen_left) / thirteen ) + "px"); 
+					rightWalk();
+				}
+				else if (scrollBtm > ( partner_interval + eleven ) * adjust) {
+					$(".walk").css("top", twelve_top * adjust - ( scrollBtm - ( partner_interval + eleven ) * adjust ) * ( (twelve_top - thirteen_top) / twelve ) + "px");
+					$(".walk").css("left", twelve_left * adjust - ( scrollBtm - ( partner_interval + eleven ) * adjust ) * ( (twelve_left - thirteen_left) / twelve ) + "px"); 
+					rightWalk();
+				}
+				else if (scrollBtm > partner_interval * adjust) {
+					$(".walk").css("top", eleven_top * adjust - ( scrollBtm - partner_interval * adjust ) * ( (eleven_top - twelve_top) / eleven ) + "px");
+					$(".walk").css("left", eleven_left * adjust - ( scrollBtm - partner_interval * adjust ) * ( (eleven_left - twelve_left) / eleven ) + "px"); 
+					rightWalk();
+				} // partner
+				else if (scrollBtm > ( one + two + three + four + five + six + seven + eight + nine ) * adjust) {
+					// $(".walk").css("left", 630 * adjust + "px");
+					$(".walk").css("top", ten_top * adjust - ( scrollBtm - ( one + two + three + four + five + six + seven + eight + nine ) * adjust ) * ( (ten_top - eleven_top) / ten ) + "px");
+					$(".walk").css("left", ten_left * adjust - ( scrollBtm - ( one + two + three + four + five + six + seven + eight + nine ) * adjust ) * ( (ten_left - eleven_left) / ten ) + "px"); 
+					rightWalk();
+					// 強制動畫
+					// $(".walk").animate({top: 510 * adjust +"px"}, 3000, "linear");
+					// for (var i = 1; i <= 20; i++) {
+					// 	walkMotion(i % 2, i * 150);
+					// };
+					// after = false;
 				}	
 				else if (scrollBtm > ( one + two + three + four + five + six + seven + eight ) * adjust) {
 					$(".walk").css("top", nine_top * adjust - ( scrollBtm - ( one + two + three + four + five + six + seven + eight ) * adjust ) * ( (nine_top - ten_top) / nine ) + "px"); 
@@ -331,19 +446,25 @@ if (script_name == "index.html") {
 					$(".walk").css("left", two_left * adjust - ( scrollBtm - one * adjust ) * ( (two_left - three_left) / two ) + "px");
 					leftWalk();
 				}
-				else {
+				else if (scrollBtm > 0 * adjust) {
 					$(".walk").css("top", one_top * adjust - scrollBtm * ( (one_top - two_top) / one ) + "px");
 					$(".walk").css("left", one_left * adjust - scrollBtm * ( (one_left - two_left) / one ) + "px");
+					rightWalk();
+				}
+				else {
+					$(".walk").css("top", one_top * adjust + "px");
+					$(".walk").css("left", one_left * adjust + "px");
 					rightWalk();
 				}
 			};
 		});
 
-		$(".background").click(function(){
+		$(".LandingPage").click(function(){
 			// alert($(".bar").css("top"));
-			// alert($(document).height() - $(window).height() - $(window).scrollTop());
+			// alert($(document).height() - $(window).height() - $(window).scrollTop() - 140 * adjust);
 			// alert((( 7802 - $(window).scrollTop() ) / 23 ) + 23 + "vw");
 			// alert($(window).width());
+			// alert(scrollBtm);
 		});
 	});
 		
