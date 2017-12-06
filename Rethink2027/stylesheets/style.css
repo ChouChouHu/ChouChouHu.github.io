@@ -5206,31 +5206,66 @@ body {
   left: 20vw;
   top: 340vw;
 }
-/* line 5722, ../sass/style.scss */
+/* line 5720, ../sass/style.scss */
+.teamMainPage .team {
+  position: absolute;
+}
+/* line 5724, ../sass/style.scss */
 .teamMainPage .team div img + img {
   display: none;
 }
-/* line 5728, ../sass/style.scss */
+/* line 5730, ../sass/style.scss */
 .teamMainPage .team:hover div img {
   display: none;
 }
-/* line 5732, ../sass/style.scss */
+/* line 5734, ../sass/style.scss */
 .teamMainPage .team:hover div img + img {
   display: block;
 }
-/* line 5739, ../sass/style.scss */
+/* line 5741, ../sass/style.scss */
 .teamMainPage .leftTopic {
   position: absolute;
   width: 23vw !important;
   margin-left: -23vw;
-  margin-top: 2vw;
+  margin-top: 5vw;
 }
-/* line 5745, ../sass/style.scss */
+/* line 5747, ../sass/style.scss */
 .teamMainPage .leftTopic img {
   width: 100%;
 }
+/* line 5752, ../sass/style.scss */
+.teamMainPage .rightTopic {
+  position: absolute;
+  width: 23vw !important;
+  margin-left: 40vw;
+  margin-top: 5vw;
+}
+/* line 5758, ../sass/style.scss */
+.teamMainPage .rightTopic img {
+  width: 100%;
+}
+/* line 5763, ../sass/style.scss */
+.teamMainPage .small {
+  width: 20vw !important;
+}
+/* line 5767, ../sass/style.scss */
+.teamMainPage .large {
+  width: 26vw !important;
+}
+/* line 5771, ../sass/style.scss */
+.teamMainPage .larger {
+  width: 26vw !important;
+  margin-left: -29vw;
+}
+/* line 5776, ../sass/style.scss */
+.teamMainPage .actionFest {
+  position: absolute;
+  width: 60vw;
+  top: 370vw;
+  left: 23.3vw;
+}
 
-/* line 5751, ../sass/style.scss */
+/* line 5784, ../sass/style.scss */
 .opening {
   position: fixed;
   width: 100vw;
@@ -5238,18 +5273,18 @@ body {
   top: 0;
   z-index: 3;
 }
-/* line 5758, ../sass/style.scss */
+/* line 5791, ../sass/style.scss */
 .opening .fullScreen {
   width: 100%;
 }
-/* line 5762, ../sass/style.scss */
+/* line 5795, ../sass/style.scss */
 .opening .HMW {
   position: absolute;
   width: 15%;
   top: 13vw;
   left: 50vw;
 }
-/* line 5769, ../sass/style.scss */
+/* line 5802, ../sass/style.scss */
 .opening .HMWtext {
   position: absolute;
   top: 19.5vw;
@@ -5261,11 +5296,11 @@ body {
   line-height: 2.4vw;
   color: #E0E0E0;
 }
-/* line 5781, ../sass/style.scss */
+/* line 5814, ../sass/style.scss */
 .opening .wideHMW {
   width: 30vw;
 }
-/* line 5785, ../sass/style.scss */
+/* line 5818, ../sass/style.scss */
 .opening .HMWbtn {
   position: absolute;
   background: #0F9BFF;
@@ -5282,11 +5317,11 @@ body {
   border-radius: 10vw;
   cursor: pointer;
 }
-/* line 5801, ../sass/style.scss */
+/* line 5834, ../sass/style.scss */
 .opening .HMWbtn:hover {
   background: #ff9b42;
 }
-/* line 5806, ../sass/style.scss */
+/* line 5839, ../sass/style.scss */
 .opening .downHMW {
   margin-top: 7vw;
 }

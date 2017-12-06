@@ -5718,6 +5718,8 @@ body {
 	}
 
 	.team {
+		position: absolute;
+
 		div {
 			img + img {
 				display: none;
@@ -5740,11 +5742,42 @@ body {
 		position: absolute;
 		width: 23vw !important;
 		margin-left: -23vw;
-		margin-top: 2vw;
+		margin-top: 5vw;
 
 		img {
 			width: 100%;
 		}
+	}
+
+	.rightTopic {
+		position: absolute;
+		width: 23vw !important;
+		margin-left: 40vw;
+		margin-top: 5vw;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.small {
+		width: 20vw !important;
+	}
+
+	.large {
+		width: 26vw !important;
+	}
+
+	.larger {
+		width: 26vw !important;
+		margin-left: -29vw;
+	}
+
+	.actionFest {
+		position: absolute;
+		width: 60vw;
+		top: 370vw;
+		left: 23.3vw;
 	}
 }
 
