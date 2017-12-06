@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="stylesheets/reset.css" media="screen, projection" rel="stylesheet" type="text/css" /> 
+<link href="stylesheets/animate.css" rel="stylesheet" type="text/css" />
+<link href="stylesheets/style.css" rel="stylesheet" type="text/css" /> 
+<script src="js/jQuery.js"></script>
+<script src="js/bar.js"></script>
+<script type="text/javascript">
+
+</script>
+<head>
+    <title>Rethink2027</title>
+    <meta charset="UTF-8" http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <link rel="Shortcut Icon" type="image/x-icon" href="img/icon.png" /> -->
+</head>
+
+<body>
+
+<div class="bar" id="topbar">
+	<div class="burger">
+		<img src="img/hamburger.svg">
+	</div>
+	<a class="logo" href="index.html">
+		<img src="img/logo.png">
+	</a>
+
+	<!-- 未登入或已登入無提案：我要提案 -->
+	
+	<a class="proposal" href="logIn.html">
+		<!-- <img class="pulse" src="img/goProposalWord.svg"> -->
+		<img src="img/goProposal.svg">
+	</a>
+	<!-- 已提案未通過：提案審核中 -->
+<!-- 	
+	<a class="proposal" href="proposal_waiting.html">
+		<img class="pulse" src="img/waitProposalWord.svg">
+		<img src="img/waitProposal.svg">
+	</a> -->
+	<!-- 已提案已通過：我的提案 -->
+<!-- 	
+	<a class="proposal" href="proposal_wall.html">
+		<img class="myProposalBtn" class="pulse" src="img/myProposalWord.svg">
+		<img src="img/myProposal.svg">
+	</a> -->
+
+	<!-- p.s. 登入登出都用同一個，無文字 -->
+	<a class="logInBtn" href="logIn.html">
+		<img src="img/LDPG_login_close.png">
+		<img src="img/LDPG_login_open.png">
+		<img class="word" src="img/logInWord.svg">
+		<!-- 這邊如果已登入，要把圖片換成 logOutWord.svg -->
+	</a>
+</div>
+
+
+<div class="menu">
+	<div class="close final fadeIn animated">
+		Ｘ
+	</div>
+	<div class="circle zoomIn animated">
+		<a class="text not-allowed" id="btnDaily">
+			青<br>年<br>行<br>動<br>日<br>誌
+		</a>
+		<img src="img/circleSix.svg" id="picDaily">
+		<div class="zoomIn animated">
+			<a class="text" href="partner.html" id="btnPartner">
+				行<br>動<br>夥<br>伴<br>故<br>事
+			</a>
+			<img src="img/circleFive.svg" id="picPartner">
+			<div class="zoomIn animated">
+				<a class="text" href="proposal_wall.html" id="btnWall">
+					行<br>動<br>提<br>案<br>牆
+				</a>
+				<img src="img/circleFour.svg" id="picWall">
+				<div class="zoomIn animated">
+					<a class="text" href="activities.html" id="btnActivity">
+						活<br>動<br>辦<br>法
+					</a>
+					<img src="img/circleThree.svg" id="picActivity">
+					<div class="zoomIn animated">
+						<a class="text" href="about.html" id="btnAbout">
+							關<br>於<br>迴<br>響
+						</a>
+						<img src="img/circleTwo.svg" id="picAbout">
+						<div class="zoomIn animated">
+							<a class="text not-allowed" id="btnNews">
+								最<br>新<br>消<br>息
+							</a>
+							<img src="img/circleOne.svg" id="picNews">
+							<a class="home zoomIn animated" href="index.html">
+								<img src="img/home.png">
+								<img src="img/homeH.png">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+
+<div class="opening">
+	<img class="fullScreen" src="img/youth/background_top opening.svg">
+
+	<img class="HMW" src="img/youth/background_HMW.svg">
+	<div class="HMWtext">
+		我們如何能讓這片土地的行動者被大眾看見，進而激起更多行動？
+	</div>
+	<div class="HMWbtn">
+		點擊揭曉
+	</div>
+</div>
+
+<div class="partner youth">
+	<img class="backgroundImg" src="img/youth/background.svg">
+	<img class="avatar" id="avatarFour" src="img/youth/avatar_no_136.svg">
+
+	<div class="title">
+		行動學
+		<div class="subtitle">
+			讓好行動與大眾連結
+		</div>
+	</div>
+
+	<div class="intro">
+		我們號招新聞、設計、攝影、行銷等不同專業的年輕人，成立關注台灣社會創新的新媒體。<br>
+		<br>
+		以圖文、影音、專訪多媒體結合成有趣的內容。致力建立社會創新者與大眾的連結。
+	</div>
+
+	<div class="issue">
+		<h1>讓我們再多說一些...</h1><br><br>
+		「我們如何能讓這片土地的行動者被大眾看見，進而激起更多行動？」<br>
+		<br>
+		社會上的媒體，大多都是告訴人們「有什麼」，卻沒有告訴我們「能做什麼」。我們希望能營運一家媒體，不只是告訴人們問題何在，還告訴人們「如何改變」。社會創新，就是探索社會問題並解決的過程。<br>
+		<br>
+		我們希望把這些資訊帶給大眾，並提供大眾一些能親身參與、提供幫助的管道。讓人們看見，社會上的問題並非無法解決，且自己也能盡一份力。
+	</div>
+
+	<div class="topicTreeText">
+		<h1>議題樹</h1>
+		<br>
+		來看看我們在這議題之中扮演什麼樣的角色！<br>
+		<br>
+		<b>滑鼠移過揭曉 ▷</b>
+	</div>
+	<div class="treeWhite">
+		<img class="topicTreeHover" src="img/youth/Topic Tree-no136.svg">
+	</div>
+	<img class="topicTree" src="img/youth/Topic_Tree.svg">
+	
+	<div class="timeline">
+		<div class="billboard">
+			<img src="img/youth/Sign_Timeline.svg">
+			<div class="text">行動足跡</div>
+		</div>
+		<div class="campfireText">
+			來我們的<br>大本營坐坐<br>
+			<a class="dialogBox" href="https://www.facebook.com/%E8%A1%8C%E5%8B%95%E5%AD%B8-352466305200558/?ref=br_rs" target="_blank">
+				點此前往
+			</a><br>
+			<img src="img/youth/bubble_point.svg">
+		</div>
+		<a href="https://www.facebook.com/%E8%A1%8C%E5%8B%95%E5%AD%B8-352466305200558/?ref=br_rs" target="_blank">
+			<img class="campfire" src="img/youth/timeline_campfire.svg">
+		</a>
+		<div class="windmill" id="windmillOne">
+			<img src="img/youth/timeline_windmill.svg">
+			<div class="windmillText">
+				<div class="topic">
+					<b>8/10 </b>提案人的家
+				</div>
+				<div class="dialogBox">
+					決定成立學生講者組織學聲視野。以學聲講者的概念鼓勵學生探索問題。
+				</div>
+			</div>
+		</div>
+		<div class="windmill" id="windmillTwo">
+			<img src="img/youth/timeline_windmill.svg">
+			<div class="windmillText">
+				<div class="topic">
+					<b>9/18 </b>提案人的家
+				</div>
+				<div class="dialogBox">
+					以學生講者的概念報名迴響計畫
+				</div>
+			</div>
+		</div>
+		<div class="windmill" id="windmillThree">
+			<img src="img/youth/timeline_windmill.svg">
+			<div class="windmillText">
+				<div class="topic">
+					<b>10/12 </b>世新大學
+				</div>
+				<div class="dialogBox">
+					開設即時公民講堂
+				</div>
+			</div>
+		</div>
+		<div class="windmill" id="windmillFour">
+			<img src="img/youth/timeline_windmill.svg">
+			<div class="windmillText">
+				<div class="topic">
+					<b>10/18 </b>提案人的家
+				</div>
+				<div class="dialogBox">
+					團隊激辯後對計畫修正，由學聲視野的講者計畫，轉為行動學的媒體計畫。
+				</div>
+			</div>
+		</div>
+		<div class="windmill" id="windmillFive">
+			<img src="img/youth/timeline_windmill.svg">
+			<div class="windmillText">
+				<div class="topic">
+					<b>11/1 </b>世新大學
+				</div>
+				<div class="dialogBox">
+					行動學粉專上線 - 招募媒體夥伴
+				</div>
+			</div>
+		</div>
+		<div class="windmill" id="windmillSix">
+			<img src="img/youth/timeline_windmill.svg">
+			<div class="windmillText">
+				<div class="topic">
+					<b>11/14 </b>世新大學
+				</div>
+				<div class="dialogBox">
+					行動學夥伴第一次正式聚會
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="moment">
+		<div class="billboard">
+			<img src="img/youth/Sign_moment.svg">
+			<div class="text">關鍵時點</div>
+		</div>
+		<div class="riverrock default" id="riverrockOne">
+			<img class="block" src="img/youth/moment_block.svg">
+			<img class="block" src="img/youth/moment_block_HL.svg">
+			<img class="riverrockImg" src="img/youth/moment_riverrock1.svg">
+		</div>
+		<div class="riverrock" id="riverrockTwo">
+			<img class="block" src="img/youth/moment_block.svg">
+			<img class="block" src="img/youth/moment_block_HL.svg">
+			<img class="riverrockImg" src="img/youth/moment_riverrock2.svg">
+		</div>
+		<div class="riverrock" id="riverrockThree">
+			<img class="block" src="img/youth/moment_block.svg">
+			<img class="block" src="img/youth/moment_block_HL.svg">
+			<img class="riverrockImg" src="img/youth/moment_riverrock3.svg">
+		</div>
+		<div class="riverrock" id="riverrockFour">
+			<img class="block" src="img/youth/moment_block.svg">
+			<img class="block" src="img/youth/moment_block_HL.svg">
+			<img class="riverrockImg" src="img/youth/moment_riverrock4.svg">
+		</div>
+		<div class="riverrock" id="riverrockFive">
+			<img class="block" src="img/youth/moment_block.svg">
+			<img class="block" src="img/youth/moment_block_HL.svg">
+			<img class="riverrockImg" src="img/youth/moment_riverrock5.svg">
+		</div>
+
+		<div class="momentText default" id="momentTextOne">
+			<h1>學聲視野成立</h1>
+			<br>
+			<br>
+			八月，學聲視野團隊成立。希望能以學聲講者的概念，鼓勵年輕人對問題探索。九月，以此概念參加迴響計畫，通過初選。
+
+		</div>
+		<div class="momentText" id="momentTextTwo">
+			<h1>尋找方向</h1>
+			<br>
+			<br>
+			九至十月，團隊開始積極行動，開設講堂、詢問專家意見。但團隊發現講者的模式，不一定是適合探索每種問題的模式。
+		</div>
+		<div class="momentText" id="momentTextThree">
+			<h1>新媒體，新方向</h1>
+			<br>
+			<br>
+			團隊開始反思，所關注的問題是什麼？要解決這個問題，還有什麼其他更好的方式。 10/17 團隊決定以自身專業，成立新媒體。
+
+		</div>
+		<div class="momentText" id="momentTextFour">
+			<h1>「行動學」</h1>
+			<br>
+			<br>
+			11/2 新媒體「行動學」粉專上線，開始進行人員招募。<br>
+			11/11 ，招募結束，有效報名者約 30 位，篩選後約 20 位進入團隊。
+
+		</div>
+		<div class="momentText" id="momentTextFive">
+			<h1>第一次聚會</h1>
+			<br>
+			<br>
+			11/14 「行動學」團隊成員，第一次共同聚會！
+		</div>
+	</div>
+
+	<div class="story">
+		<div class="billboard">
+			<img src="img/youth/Sign_Story.svg">
+			<div class="text">團隊小故事</div>
+		</div>
+		<div class="boat default" id="boatOne">
+			<div class="dialogBox">
+				最興奮的時刻
+			</div>
+			<img class="point" src="img/youth/bubble_point.svg"><br>
+			<div class="boatImg">
+				<img src="img/youth/story_boat1.svg">
+				<img src="img/youth/story_boat1_HL.svg">
+			</div>
+		</div>
+		<div class="boat" id="boatTwo">
+			<div class="dialogBox">
+				遭遇的困難
+			</div>
+			<img class="point" src="img/youth/bubble_point.svg"><br>
+			<div class="boatImg">
+				<img src="img/youth/story_boat2.svg">
+				<img src="img/youth/story_boat2_HL.svg">
+			</div>
+		</div>
+		<div class="boat" id="boatThree">
+			<div class="dialogBox">
+				想法的起源
+			</div>
+			<img class="point" src="img/youth/bubble_point.svg"><br>
+			<div class="boatImg">
+				<img src="img/youth/story_boat3.svg">
+				<img src="img/youth/story_boat3_HL.svg">
+			</div>
+		</div>
+		<div class="boat" id="boatFour">
+			<div class="dialogBox">
+				理想中的辦公室
+			</div>
+			<img class="point" src="img/youth/bubble_point.svg"><br>
+			<div class="boatImg">
+				<img src="img/youth/story_boat4.svg">
+				<img src="img/youth/story_boat4_HL.svg">
+			</div>
+		</div>
+		<div class="boat" id="boatFive">
+			<div class="dialogBox">
+				行動金用在哪裡？
+			</div>
+			<img class="point" src="img/youth/bubble_point.svg"><br>
+			<div class="boatImg">
+				<img src="img/youth/story_boat5.svg">
+				<img src="img/youth/story_boat5_HL.svg">
+			</div>
+		</div>
+		<div class="storyText default" id="storyTextOne">
+			<h1>最驚訝的時刻</h1>
+			<br>
+			最興奮的時刻是，團隊在第二階段評選前通宵趕稿的時候。在陌生的地點，和來自各地，向著目標前進的人們，一同奮鬥。
+		</div>
+		<div class="storyText" id="storyTextTwo">
+			<h1>遭遇的困難</h1>
+			<br>
+			曾經一度遇到需要改變作法的時刻。而當時團隊成員有過激烈的爭論。最終才定調了現在的方向。<br>
+			<br>
+			學習到，為了讓對方理解自己的想法，是必須同時懷抱著同理心，從不同角度解自己的想法。
+		</div>
+		<div class="storyText" id="storyTextThree">
+			<h1>想法的起源</h1>
+			<br>
+			在參與迴響前，我們發現我們的周遭，總是有人在說著現在教育的困境。我們也不斷的思考是否有我們所能做的。<br>
+			而在同時偶然看到了迴響計畫，深深地被網頁上所寫的給打動，於是便決定和伙伴們一起報名參加。
+
+		</div>
+		<div class="storyText" id="storyTextFour">
+			<h1>理想中的辦公室？為什麼？</h1>
+			<br>
+			像迴響的空間XD。有很大的場地、不同的素材媒介、食物和茶水、盡情揮灑的白板和便利貼等等，方便大家進行圓桌討論的空間。<br>
+			因為從空間規劃上，相較於普通的辦公室，大家比較能平等地進行討論。（而且有食物吃很幸福～）
+
+		</div>
+		<div class="storyText" id="storyTextFive">
+			<h1>行動金用在哪裡</h1>
+			<br>
+			記者的車馬費、器材的租借
+		</div>
+	</div>
+
+	<div class="member">
+		<div class="billboard">
+			<img src="img/youth/Sign_member.svg">
+			<div class="text">團隊成員</div>
+		</div>
+		<div class="memberText default" id="memberTextOne">
+			<div class="dialogBox">
+				想法比較多的中二病
+			</div>
+		</div>
+		<div class="memberText" id="memberTextTwo">
+			<div class="dialogBox">
+				美編視覺達人
+			</div>
+		</div>
+		<div class="memberText" id="memberTextThree">
+			<div class="dialogBox">
+				 需要睡飽吃飽的團隊開心果
+			</div>
+		</div>
+		<div class="memberText" id="memberTextFour">
+			<div class="dialogBox">
+				管人管錢管進度，團隊總務與影音小組製片統籌
+			</div>
+		</div>
+		<div class="memberText" id="memberTextFive">
+			<div class="dialogBox">
+				組織成員感情聯繫者，活動企劃一手包辦！
+			</div>
+		</div>
+<!-- 		<div class="memberText" id="memberTextSix">
+			<div class="dialogBox">
+				
+			</div>
+		</div> -->
+		<div class="memberPhoto default" id="memberPhotoOne">
+			<img class="point" src="img/youth/bubble_point_up.svg">
+			<div class="photo w">
+				<img src="img/youth/photo/136_1.jpg">
+			</div>
+			李容慶
+		</div>
+		<div class="memberPhoto" id="memberPhotoTwo">
+			<img class="point" src="img/youth/bubble_point_up.svg">
+			<div class="photo w">
+				<img src="img/youth/photo/136_2.jpg">
+			</div>
+			林佑潔
+		</div>
+		<div class="memberPhoto" id="memberPhotoThree">
+			<img class="point" src="img/youth/bubble_point_up.svg">
+			<div class="photo w">
+				<img src="img/youth/photo/136_3.jpg">
+			</div>
+			李芸軒
+		</div>
+		<div class="memberPhoto" id="memberPhotoFour">
+			<img class="point" src="img/youth/bubble_point_up.svg">
+			<div class="photo w">
+				<img src="img/youth/photo/136_4.jpg">
+			</div>
+			林家卉
+		</div>
+		<div class="memberPhoto" id="memberPhotoFive">
+			<img class="point" src="img/youth/bubble_point_up.svg">
+			<div class="photo w">
+				<img src="img/youth/photo/136_5.jpg">
+			</div>
+			龔仁晉
+		</div>
+<!-- 		<div class="memberPhoto" id="memberPhotoSix">
+			<img class="point" src="img/youth/bubble_point_up.svg">
+			<div class="photo">
+				<img src="img/youth/photo/204_6.jpg">
+			</div>
+			
+		</div> -->
+		<img class="boatImg" src="img/youth/member_boat.svg">
+		<div class="memberPerson default" id="memberPersonOne">
+			<img src="img/youth/member_1.svg">
+			<img src="img/youth/member_1_HL.svg">
+		</div>
+		<div class="memberPerson" id="memberPersonTwo">
+			<img src="img/youth/member_2.svg">
+			<img src="img/youth/member_2_HL.svg">
+		</div>
+		<div class="memberPerson" id="memberPersonThree">
+			<img src="img/youth/member_3.svg">
+			<img src="img/youth/member_3_HL.svg">
+		</div>
+		<div class="memberPerson" id="memberPersonFour">
+			<img src="img/youth/member_4.svg">
+			<img src="img/youth/member_4_HL.svg">
+		</div>
+		<div class="memberPerson" id="memberPersonFive">
+			<img src="img/youth/member_5.svg">
+			<img src="img/youth/member_5_HL.svg">
+		</div>
+<!-- 		<div class="memberPerson" id="memberPersonSix">
+			<img src="img/youth/member_6.svg">
+			<img src="img/youth/member_6_HL.svg">
+		</div> -->
+		<div class="secretWhite">
+			<img class="topic" src="img/youth/Secret_Bestmoment.svg">
+			<div class="bestMoment">
+				<img src="img/youth/photo/Best moment_136.jpg">
+			</div>
+			<div class="point">
+				<img src="img/youth/Secret_point.svg">
+			</div>
+			<div class="caption">
+				航向偉大的航道。（照片攝於11/14，新成員集結完畢後，25人第一次集會）
+			</div>
+			<div class="intro">
+				<div class="topic">
+					團隊不為人知的小秘密...
+				</div>
+				<div class="text">
+					<br>
+					我們曾有過爭執，每個人對於想做的事情有著不同的看法。我們曾經分歧，每個人對於想做的目標有不一樣的見解。所謂的團隊，就是從每個人的看法中找到大家認同的方向。<br>
+					一旦目標決定，我們將全力以赴。
+				</div>
+			</div>
+		</div>
+		<div class="case">
+			<div class="dialogBox">
+				團隊小秘密
+			</div>
+			<img class="top" src="img/youth/member_case top.svg">
+			<img class="bottom" src="img/youth/member_case bottom.svg">
+		</div>
+	</div>
+
+
+</div>
+
+
+<script src="js/jQuery.min.js"> </script>
+<script src="js/easing.js"></script>
+</body>
+
+</html>

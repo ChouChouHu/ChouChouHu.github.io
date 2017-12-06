@@ -443,9 +443,9 @@ $(document).ready(function(){
 		$(".memberPerson").removeClass("default");
 		$("#memberPersonOne").addClass("default");
 	}, function() {
-		$(".memberPhoto").removeClass("default");
-		$(".memberText").removeClass("default");
-		$(".memberPerson").removeClass("default");
+		// $(".memberPhoto").removeClass("default");
+		// $(".memberText").removeClass("default");
+		// $(".memberPerson").removeClass("default");
 	})
 
 	$("#memberPhotoTwo, #memberPersonTwo").hover(function(){
@@ -456,9 +456,9 @@ $(document).ready(function(){
 		$(".memberPerson").removeClass("default");
 		$("#memberPersonTwo").addClass("default");
 	}, function() {
-		$(".memberPhoto").removeClass("default");
-		$(".memberText").removeClass("default");
-		$(".memberPerson").removeClass("default");
+		// $(".memberPhoto").removeClass("default");
+		// $(".memberText").removeClass("default");
+		// $(".memberPerson").removeClass("default");
 	})
 
 	$("#memberPhotoThree, #memberPersonThree").hover(function(){
@@ -469,9 +469,9 @@ $(document).ready(function(){
 		$(".memberPerson").removeClass("default");
 		$("#memberPersonThree").addClass("default");
 	}, function() {
-		$(".memberPhoto").removeClass("default");
-		$(".memberText").removeClass("default");
-		$(".memberPerson").removeClass("default");
+		// $(".memberPhoto").removeClass("default");
+		// $(".memberText").removeClass("default");
+		// $(".memberPerson").removeClass("default");
 	})
 
 	$("#memberPhotoFour, #memberPersonFour").hover(function(){
@@ -482,9 +482,9 @@ $(document).ready(function(){
 		$(".memberPerson").removeClass("default");
 		$("#memberPersonFour").addClass("default");
 	}, function() {
-		$(".memberPhoto").removeClass("default");
-		$(".memberText").removeClass("default");
-		$(".memberPerson").removeClass("default");
+		// $(".memberPhoto").removeClass("default");
+		// $(".memberText").removeClass("default");
+		// $(".memberPerson").removeClass("default");
 	})
 
 	$("#memberPhotoFive, #memberPersonFive").hover(function(){
@@ -495,9 +495,9 @@ $(document).ready(function(){
 		$(".memberPerson").removeClass("default");
 		$("#memberPersonFive").addClass("default");
 	}, function() {
-		$(".memberPhoto").removeClass("default");
-		$(".memberText").removeClass("default");
-		$(".memberPerson").removeClass("default");
+		// $(".memberPhoto").removeClass("default");
+		// $(".memberText").removeClass("default");
+		// $(".memberPerson").removeClass("default");
 	})
 
 	$("#memberPhotoSix, #memberPersonSix").hover(function(){
@@ -508,15 +508,21 @@ $(document).ready(function(){
 		$(".memberPerson").removeClass("default");
 		$("#memberPersonSix").addClass("default");
 	}, function() {
-		$(".memberPhoto").removeClass("default");
-		$(".memberText").removeClass("default");
-		$(".memberPerson").removeClass("default");
+		// $(".memberPhoto").removeClass("default");
+		// $(".memberText").removeClass("default");
+		// $(".memberPerson").removeClass("default");
 	})
 
 	$(".topicTree").hover(function(){
 		$(".treeWhite").css("display", "block");
 	}, function() {
 		$(".treeWhite").css("display", "none");
+	})
+
+	$(".case").hover(function(){
+		$(".secretWhite").css("display", "block");
+	}, function() {
+		$(".secretWhite").css("display", "none");
 	})
 
 
