@@ -5066,6 +5066,7 @@ body {
   position: relative;
   display: inline-block;
   border-radius: 50%;
+  background: #02364b;
   width: 9vw;
   height: 9vw;
   left: 0;
