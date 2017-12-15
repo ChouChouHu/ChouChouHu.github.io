@@ -434,7 +434,6 @@ body {
   height: 1200vw;
   overflow: hidden;
   z-index: 0;
-  margin-top: -8vw;
 }
 /* line 501, ../sass/style.scss */
 .LandingPage div, .LandingPage a {
@@ -4664,45 +4663,47 @@ body {
   position: absolute;
   display: none;
   width: 44vw;
+  height: 38vw;
+  overflow: scroll;
   top: 18vw;
   left: 14vw;
   font-size: 1.3vw;
   letter-spacing: 0.1vw;
   line-height: 2.2vw;
 }
-/* line 5148, ../sass/style.scss */
+/* line 5151, ../sass/style.scss */
 .youth .moment .momentText h1 {
   font-size: 2.5vw;
   font-weight: bold;
   letter-spacing: 0.2vw;
   color: #ffdc57;
 }
-/* line 5154, ../sass/style.scss */
+/* line 5157, ../sass/style.scss */
 .youth .moment .momentText h1 i {
   font-style: italic;
 }
-/* line 5160, ../sass/style.scss */
+/* line 5163, ../sass/style.scss */
 .youth .moment .default {
   display: block;
 }
-/* line 5165, ../sass/style.scss */
+/* line 5168, ../sass/style.scss */
 .youth .story {
   position: absolute;
   width: 100%;
   top: 224.5vw;
 }
-/* line 5172, ../sass/style.scss */
+/* line 5175, ../sass/style.scss */
 .youth .story .billboard {
   position: absolute;
   width: 25vw;
   left: 6vw;
 }
-/* line 5177, ../sass/style.scss */
+/* line 5180, ../sass/style.scss */
 .youth .story .billboard img {
   position: absolute;
   width: 100%;
 }
-/* line 5182, ../sass/style.scss */
+/* line 5185, ../sass/style.scss */
 .youth .story .billboard .text {
   position: absolute;
   font-size: 1.9vw;
@@ -4712,14 +4713,14 @@ body {
   left: 9.2vw;
   color: #ff9847;
 }
-/* line 5193, ../sass/style.scss */
+/* line 5196, ../sass/style.scss */
 .youth .story .boat {
   position: absolute;
   text-align: center;
   width: 18vw;
   cursor: pointer;
 }
-/* line 5199, ../sass/style.scss */
+/* line 5202, ../sass/style.scss */
 .youth .story .boat .dialogBox {
   width: 100%;
   padding: 1.2vw 0;
@@ -4731,80 +4732,82 @@ body {
   color: #004864;
   opacity: 0;
 }
-/* line 5211, ../sass/style.scss */
+/* line 5214, ../sass/style.scss */
 .youth .story .boat .point {
   width: 1.2vw;
   margin-top: 0.4vw;
   opacity: 0;
 }
-/* line 5217, ../sass/style.scss */
+/* line 5220, ../sass/style.scss */
 .youth .story .boat .boatImg {
   position: relative;
   width: 10vw;
   margin-top: 1vw;
 }
-/* line 5222, ../sass/style.scss */
+/* line 5225, ../sass/style.scss */
 .youth .story .boat .boatImg img {
   position: absolute;
   width: 100%;
   left: 41%;
 }
-/* line 5228, ../sass/style.scss */
+/* line 5231, ../sass/style.scss */
 .youth .story .boat .boatImg img + img {
   display: none;
   width: 110%;
   margin-left: -5%;
   margin-top: -5%;
 }
-/* line 5238, ../sass/style.scss */
+/* line 5241, ../sass/style.scss */
 .youth .story .boat:hover .dialogBox {
   opacity: 1;
 }
-/* line 5241, ../sass/style.scss */
+/* line 5244, ../sass/style.scss */
 .youth .story .boat:hover .point {
   opacity: 1;
 }
-/* line 5245, ../sass/style.scss */
+/* line 5248, ../sass/style.scss */
 .youth .story .boat:hover .boatImg img + img {
   display: block;
 }
-/* line 5253, ../sass/style.scss */
+/* line 5256, ../sass/style.scss */
 .youth .story .default .dialogBox, .youth .story .default .point {
   opacity: 1;
 }
-/* line 5259, ../sass/style.scss */
+/* line 5262, ../sass/style.scss */
 .youth .story .default .boatImg img + img {
   display: block;
 }
-/* line 5265, ../sass/style.scss */
+/* line 5268, ../sass/style.scss */
 .youth .story #boatOne {
   top: 5vw;
   left: 35vw;
 }
-/* line 5270, ../sass/style.scss */
+/* line 5273, ../sass/style.scss */
 .youth .story #boatTwo {
   top: -3vw;
   left: 57vw;
 }
-/* line 5275, ../sass/style.scss */
+/* line 5278, ../sass/style.scss */
 .youth .story #boatThree {
   top: 11vw;
   left: 53vw;
 }
-/* line 5280, ../sass/style.scss */
+/* line 5283, ../sass/style.scss */
 .youth .story #boatFour {
   top: 0vw;
   left: 78vw;
 }
-/* line 5285, ../sass/style.scss */
+/* line 5288, ../sass/style.scss */
 .youth .story #boatFive {
   top: 18vw;
   left: 73vw;
 }
-/* line 5291, ../sass/style.scss */
+/* line 5294, ../sass/style.scss */
 .youth .story .storyText {
   position: absolute;
   width: 44vw;
+  height: 23vw;
+  overflow: scroll;
   top: 27vw;
   left: 14vw;
   font-size: 1.3vw;
@@ -4812,47 +4815,47 @@ body {
   line-height: 2.2vw;
   display: none;
 }
-/* line 5301, ../sass/style.scss */
+/* line 5307, ../sass/style.scss */
 .youth .story .storyText h1 {
   font-size: 2.5vw;
   font-weight: bold;
   letter-spacing: 0.2vw;
   color: #ffac69;
 }
-/* line 5307, ../sass/style.scss */
+/* line 5313, ../sass/style.scss */
 .youth .story .storyText h1 i {
   font-style: italic;
 }
-/* line 5312, ../sass/style.scss */
+/* line 5318, ../sass/style.scss */
 .youth .story .storyText i {
   font-size: 1.5vw;
   font-weight: bold;
   color: #ffac69;
   line-height: 3vw;
 }
-/* line 5320, ../sass/style.scss */
+/* line 5326, ../sass/style.scss */
 .youth .story .default {
   display: block;
 }
-/* line 5325, ../sass/style.scss */
+/* line 5331, ../sass/style.scss */
 .youth .member {
   position: absolute;
   width: 100%;
   top: 278vw;
 }
-/* line 5332, ../sass/style.scss */
+/* line 5338, ../sass/style.scss */
 .youth .member .billboard {
   position: absolute;
   width: 23vw;
   top: 0vw;
   left: 6vw;
 }
-/* line 5338, ../sass/style.scss */
+/* line 5344, ../sass/style.scss */
 .youth .member .billboard img {
   position: absolute;
   width: 100%;
 }
-/* line 5343, ../sass/style.scss */
+/* line 5349, ../sass/style.scss */
 .youth .member .billboard .text {
   position: absolute;
   font-size: 1.9vw;
@@ -4862,79 +4865,79 @@ body {
   left: 9.2vw;
   color: #ff9847;
 }
-/* line 5354, ../sass/style.scss */
+/* line 5360, ../sass/style.scss */
 .youth .member .boatImg {
   position: absolute;
   top: 52vw;
   left: 15vw;
   width: 85vw;
 }
-/* line 5361, ../sass/style.scss */
+/* line 5367, ../sass/style.scss */
 .youth .member .memberPerson {
   position: absolute;
   cursor: pointer;
 }
-/* line 5365, ../sass/style.scss */
+/* line 5371, ../sass/style.scss */
 .youth .member .memberPerson img {
   position: absolute;
 }
-/* line 5369, ../sass/style.scss */
+/* line 5375, ../sass/style.scss */
 .youth .member .memberPerson img + img {
   display: none;
 }
-/* line 5383, ../sass/style.scss */
+/* line 5389, ../sass/style.scss */
 .youth .member .default img + img {
   display: block;
 }
-/* line 5388, ../sass/style.scss */
+/* line 5394, ../sass/style.scss */
 .youth .member #memberPersonOne {
   width: 8vw;
   left: 20vw;
   top: 43.6vw;
 }
-/* line 5393, ../sass/style.scss */
+/* line 5399, ../sass/style.scss */
 .youth .member #memberPersonOne img + img {
   width: 8.4vw;
 }
-/* line 5398, ../sass/style.scss */
+/* line 5404, ../sass/style.scss */
 .youth .member #memberPersonTwo {
   width: 9.5vw;
   left: 30vw;
   top: 46.3vw;
 }
-/* line 5404, ../sass/style.scss */
+/* line 5410, ../sass/style.scss */
 .youth .member #memberPersonThree {
   width: 5.8vw;
   left: 41.5vw;
   top: 46.3vw;
 }
-/* line 5409, ../sass/style.scss */
+/* line 5415, ../sass/style.scss */
 .youth .member #memberPersonThree img + img {
   width: 6vw;
 }
-/* line 5414, ../sass/style.scss */
+/* line 5420, ../sass/style.scss */
 .youth .member #memberPersonFour {
   width: 9.7vw;
   left: 50vw;
   top: 46.2vw;
 }
-/* line 5420, ../sass/style.scss */
+/* line 5426, ../sass/style.scss */
 .youth .member #memberPersonFive {
   width: 5vw;
   left: 62vw;
   top: 45.6vw;
 }
-/* line 5425, ../sass/style.scss */
+/* line 5431, ../sass/style.scss */
 .youth .member #memberPersonFive img + img {
   width: 5.4vw;
 }
-/* line 5430, ../sass/style.scss */
+/* line 5436, ../sass/style.scss */
 .youth .member #memberPersonSix {
   width: 9.3vw;
   left: 70.5vw;
   top: 46vw;
 }
-/* line 5436, ../sass/style.scss */
+/* line 5442, ../sass/style.scss */
 .youth .member .secretWhite {
   display: none;
   position: fixed;
@@ -4944,14 +4947,14 @@ body {
   top: 0;
   background: rgba(230, 230, 230, 0.95);
 }
-/* line 5445, ../sass/style.scss */
+/* line 5451, ../sass/style.scss */
 .youth .member .secretWhite .topic {
   position: absolute;
   width: 24vw;
   left: 13vw;
   top: 5vw;
 }
-/* line 5452, ../sass/style.scss */
+/* line 5458, ../sass/style.scss */
 .youth .member .secretWhite .bestMoment {
   position: absolute;
   width: 22vw;
@@ -4961,18 +4964,18 @@ body {
   font-size: 26vw;
   line-height: 26vw;
 }
-/* line 5462, ../sass/style.scss */
+/* line 5468, ../sass/style.scss */
 .youth .member .secretWhite .bestMoment img {
   width: 100%;
 }
-/* line 5467, ../sass/style.scss */
+/* line 5473, ../sass/style.scss */
 .youth .member .secretWhite .point {
   position: absolute;
   width: 1.3vw;
   top: 42.3vw;
   left: 14.5vw;
 }
-/* line 5474, ../sass/style.scss */
+/* line 5480, ../sass/style.scss */
 .youth .member .secretWhite .caption {
   position: absolute;
   width: 19vw;
@@ -4982,7 +4985,7 @@ body {
   line-height: 1.6vw;
   color: #003549;
 }
-/* line 5484, ../sass/style.scss */
+/* line 5490, ../sass/style.scss */
 .youth .member .secretWhite .intro {
   position: absolute;
   width: 28vw;
@@ -4990,7 +4993,7 @@ body {
   top: 20vw;
   color: #003549;
 }
-/* line 5491, ../sass/style.scss */
+/* line 5497, ../sass/style.scss */
 .youth .member .secretWhite .intro .topic {
   position: relative;
   left: 0;
@@ -4998,12 +5001,12 @@ body {
   font-size: 1.6vw;
   font-weight: bold;
 }
-/* line 5499, ../sass/style.scss */
+/* line 5505, ../sass/style.scss */
 .youth .member .secretWhite .intro .text {
   font-size: 1.2vw;
   line-height: 1.8vw;
 }
-/* line 5506, ../sass/style.scss */
+/* line 5512, ../sass/style.scss */
 .youth .member .case {
   position: absolute;
   cursor: pointer;
@@ -5011,7 +5014,7 @@ body {
   left: 81.5vw;
   top: 48.4vw;
 }
-/* line 5513, ../sass/style.scss */
+/* line 5519, ../sass/style.scss */
 .youth .member .case .dialogBox {
   position: absolute;
   font-size: 1.5vw;
@@ -5024,28 +5027,28 @@ body {
   top: 7vw;
   left: -1.5vw;
 }
-/* line 5526, ../sass/style.scss */
+/* line 5532, ../sass/style.scss */
 .youth .member .case .top {
   position: absolute;
   width: 9vw;
   z-index: 1;
 }
-/* line 5532, ../sass/style.scss */
+/* line 5538, ../sass/style.scss */
 .youth .member .case .bottom {
   position: absolute;
   width: 9vw;
   top: 1.5vw;
   z-index: 0;
 }
-/* line 5540, ../sass/style.scss */
+/* line 5546, ../sass/style.scss */
 .youth .member .case:hover .top {
   top: -2.3vw;
 }
-/* line 5543, ../sass/style.scss */
+/* line 5549, ../sass/style.scss */
 .youth .member .case:hover .dialogBox {
   top: 7vw;
 }
-/* line 5550, ../sass/style.scss */
+/* line 5556, ../sass/style.scss */
 .youth .member .memberPhoto {
   position: absolute;
   text-align: center;
@@ -5059,12 +5062,12 @@ body {
   font-weight: bold;
   letter-spacing: 0.3vw;
 }
-/* line 5563, ../sass/style.scss */
+/* line 5569, ../sass/style.scss */
 .youth .member .memberPhoto .point {
   width: 2vw;
   opacity: 0;
 }
-/* line 5568, ../sass/style.scss */
+/* line 5574, ../sass/style.scss */
 .youth .member .memberPhoto .photo {
   position: relative;
   display: inline-block;
@@ -5078,39 +5081,39 @@ body {
   margin-bottom: 1.5vw;
   overflow: hidden;
 }
-/* line 5583, ../sass/style.scss */
+/* line 5589, ../sass/style.scss */
 .youth .member .memberPhoto .w img {
   width: 100%;
 }
-/* line 5589, ../sass/style.scss */
+/* line 5595, ../sass/style.scss */
 .youth .member .memberPhoto .h img {
   height: 100%;
 }
-/* line 5597, ../sass/style.scss */
+/* line 5603, ../sass/style.scss */
 .youth .member .default .point {
   opacity: 1;
 }
-/* line 5602, ../sass/style.scss */
+/* line 5608, ../sass/style.scss */
 .youth .member #memberPhotoTwo {
   left: 28vw;
 }
-/* line 5606, ../sass/style.scss */
+/* line 5612, ../sass/style.scss */
 .youth .member #memberPhotoThree {
   left: 40vw;
 }
-/* line 5610, ../sass/style.scss */
+/* line 5616, ../sass/style.scss */
 .youth .member #memberPhotoFour {
   left: 52vw;
 }
-/* line 5614, ../sass/style.scss */
+/* line 5620, ../sass/style.scss */
 .youth .member #memberPhotoFive {
   left: 64vw;
 }
-/* line 5618, ../sass/style.scss */
+/* line 5624, ../sass/style.scss */
 .youth .member #memberPhotoSix {
   left: 76vw;
 }
-/* line 5624, ../sass/style.scss */
+/* line 5630, ../sass/style.scss */
 .youth .member .memberText {
   position: absolute;
   display: none;
@@ -5118,7 +5121,7 @@ body {
   left: 15vw;
   width: 70vw;
 }
-/* line 5631, ../sass/style.scss */
+/* line 5637, ../sass/style.scss */
 .youth .member .memberText .dialogBox {
   width: 100%;
   padding: 3vw 4vw;
@@ -5131,137 +5134,137 @@ body {
   border-radius: 20vw;
   text-align: center;
 }
-/* line 5645, ../sass/style.scss */
+/* line 5651, ../sass/style.scss */
 .youth .member .default {
   display: block;
 }
 
-/* line 5652, ../sass/style.scss */
+/* line 5658, ../sass/style.scss */
 .teamMainPage {
   position: relative;
 }
-/* line 5655, ../sass/style.scss */
+/* line 5661, ../sass/style.scss */
 .teamMainPage .background {
   position: absolute;
   width: 100%;
 }
-/* line 5660, ../sass/style.scss */
+/* line 5666, ../sass/style.scss */
 .teamMainPage .avatar {
   position: absolute;
   cursor: pointer;
 }
-/* line 5665, ../sass/style.scss */
+/* line 5671, ../sass/style.scss */
 .teamMainPage #avatarOne {
   width: 45vw;
   left: 42vw;
   top: 50vw;
 }
-/* line 5671, ../sass/style.scss */
+/* line 5677, ../sass/style.scss */
 .teamMainPage #avatarTwo {
   width: 38vw;
   left: 15vw;
   top: 76vw;
 }
-/* line 5677, ../sass/style.scss */
+/* line 5683, ../sass/style.scss */
 .teamMainPage #avatarThree {
   width: 33vw;
   left: 50vw;
   top: 105vw;
 }
-/* line 5683, ../sass/style.scss */
+/* line 5689, ../sass/style.scss */
 .teamMainPage #avatarFour {
   width: 33vw;
   left: 19vw;
   top: 139vw;
 }
-/* line 5689, ../sass/style.scss */
+/* line 5695, ../sass/style.scss */
 .teamMainPage #avatarFive {
   width: 42vw;
   left: 45vw;
   top: 174vw;
 }
-/* line 5695, ../sass/style.scss */
+/* line 5701, ../sass/style.scss */
 .teamMainPage #avatarSix {
   width: 42vw;
   left: 12vw;
   top: 204vw;
 }
-/* line 5701, ../sass/style.scss */
+/* line 5707, ../sass/style.scss */
 .teamMainPage #avatarSeven {
   width: 50vw;
   left: 43vw;
   top: 240vw;
 }
-/* line 5707, ../sass/style.scss */
+/* line 5713, ../sass/style.scss */
 .teamMainPage #avatarEight {
   width: 44vw;
   left: 11vw;
   top: 275vw;
 }
-/* line 5713, ../sass/style.scss */
+/* line 5719, ../sass/style.scss */
 .teamMainPage #avatarNine {
   width: 40vw;
   left: 53vw;
   top: 312vw;
 }
-/* line 5719, ../sass/style.scss */
+/* line 5725, ../sass/style.scss */
 .teamMainPage #avatarTen {
   width: 36vw;
   left: 20vw;
   top: 340vw;
 }
-/* line 5725, ../sass/style.scss */
+/* line 5731, ../sass/style.scss */
 .teamMainPage .team {
   position: absolute;
 }
-/* line 5729, ../sass/style.scss */
+/* line 5735, ../sass/style.scss */
 .teamMainPage .team div img + img {
   display: none;
 }
-/* line 5735, ../sass/style.scss */
+/* line 5741, ../sass/style.scss */
 .teamMainPage .team:hover div img {
   display: none;
 }
-/* line 5739, ../sass/style.scss */
+/* line 5745, ../sass/style.scss */
 .teamMainPage .team:hover div img + img {
   display: block;
 }
-/* line 5746, ../sass/style.scss */
+/* line 5752, ../sass/style.scss */
 .teamMainPage .leftTopic {
   position: absolute;
   width: 23vw !important;
   margin-left: -23vw;
   margin-top: 5vw;
 }
-/* line 5752, ../sass/style.scss */
+/* line 5758, ../sass/style.scss */
 .teamMainPage .leftTopic img {
   width: 100%;
 }
-/* line 5757, ../sass/style.scss */
+/* line 5763, ../sass/style.scss */
 .teamMainPage .rightTopic {
   position: absolute;
   width: 23vw !important;
   margin-left: 40vw;
   margin-top: 5vw;
 }
-/* line 5763, ../sass/style.scss */
+/* line 5769, ../sass/style.scss */
 .teamMainPage .rightTopic img {
   width: 100%;
 }
-/* line 5768, ../sass/style.scss */
+/* line 5774, ../sass/style.scss */
 .teamMainPage .small {
   width: 20vw !important;
 }
-/* line 5772, ../sass/style.scss */
+/* line 5778, ../sass/style.scss */
 .teamMainPage .large {
   width: 26vw !important;
 }
-/* line 5776, ../sass/style.scss */
+/* line 5782, ../sass/style.scss */
 .teamMainPage .larger {
   width: 26vw !important;
   margin-left: -29vw;
 }
-/* line 5781, ../sass/style.scss */
+/* line 5787, ../sass/style.scss */
 .teamMainPage .actionFest {
   position: absolute;
   width: 60vw;
@@ -5269,26 +5272,28 @@ body {
   left: 23.3vw;
 }
 
-/* line 5789, ../sass/style.scss */
+/* line 5795, ../sass/style.scss */
 .opening {
   position: fixed;
   width: 100vw;
+  height: 100vh;
   left: 0;
   top: 0;
   z-index: 3;
+  background: #014864;
 }
-/* line 5796, ../sass/style.scss */
+/* line 5804, ../sass/style.scss */
 .opening .fullScreen {
   width: 100%;
 }
-/* line 5800, ../sass/style.scss */
+/* line 5808, ../sass/style.scss */
 .opening .HMW {
   position: absolute;
   width: 15%;
   top: 13vw;
   left: 50vw;
 }
-/* line 5807, ../sass/style.scss */
+/* line 5815, ../sass/style.scss */
 .opening .HMWtext {
   position: absolute;
   top: 19.5vw;
@@ -5300,11 +5305,11 @@ body {
   line-height: 2.4vw;
   color: #E0E0E0;
 }
-/* line 5819, ../sass/style.scss */
+/* line 5827, ../sass/style.scss */
 .opening .wideHMW {
   width: 30vw;
 }
-/* line 5823, ../sass/style.scss */
+/* line 5831, ../sass/style.scss */
 .opening .HMWbtn {
   position: absolute;
   background: #0F9BFF;
@@ -5321,11 +5326,11 @@ body {
   border-radius: 10vw;
   cursor: pointer;
 }
-/* line 5839, ../sass/style.scss */
+/* line 5847, ../sass/style.scss */
 .opening .HMWbtn:hover {
   background: #ff9b42;
 }
-/* line 5844, ../sass/style.scss */
+/* line 5852, ../sass/style.scss */
 .opening .downHMW {
   margin-top: 7vw;
 }

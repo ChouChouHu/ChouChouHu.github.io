@@ -496,7 +496,7 @@ body {
 	height: 1200vw;
 	overflow: hidden;
 	z-index: 0;
-	margin-top: -8vw;
+	// margin-top: -8vw;
 
 	div, a {
 		margin-top: 480vw;
@@ -5139,6 +5139,9 @@ body {
 			position: absolute;
 			display: none;
 			width: 44vw;
+			height: 38vw;
+			// background: red;
+			overflow: scroll;
 			top: 18vw;
 			left: 14vw;
 			font-size: 1.3vw;
@@ -5291,6 +5294,9 @@ body {
 		.storyText {
 			position: absolute;
 			width: 44vw;
+			height: 23vw;
+			// background: red;
+			overflow: scroll;
 			top: 27vw;
 			left: 14vw;
 			font-size: 1.3vw;
@@ -5789,9 +5795,11 @@ body {
 .opening {
 	position: fixed;
 	width: 100vw;
+	height: 100vh;
 	left: 0;
 	top: 0;
 	z-index: 3;
+	background: #014864;
 
 	.fullScreen {
 		width: 100%;
