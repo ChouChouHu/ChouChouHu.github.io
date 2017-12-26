@@ -435,10 +435,6 @@ body {
   overflow: hidden;
   z-index: 0;
 }
-/* line 501, ../sass/style.scss */
-.LandingPage div, .LandingPage a {
-  margin-top: 480vw;
-}
 /* line 507, ../sass/style.scss */
 .LandingPage .topPos {
   margin-top: 0;
