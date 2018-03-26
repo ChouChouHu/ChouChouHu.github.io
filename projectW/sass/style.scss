@@ -1,0 +1,260 @@
+
+$yellow: #F7EFAE;
+$blue: #191E7D;
+
+.projectW {
+	position: absolute;
+	width: 100vw;
+	height: 450vw;
+	overflow: hidden;
+
+	.background {
+		position: absolute;
+		width: 100vw;
+	}
+
+	.first_sec {
+
+		.p2018 {
+			position: absolute;
+			width: 10vw;
+			top: 4vw;
+			left: 5vw;
+		}
+
+		.logo {
+			position: absolute;
+			width: 27vw;
+			top: 6vw;
+			left: 37vw;
+		}
+		
+		.boy {
+			position: absolute;
+			width: 28vw;
+			top: 9.2vw;
+			left: -1.8vw;
+		}
+
+		.girl {
+			position: absolute;
+			width: 22.4vw;
+			top: 25.2vw;
+			left: 16.8vw;
+		}
+
+		.deer {
+			position: absolute;
+			width: 22vw;
+			top: 25.2vw;
+			left: 40.2vw;
+		}
+
+		.go_booking {
+			position: absolute;
+			width: 15.5vw;
+			left: 79.5vw;
+			top: 29.7vw;
+		}
+
+		.life_design {
+			position: absolute;
+			width: 46vw;
+			top: 36.5vw;
+			left: 65vw;
+			cursor: pointer;
+		}
+
+		.with_life_design {
+			position: absolute;
+			width: 10vw;
+			top: 34.3vw;
+			left: 64vw;
+		}
+
+		.slide {
+			position: fixed;
+			width: 13vw;
+			bottom: 2vw;
+			left: 44vw;
+			animation-iteration-count: 2;
+		}
+	}
+
+	.second_sec {
+		position: absolute;
+		width: 100vw;
+		top: 52vw;
+		// height: 53.2vw;
+		// background: red;
+
+		.draw {
+			position: absolute;
+			width: 42vw;
+			left: 6.3vw;
+			top: 8vw;
+			cursor: pointer;
+
+			img {
+				position: absolute;
+				width: 100%;
+				display: none;
+			}
+
+			.default {
+				display: block;
+			}
+
+			.control_one {
+				position: absolute;
+				width: 15vw;
+				height: 35vw;
+				top: 0;
+				left: 0;
+				// background: red;
+			}
+
+			.control_two {
+				position: absolute;
+				width: 11vw;
+				height: 35vw;
+				top: 0;
+				left: 15vw;
+				// background: blue;
+			}
+
+			.control_three {
+				position: absolute;
+				width: 15vw;
+				height: 35vw;
+				top: 0;
+				left: 26vw;
+				// background: yellow;
+			}
+		}
+	}
+
+	.third_sec {
+		position: absolute;
+		top: 105.2vw;
+		width: 100vw;
+		// height: 83.2vw;
+		// background: red;
+
+		.shock {
+			position: absolute;
+			top: 4vw;
+			width: 17vw;
+			left: 43.5vw;
+		}
+	}
+
+	.fourth_sec {
+		position: absolute;
+		top: 188.4vw;
+		width: 100vw;
+		// height: 65.4vw;
+		// background: red;
+	}
+
+	.fifth_sec {
+		position: absolute;
+		top: 253.8vw;
+		width: 100vw;
+		// height: 50.7vw;
+		// background: red;
+
+		.p_spec {
+			position: absolute;
+			width: 11vw;
+			top: 3.7vw;
+			left: 3.2vw;
+		}
+
+		.logo {
+			position: absolute;
+			width: 28vw;
+			top: 5vw;
+			left: 14.5vw;
+		}
+
+		.persona {
+			position: absolute;
+			width: 42vw;
+			top: 14vw;
+			left: 55vw;
+		}
+
+		.btn {
+			position: absolute;
+			width: 29vw;
+			left: 13vw;
+			top: 41vw;
+		}
+	}
+
+	.sixth_sec {
+		position: absolute;
+		top: 304.5vw;
+		width: 100vw;
+		// height: 50.7vw;
+		// background: red;
+
+		.go_booking {
+			position: absolute;
+			width: 21vw;
+			left: 13vw;
+			top: 37vw;
+		}
+	}
+
+	.seventh_sec {
+		position: absolute;
+		top: 355.2vw;
+		width: 100vw;
+		// height: 50.8vw;
+		// background: red;
+
+		.left {
+			position: absolute;
+			width: 48vw;
+			left: -18.3vw;
+			top: -2vw;
+		}
+
+		.right {
+			position: absolute;
+			width: 48vw;
+			right: -18.3vw;
+			top: -1.6vw;
+		}
+
+		.p_about {
+			position: absolute;
+			width: 20vw;
+			top: 5.8vw;
+			left: 40vw;
+		}
+	}
+
+	.footer {
+		position: absolute;
+		top: 406vw;
+		width: 100vw;
+
+		.facebook {
+			position: absolute;
+			width: 3.5vw;
+			left: 66vw;
+			top: 37.7vw;
+		}
+
+		.instagram {
+			position: absolute;
+			width: 3.5vw;
+			left: 71vw;
+			top: 37.7vw;
+		}
+	}
+
+}

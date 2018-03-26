@@ -1,0 +1,238 @@
+/* line 5, ../sass/style.scss */
+.projectW {
+  position: absolute;
+  width: 100vw;
+  height: 450vw;
+  overflow: hidden;
+}
+/* line 11, ../sass/style.scss */
+.projectW .background {
+  position: absolute;
+  width: 100vw;
+}
+/* line 18, ../sass/style.scss */
+.projectW .first_sec .p2018 {
+  position: absolute;
+  width: 10vw;
+  top: 4vw;
+  left: 5vw;
+}
+/* line 25, ../sass/style.scss */
+.projectW .first_sec .logo {
+  position: absolute;
+  width: 27vw;
+  top: 6vw;
+  left: 37vw;
+}
+/* line 32, ../sass/style.scss */
+.projectW .first_sec .boy {
+  position: absolute;
+  width: 28vw;
+  top: 9.2vw;
+  left: -1.8vw;
+}
+/* line 39, ../sass/style.scss */
+.projectW .first_sec .girl {
+  position: absolute;
+  width: 22.4vw;
+  top: 25.2vw;
+  left: 16.8vw;
+}
+/* line 46, ../sass/style.scss */
+.projectW .first_sec .deer {
+  position: absolute;
+  width: 22vw;
+  top: 25.2vw;
+  left: 40.2vw;
+}
+/* line 53, ../sass/style.scss */
+.projectW .first_sec .go_booking {
+  position: absolute;
+  width: 15.5vw;
+  left: 79.5vw;
+  top: 29.7vw;
+}
+/* line 60, ../sass/style.scss */
+.projectW .first_sec .life_design {
+  position: absolute;
+  width: 46vw;
+  top: 36.5vw;
+  left: 65vw;
+  cursor: pointer;
+}
+/* line 68, ../sass/style.scss */
+.projectW .first_sec .with_life_design {
+  position: absolute;
+  width: 10vw;
+  top: 34.3vw;
+  left: 64vw;
+}
+/* line 75, ../sass/style.scss */
+.projectW .first_sec .slide {
+  position: fixed;
+  width: 13vw;
+  bottom: 2vw;
+  left: 44vw;
+  animation-iteration-count: 2;
+}
+/* line 84, ../sass/style.scss */
+.projectW .second_sec {
+  position: absolute;
+  width: 100vw;
+  top: 52vw;
+}
+/* line 91, ../sass/style.scss */
+.projectW .second_sec .draw {
+  position: absolute;
+  width: 42vw;
+  left: 6.3vw;
+  top: 8vw;
+  cursor: pointer;
+}
+/* line 98, ../sass/style.scss */
+.projectW .second_sec .draw img {
+  position: absolute;
+  width: 100%;
+  display: none;
+}
+/* line 104, ../sass/style.scss */
+.projectW .second_sec .draw .default {
+  display: block;
+}
+/* line 108, ../sass/style.scss */
+.projectW .second_sec .draw .control_one {
+  position: absolute;
+  width: 15vw;
+  height: 35vw;
+  top: 0;
+  left: 0;
+}
+/* line 117, ../sass/style.scss */
+.projectW .second_sec .draw .control_two {
+  position: absolute;
+  width: 11vw;
+  height: 35vw;
+  top: 0;
+  left: 15vw;
+}
+/* line 126, ../sass/style.scss */
+.projectW .second_sec .draw .control_three {
+  position: absolute;
+  width: 15vw;
+  height: 35vw;
+  top: 0;
+  left: 26vw;
+}
+/* line 137, ../sass/style.scss */
+.projectW .third_sec {
+  position: absolute;
+  top: 105.2vw;
+  width: 100vw;
+}
+/* line 144, ../sass/style.scss */
+.projectW .third_sec .shock {
+  position: absolute;
+  top: 4vw;
+  width: 17vw;
+  left: 43.5vw;
+}
+/* line 152, ../sass/style.scss */
+.projectW .fourth_sec {
+  position: absolute;
+  top: 188.4vw;
+  width: 100vw;
+}
+/* line 160, ../sass/style.scss */
+.projectW .fifth_sec {
+  position: absolute;
+  top: 253.8vw;
+  width: 100vw;
+}
+/* line 167, ../sass/style.scss */
+.projectW .fifth_sec .p_spec {
+  position: absolute;
+  width: 11vw;
+  top: 3.7vw;
+  left: 3.2vw;
+}
+/* line 174, ../sass/style.scss */
+.projectW .fifth_sec .logo {
+  position: absolute;
+  width: 28vw;
+  top: 5vw;
+  left: 14.5vw;
+}
+/* line 181, ../sass/style.scss */
+.projectW .fifth_sec .persona {
+  position: absolute;
+  width: 42vw;
+  top: 14vw;
+  left: 55vw;
+}
+/* line 188, ../sass/style.scss */
+.projectW .fifth_sec .btn {
+  position: absolute;
+  width: 29vw;
+  left: 13vw;
+  top: 41vw;
+}
+/* line 196, ../sass/style.scss */
+.projectW .sixth_sec {
+  position: absolute;
+  top: 304.5vw;
+  width: 100vw;
+}
+/* line 203, ../sass/style.scss */
+.projectW .sixth_sec .go_booking {
+  position: absolute;
+  width: 21vw;
+  left: 13vw;
+  top: 37vw;
+}
+/* line 211, ../sass/style.scss */
+.projectW .seventh_sec {
+  position: absolute;
+  top: 355.2vw;
+  width: 100vw;
+}
+/* line 218, ../sass/style.scss */
+.projectW .seventh_sec .left {
+  position: absolute;
+  width: 48vw;
+  left: -18.3vw;
+  top: -2vw;
+}
+/* line 225, ../sass/style.scss */
+.projectW .seventh_sec .right {
+  position: absolute;
+  width: 48vw;
+  right: -18.3vw;
+  top: -1.6vw;
+}
+/* line 232, ../sass/style.scss */
+.projectW .seventh_sec .p_about {
+  position: absolute;
+  width: 20vw;
+  top: 5.8vw;
+  left: 40vw;
+}
+/* line 240, ../sass/style.scss */
+.projectW .footer {
+  position: absolute;
+  top: 406vw;
+  width: 100vw;
+}
+/* line 245, ../sass/style.scss */
+.projectW .footer .facebook {
+  position: absolute;
+  width: 3.5vw;
+  left: 66vw;
+  top: 37.7vw;
+}
+/* line 252, ../sass/style.scss */
+.projectW .footer .instagram {
+  position: absolute;
+  width: 3.5vw;
+  left: 71vw;
+  top: 37.7vw;
+}
