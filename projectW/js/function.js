@@ -28,6 +28,7 @@ $(document).ready(function(){
 		$(".draw img").css("display", "none");
 		$(".second_sec .text").css("display", "none");
 		$(".draw .two").css("display", "block");
+		$(".second_sec #text_two").css("display", "block");
 	}, function(){
 		;
 	})
@@ -36,6 +37,7 @@ $(document).ready(function(){
 		$(".draw img").css("display", "none");
 		$(".second_sec .text").css("display", "none");
 		$(".draw .three").css("display", "block");
+		$(".second_sec #text_three").css("display", "block");
 	}, function(){
 		;
 	})

@@ -3,8 +3,10 @@ $yellow: #F7EFAE;
 $blue: #191E7D;
 $purple: #7A7AFF;
 $grey: #DEE0E0;
+$deepgrey: #707979;
 $red: #FF6D70;
 $green: #29B5B6;
+$deepgreen: #004762;
 
 body {
 	font-family: PingFangTC-regular, Heiti TC, Meiryo, "微軟正黑體", Microsoft JhengHei, "標楷體", DFKai-sb !important;
@@ -34,6 +36,14 @@ body {
 	color: $green;
 }
 
+.deepgreen {
+	color: $deepgreen;
+}
+
+.deepgrey {
+	color: $deepgrey;
+}
+
 .text {
 	position: absolute;
 	top: 10vw;
@@ -61,6 +71,14 @@ body {
 		.small_title {
 			font-size: 1.5vw;
 			margin-bottom: 0.4vw;
+		}
+
+		.big {
+			font-size: 1.6vw;
+		}
+
+		.small {
+			font-size: 1vw;
 		}
 	}
 }
@@ -235,6 +253,13 @@ body {
 
 		.text {
 			display: none;
+
+			.big_title {
+				font-size: 3.8vw;
+				letter-spacing: 0.4vw;
+				font-weight: bold;
+				margin-top: 1vw;
+			}
 		}
 
 		#text_default {
@@ -283,6 +308,40 @@ body {
 		width: 100vw;
 		// height: 65.4vw;
 		// background: red;
+
+		.draw {
+			position: absolute;
+			width: 80vw;
+			left: 10vw;
+			top: 17vw;
+		}
+
+		.text {
+			width: 23vw;
+			top: 50vw;
+
+			.sub_title {
+				font-style: normal;
+			}
+
+			.content {
+				margin-top: 2vw;
+			}
+		}
+
+		.left {
+			left: 12vw;
+		}
+
+		.middle {
+			left: 40vw;
+		}
+
+		.right {
+			left: 67vw;
+		}
+
+
 	}
 
 	.fifth_sec {
@@ -304,6 +363,27 @@ body {
 			width: 28vw;
 			top: 5vw;
 			left: 14.5vw;
+		}
+
+		.text {
+			top: 19vw;
+			left: 10vw;
+			width: 36vw;
+			letter-spacing: 0.1vw;
+			text-align: center;
+
+			.sub_title {
+				font-style: normal;
+			}
+
+			.content {
+				margin-top: 1.5vw;
+				text-align: left;
+
+				.small {
+					text-align: center;
+				}
+			}
 		}
 
 		.persona {
@@ -346,10 +426,31 @@ body {
 		// height: 50.7vw;
 		// background: red;
 
+		.text {
+			top: 6.5vw;
+			left: 10vw;
+			width: 35vw;
+
+			.title {
+				margin-top: 0;
+			}
+
+			.sub_title {
+				margin-top: 1vw;
+			}
+
+			.content {
+				.small {
+					margin-top: 0.5vw;
+					margin-bottom: 0.3vw;
+				}
+			}
+		}
+
 		.go_booking {
 			position: absolute;
 			width: 21vw;
-			left: 13vw;
+			left: 10vw;
 			top: 37vw;
 
 			img {
@@ -398,6 +499,12 @@ body {
 			width: 20vw;
 			top: 5.8vw;
 			left: 40vw;
+		}
+
+		.text {
+			top: 32vw;
+			left: 25.5vw;
+			width: 49vw;
 		}
 	}
 
