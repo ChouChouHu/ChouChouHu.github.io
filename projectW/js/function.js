@@ -1,6 +1,8 @@
 
 
-
+$(window).scroll(function () {
+    $(".slide").css({"opacity": 1-(($(window).scrollTop()-360)/100)});
+});
 
 $(document).ready(function(){ 
 
@@ -15,13 +17,16 @@ $(document).ready(function(){
 	// hover
 	$(".draw .control_one").hover(function(){
 		$(".draw img").css("display", "none");
+		$(".second_sec .text").css("display", "none");
 		$(".draw .one").css("display", "block");
+		$(".second_sec #text_one").css("display", "block");
 	}, function(){
 		;
 	})
 
 	$(".draw .control_two").hover(function(){
 		$(".draw img").css("display", "none");
+		$(".second_sec .text").css("display", "none");
 		$(".draw .two").css("display", "block");
 	}, function(){
 		;
@@ -29,6 +34,7 @@ $(document).ready(function(){
 
 	$(".draw .control_three").hover(function(){
 		$(".draw img").css("display", "none");
+		$(".second_sec .text").css("display", "none");
 		$(".draw .three").css("display", "block");
 	}, function(){
 		;

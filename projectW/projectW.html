@@ -13,6 +13,34 @@
     <title>ProjectW 青年節</title>
     <meta charset="UTF-8" http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- <link rel="Shortcut Icon" type="image/x-icon" href="img/icon.png" /> -->
+	<style>
+	
+/*	html, body { 
+		height: 100%; margin: 0; padding: 0; 
+	}*/
+
+	#map { 
+		height: 35vw;
+		width: 35vw;
+		left: 56vw;
+		top: 8vw; 
+	}
+
+    .map-control {
+/*    	background-color: black;
+        border: 1px solid #ccc;
+        box-shadow: 0 2px 2px rgba(33, 33, 33, 0.4);
+        font-family: 'Roboto','sans-serif';
+        margin: 10px;*/
+        /* Hide the control initially, to prevent it from appearing
+           before the map loads. */
+        /*display: none;*/
+	}
+
+	#map .map-control { 
+		display: block; 
+	}
+	</style>
 </head>
 
 <body>
@@ -24,8 +52,14 @@
 		<img class="boy" src="img/first_sec/boy.png">
 		<img class="girl" src="img/first_sec/girl.png">
 		<img class="deer" src="img/first_sec/deer.png">
-		<a href=""><img class="go_booking" src="img/first_sec/go_booking.png"></a>
-		<img class="life_design" src="img/first_sec/life_design.png">
+		<a class="go_booking" href="">
+			<img src="img/first_sec/go_booking.png">
+			<img src="img/first_sec/go_booking_hover.png">
+		</a>
+		<span class="life_design">
+			<img src="img/first_sec/life_design.png">
+			<img src="img/first_sec/life_design_hover.png">
+		</span>
 		<img class="with_life_design" src="img/first_sec/with_life_design.png">
 		<img class="slide animated bounce" src="img/first_sec/slide.png">
 	</div>
@@ -39,8 +73,50 @@
 			<div class="control_two"></div>
 			<div class="control_three"></div>
 		</div>
+		<div class="text" id="text_default">
+			<div class="sub_title yellow">序言</div>
+			<div class="title yellow">什麼是超牆青年!?</div>
+			<div class="content blue">
+				跨界是近來常被提到的詞彙，「斜槓青年」更被視為新時代工作型態的代表。然而，大多數台灣青年在傳統的教育體制下，鮮少有機會和信心展開探索，在斜槓另一側加上新的可能；對多數青年而言，斜槓反而成為除去生活和工作、自我實踐和家庭的「除號」。 <br>
+				<br>
+				「我們似乎走在一條鋼索上，明明周遭的世界是那麼令人驚奇而充滿可能，實際能選擇的，只有眼前能緊緊抓住的一條最安全的路。 」<br>
+				<br>
+				對此，W 計畫以當代青年的視角出發，並以「翻牆」這個動作為意象，發展今年度的策展主題《遇牆？擇牆！超牆青年》。我們或許不能改變環境，但我們可以選擇翻越它，勇敢打造屬於自己的超牆人生！<br>
+			</div>
+		</div>
+
+		<div class="text" id="text_one">
+			<div class="sub_title yellow">超牆青年 Type.1</div>
+			<div class="title yellow">說走就走</div>
+			<div class="content blue">
+				你是勇於嘗試各種生活體驗的壯遊者，不需縝密的規劃，只要決定了目的地就直接出發。對你來說，世界就像大型遊樂場等待探索！
+			</div>
+		</div>
 	</div>
 	<div class="third_sec">
+		<div class="text" id="text_default">
+			<div class="sub_title grey">展場介紹</div>
+			<div class="title grey">什麼！展覽只快閃一天！？</div>
+			<div class="content purple">
+				<div class="small_title">翻牆吧！青年們！</div>
+				W 計畫 2018 年度策展《遇牆？擇牆！超牆青年》一共有三個展區，為青年打造從自我探索、互動體驗，到反思創造，三個層次的觀展體驗。
+			</div>
+			<div class="content grey">
+				<img src="img/third_sec/W.png" style="width: 5vw;">
+				<div class="small_title red">Why?｜遇牆：牆後的世界，你不期待嗎？</div>
+				「擋在你心中的牆是什麼？為什麼要『超牆』？」每個人都是獨一無二的，透過展覽現場的引導和翻牆體驗，嘗試對自己提問吧！
+			</div>
+			<div class="content grey">
+				<img src="img/third_sec/WN.png" style="width: 9vw;">
+				<div class="small_title yellow">Why Not!｜擇牆：你，想成為什麼形狀！</div>
+				你想成為超強職人、優質公民或是國際旅人嗎？Why Not! 第二展區一網打盡了青年署九大亮點計畫和資源，青年們可以在此找尋想要的未來輪廓。
+			</div>
+			<div class="content grey">
+				<img src="img/third_sec/WW.png" style="width: 11vw;">
+				<div class="small_title green" style="width: 50vw;">Widen & Will Be!?｜超牆青年：撐過決定的重量！？</div>
+				現場體驗《人生前導計畫所》任一場次，透過「人生設計」來釐清自我，勇敢做自己人生的主人吧！
+			</div>
+		</div>
 		<img class="shock" src="img/third_sec/shock.png">
 	</div>
 	<div class="fourth_sec">
@@ -50,22 +126,117 @@
 		<img class="p_spec" src="img/fifth_sec/projectW_spec.png">
 		<img class="logo" src="img/fifth_sec/life_design_logo.png">
 		<img class="persona" src="img/fifth_sec/life_design_persona.png">
-		<a href=""><img class="btn" src="img/fifth_sec/sign_up_now.png"></a>
+		<a class="btn" href="">
+			<img src="img/fifth_sec/sign_up_now.png">
+			<img src="img/fifth_sec/sign_up_now_hover.png">
+		</a>
 	</div>
 	<div class="sixth_sec">
-		<a href=""><img class="go_booking" src="img/sixth_sec/go_booking.png"></a>
+		<div id="map"></div>
+		<a class="go_booking" href="">
+			<img src="img/sixth_sec/go_booking.png">
+			<img src="img/sixth_sec/go_booking_hover.png">
+		</a>
 	</div>
 	<div class="seventh_sec">
 		<img class="left" src="img/seventh_sec/left.png">
 		<img class="right" src="img/seventh_sec/right.png">
-		<img class="p_about" src="img/seventh_sec/projectW.png">
+		<!-- <img class="p_about" src="img/seventh_sec/projectW.png"> -->
 	</div>
 	<div class="footer">
-		<img class="facebook" src="img/footer/facebook.png">
-		<img class="instagram" src="img/footer/instagram.png">
+		<a href=""><img class="logo" src="img/footer/logo.png"></a>
+		<a class="facebook" href="https://www.facebook.com/ProjectW2018/" target="_blank">
+			<img src="img/footer/facebook.png">
+			<img src="img/footer/facebook_hover.png">
+		</a>
+		<a class="instagram" href="">
+			<img src="img/footer/instagram.png">
+			<img src="img/footer/instagram_hover.png">
+		</a>
 	</div>
 </div>
 </body>
+
+<script>
+var map;
+var Taipei = {lat: 25.040, lng: 121.55};
+var Yang, Dahu;
+
+function mouseX() {
+	$(document).mousemove(function(e){
+		return(e.offsetX);
+	});
+}
+
+function initMap() {
+
+	var customMapType = new google.maps.StyledMapType([{
+			featureType: 'all',
+			stylers: [{ saturation: 0 }]
+		}, 
+			{
+			// stylers: [{ hue: '#132528' }, { gamma: 0.9 }]
+		},
+			{
+			elementType: 'labels',
+			stylers: [{ visibility: 'on' }]
+		},
+			{
+			featureType: 'water',
+			// stylers: [{ color: '#13252' }]
+			// stylers: [{ color: '#191e7d' }]
+		}
+	],
+		{
+			name: 'Custom Style'
+	});
+	var customMapTypeId = 'custom_style';
+
+		// Create a map object and specify the DOM element for display.
+	map = new google.maps.Map(document.getElementById('map'), {
+		center: Taipei,
+		zoom: 13,
+		scaleControl: false,
+
+
+	});
+
+	map.mapTypes.set(customMapTypeId, customMapType);
+	map.setMapTypeId(customMapTypeId);
+
+	var coordernate = {
+		// path: "M 50 50 L 250 150 L 150 250 z",
+		// fillColor: '#13252f',
+		fillColor: '#ff6d70',
+		fillOpacity: 1
+		// scale: 0.05
+	};
+
+	Yang = new google.maps.Marker({
+		position: map.getCenter(),
+		icon: coordernate,
+		place: {
+			location: {lat: 25.044083, lng: 121.560556},
+			query: 'Yang'
+		},
+		draggable: false,
+		map: map
+	});
+
+	google.maps.event.addDomListener(Yang, 'mouseover', function() {
+		$("#Yang").removeClass("displayNone");
+		  $('.attraction').css("left", (tempX - 150)+"px")
+  		  $('.attraction').css("top", (tempY - 100)+"px")
+		//alert(tempX);
+	});
+	google.maps.event.addDomListener(Yang, 'mouseout', function() {
+		$("#Yang").addClass("displayNone");
+	});
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNnJWhLyIloUQr4nUFGtqeoPR8HX9d2eU&callback=initMap"
+async defer>
+</script>
 
 
 

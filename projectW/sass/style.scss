@@ -1,6 +1,70 @@
 
 $yellow: #F7EFAE;
 $blue: #191E7D;
+$purple: #7A7AFF;
+$grey: #DEE0E0;
+$red: #FF6D70;
+$green: #29B5B6;
+
+body {
+	font-family: PingFangTC-regular, Heiti TC, Meiryo, "微軟正黑體", Microsoft JhengHei, "標楷體", DFKai-sb !important;
+}
+
+.yellow {
+	color: $yellow;
+}
+
+.blue {
+	color: $blue;
+}
+
+.purple {
+	color: $purple;
+}
+
+.grey {
+	color: $grey;
+}
+
+.red {
+	color: $red;
+}
+
+.green {
+	color: $green;
+}
+
+.text {
+	position: absolute;
+	top: 10vw;
+	left: 51vw;
+	width: 38vw;
+	letter-spacing: 0.15vw;
+
+	.sub_title {
+		font-size: 1.6vw;
+		font-weight: bold;
+		font-style: italic;
+	}
+	.title {
+		font-size: 2.6vw;
+		font-weight: bold;
+		font-style: italic;
+		margin-top: 0.7vw;
+	}
+	.content {
+		font-size: 1.2vw;
+		font-weight: bold;
+		line-height: 1.7vw;
+		margin-top: 3.5vw;
+
+		.small_title {
+			font-size: 1.5vw;
+			margin-bottom: 0.4vw;
+		}
+	}
+}
+
 
 .projectW {
 	position: absolute;
@@ -55,6 +119,24 @@ $blue: #191E7D;
 			width: 15.5vw;
 			left: 79.5vw;
 			top: 29.7vw;
+
+			img {
+				position: absolute;
+				width: 100%;
+			}
+
+			img+img {
+				display: none;
+			}
+
+			&:hover {
+				img {
+					display: none;
+				}
+				img+img {
+					display: block;
+				}
+			}
 		}
 
 		.life_design {
@@ -63,6 +145,24 @@ $blue: #191E7D;
 			top: 36.5vw;
 			left: 65vw;
 			cursor: pointer;
+
+			img {
+				position: absolute;
+				width: 100%;
+			}
+
+			img+img {
+				display: none;
+			}
+
+			&:hover {
+				img {
+					display: none;
+				}
+				img+img {
+					display: block;
+				}
+			}
 		}
 
 		.with_life_design {
@@ -77,7 +177,7 @@ $blue: #191E7D;
 			width: 13vw;
 			bottom: 2vw;
 			left: 44vw;
-			animation-iteration-count: 2;
+			animation-iteration-count: 3;
 		}
 	}
 
@@ -132,6 +232,14 @@ $blue: #191E7D;
 				// background: yellow;
 			}
 		}
+
+		.text {
+			display: none;
+		}
+
+		#text_default {
+			display: block;
+		}
 	}
 
 	.third_sec {
@@ -140,6 +248,26 @@ $blue: #191E7D;
 		width: 100vw;
 		// height: 83.2vw;
 		// background: red;
+
+		.text {
+			top: 11.5vw;
+			left: 10vw;
+			width: 35vw;
+
+			.content {
+				img {
+					margin-bottom: 0.4vw;
+				}
+
+				img + .small_title {
+					margin-bottom: 1.4vw;
+				}
+			}
+			.content + .content {
+				margin-top: 3vw;
+				margin-bottom: 4.7vw;
+			}
+		}
 
 		.shock {
 			position: absolute;
@@ -190,6 +318,24 @@ $blue: #191E7D;
 			width: 29vw;
 			left: 13vw;
 			top: 41vw;
+
+			img {
+				position: absolute;
+				width: 100%;
+			}
+
+			img+img {
+				display: none;
+			}
+
+			&:hover {
+				img {
+					display: none;
+				}
+				img+img {
+					display: block;
+				}
+			}
 		}
 	}
 
@@ -205,6 +351,24 @@ $blue: #191E7D;
 			width: 21vw;
 			left: 13vw;
 			top: 37vw;
+
+			img {
+				position: absolute;
+				width: 100%;
+			}
+
+			img+img {
+				display: none;
+			}
+
+			&:hover {
+				img {
+					display: none;
+				}
+				img+img {
+					display: block;
+				}
+			}
 		}
 	}
 
@@ -242,11 +406,37 @@ $blue: #191E7D;
 		top: 406vw;
 		width: 100vw;
 
+		.logo {
+			position: absolute;
+			width: 25.5vw;
+			left: 66vw;
+			top: 6.5vw;
+		}
+
 		.facebook {
 			position: absolute;
 			width: 3.5vw;
 			left: 66vw;
 			top: 37.7vw;
+			cursor: pointer;
+
+			img {
+				position: absolute;
+				width: 100%;
+			}
+
+			img+img {
+				display: none;
+			}
+
+			&:hover {
+				img {
+					display: none;
+				}
+				img+img {
+					display: block;
+				}
+			}
 		}
 
 		.instagram {
@@ -254,6 +444,25 @@ $blue: #191E7D;
 			width: 3.5vw;
 			left: 71vw;
 			top: 37.7vw;
+			cursor: pointer;
+
+			img {
+				position: absolute;
+				width: 100%;
+			}
+
+			img+img {
+				display: none;
+			}
+
+			&:hover {
+				img {
+					display: none;
+				}
+				img+img {
+					display: block;
+				}
+			}
 		}
 	}
 
