@@ -2,60 +2,179 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
 
-body {
-	font-family: PingFangSC-Regular, sans-serif;
-	background: #f7f7f7;
-	color: #313131;
-}
-
-.logo {
-	position: relative;
-	width: 14%;
-	left: 43%;
-	top: 30px;
+.rwd {
+	display: none;
 }
 
 .bar {
-	position: relative;
-	//background: red;
+	position: fixed;
 	width: 100%;
-	height: 50px;
-	margin-top: 55px;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+}
 
-	.btnGrp {
-		position: relative;
-		//background: blue;
-		height: 100%;
-		width: 60%;
-		left: 20%;
-		font-size: 0;
-		border-left: #dadada 2px solid;
-		border-right: #dadada 2px solid;
+.animationDiv {
+	position: absolute;
+	width: 100vw;
+	height: 66vw;
+	top: 0;
+	left: 0;
+	// background: red;
+	z-index: 1000;
+}
 
-		.line {
-			position: relative;
-			display: inline-block;
-			height: 100%;
-			width: 0.2%;
-			vertical-align: top;
-			background: #dadada;
-		}
+.greenCir {
+	display: none;
+	position: absolute;
+	top: 17vw;
+	left: 73vw;
+	width: 2vw;
+	height: 2vw;
+	background: #89be43;
+	z-index: 999;
+	border-radius: 50%;
+	animation-name: bounceIn;
+	animation-duration: 1s;
+}
 
-		.btn {
-			position: relative;
-			display: inline-block;
-			line-height: 50px;
-			height: 100%;
-			width: 33.2%;
-			font-family: PingFangSC-Regular, sans-serif;
-			font-size: 18px;
-			text-align: center;
-			cursor: pointer;
+.dgreenCir {
+	display: none;
+	position: absolute;
+	top: 28.5vw;
+	left: 91vw;
+	width: 2.3vw;
+	height: 2.3vw;
+	background: #38ac4c;
+	z-index: 999;
+	border-radius: 50%;
+	animation-name: bounceIn;
+	animation-duration: 1s;
+}
 
-			&:hover {
-				//background: red;
+.yellowCir {
+	display: none;
+	position: absolute;
+	top: 28.5vw;
+	left: 75.7vw;
+	width: 1.9vw;
+	height: 1.9vw;
+	background: #f3d732;
+	z-index: 999;
+	border-radius: 50%;
+	animation-name: bounceIn;
+	animation-duration: 1s;
+}
 
-			}
-		}
+.mask1 {
+	display: none;
+	position: absolute;
+	top: 17.7vw;
+	left: 73.7vw;
+	width: 0vw;
+	height: 13vw;
+	z-index: 998;
+	overflow: hidden;
+	animation-name: go1;
+	animation-duration: 0.5s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	// animation-iteration-count: infinite;
+
+	img {
+		width: 19vw;
 	}
 }
+
+@keyframes go1 {
+	from {
+		width: 0vw;
+	}
+
+	to {
+		width: 20vw;
+	}
+}
+
+.mask2 {
+	display: none;
+	position: absolute;
+	top: 28.2vw;
+	// left: 75.7vw;
+	right: 7.3vw;
+	width: 0vw;
+	height: 13vw;
+	z-index: 998;
+	overflow: hidden;
+	animation-name: go2;
+	animation-delay: 0.3s;
+	animation-duration: 0.5s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	// animation-iteration-count: infinite;
+
+	img {
+		width: 17vw;
+	}
+}
+
+@keyframes go2 {
+	from {
+		width: 0vw;
+	}
+
+	to {
+		width: 17vw;
+	}
+}
+
+.mask3 {
+	display: none;
+	position: absolute;
+	// top: 17.7vw;
+	bottom: 35.8vw;
+	// left: 73.7vw;
+	right: 22.9vw;
+	width: 3.2vw;
+	height: 0vw;
+	z-index: 998;
+	overflow: hidden;
+	animation-name: go3;
+	animation-delay: 0.6s;
+	animation-duration: 0.5s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	// animation-iteration-count: infinite;
+
+	img {
+		position: absolute;
+		bottom: 0vw;
+		width: 3.2vw;
+	}
+}
+
+@keyframes go3 {
+	from {
+		height: 0vw;
+	}
+
+	to {
+		height: 13vw;
+	}
+}
+
+
+@media screen and (max-width: 700px) {
+
+	.web, .animationDiv {
+		display: none !important;
+	}
+
+	.rwd {
+		display: block;
+	}
+
+
+
+}
+

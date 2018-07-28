@@ -1,0 +1,171 @@
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+/* line 5, ../sass/style.scss */
+.rwd {
+  display: none;
+}
+
+/* line 9, ../sass/style.scss */
+.bar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+/* line 17, ../sass/style.scss */
+.animationDiv {
+  position: absolute;
+  width: 100vw;
+  height: 66vw;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* line 27, ../sass/style.scss */
+.greenCir {
+  display: none;
+  position: absolute;
+  top: 17vw;
+  left: 73vw;
+  width: 2vw;
+  height: 2vw;
+  background: #89be43;
+  z-index: 999;
+  border-radius: 50%;
+  animation-name: bounceIn;
+  animation-duration: 1s;
+}
+
+/* line 41, ../sass/style.scss */
+.dgreenCir {
+  display: none;
+  position: absolute;
+  top: 28.5vw;
+  left: 91vw;
+  width: 2.3vw;
+  height: 2.3vw;
+  background: #38ac4c;
+  z-index: 999;
+  border-radius: 50%;
+  animation-name: bounceIn;
+  animation-duration: 1s;
+}
+
+/* line 55, ../sass/style.scss */
+.yellowCir {
+  display: none;
+  position: absolute;
+  top: 28.5vw;
+  left: 75.7vw;
+  width: 1.9vw;
+  height: 1.9vw;
+  background: #f3d732;
+  z-index: 999;
+  border-radius: 50%;
+  animation-name: bounceIn;
+  animation-duration: 1s;
+}
+
+/* line 69, ../sass/style.scss */
+.mask1 {
+  display: none;
+  position: absolute;
+  top: 17.7vw;
+  left: 73.7vw;
+  width: 0vw;
+  height: 13vw;
+  z-index: 998;
+  overflow: hidden;
+  animation-name: go1;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+/* line 84, ../sass/style.scss */
+.mask1 img {
+  width: 19vw;
+}
+
+@keyframes go1 {
+  from {
+    width: 0vw;
+  }
+  to {
+    width: 20vw;
+  }
+}
+/* line 99, ../sass/style.scss */
+.mask2 {
+  display: none;
+  position: absolute;
+  top: 28.2vw;
+  right: 7.3vw;
+  width: 0vw;
+  height: 13vw;
+  z-index: 998;
+  overflow: hidden;
+  animation-name: go2;
+  animation-delay: 0.3s;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+/* line 116, ../sass/style.scss */
+.mask2 img {
+  width: 17vw;
+}
+
+@keyframes go2 {
+  from {
+    width: 0vw;
+  }
+  to {
+    width: 17vw;
+  }
+}
+/* line 131, ../sass/style.scss */
+.mask3 {
+  display: none;
+  position: absolute;
+  bottom: 35.8vw;
+  right: 22.9vw;
+  width: 3.2vw;
+  height: 0vw;
+  z-index: 998;
+  overflow: hidden;
+  animation-name: go3;
+  animation-delay: 0.6s;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+/* line 149, ../sass/style.scss */
+.mask3 img {
+  position: absolute;
+  bottom: 0vw;
+  width: 3.2vw;
+}
+
+@keyframes go3 {
+  from {
+    height: 0vw;
+  }
+  to {
+    height: 13vw;
+  }
+}
+@media screen and (max-width: 700px) {
+  /* line 169, ../sass/style.scss */
+  .web, .animationDiv {
+    display: none !important;
+  }
+
+  /* line 173, ../sass/style.scss */
+  .rwd {
+    display: block;
+  }
+}
