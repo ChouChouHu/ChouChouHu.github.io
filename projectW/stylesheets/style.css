@@ -1,50 +1,58 @@
 @charset "UTF-8";
-/* line 11, ../sass/style.scss */
+@font-face {
+  font-family: 'Mfont';
+  src: url(../fonts/Monner.otf);
+}
+@font-face {
+  font-family: 'Smoothy-Sans';
+  src: url(../fonts/Smoothy-Sans.otf);
+}
+/* line 21, ../sass/style.scss */
 body {
-  font-family: PingFangTC-regular, Heiti TC, Meiryo, "微軟正黑體", Microsoft JhengHei, "標楷體", DFKai-sb !important;
+  font-family: Mfont, PingFangTC-regular, Heiti TC, Meiryo, "微軟正黑體", Microsoft JhengHei, "標楷體", DFKai-sb !important;
 }
 
-/* line 15, ../sass/style.scss */
+/* line 25, ../sass/style.scss */
 .yellow {
   color: #F7EFAE;
 }
 
-/* line 19, ../sass/style.scss */
+/* line 29, ../sass/style.scss */
 .blue {
   color: #191E7D;
 }
 
-/* line 23, ../sass/style.scss */
+/* line 33, ../sass/style.scss */
 .purple {
   color: #7A7AFF;
 }
 
-/* line 27, ../sass/style.scss */
+/* line 37, ../sass/style.scss */
 .grey {
   color: #DEE0E0;
 }
 
-/* line 31, ../sass/style.scss */
+/* line 41, ../sass/style.scss */
 .red {
   color: #FF6D70;
 }
 
-/* line 35, ../sass/style.scss */
+/* line 45, ../sass/style.scss */
 .green {
   color: #29B5B6;
 }
 
-/* line 39, ../sass/style.scss */
+/* line 49, ../sass/style.scss */
 .deepgreen {
   color: #004762;
 }
 
-/* line 43, ../sass/style.scss */
+/* line 53, ../sass/style.scss */
 .deepgrey {
   color: #707979;
 }
 
-/* line 47, ../sass/style.scss */
+/* line 57, ../sass/style.scss */
 .text {
   position: absolute;
   top: 10vw;
@@ -52,112 +60,115 @@ body {
   width: 38vw;
   letter-spacing: 0.15vw;
 }
-/* line 54, ../sass/style.scss */
+/* line 64, ../sass/style.scss */
 .text .sub_title {
   font-size: 1.6vw;
-  font-weight: bold;
+  font-weight: 100;
   font-style: italic;
 }
-/* line 59, ../sass/style.scss */
+/* line 70, ../sass/style.scss */
 .text .title {
   font-size: 2.6vw;
-  font-weight: bold;
+  font-weight: 100;
   font-style: italic;
   margin-top: 0.7vw;
 }
-/* line 65, ../sass/style.scss */
+/* line 77, ../sass/style.scss */
 .text .content {
+  font-family: PingFangTC-regular, Heiti TC, Meiryo, "微軟正黑體", Microsoft JhengHei, "標楷體", DFKai-sb !important;
   font-size: 1.2vw;
   font-weight: bold;
   line-height: 1.7vw;
   margin-top: 3.5vw;
 }
-/* line 71, ../sass/style.scss */
+/* line 84, ../sass/style.scss */
 .text .content .small_title {
+  font-family: Mfont, PingFangTC-regular, Heiti TC, Meiryo, "微軟正黑體", Microsoft JhengHei, "標楷體", DFKai-sb !important;
+  font-weight: normal;
   font-size: 1.5vw;
   margin-bottom: 0.4vw;
 }
-/* line 76, ../sass/style.scss */
+/* line 91, ../sass/style.scss */
 .text .content .big {
   font-size: 1.6vw;
 }
-/* line 80, ../sass/style.scss */
+/* line 95, ../sass/style.scss */
 .text .content .small {
   font-size: 1vw;
 }
 
-/* line 87, ../sass/style.scss */
+/* line 102, ../sass/style.scss */
 .projectW {
   position: absolute;
   width: 100vw;
-  height: 450vw;
+  height: 444vw;
   overflow: hidden;
 }
-/* line 93, ../sass/style.scss */
+/* line 108, ../sass/style.scss */
 .projectW .background {
   position: absolute;
   width: 100vw;
 }
-/* line 100, ../sass/style.scss */
+/* line 115, ../sass/style.scss */
 .projectW .first_sec .p2018 {
   position: absolute;
   width: 10vw;
   top: 4vw;
   left: 5vw;
 }
-/* line 107, ../sass/style.scss */
+/* line 122, ../sass/style.scss */
 .projectW .first_sec .logo {
   position: absolute;
   width: 27vw;
   top: 6vw;
   left: 37vw;
 }
-/* line 114, ../sass/style.scss */
+/* line 129, ../sass/style.scss */
 .projectW .first_sec .boy {
   position: absolute;
   width: 28vw;
   top: 9.2vw;
   left: -1.8vw;
 }
-/* line 121, ../sass/style.scss */
+/* line 136, ../sass/style.scss */
 .projectW .first_sec .girl {
   position: absolute;
   width: 22.4vw;
   top: 25.2vw;
   left: 16.8vw;
 }
-/* line 128, ../sass/style.scss */
+/* line 143, ../sass/style.scss */
 .projectW .first_sec .deer {
   position: absolute;
   width: 22vw;
   top: 25.2vw;
   left: 40.2vw;
 }
-/* line 135, ../sass/style.scss */
+/* line 150, ../sass/style.scss */
 .projectW .first_sec .go_booking {
   position: absolute;
   width: 15.5vw;
   left: 79.5vw;
   top: 29.7vw;
 }
-/* line 141, ../sass/style.scss */
+/* line 156, ../sass/style.scss */
 .projectW .first_sec .go_booking img {
   position: absolute;
   width: 100%;
 }
-/* line 146, ../sass/style.scss */
+/* line 161, ../sass/style.scss */
 .projectW .first_sec .go_booking img + img {
   display: none;
 }
-/* line 151, ../sass/style.scss */
+/* line 166, ../sass/style.scss */
 .projectW .first_sec .go_booking:hover img {
   display: none;
 }
-/* line 154, ../sass/style.scss */
+/* line 169, ../sass/style.scss */
 .projectW .first_sec .go_booking:hover img + img {
   display: block;
 }
-/* line 160, ../sass/style.scss */
+/* line 175, ../sass/style.scss */
 .projectW .first_sec .life_design {
   position: absolute;
   width: 46vw;
@@ -165,31 +176,31 @@ body {
   left: 65vw;
   cursor: pointer;
 }
-/* line 167, ../sass/style.scss */
+/* line 182, ../sass/style.scss */
 .projectW .first_sec .life_design img {
   position: absolute;
   width: 100%;
 }
-/* line 172, ../sass/style.scss */
+/* line 187, ../sass/style.scss */
 .projectW .first_sec .life_design img + img {
   display: none;
 }
-/* line 177, ../sass/style.scss */
+/* line 192, ../sass/style.scss */
 .projectW .first_sec .life_design:hover img {
   display: none;
 }
-/* line 180, ../sass/style.scss */
+/* line 195, ../sass/style.scss */
 .projectW .first_sec .life_design:hover img + img {
   display: block;
 }
-/* line 186, ../sass/style.scss */
+/* line 201, ../sass/style.scss */
 .projectW .first_sec .with_life_design {
   position: absolute;
   width: 10vw;
   top: 34.3vw;
   left: 64vw;
 }
-/* line 193, ../sass/style.scss */
+/* line 208, ../sass/style.scss */
 .projectW .first_sec .slide {
   position: fixed;
   width: 13vw;
@@ -197,13 +208,13 @@ body {
   left: 44vw;
   animation-iteration-count: 3;
 }
-/* line 202, ../sass/style.scss */
+/* line 217, ../sass/style.scss */
 .projectW .second_sec {
   position: absolute;
   width: 100vw;
   top: 52vw;
 }
-/* line 209, ../sass/style.scss */
+/* line 224, ../sass/style.scss */
 .projectW .second_sec .draw {
   position: absolute;
   width: 42vw;
@@ -211,17 +222,17 @@ body {
   top: 8vw;
   cursor: pointer;
 }
-/* line 216, ../sass/style.scss */
+/* line 231, ../sass/style.scss */
 .projectW .second_sec .draw img {
   position: absolute;
   width: 100%;
   display: none;
 }
-/* line 222, ../sass/style.scss */
+/* line 237, ../sass/style.scss */
 .projectW .second_sec .draw .default {
   display: block;
 }
-/* line 226, ../sass/style.scss */
+/* line 241, ../sass/style.scss */
 .projectW .second_sec .draw .control_one {
   position: absolute;
   width: 15vw;
@@ -229,7 +240,7 @@ body {
   top: 0;
   left: 0;
 }
-/* line 235, ../sass/style.scss */
+/* line 250, ../sass/style.scss */
 .projectW .second_sec .draw .control_two {
   position: absolute;
   width: 11vw;
@@ -237,7 +248,7 @@ body {
   top: 0;
   left: 15vw;
 }
-/* line 244, ../sass/style.scss */
+/* line 259, ../sass/style.scss */
 .projectW .second_sec .draw .control_three {
   position: absolute;
   width: 15vw;
@@ -245,112 +256,151 @@ body {
   top: 0;
   left: 26vw;
 }
-/* line 254, ../sass/style.scss */
+/* line 269, ../sass/style.scss */
 .projectW .second_sec .text {
   display: none;
 }
-/* line 257, ../sass/style.scss */
+/* line 272, ../sass/style.scss */
 .projectW .second_sec .text .big_title {
   font-size: 3.8vw;
   letter-spacing: 0.4vw;
   font-weight: bold;
+  font-weight: 100;
   margin-top: 1vw;
 }
-/* line 265, ../sass/style.scss */
+/* line 280, ../sass/style.scss */
+.projectW .second_sec .text .spec {
+  font-family: PingFangTC-regular, Heiti TC, Meiryo, "微軟正黑體", Microsoft JhengHei, "標楷體", DFKai-sb !important;
+  font-weight: bold;
+}
+/* line 285, ../sass/style.scss */
+.projectW .second_sec .text .bubble {
+  position: absolute;
+  width: 50vw;
+  left: -7vw;
+  top: 19vw;
+}
+/* line 291, ../sass/style.scss */
+.projectW .second_sec .text .bubble img {
+  position: absolute;
+}
+/* line 295, ../sass/style.scss */
+.projectW .second_sec .text .bubble .bubble_text {
+  position: absolute;
+  width: 65%;
+  left: 20%;
+  top: -0.5vw;
+}
+/* line 301, ../sass/style.scss */
+.projectW .second_sec .text .bubble .bubble_text .title {
+  font-style: normal;
+  font-size: 2.4vw;
+  margin-bottom: 1vw;
+}
+/* line 308, ../sass/style.scss */
+.projectW .second_sec .text .bubble .bubble_text .title .small {
+  font-size: 1.5vw;
+}
+/* line 316, ../sass/style.scss */
+.projectW .second_sec .Sans {
+  font-family: Smoothy-Sans !important;
+  font-weight: 900;
+}
+/* line 321, ../sass/style.scss */
 .projectW .second_sec #text_default {
   display: block;
 }
-/* line 270, ../sass/style.scss */
+/* line 326, ../sass/style.scss */
 .projectW .third_sec {
   position: absolute;
   top: 105.2vw;
   width: 100vw;
 }
-/* line 277, ../sass/style.scss */
+/* line 333, ../sass/style.scss */
 .projectW .third_sec .text {
   top: 11.5vw;
   left: 10vw;
   width: 35vw;
 }
-/* line 283, ../sass/style.scss */
+/* line 339, ../sass/style.scss */
 .projectW .third_sec .text .content img {
   margin-bottom: 0.4vw;
 }
-/* line 287, ../sass/style.scss */
+/* line 343, ../sass/style.scss */
 .projectW .third_sec .text .content img + .small_title {
   margin-bottom: 1.4vw;
 }
-/* line 291, ../sass/style.scss */
+/* line 347, ../sass/style.scss */
 .projectW .third_sec .text .content + .content {
   margin-top: 3vw;
   margin-bottom: 4.7vw;
 }
-/* line 297, ../sass/style.scss */
+/* line 353, ../sass/style.scss */
 .projectW .third_sec .shock {
   position: absolute;
   top: 4vw;
   width: 17vw;
   left: 43.5vw;
 }
-/* line 305, ../sass/style.scss */
+/* line 361, ../sass/style.scss */
 .projectW .fourth_sec {
   position: absolute;
   top: 188.4vw;
   width: 100vw;
 }
-/* line 312, ../sass/style.scss */
+/* line 368, ../sass/style.scss */
 .projectW .fourth_sec .draw {
   position: absolute;
   width: 80vw;
   left: 10vw;
   top: 17vw;
 }
-/* line 319, ../sass/style.scss */
+/* line 375, ../sass/style.scss */
 .projectW .fourth_sec .text {
   width: 23vw;
   top: 50vw;
 }
-/* line 323, ../sass/style.scss */
+/* line 379, ../sass/style.scss */
 .projectW .fourth_sec .text .sub_title {
   font-style: normal;
 }
-/* line 327, ../sass/style.scss */
+/* line 383, ../sass/style.scss */
 .projectW .fourth_sec .text .content {
   margin-top: 2vw;
 }
-/* line 332, ../sass/style.scss */
+/* line 388, ../sass/style.scss */
 .projectW .fourth_sec .left {
   left: 12vw;
 }
-/* line 336, ../sass/style.scss */
+/* line 392, ../sass/style.scss */
 .projectW .fourth_sec .middle {
   left: 40vw;
 }
-/* line 340, ../sass/style.scss */
+/* line 396, ../sass/style.scss */
 .projectW .fourth_sec .right {
   left: 67vw;
 }
-/* line 347, ../sass/style.scss */
+/* line 403, ../sass/style.scss */
 .projectW .fifth_sec {
   position: absolute;
   top: 253.8vw;
   width: 100vw;
 }
-/* line 354, ../sass/style.scss */
+/* line 410, ../sass/style.scss */
 .projectW .fifth_sec .p_spec {
   position: absolute;
   width: 11vw;
   top: 3.7vw;
   left: 3.2vw;
 }
-/* line 361, ../sass/style.scss */
+/* line 417, ../sass/style.scss */
 .projectW .fifth_sec .logo {
   position: absolute;
   width: 28vw;
   top: 5vw;
   left: 14.5vw;
 }
-/* line 368, ../sass/style.scss */
+/* line 424, ../sass/style.scss */
 .projectW .fifth_sec .text {
   top: 19vw;
   left: 10vw;
@@ -358,192 +408,196 @@ body {
   letter-spacing: 0.1vw;
   text-align: center;
 }
-/* line 375, ../sass/style.scss */
+/* line 431, ../sass/style.scss */
 .projectW .fifth_sec .text .sub_title {
   font-style: normal;
 }
-/* line 379, ../sass/style.scss */
+/* line 435, ../sass/style.scss */
 .projectW .fifth_sec .text .content {
   margin-top: 1.5vw;
   text-align: left;
 }
-/* line 383, ../sass/style.scss */
+/* line 439, ../sass/style.scss */
 .projectW .fifth_sec .text .content .small {
   text-align: center;
 }
-/* line 389, ../sass/style.scss */
+/* line 445, ../sass/style.scss */
 .projectW .fifth_sec .persona {
   position: absolute;
   width: 42vw;
   top: 14vw;
   left: 55vw;
 }
-/* line 396, ../sass/style.scss */
+/* line 452, ../sass/style.scss */
 .projectW .fifth_sec .btn {
   position: absolute;
   width: 29vw;
   left: 13vw;
   top: 41vw;
 }
-/* line 402, ../sass/style.scss */
+/* line 458, ../sass/style.scss */
 .projectW .fifth_sec .btn img {
   position: absolute;
   width: 100%;
 }
-/* line 407, ../sass/style.scss */
+/* line 463, ../sass/style.scss */
 .projectW .fifth_sec .btn img + img {
   display: none;
 }
-/* line 412, ../sass/style.scss */
+/* line 468, ../sass/style.scss */
 .projectW .fifth_sec .btn:hover img {
   display: none;
 }
-/* line 415, ../sass/style.scss */
+/* line 471, ../sass/style.scss */
 .projectW .fifth_sec .btn:hover img + img {
   display: block;
 }
-/* line 422, ../sass/style.scss */
+/* line 478, ../sass/style.scss */
 .projectW .sixth_sec {
   position: absolute;
   top: 304.5vw;
   width: 100vw;
 }
-/* line 429, ../sass/style.scss */
+/* line 485, ../sass/style.scss */
 .projectW .sixth_sec .text {
   top: 6.5vw;
   left: 10vw;
   width: 35vw;
 }
-/* line 434, ../sass/style.scss */
+/* line 490, ../sass/style.scss */
 .projectW .sixth_sec .text .title {
   margin-top: 0;
 }
-/* line 438, ../sass/style.scss */
+/* line 494, ../sass/style.scss */
 .projectW .sixth_sec .text .sub_title {
   margin-top: 1vw;
 }
-/* line 443, ../sass/style.scss */
+/* line 499, ../sass/style.scss */
 .projectW .sixth_sec .text .content .small {
   margin-top: 0.5vw;
   margin-bottom: 0.3vw;
 }
-/* line 450, ../sass/style.scss */
+/* line 506, ../sass/style.scss */
 .projectW .sixth_sec .go_booking {
   position: absolute;
   width: 21vw;
   left: 10vw;
   top: 37vw;
 }
-/* line 456, ../sass/style.scss */
+/* line 512, ../sass/style.scss */
 .projectW .sixth_sec .go_booking img {
   position: absolute;
   width: 100%;
 }
-/* line 461, ../sass/style.scss */
+/* line 517, ../sass/style.scss */
 .projectW .sixth_sec .go_booking img + img {
   display: none;
 }
-/* line 466, ../sass/style.scss */
+/* line 522, ../sass/style.scss */
 .projectW .sixth_sec .go_booking:hover img {
   display: none;
 }
-/* line 469, ../sass/style.scss */
+/* line 525, ../sass/style.scss */
 .projectW .sixth_sec .go_booking:hover img + img {
   display: block;
 }
-/* line 476, ../sass/style.scss */
+/* line 531, ../sass/style.scss */
+.projectW .sixth_sec .Sans {
+  font-family: Smoothy-Sans !important;
+}
+/* line 536, ../sass/style.scss */
 .projectW .seventh_sec {
   position: absolute;
   top: 355.2vw;
   width: 100vw;
 }
-/* line 483, ../sass/style.scss */
+/* line 543, ../sass/style.scss */
 .projectW .seventh_sec .left {
   position: absolute;
   width: 48vw;
   left: -18.3vw;
   top: -2vw;
 }
-/* line 490, ../sass/style.scss */
+/* line 550, ../sass/style.scss */
 .projectW .seventh_sec .right {
   position: absolute;
   width: 48vw;
   right: -18.3vw;
   top: -1.6vw;
 }
-/* line 497, ../sass/style.scss */
+/* line 557, ../sass/style.scss */
 .projectW .seventh_sec .p_about {
   position: absolute;
   width: 20vw;
   top: 5.8vw;
   left: 40vw;
 }
-/* line 504, ../sass/style.scss */
+/* line 564, ../sass/style.scss */
 .projectW .seventh_sec .text {
   top: 32vw;
   left: 25.5vw;
   width: 49vw;
 }
-/* line 511, ../sass/style.scss */
+/* line 571, ../sass/style.scss */
 .projectW .footer {
   position: absolute;
   top: 406vw;
   width: 100vw;
 }
-/* line 516, ../sass/style.scss */
+/* line 576, ../sass/style.scss */
 .projectW .footer .logo {
   position: absolute;
-  width: 25.5vw;
-  left: 66vw;
-  top: 6.5vw;
+  width: 21vw;
+  left: 73.5vw;
+  top: 4vw;
 }
-/* line 523, ../sass/style.scss */
+/* line 583, ../sass/style.scss */
 .projectW .footer .facebook {
   position: absolute;
   width: 3.5vw;
-  left: 66vw;
-  top: 37.7vw;
+  left: 85.2vw;
+  top: 17.2vw;
   cursor: pointer;
 }
-/* line 530, ../sass/style.scss */
+/* line 590, ../sass/style.scss */
 .projectW .footer .facebook img {
   position: absolute;
   width: 100%;
 }
-/* line 535, ../sass/style.scss */
+/* line 595, ../sass/style.scss */
 .projectW .footer .facebook img + img {
   display: none;
 }
-/* line 540, ../sass/style.scss */
+/* line 600, ../sass/style.scss */
 .projectW .footer .facebook:hover img {
   display: none;
 }
-/* line 543, ../sass/style.scss */
+/* line 603, ../sass/style.scss */
 .projectW .footer .facebook:hover img + img {
   display: block;
 }
-/* line 549, ../sass/style.scss */
+/* line 609, ../sass/style.scss */
 .projectW .footer .instagram {
   position: absolute;
   width: 3.5vw;
-  left: 71vw;
-  top: 37.7vw;
+  left: 90vw;
+  top: 17.2vw;
   cursor: pointer;
 }
-/* line 556, ../sass/style.scss */
+/* line 616, ../sass/style.scss */
 .projectW .footer .instagram img {
   position: absolute;
   width: 100%;
 }
-/* line 561, ../sass/style.scss */
+/* line 621, ../sass/style.scss */
 .projectW .footer .instagram img + img {
   display: none;
 }
-/* line 566, ../sass/style.scss */
+/* line 626, ../sass/style.scss */
 .projectW .footer .instagram:hover img {
   display: none;
 }
-/* line 569, ../sass/style.scss */
+/* line 629, ../sass/style.scss */
 .projectW .footer .instagram:hover img + img {
   display: block;
 }

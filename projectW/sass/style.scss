@@ -8,8 +8,18 @@ $red: #FF6D70;
 $green: #29B5B6;
 $deepgreen: #004762;
 
+@font-face {
+	font-family: 'Mfont';
+	src: url(../fonts/Monner.otf);
+}
+
+@font-face {
+	font-family: 'Smoothy-Sans';
+	src: url(../fonts/Smoothy-Sans.otf);
+}
+
 body {
-	font-family: PingFangTC-regular, Heiti TC, Meiryo, "微軟正黑體", Microsoft JhengHei, "標楷體", DFKai-sb !important;
+	font-family: Mfont, PingFangTC-regular, Heiti TC, Meiryo, "微軟正黑體", Microsoft JhengHei, "標楷體", DFKai-sb !important;
 }
 
 .yellow {
@@ -53,22 +63,27 @@ body {
 
 	.sub_title {
 		font-size: 1.6vw;
-		font-weight: bold;
+		// font-weight: bold;
+		font-weight: 100;
 		font-style: italic;
 	}
 	.title {
 		font-size: 2.6vw;
-		font-weight: bold;
+		// font-weight: bold;
+		font-weight: 100;
 		font-style: italic;
 		margin-top: 0.7vw;
 	}
 	.content {
+		font-family: PingFangTC-regular, Heiti TC, Meiryo, "微軟正黑體", Microsoft JhengHei, "標楷體", DFKai-sb !important;
 		font-size: 1.2vw;
 		font-weight: bold;
 		line-height: 1.7vw;
 		margin-top: 3.5vw;
 
 		.small_title {
+			font-family: Mfont, PingFangTC-regular, Heiti TC, Meiryo, "微軟正黑體", Microsoft JhengHei, "標楷體", DFKai-sb !important;
+			font-weight: normal;
 			font-size: 1.5vw;
 			margin-bottom: 0.4vw;
 		}
@@ -87,7 +102,7 @@ body {
 .projectW {
 	position: absolute;
 	width: 100vw;
-	height: 450vw;
+	height: 444vw;
 	overflow: hidden;
 
 	.background {
@@ -258,8 +273,49 @@ body {
 				font-size: 3.8vw;
 				letter-spacing: 0.4vw;
 				font-weight: bold;
+				font-weight: 100;
 				margin-top: 1vw;
 			}
+
+			.spec {
+				font-family: PingFangTC-regular, Heiti TC, Meiryo, "微軟正黑體", Microsoft JhengHei, "標楷體", DFKai-sb !important;
+				font-weight: bold;
+			}
+
+			.bubble {
+				position: absolute;
+				width: 50vw;
+				left: -7vw;
+				top: 19vw;
+
+				img {
+					position: absolute;
+				}
+
+				.bubble_text {
+					position: absolute;
+					width: 65%;
+					left: 20%;
+					top: -0.5vw;
+
+					.title {
+						// font-family: Mfont !important;
+						font-style: normal;
+						font-size: 2.4vw;
+						// font-weight: 100;
+						margin-bottom: 1vw;
+
+						.small {
+							font-size: 1.5vw;
+						}
+					}
+				}
+			}
+		}
+
+		.Sans {
+			font-family: Smoothy-Sans !important;
+			font-weight: 900;
 		}
 
 		#text_default {
@@ -471,6 +527,10 @@ body {
 				}
 			}
 		}
+
+		.Sans {
+			font-family: Smoothy-Sans !important;
+		}
 	}
 
 	.seventh_sec {
@@ -515,16 +575,16 @@ body {
 
 		.logo {
 			position: absolute;
-			width: 25.5vw;
-			left: 66vw;
-			top: 6.5vw;
+			width: 21vw;
+			left: 73.5vw;
+			top: 4vw;
 		}
 
 		.facebook {
 			position: absolute;
 			width: 3.5vw;
-			left: 66vw;
-			top: 37.7vw;
+			left: 85.2vw;
+			top: 17.2vw;
 			cursor: pointer;
 
 			img {
@@ -549,8 +609,8 @@ body {
 		.instagram {
 			position: absolute;
 			width: 3.5vw;
-			left: 71vw;
-			top: 37.7vw;
+			left: 90vw;
+			top: 17.2vw;
 			cursor: pointer;
 
 			img {
