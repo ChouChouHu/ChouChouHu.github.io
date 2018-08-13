@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Great Circles and Loxodromes</title>
+<style>
+.stroke {
+  stroke: #000;
+  stroke-width: .5;
+  fill: none;
+}
+.land {
+  fill: #eee;
+  fill-opacity: .5;
+}
+.loxodrome {
+  stroke: red;
+  fill: none;
+}
+.great_circle {
+  stroke: blue;
+  fill: none;
+}
+.graticule, .outline {
+  stroke: #ccc;
+  stroke-opacity: .5;
+  fill: none;
+}
+.back {
+  stroke: #ccc;
+  stroke-dasharray: 5,5;
+  fill: none;
+}
+.outline {
+  pointer-events: all;
+  cursor: move;
+}
+#mercator {
+ padding-left: 14px;
+}
+</style>
+
+<span id="map" class="map"></span>
+<span id="mercator" class="map"></span>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+<script src="http://d3js.org/topojson.v1.min.js"></script>
+<script>
+var width = 470,
+    height = 500;
+var mw = width / 2;
+var front = d3.geo.orthographic()
+    .translate([width / 2, height / 2])
+    .scale(width / 2)
+    .clipAngle(90)
+    .rotate([90, -30])
+    .precision(.1);
+var back = d3.geo.projection(function(λ, φ) {
+      var coordinates = d3.geo.orthographic.raw(λ, φ);
+      coordinates[0] = -coordinates[0];
+      return coordinates;
+    })
+    .translate(front.translate())
+    .scale(front.scale())
+    .clipAngle(front.clipAngle())
+    .precision(front.precision())
+    .rotate([front.rotate()[0] + 180, -front.rotate()[1], -front.rotate()[2]]);
+var mercator = d3.geo.mercator()
+    .translate([width / 2, height / 2])
+    .scale(width / (2 * Math.PI))
+    .clipExtent([[0, 0], [width, height]]);
+var frontPath = d3.geo.path().projection(front),
+    backPath = d3.geo.path().projection(back),
+    mercatorPath = d3.geo.path().projection(mercator);
+var maps = d3.selectAll(".map")
+    .data([front, mercator].map(function(projection) {
+      return {
+        projection: projection,
+        path: d3.geo.path().projection(projection)
+      };
+    }))
+  .append("svg")
+    .attr("width", width)
+    .attr("height", height);
+var globe = d3.select("#map")
+    .call(d3.behavior.drag()
+      .origin(function() { var r = front.rotate(); return {x: 2 * r[0], y: -2 * r[1]}; })
+      .on("drag", function() {
+        front.rotate([d3.event.x / 2, -d3.event.y / 2, front.rotate()[2]]);
+        back.rotate([180 + d3.event.x / 2, d3.event.y / 2, back.rotate()[2]]);
+        globe.selectAll("path:not(.back)").attr("d", frontPath);
+        globe.selectAll("path.back").attr("d", backPath);
+      }));
+maps.append("path")
+    .datum(d3.geo.graticule())
+    .attr("class", "graticule");
+maps.append("path")
+    .datum({type: "Sphere"})
+    .attr("class", "outline");
+maps.each(redraw);
+var places = {
+  HNL: [-157 - 55 / 60 - 21 / 3600, 21 + 19 / 60 + 07 / 3600],
+  JFK: [-73.7789, 40.6397]
+};
+var JFK_cart = mercator(places.JFK);
+var HNL_cart = mercator(places.HNL);
+var dx = JFK_cart[0] - HNL_cart[0];
+var dy = JFK_cart[1] - HNL_cart[1];
+var angle = -Math.atan2(dy, dx);
+loxodrome = [];
+for (i = 45; i >= 0; i--) {
+   x = HNL_cart[0];
+   y = HNL_cart[1];
+   loxodrome.push(mercator.invert([x - dx/10*i, y - dy/10*i]))
+}
+for (i = 0; i < 200; i++) {
+   x = HNL_cart[0];
+   y = HNL_cart[1];
+   loxodrome.push(mercator.invert([x + dx/10*i, y + dy/10*i]))
+}
+var great_circle = [ places.HNL, places.JFK ];
+d3.json("https://unpkg.com/world-atlas/world/110m.json", function(error, world) {
+  var mesh = topojson.mesh(world, world.objects.land),
+      land = topojson.feature(world, world.objects.land);
+  maps.insert("path", ".graticule")
+      .datum(land)
+      .attr("class", "land");
+  maps.insert("path", ".graticule")
+      .datum(mesh)
+      .attr("class", "stroke");
+  // maps.append("path")
+  //     .attr("class", "loxodrome")
+  //     .datum({type: "LineString", coordinates: loxodrome});
+  // maps.append("path")
+  //     .attr("class", "great_circle")
+  //     .datum({type: "LineString", coordinates: great_circle});
+  d3.select("#map").selectAll("svg").insert("path", "*")
+      .attr("class", "back loxodrome")
+      .datum({type: "LineString", coordinates: loxodrome})
+      .attr("d", backPath);
+  maps.each(redraw);
+});
+function redraw(d) {
+  d3.select(this).selectAll("path:not(.back)")
+      .attr("d", d.path);
+}
+</script>
