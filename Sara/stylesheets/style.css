@@ -1,0 +1,200 @@
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+@font-face {
+  font-family: "regular";
+  src: url(NotoSansCJKtc-Regular.otf);
+}
+@font-face {
+  font-family: "bold";
+  src: url(NotoSansCJKtc-Bold.otf);
+}
+/* line 20, ../sass/style.scss */
+body {
+  position: relative;
+  font-family: palatino !important;
+  background: #F4F5F5;
+}
+
+/* line 28, ../sass/style.scss */
+.bgsound {
+  position: absolute;
+  z-index: -2;
+}
+
+/* line 34, ../sass/style.scss */
+.bar {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+/* line 40, ../sass/style.scss */
+.bar img {
+  position: relative;
+  width: 3vw;
+  top: 1.5vw;
+  left: 4vw;
+}
+
+/* line 48, ../sass/style.scss */
+.index {
+  position: relative;
+  width: 100%;
+  background: #F4F5F5;
+}
+/* line 53, ../sass/style.scss */
+.index .topic {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  left: 9vw;
+  top: 12vw;
+  font-size: 5vw;
+  line-height: 6vw;
+  width: 50vw;
+  color: #E05656;
+}
+/* line 65, ../sass/style.scss */
+.index .topic .sub {
+  margin-top: 2vw;
+  font-size: 2vw;
+  line-height: 3vw;
+  letter-spacing: 0.03vw;
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* line 79, ../sass/style.scss */
+.index_two {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: #536771;
+  padding-bottom: 7vw;
+  z-index: 2;
+}
+/* line 88, ../sass/style.scss */
+.index_two .intro {
+  position: relative;
+  top: 7vw;
+  left: 11vw;
+  font-size: 3vw;
+  font-style: italic;
+  color: #F4F5F5;
+}
+/* line 97, ../sass/style.scss */
+.index_two .belief {
+  position: relative;
+  margin-top: 12vw;
+  left: 3.5vw;
+  width: 80vw;
+}
+/* line 104, ../sass/style.scss */
+.index_two .music {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin-top: 5vw;
+}
+/* line 110, ../sass/style.scss */
+.index_two .music .btn {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  padding: 1.3vw 3vw;
+  color: #F4F5F5;
+  border-radius: 30px;
+  border: 2px #F4F5F5 solid;
+  font-weight: bold;
+  cursor: pointer;
+}
+/* line 121, ../sass/style.scss */
+.index_two .music .btn:hover {
+  background: #F4F5F5;
+  color: #536771;
+}
+
+/* line 129, ../sass/style.scss */
+.index_three {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+/* line 134, ../sass/style.scss */
+.index_three .reason {
+  position: relative;
+  width: 60vw;
+  margin-top: 4vw;
+}
+/* line 140, ../sass/style.scss */
+.index_three .video {
+  position: fixed;
+  width: 40vh;
+  bottom: 15vh;
+  right: 10vw;
+  z-index: -1;
+}
+
+/* line 149, ../sass/style.scss */
+.index_four {
+  position: relative;
+  width: 100vw;
+  height: 70vh;
+  background: #fedc79;
+}
+/* line 155, ../sass/style.scss */
+.index_four .sara {
+  position: absolute;
+  height: 12vh;
+  left: 0;
+  top: 34vh;
+  animation-name: fly;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+/* line 166, ../sass/style.scss */
+.index_four .name {
+  position: absolute;
+  width: 7vw;
+  right: 10vw;
+  top: 5vw;
+}
+/* line 173, ../sass/style.scss */
+.index_four .star {
+  position: absolute;
+  width: 1.5vw;
+  left: 10vw;
+  top: 7vw;
+}
+
+/* line 181, ../sass/style.scss */
+.index_five {
+  position: relative;
+  width: 100vw;
+  background: #F4F5F5;
+}
+/* line 187, ../sass/style.scss */
+.index_five img {
+  position: relative;
+}
+
+/* line 192, ../sass/style.scss */
+.footer {
+  position: relative;
+  width: 100vw;
+  background: #536771;
+}
+/* line 198, ../sass/style.scss */
+.footer img {
+  position: relative;
+}
+
+@keyframes fly {
+  from {
+    left: -20vw;
+  }
+  to {
+    left: 100vw;
+  }
+}

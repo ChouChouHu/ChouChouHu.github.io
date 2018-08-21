@@ -1,0 +1,223 @@
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+
+$alpha_grey: #F4F5F5;
+$alpha_red: #E05656;
+
+
+@font-face {
+	font-family: "regular";
+	src: url(NotoSansCJKtc-Regular.otf);
+}
+
+@font-face {
+	font-family: "bold";
+	src: url(NotoSansCJKtc-Bold.otf);
+}
+
+
+body {
+	position: relative;
+	// font-family: "regular", PingFangTC-regular, Heiti TC, Meiryo, "微軟正黑體", Microsoft JhengHei, "標楷體", DFKai-sb !important;
+	font-family: palatino !important;
+	background: $alpha_grey;
+	// color: white;
+}
+
+.bgsound {
+	position: absolute;
+	// display: none;
+	z-index: -2;
+}
+
+.bar {
+	position: fixed;
+	width: 100%;
+	// height: 70px;
+	z-index: 1;
+
+	img {
+		position: relative;
+		width: 3vw;
+		top: 1.5vw;
+		left: 4vw;
+	}
+}
+
+.index {
+	position: relative;
+	width: 100%;
+	background: $alpha_grey;
+
+	.topic {
+		position: relative;
+		width: 100%;
+		height: 100vh;
+		left: 9vw;
+		top: 12vw;
+		font-size: 5vw;
+		line-height: 6vw;
+		width: 50vw;
+		// font-weight: bold;
+		color: $alpha_red;
+
+		.sub {
+			margin-top: 2vw;
+			font-size: 2vw;
+			line-height: 3vw;
+			letter-spacing: 0.03vw;
+			font-weight: normal;
+			// font-family: "regular", PingFangTC-regular, Heiti TC, Meiryo, "微軟正黑體", Microsoft JhengHei, "標楷體", DFKai-sb !important;
+			font-style: italic;
+			// width: 40vw;
+		}
+	}
+}
+
+
+.index_two {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	// height: 100vh;
+	background: #536771;
+	padding-bottom: 7vw;
+	z-index: 2;
+
+	.intro {
+		position: relative;
+		top: 7vw;
+		left: 11vw;
+		font-size: 3vw;
+		font-style: italic;
+		color: $alpha_grey;
+	}
+
+	.belief {
+		position: relative;
+		margin-top: 12vw;
+		left: 3.5vw;
+		width: 80vw;
+	}
+
+	.music {
+		position: relative;
+		width: 100%;
+		text-align: center;
+		margin-top: 5vw;
+
+		.btn {
+			position: relative;
+			display: inline-block;
+			text-align: center;
+			padding: 1.3vw 3vw;
+			color: $alpha_grey;
+			border-radius: 30px;
+			border: 2px $alpha_grey solid;
+			font-weight: bold;
+			cursor: pointer;
+
+			&:hover {
+				background: $alpha_grey;
+				color: #536771;
+			}
+		}
+	}
+}
+
+.index_three {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+
+	.reason {
+		position: relative;
+		width: 60vw;
+		margin-top: 4vw;
+	}
+
+	.video {
+		position: fixed;
+		width: 40vh;
+		bottom: 15vh;
+		right: 10vw;
+		z-index: -1;
+	}
+}
+
+.index_four {
+	position: relative;
+	width: 100vw;
+	height: 70vh;
+	background: #fedc79;
+
+	.sara {
+		position: absolute;
+		height: 12vh;
+		left: 0;
+		top: 34vh;
+		animation-name: fly;
+		animation-duration: 20s;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+	}
+
+	.name {
+		position: absolute;
+		width: 7vw;
+		right: 10vw;
+		top: 5vw;
+	}
+
+	.star {
+		position: absolute;
+		width: 1.5vw;
+		left: 10vw;
+		top: 7vw;
+	}
+}
+
+.index_five {
+	position: relative;
+	width: 100vw;
+	// height: 200vh;
+	background: $alpha_grey;
+
+	img {
+		position: relative;
+	}
+}
+
+.footer {
+	position: relative;
+	width: 100vw;
+	// height: 30vh;
+	background: #536771;
+
+	img {
+		position: relative;
+	}
+}
+
+
+
+@keyframes fly {
+	from {
+		left: -20vw;
+	}
+
+	to {
+		left: 100vw;
+	}
+}
+
+
+@media screen and (max-width: 700px) {
+
+
+
+
+
+}
+
