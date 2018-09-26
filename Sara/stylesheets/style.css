@@ -16,19 +16,13 @@ body {
   background: #F4F5F5;
 }
 
-/* line 28, ../sass/style.scss */
-.bgsound {
-  position: absolute;
-  z-index: -2;
-}
-
-/* line 34, ../sass/style.scss */
+/* line 29, ../sass/style.scss */
 .bar {
   position: fixed;
   width: 100%;
   z-index: 1;
 }
-/* line 40, ../sass/style.scss */
+/* line 35, ../sass/style.scss */
 .bar img {
   position: relative;
   width: 3vw;
@@ -36,13 +30,13 @@ body {
   left: 4vw;
 }
 
-/* line 48, ../sass/style.scss */
+/* line 43, ../sass/style.scss */
 .index {
   position: relative;
   width: 100%;
   background: #F4F5F5;
 }
-/* line 53, ../sass/style.scss */
+/* line 48, ../sass/style.scss */
 .index .topic {
   position: relative;
   width: 100%;
@@ -54,7 +48,7 @@ body {
   width: 50vw;
   color: #E05656;
 }
-/* line 65, ../sass/style.scss */
+/* line 60, ../sass/style.scss */
 .index .topic .sub {
   margin-top: 2vw;
   font-size: 2vw;
@@ -64,16 +58,16 @@ body {
   font-style: italic;
 }
 
-/* line 79, ../sass/style.scss */
+/* line 74, ../sass/style.scss */
 .index_two {
   position: relative;
   width: 100%;
   overflow: hidden;
   background: #536771;
-  padding-bottom: 7vw;
+  padding-bottom: 13vw;
   z-index: 2;
 }
-/* line 88, ../sass/style.scss */
+/* line 83, ../sass/style.scss */
 .index_two .intro {
   position: relative;
   top: 7vw;
@@ -82,21 +76,23 @@ body {
   font-style: italic;
   color: #F4F5F5;
 }
-/* line 97, ../sass/style.scss */
+/* line 92, ../sass/style.scss */
 .index_two .belief {
   position: relative;
   margin-top: 12vw;
   left: 3.5vw;
   width: 80vw;
 }
-/* line 104, ../sass/style.scss */
+/* line 99, ../sass/style.scss */
 .index_two .music {
   position: relative;
   width: 100%;
   text-align: center;
-  margin-top: 5vw;
+  margin-top: 3vw;
+  height: 8.5vw;
+  overflow: hidden;
 }
-/* line 110, ../sass/style.scss */
+/* line 107, ../sass/style.scss */
 .index_two .music .btn {
   position: relative;
   display: inline-block;
@@ -108,59 +104,68 @@ body {
   font-weight: bold;
   cursor: pointer;
 }
-/* line 121, ../sass/style.scss */
+/* line 118, ../sass/style.scss */
 .index_two .music .btn:hover {
   background: #F4F5F5;
   color: #536771;
 }
+/* line 124, ../sass/style.scss */
+.index_two .music .bgsound {
+  position: absolute;
+  bottom: 0;
+  margin-left: -11vw;
+  cursor: pointer;
+}
 
-/* line 129, ../sass/style.scss */
+/* line 134, ../sass/style.scss */
 .index_three {
   position: relative;
   width: 100vw;
   height: 100vh;
+  z-index: -1;
 }
-/* line 134, ../sass/style.scss */
+/* line 140, ../sass/style.scss */
 .index_three .reason {
   position: relative;
   width: 60vw;
   margin-top: 4vw;
 }
-/* line 140, ../sass/style.scss */
+/* line 146, ../sass/style.scss */
 .index_three .video {
   position: fixed;
-  width: 40vh;
-  bottom: 15vh;
-  right: 10vw;
-  z-index: -1;
+  width: 22vw;
+  bottom: 15vw;
+  right: 11vw;
+  z-index: 3;
 }
 
-/* line 149, ../sass/style.scss */
+/* line 155, ../sass/style.scss */
 .index_four {
   position: relative;
   width: 100vw;
   height: 70vh;
   background: #fedc79;
+  background: #f9e3cd;
 }
-/* line 155, ../sass/style.scss */
+/* line 162, ../sass/style.scss */
 .index_four .sara {
   position: absolute;
   height: 12vh;
   left: 0;
   top: 34vh;
   animation-name: fly;
-  animation-duration: 20s;
+  animation-duration: 15s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
-/* line 166, ../sass/style.scss */
+/* line 173, ../sass/style.scss */
 .index_four .name {
   position: absolute;
   width: 7vw;
   right: 10vw;
   top: 5vw;
 }
-/* line 173, ../sass/style.scss */
+/* line 180, ../sass/style.scss */
 .index_four .star {
   position: absolute;
   width: 1.5vw;
@@ -168,24 +173,24 @@ body {
   top: 7vw;
 }
 
-/* line 181, ../sass/style.scss */
+/* line 188, ../sass/style.scss */
 .index_five {
   position: relative;
   width: 100vw;
   background: #F4F5F5;
 }
-/* line 187, ../sass/style.scss */
+/* line 194, ../sass/style.scss */
 .index_five img {
   position: relative;
 }
 
-/* line 192, ../sass/style.scss */
+/* line 199, ../sass/style.scss */
 .footer {
   position: relative;
   width: 100vw;
   background: #536771;
 }
-/* line 198, ../sass/style.scss */
+/* line 205, ../sass/style.scss */
 .footer img {
   position: relative;
 }
