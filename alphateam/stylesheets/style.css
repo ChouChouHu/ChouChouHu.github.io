@@ -48,27 +48,40 @@ body {
 /* line 55, ../sass/style.scss */
 #index {
   position: relative;
-  padding: 120px 0;
 }
-/* line 59, ../sass/style.scss */
+/* line 58, ../sass/style.scss */
+#index #temp {
+  position: relative;
+  height: 100vh;
+  background: #1D2088;
+  text-align: center;
+}
+/* line 64, ../sass/style.scss */
+#index #temp #index_logo {
+  position: relative;
+  margin-top: 43vh;
+  height: 12vh;
+  animation-duration: 3s;
+}
+/* line 72, ../sass/style.scss */
 #index #ourwork {
   position: relative;
   padding: 70px 15%;
 }
-/* line 63, ../sass/style.scss */
+/* line 76, ../sass/style.scss */
 #index #ourwork .topic {
   margin-bottom: 80px;
 }
-/* line 67, ../sass/style.scss */
+/* line 80, ../sass/style.scss */
 #index #ourwork .project_each {
   position: relative;
   margin-bottom: 60px;
 }
-/* line 71, ../sass/style.scss */
+/* line 84, ../sass/style.scss */
 #index #ourwork .project_each .cover {
   width: 24vw;
 }
-/* line 75, ../sass/style.scss */
+/* line 88, ../sass/style.scss */
 #index #ourwork .project_each .content {
   position: relative;
   display: inline-block;
@@ -78,24 +91,26 @@ body {
   width: 40vw;
   margin-left: 3vw;
 }
-/* line 84, ../sass/style.scss */
+/* line 97, ../sass/style.scss */
 #index #ourwork .project_each .content .title {
   position: relative;
   font-size: 20px;
   line-height: 40px;
 }
-/* line 93, ../sass/style.scss */
+/* line 106, ../sass/style.scss */
 #index #project {
   position: relative;
-  padding: 70px 15%;
+  padding: 0px 15%;
+  padding-top: 40px;
+  padding-bottom: 130px;
   text-align: center;
 }
-/* line 98, ../sass/style.scss */
+/* line 113, ../sass/style.scss */
 #index #project .topic {
   text-align: left;
   margin-bottom: 50px;
 }
-/* line 103, ../sass/style.scss */
+/* line 118, ../sass/style.scss */
 #index #project .project_each {
   position: relative;
   display: inline-block;
@@ -106,7 +121,7 @@ body {
   height: 300px;
   background: #1D2088;
 }
-/* line 113, ../sass/style.scss */
+/* line 128, ../sass/style.scss */
 #index #project .project_each .content {
   position: relative;
   color: #F4F5F5;
@@ -114,32 +129,32 @@ body {
   font-size: 14px;
   line-height: 20px;
 }
-/* line 120, ../sass/style.scss */
+/* line 135, ../sass/style.scss */
 #index #project .project_each .content .title {
   position: relative;
   font-size: 16px;
   font-weight: bold;
   line-height: 30px;
 }
-/* line 127, ../sass/style.scss */
+/* line 142, ../sass/style.scss */
 #index #project .project_each .content .subtitle {
   display: inline-block;
   font-weight: bold;
   margin-bottom: 10px;
 }
-/* line 135, ../sass/style.scss */
+/* line 150, ../sass/style.scss */
 #index #project #number {
   position: relative;
   margin-top: 50px;
   font-size: 18px;
   letter-spacing: 0.5px;
 }
-/* line 141, ../sass/style.scss */
+/* line 156, ../sass/style.scss */
 #index #project #number .item {
   display: inline-block;
   margin: 0 4%;
 }
-/* line 145, ../sass/style.scss */
+/* line 160, ../sass/style.scss */
 #index #project #number .item .num {
   display: inline-block;
   font-size: 30px;
@@ -147,7 +162,25 @@ body {
   margin: 0 10px;
 }
 
-/* line 157, ../sass/style.scss */
+/* line 171, ../sass/style.scss */
+#contact {
+  position: relative;
+  padding: 70px 0;
+  padding-bottom: 190px;
+}
+/* line 176, ../sass/style.scss */
+#contact .mail {
+  display: inline-block;
+  padding: 0px 30px;
+  height: 42px;
+  line-height: 36px;
+  background: #1D2088;
+  color: #F4F5F5;
+  border-radius: 50px;
+  margin-top: 50px;
+}
+
+/* line 189, ../sass/style.scss */
 #footer {
   position: relative;
   width: 100%;
@@ -155,7 +188,7 @@ body {
   background: #1D2088;
   color: #F4F5F5;
 }
-/* line 171, ../sass/style.scss */
+/* line 203, ../sass/style.scss */
 #footer #copyright {
   position: absolute;
   bottom: 12px;

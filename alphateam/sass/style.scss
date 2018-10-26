@@ -54,7 +54,20 @@ body {
 
 #index {
 	position: relative;
-	padding: 120px 0;
+
+	#temp {
+		position: relative;
+		height: 100vh;
+		background: $alpha_blue;
+		text-align: center;
+
+		#index_logo {
+			position: relative;
+			margin-top: 43vh;
+			height: 12vh;
+			animation-duration: 3s;
+		}
+	}
 
 	#ourwork {
 		position: relative;
@@ -92,7 +105,9 @@ body {
 
 	#project {
 		position: relative;
-		padding: 70px 15%;
+		padding: 0px 15%;
+		padding-top: 40px;
+		padding-bottom: 130px;
 		text-align: center;
 
 		.topic {
@@ -150,6 +165,23 @@ body {
 				}
 			}
 		}
+	}
+}
+
+#contact {
+	position: relative;
+	padding: 70px 0;
+	padding-bottom: 190px;
+
+	.mail {
+		display: inline-block;
+		padding: 0px 30px;
+		height: 42px;
+		line-height: 36px;
+		background: $alpha_blue;
+		color: $alpha_grey;
+		border-radius: 50px;
+		margin-top: 50px;
 	}
 }
 
