@@ -1,0 +1,61 @@
+@charset "UTF-8";
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+@font-face {
+  font-family: "regular";
+  src: url(NotoSansCJKtc-Regular.otf);
+}
+@font-face {
+  font-family: "bold";
+  src: url(NotoSansCJKtc-Bold.otf);
+}
+/* line 21, ../sass/style.scss */
+body {
+  position: relative;
+  font-family: "regular", PingFangTC-regular, Heiti TC, Meiryo, "微軟正黑體", Microsoft JhengHei, "標楷體", DFKai-sb;
+  background: #F4F5F5;
+  color: #1D2088;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+/* line 31, ../sass/style.scss */
+.bar {
+  position: fixed;
+  width: 100%;
+  height: 30px;
+}
+/* line 36, ../sass/style.scss */
+.bar #bar_logo {
+  position: relative;
+  height: 100%;
+  margin-left: 4vw;
+  margin-top: 20px;
+}
+
+/* line 44, ../sass/style.scss */
+.index {
+  position: relative;
+  padding: 300px 0;
+}
+
+/* line 50, ../sass/style.scss */
+.footer {
+  position: relative;
+  width: 92vw;
+  height: 250px;
+  margin: 4vw;
+  margin-bottom: 40px;
+  border-radius: 1000px;
+  background: #1D2088;
+  color: #F4F5F5;
+}
+/* line 60, ../sass/style.scss */
+.footer #copyright {
+  position: absolute;
+  bottom: 12px;
+  left: 10%;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+}
