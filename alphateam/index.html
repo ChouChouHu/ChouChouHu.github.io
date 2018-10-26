@@ -16,35 +16,221 @@
   </head>
   <body>
 
-    <div class="bar">
+    <div id="bar">
       <img id="bar_logo" src="img/logo.png">
     </div>
 
-    <div class="index">
-      <div class="">
+    <div id="index">
+      <div id="">
         <!-- undefined -->
       </div>
 
-      <div class="outcome">
+      <div id="ourwork">
         <!-- 實戰成果 e.g. rookie's guide -->
+        <div class="topic">
+          <span class="large">O</span>ur works
+        </div>
+
+        <div class="project_each">
+          <img class="cover" src="img/rookie.png">
+          <div class="content">
+            <span class="title">Rookie's Guide</span><br>
+            這裡是介紹文字，這裡是介紹文字，這裡是介紹文字，這裡是介紹文字，這裡是介紹文字，這裡是介紹文字。
+          </div>
+        </div>
+
+        <div class="project_each">
+          <img class="cover" src="img/coach.png">
+          <div class="content">
+            <span class="title">Coach's Guide</span><br>
+            這裡是介紹文字，這裡是介紹文字，這裡是介紹文字，這裡是介紹文字，這裡是介紹文字，這裡是介紹文字。
+          </div>
+        </div>
+
       </div>
 
-      <div class="project">
+      <div id="project">
         <!-- 專案實績 e.g. 工作坊 -->
+        <div class="topic">
+          <span class="large">W</span>hat we do
+        </div>
+
+        <div class="project_each">
+          <div class="content">
+            <span class="title">Train for Trainers</span><br>
+            <span class="subtitle">台達研究院</span><br>
+            這裡是介紹文字，這裡是介紹文字，這裡是介紹文字，這裡是介紹文字，這裡是介紹文字，這裡是介紹文字。
+          </div>
+        </div>
+
+        <div class="project_each">
+          <div class="content">
+            <span class="title">Workshop</span><br>
+            <span class="subtitle">審計部</span><br>
+            這裡是介紹文字，這裡是介紹文字，這裡是介紹文字，這裡是介紹文字，這裡是介紹文字，這裡是介紹文字。
+          </div>
+        </div>
+
+        <div class="project_each">
+          <div class="content">
+            <span class="title">青年迴響計畫</span><br>
+            <span class="subtitle">青年署</span><br>
+            這裡是介紹文字，這裡是介紹文字，這裡是介紹文字，這裡是介紹文字，這裡是介紹文字，這裡是介紹文字。
+          </div>
+        </div>
+
+        <div id="number">
+          <span class="item">工作坊<span class="num">26+</span>場</span>
+          <span class="item">學員<span class="num">1000+</span>位</span>
+          <span class="item">企業<span class="num">18+</span>間</span>
+          <span class="item">出版物<span class="num">2</span>本</span>
+        </div>
       </div>
 
-      <div class="contact">
+      <div id="contact" style="text-align: center;">
         <!-- 聯絡我們，傳聲筒 -->
+
+        <h1>
+          <span style="font-size: 30px; " class="typer" id="main" data-words="你們如何收費？, 你們會做...這個嗎？, 想和你們交流設計思考, 想知道更多你們的案例" data-colors="#1d2088" data-delay="100" data-deleteDelay="1000"></span>
+          <span class="cursor" data-owner="main"></span>
+        </h1>
       </div>
     </div>
 
-    <div class="footer">
+    <div id="footer">
       <!-- e.g. 信箱、copyright...... -->
       <div id="copyright">
-        <!-- &copy; 2018 AlphaTeam All Rights Reserved. -->
+        &copy; 2018 AlphaTeam All Rights Reserved.
       </div>
     </div>
 
   </body>
 
 </html>
+
+
+<script>
+var Typer = function(element) {
+  this.element = element;
+  var delim = element.dataset.delim || ","; // default to comma
+  var words = element.dataset.words || "override these,sample typing";
+  this.words = words.split(delim).filter(function(v){return v;}); // non empty words
+  this.delay = element.dataset.delay || 200;
+  this.loop = element.dataset.loop || "true";
+  this.deleteDelay = element.dataset.deletedelay || element.dataset.deleteDelay || 800;
+
+  this.progress = { word:0, char:0, building:true, atWordEnd:false, looped: 0 };
+  this.typing = true;
+
+  var colors = element.dataset.colors || "black";
+  this.colors = colors.split(",");
+  this.element.style.color = this.colors[0];
+  this.colorIndex = 0;
+
+  this.doTyping();
+};
+
+Typer.prototype.start = function() {
+  if (!this.typing) {
+    this.typing = true;
+    this.doTyping();
+  }
+};
+Typer.prototype.stop = function() {
+  this.typing = false;
+};
+Typer.prototype.doTyping = function() {
+  var e = this.element;
+  var p = this.progress;
+  var w = p.word;
+  var c = p.char;
+  var currentDisplay = [...this.words[w]].slice(0, c).join("");
+  p.atWordEnd = false;
+  if (this.cursor) {
+    this.cursor.element.style.opacity = "1";
+    this.cursor.on = true;
+    clearInterval(this.cursor.interval);
+    var itself = this.cursor;
+    this.cursor.interval = setInterval(function() {itself.updateBlinkState();}, 400);
+  }
+
+  e.innerHTML = currentDisplay;
+
+  if (p.building) {
+    if (p.char == [...this.words[w]].length) {
+      p.building = false;
+      p.atWordEnd = true;
+    } else {
+      p.char += 1;
+    }
+  } else {
+    if (p.char == 0) {
+      p.building = true;
+      p.word = (p.word + 1) % this.words.length;
+      this.colorIndex = (this.colorIndex + 1) % this.colors.length;
+      this.element.style.color = this.colors[this.colorIndex];
+    } else {
+      p.char -= 1;
+    }
+  }
+
+  if(p.atWordEnd) p.looped += 1;
+
+  if(!p.building && (this.loop == "false" || this.loop <= p.looped) ){
+    this.typing = false;
+  }
+
+  var myself = this;
+  setTimeout(function() {
+    if (myself.typing) { myself.doTyping(); };
+  }, p.atWordEnd ? this.deleteDelay : this.delay);
+};
+
+var Cursor = function(element) {
+  this.element = element;
+  this.cursorDisplay = element.dataset.cursordisplay || "_";
+  element.innerHTML = this.cursorDisplay;
+  this.on = true;
+  element.style.transition = "all 0.1s";
+  var myself = this;
+  this.interval = setInterval(function() {
+    myself.updateBlinkState();
+  }, 400);
+}
+Cursor.prototype.updateBlinkState = function() {
+  if (this.on) {
+    this.element.style.opacity = "0";
+    this.on = false;
+  } else {
+    this.element.style.opacity = "1";
+    this.on = true;
+  }
+}
+
+function TyperSetup() {
+  var typers = {};
+  var elements = document.getElementsByClassName("typer");
+  for (var i = 0, e; e = elements[i++];) {
+    typers[e.id] = new Typer(e);
+  }
+  var elements = document.getElementsByClassName("typer-stop");
+  for (var i = 0, e; e = elements[i++];) {
+    let owner = typers[e.dataset.owner];
+    e.onclick = function(){owner.stop();};
+  }
+  var elements = document.getElementsByClassName("typer-start");
+  for (var i = 0, e; e = elements[i++];) {
+    let owner = typers[e.dataset.owner];
+    e.onclick = function(){owner.start();};
+  }
+
+  var elements2 = document.getElementsByClassName("cursor");
+  for (var i = 0, e; e = elements2[i++];) {
+    let t = new Cursor(e);
+    t.owner = typers[e.dataset.owner];
+    t.owner.cursor = t;
+  }
+}
+
+TyperSetup();
+</script>
