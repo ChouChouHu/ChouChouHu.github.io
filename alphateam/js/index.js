@@ -1,8 +1,33 @@
 
 
+// function fuck(){
+// 	alert("fuck");
+// }
+
 $(document).ready(function(){
-	
-	
+
+	// $(".chou").click(fuck());
+var btn_or_not = false;
+
+	$("#chou").click(function(){
+		$("#chou_display").css("animation-name", "shit");
+		$("#chou_display").css("display", "block");
+		btn_or_not = true;
+	}
+)
+
+$(".content").click(function(){
+	btn_or_not = true;
+}
+)
+
+	$("body").click(function(){
+		if (btn_or_not == false) {
+			$("#chou_display").css("animation-name", "shit_reverse");
+			// alert("fuck");
+		}
+		btn_or_not = false;
+	})
 
 	$(".sound").click(function(){
 		// alert("f");
@@ -17,5 +42,38 @@ $(document).ready(function(){
     	}
 	})
 
+	var t = 800; // delay
+	var a = 70; // gap
+
+	setTimeout(function(){
+		$("#A").css("display", "none");
+	}, t)
+	setTimeout(function(){
+		$("#l").css("display", "none");
+	}, t + a*1)
+	setTimeout(function(){
+		$("#p").css("display", "none");
+	}, t + a*2)
+	setTimeout(function(){
+		$("#h").css("display", "none");
+	}, t + a*3)
+	setTimeout(function(){
+		$("#a").css("display", "none");
+	}, t + a*4)
+	setTimeout(function(){
+		$("#T").css("display", "none");
+	}, t + a*5)
+	setTimeout(function(){
+		$("#e").css("display", "none");
+	}, t + a*6)
+	setTimeout(function(){
+		$("#a_2").css("display", "none");
+	}, t + a*7)
+	setTimeout(function(){
+		$("#m").css("display", "none");
+	}, t + a*8)
+	setTimeout(function(){
+		$("#_").css("animation-name", "slash");
+	}, t + a*9)
 
 });

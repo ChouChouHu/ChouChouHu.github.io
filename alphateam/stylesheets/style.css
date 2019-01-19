@@ -10,7 +10,11 @@
   font-family: "bold";
   src: url(NotoSansCJKtc-Bold.otf);
 }
-/* line 21, ../sass/style.scss */
+@font-face {
+  font-family: "fuckoff";
+  src: url("futura medium condensed bt.ttf");
+}
+/* line 26, ../sass/style.scss */
 body {
   position: relative;
   font-family: "regular", PingFangTC-regular, Heiti TC, Meiryo, "微軟正黑體", Microsoft JhengHei, "標楷體", DFKai-sb;
@@ -20,68 +24,281 @@ body {
   overflow-x: hidden;
 }
 
-/* line 30, ../sass/style.scss */
+/* line 35, ../sass/style.scss */
 .topic {
   position: relative;
   font-size: 32px;
   letter-spacing: 1px;
 }
-/* line 36, ../sass/style.scss */
+/* line 41, ../sass/style.scss */
 .topic .large {
   font-size: 86px;
 }
 
-/* line 42, ../sass/style.scss */
+/* line 47, ../sass/style.scss */
 #bar {
   position: fixed;
   width: 100%;
-  height: 30px;
+  height: 70px;
+  z-index: 99999999;
+  cursor: pointer;
 }
-/* line 47, ../sass/style.scss */
+/* line 55, ../sass/style.scss */
 #bar #bar_logo {
   position: relative;
+  width: 124px;
+  margin-left: 30px;
+  margin-top: 26px;
+}
+/* line 62, ../sass/style.scss */
+#bar .btn_grp {
+  position: absolute;
+  right: 0;
+  display: inline-block;
+  width: 512px;
   height: 100%;
-  margin-left: 4vw;
-  margin-top: 20px;
+}
+/* line 70, ../sass/style.scss */
+#bar .btn_grp .btn {
+  position: relative;
+  display: inline-block;
+  top: 14px;
+  padding: 18px;
+  font-size: 26px;
+  letter-spacing: 0.5px;
+  font-family: "fuckoff";
 }
 
-/* line 55, ../sass/style.scss */
+/* line 83, ../sass/style.scss */
 #index {
   position: relative;
+  width: 100%;
+  overflow-x: hidden;
 }
-/* line 58, ../sass/style.scss */
+/* line 88, ../sass/style.scss */
 #index #temp {
   position: relative;
   height: 100vh;
   background: #1D2088;
   text-align: center;
 }
-/* line 64, ../sass/style.scss */
+/* line 94, ../sass/style.scss */
 #index #temp #index_logo {
   position: relative;
-  margin-top: 43vh;
+  margin-top: 42vh;
   height: 12vh;
-  animation-duration: 3s;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier();
 }
-/* line 72, ../sass/style.scss */
+/* line 102, ../sass/style.scss */
+#index #temp .mask {
+  position: absolute;
+  display: inline-block;
+  margin-top: 42vh;
+  height: 12vh;
+  width: 50vh;
+  left: 50%;
+  margin-left: -25vh;
+}
+/* line 113, ../sass/style.scss */
+#index #temp .mask #A {
+  position: absolute;
+  background: #1D2088;
+  left: 62%;
+  top: 9%;
+  height: 41%;
+  width: 11%;
+}
+/* line 122, ../sass/style.scss */
+#index #temp .mask #l {
+  position: absolute;
+  background: #1D2088;
+  left: 72.5%;
+  top: 9%;
+  height: 41%;
+  width: 3.5%;
+}
+/* line 131, ../sass/style.scss */
+#index #temp .mask #p {
+  position: absolute;
+  background: #1D2088;
+  left: 75.5%;
+  top: 20%;
+  height: 45%;
+  width: 7.7%;
+}
+/* line 140, ../sass/style.scss */
+#index #temp .mask #h {
+  position: absolute;
+  background: #1D2088;
+  left: 83%;
+  top: 9%;
+  height: 41%;
+  width: 7.3%;
+}
+/* line 149, ../sass/style.scss */
+#index #temp .mask #a {
+  position: absolute;
+  background: #1D2088;
+  left: 90.5%;
+  top: 20%;
+  height: 33%;
+  width: 8%;
+}
+/* line 158, ../sass/style.scss */
+#index #temp .mask #T {
+  position: absolute;
+  background: #1D2088;
+  left: 62%;
+  top: 53.5%;
+  height: 41%;
+  width: 7%;
+}
+/* line 166, ../sass/style.scss */
+#index #temp .mask #T #TT {
+  position: absolute;
+  background: #1D2088;
+  left: 91%;
+  top: 0%;
+  height: 26%;
+  width: 50%;
+}
+/* line 176, ../sass/style.scss */
+#index #temp .mask #e {
+  position: absolute;
+  background: #1D2088;
+  left: 69.5%;
+  top: 66.5%;
+  height: 28%;
+  width: 7%;
+}
+/* line 185, ../sass/style.scss */
+#index #temp .mask #a_2 {
+  position: absolute;
+  background: #1D2088;
+  left: 76.5%;
+  top: 65%;
+  height: 30%;
+  width: 7%;
+}
+/* line 194, ../sass/style.scss */
+#index #temp .mask #m {
+  position: absolute;
+  background: #1D2088;
+  left: 84%;
+  top: 65%;
+  height: 30%;
+  width: 11.5%;
+}
+/* line 203, ../sass/style.scss */
+#index #temp .mask #_ {
+  position: absolute;
+  background: #1D2088;
+  left: 96%;
+  top: 83%;
+  height: 13%;
+  width: 4%;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes slash {
+  from {
+    opacity: 0;
+  }
+  49% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+/* line 239, ../sass/style.scss */
+#index .about {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  text-align: center;
+}
+/* line 245, ../sass/style.scss */
+#index .about .new_bar {
+  position: absolute;
+  text-align: left;
+  top: 0;
+  width: 30%;
+}
+/* line 252, ../sass/style.scss */
+#index .about .new_bar .logo {
+  position: relative;
+  width: 110px;
+  top: 120px;
+  left: 80px;
+}
+/* line 259, ../sass/style.scss */
+#index .about .new_bar .btn_grp {
+  position: relative;
+  height: 208px;
+  top: 180px;
+  left: 100px;
+}
+/* line 266, ../sass/style.scss */
+#index .about .new_bar .line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: #1D2088;
+}
+/* line 275, ../sass/style.scss */
+#index .about .new_bar .btn {
+  position: relative;
+  width: 200px;
+  top: -4px;
+  cursor: pointer;
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-style: italic;
+}
+/* line 282, ../sass/style.scss */
+#index .about .new_bar .btn .dot {
+  position: relative;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #1D2088;
+  margin-left: -7px;
+  margin-right: 20px;
+}
+/* line 298, ../sass/style.scss */
+#index .about .topic {
+  top: 150px;
+}
+/* line 303, ../sass/style.scss */
 #index #ourwork {
   position: relative;
   padding: 70px 15%;
 }
-/* line 76, ../sass/style.scss */
+/* line 307, ../sass/style.scss */
 #index #ourwork .topic {
   margin-bottom: 80px;
 }
-/* line 80, ../sass/style.scss */
+/* line 311, ../sass/style.scss */
 #index #ourwork .project_each {
   position: relative;
   margin-bottom: 60px;
 }
-/* line 84, ../sass/style.scss */
+/* line 315, ../sass/style.scss */
 #index #ourwork .project_each .cover {
   width: 24vw;
 }
-/* line 88, ../sass/style.scss */
+/* line 319, ../sass/style.scss */
 #index #ourwork .project_each .content {
   position: relative;
   display: inline-block;
@@ -91,13 +308,13 @@ body {
   width: 40vw;
   margin-left: 3vw;
 }
-/* line 97, ../sass/style.scss */
+/* line 328, ../sass/style.scss */
 #index #ourwork .project_each .content .title {
   position: relative;
   font-size: 20px;
   line-height: 40px;
 }
-/* line 106, ../sass/style.scss */
+/* line 337, ../sass/style.scss */
 #index #project {
   position: relative;
   padding: 0px 15%;
@@ -105,12 +322,12 @@ body {
   padding-bottom: 130px;
   text-align: center;
 }
-/* line 113, ../sass/style.scss */
+/* line 344, ../sass/style.scss */
 #index #project .topic {
   text-align: left;
   margin-bottom: 50px;
 }
-/* line 118, ../sass/style.scss */
+/* line 349, ../sass/style.scss */
 #index #project .project_each {
   position: relative;
   display: inline-block;
@@ -121,7 +338,7 @@ body {
   height: 300px;
   background: #1D2088;
 }
-/* line 128, ../sass/style.scss */
+/* line 359, ../sass/style.scss */
 #index #project .project_each .content {
   position: relative;
   color: #F4F5F5;
@@ -129,32 +346,32 @@ body {
   font-size: 14px;
   line-height: 20px;
 }
-/* line 135, ../sass/style.scss */
+/* line 366, ../sass/style.scss */
 #index #project .project_each .content .title {
   position: relative;
   font-size: 16px;
   font-weight: bold;
   line-height: 30px;
 }
-/* line 142, ../sass/style.scss */
+/* line 373, ../sass/style.scss */
 #index #project .project_each .content .subtitle {
   display: inline-block;
   font-weight: bold;
   margin-bottom: 10px;
 }
-/* line 150, ../sass/style.scss */
+/* line 381, ../sass/style.scss */
 #index #project #number {
   position: relative;
   margin-top: 50px;
   font-size: 18px;
   letter-spacing: 0.5px;
 }
-/* line 156, ../sass/style.scss */
+/* line 387, ../sass/style.scss */
 #index #project #number .item {
   display: inline-block;
   margin: 0 4%;
 }
-/* line 160, ../sass/style.scss */
+/* line 391, ../sass/style.scss */
 #index #project #number .item .num {
   display: inline-block;
   font-size: 30px;
@@ -162,37 +379,221 @@ body {
   margin: 0 10px;
 }
 
-/* line 171, ../sass/style.scss */
+/* line 402, ../sass/style.scss */
+.topic {
+  font-size: 40px;
+  font-weight: bold;
+}
+/* line 406, ../sass/style.scss */
+.topic .subtitle {
+  font-size: 24px;
+  font-weight: normal;
+  margin-top: 24px;
+}
+
+/* line 413, ../sass/style.scss */
+#team_members {
+  position: relative;
+  width: 100%;
+  padding: 100px 0;
+  text-align: center;
+}
+/* line 425, ../sass/style.scss */
+#team_members .all_members {
+  position: relative;
+  padding-top: 100px;
+}
+/* line 431, ../sass/style.scss */
+#team_members .all_members .each_member {
+  position: relative;
+  display: inline-block;
+  width: 7.5%;
+  height: 53px;
+  border-radius: 30px;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 35px 2.5%;
+}
+/* line 443, ../sass/style.scss */
+#team_members .all_members .each_member img {
+  position: absolute;
+  width: 100%;
+  opacity: 0.8;
+  left: 0;
+}
+/* line 450, ../sass/style.scss */
+#team_members .all_members .each_member .mask {
+  display: none;
+  position: absolute;
+  background: #1D2088;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  color: white;
+  font-size: 18px;
+  line-height: 50px;
+}
+/* line 463, ../sass/style.scss */
+#team_members .all_members .each_member .underline {
+  position: absolute;
+  bottom: 12px;
+  width: 56%;
+  left: 22%;
+  height: 2.5px;
+  background: white;
+}
+/* line 473, ../sass/style.scss */
+#team_members .all_members .each_member:hover .mask {
+  display: block;
+}
+/* line 478, ../sass/style.scss */
+#team_members .all_members .display {
+  position: relative;
+  display: none;
+  text-align: left;
+  width: 100%;
+  height: 330px;
+  overflow: hidden;
+  animation-name: shit;
+  animation-duration: 1.2s;
+  animation-fill-mode: forwards;
+}
+/* line 489, ../sass/style.scss */
+#team_members .all_members .display .content {
+  position: absolute;
+  border: #b5b4d4 3px solid;
+  top: 7px;
+  right: -2%;
+  width: 92%;
+  height: 316px;
+  border-top-left-radius: 200px;
+  border-bottom-left-radius: 200px;
+}
+/* line 500, ../sass/style.scss */
+#team_members .all_members .display .content .circle {
+  position: relative;
+  display: inline-block;
+  left: 5vw;
+  top: 46px;
+  width: 205px;
+  height: 205px;
+  vertical-align: top;
+}
+/* line 510, ../sass/style.scss */
+#team_members .all_members .display .content .circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+/* line 519, ../sass/style.scss */
+#team_members .all_members .display .content .persona {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 16vw;
+  height: 100%;
+  margin-left: 8vw;
+}
+/* line 528, ../sass/style.scss */
+#team_members .all_members .display .content .persona .name {
+  margin-top: 70px;
+  font-size: 18px;
+  font-weight: bold;
+}
+/* line 534, ../sass/style.scss */
+#team_members .all_members .display .content .persona .go_die {
+  margin-top: 40px;
+  font-size: 12px;
+  line-height: 20px;
+}
+/* line 540, ../sass/style.scss */
+#team_members .all_members .display .content .persona .mail {
+  margin-top: 24px;
+  font-size: 12px;
+}
+/* line 546, ../sass/style.scss */
+#team_members .all_members .display .content .intro {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 40vw;
+  height: 100%;
+}
+/* line 554, ../sass/style.scss */
+#team_members .all_members .display .content .intro .sentence {
+  margin-top: 68px;
+  font-size: 24px;
+  font-family: serif;
+  font-weight: bold;
+  font-style: italic;
+}
+/* line 562, ../sass/style.scss */
+#team_members .all_members .display .content .intro .text {
+  margin-top: 40px;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+@keyframes shit {
+  from {
+    height: 0;
+  }
+  to {
+    height: 330px;
+  }
+}
+@keyframes shit_reverse {
+  from {
+    height: 330px;
+  }
+  to {
+    height: 0;
+  }
+}
+/* line 593, ../sass/style.scss */
 #contact {
   position: relative;
   padding: 70px 0;
-  padding-bottom: 190px;
-}
-/* line 176, ../sass/style.scss */
-#contact .mail {
-  display: inline-block;
-  padding: 0px 30px;
-  height: 42px;
-  line-height: 36px;
+  padding-bottom: 100px;
   background: #1D2088;
-  color: #F4F5F5;
-  border-radius: 50px;
-  margin-top: 50px;
+  color: white;
+}
+/* line 600, ../sass/style.scss */
+#contact .topic {
+  color: white;
+}
+/* line 604, ../sass/style.scss */
+#contact .type_machine {
+  color: white;
+  padding: 100px;
+}
+/* line 613, ../sass/style.scss */
+#contact .info {
+  display: inline-block;
+  text-align: left;
+}
+/* line 619, ../sass/style.scss */
+#contact .mail {
+  line-height: 36px;
+  font-style: italic;
+  font-size: 18px;
+  letter-spacing: 0.5px;
 }
 
-/* line 189, ../sass/style.scss */
+/* line 635, ../sass/style.scss */
 #footer {
   position: relative;
   width: 100%;
-  height: 100px;
+  height: 30px;
   background: #1D2088;
   color: #F4F5F5;
 }
-/* line 203, ../sass/style.scss */
+/* line 650, ../sass/style.scss */
 #footer #copyright {
-  position: absolute;
-  bottom: 12px;
-  left: 2%;
+  position: relative;
+  margin-bottom: 12px;
   font-size: 11px;
   letter-spacing: 0.5px;
+  text-align: center;
 }
