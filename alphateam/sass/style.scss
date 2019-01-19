@@ -85,6 +85,18 @@ body {
 	width: 100%;
 	overflow-x: hidden;
 
+	.scroll {
+		position: relative;
+	  text-align: center;
+	  top: 37vh;
+	  font-size: 15px;
+	  letter-spacing: 3px;
+	  text-indent: 30px;
+	  color: white;
+	  animation-delay: 2.2s;
+	  animation-duration: 1s;
+	}
+
 	#temp {
 		position: relative;
 		height: 100vh;
@@ -239,7 +251,7 @@ body {
 	.about {
 		position: relative;
 		width: 100%;
-		height: 500px;
+		padding-bottom: 0px;
 		text-align: center;
 
 		.new_bar {
@@ -295,6 +307,82 @@ body {
 			}
 		}
 
+
+		.text {
+			position: relative;
+		  top: 150px;
+		  margin-top: 70px;
+		  text-align: left;
+		  left: 39%;
+		  line-height: 44px;
+		  height: 400px;
+		}
+
+		.read_more {
+			position: relative;
+			left: 9.8%;
+			margin-top: 20px;
+			text-decoration: underline;
+			cursor: pointer;
+			font-size: 18px;
+			height: 20px;
+		}
+
+		.more_text {
+			display: none;
+		  position: relative;
+		  top: 50px;
+		  // margin-top: 130px;
+		  /* margin-bottom: 130px; */
+		  padding: 0% 5%;
+		  padding-left: 2%;
+		  padding-bottom: 20px;
+		  height: 150px;
+		  animation-name: read;
+		  animation-duration: 1.5s;
+		  overflow: hidden;
+
+			.title {
+				display: inline-block;
+				width: 10%;
+				font-size: 15px;
+			}
+
+			.content {
+				display: inline-block;
+				width: 70%;
+				margin-left: 5%;
+				vertical-align: middle;
+				font-size: 15px;
+				line-height: 22px;
+				text-align: left;
+			}
+
+			.bottom {
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+
+				.line {
+					display: inline-block;
+					height: 5px;
+					width: 78%;
+					background: #1D2088;
+				}
+			}
+		}
+
+		@keyframes read {
+		  from {
+		    height: 0;
+		    // padding-bottom: 0;
+		  }
+		  to {
+		    height: 150px;
+		    // padding-bottom: 0px;
+		  }
+		}
+
 		.topic {
 			top: 150px;
 		}
@@ -306,6 +394,14 @@ body {
 
 		.topic {
 			margin-bottom: 80px;
+		}
+
+		.project {
+			display: none;
+		}
+
+		.display {
+			display: block;
 		}
 
 		.project_each {
@@ -410,10 +506,148 @@ body {
 	}
 }
 
+.ourworks {
+	position: relative;
+	padding: 50px 0;
+	text-align: center;
+	margin-top: 100px;
+
+	.catagory {
+		position: relative;
+		text-align: center;
+		padding-top: 60px;
+
+		.group {
+			display: inline-block;
+			border: 3px solid #1D2088;
+			/* alpha blue */
+			width: 240px;
+			/* height: 100px; */
+			border-radius: 20px;
+			padding: 24px;
+			text-align: left;
+			font-size: 15px;
+			line-height: 22px;
+			margin: 0 0.8%;
+			cursor: pointer;
+
+			&:hover {
+				background: #1D2088;
+				color: white;
+			}
+
+			.title {
+				font-weight: bold;
+				font-size: 18px;
+				margin-bottom: 8px;
+			}
+		}
+
+		.default {
+			background: #1D2088;
+			color: white;
+		}
+	}
+
+	.project {
+		margin-top: 50px;
+		padding: 0 7%;
+		padding-top: 50px;
+		display: none;
+
+		.each_project {
+			display: inline-block;
+			width: 270px;
+			height: 450px;
+			border-bottom: 6px solid #1D2088;
+			text-align: left;
+			font-size: 16px;
+			line-height: 24px;
+			// font-weight: bold;
+			margin: 0 2%;
+			margin-bottom: 100px;
+			cursor: pointer;
+			vertical-align: top;
+
+			.img_mask {
+				width: 100%;
+				height: 200px;
+				overflow: hidden;
+				border-bottom: 7px solid #EA5550;
+			}
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+
+		.title {
+			font-family: bold;
+			font-size: 26px;
+			// font-weight: bold;
+			margin-top: 34px;
+			line-height: 32px;
+		}
+
+		.subtitle {
+			font-size: 16px;
+			margin-top: 7px;
+			margin-bottom: 20px;
+			color: #F6AB00;
+		}
+	}
+
+	.project_two .each_project .img_mask {
+		border-bottom: 7px solid #EDA70F;
+	}
+
+	.project_three .each_project .img_mask {
+		border-bottom: 7px solid #0AB7B1;
+	}
+
+	.project_intro {
+		position: relative;
+		display: inline-block;
+		height: 450px;
+		width: 270px;
+		background: #EA5550;
+		color: white;
+		text-align: left;
+		padding-left: 15px;
+		line-height: 22px;
+		font-size: 14px;
+		margin: 0 2%;
+
+		.title {
+			font-size: 26px;
+			margin-top: 160px;
+			font-family: regular;
+			font-weight: lighter;
+			margin-bottom: 15px;
+		}
+	}
+
+	.project_two .project_intro {
+		background: #EDA70F;
+	}
+
+	.project_three .project_intro {
+		background: #0AB7B1;
+	}
+
+	.display {
+		display: block;
+	}
+
+}
+
 #team_members {
 	position: relative;
 	width: 100%;
 	padding: 100px 0;
+	padding-bottom: 200px;
 	// overflow-x: hidden;
 	// overflow-y: visible;
 	// background: blue;
@@ -529,10 +763,17 @@ body {
 						margin-top: 70px;
 						font-size: 18px;
 						font-weight: bold;
+
+						.sub {
+							font-size: 12px;
+							font-weight: normal;
+							color: #F6AB00;
+							margin-top: 8px;
+						}
 					}
 
 					.go_die {
-						margin-top: 40px;
+						margin-top: 30px;
 						font-size: 12px;
 						line-height: 20px;
 					}
@@ -607,6 +848,16 @@ body {
 
 		.typer {
 			// define in html
+		}
+	}
+
+	.mail {
+		margin-bottom: 7px;
+
+		img {
+			height: 30px;
+			margin-right: 20px;
+			vertical-align: -24%;
 		}
 	}
 

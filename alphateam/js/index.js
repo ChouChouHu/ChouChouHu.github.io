@@ -6,6 +6,33 @@
 
 $(document).ready(function(){
 
+	$(".group").click(function(){
+		if ($(this).hasClass("default")) {
+
+		}
+		else {
+			$(".group").removeClass("default");
+			$(this).addClass("default");
+			$(".project").removeClass("display");
+		}
+
+		if ($(this).hasClass("group_one")) {
+			$(".project_one").addClass("display")
+		}
+		if ($(this).hasClass("group_two")) {
+			$(".project_two").addClass("display")
+		}
+		if ($(this).hasClass("group_three")) {
+			$(".project_three").addClass("display")
+		}
+	})
+
+
+	$(".read_more").click(function(){
+		$(".more_text").css("display", "block");
+		// alert("fuck")
+	})
+
 	// $(".chou").click(fuck());
 var btn_or_not = false;
 
