@@ -15,6 +15,9 @@
       <meta charset="UTF-8" http-equiv="X-UA-Compatible" content="IE=edge">
   </head>
   <body>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
 
     <!-- <div id="bar">
       <a href=""><img id="bar_logo" src="img/logo.png"></a>
@@ -27,7 +30,7 @@
     </div> -->
 
     <div id="index">
-      <div id="temp">
+      <div id="landing">
         <!-- undefined -->
         <img id="index_logo" class="fadeIn animated" src="img/logo_white.png">
         <div class="mask">
@@ -45,13 +48,40 @@
           <div id="_"></div>
         </div>
 
-        <div class="scroll animated fadeIn">
-          往下觀看
+        <div class="spirit animated fadeIn">
+          <!-- 往下觀看 -->
+          <div class="main_topic">
+            以使用者需求為核心，挑戰不合理的現況
+          </div>
+          持續探索如何打破領域的界線，用意想不到的方式創造價值
         </div>
+
+        <!-- <div class="bar">
+          <a href=""><img class="logo" src="img/logo.png"></a>
+          <div class="btn_grp">
+            <div class="line"></div>
+            <div class="btn">
+              <div class="dot"></div>
+              About
+            </div>
+            <div class="btn">
+              <div class="dot"></div>
+              Our Works
+            </div>
+            <div class="btn">
+              <div class="dot"></div>
+              Team Members
+            </div>
+            <div class="btn">
+              <div class="dot"></div>
+              Contacts
+            </div>
+          </div>
+        </div> -->
       </div>
 
-      <div class="about">
-        <div class="new_bar">
+      <!-- <div class="about">
+        <div class="bar">
           <a href=""><img class="logo" src="img/logo.png"></a>
           <div class="btn_grp">
             <div class="line"></div>
@@ -75,9 +105,6 @@
         </div>
         <div class="topic">
           About<br>
-          <!-- <div class="subtitle">
-            團隊裡的酷角色們
-          </div> -->
         </div>
         <div class="text">
           我們是Alpha Team_<br>
@@ -99,11 +126,112 @@
           </div>
         </div>
 
-        <!-- <div class="bottom">
-          <div class="line">
+      </div> -->
 
+      <!-- <div class="bar">
+        <a href=""><img class="logo" src="img/logo.png"></a>
+        <div class="btn_grp">
+          <div class="line"></div>
+          <div class="btn">
+            <div class="dot"></div>
+            About
           </div>
-        </div> -->
+          <div class="btn">
+            <div class="dot"></div>
+            Our Works
+          </div>
+          <div class="btn">
+            <div class="dot"></div>
+            Team Members
+          </div>
+          <div class="btn">
+            <div class="dot"></div>
+            Contacts
+          </div>
+        </div>
+      </div> -->
+
+      <div class="what_we_do">
+        <div class="topic">
+          What We Do<br>
+        </div>
+        <div class="intro">
+          我們專注於重新設計「專案」的工作流程，拆解「設計思考」的工具、專案式學習型態及新創領域的方法論，應用在跨領域或跨部門的合作中，協助客戶以利害關係人的需求為核心，重新定義問題、取得共識，一起發現價值創造的全新途徑。
+        </div>
+
+        <img class="pic_show" src="img/whatwedo.png" alt="">
+        <div class="sentence">
+          簡單來說，我們把「創新」從<span class="big"> 模糊的期待 </span>變成<span class="big"> 具體可採取行動 </span>的方案。
+        </div>
+
+        <div class="four_project">
+          <div class="title">
+            四大專案類別
+          </div>
+          <div class="project">
+            <div class="before">
+              <img class="icon" src="img/whatwedo/1.png" alt="">
+              <div class="project_name">
+                公部門<br>
+                中大型專案/計畫再造
+              </div>
+            </div>
+            <div class="after">
+              <br>
+              <div class="project_name">
+                公部門<br>
+                中大型專案 / 計畫再造
+              </div>
+              大型組織為尋求創新，希望針對現有計畫做出變革，或以既有資源推動全新專案。我們協助客戶盤點內部各大計畫定位，重新佈局資源，創造符合使用者需求的新價值。
+            </div>
+          </div>
+          <div class="project">
+            <div class="before">
+              <img class="icon" src="img/whatwedo/2.png" alt="">
+              <div class="project_name">
+                設計思考<br>
+                工作坊 / 專案培訓
+              </div>
+            </div>
+            <div class="after">
+              <br>
+              <div class="project_name">
+                設計思考<br>
+                工作坊 / 專案培訓
+              </div>
+              人才的養成是組織創新的第一步，我們協助依客戶短中長期目標，規劃相應的課程、工作坊或專案培訓，強化內部人才的創業家精神、引導型領導者的技術及設計思考的知能。
+            </div>
+          </div>
+          <div class="project">
+            <div class="before">
+              <img class="icon" src="img/whatwedo/3.png" alt="">
+              <div class="project_name">
+                企業創新轉型顧問
+              </div>
+            </div>
+            <div class="after">
+              <br>
+              <div class="project_name">
+                企業創新轉型顧問
+              </div>
+              探索新市場、品牌再造、產品開發初期，都需經歷跨部門合作的陣痛。我們協助客戶釐清問題，在限定的期程和目標內設計合作框架，開發最小可行方案並快速驗證想法，為原地空轉的專案確立方向。
+            </div>
+          </div>
+          <div class="project">
+            <div class="before">
+              <img class="icon" src="img/whatwedo/4.png" alt="">
+              <div class="project_name">
+                Project Unknown
+              </div>
+            </div>
+            <div class="after">
+              <div class="project_name">
+                Project Unknown
+              </div>
+              我們擅長 30-150 人的線下互動設計，曾以工作坊、策展、孵化計畫或出版等方式，達成理念溝通、品牌重塑、團隊育成和社群互動等目標。我們還會寫Rap、拍影片或是任何你老闆不相信你其實也可以做到的事，跟我們一起給他一個驚喜吧！
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="ourworks">
@@ -113,243 +241,521 @@
             認識我們最好的方式，是直接看看我們做過的事情
           </div>
         </div>
-
-        <div class="catagory">
-          <div class="group default group_one">
+        <div class="category">
+          <div class="group group_one">
             <div class="title">
-              Alpha Society
+              中大型政府計畫再造
             </div>
-            以團隊與設計思考<br>
-            為政府、社會企業共創社會價值
           </div>
           <div class="group group_two">
             <div class="title">
-              Alpha Commerce
+              設計思考教學培訓
             </div>
-            重視人才價值<br>
-            引導組織以使用者中心找到創新機會
           </div>
           <div class="group group_three">
             <div class="title">
-              Alpha University
+              企業創新轉型顧問
             </div>
-            讓跨域合作成為課堂的日常<br>
-            讓大學教育擁抱更多可能性
+          </div>
+          <div class="group group_four">
+            <div class="title">
+              出版物
+            </div>
           </div>
         </div>
-
-        <div class="project display project_one">
-          <div class="project_intro">
+        <div class="project">
+          <!-- <div class="project_intro">
             <div class="title">
               Alpha Society
             </div>
             以團隊與設計思考<br>
             為政府、社會企業共創社會價值
-          </div>
-          <div class="each_project">
-            <div class="img_mask">
-              <img src="img/2.jpg" alt="">
-            </div>
-            <div class="title">
-              青年迴響計畫
-            </div>
-            <div class="subtitle">
-              feat. 教育部 青年發展署
-            </div>
-            一場非典型創業計畫，就是要給你一個行動的藉口！
-          </div>
-          <div class="each_project">
-            <div class="img_mask">
-              <img src="img/1.jpg" alt="">
-            </div>
-            <div class="title">
-              日日昌小公寓
-            </div>
-            <div class="subtitle">
-              feat. 臺北市政府 都市更新處
-            </div>
-            將新創公司的經營思維與方法論，導入到社區之中。
-          </div>
-          <div class="each_project">
-            <div class="img_mask">
-              <img src="img/3.png" alt="">
-            </div>
-            <div class="title">
-              設計思考入門線上課程
-            </div>
-            <div class="subtitle">
-              feat. 教育部 智慧聯網基礎技術聯盟
-            </div>
-            全台灣第一個免費公開的設計思考入門線上系列課程！
-          </div>
-          <div class="each_project">
-            <div class="img_mask">
-              <img src="img/4.JPG" alt="">
-            </div>
-            <div class="title">
-              公部門設計思考工作坊
-            </div>
-            <div class="subtitle">
-              feat. 科技部 審計部
-            </div>
-            以設計思考優化公務體系的流程與制度， 提升公共服務品質和效率
-          </div>
-        </div>
+          </div> -->
 
-        <div class="project display project_two">
-          <div class="project_intro">
-            <div class="title">
-              Alpha Commerce
+          <!-- 迴響 -->
+          <div class="each_project display project_govern">
+            <div class="scale">
+              <div class="img_mask">
+                <img src="img/2.jpg" alt="">
+              </div>
+              <div class="title">
+                青年迴響計畫
+              </div>
+              <div class="subtitle">
+                feat. 教育部 青年發展署
+              </div>
+              我們如何能協助青年將對社會議題的熱情與想法化為實際行動？
+              <div class="hashtag">
+                # 非典型創業競賽<br>
+                # 行動加速器<br>
+                # 團隊孵化器<br>
+              </div>
             </div>
-            重視人才價值<br>
-            引導組織以使用者中心找到創新機會
-          </div>
-          <div class="each_project">
-            <div class="img_mask">
-              <img src="img/5.jpg" alt="">
-            </div>
-            <div class="title">
-              企業轉型工作坊
-            </div>
-            <div class="subtitle">
-              <!-- feat. 教育部 青年發展署 -->
-            </div>
-            跳脫本來的框架，在跨部門甚至跨產業的對話中定義出企業的新角色
-          </div>
-          <div class="each_project">
-            <div class="img_mask">
-              <img src="img/6.JPG" alt="">
-            </div>
-            <div class="title">
-              企業引導力工作坊
-            </div>
-            <div class="subtitle">
-              feat. 臺達研究院
-            </div>
-            從「如何開好一場會議」學引導，引領團隊達成共同目標。
-          </div>
-        </div>
+            <div class="ourworks_content">
+              <div class="black_mask"></div>
+              <div class="each" id="rethink_content">
+                <div class="close">
+                  x
+                </div>
+                <!-- <img src="img/2.jpg" alt=""> -->
+                <!-- <div class="blue_mask"></div> -->
+                <div class="content">
+                  <div class="title">
+                    青年迴響計畫
+                    <div class="intro">
+                      我們如何能協助青年將對社會議題的熱情與想法化為實際行動？
+                    </div>
+                  </div>
+                  <div class="partner">
+                    <b>協力合作夥伴</b><br>
+                    Changee 串串<br>
+                    ​獨立設計師 余韋呈<br>
+                    概念啊！有限公司<br>
+                  </div>
+                  <div class="carousel">
+                    <a href="#"><img src="img/ourworks/OW_專案照片_迴響計畫_1.png"></a>
+                    <!-- <a href="#"><img src="img/ourworks/OW_專案照片_迴響計畫_2.png"></a> -->
+                    <a href="#"><img src="img/ourworks/OW_專案照片_迴響計畫_3.png"></a>
+                    <a href="#"><img src="img/ourworks/OW_專案照片_迴響計畫_4.png"></a>
+                    <a href="#"><img src="img/ourworks/OW_專案照片_迴響計畫_5.png"></a>
+                  </div>
+                  <div class="heading">
+                    <span>計畫簡介</span>
+                  </div>
+                  青年迴響計畫是一個為期四個月的「行動加速器」，鼓勵青年在提出商業模式前針對想解決的問題提出行動方案，避免美好的計畫淪為鍵盤空談。以雙菱形的問題解決架構搭配精實執行 (Running Lean) 設計團隊成長迴圈，將「行動、新資訊、反思、建立新觀點、發想、設計下一步行動」等六大節點放入計畫階段，要把台灣的青年從「厭世代」變為清楚自己的預設立場、具備系統觀點，勇於行動以迭代解方的「驗世代」。<br>
 
-        <div class="project project_three">
-          <div class="project_intro">
-            <div class="title">
-              Alpha University
+                  <div class="number">
+                    <span class="each_num">
+                      <span class="big">1000+</span> / 報名青年人數
+                    </span>
+                    <span class="each_num">
+                      <span class="big">530+</span> / 參加團隊數量
+                    </span>
+                  </div>
+
+                  <div class="heading">
+                    <span>特色亮點</span>
+                  </div>
+
+                  <div class="special">
+                    <div class="each_spec">
+                      <b>強化「認識議題」的意識</b><br>
+                      <div class="align_left">
+                        知道自己在解決什麼問題，才下手思考解決方案。在認識議題的階段使用訪談等田野調查概念，更貼近議題相關人的真實現況與觀點、釐清假設，進而找到解決問題的關鍵突破口。
+                      </div>
+                    </div>
+                    <div class="each_spec">
+                      <b>遊戲化任務包</b><br>
+                      <div class="align_left">
+                        計畫報名期間，以任務包取代書面審查，透過協作軟體 Slack 做為任務管理與溝通平台，結合遊戲化的機制設計晉級關卡，參與者每一階段都能獲得往前邁進的具體行動指示與回饋。
+                      </div>
+                    </div>
+                    <div class="each_spec">
+                      <b>使用者中心設計</b><br>
+                      <div class="align_left">
+                        所有計畫機制皆採使用者中心的設計邏輯，面對所有參與計畫的不同角色，皆以「溝通」、「透明」和「即時反應」的原則代替訂定硬性規定。
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="heading">
+                    <span>記錄影片</span>
+                  </div>
+
+                  <!-- Your embedded video player code -->
+                   <!-- <div class="fb-video" data-href="https://www.facebook.com/facebook/videos/10153231379946729/" data-width="500" data-show-text="false">
+                     <div class="fb-xfbml-parse-ignore">
+                       <blockquote cite="https://www.facebook.com/facebook/videos/10153231379946729/">
+                         <a href="https://www.facebook.com/facebook/videos/10153231379946729/">How to Share With Just Friends</a>
+                         <p>How to share with just friends.</p>
+                         Posted by <a href="https://www.facebook.com/facebook/">Facebook</a> on Friday, December 5, 2014
+                       </blockquote>
+                     </div>
+                   </div> -->
+                   <iframe src="https://www.youtube.com/embed/gKBPcRwlaJg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+
+                   <div class="link">
+                     <a href="http://rethink2027.com/"target="_blank">
+                       第一屆計畫官網
+                     </a>
+                     <a href="https://rethinktaiwan2018.com/"target="_blank">
+                       第二屆計畫官網
+                     </a>
+                     <a href="https://www.facebook.com/RethinkTaiwan2027/"target="_blank">
+                       臉書粉絲專頁
+                     </a>
+                   </div>
+                </div>
+              </div>
             </div>
-            讓跨域合作成為課堂的日常<br>
-            讓大學教育擁抱更多可能性
           </div>
-          <div class="each_project">
-            <div class="img_mask">
-              <img src="img/10.jpg" alt="">
+          <!-- 5105 -->
+          <div class="each_project display project_teaching">
+            <div class="scale">
+              <div class="img_mask">
+                <img src="img/ourworks/OW_專案照片_設計思考教練人才培育課程_1.png" alt="">
+              </div>
+              <div class="title">
+                設計思考教練人才培育課程
+              </div>
+              <div class="subtitle">
+                feat. 臺大創新設計學院
+              </div>
+              我們如何能透過教練人才的培養，逐步建立可持續的設計思考教學系統？
+              <div class="hashtag">
+                # 學習、實踐、反思<br>
+                # 以教為學<br>
+                # 教學系統開發
+              </div>
             </div>
-            <div class="title">
-              設計思考入門基礎課程
+            <div class="ourworks_content">
+              <div class="black_mask"></div>
+              <div class="each" id="rethink_content">
+                <div class="close">
+                  x
+                </div>
+                <!-- <img src="img/2.jpg" alt=""> -->
+                <!-- <div class="blue_mask"></div> -->
+                <div class="content">
+                  <div class="title">
+                    設計思考教練人才培育課程
+                    <div class="intro">
+                      我們如何能透過教練人才的培養，逐步建立可持續的設計思考教學系統？
+                    </div>
+                  </div>
+                  <div class="carousel">
+                    <a href="#"><img src="img/ourworks/OW_專案照片_設計思考教練人才培育課程_1.png"></a>
+                    <a href="#"><img src="img/ourworks/OW_專案照片_設計思考教練人才培育課程_2.png"></a>
+                    <a href="#"><img src="img/ourworks/OW_專案照片_設計思考教練人才培育課程_1.png"></a>
+                    <a href="#"><img src="img/ourworks/OW_專案照片_設計思考教練人才培育課程_2.png"></a>
+                  </div>
+                  <div class="heading">
+                    <span>計畫簡介</span>
+                  </div>
+                  設計思考教練是一群協助團隊前進的角色。以設計思考作為基礎，輔以流程設計與引導學相關概念與操作方式，讓積極、平等的團隊合作發生。設計思考教練的心中總是在思考：「如果現在要展開行動，那我還可以怎麼做？」。Alpha Team 期望培養更多能夠獨當一面引領行動發生的教練人才，在這門課程中，除了知識基礎外，也強調在實踐中反思、從同儕間的互動交流建立自己的學習觀點，以一學期的課程作為起點，培養出持續自主學習的能力。<br>
+                  <div class="number">
+                    <span class="each_num">
+                      <span class="big">140+</span> / 累積報名人數
+                    </span>
+                    <span class="each_num">
+                      <span class="big">40+</span> / 累積學員數量
+                    </span>
+                    <span class="each_num">
+                      <span class="big">5+</span> / 舉辦工作坊次數
+                    </span>
+                  </div>
+
+                  <div class="heading">
+                    <span>特色亮點</span>
+                  </div>
+
+                  <div class="special">
+                    <div class="each_spec">
+                      <b>反思式學習</b><br>
+                      <div class="align_left">
+                        一堂沒有標準答案的課程要怎麼教？我們將課堂營造成實踐的場域，從數十分鐘的討論到兩天的工作坊，每次結束，我們最關注的問題是「這個過程中，你可以帶走的學習是什麼？」
+                      </div>
+                    </div>
+                    <div class="each_spec">
+                      <b>用設計思考教設計思考</b><br>
+                      <div class="align_left">
+                        設計思考可以做什麼？這堂課就是一種答案，每堂課後的回饋時間、每個月一次的助教深度檢討、每個學期的學員回訪。我們嘗試在實踐設計思考的過程中探索此方法的邊界。
+                      </div>
+                    </div>
+                    <div class="each_spec">
+                      <b>建立設計思考教學系統</b><br>
+                      <div class="align_left">
+                        我們想像一種未來：學習設計思考不再是稀少的機會。此培訓課程成果直接支援設計思考兩日工作坊，如何做一位教練不再只是靠經驗，而是有跡可循。
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="subtitle">
-              feat. 臺大創新設計學院
-            </div>
-            初學者踏入設計思考世界的第一道門！
           </div>
-          <div class="each_project">
-            <div class="img_mask">
-              <img src="img/7.png" alt="">
+          <!-- 企業工作坊 -->
+          <div class="each_project display project_company">
+            <div class="scale">
+              <div class="img_mask">
+                <img src="img/ourworks/OW_專案照片_企業轉型工作坊_2.jpg" alt="">
+              </div>
+              <div class="title">
+                企業轉型工作坊
+              </div>
+              <div class="subtitle">
+              </div>
+              我們如何能協助企業順利展開跨部門對話，以創業的心態和方法共同尋找突破現況的利基？
+              <div class="hashtag">
+                # 創新人才培育<br>
+                # 跨部門溝通設計<br>
+                # 內部創新專案孵化
+              </div>
             </div>
-            <div class="title">
-              設計思考教練人才培育課程
+            <div class="ourworks_content">
+              <div class="black_mask"></div>
+              <div class="each" id="rethink_content">
+                <div class="close">
+                  x
+                </div>
+                <!-- <img src="img/2.jpg" alt=""> -->
+                <!-- <div class="blue_mask"></div> -->
+                <div class="content">
+                  <div class="title">
+                    企業轉型工作坊
+                    <div class="intro">
+                      我們如何能協助企業順利展開跨部門對話，以創業的心態和方法共同尋找突破現況的利基？
+                    </div>
+                  </div>
+                  <div class="carousel">
+                    <a href="#"><img src="img/ourworks/OW_專案照片_企業轉型工作坊_1.png"></a>
+                    <a href="#"><img src="img/ourworks/OW_專案照片_企業轉型工作坊_2.jpg"></a>
+                    <a href="#"><img src="img/ourworks/OW_專案照片_企業轉型工作坊_1.png"></a>
+                    <a href="#"><img src="img/ourworks/OW_專案照片_企業轉型工作坊_2.jpg"></a>
+                  </div>
+                  <div class="heading">
+                    <span>計畫簡介</span>
+                  </div>
+                  當企業的發展與成長逐漸停滯，並開始思考如何跳出框架進行創新變革時，我們相信從文化與工作行為的改變開始，是觸發轉型的第一步。而企業內皆具備創新人才，缺乏的是統一的心態與工具以減少探索時產生的風險，以及一個讓跨部門人才達成有效溝通、進而促成轉型共識的友善環境。企業轉型工作坊透過客製化的工作坊主題（設計挑戰），導入創新教學的操作手法，讓不同部門的成員在企業目前的立足點上，思考公司創新轉型的第一步，並在過程中建立統一的流程與工作語言。
+                  <div class="number">
+                    <span class="each_num">
+                      <span class="big">0+</span> / ？
+                    </span>
+                    <span class="each_num">
+                      <span class="big">0+</span> / ？
+                    </span>
+                  </div>
+
+                  <div class="heading">
+                    <span>特色亮點</span>
+                  </div>
+
+                  <div class="special">
+                    <div class="each_spec">
+                      <b>？</b><br>
+                      <div class="align_left">
+                        ？
+                      </div>
+                    </div>
+                    <div class="each_spec">
+                      <b>？</b><br>
+                      <div class="align_left">
+                        ？
+                      </div>
+                    </div>
+                    <div class="each_spec">
+                      <b>？</b><br>
+                      <div class="align_left">
+                        ？
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="subtitle">
-              feat. 臺大創新設計學院
-            </div>
-            為「成為一位設計思考教練」量身打造的模組化課程
           </div>
-          <div class="each_project">
-            <div class="img_mask">
-              <img src="img/8.png" alt="">
+          <!-- Rookie's guide -->
+          <div class="each_project project_book">
+            <div class="scale">
+              <div class="img_mask">
+                <img src="img/ourworks/OW_專案照片_Rookie's Guide_1.png" alt="">
+              </div>
+              <div class="title">
+                魯奇的設計思考工具書 Rookie’s Guide
+              </div>
+              <div class="subtitle">
+              </div>
+              專門為初學者所研發編寫的設計思考學習工具書。
+              <div class="hashtag">
+                # 免費開放資源<br>
+                # 教學素材
+              </div>
             </div>
-            <div class="title">
-              魯奇的設計思考工具書 Rookie’s Guide
+            <div class="ourworks_content">
+              <div class="black_mask"></div>
+              <div class="each" id="rethink_content">
+                <div class="close">
+                  x
+                </div>
+                <div class="content">
+                  <div class="title">
+                    魯奇的設計思考工具書 Rookie’s Guide
+                    <div class="intro">
+                      專門為初學者所研發編寫的設計思考學習工具書。
+                    </div>
+                  </div>
+                  <div class="carousel">
+                    <a href="#"><img src="img/ourworks/OW_專案照片_Rookie's Guide_1.png"></a>
+                    <a href="#"><img src="img/ourworks/OW_專案照片_Rookie's Guide_2.png"></a>
+                    <a href="#"><img src="img/ourworks/OW_專案照片_Rookie's Guide_3.png"></a>
+                    <a href="#"><img src="img/ourworks/OW_專案照片_Rookie's Guide_4.png"></a>
+                  </div>
+                  <div class="heading">
+                    <span>計畫簡介</span>
+                  </div>
+                  臺灣第一本免費下載的全中文設計思考入門工具書，由 Alpha Team 進行內容編纂與設計，完稿於 2017 年 2 月。結合國內外書籍、文獻資料與 Alpha Team 教學經驗，內容包含設計思考入門觀念、流程說明與工具應用。設計思考 (Design Thinking) 是一套思維方法與流程，強調從人的需求出發，透過快速實驗試錯的方式解決問題，並創造更多可能性。同時間也提供跨領域合作的共同語言，協助不同背景與專業的人才進行溝通與協作。
+                  <div class="number">
+                    <span class="each_num">
+                      <span class="big">2900+</span> / 累積下載次數
+                    </span>
+                  </div>
+
+                  <div class="heading">
+                    <span>特色亮點</span>
+                  </div>
+
+                  <div class="special">
+                    <div class="each_spec">
+                      <b>從初學者角度規劃</b><br>
+                      <div class="align_left">
+                        以成為「設計思考的初學者的第一本書」為目標，開發過程中不斷回到初學者角度思考，進而量身打造出符合學習情境與需求的工具書。
+                      </div>
+                    </div>
+                    <div class="each_spec">
+                      <b>原創圖庫</b><br>
+                      <div class="align_left">
+                        工具書中包含設計思考五大步驟、重要核心概念呈現，與各項流程方法之示意圖，皆為原創設計。建立獨特的視覺印象，達到更好的教學與傳播效果。
+                      </div>
+                    </div>
+                    <div class="each_spec">
+                      <b>經過四次測試迭代完成</b><br>
+                      <div class="align_left">
+                        基於以人為本的開發精神，過程中從不同使用者視角蒐集具體回饋，從工具書的結構、內容編寫方式、格式的一致性到呈現方式等，皆經歷多次的測試與改版。
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- <div class="heading">
+                    <span>內頁預覽</span>
+                  </div>
+
+                  <iframe src="https://drive.google.com/file/d/0B0sbkZN71AsGSnhUVVNFUjRQNDg/view"></iframe><br> -->
+                  <br><br><br><br>
+                  <div class="link">
+                    <a href="https://goo.gl/LUbQfz" target="_blank">
+                      點擊下載
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="subtitle">
-              <!-- feat. 科技部 審計部 -->
-            </div>
-            初學設計思考該知道的我們都放在這裡了，而且是免費的喔！
-          </div>
-          <div class="each_project">
-            <div class="img_mask">
-              <img src="img/9.png" alt="">
-            </div>
-            <div class="title">
-              設計思考教練手冊 Coach’s Guide
-            </div>
-            <div class="subtitle">
-              <!-- feat. 科技部 審計部 -->
-            </div>
-            全臺灣第一本告訴你如何「做一位設計思考教練」的免費電子書
           </div>
         </div>
 
       </div>
-<!--
-      <div id="ourwork">
+
+      <div class="client">
         <div class="topic">
-          <span class="large">O</span>ur works
+          Client<br>
         </div>
 
-        <div class="project_each">
-          <img class="cover" src="img/rookie.png">
-          <div class="content">
-            <span class="title">Rookie's Guide</span><br>
-            這裡是介紹文字，這裡是介紹文字，這裡是介紹文字，這裡是介紹文字，這裡是介紹文字，這裡是介紹文字。
+        <div class="content">
+          <div class="each_content">
+            <img src="img/client/location.png" alt=""><br>
+            工作坊場次<br>
+            <b>100+</b>
+          </div>
+          <div class="each_content">
+            <img src="img/client/user.png" alt=""><br>
+            參與人數<br>
+            <b>3000+</b>
+          </div>
+          <div class="each_content">
+            <img class="small" src="img/client/cooperation.png" alt=""><br>
+            跨領域客戶<br>
+            <b>20+</b>
           </div>
         </div>
+      </div>
 
-        <div class="project_each">
-          <img class="cover" src="img/coach.png">
-          <div class="content">
-            <span class="title">Coach's Guide</span><br>
-            這裡是介紹文字，這裡是介紹文字，這裡是介紹文字，這裡是介紹文字，這裡是介紹文字，這裡是介紹文字。
+      <div class="logo_wall">
+        <div class="logo_img">
+            <img src="img/logo/台大創創.png" alt="">
           </div>
-        </div>
+          <div class="logo_img">
+            <img src="img/logo/台達.png" alt="">
+          </div>
+          <div class="logo_img">
+            <img src="img/logo/科技部.png" alt="">
+          </div>
+          <div class="logo_img">
+            <img src="img/logo/和碩.png" alt="">
+          </div>
+          <div class="logo_img">
+            <img src="img/logo/青年署.png" alt="">
+          </div>
+          <div class="logo_img">
+            <img src="img/logo/教發.png" alt="">
+          </div>
+          <div class="logo_img">
+            <img src="img/logo/遠傳.png" alt="">
+          </div>
+          <div class="logo_img">
+            <img src="img/logo/微軟.png" alt="">
+          </div>
+          <div class="logo_img">
+            <img src="img/logo/審計部.png" alt="">
+          </div>
+          <div class="logo_img">
+            <img src="img/logo/dschool.png" alt="">
+          </div>
+          <div class="logo_img">
+            <img src="img/logo/H spectrum.png" alt="">
+          </div>
+          <div class="logo_img">
+            <img src="img/logo/bonio.png" alt="">
+          </div>
+          <div class="logo_img">
+            <img src="img/logo/建中.png" alt="">
+          </div>
+          <div class="logo_img">
+            <img src="img/logo/禾伸堂.png" alt="">
+          </div>
+          <div class="logo_img">
+            <img src="img/logo/都更處.png" alt="">
+          </div>
+          <div class="logo_img">
+            <img src="img/logo/彰師大.png" alt="">
+          </div>
 
-      </div> -->
-<!--
-      <div id="project">
+
+          <div class="logo_img">
+            <img src="img/logo/靜宜大學.png" alt="">
+          </div>
+          <div class="logo_img">
+            <img src="img/logo/ATCC.png" alt="">
+          </div>
+          <div class="logo_img">
+            <img src="img/logo/hp.png" alt="">
+          </div>
+          <div class="logo_img">
+            <img src="img/logo/HTC.png" alt="">
+          </div>
+          <div class="logo_img">
+            <img src="img/logo/starrocket.png" alt="">
+          </div>
+          <div class="logo_img">
+            <img src="img/logo/uniqlo.png" alt="">
+          </div>
+      </div>
+
+      <div class="how_we_do">
         <div class="topic">
-          <span class="large">W</span>hat we do
-        </div>
-
-        <div class="project_each">
-          <div class="content">
-            <span class="title">Train for Trainers</span><br>
-            <span class="subtitle">台達研究院</span><br>
-            這裡是介紹文字，這裡是介紹文字，這裡是介紹文字，這裡是介紹文字，這裡是介紹文字，這裡是介紹文字。
+          How We Do<br>
+          <div class="subtitle">
+            將客戶面對的複雜問題，轉變為專案式學習的設計挑戰
           </div>
         </div>
 
-        <div class="project_each">
-          <div class="content">
-            <span class="title">Workshop</span><br>
-            <span class="subtitle">審計部</span><br>
-            這裡是介紹文字，這裡是介紹文字，這裡是介紹文字，這裡是介紹文字，這裡是介紹文字，這裡是介紹文字。
-          </div>
+        <div class="text">
+          我們做的眾多專案，形式與目標各有不同，但核心技術圍繞在「將客戶面對的複雜問題，轉變為專案式學習的設計挑戰（Design Challenge）」。亦即在限定的期程及目標內，引導跨領域的工作者快速培養解決問題的能力，學習以利害關係人的需求為核心，推動產品、專案、組織或產業內的創新轉型。<br>
+          <br><br>
+          而專案式學習方法適用於各類計畫的前期籌劃或轉型階段，能視計畫需求，在一日乃至數個月的專案期程中，設計凝聚跨領域/跨部門成員共識的合作體驗，達成釐清當前挑戰、設定清晰而可以採取行動的專案目標，快速實驗及迭代既有假設等目的，為後續資源投入、設定優先順序、專業分工及價值創造奠定基礎。<br>
+          <br><br>
+          以下為我們透過專案式學習方法為客戶提供價值的過程中，所使用與累積的三大技術特點：
         </div>
-
-        <div class="project_each">
-          <div class="content">
-            <span class="title">青年迴響計畫</span><br>
-            <span class="subtitle">青年署</span><br>
-            這裡是介紹文字，這裡是介紹文字，這裡是介紹文字，這裡是介紹文字，這裡是介紹文字，這裡是介紹文字。
-          </div>
-        </div>
-
-        <div id="number">
-          <span class="item">工作坊<span class="num">26+</span>場</span>
-          <span class="item">學員<span class="num">1000+</span>位</span>
-          <span class="item">企業<span class="num">18+</span>間</span>
-          <span class="item">出版物<span class="num">2</span>本</span>
-        </div>
-      </div> -->
-
+        <br>
+        <img class="triangle" src="img/howwedo.png" alt="">
+      </div>
 
       <div id="team_members">
         <div class="topic">
@@ -360,46 +766,89 @@
         </div>
 
         <div class="all_members">
-
           <div class="row">
-            <div class="each_member" id="chou">
-              <img src="img/member/chou.png" alt="帥哥 handsome">
-              <div class="mask">
+            <div class="each_member">
+              <img class="bighead" src="img/member/瑞鵬.png" alt="帥哥 handsome">
+              <!-- <div class="mask">
                 胡哲愷
                 <div class="underline"></div>
+              </div> -->
+              <div class="member_name">
+                姚瑞鵬
+              </div>
+              <div class="display">
+                <img class="person" src="img/member/瑞鵬去背.png" alt="">
+                <div class="text">
+                  <div class="name">
+                    姚瑞鵬 Alban
+                  </div>
+                  # 專業形象代言人<br>
+                  <br>
+                  用三思而後行的方式穩健推動事情前進的男子，是團隊中堅實的、令人安心的後盾。小時候被懷疑有過動症，熱愛各式戶外運動、愛喝水勝過任何飲料（酒例外）。也喜歡多力多滋和起司。經常穿著一條永遠不會髒的白褲。
+                </div>
               </div>
             </div>
-            <div class="each_member" id="chou">
-              <img src="img/member/chou.png" alt="帥哥 handsome">
-              <div class="mask">
-                胡哲愷
-                <div class="underline"></div>
+            <div class="each_member">
+              <img class="bighead" src="img/member/鈺婷.png" alt="帥哥 handsome">
+              <div class="member_name">
+                周鈺婷
+              </div>
+              <div class="display">
+                <img class="person" src="img/member/鈺婷去背.png" alt="">
+                <div class="text">
+                  <div class="name">
+                    周鈺婷 Jarah
+                  </div>
+                  # 親切的團隊凝聚者<br>
+                  <br>
+                  外表看似高中生，但是內心卻像國中生的奇女子，擁有所有大人已經遺失的單純，能自由自在的高歌，以自我矛盾見長。喜歡海邊、把資訊整理的很好看、飆高音、還有懷疑一切事物，包括自己。
+                </div>
               </div>
             </div>
-            <div class="each_member" id="chou">
-              <img src="img/member/chou.png" alt="帥哥 handsome">
-              <div class="mask">
-                胡哲愷
-                <div class="underline"></div>
+            <div class="each_member">
+              <img class="bighead" src="img/member/翊勤.png" alt="帥哥 handsome">
+              <div class="member_name">
+                許翊勤
+              </div>
+              <div class="display">
+                <img class="person" src="img/member/翊勤去背.png" alt="">
+                <div class="text">
+                  <div class="name">
+                    許翊勤 Echim
+                  </div>
+                  # 冷箭型玩家<br>
+                  <br>
+                  愛恨分明，對於自己喜歡的領域會究極認真與投入。外表平靜樸實，但總是能從既有資源與作法中，蹦出意想不到的新想法和酷玩意，幫助團隊以好玩的方式持續前進。喜歡建築、棒球、空間、泡溫泉與唱歌。
+                </div>
               </div>
             </div>
-            <div class="each_member" id="chou">
-              <img src="img/member/chou.png" alt="帥哥 handsome">
-              <div class="mask">
-                胡哲愷
-                <div class="underline"></div>
+            <div class="each_member">
+              <img class="bighead" src="img/member/曉涵.png" alt="帥哥 handsome">
+              <div class="member_name">
+                巫曉涵
+              </div>
+              <div class="display">
+                <img class="person" src="img/member/曉涵去背.png" alt="">
+                <div class="text">
+                  <div class="name">
+                    巫曉涵 Hanny
+                  </div>
+                  # 出乎意料行動派女主席<br>
+                  <br>
+                  來自花蓮的原住民女孩，集勇氣、熱情及創意於一身，擅長以自己的力量跨出第一步，因而有機會創造許多新的事物。擅長在短時間內與與他人建立連結。喜歡拍影片、吃很甜的甜食，可以一天只喝一口水。
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="display" id="chou_display">
-            <div class="content">
+          <!-- <div class="display">
+            <div class="content" id="chou_display">
               <div class="circle">
                 <img src="img/member/chou.png" alt="帥哥 handsome">
               </div>
               <div class="persona">
                 <div class="name">
-                  胡哲愷 / 抽抽
+                  姚瑞鵬 / 抽抽
                   <div class="sub">
                     #資訊的設計者 #溫柔的支持者<br>
                   </div>
@@ -421,35 +870,108 @@
                 </div>
               </div>
             </div>
-          </div>
+
+            <div class="content" id="echim_display">
+              <div class="circle">
+                <img src="img/member/chou.png" alt="帥哥 handsome">
+              </div>
+              <div class="persona">
+                <div class="name">
+                  許翊勤 / echim
+                  <div class="sub">
+                    #我欸能力本來就是倒揮阿<br>
+                  </div>
+                </div>
+                <div class="go_die">
+                  日日昌小公寓 專案經理<br>
+                  Alpha 體育股長<br>
+                </div>
+                <div class="mail">
+                  goxluix7@ntu.im
+                </div>
+              </div>
+              <div class="intro">
+                <div class="sentence">
+                  You have to trust in something - your gut, destiny, life, karma, whatever.
+                </div>
+                <div class="text">
+                  八啦八八八八啦八八八八啦八八八八啦八八八八啦八八八八啦八八八八啦八八八八啦八八八八啦八八八八啦八八八<br>八啦八八八八啦八八八八啦八八八八啦八八八八啦八八八八啦八八八八啦八八八八啦八八八八啦八八八八啦八八八八啦八八八八啦八八八八啦八八八八啦八八八八啦八八八八啦八八八八啦八八八八啦八八八八啦八八八八啦八八八八啦八八八
+                </div>
+              </div>
+            </div>
+          </div> -->
 
           <div class="row">
-            <div class="each_member" id="chou">
-              <img src="img/member/chou.png" alt="帥哥 handsome">
-              <div class="mask">
+            <div class="each_member">
+              <img class="bighead" src="img/member/瑞鵬.png" alt="帥哥 handsome">
+              <!-- <div class="mask">
                 胡哲愷
                 <div class="underline"></div>
+              </div> -->
+              <div class="member_name">
+                姚瑞鵬
+              </div>
+              <div class="display">
+                <img class="person" src="img/member/瑞鵬去背.png" alt="">
+                <div class="text">
+                  <div class="name">
+                    姚瑞鵬 Alban
+                  </div>
+                  # 專業形象代言人<br>
+                  <br>
+                  用三思而後行的方式穩健推動事情前進的男子，是團隊中堅實的、令人安心的後盾。小時候被懷疑有過動症，熱愛各式戶外運動、愛喝水勝過任何飲料（酒例外）。也喜歡多力多滋和起司。經常穿著一條永遠不會髒的白褲。
+                </div>
               </div>
             </div>
-            <div class="each_member" id="chou">
-              <img src="img/member/chou.png" alt="帥哥 handsome">
-              <div class="mask">
-                胡哲愷
-                <div class="underline"></div>
+            <div class="each_member">
+              <img class="bighead" src="img/member/鈺婷.png" alt="帥哥 handsome">
+              <div class="member_name">
+                周鈺婷
+              </div>
+              <div class="display">
+                <img class="person" src="img/member/鈺婷去背.png" alt="">
+                <div class="text">
+                  <div class="name">
+                    周鈺婷 Jarah
+                  </div>
+                  # 親切的團隊凝聚者<br>
+                  <br>
+                  外表看似高中生，但是內心卻像國中生的奇女子，擁有所有大人已經遺失的單純，能自由自在的高歌，以自我矛盾見長。喜歡海邊、把資訊整理的很好看、飆高音、還有懷疑一切事物，包括自己。
+                </div>
               </div>
             </div>
-            <div class="each_member" id="chou">
-              <img src="img/member/chou.png" alt="帥哥 handsome">
-              <div class="mask">
-                胡哲愷
-                <div class="underline"></div>
+            <div class="each_member">
+              <img class="bighead" src="img/member/翊勤.png" alt="帥哥 handsome">
+              <div class="member_name">
+                許翊勤
+              </div>
+              <div class="display">
+                <img class="person" src="img/member/翊勤去背.png" alt="">
+                <div class="text">
+                  <div class="name">
+                    許翊勤 Echim
+                  </div>
+                  # 冷箭型玩家<br>
+                  <br>
+                  愛恨分明，對於自己喜歡的領域會究極認真與投入。外表平靜樸實，但總是能從既有資源與作法中，蹦出意想不到的新想法和酷玩意，幫助團隊以好玩的方式持續前進。喜歡建築、棒球、空間、泡溫泉與唱歌。
+                </div>
               </div>
             </div>
-            <div class="each_member" id="chou">
-              <img src="img/member/chou.png" alt="帥哥 handsome">
-              <div class="mask">
-                胡哲愷
-                <div class="underline"></div>
+            <div class="each_member">
+              <img class="bighead" src="img/member/曉涵.png" alt="帥哥 handsome">
+              <div class="member_name">
+                巫曉涵
+              </div>
+              <div class="display">
+                <img class="person" src="img/member/曉涵去背.png" alt="">
+                <div class="text">
+                  <div class="name">
+                    巫曉涵 Hanny
+                  </div>
+                  # 出乎意料行動派女主席<br>
+                  <br>
+                  來自花蓮的原住民女孩，集勇氣、熱情及創意於一身，擅長以自己的力量跨出第一步，因而有機會創造許多新的事物。擅長在短時間內與與他人建立連結。喜歡拍影片、吃很甜的甜食，可以一天只喝一口水。
+                </div>
               </div>
             </div>
           </div>
@@ -464,9 +986,9 @@
         <!-- 聯絡我們，傳聲筒 -->
         <div class="topic">
           Contacts<br>
-          <!-- <div class="subtitle">
-            來阿，有種就來聯絡我們阿
-          </div> -->
+          <div class="subtitle">
+            現在你對 Alpha Team 有初步認識了，如果還想知道更多，像是...
+          </div>
         </div>
 
         <h1 class="type_machine">
@@ -479,11 +1001,15 @@
               <img src="img/contact/envelope.png">
               go@alphateam.tw
           </div>
-          <div class="mail">
+          <a class="mail" href="https://www.facebook.com/ntudalpha/" target="_blank">
             <img src="img/contact/facebook-logo.png">
-            AlphaTeam 臺大創新設計學院學術小組
-          </div>
+            <span>AlphaTeam 臺大創新設計學院學術小組</span>
+            <div>AlphaTeam 臺大創新設計學院學術小組</div>
+          </a>
         </div>
+
+        <br><br><br><br><br><br>
+        或是你有以下需求，歡迎跟我們聯繫！
       </div>
     </div>
 

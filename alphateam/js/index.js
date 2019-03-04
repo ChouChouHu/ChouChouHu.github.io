@@ -6,55 +6,115 @@
 
 $(document).ready(function(){
 
+	// ourworks 的點擊
+	$(".each_project").click(function(){
+		$(this).children(".ourworks_content").css("display", "block");
+	})
+	$(".black_mask").click(function(){
+		$(".ourworks_content").fadeOut();
+	})
+	$(".each .close").click(function(){
+		$(".ourworks_content").fadeOut();
+	})
+
+
 	$(".group").click(function(){
 		if ($(this).hasClass("default")) {
-
+			// 原本就藍，就不用再藍了
 		}
 		else {
 			$(".group").removeClass("default");
 			$(this).addClass("default");
-			$(".project").removeClass("display");
+			$(".each_project").removeClass("display");
 		}
 
 		if ($(this).hasClass("group_one")) {
-			$(".project_one").addClass("display")
+			$(".project_govern").addClass("display")
 		}
 		if ($(this).hasClass("group_two")) {
-			$(".project_two").addClass("display")
+			$(".project_teaching").addClass("display")
 		}
 		if ($(this).hasClass("group_three")) {
-			$(".project_three").addClass("display")
+			$(".project_company").addClass("display")
+		}
+		if ($(this).hasClass("group_four")) {
+			$(".project_book").addClass("display")
 		}
 	})
 
+	// 閱讀更多，舊
+	// var read = false;
+	// $(".read_more").click(function(){
+	// 	if (read) {
+	// 		// alert("fuck");
+	// 		$(".more_text").css("animation-name", "unread");
+	// 		read = false;
+	// 	}
+	// 	else {
+	// 		$(".more_text").css("animation-name", "read");
+	// 		$(".more_text").css("display", "block");
+	// 		read = true;
+	// 	}
+	// })
 
-	$(".read_more").click(function(){
-		$(".more_text").css("display", "block");
-		// alert("fuck")
+
+	$(".each_member").hover(function(){
+		$(".each_member .display").css("display", "none");
+		$(this).children(".display").css("display", "block");
+	}, function(){
+		// $(this).children(".display").css("display", "none");
 	})
 
-	// $(".chou").click(fuck());
-var btn_or_not = false;
-
-	$("#chou").click(function(){
-		$("#chou_display").css("animation-name", "shit");
-		$("#chou_display").css("display", "block");
-		btn_or_not = true;
-	}
-)
-
-$(".content").click(function(){
-	btn_or_not = true;
-}
-)
-
-	$("body").click(function(){
-		if (btn_or_not == false) {
-			$("#chou_display").css("animation-name", "shit_reverse");
-			// alert("fuck");
+	$(window).scroll(function () {
+		// alert($(window).scrollTop());
+		if ($(window).scrollTop() < 5600) {
+			$(".each_member .display").css("opacity", ($(window).scrollTop() - 5400) / 200);
 		}
-		btn_or_not = false;
-	})
+		if ($(window).scrollTop() < 5400) {
+			$(".each_member .display").css("display", "none");
+		}
+	});
+
+// var btn_or_not = false;
+// var any_display = false
+//
+// 	$("#chou").click(function(){
+// 		if (any_display) {
+// 			$(".display .content").css("display", "none");
+// 		}
+// 		$(".display").css("animation-name", "shit");
+// 		$(".display").css("display", "block");
+// 		$("#chou_display").css("display", "block");
+// 		btn_or_not = true;
+// 		any_display = true;
+// 	}
+// )
+//
+// 	$("#echim").click(function(){
+// 		if (any_display) {
+// 			$(".display .content").css("display", "none");
+// 		}
+// 		$(".display").css("animation-name", "shit");
+// 		$(".display").css("display", "block");
+// 		$("#echim_display").css("display", "block");
+// 		btn_or_not = true;
+// 		any_display = true;
+// 	}
+// )
+//
+// 	$(".content").click(function(){
+// 		btn_or_not = true;
+// 	}
+// )
+//
+// 	$("body").click(function(){
+// 		if (btn_or_not == false) {
+// 			$(".display").css("animation-name", "shit_reverse");
+// 			// alert("fuck");
+// 			// any_display = false;
+// 		}
+// 		btn_or_not = false;
+// 	})
 
 	$(".sound").click(function(){
 		// alert("f");
@@ -69,7 +129,7 @@ $(".content").click(function(){
     	}
 	})
 
-	var t = 800; // delay
+	var t = 1400; // delay
 	var a = 70; // gap
 
 	setTimeout(function(){
